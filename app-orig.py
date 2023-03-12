@@ -1,6 +1,7 @@
 # 
 
-from flask import Flask, render_template, request
+from flask import Flask
+from flask import Flask, render_template
 from article_data import Articles
 
 
@@ -23,16 +24,9 @@ def articles():
     return render_template('articles.html', articles = Articles)
 
 
-@app.route('/article/')
-def display_article():
-    article = 10
-    id = int(request.args['id'])
-    #print("len Articles",len(Articles))
-    for i in range(len(Articles)):
-        if Articles[i]['id'] == id:
-            article = Articles[i]
-    #print(id," -- ", article, " -- " , Articles[1])        
-    return render_template('article.html', article = article)
+@app.route('/article/<string:id>/')
+def display_article(id):
+    return render_template('article.html', id=id, articles = Articles)
 
 
 @app.route('/about')

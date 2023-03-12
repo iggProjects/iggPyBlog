@@ -1,3 +1,110 @@
 source: https://dev.to/geektechpub/flask-blog-tutorial-1-getting-started-10cd
 
 continue work in "About routes" ✔
+
+images --> https://www.youtube.com/watch?v=XTiM6HU0x9k
+           https://gist.github.com/lakshyasri/5e59ca8a0c6e1eb413dfa1c6c88603dd
+
+
+MySql
+    - https://www.geeksforgeeks.org/profile-application-using-python-flask-and-mysql/
+
+
+Web
+    - https://github.com/tutsplus/create-a-web-app-from-scratch-using-python-flask-and-mysql
+
+
+IF statement
+    {% if username == "": %}
+    <!--if blk html code--> 
+    {% else %}
+    <!--else blk html code-->
+    {% endif %}
+
+    https://pythonexamples.org/python-flask-if-statement-in-html-template/  
+
+    https://python-web.teclado.com/section07/lectures/06_jinja2_conditional_statements/          
+
+PASS variables
+    - https://pythonexamples.org/python-flask-pass-variable-from-python-to-html-template/
+
+LOOP Statement
+    <!DOCTYPE html> 
+    <html> 
+        <body> 
+        <h1>Hello User!</h1>
+        <ul> 
+        {% for item in fruits: %} 
+        <li>{{ item }}</li> 
+        {% endfor %} 
+        </ul>
+        <p>Welcome to sample flask application by 
+            <a href="https://pythonexamples.org/">PythonExamples.org</a>
+        </p> 
+        </body> 
+    </html>
+    https://pythonexamples.org/python-flask-for-loop-in-html-template/
+
+
+ARGUMENTS - parameters
+    from flask import Flask, render_template, request
+    app = Flask(_name_) 
+    @app.route("/") 
+    def home_page(): 
+        name = request.args['name'] 
+        return render_template("index.html", name=name) 
+    if _name_ == "_main_":
+        app.run(host="127.0.0.1", port=8080, debug=True)
+
+    ====================
+    URL http://127.0.0.1:8080/?name=Tony.
+
+    https://pythonexamples.org/python-flask-access-url-query-parameters/
+
+UPLOAD files
+
+    from flask import Flask, render_template, request
+    import os 
+
+    app = Flask(_name_)
+    app.config['UPLOAD_FOLDER'] = 'uploads' 
+
+    @app.route("/") 
+    def home_page(): 
+        return render_template("index.html")
+    @app.route('/upload-file', methods=['POST']) 
+    def upload_file(): 
+        if request.method == 'POST': 
+            if 'file' not in request.files: return 'There is file is submitted form.' 
+            file = request.files['file']
+            file.save(os.path.join(app.config['UPLOAD_FOLDER'], file.filename)) 
+            return 'File upload successful.' 
+        else: 
+            return 'Invalid request.' 
+
+    if _name_ == "_main_":
+        app.run(host="127.0.0.1", port=8080, debug=True)
+
+    https://pythonexamples.org/python-flask-upload-file/    
+
+
+    <!DOCTYPE html> 
+    <html> 
+        <body> 
+            <h1>Upload File</h1>
+            <p>Welcome to sample flask application by <a href="https://pythonexamples.org/">PythonExamples.org</a>.
+            </p> 
+
+            <div> 
+                <h3>Upload</h3> 
+                <form action = "/upload-file" method = "POST" enctype = "multipart/form-data">
+                    <input type="file" name="file"> 
+                    <input type="Submit" value="Upload"> 
+                </form> 
+                <div style="color:orange">{{ message }}</div> 
+            </div> 
+        </body> 
+    </html>    
+
+API simple example    
+    - https://pythonexamples.org/python-flask-api-example/

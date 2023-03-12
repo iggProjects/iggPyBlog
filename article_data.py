@@ -3,9 +3,9 @@ def Articles():
         {
             'id': 1, 
             'title': 'First article',
-            'body': 'lorem ipsum adhdyj gdh gsshh hu gdh gsh asgasd sdivvvvFVUvjusd cgibsdjhbcu',
+            'body': 'testing html -- testing',
             'author': 'Sophia Iroegbu',
-            'date_created': '26-01-2022'
+            'date_created': '26-01-2022'            
         },
         {
             'id': 2, 
