@@ -1,3 +1,6 @@
+# virtual env
+igg_venv/
+
 # Build and Release Folders
 bin-debug/
 bin-release/
@@ -6,6 +9,9 @@ bin-release/
 
 # Other files and folders
 .settings/
+
+# .pyc
+*.pyc
 
 # Executables
 *.swf
