@@ -1,3 +1,6 @@
+# ignore igg_venv files
+/igg_venv/*
+
 # Build and Release Folders
 bin-debug/
 bin-release/
