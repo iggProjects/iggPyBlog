@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-# ignore igg_venv files
-=======
 # virtual environment files
->>>>>>> 24f2f022e02d715bc933ef5277e0ae7e220a14e1
 /igg_venv/*
 
 # Build and Release Folders
