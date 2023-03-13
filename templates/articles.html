@@ -1,12 +1,20 @@
 {% extends 'layout.html' %}
 
 {% block body %}
-  <h1>Articles</h1>
-  <ul class="list-group">
-    {% for article in articles %}
-      <li class="list-group-item">
-        <a href="article/?id={{article.id}}">{{article.id}} - {{article.author}}</a>
-      </li>
-    {% endfor %}
-  </ul>
+  <div class="disp-cols-cent"  style="height:88vh; overflow: auto;  border:10px solid rgb(190, 209, 250)">
+    <h1 style="margin-left:15px;">Articles</h1>
+    <ul class="list-group">
+      {% for article in articles %}
+        <li class="list-group-item" style="border:none;">
+          <table style="width:98%; text-align: left;">
+            <tr>
+              <td ><a href="article/?id={{article.id}}">{{article.id}} - {{article.author}} - {{article.date_created}}</a></td>
+              <td style="color:blue; font-size: 14px; padding-left:5px;"><a href="article/?id={{article.id}}">Summary</a></td>
+            </tr>
+            <tr><td></td><td style="width:80%; padding:2px; border:1px solid rgb(126, 126, 252)">{{article.summary}}</td></tr>
+          </table>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
 {% endblock %}
