@@ -2,6 +2,7 @@ source: https://dev.to/geektechpub/flask-blog-tutorial-1-getting-started-10cd
 
 - continue work in "About routes" ✔
 - favicon
+- scroll bar style
 - upload images
 - download zip
 - menu bar when width like phone
