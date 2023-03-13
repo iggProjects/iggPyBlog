@@ -1,10 +1,13 @@
 # 
 
-from flask import Flask, render_template, request
+from flask import Flask, render_template, url_for, request
 from article_data import Articles
+import os
 
 
-app = Flask(__name__, static_url_path='/img')
+app = Flask(__name__)
+
+#app.config['UPLOAD_FOLDER'] = 'img' 
 
 Articles = Articles()
 
@@ -33,6 +36,14 @@ def display_article():
             article = Articles[i]
     #print(id," -- ", article, " -- " , Articles[1])        
     return render_template('article.html', article = article)
+
+@app.route('/excercises')
+def excercises():
+    return render_template('excercises.html')
+
+@app.route('/project')
+def project():
+    return render_template('project.html')
 
 
 @app.route('/about')

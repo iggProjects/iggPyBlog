@@ -6,10 +6,11 @@ source: https://dev.to/geektechpub/flask-blog-tutorial-1-getting-started-10cd
 - upload images
 - download zip
 - menu bar when width like phone
-- 
+- search in list-dict
 
 
 - mysql version
+- login
 
 ========================================================================================
 
@@ -73,6 +74,13 @@ ARGUMENTS - parameters
     URL http://127.0.0.1:8080/?name=Tony.
 
     https://pythonexamples.org/python-flask-access-url-query-parameters/
+
+
+STATIC Files
+    - Setting up static folder path in Flask
+    - https://www.geeksforgeeks.org/how-to-serve-static-files-in-flask/
+    - https://flask.palletsprojects.com/en/1.0.x/tutorial/static/
+
 
 UPLOAD files
 
