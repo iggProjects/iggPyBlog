@@ -1,17 +1,22 @@
 {% extends 'layout.html' %}
 
 {% block body %}
-  <div class="disp-cols-cent"  style="height:88vh; overflow: auto;  border:10px solid rgb(190, 209, 250)">
-    <h1 style="margin-left:15px;">Articles</h1>
+  <h1 style="margin-left:15px;margin-top: 3px;">Articles</h1>
+  <div class="disp-cols-cent"  style="height:78vh; overflow: auto; border:10px solid rgb(190, 209, 250)">    
     <ul class="list-group">
       {% for article in articles %}
         <li class="list-group-item" style="border:none;">
           <table style="width:98%; text-align: left;">
             <tr>
-              <td ><a href="article/?id={{article.id}}">{{article.id}} - {{article.author}} - {{article.date_created}}</a></td>
+              <td ><a href="article/?id={{article.id}}">{{article.id}} - {{article.author}}<br><span style="color:rgb(75, 72, 252); font-size: 11px;;">{{article.date_created}}</span></a></td>
               <td style="color:blue; font-size: 14px; padding-left:5px;"><a href="article/?id={{article.id}}">Summary</a></td>
+              <td></td>
             </tr>
-            <tr><td></td><td style="width:80%; padding:2px; border:1px solid rgb(126, 126, 252)">{{article.summary}}</td></tr>
+            <tr>
+              <td style="width:15%;""></td>
+              <td style="width:75%; padding:2px; border:1px solid rgb(126, 126, 252)">{{article.summary}}</td>
+              <td style="width:5%; padding:2px; text-align: center; border:1px solid rgb(126, 126, 252)"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Vitoria_-_Huertas_de_Olarizu_-_Girasol_01.jpg/149px-Vitoria_-_Huertas_de_Olarizu_-_Girasol_01.jpg" width="50px"></td>
+            </tr>
           </table>
         </li>
       {% endfor %}

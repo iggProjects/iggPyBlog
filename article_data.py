@@ -25,6 +25,55 @@ def Articles():
             'summary': 'Egiaz, Wikipediaren barnean, oraintxe, nahiko arrakastatsuak izaten ari diren zenbait proiektu ikusten ari gara, Europako hizkuntza txikietan. Beharbada, galesez jakitea ez da erabat beharrezkoa izango. Galesez jakinda ingelesez ez dakiten pertsonen kopurua oso txikia da, eta urtero txikiagotuz doa. ',
             'body': 'lorem ipsum adhdyj gdh gsshh hu gdh gsh asgasd sdivvvvFVUvjusd cgibsdjhbcu'
         },
+        {
+            'id': 4, 
+            'title': 'Third article',            
+            'author': 'Xabier',
+            'date_created': '02-02-2022',
+            'summary': 'Egiaz, Wikipediaren barnean, oraintxe, nahiko arrakastatsuak izaten ari diren zenbait proiektu ikusten ari gara, Europako hizkuntza txikietan. Beharbada, galesez jakitea ez da erabat beharrezkoa izango. Galesez jakinda ingelesez ez dakiten pertsonen kopurua oso txikia da, eta urtero txikiagotuz doa. ',
+            'body': 'lorem ipsum adhdyj gdh gsshh hu gdh gsh asgasd sdivvvvFVUvjusd cgibsdjhbcu'
+        },
+        {
+            'id': 5, 
+            'title': 'Third article',            
+            'author': 'Xabier',
+            'date_created': '02-02-2022',
+            'summary': 'Egiaz, Wikipediaren barnean, oraintxe, nahiko arrakastatsuak izaten ari diren zenbait proiektu ikusten ari gara, Europako hizkuntza txikietan. Beharbada, galesez jakitea ez da erabat beharrezkoa izango. Galesez jakinda ingelesez ez dakiten pertsonen kopurua oso txikia da, eta urtero txikiagotuz doa. ',
+            'body': 'lorem ipsum adhdyj gdh gsshh hu gdh gsh asgasd sdivvvvFVUvjusd cgibsdjhbcu'
+        },
+        {
+            'id': 6, 
+            'title': 'Third article',            
+            'author': 'Xabier',
+            'date_created': '02-02-2022',
+            'summary': 'Egiaz, Wikipediaren barnean, oraintxe, nahiko arrakastatsuak izaten ari diren zenbait proiektu ikusten ari gara, Europako hizkuntza txikietan. Beharbada, galesez jakitea ez da erabat beharrezkoa izango. Galesez jakinda ingelesez ez dakiten pertsonen kopurua oso txikia da, eta urtero txikiagotuz doa. ',
+            'body': 'lorem ipsum adhdyj gdh gsshh hu gdh gsh asgasd sdivvvvFVUvjusd cgibsdjhbcu'
+        },
+        {
+            'id': 7, 
+            'title': 'Third article',            
+            'author': 'Xabier',
+            'date_created': '02-02-2022',
+            'summary': 'Egiaz, Wikipediaren barnean, oraintxe, nahiko arrakastatsuak izaten ari diren zenbait proiektu ikusten ari gara, Europako hizkuntza txikietan. Beharbada, galesez jakitea ez da erabat beharrezkoa izango. Galesez jakinda ingelesez ez dakiten pertsonen kopurua oso txikia da, eta urtero txikiagotuz doa. ',
+            'body': 'lorem ipsum adhdyj gdh gsshh hu gdh gsh asgasd sdivvvvFVUvjusd cgibsdjhbcu'
+        },
+        {
+            'id': 8, 
+            'title': 'Third article',            
+            'author': 'Xabier',
+            'date_created': '02-02-2022',
+            'summary': 'Egiaz, Wikipediaren barnean, oraintxe, nahiko arrakastatsuak izaten ari diren zenbait proiektu ikusten ari gara, Europako hizkuntza txikietan. Beharbada, galesez jakitea ez da erabat beharrezkoa izango. Galesez jakinda ingelesez ez dakiten pertsonen kopurua oso txikia da, eta urtero txikiagotuz doa. ',
+            'body': 'lorem ipsum adhdyj gdh gsshh hu gdh gsh asgasd sdivvvvFVUvjusd cgibsdjhbcu'
+        },
+        {
+            'id': 9, 
+            'title': 'Third article',            
+            'author': 'Xabier',
+            'date_created': '02-02-2022',
+            'summary': 'Egiaz, Wikipediaren barnean, oraintxe, nahiko arrakastatsuak izaten ari diren zenbait proiektu ikusten ari gara, Europako hizkuntza txikietan. Beharbada, galesez jakitea ez da erabat beharrezkoa izango. Galesez jakinda ingelesez ez dakiten pertsonen kopurua oso txikia da, eta urtero txikiagotuz doa. ',
+            'body': 'lorem ipsum adhdyj gdh gsshh hu gdh gsh asgasd sdivvvvFVUvjusd cgibsdjhbcu'
+        }
+
     ]
 
 
