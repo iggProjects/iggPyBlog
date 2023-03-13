@@ -1,3 +1,6 @@
+# virtual env
+igg_venv/
+
 # Build and Release Folders
 bin-debug/
 bin-release/
