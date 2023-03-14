@@ -2,6 +2,7 @@
 
 from flask import Flask, render_template, url_for, request
 from article_data import Articles
+from excercise_data import Excercises
 import os
 
 
@@ -10,6 +11,7 @@ app = Flask(__name__)
 #app.config['UPLOAD_FOLDER'] = 'img' 
 
 Articles = Articles()
+Excercises = Excercises()
 
 @app.route('/')
 def index():    
@@ -28,7 +30,7 @@ def articles():
 
 @app.route('/article/')
 def display_article():
-    article = 10
+    article = 1
     id = int(request.args['id'])
     #print("len Articles",len(Articles))
     for i in range(len(Articles)):
@@ -39,7 +41,18 @@ def display_article():
 
 @app.route('/excercises')
 def excercises():
-    return render_template('excercises.html')
+    return render_template('excercises.html', excercises = Excercises)
+
+
+@app.route('/excercise/')
+def display_excercise():
+    excercise = 1
+    id = int(request.args['id'])    
+    for i in range(len(Excercises)):
+        if Excercises[i]['id'] == id:
+            excercise = Excercises[i]    
+    return render_template('excercise.html', excercise = excercise)
+
 
 @app.route('/project')
 def project():
