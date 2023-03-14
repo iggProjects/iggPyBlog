@@ -10,25 +10,29 @@
                 {{excercise.homework}}
             </p>    
         </div>    
-        <div style="width:95%; height:72%; margin: auto; padding: 2px;  overflow: auto;  border:2px solid rgb(190, 209, 250);">
+        <div style="width:95%; height:72%; margin: auto; padding: 2px;    border:2px solid rgb(190, 209, 250);">
             <h4 style="text-align: center; margin-top: 10px; padding-bottom: 5px; color:rgb(19, 1, 121); border-bottom: 1px solid gray;">Scheme for solution</h4>          
-            <table style="width:90%; ">                
+            <table style="width:85%; border: 1px solid rgb(219, 229, 252);">
                 <tr>
                     <th><a href="{{ excercise.source_url }}" target="_blank">source</a></th>
                     <th>page: {{ excercise.page }}</th>
                     <th><a href="{{excercise.github_url}}" target="_blank">github url</a></th>
                     <th><a href="{{excercise.pyAW_url}}" target="_blank">python AW url</a></th>
                     <th><a href="{{excercise.zip_url}}" target="_blank">download zip</a></th>
-                    <th>
-                        <img class="myImg" src="/static/img/ame-01.jpg" alt="ame-01"/>
+                    <th style="padding:10px;">
+                        <img class="myImg" src="/static/img/ame-01.jpg" alt="ame-01" width="40"/>
                     </th>
                 </tr>
-                <tr id="trBody">
-                    <td colspan="6" >
-                        {{excercise.body}}            
-                    </td>
-                </tr>
             </table>
+            <div style="height:70%; margin-top: 10px; overflow-y: scroll; ">
+                <table style="width:95%;">                
+                    <tr id="trBody">
+                        <td colspan="6" >
+                            {{excercise.body}}            
+                        </td>
+                    </tr>
+                </table>
+            </div>
             
         </div>         
     </div>
