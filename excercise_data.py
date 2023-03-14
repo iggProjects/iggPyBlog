@@ -14,7 +14,7 @@ def Excercises():
 
             'github_url': 'https://github.com/iggProjects/iggPyBlog',
             'pyAW_url': 'https://www.pythonanywhere.com/',
-            'zip_url': '/static/zip/LinearRegression.pdf',
+            'zip_url': '/static/zip/github-page-prueba-20220426.zip',
             'image_url': ''
         }
 

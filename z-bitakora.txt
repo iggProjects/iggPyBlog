@@ -1,25 +1,30 @@
-source: https://dev.to/geektechpub/flask-blog-tutorial-1-getting-started-10cd
 
-- continue work in "About routes" ✔
-- excercises data, templates and style ✔
+
 - favicon
-- scroll bar style
-- upload images 
-- download zip 
 - image zoom by click
     - https://linuxhint.com/image-zoom-in-zoom-out-javascript/
 - menu bar when width like phone
 - search in list-dict
+- upload images
+- link with pythonanywhere 
 
+- continue work in "About routes" ✔
+- excercises data, templates and style ✔
+- scroll bar style ✔
+- download zip ✔
 
 - mysql version
 - login
 
 ========================================================================================
 
+links: 
+
+simple posts blog 
+    - https://dev.to/geektechpub/flask-blog-tutorial-1-getting-started-10cd
+
 images --> https://www.youtube.com/watch?v=XTiM6HU0x9k
            https://gist.github.com/lakshyasri/5e59ca8a0c6e1eb413dfa1c6c88603dd
-
 
 MySql
     - https://www.geeksforgeeks.org/profile-application-using-python-flask-and-mysql/
