@@ -3,7 +3,7 @@ def Articles():
         {
             'id': 1, 
             'title': 'First article',            
-            'author': 'Igg',
+            'author': 'Iñaki Gainzarain',
             'date_created': '26-01-2022',
             'summary': 'El Módulo de Caja Flexible, comúnmente llamado flexbox, fue diseñado como un modelo unidimensional de layout, y como un método que pueda ayudar a distribuir el espacio entre los ítems de una interfaz y mejorar las capacidades de alineación. Este artículo hace un repaso de las principales características de flexbox, las que exploraremos con mayor detalle en el resto de estas guías.',
             'body': 'testing html -- testing'
@@ -11,7 +11,7 @@ def Articles():
         {
             'id': 2, 
             'title': 'Second article',            
-            'author': 'Che',
+            'author': 'Che Kulhan',
             'date_created': '31-01-2022',
             'summary': 'This defines the ability for a flex item to grow if necessary. It accepts a unitless value that serves as a proportion. It dictates what amount of the available space inside the flex container the item should take up.',
             'body': 'lorem ipsum adhdyj gdh gsshh hu gdh gsh asgasd sdivvvvFVUvjusd cgibsdjhbcu'
