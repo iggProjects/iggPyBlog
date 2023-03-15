@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>iggPyBlog</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">    
+    <style>
+
+        /* width */
+        ::-webkit-scrollbar {
+        width: 4px;
+        }
+
+        /* Track */
+        ::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 5px grey; 
+        border-radius: 10px;
+        }
+        
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+        background: blue; 
+        border-radius: 15px;
+        }
+
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover {
+        background: green; 
+        }
+
+        .nav-disp-rows-cent{ display: flex; flex-direction: row; flex-wrap: wrap; justify-content: space-around; align-items: center; align-content: stretch; }
+
+        .disp-rows-cent{ display: flex; flex-direction: row; flex-wrap: wrap; justify-content: space-around; align-items: center; align-content: stretch; }
+        .disp-cols-cent{ display: flex; flex-direction: column; flex-wrap: wrap; justify-content: flex-start; align-items: stretch; align-content: stretch; }
+        table { margin:auto; border-collapse: collapse; }
+        .tableWithBorders { border: 1px solid rgb(156, 156, 156); padding:3px; }
+        table th { width:16%; }        
+        th, td { text-align: center; }
+        td { font-size: 12px;}
+        #trBody { height: 300px;}
+        #trBody td { text-align: left; vertical-align: baseline; padding: 3px; }
+        table img {  border-radius: 10px;  }
+
+        #tableCourse { border: none; }
+
+    </style>
+
+</head>
+<body>    
+    
+    {% include 'includes/_navbar-login.html' %}
+    <div class="container">        
+        {% block body%} {% endblock%}
+    </div>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</body>
+</html>
