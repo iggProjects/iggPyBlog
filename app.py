@@ -16,7 +16,8 @@ Excercises = Excercises()
 
 @app.route('/')
 def index():    
-    return render_template('login.html')
+    #return render_template('login.html')
+    return render_template('home.html')
 
 
 @app.route('/course')
@@ -77,7 +78,6 @@ def login():
 
 
 if __name__ == '__main__':
-    #login.run(debug=True)
     app.run(debug=True)
 
 
