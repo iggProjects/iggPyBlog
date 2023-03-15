@@ -7,14 +7,20 @@
 - search in list-dict
 - upload images
 - link with pythonanywhere 
+- modal
+
+- mysql version
+- login  (z index effect)
+    - https://www.geeksforgeeks.org/login-and-registration-project-using-flask-and-mysql/
+    - https://github.com/j2logo/tutorial-flask/blob/master/app/admin/routes.py
+    - https://realpython.com/introduction-to-flask-part-2-creating-a-login-page/
+
 
 - continue work in "About routes" ✔
 - excercises data, templates and style ✔
 - scroll bar style ✔
 - download zip ✔
 
-- mysql version
-- login
 
 ========================================================================================
 
