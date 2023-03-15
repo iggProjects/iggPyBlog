@@ -30,6 +30,11 @@ def login():
     #return render_template('login.html')
     #return render_template('home.html')
 
+@app.route('/home')
+def home():
+    return render_template('home.html')
+
+
 @app.route('/course')
 def course():
     return render_template('course.html')
