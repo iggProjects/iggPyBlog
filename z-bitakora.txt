@@ -9,6 +9,12 @@
 - link with pythonanywhere 
 - modal
 
+- COLORS in power shell
+    - https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_ansi_terminals?view=powershell-7.3
+    - https://stackoverflow.com/questions/53629115/colored-text-output-on-powershell
+    - https://pypi.org/project/colorama/
+    - https://devblogs.microsoft.com/scripting/hey-scripting-guy-weekend-scripter-using-windows-powershell-2-0-to-display-color-coded-output-in-a-table/
+
 - mysql version
 - login  (z index effect)
     - https://www.geeksforgeeks.org/login-and-registration-project-using-flask-and-mysql/
