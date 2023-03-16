@@ -3,11 +3,28 @@
 - favicon
 - image zoom by click
     - https://linuxhint.com/image-zoom-in-zoom-out-javascript/
+
 - menu bar when width like phone
-- search in list-dict
-- upload images
-- link with pythonanywhere 
+
+- live search in list-dict
+- EXCERCISE files ( os )
+    - VIEW FOR SCRIPTS to be UPLOAD_FOLDER
+    - create and execute file.bat
+        - https://stackoverflow.com/questions/13525129/python-how-can-i-execute-bat-file-in-new-cmd-window
+        - https://datatofish.com/batch-file-from-python/
+        - https://datatofish.com/batch-python-script/
+        - https://discuss.python.org/t/how-to-run-batch-file-by-using-python-code/17128/2
+
+- link with pythonanywhere ??? 
 - modal
+
+- drag and drop zip files 
+    - https://www.easydevguide.com/posts/drag_drop_upload
+    - https://gist.github.com/peace098beat/db8ef7161508e6500ebe
+    - https://www.youtube.com/watch?v=m-t5ZNHNa_Y
+    - https://mindlesstechnology.wordpress.com/2008/03/29/make-python-scripts-droppable-in-windows/
+    - https://stackoverflow.com/questions/142844/drag-and-drop-onto-python-script-in-windows-explorer
+
 
 - COLORS in power shell
     - https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_ansi_terminals?view=powershell-7.3
