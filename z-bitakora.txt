@@ -7,7 +7,14 @@
 - search in list-dict
 - upload images
 - link with pythonanywhere 
-- modal
+- modal for img
+- drag & drop files
+
+- Open console with python statement
+    - https://datatofish.com/command-prompt-python/
+        import os
+        os.system('cmd /k "color a & date"')
+        os.system('cmd /c "py ./20230227-OS-Dir-Files-Example_For_Teacher.py"')
 
 - COLORS in power shell
     - https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_ansi_terminals?view=powershell-7.3
