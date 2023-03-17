@@ -60,6 +60,35 @@ simple posts blog
 images --> https://www.youtube.com/watch?v=XTiM6HU0x9k
            https://gist.github.com/lakshyasri/5e59ca8a0c6e1eb413dfa1c6c88603dd
 
+url_for
+    - https://flask.palletsprojects.com/en/2.2.x/api/#flask.url_for      
+
+js calling python function
+    https://stackoverflow.com/questions/42601478/flask-calling-python-function-on-button-onclick-event  
+
+        EXAMPLE
+        PYTHON
+        you can create a generic route to execute everything you want in python:
+
+        @app.route('/<FUNCTION>')
+        def command(FUNCTION=None):
+            exec(FUNCTION.replace("<br>", "\n"))
+            return ""
+        JAVASCRIPT
+        now you create a javascript function to access the python function:
+
+        // pythonCommand can be any code in python
+        function ExecPythonCommand(pythonCommand){
+            var request = new XMLHttpRequest()
+            request.open("GET", "/" + pythonCommand, true)
+            request.send()
+        }
+        ONCLICK
+        and finally call the javascript function in onclick and say what do you want execute in python script:
+
+        <button type="button" onclick="ExecPythonCommand('move_forward()')">i'm a button</button>    
+
+
 MySql
     - https://www.geeksforgeeks.org/profile-application-using-python-flask-and-mysql/
 

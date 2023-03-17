@@ -21,9 +21,12 @@
                     <th><a href="{{excercise.github_url}}" target="_blank">github url</a></th>
                     <th><a href="{{excercise.pyAW_url}}" target="_blank">python AW url</a></th>
                     <th><a href="{{excercise.zip_url}}" target="_blank">download zip</a></th>
+                <!--    <th><a href="{{excercise.console_url}}" target="_blank">open console</a></th>  -->
+                   
                     <th style="padding:10px;">
-                        <img class="myImg" src="/static/img/ame-01.jpg" alt="ame-01" width="40"/>
+                        <img class="myImg" src="{{ url_for('static', filename='/img/CmdLine.jpg') }}" title='command line' alt="ame-01" width="40"/>
                     </th>
+                    
                 </tr>
             </table>
             <div style="height:70%; margin-top: 10px; overflow-y: auto; ">
