@@ -63,6 +63,9 @@ images --> https://www.youtube.com/watch?v=XTiM6HU0x9k
 url_for
     - https://flask.palletsprojects.com/en/2.2.x/api/#flask.url_for      
 
+download in a specific dir:
+    - https://itnext.io/how-to-download-files-with-javascript-d5a69b749896    
+
 js calling python function
     https://stackoverflow.com/questions/42601478/flask-calling-python-function-on-button-onclick-event  
 
