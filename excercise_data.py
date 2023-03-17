@@ -14,7 +14,7 @@ def Excercises():
 
             'github_url': 'https://github.com/iggProjects/iggPyBlog',
             'pyAW_url': 'https://www.pythonanywhere.com/',
-            'zip_url': '/static/zip/github-page-prueba-20220426.zip',
+            'zip_url': '/static/zip/20230227-OS-Dir-Files-Example_For_Teacher.zip',
             'image_url': ''
         }
 
