@@ -1,11 +1,17 @@
+BITAKORA
 
-
-- favicon
 - image zoom by click
     - https://linuxhint.com/image-zoom-in-zoom-out-javascript/
 - menu bar when width like phone
 - search in list-dict
 - upload images
+- create zip with os
+    - https://stackoverflow.com/questions/25544475/using-python-to-add-a-list-of-files-into-a-zip-file
+    - https://stackoverflow.com/questions/27991745/zip-file-and-avoid-directory-structure
+    - https://thispointer.com/python-how-to-create-a-zip-archive-from-multiple-files-or-directory/
+    - https://realpython.com/python-zipfile/
+
+
 - link with pythonanywhere 
 - modal for img
 - drag & drop files
@@ -44,6 +50,7 @@
     - https://realpython.com/introduction-to-flask-part-2-creating-a-login-page/
 
 
+- favicon, ...  -->  icons8 free page ✔
 - continue work in "About routes" ✔
 - excercises data, templates and style ✔
 - scroll bar style ✔
