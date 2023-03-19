@@ -11,8 +11,6 @@ import math
 import os
 import platform
 
-from colorama import Fore, Back, Style
-
 from MyFunc_ForTeacher import *
 from Colors_ForTeacher import *
 
@@ -21,7 +19,6 @@ from Colors_ForTeacher import *
 #
 
 if __name__ == "__main__":
-    #print(f"\n{Fore.RED}---------- main ----------{Style.RESET_ALL}\n")
     print(f"\n{FR_GREEN}---------- main ----------{NO_COLOR}\n")
     pause()
 
