@@ -1,34 +1,63 @@
 BITAKORA
 
+STILL TO DO !
+
+- modal for img
+
+- create file openCmdLine function to generate openCmdLine.py with file info
+    - import os, os.system('cls'), os.system('cmd /c "{{ args file }}"')
+
+
 - image zoom by click
     - https://linuxhint.com/image-zoom-in-zoom-out-javascript/
+
+- download to specified dir ???
+    - https://itnext.io/how-to-download-files-with-javascript-d5a69b749896    
+
+
+
 - menu bar when width like phone
 - search in list-dict
 - upload images
-- create zip with os
-    - https://stackoverflow.com/questions/25544475/using-python-to-add-a-list-of-files-into-a-zip-file
-    - https://stackoverflow.com/questions/27991745/zip-file-and-avoid-directory-structure
-    - https://thispointer.com/python-how-to-create-a-zip-archive-from-multiple-files-or-directory/
-    - https://realpython.com/python-zipfile/
 
 
 - link with pythonanywhere 
-- modal for img
-- drag & drop files
 
-- EXCERCISE files ( os )
-    - VIEW FOR SCRIPTS to be UPLOAD_FOLDER
-    - create and execute file.bat
-        - https://stackoverflow.com/questions/13525129/python-how-can-i-execute-bat-file-in-new-cmd-window
-        - https://datatofish.com/batch-file-from-python/
-        - https://datatofish.com/batch-python-script/
-        - https://discuss.python.org/t/how-to-run-batch-file-by-using-python-code/17128/2
+- download in a specific dir:
 
-- Open console with python statement
-    - https://datatofish.com/command-prompt-python/
-        import os
-        os.system('cmd /k "color a & date"')
-        os.system('cmd /c "py ./20230227-OS-Dir-Files-Example_For_Teacher.py"')
+js calling python function    
+
+    py-script
+        - https://www.jhanley.com/blog/pyscript-javascript-callbacks/
+        - https://docs.pyscript.net/latest/guides/passing-objects.html
+        - https://stackoverflow.com/questions/72321468/how-do-i-call-a-python-script-when-clicking-a-button-using-pyscript
+
+    - https://stackoverflow.com/questions/42601478/flask-calling-python-function-on-button-onclick-event  
+
+        EXAMPLE EXECUTE PYTHON SCRIPT
+
+        you can create a generic route to execute everything you want in python:
+
+        @app.route('/<FUNCTION>')
+        def command(FUNCTION=None):
+            exec(FUNCTION.replace("<br>", "\n"))
+            return ""
+
+        JAVASCRIPT
+            now you create a javascript function to access the python function:
+
+            // pythonCommand can be any code in python
+            function ExecPythonCommand(pythonCommand){
+                var request = new XMLHttpRequest()
+                request.open("GET", "/" + pythonCommand, true)
+                request.send()
+            }
+
+        ONCLICK
+            and finally call the javascript function in onclick and say what do you want execute in python script:
+
+            <button type="button" onclick="ExecPythonCommand('move_forward()')">i'm a button</button>    
+
 
 - drag and drop zip files 
     - https://www.easydevguide.com/posts/drag_drop_upload
@@ -37,24 +66,50 @@ BITAKORA
     - https://mindlesstechnology.wordpress.com/2008/03/29/make-python-scripts-droppable-in-windows/
     - https://stackoverflow.com/questions/142844/drag-and-drop-onto-python-script-in-windows-explorer
 
-- COLORS in power shell
-    - https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_ansi_terminals?view=powershell-7.3
-    - https://stackoverflow.com/questions/53629115/colored-text-output-on-powershell
-    - https://pypi.org/project/colorama/
-    - https://devblogs.microsoft.com/scripting/hey-scripting-guy-weekend-scripter-using-windows-powershell-2-0-to-display-color-coded-output-in-a-table/
-
 - mysql version
 - login  (z index effect)
     - https://www.geeksforgeeks.org/login-and-registration-project-using-flask-and-mysql/
     - https://github.com/j2logo/tutorial-flask/blob/master/app/admin/routes.py
     - https://realpython.com/introduction-to-flask-part-2-creating-a-login-page/
 
+*********************************************************************************************
+
+DO IT !!!
 
 - favicon, ...  -->  icons8 free page ✔
 - continue work in "About routes" ✔
 - excercises data, templates and style ✔
 - scroll bar style ✔
 - download zip ✔
+
+- EXCERCISE files ( os )  ✔
+    - VIEW FOR SCRIPTS to be UPLOAD_FOLDER
+    - create and execute file.bat
+        - https://stackoverflow.com/questions/13525129/python-how-can-i-execute-bat-file-in-new-cmd-window
+        - https://datatofish.com/batch-file-from-python/
+        - https://datatofish.com/batch-python-script/
+        - https://discuss.python.org/t/how-to-run-batch-file-by-using-python-code/17128/2
+
+
+- Open console with python statement  ✔
+    - https://datatofish.com/command-prompt-python/
+        import os
+        os.system('cmd /k "color a & date"')
+        os.system('cmd /c "py ./20230227-OS-Dir-Files-Example_For_Teacher.py"')
+
+- create zip with os ✔
+    - https://stackoverflow.com/questions/25544475/using-python-to-add-a-list-of-files-into-a-zip-file
+    - https://stackoverflow.com/questions/27991745/zip-file-and-avoid-directory-structure
+    - https://thispointer.com/python-how-to-create-a-zip-archive-from-multiple-files-or-directory/
+    - https://realpython.com/python-zipfile/
+
+- COLORS in power shell  ✔   (-->  os.system('cls') )
+    - https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_ansi_terminals?view=powershell-7.3
+    - https://stackoverflow.com/questions/53629115/colored-text-output-on-powershell
+    - https://pypi.org/project/colorama/
+    - https://devblogs.microsoft.com/scripting/hey-scripting-guy-weekend-scripter-using-windows-powershell-2-0-to-display-color-coded-output-in-a-table/
+
+
 
 
 ========================================================================================
@@ -70,33 +125,7 @@ images --> https://www.youtube.com/watch?v=XTiM6HU0x9k
 url_for
     - https://flask.palletsprojects.com/en/2.2.x/api/#flask.url_for      
 
-download in a specific dir:
-    - https://itnext.io/how-to-download-files-with-javascript-d5a69b749896    
 
-js calling python function
-    https://stackoverflow.com/questions/42601478/flask-calling-python-function-on-button-onclick-event  
-
-        EXAMPLE
-        PYTHON
-        you can create a generic route to execute everything you want in python:
-
-        @app.route('/<FUNCTION>')
-        def command(FUNCTION=None):
-            exec(FUNCTION.replace("<br>", "\n"))
-            return ""
-        JAVASCRIPT
-        now you create a javascript function to access the python function:
-
-        // pythonCommand can be any code in python
-        function ExecPythonCommand(pythonCommand){
-            var request = new XMLHttpRequest()
-            request.open("GET", "/" + pythonCommand, true)
-            request.send()
-        }
-        ONCLICK
-        and finally call the javascript function in onclick and say what do you want execute in python script:
-
-        <button type="button" onclick="ExecPythonCommand('move_forward()')">i'm a button</button>    
 
 
 MySql

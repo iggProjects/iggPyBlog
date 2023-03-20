@@ -20,11 +20,10 @@
                     <th>page: {{ excercise.page }}</th>
                     <th><a href="{{excercise.github_url}}" target="_blank">github url</a></th>
                     <th><a href="{{excercise.pyAW_url}}" target="_blank">python AW url</a></th>
-                    <th><a href="{{excercise.zip_url}}" target="_blank">download zip</a></th>
-                <!--    <th><a href="{{excercise.console_url}}" target="_blank">open console</a></th>  -->
+                    <th><a href="{{excercise.zip_url}}" target="_blank">download zip</a></th>               
                    
                     <th style="padding:10px;">
-                        <img class="myImg" src="{{ url_for('static', filename='/img/icons8-consola-100.png') }}" title='command line' alt="ame-01" width="30"/>
+                        <img class="myImg" onclick='call_cmd()' src="{{ url_for('static', filename='/img/icons8-consola-100.png') }}" title='command line' alt="console-100" width="30"/>                        
                     </th>
                     
                 </tr>
@@ -41,5 +40,11 @@
             
         </div>         
     </div>
+
+    <script>
+        function call_cmd() {
+            alert('I am working in how to call cmd line from python script')
+        }
+    </script>
 
 {% endblock %}

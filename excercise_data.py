@@ -16,7 +16,8 @@ def Excercises():
 
             'github_url': 'https://github.com/iggProjects/iggPyBlog',
             'pyAW_url': 'https://www.pythonanywhere.com/',
-            'zip_url': '/static/zip/20230227-OS-Dir-Files-Example_For_Teacher.zip'            
+            'zip_url': '/static/zip/20230227-OS-Dir-Files-Example_For_Teacher.zip',  
+            'img': '/img/icons8-consola-100.png'          
             
         }
 
