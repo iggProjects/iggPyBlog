@@ -301,3 +301,9 @@ def zip_dir(directory, zipname):
                 outZipFile.write(filepath, arcname)
 
     outZipFile.close()
+
+
+def zip_file_list(file_list, zipname):
+    """
+    Compress a directory (ZIP file).
+    """
