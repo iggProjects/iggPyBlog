@@ -2,30 +2,28 @@ BITAKORA
 
 STILL TO DO !
 
-- modal for img
+- make script def zip_file_list(list, zipname)
+
+- modal for img  vs image zoom by click
+    - https://linuxhint.com/image-zoom-in-zoom-out-javascript/
+
 
 - create file openCmdLine function to generate openCmdLine.py with file info
-    - import os, os.system('cls'), os.system('cmd /c "{{ args file }}"')
+    - on click, must read file name, and call "python z-openCmdLine.py filename" 
+            ( import os, os.system('cls'), os.system('cmd /c ' + sys.argv[1]) )
 
-
-- image zoom by click
-    - https://linuxhint.com/image-zoom-in-zoom-out-javascript/
 
 - download to specified dir ???
     - https://itnext.io/how-to-download-files-with-javascript-d5a69b749896    
-
 
 
 - menu bar when width like phone
 - search in list-dict
 - upload images
 
-
 - link with pythonanywhere 
 
-- download in a specific dir:
-
-js calling python function    
+- js calling python function    
 
     py-script
         - https://www.jhanley.com/blog/pyscript-javascript-callbacks/
@@ -38,10 +36,11 @@ js calling python function
 
         you can create a generic route to execute everything you want in python:
 
-        @app.route('/<FUNCTION>')
-        def command(FUNCTION=None):
-            exec(FUNCTION.replace("<br>", "\n"))
-            return ""
+        APP
+            @app.route('/<FUNCTION>')
+            def command(FUNCTION=None):
+                exec(FUNCTION.replace("<br>", "\n"))
+                return ""
 
         JAVASCRIPT
             now you create a javascript function to access the python function:
