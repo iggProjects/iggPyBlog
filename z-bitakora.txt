@@ -23,7 +23,14 @@ STILL TO DO !
 
 - link with pythonanywhere 
 
-- js calling python function    
+- Python Shell Commands 
+    - https://www.the-analytics.club/python-shell-commands
+
+- Running python script on cmd(Windows) through java script
+    - vhttps://stackoverflow.com/questions/52806389/running-python-script-on-cmdwindows-through-java-script
+    - https://stackoverflow.com/questions/1880198/how-to-execute-shell-command-in-javascript
+
+- JS calling python function    
 
     py-script
         - https://www.jhanley.com/blog/pyscript-javascript-callbacks/
@@ -41,6 +48,11 @@ STILL TO DO !
             def command(FUNCTION=None):
                 exec(FUNCTION.replace("<br>", "\n"))
                 return ""
+
+            def run_script():
+                file = open(r'/path/to/your/file.py', 'r').read()
+                return exec(file)
+
 
         JAVASCRIPT
             now you create a javascript function to access the python function:

@@ -68,6 +68,13 @@ def display_excercise():
             excercise = Excercises[i]    
     return render_template('excercise.html', excercise = excercise)
 
+@app.route('/pythonScript/')
+def run_script():
+    
+    file = open(r'../static/py_excercises/20230227/z-openCmdLine.py','r').read()
+    return exec(file)
+
+
 
 @app.route('/project')
 def project():
