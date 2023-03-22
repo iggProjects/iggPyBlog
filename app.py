@@ -27,9 +27,6 @@ def login():
     return render_template('login.html', error=error)
 
 
-    #return render_template('login.html')
-    #return render_template('home.html')
-
 @app.route('/home')
 def home():
     return render_template('home.html')
@@ -66,13 +63,24 @@ def display_excercise():
     for i in range(len(Excercises)):
         if Excercises[i]['id'] == id:
             excercise = Excercises[i]    
+    #
+    #  code to update .bat file with excercise script
+    #         
+
     return render_template('excercise.html', excercise = excercise)
 
 @app.route('/pythonScript/')
-def run_script():
+def ExecPythonScript():
+    import os
+    os.system('cls')
+    os.system('cmd /c "z_execution_file.bat"')
     
-    file = open(r'../static/py_excercises/20230227/z-openCmdLine.py','r').read()
-    return exec(file)
+    # to check later
+    #file = open(r'z-openCmdLine-20230227-OS-Dir-Files.py','r').read()
+    #file = open(r'../static/py_excercises/20230227/z-openCmdLine.py','r').read()
+    #exec(file)
+    
+    return ""
 
 
 
@@ -102,5 +110,3 @@ def login():
 
 if __name__ == '__main__':
     app.run(debug=True)
-
-

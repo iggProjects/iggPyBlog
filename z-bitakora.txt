@@ -2,26 +2,49 @@ BITAKORA
 
 STILL TO DO !
 
-- make script def zip_file_list(list, zipname)
+- init with home and create login flow to CRUD posts -- MySql
+
+- script to update z_execution_file.bat (called from JS in excercise.html)
+    - check how to write sub dirs  ✔✔
+
+- check option cmd vs .bat
+    - create all .bat    
+
+- MyFunctions: make script zip_file_list(list, zipname)
+
+- zip files: create all zip files to download
+    - download to specified dir ???
+        - https://itnext.io/how-to-download-files-with-javascript-d5a69b749896    
 
 - modal for img  vs image zoom by click
     - https://linuxhint.com/image-zoom-in-zoom-out-javascript/
-
-
-- create file openCmdLine function to generate openCmdLine.py with file info
-    - on click, must read file name, and call "python z-openCmdLine.py filename" 
-            ( import os, os.system('cls'), os.system('cmd /c ' + sys.argv[1]) )
-
-
-- download to specified dir ???
-    - https://itnext.io/how-to-download-files-with-javascript-d5a69b749896    
-
 
 - menu bar when width like phone
 - search in list-dict
 - upload images
 
-- link with pythonanywhere 
+- drag and drop zip files 
+    - https://www.easydevguide.com/posts/drag_drop_upload
+    - https://gist.github.com/peace098beat/db8ef7161508e6500ebe
+    - https://www.youtube.com/watch?v=m-t5ZNHNa_Y
+    - https://mindlesstechnology.wordpress.com/2008/03/29/make-python-scripts-droppable-in-windows/
+    - https://stackoverflow.com/questions/142844/drag-and-drop-onto-python-script-in-windows-explorer
+
+- mysql version
+- login  (z index effect)
+    - https://www.geeksforgeeks.org/login-and-registration-project-using-flask-and-mysql/
+    - https://github.com/j2logo/tutorial-flask/blob/master/app/admin/routes.py
+    - https://realpython.com/introduction-to-flask-part-2-creating-a-login-page/
+
+*********************************************************************************************
+
+DO IT !!!
+
+- link with pythonanywhere  ✔✔
+
+- create file openCmdLine function to generate openCmdLine.py with file info    
+    - on click, must read file name, and call "python z-openCmdLine.py filename" 
+            ( import os, os.system('cls'), os.system('cmd /c ' + sys.argv[1]) )
 
 - Python Shell Commands 
     - https://www.the-analytics.club/python-shell-commands
@@ -53,7 +76,12 @@ STILL TO DO !
                 file = open(r'/path/to/your/file.py', 'r').read()
                 return exec(file)
 
-
+            def run_script():
+                import os
+                os.system('cls')
+                os.system('cmd /c "z_testing_execution_file.bat"')
+                return render_template('excersises.html',excercises = Excercises)
+    
         JAVASCRIPT
             now you create a javascript function to access the python function:
 
@@ -67,25 +95,7 @@ STILL TO DO !
         ONCLICK
             and finally call the javascript function in onclick and say what do you want execute in python script:
 
-            <button type="button" onclick="ExecPythonCommand('move_forward()')">i'm a button</button>    
-
-
-- drag and drop zip files 
-    - https://www.easydevguide.com/posts/drag_drop_upload
-    - https://gist.github.com/peace098beat/db8ef7161508e6500ebe
-    - https://www.youtube.com/watch?v=m-t5ZNHNa_Y
-    - https://mindlesstechnology.wordpress.com/2008/03/29/make-python-scripts-droppable-in-windows/
-    - https://stackoverflow.com/questions/142844/drag-and-drop-onto-python-script-in-windows-explorer
-
-- mysql version
-- login  (z index effect)
-    - https://www.geeksforgeeks.org/login-and-registration-project-using-flask-and-mysql/
-    - https://github.com/j2logo/tutorial-flask/blob/master/app/admin/routes.py
-    - https://realpython.com/introduction-to-flask-part-2-creating-a-login-page/
-
-*********************************************************************************************
-
-DO IT !!!
+            <button type="button" onclick="ExecPythonCommand('move_forward()')">i'm a button</button>
 
 - favicon, ...  -->  icons8 free page ✔
 - continue work in "About routes" ✔
