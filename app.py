@@ -71,9 +71,9 @@ def display_excercise():
 
 @app.route('/pythonScript/')
 def ExecPythonScript():
-    import os
-    os.system('cls')
-    os.system('cmd /c "z_execution_file.bat"')
+    from os import system
+    system('cls')
+    system('cmd /c "z_execution_file.bat"')
     
     # to check later
     #file = open(r'z-openCmdLine-20230227-OS-Dir-Files.py','r').read()
