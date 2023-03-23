@@ -72,7 +72,7 @@ def display_excercise():
 @app.route('/pythonScript/')
 def ExecPythonScript():
     from os import system
-    system('cls')
+    #system('cls')
     system('cmd /c "z_execution_file.bat"')
     
     # to check later
