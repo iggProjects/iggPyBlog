@@ -2,35 +2,31 @@
 
 {%  block body %}    
 
-    <h1 style="text-align: left; margin-left:20px; margin-top: 3px; color:gray">Excercise {{ excercise.id }}</h1>
-    <div class="disp-cols-cent"  style="padding:5px; height:78vh; border:10px solid rgb(190, 209, 250)">
-
-        <div style="width:95%; height:25%; margin: auto; padding: 2px; overflow: auto;  border:2px solid rgb(190, 209, 250);">
-            <h4 style="text-align: center; margin-top: 10px; padding-bottom: 5px;color:rgb(19, 1, 121); border-bottom: 1px solid gray;">Problem Statement</h3>
-            <p style="text-align: center; margin-top: 5px; font-size: 12px; color:rgb(81, 81, 81); overflow:auto">
+    <h1 style="text-align: center; margin-left:25px; margin-top: 3px; font-size:25px;  color:rgb(93, 92, 92)">Excercise {{ excercise.id }}, Author {{excercise.author}}, date {{excercise.date_created}}</h1>
+    <div class="disp-cols-cent"  style="padding:5px; height:80vh; border:10px solid rgb(190, 209, 250)">
+        <table style="width:85%; ">
+            <tr>                
+                <th><a href="{{ excercise.source_url }}" target="_blank"><span style="color:green">Section</span><br><span style="color:rgb(163, 23, 2)">"{{ excercise.section }}"</span></a></th>
+                <th><img class="myImg" onclick='' src="{{ url_for('static', filename='img/icons8-flow-chart-64.png') }}" title='Zoom flow chart' alt="console-100" width="30"/></th>
+                <th><span style="color:green">script name</span><br><span style="color:rgb(163, 23, 2)">"{{excercise.fileName}}"</span></a></th>
+                <th><a href="{{excercise.zip_url}}" target="_blank"><img class="myImg" onclick='ExecPythonScript()' src="{{ url_for('static', filename='img/icons8-descargar-de-la-nube-100.png') }}" title='Download py script' alt="download-100" width="30"/></a></th>                              
+                <th style="padding:10px;">
+                    <img class="myImg" onclick='ExecPythonScript()' src="{{ url_for('static', filename='img/icons8-consola-100.png') }}" title='Run in command line console' alt="console-100" width="30"/>
+                    <!-- <img class="myImg" onclick='ExecPythonScript()' src="{{ url_for('static', filename='img/icons8-consola-100.png') }}" title='command line' alt="console-100" width="30"/> -->
+                    <!-- <img class="myImg" onclick='alert("I am working in this option...")' src="{{ url_for('static', filename='img/icons8-consola-100.png') }}" title='command line' alt="console-100" width="30"/> -->
+                </th>                
+            </tr>
+        </table>   
+        <h4 style="text-align: center; width:95%; margin:auto; margin-top: 10px; padding-bottom: 5px;color:rgb(19, 1, 121); ">Problem Statement</h3> 
+        <div style="width:95%; height:20%; margin: auto; padding: 2px; overflow: auto;  border:2px solid rgb(190, 209, 250);">
+            <p style="text-align: left; margin-top: 2px; padding: 5px; font-size: 12px; color:rgb(81, 81, 81); overflow:auto">
                 {{excercise.homework}}
             </p>    
         </div>    
 
-        <div style="width:95%; height:72%; margin: auto; padding: 2px; border:2px solid rgb(190, 209, 250);">
+        <div style="width:95%; height:60%; margin: auto; padding: 2px; border:2px solid rgb(190, 209, 250);">
             <h4 style="text-align: center; margin-top: 10px; padding-bottom: 5px; color:rgb(19, 1, 121); border-bottom: 1px solid gray;">Scheme for solution</h4>          
-            <table style="width:85%; border: 1px solid rgb(219, 229, 252);">
-                <tr>
-                    <th><a href="{{ excercise.source_url }}" target="_blank">source</a></th>
-                    <th>page: {{ excercise.page }}</th>
-                    <th><a href="{{excercise.github_url}}" target="_blank">github url</a></th>
-                    <th><a href="{{excercise.pyAW_url}}" target="_blank">python AW url</a></th>
-                    <th><a href="{{excercise.zip_url}}" target="_blank">download zip</a></th>               
-                   
-                    <th style="padding:10px;">
-                        <img class="myImg" onclick='ExecPythonScript()' src="{{ url_for('static', filename='img/icons8-consola-100.png') }}" title='command line' alt="console-100" width="30"/>
-                        <!-- <img class="myImg" onclick='ExecPythonScript()' src="{{ url_for('static', filename='img/icons8-consola-100.png') }}" title='command line' alt="console-100" width="30"/> -->
-                        <!-- <img class="myImg" onclick='alert("I am working in this option...")' src="{{ url_for('static', filename='img/icons8-consola-100.png') }}" title='command line' alt="console-100" width="30"/> -->
-                    </th>
-                    
-                </tr>
-            </table>
-            <div style="height:70%; margin-top: 10px; overflow-y: auto; ">
+            <div style="height:85%; margin-top: 10px; overflow-y: auto; ">
                 <table style="width:95%;">                
                     <tr id="trBody">
                         <td colspan="6" >
