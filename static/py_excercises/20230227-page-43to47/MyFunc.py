@@ -15,7 +15,7 @@
 #
 # IMPORT LIBRERIES OR YOUR OWN FUNCTIONS 
 #
-from Colors_ForTeacher import *
+from MyColors import *
 
 #
 # COLORS CONSTANTS

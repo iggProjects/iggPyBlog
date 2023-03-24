@@ -12,8 +12,8 @@
 #
 import random
 
-from MyFunc_ForTeacher import *
-from Colors_ForTeacher import *
+from MyFunc import *
+from MyColors import *
 
 #
 # ---------- COURSE EXCERCISE ----------

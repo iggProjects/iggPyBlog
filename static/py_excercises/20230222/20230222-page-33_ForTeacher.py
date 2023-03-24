@@ -10,8 +10,8 @@
 #
 # IMPORT SECTION
 #
-from MyFunc_ForTeacher import *
-from Colors_ForTeacher import *
+from MyFunc import *
+from MyColors import *
 from math import ceil
 
 #

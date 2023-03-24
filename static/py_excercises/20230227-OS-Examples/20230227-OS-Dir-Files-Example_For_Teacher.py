@@ -1,39 +1,55 @@
 """  
-1.- This code is to pass the exercises to the teacher
-2.- The SCRIPT is for:
-    2.1.-
-    2-2.-
-    .
-    .
+THIS SCRIPT IS FOR..................
 
 """
 #
 # IMPORT SECTION
 #
 
-# clear screen with system('cls')
-from os import system 
+import os
+import platform
 
-# my generic functions
-from MyFunc_ForTeacher import *
-from Colors_ForTeacher import *
+#  my own functions
+from MyFunc import *
+# my colors functions&contants,
+from MyColors import *
+# from colorama import Fore, Back, Style
 
 #
 # ---------- COURSE EXCERCISE ----------
 #
 
-
 if __name__ == "__main__":
-
-    # clean screen
-    system('cls')
-
+    #print(f"\n{Fore.RED}---------- main ----------{Style.RESET_ALL}\n")
     print(f"\n{FR_GREEN}---------- main ----------{NO_COLOR}\n")
     pause()
 
-    # my code
+    # my code    
+    myPath = os.getcwd()
+    f = []
+    for (dirpath, dirnames, filenames) in os.walk(myPath):
+        f.extend(filenames)
+        break
+    print(f"{FR_GREEN}path -->{NO_COLOR} {myPath}\n")
+    matrix_view(f,3)
+    print(f"\n------------------------------------------------\n")
 
-    
+    parent = os.chdir('../')
+    parentPath = os.getcwd()
+    print(f"{FR_GREEN}parent path -->{NO_COLOR} {parentPath}\n")
+    f = []
+    for (dirpath, dirnames, filenames) in os.walk(parentPath):
+        f.extend(filenames)
+        break
+    matrix_view(f,3)
+    print(f"\n------------------------------------------------\n")
+
+    # Library methods info 
+    pause()
+    library_methods(os)
+    pause()
+    library_methods(platform)
+   
     # ------------------------------------------------
     #          SHOW VARS CHARACTERISTICS 
     #------------------------------------------------ 
@@ -57,6 +73,7 @@ if __name__ == "__main__":
         except NameError:
             print(f"\n\t{FR_RED}---- Var '{_what_var}' doesn't exits 🙄🙄  ----")
             print(f"\n{FR_GREEN}--------------- That's all for today 👌 ---------------{NO_COLOR}\n")
+            #_my_Obj_name = None 
 
     else:
         print(f"\n{FR_GREEN}---------- That's all for today 👌 ----------{NO_COLOR}\n")
@@ -65,3 +82,5 @@ else:
     # something wrong
     print(f"\n{FR_RED}---- upsssssssss something is wrong 😢😢  ---{NO_COLOR}\n")
     pause()
+
+pause()    

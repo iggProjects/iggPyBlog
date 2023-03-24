@@ -15,7 +15,7 @@
 #
 # IMPORT LIBRERIES OR YOUR OWN FUNCTIONS 
 #
-from Colors_ForTeacher import *
+from MyColors import *
 
 #
 # COLORS CONSTANTS
@@ -274,36 +274,3 @@ def write_comments_log():
 #
 #  OS FUNCTIONS
 #
-
-def zip_dir(directory, zipname):
-    """
-    Compress a directory (ZIP file).
-    """
-    import zipfile
-    import os
-
-    print(f"path: {os.path.basename(directory)}")
-    if os.path.exists(directory):
-        outZipFile = zipfile.ZipFile(zipname, 'w', zipfile.ZIP_DEFLATED)
-
-        # The root directory within the ZIP file.
-        rootdir = os.path.basename(directory)
-
-        for dirpath, dirnames, filenames in os.walk(directory):
-            for filename in filenames:
-
-                # Write the file named filename to the archive,
-                # giving it the archive name 'arcname'.
-                filepath   = os.path.join(dirpath, filename)
-                parentpath = os.path.relpath(filepath, directory)
-                arcname    = os.path.join(rootdir, parentpath)
-
-                outZipFile.write(filepath, arcname)
-
-    outZipFile.close()
-
-
-def zip_file_list(file_list, zipname):
-    """
-    Compress a directory (ZIP file).
-    """

@@ -24,8 +24,8 @@
 from os import system 
 
 # my generic functions
-from MyFunc_ForTeacher import *
-from Colors_ForTeacher import *
+from MyFunc import *
+from MyColors import *
 
 #  Class Hierarchies
 class SistemaNominas:

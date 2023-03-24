@@ -10,8 +10,8 @@
 #
 # IMPORT SECTION
 #
-from MyFunc_ForTeacher import *
-from Colors_ForTeacher import *
+from MyFunc import *
+from MyColors import *
 from math import ceil
 
 #
@@ -32,7 +32,7 @@ if __name__ == "__main__":
 
         def __eq__(self,other):
             return self.name == other.name \
-                and self-mobile == other.mobile \
+                and self.mobile == other.mobile \
                     and self.age == other.age
 
         def __str__(self):

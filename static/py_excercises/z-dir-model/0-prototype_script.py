@@ -1,14 +1,20 @@
 """  
-    Testing reliability of the random function
-
-    We will make a thousand executions of the random function in the interval 1 to 10 to verify the probability that a certain number will come out
+1.- This code is to pass the exercises to the teacher
+2.- The SCRIPT is for:
+    2.1.-
+    2-2.-
+    .
+    .
 
 """
 #
 # IMPORT SECTION
 #
-import random
 
+# clear screen with system('cls')
+from os import system 
+
+# my generic functions
 from MyFunc import *
 from MyColors import *
 
@@ -16,23 +22,16 @@ from MyColors import *
 # ---------- COURSE EXCERCISE ----------
 #
 
+
 if __name__ == "__main__":
+
+    # clean screen
+    system('cls')
+
     print(f"\n{FR_GREEN}---------- main ----------{NO_COLOR}\n")
     pause()
 
-    list=list(range(1,11))
-    print(list)
-    pause()
-    my_value = random.choice(list)
-    print(f"my_value:  {my_value}")
-    i=1
-    #print("my_value: " + my_value)
-    while my_value != 5:
-        i += 1
-        my_value = random.choice(list)
-        print(f"attempt {i}, value:  {my_value}")
-
-    print(frGREEN(f"\nattempt {i} , my_value:  {my_value}\n"))
+    # my code
 
     
     # ------------------------------------------------

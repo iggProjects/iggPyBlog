@@ -3,8 +3,8 @@ THIS SCRIPT IS FOR..................
 
 """
 # IMPORT SECTION
-from MyFunc_ForTeacher import *
-from Colors_ForTeacher import *
+from MyFunc import *
+from MyColors import *
 
 # print char by char
 def print_char_by_char(my_text):

@@ -5,8 +5,8 @@ THIS SCRIPT IS FOR..................
 #
 # IMPORT SECTION
 #
-from MyFunc_ForTeacher import *
-from Colors_ForTeacher import *
+from MyFunc import *
+from MyColors import *
 import math
 
 #

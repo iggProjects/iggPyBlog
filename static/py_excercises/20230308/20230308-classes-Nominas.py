@@ -11,11 +11,11 @@
 from os import system 
 
 # my generic functions
-from MyFunc_ForTeacher import *
-from Colors_ForTeacher import *
+from MyFunc import *
+from MyColors import *
 
 # classes for this excercise
-from Classes_Nomina_ForTeacher import *
+from Classes_Nomina import *
 
 #
 # ---------- COURSE EXCERCISE ----------

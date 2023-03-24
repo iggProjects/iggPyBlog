@@ -1,5 +1,0 @@
-"""
-@app.route('/')
-def index():
-        return "Kaixo Team !
-"""
