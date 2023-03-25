@@ -11,8 +11,8 @@ import math
 import os
 import platform
 
-from MyFunc_ForTeacher import *
-from Colors_ForTeacher import *
+from MyFunc import *
+from MyColors import *
 
 #
 # ---------- COURSE EXCERCISE ----------

@@ -4,5 +4,4 @@ import os
 os.system('cls')
 
 # execute in console 
-os.system('cmd /c "20230227_Page43_44.py"')
-
+os.system('cmd /c "20230215-random_choice_experiment.py"')
