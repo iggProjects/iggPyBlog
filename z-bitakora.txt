@@ -1,5 +1,7 @@
 BITAKORA
 
+--- https://stackoverflow.com/questions/52835681/how-can-i-run-a-python-script-from-within-flask
+
 CONTENTS SCHEMA
 
 1.- WORKING WITH LISTS IN ARTICLES AND EXCERCISES 
