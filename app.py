@@ -71,17 +71,18 @@ def display_excercise():
 
 @app.route('/pythonScript/')
 def ExecPythonScript():
-    #from os import system
-    system('cls')
+    from os import system
+    #system('cls')
     system('cmd /c "z_execution_file.bat"')
+    return ""
     
     # to check later
     # relative path: 
-    #file = open(r'openCmdLine.py','r').read()    
-    #file = open(r'z_execution_file.bat','r').read()
-    #exec(file)
-    
-    return ""
+    #file = open(r'openCmdLine.py','r').read()
+    #file = open(r'z_execution_file.bat','r').read()    
+    #file = open(r'z_execution_file-2.bat','r').read()
+    #exec(file)    
+    #return ""
 
 
 

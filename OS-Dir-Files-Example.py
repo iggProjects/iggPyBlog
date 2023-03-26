@@ -20,6 +20,8 @@ from MyColors import *
 #
 
 if __name__ == "__main__":
+
+    os.system('cls')
     #print(f"\n{Fore.RED}---------- main ----------{Style.RESET_ALL}\n")
     print(f"\n{FR_GREEN}---------- main ----------{NO_COLOR}\n")
     pause()
