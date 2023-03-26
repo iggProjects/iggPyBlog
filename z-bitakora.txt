@@ -2,6 +2,11 @@ BITAKORA
 
 --- https://stackoverflow.com/questions/52835681/how-can-i-run-a-python-script-from-within-flask
 
+--- ExecPythonScript() :  how to pass file parameter to .bat
+
+--- body in list... how to accept line jump in text
+    - https://stackoverflow.com/questions/59718855/how-to-insert-a-new-line-every-entry-in-a-dictionary
+
 CONTENTS SCHEMA
 
 1.- WORKING WITH LISTS IN ARTICLES AND EXCERCISES 

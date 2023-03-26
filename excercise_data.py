@@ -1,39 +1,55 @@
 from flask import url_for
 
 def Excercises():
-    excercises = [       
+    
+
+    excercises = [      
         {
             'id': 1, 
+            'fileName': '20230213-PrototypeScript.py',            
+            'author': 'Igg',
+            'date_created': '13-02-2023',
+            'source_url': '',
+            'section': 'Three functions in PrototypeScript.py',
+
+            'homework': 'THESE functions allows you to collect information about variables\nThese functions allows you to collect information about variables\nThese functions allows you to collect information about variables\nThese functions allows you to collect information about variables\nThese functions allows you to collect information about variables',
+
+            'body': 'THESE functions allows you to collect information about variables\nThese functions allows you to collect information about variables\nThese functions allows you to collect information about variables\nThese functions allows you to collect information about variables\nThese functions allows you to collect information about variables',          
+
+            'zip_url': '/static/py_excercises/20230213-Prototypescript/20230213-PrototypeScript.rar',  
+            'img': '/img/icons8-consola-100.png'    
+        },
+       
+        {      
+            'id': 2, 
+            'fileName': '20230213-PrototypeScript.py',            
+            'author': 'Igg',
+            'date_created': '13-02-2023',
+            'source_url': '',
+            'section': 'my own functions and scripts',
+
+            'homework': 'Make your base script',
+            'body': 'Make your base script -- Make your base script -- Make your base script',
+
+            'zip_url': '/static/py_excercises/20230213-Prototypescript/20230213-PrototypeScript.rar',  
+            'img': '/img/icons8-consola-100.png'    
+        },
+ 
+        {
+            'id': 10, 
             'fileName': 'OS Examples',            
             'author': 'Igg',
             'date_created': '26-01-2022',
             'source_url': 'https://docs.google.com/document/d/1XvFyC3xnEg6VGgrWOUcDmx1oNT6XALru59Kd0_SgGrk/edit#heading=h.xzp25aduswxa',
             'section': 'Python on the web',
 
-            'homework': 'El Módulo de Caja Flexible, comúnmente llamado flexbox, fue diseñado como un modelo unidimensional de layout, y como un método que pueda ayudar a distribuir el espacio entre los ítems de una interfaz y mejorar las capacidades de alineación. Este artículo hace un repaso de las principales características de flexbox, las que exploraremos con mayor detalle en el resto de estas guías. El Módulo de Caja Flexible, comúnmente llamado flexbox, fue diseñado como un modelo unidimensional de layout, y como un método que pueda ayudar a distribuir el espacio entre los ítems de una interfaz y mejorar las capacidades de alineación. Este artículo hace un repaso de las principales características de flexbox, las que exploraremos con mayor detalle en el resto de estas guías.',
-            'body': 'Esta infracción de tráfico se considera una falta grave o muy grave, en función de cómo se produzca. Por ejemplo, si en una carretera con el límite a 60 km/h se circula a una velocidad superior a 61 y menor a 90 se trata de una sanción administrativa, sin retirada de puntos. Sin embargo, si la velocidad llega a ser de 131 km/h o más, se considera una sanción grave y la multa asciende a 600 euros con la pérdida de seis puntos del carnet de conducir. En este contexto, el artículo 379 del Código Penal establece que se incurre en un delito contra la seguridad del tráfico si se supera la velocidad permitida en más de 60 km/h en ciudad o en más de 80 en zona interurbana. Esta infracción de tráfico se considera una falta grave o muy grave, en función de cómo se produzca. Por ejemplo, si en una carretera con el límite a 60 km/h se circula a una velocidad superior a 61 y menor a 90 se trata de una sanción administrativa, sin retirada de puntos. Sin embargo, si la velocidad llega a ser de 131 km/h o más, se considera una sanción grave y la multa asciende a 600 euros con la pérdida de seis puntos del carnet de conducir. En este contexto, el artículo 379 del Código Penal establece que se incurre en un delito contra la seguridad del tráfico si se supera la velocidad permitida en más de 60 km/h en ciudad o en más de 80 en zona interurbana. Esta infracción de tráfico se considera una falta grave o muy grave, en función de cómo se produzca. Por ejemplo, si en una carretera con el límite a 60 km/h se circula a una velocidad superior a 61 y menor a 90 se trata de una sanción administrativa, sin retirada de puntos. Sin embargo, si la velocidad llega a ser de 131 km/h o más, se considera una sanción grave y la multa asciende a 600 euros con la pérdida de seis puntos del carnet de conducir. En este contexto, el artículo 379 del Código Penal establece que se incurre en un delito contra la seguridad del tráfico si se supera la velocidad permitida en más de 60 km/h en ciudad o en más de 80 en zona interurbana. Esta infracción de tráfico se considera una falta grave o muy grave, en función de cómo se produzca. Por ejemplo, si en una carretera con el límite a 60 km/h se circula a una velocidad superior a 61 y menor a 90 se trata de una sanción administrativa, sin retirada de puntos. Sin embargo, si la velocidad llega a ser de 131 km/h o más, se considera una sanción grave y la multa asciende a 600 euros con la pérdida de seis puntos del carnet de conducir. En este contexto, el artículo 379 del Código Penal establece que se incurre en un delito contra la seguridad del tráfico si se supera la velocidad permitida en más de 60 km/h en ciudad o en más de 80 en zona interurbana. Esta infracción de tráfico se considera una falta grave o muy grave, en función de cómo se produzca. Por ejemplo, si en una carretera con el límite a 60 km/h se circula a una velocidad superior a 61 y menor a 90 se trata de una sanción administrativa, sin retirada de puntos. Sin embargo, si la velocidad llega a ser de 131 km/h o más, se considera una sanción grave y la multa asciende a 600 euros con la pérdida de seis puntos del carnet de conducir. En este contexto, el artículo 379 del Código Penal establece que se incurre en un delito contra la seguridad del tráfico si se supera la velocidad permitida en más de 60 km/h en ciudad o en más de 80 en zona interurbana.Esta infracción de tráfico se considera una falta grave o muy grave, en función de cómo se produzca. Por ejemplo, si en una carretera con el límite a 60 km/h se circula a una velocidad superior a 61 y menor a 90 se trata de una sanción administrativa, sin retirada de puntos. Sin embargo, si la velocidad llega a ser de 131 km/h o más, se considera una sanción grave y la multa asciende a 600 euros con la pérdida de seis puntos del carnet de conducir. En este contexto, el artículo 379 del Código Penal establece que se incurre en un delito contra la seguridad del tráfico si se supera la velocidad permitida en más de 60 km/h en ciudad o en más de 80 en zona interurbana.',
+            'homework': '-------------------------',
+            'body': '------------------------',
 
             'zip_url': '/static/zip/20230227-OS-Dir-Files-Example_For_Teacher.zip',  
             'img': '/img/icons8-consola-100.png'          
             
         },
-        {
-            'id': 2, 
-            'fileName': 'OS Examples',            
-            'author': 'Igg',
-            'date_created': '26-01-2022',
-            'source_url': 'https://docs.google.com/document/d/1XvFyC3xnEg6VGgrWOUcDmx1oNT6XALru59Kd0_SgGrk/edit#heading=h.xzp25aduswxa',
-            'section': 'Python on the web',
-
-            'homework': 'El Módulo de Caja Flexible, comúnmente llamado flexbox, fue diseñado como un modelo unidimensional de layout, y como un método que pueda ayudar a distribuir el espacio entre los ítems de una interfaz y mejorar las capacidades de alineación. Este artículo hace un repaso de las principales características de flexbox, las que exploraremos con mayor detalle en el resto de estas guías. El Módulo de Caja Flexible, comúnmente llamado flexbox, fue diseñado como un modelo unidimensional de layout, y como un método que pueda ayudar a distribuir el espacio entre los ítems de una interfaz y mejorar las capacidades de alineación. Este artículo hace un repaso de las principales características de flexbox, las que exploraremos con mayor detalle en el resto de estas guías.',
-            'body': 'Esta infracción de tráfico se considera una falta grave o muy grave, en función de cómo se produzca. Por ejemplo, si en una carretera con el límite a 60 km/h se circula a una velocidad superior a 61 y menor a 90 se trata de una sanción administrativa, sin retirada de puntos. Sin embargo, si la velocidad llega a ser de 131 km/h o más, se considera una sanción grave y la multa asciende a 600 euros con la pérdida de seis puntos del carnet de conducir. En este contexto, el artículo 379 del Código Penal establece que se incurre en un delito contra la seguridad del tráfico si se supera la velocidad permitida en más de 60 km/h en ciudad o en más de 80 en zona interurbana. Esta infracción de tráfico se considera una falta grave o muy grave, en función de cómo se produzca. Por ejemplo, si en una carretera con el límite a 60 km/h se circula a una velocidad superior a 61 y menor a 90 se trata de una sanción administrativa, sin retirada de puntos. Sin embargo, si la velocidad llega a ser de 131 km/h o más, se considera una sanción grave y la multa asciende a 600 euros con la pérdida de seis puntos del carnet de conducir. En este contexto, el artículo 379 del Código Penal establece que se incurre en un delito contra la seguridad del tráfico si se supera la velocidad permitida en más de 60 km/h en ciudad o en más de 80 en zona interurbana. Esta infracción de tráfico se considera una falta grave o muy grave, en función de cómo se produzca. Por ejemplo, si en una carretera con el límite a 60 km/h se circula a una velocidad superior a 61 y menor a 90 se trata de una sanción administrativa, sin retirada de puntos. Sin embargo, si la velocidad llega a ser de 131 km/h o más, se considera una sanción grave y la multa asciende a 600 euros con la pérdida de seis puntos del carnet de conducir. En este contexto, el artículo 379 del Código Penal establece que se incurre en un delito contra la seguridad del tráfico si se supera la velocidad permitida en más de 60 km/h en ciudad o en más de 80 en zona interurbana. Esta infracción de tráfico se considera una falta grave o muy grave, en función de cómo se produzca. Por ejemplo, si en una carretera con el límite a 60 km/h se circula a una velocidad superior a 61 y menor a 90 se trata de una sanción administrativa, sin retirada de puntos. Sin embargo, si la velocidad llega a ser de 131 km/h o más, se considera una sanción grave y la multa asciende a 600 euros con la pérdida de seis puntos del carnet de conducir. En este contexto, el artículo 379 del Código Penal establece que se incurre en un delito contra la seguridad del tráfico si se supera la velocidad permitida en más de 60 km/h en ciudad o en más de 80 en zona interurbana. Esta infracción de tráfico se considera una falta grave o muy grave, en función de cómo se produzca. Por ejemplo, si en una carretera con el límite a 60 km/h se circula a una velocidad superior a 61 y menor a 90 se trata de una sanción administrativa, sin retirada de puntos. Sin embargo, si la velocidad llega a ser de 131 km/h o más, se considera una sanción grave y la multa asciende a 600 euros con la pérdida de seis puntos del carnet de conducir. En este contexto, el artículo 379 del Código Penal establece que se incurre en un delito contra la seguridad del tráfico si se supera la velocidad permitida en más de 60 km/h en ciudad o en más de 80 en zona interurbana.Esta infracción de tráfico se considera una falta grave o muy grave, en función de cómo se produzca. Por ejemplo, si en una carretera con el límite a 60 km/h se circula a una velocidad superior a 61 y menor a 90 se trata de una sanción administrativa, sin retirada de puntos. Sin embargo, si la velocidad llega a ser de 131 km/h o más, se considera una sanción grave y la multa asciende a 600 euros con la pérdida de seis puntos del carnet de conducir. En este contexto, el artículo 379 del Código Penal establece que se incurre en un delito contra la seguridad del tráfico si se supera la velocidad permitida en más de 60 km/h en ciudad o en más de 80 en zona interurbana.',
-
-            'zip_url': '/static/zip/20230227-OS-Dir-Files-Example_For_Teacher.zip',  
-            'img': '/img/icons8-consola-100.png'          
-            
-        }
-
-
     ]
 
     return excercises
