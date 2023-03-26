@@ -5,7 +5,7 @@ from flask import Flask, render_template, url_for, redirect, request
 
 from article_data import Articles
 from excercise_data import Excercises
-import os
+from os import system
 
 app = Flask(__name__)
 
@@ -71,13 +71,14 @@ def display_excercise():
 
 @app.route('/pythonScript/')
 def ExecPythonScript():
-    from os import system
-    #system('cls')
+    #from os import system
+    system('cls')
     system('cmd /c "z_execution_file.bat"')
     
     # to check later
-    #file = open(r'z-openCmdLine-20230227-OS-Dir-Files.py','r').read()
-    #file = open(r'../static/py_excercises/20230227/z-openCmdLine.py','r').read()
+    # relative path: 
+    #file = open(r'openCmdLine.py','r').read()    
+    #file = open(r'z_execution_file.bat','r').read()
     #exec(file)
     
     return ""
