@@ -116,7 +116,7 @@ def Excercises():
             
             'homework': 'Use "relatedClasses(clas) function" to know the relations of a class.\n',
 
-            'body': 'def relatedClasses(clas):\n    print(f"\\n----- analysis of {FR_BLUE}\"classes related\"{NO_COLOR} with class \"{FR_GREEN}{clas}{NO_COLOR}\" -----\\n")\n    for clas_rel in clas.__mro__:\n        print(f"{FR_GREEN}\\trelated clas --> {clas_rel}\\n")\n    print(f"{NO_COLOR}----- end analysis -----\\n")',          
+            'body': 'def relatedClasses(clas):\n    print(f"\\n----- analysis of {FR_BLUE}"classes related"{NO_COLOR} with class \"{FR_GREEN}{clas}{NO_COLOR}\" -----\\n")\n    for clas_rel in clas.__mro__:\n        print(f"{FR_GREEN}\\trelated clas --> {clas_rel}\\n")\n    print(f"{NO_COLOR}----- end analysis -----\\n")',          
 
             'zip_url': '/static/py_excercises/20230213-Prototypescript/20230213-PrototypeScript.rar',  
             'img': '/img/icons8-consola-100.png'    
