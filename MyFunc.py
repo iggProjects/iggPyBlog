@@ -78,7 +78,7 @@ def matrix_view(obj_l_t,n_cols):
       print(f"line: {i+1} --> {line}")
       line=[]  
   else:
-    print(frRED(f"\nWarning FROM matrix_view(): Object '{obj_l_t}' in not  list neither tupla !\n" )) 
+    print(frRED(f"\nWarning FROM matrix_view(): Object '{obj_l_t}' in not list neither tupla !\n" )) 
 
 #
 # SHOW LIBRARY INFO
