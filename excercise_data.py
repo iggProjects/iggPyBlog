@@ -10,7 +10,7 @@ def Excercises():
             'source_url': '',
             'section': 'Prototype Script',
             'title': 'Colors Function',
-            'fileName': '---',            
+            'fileDirPath': 'static/py_excercises/20230213-PrototypeScript/0-prototype.py',            
             
             'homework': 'Use colors for print.\n',
 
@@ -27,7 +27,7 @@ def Excercises():
             'source_url': '',
             'section': 'Prototype Script',
             'title': 'Pause Function',
-            'fileName': '---',            
+            'fileDirPath': '---',            
             
             'homework': 'Use "pause() function" to ask what to do after.\n',
 
@@ -44,7 +44,7 @@ def Excercises():
             'source_url': '',
             'section': 'Prototype Script',
             'title': 'Show Object Attributes',
-            'fileName': '---',            
+            'fileDirPath': '---',            
             
             'homework': 'Use "mostrar(obj) function" to know prpperties and methods of certain varibles used in script.\n',
 
@@ -61,7 +61,7 @@ def Excercises():
             'source_url': '',
             'section': 'Prototype Script',
             'title': 'Print Lists or Tuples in matrix form',
-            'fileName': '---',            
+            'fileDirPath': '---',            
             
             'homework': 'Use "matrix_view(obj_l_t,n_cols) function" to print the list o tuples elements in matrix form.\n',
 
@@ -78,7 +78,7 @@ def Excercises():
             'source_url': '',
             'section': 'Prototype Script',
             'title': 'Print Module or Library Methods',
-            'fileName': '---',            
+            'fileDirPath': '---',            
             
             'homework': 'Use "library_methods(my_lib) function" to print the methods of a library.\n',
 
@@ -95,7 +95,7 @@ def Excercises():
             'source_url': '',
             'section': 'Prototype Script',
             'title': 'Print Help',
-            'fileName': '---',            
+            'fileDirPath': '---',            
             
             'homework': 'Use "help_obj_method(obj) function" to call help option for a specific object.\n',
 
@@ -112,7 +112,7 @@ def Excercises():
             'source_url': '',
             'section': 'Prototype Script',
             'title': 'Know about related classes',
-            'fileName': '---',            
+            'fileDirPath': '---',            
             
             'homework': 'Use "relatedClasses(clas) function" to know the relations of a class.\n',
 
@@ -130,7 +130,7 @@ def Excercises():
             'source_url': 'https://docs.google.com/document/d/1XvFyC3xnEg6VGgrWOUcDmx1oNT6XALru59Kd0_SgGrk/edit#heading=h.xzp25aduswxa',
             'section': 'Python on the web',
             'title': '',
-            'fileName': 'OS Examples',            
+            'fileDirPath': 'OS Examples',            
 
             'homework': '-------------------------',
 

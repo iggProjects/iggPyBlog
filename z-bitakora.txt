@@ -4,6 +4,7 @@ BITAKORA
 
 --- ExecPythonScript() :  how to pass file parameter to .bat
 
+
 --- body in list... how to accept line jump in text
     - https://stackoverflow.com/questions/59718855/how-to-insert-a-new-line-every-entry-in-a-dictionary
 
@@ -39,6 +40,15 @@ CONTENTS SCHEMA
 2.- DB FOR USERS (admin, colab), ARTICLES AND EXCERCISES
 
 STILL TO DO !
+
+Variables from Flask to JS 
+    - https://stackoverflow.com/questions/37259740/passing-variables-from-flask-to-javascript
+
+cómo pasar variables de python a JavaScript
+	- https://www.youtube.com/watch?v=CJ3XiQgjNE8
+
+cómo pasar variables de python a JavaScript
+	- https://www.codespeedy.com/how-to-pass-javascript-variables-to-python-in-flask/
 
 - init with home and create login flow to CRUD posts -- MySql
 

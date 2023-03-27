@@ -70,10 +70,22 @@ def display_excercise():
     return render_template('excercise.html', excercise = excercise)
 
 @app.route('/pythonScript/')
-def ExecPythonScript():
+def ExecPythonScript(file_path):
+    print("file path: " + file_path)
     from os import system
-    #system('cls')
-    system('cmd /c "z_execution_file.bat"')
+    # clear screen
+    system('cls')    
+    # parameter from JS
+    py_file = 'static/py_excercises/20230227-OS-Examples/20230227-OS-Dir-Files-Example.py'
+    #py_file = file_path
+    
+    # execution string
+    exec_command = 'cmd /c \"python.exe ' + py_file + '\"'
+    system(exec_command)
+
+    #system('cmd /c "z_execution_file.bat"')
+    #system('cmd /c "python.exe static/py_excercises/20230227-OS-Examples/20230227-OS-Dir-Files-Example.py"')
+    
     return ""
     
     # to check later

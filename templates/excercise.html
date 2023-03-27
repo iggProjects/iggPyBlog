@@ -3,6 +3,7 @@
 {%  block body %}    
 
     <h1 style="text-align: center; margin-left:25px; margin-top: 3px; font-size:25px;  color:rgb(93, 92, 92)">Excercise {{ excercise.id }}, Author {{excercise.author}}, date {{excercise.date_created}}</h1>
+    <p style="text-align: center; color:rgb(1, 91, 195)">{{ excercise.fileDirPath.split('\\')[3] }}</p>
     <div class="disp-rows-cent"  style="width:100%; padding:5px; height:80vh; border:10px solid rgb(190, 209, 250)">
         <table style="width:90%; margin:3px; border: 1px solid rgb(208, 207, 207)">
             <tr>                
@@ -12,8 +13,8 @@
                 <th><img class="myImg" onclick='' src="{{ url_for('static', filename='img/icons8-flow-chart-64.png') }}" title='Zoom flow chart' alt="console-100" width="30"/></th>
                 <th><a href="{{excercise.zip_url}}" target="_blank"><img class="myImg" onclick='ExecPythonScript()' src="{{ url_for('static', filename='img/icons8-descargar-de-la-nube-100.png') }}" title='Download py script' alt="download-100" width="30"/></a></th>                              
                 <th style="padding:10px;">
-                    <!-- <img class="myImg" onclick='ExecPythonScript()' src="{{ url_for('static', filename='img/icons8-consola-100.png') }}" title='Run in command line console' alt="console-100" width="30"/> -->                   
-                    <img class="myImg" onclick='alert("I am working in this option...")' src="{{ url_for('static', filename='img/icons8-consola-100.png') }}" title='command line' alt="console-100" width="30"/>
+                    <img class="myImg" onclick="ExecPythonScript('excercise.fileDirPath')" src="{{ url_for('static', filename='img/icons8-consola-100.png') }}" title='Run in command line console' alt="console-100" width="30"/>
+                    <!-- <img class="myImg" onclick='alert("I am working in this option...")' src="{{ url_for('static', filename='img/icons8-consola-100.png') }}" title='command line' alt="console-100" width="30"/>  -->
                 </th>                
             </tr>            
         </table>           
@@ -34,11 +35,15 @@
             alert('I am working in how to call cmd line from python script')
         }
 
-        function ExecPythonScript(){
+        function ExecPythonScript(file_path){
         /* function ExecPythonCommand(pythonCommand){ */
-                var request = new XMLHttpRequest()
-                request.open("GET", "/pythonScript", true)            
-                request.send()
+
+            alert('file path: ' + file_path)
+            /*
+            var request = new XMLHttpRequest()
+            request.open("GET", "/pythonScript", true)            
+            request.send()
+            */
         }
 
     </script>
