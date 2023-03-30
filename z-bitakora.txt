@@ -9,11 +9,19 @@ BITAKORA
 
 
 STILL TO DO !
-
+ 
 1.- fill all excercises info
 2.- login and users: admin, colab
 3.- crud for posts
 4.- test colab posts input process
+    - forms: https://www.youtube.com/watch?v=Rxp3mkg2mRQ
+    - Add A Blog Post Model and Form: https://www.youtube.com/watch?v=1RmU8lderG8
+    - Edit blog post: https://www.youtube.com/watch?v=N4Nz0cYuCnc
+    - Add A Rich Text Editor
+        - https://www.youtube.com/watch?v=5jnAnnxZGQQ
+            - pip install flask-ckeditor
+            - https://flask-ckeditor.readthedocs.io/en/latest/
+
 5.- MyFunctions: ADD script zip_file_list(list, zipname)
 6.- modal for img
     - modal for img  vs image zoom by click
@@ -22,6 +30,8 @@ STILL TO DO !
 8.- search in list-dict
 9.- upload images
 10.- drag & drop
+11.- open windows   
+    - https://www.youtube.com/watch?v=R5N8TA0KFxc
 
 PROJECTS 
 1.- life game
