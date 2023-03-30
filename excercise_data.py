@@ -77,7 +77,7 @@ def Excercises():
             'date_created': '13-02-2023',
             'source_url': '',
             'section': 'Prototype Script',
-            'title': 'Print Module or Library Methods',
+            'title': 'Print Module Methods',
             'fileDirPath': '---',            
             
             'homework': 'Use "library_methods(my_lib) function" to print the methods of a library.\n',
