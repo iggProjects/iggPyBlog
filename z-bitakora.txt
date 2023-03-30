@@ -4,42 +4,25 @@ BITAKORA
 
 --- ExecPythonScript() :  how to pass file parameter to .bat
 
-
 --- body in list... how to accept line jump in text
     - https://stackoverflow.com/questions/59718855/how-to-insert-a-new-line-every-entry-in-a-dictionary
 
-CONTENTS SCHEMA
-
-1.- WORKING WITH LISTS IN ARTICLES AND EXCERCISES 
-    - dir SCHEMA in root
-    - articles and excercises list
-    - function to zip list of files vs store zip in dir ???
-    - .bat ???  --->  system('cmd /c "z_execution_file.bat"') 
-    - elements of a excercise
-            'id': 1, 
-            'title': 'First excercise',            
-            'author': 'Igg',
-            'date_created': '27-02-2023',
-            'source_url': 'https://docs.google.com/document/d/1XvFyC3xnEg6VGgrWOUcDmx1oNT6XALru59Kd0_SgGrk/edit#heading=h.x92asqx3wsjb',
-            'page': '50',
-            'homework': 'El Módulo de Caja Flexible, comúnmente llamado flexbox, fue diseñado como un modelo unidimensional de layout, y como un método que pueda ayudar a distribuir el espacio entre los ítems de una interfaz y mejorar las capacidades de alineación. Este artículo hace un repaso de las principales características de flexbox, las que exploraremos con mayor detalle en el resto de estas guías. El Módulo de Caja Flexible, comúnmente llamado flexbox, fue diseñado como un modelo unidimensional de layout, y como un método que pueda ayudar a distribuir el espacio entre los ítems de una interfaz y mejorar las capacidades de alineación. Este artículo hace un repaso de las principales características de flexbox, las que exploraremos con mayor detalle en el resto de estas guías.',
-            'body': 'Esta infracción de tráfico se considera una falta grave o muy grave, en función de cómo se produzca. Por ejemplo, si en una carretera con el límite a 60 km/h se circula a una velocidad superior a 61 y menor a 90 se trata de una sanción administrativa, sin retirada de puntos. Sin embargo, si la velocidad llega a ser de 131 km/h o más, se considera una sanción grave y la multa asciende a 600 euros con la pérdida de seis puntos del carnet de conducir. En este contexto, el artículo 379 del Código Penal establece que se incurre en un delito contra la seguridad del tráfico si se supera la velocidad permitida en más de 60 km/h en ciudad o en más de 80 en zona interurbana. Esta infracción de tráfico se considera una falta grave o muy grave, en función de cómo se produzca. Por ejemplo, si en una carretera con el límite a 60 km/h se circula a una velocidad superior a 61 y menor a 90 se trata de una sanción administrativa, sin retirada de puntos. Sin embargo, si la velocidad llega a ser de 131 km/h o más, se considera una sanción grave y la multa asciende a 600 euros con la pérdida de seis puntos del carnet de conducir. En este contexto, el artículo 379 del Código Penal establece que se incurre en un delito contra la seguridad del tráfico si se supera la velocidad permitida en más de 60 km/h en ciudad o en más de 80 en zona interurbana. Esta infracción de tráfico se considera una falta grave o muy grave, en función de cómo se produzca. Por ejemplo, si en una carretera con el límite a 60 km/h se circula a una velocidad superior a 61 y menor a 90 se trata de una sanción administrativa, sin retirada de puntos. Sin embargo, si la velocidad llega a ser de 131 km/h o más, se considera una sanción grave y la multa asciende a 600 euros con la pérdida de seis puntos del carnet de conducir. En este contexto, el artículo 379 del Código Penal establece que se incurre en un delito contra la seguridad del tráfico si se supera la velocidad permitida en más de 60 km/h en ciudad o en más de 80 en zona interurbana. Esta infracción de tráfico se considera una falta grave o muy grave, en función de cómo se produzca. Por ejemplo, si en una carretera con el límite a 60 km/h se circula a una velocidad superior a 61 y menor a 90 se trata de una sanción administrativa, sin retirada de puntos. Sin embargo, si la velocidad llega a ser de 131 km/h o más, se considera una sanción grave y la multa asciende a 600 euros con la pérdida de seis puntos del carnet de conducir. En este contexto, el artículo 379 del Código Penal establece que se incurre en un delito contra la seguridad del tráfico si se supera la velocidad permitida en más de 60 km/h en ciudad o en más de 80 en zona interurbana. Esta infracción de tráfico se considera una falta grave o muy grave, en función de cómo se produzca. Por ejemplo, si en una carretera con el límite a 60 km/h se circula a una velocidad superior a 61 y menor a 90 se trata de una sanción administrativa, sin retirada de puntos. Sin embargo, si la velocidad llega a ser de 131 km/h o más, se considera una sanción grave y la multa asciende a 600 euros con la pérdida de seis puntos del carnet de conducir. En este contexto, el artículo 379 del Código Penal establece que se incurre en un delito contra la seguridad del tráfico si se supera la velocidad permitida en más de 60 km/h en ciudad o en más de 80 en zona interurbana.Esta infracción de tráfico se considera una falta grave o muy grave, en función de cómo se produzca. Por ejemplo, si en una carretera con el límite a 60 km/h se circula a una velocidad superior a 61 y menor a 90 se trata de una sanción administrativa, sin retirada de puntos. Sin embargo, si la velocidad llega a ser de 131 km/h o más, se considera una sanción grave y la multa asciende a 600 euros con la pérdida de seis puntos del carnet de conducir. En este contexto, el artículo 379 del Código Penal establece que se incurre en un delito contra la seguridad del tráfico si se supera la velocidad permitida en más de 60 km/h en ciudad o en más de 80 en zona interurbana.',
-
-        NO  'github_url': 'https://github.com/iggProjects/iggPyBlog',
-        NO  'pyAW_url': 'https://www.pythonanywhere.com/',
-
-            'dir': '20230227-problem',
-            'zip_url': '/static/zip/20230227-OS-Dir-Files-Example_For_Teacher.zip',  
-            'zip_url': '/static/zip/20230227-problem.zip',  
-            'img': '/img/icons8-consola-100.png'          
-    
-    - list of excercises to deploy
-        -  
-
-
-2.- DB FOR USERS (admin, colab), ARTICLES AND EXCERCISES
 
 STILL TO DO !
+
+1.- fill all excercises info
+2.- Finish passing variable information from JS to Python
+    - download option with correct py script
+
+
+
+
+DB FOR USERS (admin, colab), ARTICLES AND EXCERCISES
+- mysql vs sqlite
+- login  (z index effect)
+    - https://www.geeksforgeeks.org/login-and-registration-project-using-flask-and-mysql/
+    - https://github.com/j2logo/tutorial-flask/blob/master/app/admin/routes.py
+    - https://realpython.com/introduction-to-flask-part-2-creating-a-login-page/
 
 Variables from Flask to JS 
     - https://stackoverflow.com/questions/37259740/passing-variables-from-flask-to-javascript
@@ -78,11 +61,6 @@ cómo pasar variables de python a JavaScript
     - https://mindlesstechnology.wordpress.com/2008/03/29/make-python-scripts-droppable-in-windows/
     - https://stackoverflow.com/questions/142844/drag-and-drop-onto-python-script-in-windows-explorer
 
-- mysql version
-- login  (z index effect)
-    - https://www.geeksforgeeks.org/login-and-registration-project-using-flask-and-mysql/
-    - https://github.com/j2logo/tutorial-flask/blob/master/app/admin/routes.py
-    - https://realpython.com/introduction-to-flask-part-2-creating-a-login-page/
 
 *********************************************************************************************
 

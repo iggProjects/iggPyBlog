@@ -70,30 +70,39 @@ def display_excercise():
     return render_template('excercise.html', excercise = excercise)
 
 @app.route('/pythonScript/')
-def ExecPythonScript(file_path):
-    print("file path: " + file_path)
+def ExecPythonScript():
+
+    # parameter from JS
+    py_script_path = request.args['py_path']   
+    #print("Excercise: " + file_path)
+
+    """
+    id = int(request.args['id'])    
+    for i in range(len(Excercises)):
+        if Excercises[i]['id'] == id:
+            excercise = Excercises[i]
+    py_file = excercise["fileDirPath"]            
+    """
     from os import system
+
     # clear screen
     system('cls')    
-    # parameter from JS
-    py_file = 'static/py_excercises/20230227-OS-Examples/20230227-OS-Dir-Files-Example.py'
-    #py_file = file_path
-    
+       
     # execution string
-    exec_command = 'cmd /c \"python.exe ' + py_file + '\"'
-    system(exec_command)
-
-    #system('cmd /c "z_execution_file.bat"')
-    #system('cmd /c "python.exe static/py_excercises/20230227-OS-Examples/20230227-OS-Dir-Files-Example.py"')
+    exec_command = 'cmd /c \"python.exe ' + py_script_path + '\"'
+    system(exec_command)    
     
     return ""
     
     # to check later
+        #system('cmd /c "z_execution_file.bat"')
+        #system('cmd /c "python.exe static/py_excercises/20230227-OS-Examples/20230227-OS-Dir-Files-Example.py"')
+
     # relative path: 
-    #file = open(r'openCmdLine.py','r').read()
-    #file = open(r'z_execution_file.bat','r').read()    
-    #file = open(r'z_execution_file-2.bat','r').read()
-    #exec(file)    
+        #file = open(r'openCmdLine.py','r').read()
+        #file = open(r'z_execution_file.bat','r').read()    
+        #file = open(r'z_execution_file-2.bat','r').read()
+        #exec(file)    
     #return ""
 
 
