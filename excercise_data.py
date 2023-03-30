@@ -27,7 +27,7 @@ def Excercises():
             'source_url': '',
             'section': 'Prototype Script',
             'title': 'Pause Function',
-            'fileDirPath': '---',            
+            'fileDirPath': 'static/py_excercises/20230213-PrototypeScript/0-prototype.py',            
             
             'homework': 'Use "pause() function" to ask what to do after.\n',
 
