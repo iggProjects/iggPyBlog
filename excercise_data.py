@@ -16,7 +16,7 @@ def Excercises():
 
             'body': 'Printing with style is a good practice.....',          
 
-            'zip_url': '/static/py_excercises/20230213-Prototypescript/20230213-PrototypeScript.rar',  
+            'zip_url': '/static/py_excercises/20230213-PrototypeScript/20230213-PrototypeScript.rar',  
             'img': '/img/icons8-consola-100.png'    
         },
        

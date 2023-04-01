@@ -6,7 +6,7 @@ from flask import Flask, render_template, url_for, redirect, request
 from article_data import Articles
 from excercise_data import Excercises
 from LifeGame_data import LG_scripts
-#from LifeGame_data import LG_scripts
+from EnigmaGame_data import Enigma_scripts
 
 from os import system
 
@@ -17,6 +17,7 @@ app = Flask(__name__)
 Articles = Articles()
 Excercises = Excercises()
 LG_scripts = LG_scripts()
+Enigma_scripts = Enigma_scripts()
 
 @app.route('/',methods=['GET', 'POST'])
 def login():      
@@ -112,7 +113,19 @@ def ExecPythonScript():
 
 @app.route('/project-EnigmaGame')
 def project_EnigmaGame():    
-    return render_template('project-EnigmaGame.html', excercises = Excercises)
+    return render_template('project-EnigmaGame.html', enigma_scripts = Enigma_scripts)
+
+@app.route('/project-EnigmaGame_script/')
+def display_EnigmaGame_script():
+    enigma_script = 1
+    id = int(request.args['id'])    
+    for i in range(len(Enigma_scripts)):
+        if Enigma_scripts[i]['id'] == id:
+            enigma_script = Enigma_scripts[i]    
+    #
+    #  code to update .bat file with excercise script
+    #         
+    return render_template('project-EnigmaGame_script.html', enigma_script = enigma_script)
 
 
 @app.route('/project-LifeGame')
@@ -129,7 +142,6 @@ def display_LifeGame_script():
     #
     #  code to update .bat file with excercise script
     #         
-
     return render_template('project-LifeGame_script.html', lg_script = lg_script)
 
 
