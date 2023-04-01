@@ -12,9 +12,9 @@ def LG_scripts():
             'title': 'LG Script for...',
             'fileDirPath': 'static/py_excercises/20230213-PrototypeScript/0-prototype.py',            
             
-            'homework': '.................Life Game ....................\n',
+            'homework': '.................Life Game ....................\n.................Life Game ....................\n.................Life Game ....................\n',
 
-            'body': '.................Life Game ....................',          
+            'body': '.................Life Game ....................\n.................Life Game ....................\n.................Life Game ....................\n',  
 
             'zip_url': '/static/proj_lifeGame_scripts/20230213-Prototypescript/20230213-PrototypeScript.rar',  
             'img': '/img/icons8-consola-100.png'    

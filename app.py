@@ -26,8 +26,8 @@ def login():
         if request.form['username'] != 'admin' or request.form['password'] != 'admin':
             error = 'Invalid Credentials. Please try again.'
         else:
-            #return redirect(url_for('home'))
-            return render_template('home.html')
+            return redirect(url_for('home'))
+            #return render_template('home.html')
         
     return render_template('login.html', error=error)
 
@@ -46,7 +46,6 @@ def course():
 def articles():
     return render_template('articles.html', articles = Articles)
 
-
 @app.route('/article/')
 def display_article():
     article = 1
@@ -56,10 +55,10 @@ def display_article():
             article = Articles[i]    
     return render_template('article.html', article = article)
 
+
 @app.route('/excercises')
 def excercises():
     return render_template('excercises.html', excercises = Excercises)
-
 
 @app.route('/excercise/')
 def display_excercise():
@@ -68,10 +67,6 @@ def display_excercise():
     for i in range(len(Excercises)):
         if Excercises[i]['id'] == id:
             excercise = Excercises[i]    
-    #
-    #  code to update .bat file with excercise script
-    #         
-
     return render_template('excercise.html', excercise = excercise)
 
 @app.route('/pythonScript/')
@@ -122,9 +117,6 @@ def display_EnigmaGame_script():
     for i in range(len(Enigma_scripts)):
         if Enigma_scripts[i]['id'] == id:
             enigma_script = Enigma_scripts[i]    
-    #
-    #  code to update .bat file with excercise script
-    #         
     return render_template('project-EnigmaGame_script.html', enigma_script = enigma_script)
 
 
@@ -139,9 +131,6 @@ def display_LifeGame_script():
     for i in range(len(LG_scripts)):
         if LG_scripts[i]['id'] == id:
             lg_script = LG_scripts[i]    
-    #
-    #  code to update .bat file with excercise script
-    #         
     return render_template('project-LifeGame_script.html', lg_script = lg_script)
 
 

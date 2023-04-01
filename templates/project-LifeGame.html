@@ -2,19 +2,23 @@
 
 {% block body %}
   <h1 style="margin-left:15px;margin-top: 3px;">Life Game Project</h1>
-  <div class="disp-cols-cent"  style="height:78vh; overflow: auto; border:10px solid rgb(190, 209, 250)">    
+  <div class="disp-cols-cent"  style="height:78vh; overflow: auto; border:10px solid rgb(179, 179, 179); border-radius: 10px;">    
     <ul class="list-group">
       {% for lg_script in lg_scripts %}
-        <li class="list-group-item" style="border:none;">
-          <table class="tableWithBorders" style="width:98%; text-align: left;">
+        <li class="list-group-item" style="border:none; ">
+          <table class="tableWithBorders" style="background-color: rgb(99, 99, 99);">
             <tr>
-              <td rowspan="3"><a href="project-LifeGame_script/?id={{lg_script.id}}"><span style="font-size:17px;">{{lg_script.id}} - {{lg_script.author}}</span><br><span style="color:rgb(75, 72, 252); font-size: 11px;;">{{lg_script.date_created}}</span></a></td>
-              <td style="color:blue; font-size: 14px; padding-left:5px;"><a href="project-LifeGame_script/?id={{lg_script.id}}">section "{{lg_script.section}}":  {{lg_script.title}}</a></td>
+              <td rowspan="3">
+                <a style="color:white; font-size: 14px;" href="project-LifeGame_script/?id={{lg_script.id}}"><span style="font-size:17px; color:rgb(255, 247, 0);">{{lg_script.id}} - {{lg_script.author}}</span><br><span style="color:white; font-size: 11px;;">{{lg_script.date_created}}</span></a>
+                <br>
+                <img src="/static/img/Lorea.jpg" style="border:2px solid rgb(190, 209, 250) ;border-radius: 10px;" width="40">
+              </td>
+              <td style="font-size: 14px; padding-left:5px;"><a style="color:white; font-size: 14px;" href="project-LifeGame_script/?id={{lg_script.id}}">section "{{lg_script.section}}":  {{lg_script.title}}</a></td>                        
               <td></td>
             </tr>
-            <tr>              
-              <td style="width:75%; padding:5px;text-align:center; font-size:15px;  border:1px solid rgb(201, 201, 251)">{{lg_script.homework}}</td>
-              <td style="width:5%; padding:2px; text-align: center; border:1px solid rgb(201, 201, 251)"><img src="/static/img/Lorea.jpg" style="border:2px solid rgb(190, 209, 250) ;border-radius: 10px;" width="40"></td>          </tr>
+            <tr>                                         
+              <td style="width:75%; text-align:center; font-size:15px; color:white; "><textarea readonly style="width:100%; padding:5px;  border:2px solid white; background-color: transparent;">{{lg_script.homework}}</textarea></td>             
+            </tr>
           </table>
         </li>
       {% endfor %}
