@@ -49,19 +49,15 @@ matriz = np.arange(nX*nY).reshape(nX, nY)
 msg = "Matriz inicial de " + str(nX) + " col y " + str(nY) + " rows"
 mostrar_matriz(matriz,msg)
 
-#print("\nMatriz 0")
 m0 = matriz[ 0:int(nX/2), 0:int(nY/2) ]
 mostrar_matriz(m0, "m0")
 
-#print("\nMatriz 1")
 m1 = matriz[ int(nX/2):nX, 0:int(nY/2) ]
 mostrar_matriz(m1, "m1")
 
-#print("\nMatriz 2")
 m2 = matriz[ 0:int(nX/2), int(nY/2):nY ]
 mostrar_matriz(m2,"m2")
 
-#print("\nMatriz 3")
 m3 = matriz[ int(nX/2):nX, int(nY/2):nY ]
 mostrar_matriz(m3,"m3")
 
