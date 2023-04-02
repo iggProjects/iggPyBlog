@@ -1,23 +1,23 @@
 {% extends 'layout.html' %}
 
 {% block body %}
-  <h1 style="margin-left:15px;margin-top: 3px;">Life Game Project</h1>
-  <div class="disp-cols-cent"  style="height:78vh; overflow: auto; border:10px solid rgb(179, 179, 179); border-radius: 10px;">    
+  <h1 style="margin-left:15px; margin-top: 3px; color:rgb(26, 136, 252);">Life Game Project</h1>
+  <div class="disp-cols-cent"  style="height:78vh; overflow: auto; border:10px solid rgb(162, 205, 251); border-radius: 10px;">    
     <ul class="list-group">
       {% for lg_script in lg_scripts %}
         <li class="list-group-item" style="border:none; ">
-          <table class="tableWithBorders" style="background-color: rgb(99, 99, 99);">
+          <table class="tableWithBorders tblBGC_Bl_Light" style="text-align: left; border:none;">
             <tr>
               <td rowspan="3">
-                <a style="color:white; font-size: 14px;" href="project-LifeGame_script/?id={{lg_script.id}}"><span style="font-size:17px; color:rgb(255, 247, 0);">{{lg_script.id}} - {{lg_script.author}}</span><br><span style="color:white; font-size: 11px;;">{{lg_script.date_created}}</span></a>
+                <a style="color:#ffffff; font-size: 14px;" href="project-LifeGame_script/?id={{lg_script.id}}"><span style="font-size:17px; color:rgb(255, 247, 0);">{{lg_script.id}} - {{lg_script.author}}</span><br><span style="color:white; font-size: 11px;;">{{lg_script.date_created}}</span></a>
                 <br>
-                <img src="/static/img/Lorea.jpg" style="border:2px solid rgb(190, 209, 250) ;border-radius: 10px;" width="40">
+                <img src="/static/img/Lorea.jpg" style="border:2px solid blue ;border-radius: 10px;" width="40">
               </td>
               <td style="font-size: 14px; padding-left:5px;"><a style="color:white; font-size: 14px;" href="project-LifeGame_script/?id={{lg_script.id}}">section "{{lg_script.section}}":  {{lg_script.title}}</a></td>                        
               <td></td>
             </tr>
             <tr>                                         
-              <td style="width:75%; text-align:center; font-size:15px; color:white; "><textarea readonly style="width:100%; padding:5px;  border:2px solid white; background-color: transparent;">{{lg_script.homework}}</textarea></td>             
+              <td style="width:75%; text-align:center; font-size:15px; color:white; "><textarea readonly style="width:100%; padding:5px;  border:1px solid white; background-color: transparent;">{{lg_script.homework}}</textarea></td>             
             </tr>
           </table>
         </li>
