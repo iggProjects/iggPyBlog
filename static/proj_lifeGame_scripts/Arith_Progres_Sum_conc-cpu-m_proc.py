@@ -35,7 +35,7 @@ N_TER = 10000
 # param 4: número de sucesiones a calcular
 N_SUCESIONES = 100
 # param 5: número de CPU's a usar
-N_CPUS = 1
+N_CPUS = 4
 # Número para fijar frecuencia de prints
 BASE = int(N_SUCESIONES / 10)
 
@@ -55,13 +55,14 @@ def suma_AP(d):
 		#count_print += 1
 		pid=str(multiprocessing.Process.pid)
 		name=str(multiprocessing.Process.name)
-		print(f"\nPrint {count} | razón {d} -> Proceso: {pid} | nombre: {name}\n\t\t{FR_GREEN}SUMA DE LA PROGRESIÓN: {place_comma(resultado)}{NO_COLOR}")
+		print(f"\nPrint {count} | razón {d} -> Proceso: {pid} | nombre: {name}\n\t{FR_GREEN}====== SUMA DE LA PROGRESIÓN: {place_comma(resultado)} ======{NO_COLOR}")
 	count += 1
 
 # Ejecuta la suma para una lista de razones, todas con el mismo elemento inicial 
 def suma(lista,N_CPUS):	
-	print(f"multiprocessing pool var type: {type(multiprocessing.Pool(N_CPUS))}")
+	print(f"multiprocessing pool: {multiprocessing.Pool(N_CPUS)} | var type: {type(multiprocessing.Pool(N_CPUS))}")
 	with multiprocessing.Pool(N_CPUS) as pool:
+		print(f"\t{FR_RED}===== pool : {pool}{NO_COLOR} =====")
 		pool.map(suma_AP,lista)
 		# pool.map(suma_AP,lista,N_TER)
 
