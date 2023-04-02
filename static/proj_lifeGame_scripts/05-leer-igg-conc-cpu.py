@@ -86,8 +86,10 @@ def ejecutar_matriz(matriz):
 #  MAIN
 #	
 
-nY, nX = os.get_terminal_size(0)		# Obtengo COLUMNAS y LINEAS de la consola
+nY, nX = os.get_terminal_size()				# Unix Obtengo COLUMNAS y LINEAS de la consola
+#nY, nX = os.get_terminal_size(0)			# Windows Obtengo COLUMNAS y LINEAS de la consola
 # print(f"cols: {os.get_terminal_size(0)[0]} , rows:  {os.get_terminal_size(0)[1]} ")
+
 nX, nY = nX-20, int(nY/4)-1				  	# Ajusto por espacios e indicador de iteraciones
 
 matriz = crear_matriz()

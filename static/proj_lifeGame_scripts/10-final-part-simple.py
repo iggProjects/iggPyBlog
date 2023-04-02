@@ -118,7 +118,8 @@ def contraer_matriz(matriz):
 # Programa
 #
 n=1																								# Numero Iteraciones
-nX, nY = os.get_terminal_size(0)									# Obtengo COLUMNAS y LINEAS de la consola
+nX, nY = os.get_terminal_size()					 	# Windows Obtengo COLUMNAS y LINEAS de la consola
+#nX, nY = os.get_terminal_size(0)					# Linux   Obtengo COLUMNAS y LINEAS de la consola
 nX, nY = parificar(int(nX/2)), parificar(nY-2)		# Ajusto por espacios e indicador de iteraciones
 
 # Intento capturar nombre de archivo de la llamada
