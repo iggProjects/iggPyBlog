@@ -25,12 +25,12 @@ FR_BLUE  = "\033[34m"
 
 # Pauso la ejecucion
 def pausar():
-	userInput = input('\tPresiona ENTER para continuar CTRL-C para salir.\n')
+	userInput = input('\tPresiona ENTER para continuar CTRL-C para salir.')
 
 # Muestro la Matriz
 def mostrar_matriz(matriz,msg):
 	X, Y = matriz.shape                                   # Dimensiones de la matriz
-	print(f"\n\t{FR_GREEN}{msg}{NO_COLOR}\n")
+	print(f"\n{FR_GREEN}{msg}{NO_COLOR}\n")
 	for y in range(0, Y):
 		for x in range(0, X):
 			if matriz[x,y] == 1:
@@ -38,7 +38,7 @@ def mostrar_matriz(matriz,msg):
 			else:
 				print(f"\t\033[0;37m{int(matriz[x,y])}\033[0m", end =" ")
 		print()
-	print()	
+	#print()	
 	pausar()	
 
 
@@ -51,23 +51,28 @@ mostrar_matriz(matriz,msg)
 
 #print("\nMatriz 0")
 m0 = matriz[ 0:int(nX/2), 0:int(nY/2) ]
-#mostrar_matriz(m0)
+mostrar_matriz(m0, "m0")
+
 #print("\nMatriz 1")
 m1 = matriz[ int(nX/2):nX, 0:int(nY/2) ]
-#mostrar_matriz(m1)
+mostrar_matriz(m1, "m1")
+
 #print("\nMatriz 2")
 m2 = matriz[ 0:int(nX/2), int(nY/2):nY ]
-#mostrar_matriz(m2)
+mostrar_matriz(m2,"m2")
+
 #print("\nMatriz 3")
 m3 = matriz[ int(nX/2):nX, int(nY/2):nY ]
-#mostrar_matriz(m3)
+mostrar_matriz(m3,"m3")
+
 der = m1[ [0], : ]
 mostrar_matriz(der, "derecha")
+
 izq = m1[ [int(nX/2)-1], : ]
 mostrar_matriz(izq, "izquierda")
-print("\tm0 expandida fase 1")
+
 m0e=np.vstack( (izq, m0, der) )
-mostrar_matriz(m0e, "m0e")
+mostrar_matriz(m0e, "m0 expandida fase 1")
 
 bot = np.vstack(
 	( [m3[int(nX/2)-1, 0]], m2[ :, [0] ], [m3[0, 0]] )
@@ -78,6 +83,7 @@ top = np.vstack(
 	( [m3[int(nX/2)-1, int(nY/2)-1]], m2[ :, [int(nY/2)-1] ], [m3[0, int(nY/2)-1]] )
 )
 mostrar_matriz(top, "top")
+
 m0e = np.hstack( ( top, m0e, bot) )
 mostrar_matriz(m0e, "m0e expandida")
 
