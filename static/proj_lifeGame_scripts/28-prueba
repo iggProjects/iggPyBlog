@@ -1,0 +1,19 @@
+#!/bin/bash
+
+ARCH_RES="29-resultados.txt"
+SCRP_SEN="25-final-sencillo-sin_mostrar.py"
+SCRP_PAR="26-final-particion-simple-sin_mostrar.py"
+SCRP_MPS="27-final-particion-multiproceso-pool-sin_mostrar.py"
+
+for dimension in 128 512 1024; do
+	echo "DIMENSION ${dimension}" >> ${ARCH_RES}
+	echo "time ./${SCRP_SEN} ${dimension} | ${ARCH_RES}" >> ${ARCH_RES}
+	{ time ./${SCRP_SEN} ${dimension}; } 2>> ${ARCH_RES}
+	echo >> ${ARCH_RES}
+	echo "time ./${SCRP_PAR} ${dimension} [a] ${ARCH_RES}" >> ${ARCH_RES}
+	{ time ./${SCRP_PAR} ${dimension}; } 2>> ${ARCH_RES}
+	echo >> ${ARCH_RES}
+	echo "time ./${SCRP_MPS} ${dimension} [a] ${ARCH_RES}" >> ${ARCH_RES}
+	{ time ./${SCRP_MPS} ${dimension}; } 2>> ${ARCH_RES}
+	echo >> ${ARCH_RES}
+done
