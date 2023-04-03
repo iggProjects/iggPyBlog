@@ -1,0 +1,10 @@
+LIFE GAME PROJECT BITAKORA
+
+how enigma machine works
+    - https://la-tecnologia.com/destacado/the-enigma-enigma-como-funcionaba-la-maquina-enigma/
+    - https://youtu.be/G2_Q9FoD-oQ
+    - https://www.nauler.com/funcionamiento-de-la-maquina-enigma
+    - https://www.ecured.cu/M%C3%A1quina_Enigma
+
+rotate a list
+    - https://www.geeksforgeeks.org/python-ways-to-rotate-a-list/
