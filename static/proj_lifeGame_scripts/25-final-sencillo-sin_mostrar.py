@@ -7,7 +7,7 @@ import time
 # Constantes
 #
 ITERAC = 100
-DORMIR= 0.0
+DORMIR= 0.01
 
 #
 # Funciones
@@ -96,12 +96,15 @@ def calcular_matriz(matriz):
 
 if __name__ == '__main__':
 
-	n=1																								# Numero Iteraciones
-	# nX, nY = os.get_terminal_size(0)									# Obtengo COLUMNAS y LINEAS de la consola
-	# nX, nY = parificar(int(nX/2)), parificar(nY-2)		# Ajusto por espacios e indicador de iteraciones
-	nX, nY = 2000, 2000
+	os.system('cls')
 
-	print(f"\nPlaying LifeGame with {nX} cols, {nY} rows and {ITERAC} iterations\n ")
+	n=1																								# Numero Iteraciones
+	# nX, nY = os.get_terminal_size(0)						# Linux Obtengo COLUMNAS y LINEAS de la consola
+	# nX, nY = os.get_terminal_size()						# Windows Obtengo COLUMNAS y LINEAS de la consola
+	# nX, nY = parificar(int(nX/2)), parificar(nY-2)		# Ajusto por espacios e indicador de iteraciones
+	nX, nY = 20, 20
+
+	print(f"\nPlaying LifeGame with a Matrix of {nX} x {nY} and {ITERAC} iterations\n ")
 	pausar()
 
 
@@ -125,6 +128,6 @@ if __name__ == '__main__':
 
 		# Muestro la nueva cara de la matriz
 		# mostrar_matriz(matriz)
-		print(f"Iteraciones: {n} de {ITERAC} ({nX}, {nY})")
+		print(f"Iteraciones: {n} de {ITERAC} | Matriz({nX} x {nY})")
 		time.sleep(DORMIR)
 		n+=1

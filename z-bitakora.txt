@@ -115,6 +115,12 @@ DO IT !!!
     - https://thispointer.com/python-how-to-create-a-zip-archive-from-multiple-files-or-directory/
     - https://realpython.com/python-zipfile/
 
+- COLORS codes (oct, hexa) 
+    - http://jafrog.com/2013/11/23/colors-in-terminal.html
+    - https://xdevs.com/guide/color_serial/
+    - https://en.wikipedia.org/wiki/ANSI_escape_code#8-bit
+    - https://chrisyeh96.github.io/2020/03/28/terminal-colors.html
+
 - COLORS in power shell  ✔   (-->  os.system('cls') )
     - https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_ansi_terminals?view=powershell-7.3
     - https://stackoverflow.com/questions/53629115/colored-text-output-on-powershell

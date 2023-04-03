@@ -1,0 +1,5 @@
+LIFE GAME PROJECT BITAKORA
+
+0.- read rules again
+1.- Check how to stop script running when game is over
+2.- poner reloj

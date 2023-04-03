@@ -22,9 +22,13 @@ from os import system
 
 # Colors
 NO_COLOR = "\033[00m"
+#FR_GREEN = "\033[32m"
 FR_GREEN = "\033[92m"
+#FR_RED   = "\033[31m"
 FR_RED   = "\033[91m"
 FR_BLUE  = "\033[34m"
+FR_YELL  = "\033[33m"
+FR_MAG   = "\033[35m"
 
 # param 1_ elemento inicial de la sucesión
 ELEM_INIC = 1
@@ -93,3 +97,5 @@ if __name__ == '__main__':
 	print(f"{FR_GREEN}======= Lista razones para las sucesiones ======={NO_COLOR}\n{lista_razones}")
 	print(f"\nNo CPU's: {N_CPUS} | Estimado operac aritmeticas: {place_comma(oper_arit)} | Nro prints teóricos: {place_comma(int(N_SUCESIONES/BASE))}")
 	print(f"\n{FR_GREEN}Duracion proceso sin incluir tiempo impresión BALANCE: {dur_5_dec} segundos{NO_COLOR}\n")
+
+	print(f"{FR_YELL}======== that's all ========{NO_COLOR}\n")

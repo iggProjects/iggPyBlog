@@ -6,8 +6,8 @@ import time
 #
 # Constantes
 #
-ITERAC = 10
-DORMIR= 0.0
+ITERAC = 100
+DORMIR= 0.01
 
 #
 # Funciones
@@ -122,12 +122,13 @@ def contraer_matriz(matriz):
 
 if __name__ == '__main__':
 
+	os.system('cls')
 	n=1																								# Numero Iteraciones
 	# nX, nY = os.get_terminal_size(0)									# Obtengo COLUMNAS y LINEAS de la consola
 	# nX, nY = parificar(int(nX/2)), parificar(nY-2)		# Ajusto por espacios e indicador de iteraciones
-	nX, nY = 2000, 2000
+	nX, nY = 20, 20
 
-	print(f"\nPlaying LifeGame with {nX} cols, {nY} rows and {ITERAC} iterations\n ")
+	print(f"\nPlaying LifeGame with a Matrix of {nX} x {nY} and {ITERAC} iterations\n ")
 	pausar()
 
 

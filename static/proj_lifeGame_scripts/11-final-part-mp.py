@@ -8,7 +8,15 @@ import time
 # Constantes
 #
 ITERAC = 250
-DORMIR= 0.02
+DORMIR= 0.05
+
+# Colors
+NO_COLOR = "\033[00m"
+FR_GREEN = "\033[92m"
+FR_RED   = "\033[91m"
+FR_BLUE  = "\033[94m"
+FR_YELL  = "\033[93m"
+FR_MAG   = "\033[95m"
 
 #
 # Funciones
@@ -126,8 +134,11 @@ def calcular_matrices(matrices):
 #
 
 if __name__ == '__main__':
+
+	os.system('cls')
+
 	n=1													# Numero Iteraciones
-	nX, nY = os.get_terminal_size()					# Obtengo COLUMNAS y LINEAS de la consola
+	nX, nY = os.get_terminal_size()					    # Obtengo COLUMNAS y LINEAS de la consola
 	#nX, nY = os.get_terminal_size(0)					# Linux Obtengo COLUMNAS y LINEAS de la consola
 	#nX, nY = parificar(int(nX/2)), parificar(nY-2)		# Ajusto por espacios e indicador de iteraciones
 	nX, nY = 20, 20
@@ -141,10 +152,10 @@ if __name__ == '__main__':
 	except:
 		archivo = 'NO_ARCHIVO'
 
-	matriz = crear_matriz(archivo)								# Obtengo la matriz
+	matriz = crear_matriz(archivo)			# Obtengo la matriz
 	mostrar_matriz(matriz)
-
-	# pausar()
+	print(f"{FR_GREEN}MATRIZ INICIAL{NO_COLOR}")
+	pausar()
 
 	# Iteraciones del programa
 	while n <= ITERAC:
@@ -172,9 +183,7 @@ if __name__ == '__main__':
 
 		# Recombino las matrices particionadas
 		matriz = np.hstack( (np.vstack( (m0,m1) ), np.vstack( (m2,m3) )) )
-
-		# Muestro la nueva cara de la matriz
 		mostrar_matriz(matriz)
-		print(f"Iteración: {n} de {ITERAC} ({nX}, {nY})")
+		print(f"Iteración: {n} de {ITERAC} | Matriz {nX} x {nY}")
 		time.sleep(DORMIR)
 		n+=1

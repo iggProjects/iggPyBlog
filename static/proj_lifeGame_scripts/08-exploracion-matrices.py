@@ -21,11 +21,13 @@ import os
 NO_COLOR = "\033[00m"
 FR_GREEN = "\033[92m"
 FR_RED   = "\033[91m"
-FR_BLUE  = "\033[34m"
+FR_BLUE  = "\033[94m"
+FR_YELL  = "\033[93m"
+FR_MAG   = "\033[95m"
 
 # Pauso la ejecucion
 def pausar():
-	userInput = input('\tPresiona ENTER para continuar CTRL-C para salir.')
+	userInput = input("\tPresiona ENTER para continuar CTRL-C para salir.")
 
 # Muestro la Matriz
 def mostrar_matriz(matriz,msg):
@@ -42,8 +44,13 @@ def mostrar_matriz(matriz,msg):
 	pausar()	
 
 
-os.system('cls')                                    # Ejecuto el comando 'clear' del OS
+os.system('cls')        # Ejecuto el comando 'clear' del OS
 nX, nY = 8, 8
+
+print("-------------------------------------------------------------------")
+print(f"{FR_YELL}\t======= MATRIX WITH NUMPY METHODS   ======={NO_COLOR}\n")
+pausar()
+    
 
 matriz = np.arange(nX*nY).reshape(nX, nY)
 msg = "Matriz inicial de " + str(nX) + " col y " + str(nY) + " rows"
@@ -82,6 +89,8 @@ mostrar_matriz(top, "top")
 
 m0e = np.hstack( ( top, m0e, bot) )
 mostrar_matriz(m0e, "m0e expandida")
+
+print(f"\n{FR_YELL}======== that's all ========{NO_COLOR}\n")
 
 #print()
 #mostrar_matriz( np.vstack( (m0,m1) ) )
