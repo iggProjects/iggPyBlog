@@ -16,7 +16,7 @@ string.ascii_lowercase
 'abcdefghijklmnopqrstuvwxyz'
 alphab = list(string.ascii_lowercase)
 #old_alphab = list(string.ascii_lowercase)
-print(f"{FR_YELL}\nORIGINAL ALPHABET LIST{NO_COLOR}\n{alphab}\n")
+print(f"{FR_YELL}\nORIGINAL ALPHABET LIST{NO_COLOR} (length: {len(alphab)})\n{alphab}\n")
 #print(f"{FR_YELL}old alphabet list ➡  {NO_COLOR}{old_alphab}\n")
 
 # position to rotate list

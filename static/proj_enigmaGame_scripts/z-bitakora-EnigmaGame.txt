@@ -8,3 +8,11 @@ how enigma machine works
 
 rotate a list
     - https://www.geeksforgeeks.org/python-ways-to-rotate-a-list/
+
+Terminate multiprocess whe congition is met
+    - https://stackoverflow.com/questions/47903791/how-to-terminate-a-multiprocess-in-python-when-a-given-condition-is-met
+    - https://stackoverflow.com/questions/54224989/killing-a-multiprocessing-process-when-condition-is-met
+    - https://discuss.python.org/t/terminate-multiprocessing-pool-if-one-process-finds-the-desired-value-or-the-condition-is-met/18360
+
+How to know if a process is finished
+    - https://stackoverflow.com/questions/4995419/in-python-how-do-i-know-when-a-process-is-finished    
