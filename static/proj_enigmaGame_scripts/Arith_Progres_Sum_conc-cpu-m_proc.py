@@ -39,7 +39,7 @@ N_SUCESIONES = 100
 # param 5: número de CPU's a usar
 N_CPUS = 4
 # Número para fijar frecuencia de prints
-BASE = int(N_SUCESIONES / 10)
+BASE = int(N_SUCESIONES / 5)
 
 # place thousands separator
 def place_comma(numb):
@@ -62,7 +62,7 @@ def suma_AP(d):
 
 # Ejecuta la suma para una lista de razones, todas con el mismo elemento inicial 
 def suma(lista,N_CPUS):	
-	print(f"multiprocessing pool: {multiprocessing.Pool(N_CPUS)} | var type: {type(multiprocessing.Pool(N_CPUS))}")
+	print(f"multiprocessing pool: {multiprocessing.Pool(N_CPUS)} | var type: {type(multiprocessing.Pool(N_CPUS))}")	
 	with multiprocessing.Pool(N_CPUS) as pool:
 		print(f"\t{FR_RED}===== pool : {pool}{NO_COLOR} =====")
 		pool.map(suma_AP,lista)
@@ -77,6 +77,9 @@ if __name__ == '__main__':
 	inicio = time.time()
 	system('cls')
 
+	# Max Number of CPU's 
+	print(f"\n{FR_GREEN}======= Max number of cpu's in PC: {multiprocessing.cpu_count()} ======={NO_COLOR}\n")
+
 	# Lista de n razones para las n sucesiones
 	lista_razones = [(RAZON_INIC + 2*x) for x in range(0, N_SUCESIONES)]
 
@@ -89,9 +92,9 @@ if __name__ == '__main__':
 	duracion = time.time() - inicio
 	dur_5_dec = "{:.5f}".format(duracion)
 
-	print(f"\n{FR_RED}-----------BALANCE--------------{NO_COLOR}\n")		
+	print(f"\n{FR_YELL}============ BALANCE ============{NO_COLOR}\n")		
 
-	print(f"\n{place_comma(N_SUCESIONES)} Sucesiones | Elem Inicial {ELEM_INIC} | No Términos {place_comma(N_TER)}\n")
+	print(f"{place_comma(N_SUCESIONES)} Sucesiones | Elem Inicial {ELEM_INIC} | No Términos {place_comma(N_TER)}\n")
 	print(f"{FR_GREEN}======= Lista razones para las sucesiones ======={NO_COLOR}\n{lista_razones}")
 	print(f"\nNo CPU's: {N_CPUS} | Estimado operac aritmeticas: {place_comma(oper_arit)} | Nro prints teóricos: {place_comma(int(N_SUCESIONES/BASE))}")
 	print(f"\n{FR_GREEN}Duracion proceso sin incluir tiempo impresión BALANCE: {dur_5_dec} segundos{NO_COLOR}\n")

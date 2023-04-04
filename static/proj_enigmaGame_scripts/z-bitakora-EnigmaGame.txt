@@ -17,7 +17,20 @@ Terminate multiprocess whe congition is met
 How to know if a process is finished
     - https://stackoverflow.com/questions/4995419/in-python-how-do-i-know-when-a-process-is-finished    
 
-
 https://www.digitalocean.com/community/tutorials/python-multiprocessing-example
 https://stackoverflow.com/questions/63005349/how-can-i-print-from-a-python-multiprocessing-process
 https://stackoverflow.com/questions/66651441/in-python-multiprocessing-pool-how-to-get-the-print-result-in-the-subprocess    
+
+multiprocessing.Pool
+    - https://stackoverflow.com/questions/44139074/python-multiprocessing-pool-vs-process
+    - https://superfastpython.com/multiprocessing-pool-vs-process/
+    - Tutorial: https://superfastpython.com/multiprocessing-pool-class/
+    - STOP ALL TASKS: https://superfastpython.com/multiprocessing-pool-stop-all-tasks/
+
+multiprocessing.Process
+    - Tutorial: https://superfastpython.com/run-function-in-new-process/
+
+GetProcess  (top-htop in linux)
+    - https://forsenergy.com/es-es/windowspowershellhelp/html/27a05dbd-4b69-48a3-8d55-b295f6225f15.htm
+    - https://superuser.com/questions/176624/linux-top-command-for-windows-powershell
+        - While(1) {ps | sort -des cpu | select -f 15 | ft -a; sleep 1; cls}

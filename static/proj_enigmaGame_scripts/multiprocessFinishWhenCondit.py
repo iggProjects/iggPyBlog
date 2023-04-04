@@ -24,17 +24,19 @@ def f(event):
         else:
             print(f"{FR_YELL}Value is {x} and I Got what I am searching for !!! 😎😎😎{NO_COLOR}")
             #system('cls')
-            print(f"Event ---> {event}\n\n")
+            print(f"Event ---> {event}\n")
             event.set()
         time.sleep(2)
 
 if __name__ == '__main__':
 
+    system('cls')
+
     jobs = []
     #Create Event
     event = multiprocessing.Event()
 
-    #Create ten processes with 1 CPU
+    #Create 10 processes with 1 CPU ???
     for i in range(10):
         p = multiprocessing.Process(target=f,args=(event,))
         p.start()
@@ -43,12 +45,14 @@ if __name__ == '__main__':
     # Check whether event is set or not, and When set close all child processes
     while True:
         if event.is_set():
-            print("======= Exiting all child processess ======")            
-            for i in jobs:
-                print(f"Job i name: {i.name} pid: {i.pid}  ||| type = {type(i)}")
-                print(f"Job i {i}")
+            print("======= Exiting all child processess ======")      
+            i=1      
+            for job in jobs:
+                print(f"Job {i} [name: {job.name}, pid: {job.pid}]  | type = {type(job)}")
+                print(f"\tJob {job}")
                 #Terminate each process
-                i.terminate()
+                job.terminate()
+                i+=1
             #Terminating main process
             sys.exit(1)
         time.sleep(1)

@@ -3,7 +3,7 @@ import numpy as np
 import os
 import time
 
-os.system('clear')
+os.system('cls')
 
 #
 # Constantes
