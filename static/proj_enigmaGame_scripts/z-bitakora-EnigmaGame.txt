@@ -16,3 +16,8 @@ Terminate multiprocess whe congition is met
 
 How to know if a process is finished
     - https://stackoverflow.com/questions/4995419/in-python-how-do-i-know-when-a-process-is-finished    
+
+
+https://www.digitalocean.com/community/tutorials/python-multiprocessing-example
+https://stackoverflow.com/questions/63005349/how-can-i-print-from-a-python-multiprocessing-process
+https://stackoverflow.com/questions/66651441/in-python-multiprocessing-pool-how-to-get-the-print-result-in-the-subprocess    

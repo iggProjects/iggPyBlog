@@ -77,6 +77,7 @@ if __name__ == '__main__':
 	# hora inicio
 	inicio = time.time()
 	system('cls')
+	print(f"\n{FR_GREEN}======= Total number of cpu's--> {multiprocessing.cpu_count()} ======={NO_COLOR}\n")
 	# count of total prints
 	tot_count_print = 0
 
