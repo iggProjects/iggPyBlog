@@ -10,6 +10,15 @@ from os import system
 from MyFunc import *
 from MyColors import *
 
+# CONSTANTS
+# Colors
+NO_COLOR = "\033[00m"
+FR_RED   = "\033[91m"
+FR_GREEN = "\033[92m"
+FR_YELL  = "\033[93m"
+FR_BLUE  = "\033[94m"
+FR_MAG   = "\033[95m"
+
 # FUNCIONS SECTION
 
 # funtion to encrypt a text
@@ -52,34 +61,35 @@ if __name__ == "__main__":
     'abcdefghijklmnopqrstuvwxyz'
     alphab = list(string.ascii_lowercase)
     old_alphab = list(string.ascii_lowercase)
-    print(frGREEN(f"old alphabet list\033[00m:➡ {old_alphab}\n"))
+    print(f"{FR_GREEN}old alphabet list:{NO_COLOR}\t{old_alphab}\n")
     
     # random.shuffle() to create new_alphab
     random.shuffle(old_alphab)
     new_alphab=old_alphab       
-    print(frGREEN(f"new alphabet list\033[00m ➡ {new_alphab}\n"))
+    print(f"{FR_GREEN}new alphabet list:{NO_COLOR}\t{new_alphab}\n")
     pause()
 
     # my text
     my_text = 'abcdef ghijk lmnopq KAIXO TEACHER'
 
-    print(frGREEN(f"my text ➡ \033[00m {my_text}\n"))
+    print(f"{FR_GREEN}my text:{NO_COLOR}\t{my_text}\n")
 
     # call encrypt function to change original text
     encripted_text = ''    
     encrypt(my_text.casefold(),alphab,new_alphab)
-    print(frGREEN(f"encrypted text ➡ \033[00m {encripted_text}\n"))    
+    print(f"{FR_GREEN}encrypted text:{NO_COLOR}\t{encripted_text}\n") 
 
     # decode process
     decoded_text=''
     decipher(encripted_text,new_alphab,alphab)
-    print(frGREEN(f"decoded text ➡ \033[00m {decoded_text}\n"))
+    print(f"{FR_YELL}decoded text:{NO_COLOR}\t{decoded_text}\n")
     pause()
 
     # ------------------------------------------------
     #          SHOW VARS CHARACTERISTICS 
     #------------------------------------------------ 
 
+    """
     yesss=True   
     while yesss:
         _msg = "Do you want to see attributes for a specific VAR ? (Y,N): "
@@ -104,7 +114,7 @@ if __name__ == "__main__":
 
     else:
         print(f"\n{FR_GREEN}---------- That's all for today 👌 ----------{NO_COLOR}\n")
-
+    """
 else:
     # something wrong
     print(frRED("\n---- upsssssssss something is wrong 😢😢  ---\n"))

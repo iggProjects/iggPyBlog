@@ -44,13 +44,13 @@ if __name__ == '__main__':
 
         # create and configure the process pool
         # Note: if you do not put a valid number of CPU's, Pool() assume the maximum of PC 
-        with Pool(2) as pool:   
+        with Pool() as pool:   
 
             # prepare arguments
             items = [(i,event) for i in range(8)]
             print(f'{FR_YELL}From Main - With Pool() as pool:{NO_COLOR}\n\tpool -> {pool}\n', flush=True)
             for item in items:
-                print(f'{FR_YELL}From Main:{NO_COLOR}: Task {item} running', flush=True)    
+                print(f'{FR_YELL}From Main{NO_COLOR}: Task {item} running', flush=True)    
             print()
 
             # issue tasks asynchronously
