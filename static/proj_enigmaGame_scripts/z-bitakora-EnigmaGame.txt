@@ -1,5 +1,17 @@
 LIFE GAME PROJECT BITAKORA
 
+tasks   
+- alphabets list:  10.000 random alphabets with one is correct
+- event.set()
+- time.sleep
+- decoration
+- 
+
+
+
+================================================================
+LINKS
+
 how enigma machine works
     - https://la-tecnologia.com/destacado/the-enigma-enigma-como-funcionaba-la-maquina-enigma/
     - https://youtu.be/G2_Q9FoD-oQ
