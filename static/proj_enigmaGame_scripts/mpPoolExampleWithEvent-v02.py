@@ -18,10 +18,19 @@ FR_MAG   = "\033[95m"
 # task executed in a worker process
 def task(identifier, event):    
     print(f'From Task: {FR_GREEN}Task {identifier} running{NO_COLOR}', flush=True)
+    if identifier == 8:
+        sleep(3)
+        print(f'\tFrom Task: {FR_GREEN}Task {identifier} call event.set() {NO_COLOR}', flush=True)
+        # safely stop the issued tasks
+        event.set()
+        # wait for all tasks to stop
+        result.wait()
+        print(f'\n{FR_RED}=== ALL TASKS STOPED ==={NO_COLOR}\n')
+
     # run for a long time
     for i in range(10):
         # block for a moment
-        sleep(1)
+        sleep(3)
         # check if the task should stop
         if event.is_set():
             print(f'{FR_MAG}\tTask {identifier} stopping...{NO_COLOR}', flush=True)
@@ -54,11 +63,11 @@ if __name__ == '__main__':
 
             result = pool.starmap_async(task, items)
             # wait a moment
-            sleep(3)
+            sleep(10)
             print()
             # safely stop the issued tasks
-            print(f'{FR_MAG}Safely stopping all tasks{NO_COLOR}\n')
-            event.set()
+            #print(f'{FR_MAG}Safely stopping all tasks{NO_COLOR}\n')
+            #event.set()
             # wait for all tasks to stop
-            result.wait()
-            print(f'\n{FR_RED}=== ALL TASKS STOPED ==={NO_COLOR}\n')
+            # result.wait()
+            #print(f'\n{FR_RED}=== ALL TASKS STOPED ==={NO_COLOR}\n')
