@@ -28,7 +28,7 @@ def task(identifier, event):
             # stop the task
             break
     # report all done
-    print(f'\t\tTask {identifier} Done', flush=True)
+    print(f'\t\tTask {identifier} Stopped', flush=True)
  
 # protect the entry point
 if __name__ == '__main__':
