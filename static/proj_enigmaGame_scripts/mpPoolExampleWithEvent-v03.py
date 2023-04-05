@@ -7,6 +7,7 @@ from multiprocessing import Event
 from multiprocessing import Manager
 from multiprocessing.pool import Pool
 from os import system
+from random import randrange
 
 NO_COLOR = "\033[00m"
 FR_RED   = "\033[91m"
@@ -17,19 +18,20 @@ FR_MAG   = "\033[95m"
  
 # task executed in a worker process
 def task(identifier, event):    
-    print(f'{FR_GREEN}From Task:{NO_COLOR} Task {identifier} running', flush=True)
+    print(f'From Task: {FR_GREEN}Task {identifier} running{NO_COLOR}', flush=True)   
+    while not event.is_set():
+        number = randrange(150)
+        print(f"\t{identifier} -- {number}")
+        if number == 22:
+            print(f'{FR_MAG}\t==== From Task {identifier}, number {number} call event.set() process{NO_COLOR}', flush=True)
+            sleep(1)
+            #print(f'\t\n==== From Task: {FR_GREEN}Task {identifier} call event.set() ====\n{NO_COLOR}', flush=True)
+            # safely stop the issued tasks
+            print(f'{FR_MAG}\tTask {identifier} stopping...{NO_COLOR}', flush=True)
+            print(f'\t\tTask {identifier} Stopped', flush=True)
+            event.set()
+            break
 
-    # safely stop the issued tasks
-    """
-    if identifier == 3:
-        print(f"\n\t{FR_RED}Event call with identifier = {identifier}")
-        print(f'\tSafely stopping all tasks{NO_COLOR}\n')
-        event.set()
-    """    
-    # report all done
-    print(f'\t\tTask {identifier} Done', flush=True)
-    #print(f'\t\tTask {identifier} Stopped', flush=True)
- 
 # protect the entry point
 if __name__ == '__main__':
     # clean screen
@@ -38,24 +40,29 @@ if __name__ == '__main__':
     with Manager() as manager:
         # create the shared event
         event = manager.Event()
+        print(f'\n{FR_YELL}From Main - With Manager() as manager:{NO_COLOR}\n\tevent -> {event}\n', flush=True)
+
         # create and configure the process pool
-        with Pool() as pool:
+        # Note: if you do not put a valid number of CPU's, Pool() assume the maximum of PC 
+        with Pool(2) as pool:   
+
             # prepare arguments
-            items = [(i,event) for i in range(10)]
-            print()
+            items = [(i,event) for i in range(8)]
+            print(f'{FR_YELL}From Main - With Pool() as pool:{NO_COLOR}\n\tpool -> {pool}\n', flush=True)
             for item in items:
-                print(f'{FR_YELL}From Main:{NO_COLOR} Task {item} running', flush=True)            
+                print(f'{FR_YELL}From Main:{NO_COLOR}: Task {item} running', flush=True)    
+            print()
+
             # issue tasks asynchronously
-            print()
             result = pool.starmap_async(task, items)
-            # wait a moment
-            sleep(1)
-            print()
-            """
+
             # safely stop the issued tasks
-            print(f'{FR_MAG}Safely stopping all tasks{NO_COLOR}\n')
-            event.set()
-            # wait for all tasks to stop
-            result.wait()
-            """            
+            #if event.is_set():
+            sleep(2)
+            print(f'\n{FR_MAG}Safely stopping all tasks{NO_COLOR}\n')
+            #event.set()
+            
+            # wait for all tasks to stop            
             print(f'\n{FR_RED}=== ALL TASKS STOPED ==={NO_COLOR}\n')
+            result.wait()
+                    

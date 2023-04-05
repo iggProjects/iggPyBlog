@@ -17,28 +17,29 @@ FR_MAG   = "\033[95m"
  
 # task executed in a worker process
 def task(identifier, event):    
-    print(f'From Task: {FR_GREEN}Task {identifier} running{NO_COLOR}', flush=True)
-    if identifier == 8:
-        sleep(3)
-        print(f'\tFrom Task: {FR_GREEN}Task {identifier} call event.set() {NO_COLOR}', flush=True)
+    print(f'From Task: {FR_GREEN}Task {identifier} running{NO_COLOR}', flush=True)    
+    number = identifier*11
+    print(f"\tnumber: {number}")
+    if number == 22:
+        print(f'{FR_MAG}\t==== From Task: number {number} call event.set() process{NO_COLOR}', flush=True)
+        sleep(1)
+        #print(f'\t\n==== From Task: {FR_GREEN}Task {identifier} call event.set() ====\n{NO_COLOR}', flush=True)
         # safely stop the issued tasks
         event.set()
-        # wait for all tasks to stop
-        result.wait()
-        print(f'\n{FR_RED}=== ALL TASKS STOPED ==={NO_COLOR}\n')
 
-    # run for a long time
+    #if event.is_set():
+    #    print(f'{FR_MAG}\tTask number {number}{NO_COLOR}', flush=True)
     for i in range(10):
         # block for a moment
-        sleep(3)
+        sleep(1)
         # check if the task should stop
         if event.is_set():
             print(f'{FR_MAG}\tTask {identifier} stopping...{NO_COLOR}', flush=True)
             # stop the task
+            # report all done
+            print(f'\t\tTask {identifier} Stopped', flush=True)
             break
-    # report all done
-    print(f'\t\tTask {identifier} Stopped', flush=True)
- 
+        
 # protect the entry point
 if __name__ == '__main__':
     # clean screen
@@ -51,23 +52,25 @@ if __name__ == '__main__':
 
         # create and configure the process pool
         # Note: if you do not put a valid number of CPU's, Pool() assume the maximum of PC 
-        with Pool(2) as pool:   
+        with Pool() as pool:   
+
             # prepare arguments
-            items = [(i,event) for i in range(8)]
+            items = [(i,event) for i in range(10)]
             print(f'{FR_YELL}From Main - With Pool() as pool:{NO_COLOR}\n\tpool -> {pool}\n', flush=True)
-
             for item in items:
-                print(f'{FR_YELL}From Main:{NO_COLOR}: Task {item} running', flush=True)            
-            # issue tasks asynchronously
+                print(f'{FR_YELL}From Main:{NO_COLOR}: Task {item} running', flush=True)    
             print()
 
+            # issue tasks asynchronously
             result = pool.starmap_async(task, items)
+
             # wait a moment
-            sleep(10)
-            print()
+            sleep(3)
+
             # safely stop the issued tasks
-            #print(f'{FR_MAG}Safely stopping all tasks{NO_COLOR}\n')
-            #event.set()
+            print(f'\n{FR_MAG}Safely stopping all tasks{NO_COLOR}\n')
+            event.set()
+            
             # wait for all tasks to stop
-            # result.wait()
-            #print(f'\n{FR_RED}=== ALL TASKS STOPED ==={NO_COLOR}\n')
+            result.wait()
+            print(f'\n{FR_RED}=== ALL TASKS STOPED ==={NO_COLOR}\n')
