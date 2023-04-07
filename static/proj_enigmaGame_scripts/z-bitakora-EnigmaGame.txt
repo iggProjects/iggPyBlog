@@ -2,6 +2,9 @@ LIFE GAME PROJECT BITAKORA
 
 tasks   
 - alphabets list:  10.000 random alphabets with one is correct
+    - print all permutatiosn of alphab in txt file
+        - https://beamtic.com/permutations-alphabet
+
 - event.set()
 - time.sleep
 - decoration
@@ -11,6 +14,14 @@ tasks
 
 ================================================================
 LINKS
+
+First n permut:
+    https://www.geeksforgeeks.org/print-first-n-distinct-permutations-of-string-using-itertools-in-python/
+    https://www.tutorialspoint.com/print-first-n-distinct-permutations-of-string-using-itertools-in-python
+
+All permut
+    https://stackoverflow.com/questions/8306654/finding-all-possible-permutations-of-a-given-string-in-python
+    https://www.geeksforgeeks.org/python-permutation-given-string-using-inbuilt-function/
 
 how enigma machine works
     - https://la-tecnologia.com/destacado/the-enigma-enigma-como-funcionaba-la-maquina-enigma/

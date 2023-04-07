@@ -220,5 +220,5 @@ if __name__ == '__main__':
 	print(f"\nmessage: {msg_text}")
 	print(f"\nAprox of operations: ???")
 
-	print(f"Duración: {time.time()-inicio}/n/n")
+	print(f"Duración: {time.time()-inicio}\n\n")
 
