@@ -17,11 +17,17 @@ FR_MAG   = "\033[95m"
  
 # task executed in a worker process
 def task(identifier, event):    
-    print(f'From Task: {FR_GREEN}Task {identifier} running{NO_COLOR}', flush=True)
+    #print(f'From Task: {FR_GREEN}Task {identifier} running{NO_COLOR}', flush=True)
     # run for a long time
     for i in range(10):
         # block for a moment
         sleep(1)
+        print(f'\t{FR_YELL}\tTask {identifier} working {NO_COLOR}', flush=True)
+        sleep(1)
+        print(f'\t\t{FR_YELL}\tTask {identifier} working {NO_COLOR}', flush=True)
+        sleep(1)
+        print(f'\t\t\t{FR_YELL}\tTask {identifier} working {NO_COLOR}', flush=True)
+
         # check if the task should stop
         if event.is_set():
             print(f'{FR_MAG}\tTask {identifier} stopping...{NO_COLOR}', flush=True)
@@ -45,7 +51,7 @@ if __name__ == '__main__':
         with Pool() as pool:   
 
             # prepare arguments
-            items = [(i,event) for i in range(8)]
+            items = [(i,event) for i in range(16)]
             print(f'{FR_YELL}From Main - With Pool() as pool:{NO_COLOR}\n\tpool -> {pool}\n', flush=True)
             for item in items:
                 print(f'{FR_YELL}From Main:{NO_COLOR}: Task {item} running', flush=True)

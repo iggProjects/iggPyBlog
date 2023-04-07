@@ -20,7 +20,7 @@ FR_MAG   = "\033[95m"
 def task(identifier, event):    
     print(f'From Task: {FR_GREEN}Task {identifier} running{NO_COLOR}', flush=True)   
     while not event.is_set():
-        number = randrange(150)
+        number = randrange(200)
         print(f"\t{identifier} -- {number}")
         if number == 22:
             print(f'{FR_MAG}\t==== From Task {identifier}, number {number} call event.set() process{NO_COLOR}', flush=True)
@@ -59,7 +59,7 @@ if __name__ == '__main__':
             # safely stop the issued tasks
             #if event.is_set():
             sleep(2)
-            print(f'\n{FR_MAG}Safely stopping all tasks{NO_COLOR}\n')
+            #print(f'\n{FR_MAG}Safely stopping all tasks{NO_COLOR}\n')
             #event.set()
             
             # wait for all tasks to stop            
