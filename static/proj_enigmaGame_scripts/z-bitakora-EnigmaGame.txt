@@ -10,6 +10,8 @@ tasks
 - decoration
 - 
 
+CPU's working
+- https://www.intel.com/content/www/us/en/support/articles/000029254/processors.html
 
 
 ================================================================
