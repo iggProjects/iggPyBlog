@@ -35,6 +35,7 @@ ENCRYPTED_TEXT = 'jhmare diqot cgfspu tjqls vrjmirn'
 # FUNCIONS SECTION
 
 def decipher(alphab1, event):
+
     decoded_text = ''     
     for ch in ENCRYPTED_TEXT:
         # find 'ch' in new_alphab 
@@ -54,8 +55,11 @@ def decipher(alphab1, event):
         print(f"{FR_YELL}-----------------------------------------------------------------------------------")
         print(f'{FR_MAG}\n...stop process started...{NO_COLOR}', flush=True)
         event.set()
+        #sleep(5)
+        #print(f'\n{FR_MAG}Safely stopping all tasks{NO_COLOR}\n')
+
     else: 
-        sleep(0.001)       
+        sleep(0.0001)       
         #print(f'{FR_GREEN}\n\tDecode text failed: {NO_COLOR}{decoded_text}')
 
     """
@@ -78,6 +82,16 @@ if __name__ == '__main__':
     print(f"{FR_GREEN}Original text:{NO_COLOR}\n\t{MY_TEXT}\n")
     print(f"{FR_GREEN}Encrypted text:{NO_COLOR}\n\t{ENCRYPTED_TEXT}\n")
 
+    messy_alphabets = []
+    messy_alphab1 = ['w', 'n', 'y', 'x', 'o', 'v', 'r', 'l', 'u', 'z', 'q', 'a', 'b', 'm', 'd', 'h', 'f', 'c', 's', 't', 'k', 'e', 'g', 'i', 'p', 'j']            
+    print(f"{FR_GREEN}Random Messy Alphabet used to encrypt original text:{NO_COLOR}\n\t{(','.join(ALPHAB_TO_ENCRYPT))}\n")
+    
+    messy_alphabets.append(ALPHAB_TO_ENCRYPT)   
+    for i in range(50000):
+        messy_alphabets.append(messy_alphab1)
+    #messy_alphabets.append(ALPHAB_TO_ENCRYPT)   
+    print(f"{FR_YELL}====== Total Alphabets: {len(messy_alphabets)} ======{NO_COLOR}\n")          
+
     # create the manager
     with Manager() as manager:
         # create the shared event
@@ -89,24 +103,10 @@ if __name__ == '__main__':
         # Note: if you do not put a valid number of CPU's, Pool() assume the maximum of PC 
         with Pool(8) as pool:   
 
-            # random.shuffle() to create new_alphab
-            #random.shuffle(ORIG_ALPHAB)    
-            #messy_alphab=ORIG_ALPHAB  
-            # prepare arguments            
-            messy_alphab1 = ['w', 'n', 'y', 'x', 'o', 'v', 'r', 'l', 'u', 'z', 'q', 'a', 'b', 'm', 'd', 'h', 'f', 'c', 's', 't', 'k', 'e', 'g', 'i', 'p', 'j']
-            messy_alphab2 = ['n', 'w', 'y', 'x', 'o', 'v', 'r', 'l', 'u', 'z', 'q', 'a', 'b', 'm', 'd', 'h', 'f', 'c', 's', 't', 'k', 'e', 'g', 'i', 'p', 'j']
-            print(f"{FR_GREEN}Random Messy Alphabet used to encrypt original text:{NO_COLOR}\n\t{(','.join(ALPHAB_TO_ENCRYPT))}\n")
-            #pause()
-
-            messy_alphabets = []
-            messy_alphabets.append(ALPHAB_TO_ENCRYPT)   
-            for i in range(100):
-                messy_alphabets.append(messy_alphab1)
-            #messy_alphabets.append(ALPHAB_TO_ENCRYPT) 
-            
+            # prepare arguments 
             alphabets = [(messy_alphabets[i],event) for i in range(len(messy_alphabets))]
-
             print(f'{FR_YELL}From Main - With Pool() as pool:{NO_COLOR}\n\tpool -> {pool}\n', flush=True)
+
             """
             for alphabet in alphabets:
                 print(f'{FR_YELL}From Main:{NO_COLOR} decipher with {alphabet} running', flush=True)    
@@ -116,12 +116,12 @@ if __name__ == '__main__':
             result = pool.starmap_async(decipher, alphabets)
             
             # safely stop the issued tasks
-            sleep(20)
-            print(f'\n{FR_MAG}Safely stopping all tasks{NO_COLOR}\n')
+            #sleep(10)
+            #print(f'\n{FR_MAG}Safely stopping all tasks{NO_COLOR}\n')
             #event.set()
             
             # wait for all tasks to stop            
-            print(f'\n{FR_RED}=== ALL TASKS STOPED ==={NO_COLOR}\n')
+            #print(f'\n{FR_RED}=== ALL TASKS STOPED ==={NO_COLOR}\n')
             result.wait()
 
             # elapsed time
