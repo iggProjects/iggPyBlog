@@ -13,7 +13,7 @@ FR_YELL  = "\033[93m"
 FR_BLUE  = "\033[94m"
 FR_MAG   = "\033[95m"
 
-def worker(range_, target, found_event):  
+def worker(range_, target, found_event):      
     print(f'\n\t{FR_GREEN}pid: {os.getpid()} {NO_COLOR} started at "{datetime.now()}"')
     for x in range_:
         if x == target:
@@ -27,9 +27,13 @@ def worker(range_, target, found_event):
 if __name__ == "__main__":
 
     os.system('cls')
+    
     # time
     inicio = time.time()
     print(f'\n{FR_GREEN}======  "Multiprocess started" ======\n{NO_COLOR}')
+
+    print(f"\nmodel\n\tpool = [Process(target=worker, args=(range_, target, found_event))  for range_ in ranges]\n")
+
 
     N_WORKERS = 32
 
@@ -37,27 +41,33 @@ if __name__ == "__main__":
     ranges = [range(x, x + step)            # change `range` to `xrange` for Python 2
               for x in range(0, N_WORKERS * step, step)]
                                             # range(0, 200.000.000), ..., range(800.000.000, 1.000.000.000)]
-    print(f"ranges: {ranges}\n")
+    #print(f"ranges: {ranges}\n")
+    print(f"ranges length: {len(ranges)}\n")
 
-    target = int(250e6)                     # <-- worker finding this value triggers massacre
+    target = 100000                             # <-- worker finding this value triggers massacre
+    #target = int(250e6)                     # <-- worker finding this value triggers massacre
     found_event = Event()
     
     pool = [Process(target=worker, args=(range_, target, found_event))
             for range_ in ranges]
 
     print(f"Max Number of CPU's: {cpu_count()}\n")
-    print(f"List of processes: {pool}\n")
-    print(f"Number of processes: {len(pool)}\n")
+    #print(f"List of processes: {pool}\n")
+    print(f"Number of pool processes: {len(pool)}\n")
     print("\n-----------------------------------------------------------------------\n")
 
     for p in pool:
-        p.start()        
-
+        p.start() 
+    
+    print(f'{FR_YELL}\n\t--- started "{len(ranges)}" processes at "{datetime.now()}" ---{NO_COLOR}')
+    
     found_event.wait()              # <- blocks until condition met
-    print(f'{FR_YELL}\t--- terminating "{len(ranges)}" processes at "{datetime.now()}" ---{NO_COLOR}')
 
+    numb_proc_finished = 0
     for p in pool:
-        p.terminate()
+        numb_proc_finished += 1
+        p.terminate()       
+    print(f'{FR_YELL}\t--- terminating "{numb_proc_finished}" processes at "{datetime.now()}" ---{NO_COLOR}')     
 
     for p in pool:
         p.join()

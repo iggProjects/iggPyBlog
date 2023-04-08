@@ -8,7 +8,7 @@ tasks
 - event.set()
 - time.sleep
 - decoration
-- 
+- how to obtain the pid where is achieved the solution
 
 CPU's working
 - https://www.intel.com/content/www/us/en/support/articles/000029254/processors.html
