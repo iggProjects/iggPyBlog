@@ -30,7 +30,7 @@ if __name__ == "__main__":
     
     # time
     inicio = time.time()
-    print(f'\n{FR_GREEN}======  "Multiprocess started" ======\n{NO_COLOR}')
+    print(f'\n{FR_GREEN}======  "Multiprocess started with pid: {os.getpid()}" ======\n{NO_COLOR}')
 
     print(f"\nmodel\n\tpool = [Process(target=worker, args=(range_, target, found_event))  for range_ in ranges]\n")
 

@@ -29,7 +29,7 @@ ENCRYPTED_TEXT = 'jhmare diqot cgfspu tjqls vrjmirn'
 
 def decipher(alphab1, target, found_event):  
     
-    #print(f'\n\t{FR_GREEN}pid: {os.getpid()} {NO_COLOR} started at "{datetime.now()}"\n') 
+    print(f'\n\t{FR_GREEN}parent process: {os.getppid()}, {FR_YELL}child pid: {os.getpid()} {NO_COLOR} started at "{datetime.now()}"\n') 
 
     decoded_text = ''     
     for ch in ENCRYPTED_TEXT:
@@ -51,7 +51,7 @@ def decipher(alphab1, target, found_event):
         text += "\t{FR_GREEN}Encrypted text: {NO_COLOR}{ENCRYPTED_TEXT}\n"    
         """        
         print(f"{FR_YELL}\t------ BINGO ------ BINGO ------ BINGO ------ BINGO ------ BINGO ------ BINGO ------\n")
-        print(f'\t{FR_GREEN}In the PID process "{os.getpid()}" the solution was found !{NO_COLOR}"') 
+        print(f'\t{FR_GREEN}In the Child Process "{os.getpid()}" the solution was found !{NO_COLOR}"') 
         print(f"{FR_GREEN}\tDecoded text is correct: {NO_COLOR}{decoded_text}")        
         print(f'{FR_GREEN}\tCorrect Alphabet Decoder: {NO_COLOR}{(",".join(alphab1))}', flush=True)   
         print(f"{FR_GREEN}\tEncrypted text: {NO_COLOR}{ENCRYPTED_TEXT}")     
@@ -86,7 +86,7 @@ if __name__ == "__main__":
     messy_alphab2 = ['n', 'w', 'y', 'x', 'o', 'v', 'r', 'l', 'u', 'z', 'q', 'a', 'b', 'm', 'd', 'h', 'f', 'c', 's', 't', 'k', 'e', 'g', 'i', 'p', 'j']
 
     messy_alphabets = []
-    for i in range(10000):
+    for i in range(100):
         messy_alphabets.append(messy_alphab1)
     messy_alphabets.append(ALPHAB_TO_ENCRYPT)   
 
@@ -113,7 +113,7 @@ if __name__ == "__main__":
 
     pause()
     os.system('cls')
-    print(f'\n{FR_GREEN}\t================ "Multiprocess started" ================\n{NO_COLOR}')
+    print(f'\n{FR_GREEN}\t================ "Multiprocess started with pid: {os.getpid()}"" ================\n{NO_COLOR}')
 
     # time
     inicio = time.time()   
