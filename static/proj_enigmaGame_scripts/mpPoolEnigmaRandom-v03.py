@@ -98,40 +98,12 @@ if __name__ == '__main__':
             print(f"{FR_GREEN}Random Messy Alphabet used to encrypt original text:{NO_COLOR}\n\t{(','.join(ALPHAB_TO_ENCRYPT))}\n")
             #pause()
 
-            messy_alphabets = []             
-            messy_alphabets.append(messy_alphab1)
-            messy_alphabets.append(messy_alphab2)     
-            messy_alphabets.append(messy_alphab1)            
-            messy_alphabets.append(messy_alphab1)
-            messy_alphabets.append(messy_alphab1)
-            messy_alphabets.append(messy_alphab1)            
-            messy_alphabets.append(messy_alphab1)
-            messy_alphabets.append(messy_alphab1)
-            messy_alphabets.append(messy_alphab1)  
-            messy_alphabets.append(messy_alphab1)
-            messy_alphabets.append(messy_alphab1)
-            messy_alphabets.append(messy_alphab1)
-            messy_alphabets.append(messy_alphab1)  
-            messy_alphabets.append(messy_alphab1)
-            messy_alphabets.append(messy_alphab1)
-            messy_alphabets.append(messy_alphab1)  
-            messy_alphabets.append(ALPHAB_TO_ENCRYPT)               
-            messy_alphabets.append(messy_alphab1)            
-            messy_alphabets.append(messy_alphab1)
-            messy_alphabets.append(messy_alphab1)
-            messy_alphabets.append(messy_alphab1)            
-            messy_alphabets.append(messy_alphab1)
-            messy_alphabets.append(messy_alphab1)
-            messy_alphabets.append(messy_alphab1)  
-            messy_alphabets.append(messy_alphab1)
-            messy_alphabets.append(messy_alphab1)
-            messy_alphabets.append(messy_alphab1)
-            messy_alphabets.append(messy_alphab1)  
-            messy_alphabets.append(messy_alphab1)
-            messy_alphabets.append(messy_alphab1)
-            messy_alphabets.append(messy_alphab1)  
-            messy_alphabets.append(ALPHAB_TO_ENCRYPT)    
-
+            messy_alphabets = []
+            messy_alphabets.append(ALPHAB_TO_ENCRYPT)   
+            for i in range(100):
+                messy_alphabets.append(messy_alphab1)
+            #messy_alphabets.append(ALPHAB_TO_ENCRYPT) 
+            
             alphabets = [(messy_alphabets[i],event) for i in range(len(messy_alphabets))]
 
             print(f'{FR_YELL}From Main - With Pool() as pool:{NO_COLOR}\n\tpool -> {pool}\n', flush=True)
