@@ -1,0 +1,5 @@
+uniqlines = set(open('z-permutFile.txt').readlines())
+uniqlines = sorted(uniqlines)
+#print(f"uniqlines type is {type(uniqlines)}")
+#print(f"uniqlines; {uniqlines}")
+open('z-permutFileSorted.txt', 'w').writelines(uniqlines)

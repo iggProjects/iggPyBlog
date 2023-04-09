@@ -30,7 +30,7 @@ if __name__ == "__main__":
     exists=0
     #permutFile = open("z-permutFile.txt", "w")
 
-    for i in range(100000):
+    for i in range(10):
         alp = list(alphab)
         random.shuffle(alp)
         alp = ''.join(alp)
@@ -58,6 +58,7 @@ if __name__ == "__main__":
         else:
             permutFile.write('repetido\n')    
             alphab_repeated =+ 1 
+    permutFile.close()    
 
     """
     # reading permutations file

@@ -9,6 +9,11 @@ tasks
 - time.sleep
 - decoration
 - how to obtain the pid where is achieved the solution
+- delete repeated lines in file
+    - https://www.tutorialspoint.com/How-to-eliminate-repeated-lines-in-a-python-function
+    - https://stackoverflow.com/questions/1215208/how-might-i-remove-duplicate-lines-from-a-file
+    -
+
 
 CPU's working
 - https://www.intel.com/content/www/us/en/support/articles/000029254/processors.html
