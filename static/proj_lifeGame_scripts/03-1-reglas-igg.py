@@ -30,7 +30,7 @@ def mostrar_matriz(matriz):
 				print(f"\033[0;91m{int(matriz[x,y])}\033[0m", end =" ")
 			elif matriz[x,y] == 0:
 				print(f"\033[0;37m{int(matriz[x,y])}\033[0m", end =" ")
-			elif matriz[x,y] == 9999:
+			elif matriz[x,y] == 999:
 				print(f"\033[0;32m{int(matriz[x,y])}\033[0m", end =" ")
 			else:
 				print(f"\033[0;37m{int(matriz[x,y])}\033[0m", end =" ")
@@ -61,7 +61,7 @@ for x in range(0,nX):
 		matriz_ext[x,y+nY+1] = nVecinos
 
 for x in range (0,nX):
-	matriz_ext[x,nY] = 9999 
+	matriz_ext[x,nY] = 999 
 
 # mostrar_matriz(matriz_ext)		
 # pausar(0)

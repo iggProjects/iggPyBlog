@@ -15,6 +15,10 @@ import time
 SLEEP= 0.01
 NX = 40
 NY = 40
+NITER= 100
+MSG_TEXT  = 'Games record-> '
+
+
 #
 # Funciones
 #
@@ -26,6 +30,8 @@ def pausar():
 # Creo matriz a partir de una archivo si es suministrado
 def crear_matriz():
 	global nX, nY
+	nX=NX
+	nY=NY
 	print(f"......from crear_matriz() nX: {nX} , nY: {nY}")
 	matriz = np.zeros((nX, nY))					 	# Inicializo la matriz con ceros
 	matriz = np.random.randint(2, size=(nX, nY))
@@ -38,7 +44,7 @@ def show_4_matrix(mat1,mat2,mat3,mat4):
 	# Ejecuto el comando 'clear' del OS
 	os.system('cls') 
 	
-	X, Y = nX, nY
+	X, Y = NX, NY
 
 	for x in range(0, 2*X+1):
 		for y in range(0, 2*Y+1):
@@ -82,6 +88,9 @@ def show_4_matrix(mat1,mat2,mat3,mat4):
 
 def exec_game_iter(matriz):
 	global nX,nY,msg_text,msg_array,nIter
+	nX=NX
+	nY=NY
+
 	
 	# Copio la matriz para poner en ella los cambios
 	matrizTemp = np.copy(matriz)
@@ -121,6 +130,10 @@ def exec_game_iter(matriz):
 # Execute 4 matrixes (games) simultaneously 
 def exec_4_game(game):
 	global nX, nY, nIter, base_print, msg_text,msg_array
+	nX=NX
+	nY=NY
+	msg_text=MSG_TEXT
+	nIter=NITER
 	print(f"\n......from exec_4_game() nX: {nX} , nY: {nY}\n\n")
  
 	print(f"set-> {game} | cpu name {multiprocessing.current_process().name} |  mp name {multiprocessing.Process().name}")
@@ -154,7 +167,7 @@ def exec_4_game(game):
 ######################################
 def exec_games(list_g,n_iterat,n_cpu):
 	global nX,nY,msg_array
-	print(f"\n......from exec_games() nX: {nX} , nY: {nY}\n\n")
+	print(f"\n......from exec_games() nX: {NX} , nY: {NY}\n\n")
 	with multiprocessing.Pool(n_cpu) as pool:
 		pool.map(exec_4_game,list_g)
 
@@ -171,7 +184,7 @@ def exec_games(list_g,n_iterat,n_cpu):
 
 if __name__ == '__main__':
 
-	nX, nY = 18, 80
+	nX, nY = NX, NY
 
 	# PARAMETERS 
 
@@ -180,6 +193,7 @@ if __name__ == '__main__':
 
 	# number of iterations in each game
 	nIter = int(sys.argv[2])
+	nIter=NITER
 
 	# number of CPU in multiprocessing call
 	nCPU = int(sys.argv[3])
@@ -188,10 +202,10 @@ if __name__ == '__main__':
 	# msg_text is for record finished game info
 
 	msg_array = []
-	msg_text  = 'Games record-> '
+	msg_text  = MSG_TEXT
 
 	# base_print for control of prints
-	base_print = int(nIter/10) 
+	base_print = int(NITER/10) 
 
 	# time
 	inicio = time.time()

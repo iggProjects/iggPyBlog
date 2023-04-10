@@ -13,6 +13,10 @@ import time
 # Constantes
 #
 SLEEP= 0.01
+NX = 40
+NY = 40
+NITER= 100
+MSG_TEXT  = 'Games record-> '
 
 #
 # Funciones
@@ -25,6 +29,8 @@ def pausar():
 # Creo matriz a partir de una archivo si es suministrado
 def crear_matriz():
 	global nX, nY
+	nX=NX
+	nY=NY
 	matriz = np.zeros((nX, nY))						# Inicializo la matriz con ceros
 	matriz = np.random.randint(2, size=(nX, nY))
 	return matriz
@@ -36,7 +42,8 @@ def show_4_matrix(mat1,mat2,mat3,mat4):
 	# Ejecuto el comando 'clear' del OS
 	os.system('cls') 
 	
-	X, Y = nX, nY
+	X, Y = NX, NY
+	#X, Y = nX, nY
 
 	for x in range(0, 2*X+1):
 		for y in range(0, 2*Y+1):
@@ -74,10 +81,13 @@ def show_4_matrix(mat1,mat2,mat3,mat4):
 #
 
 def exec_game_iter(matriz):
-	global nX,xY,msg_text,msg_array,nIter
+	global nX,nY,msg_text,msg_array,nIter
+	msg_text = MSG_TEXT
 	
 	# Copio la matriz para poner en ella los cambios
 	matrizTemp = np.copy(matriz)
+	nX=NX
+	nY=NY
 
 	# Recorro la matriz para aplicar reglas a la matrizTemp
 	for x in range(0, nX):
@@ -113,12 +123,15 @@ def exec_game_iter(matriz):
 # Execute 4 matrixes (games) simultaneously 
 def exec_4_game(game):
 	global nX, nY, nIter,base_print,msg_text,msg_array
+	msg_text=MSG_TEXT
+
+	base_print=int(NITER/10)
 
 	matriz1 = crear_matriz()
 	matriz2 = crear_matriz()
 	matriz3 = crear_matriz()
 	matriz4 = crear_matriz()
-
+	nIter = NITER
 	n=1
 	while n<= nIter:	  
 
@@ -172,10 +185,10 @@ if __name__ == '__main__':
 	# msg_text is for record finished game info
 
 	msg_array = []
-	msg_text  = 'Games record-> '
+	msg_text  = MSG_TEXT
 
 	# base_print for control of prints
-	base_print = int(nIter/10) 
+	base_print = int(NITER/10) 
 
 	# time
 	inicio = time.time()

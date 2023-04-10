@@ -29,14 +29,14 @@ def pausar():
 # Creo matriz a partir de una archivo si es suministrado
 def crear_matriz():
 	global nX, nY
-	print(f"......from crear_matriz() NX: {NX} , NY: {NY}")
+	print(f"......from crear_matriz() NX: {NX} , NY: {NY}\n")
 	matriz = np.zeros((NX, NY))					 	# Inicializo la matriz con ceros
 	matriz = np.random.randint(2, size=(NX, NY))
 	return matriz
 
 # Muestro las 4 Matrices (games)
 def show_4_matrix(mat1,mat2,mat3,mat4):
-	global NX,nY 
+	global nX,nY 
   
 	# Ejecuto el comando 'clear' del OS
 	os.system('cls') 
@@ -55,7 +55,7 @@ def show_4_matrix(mat1,mat2,mat3,mat4):
 			
 			#separación entre matrices
 			if x == X or y == Y:
-				print(f"\033[0;34m*\033[0m", end ="")
+				print(f"\033[0;34m\033[0m", end =" ")
 			
 			# matriz2		
 			if ( x<X ) and ( y > Y ):
@@ -77,7 +77,9 @@ def show_4_matrix(mat1,mat2,mat3,mat4):
 					print(f"\033[0;91m{int(mat4[x-X-1,y-Y-1])}\033[0m", end ="")
 				else:
 					print(f"\033[0;37m{int(mat4[x-X-1,y-Y-1])}\033[0m", end ="")
+
 		print()
+		
 
 #
 #  Ejecuto matriz (game) según reglas
@@ -114,7 +116,7 @@ def exec_game_iter(matriz):
 	if np.array_equal(matriz,matrizTemp):
 		mess = 'game reach equality '
 		msg_array = np.append(msg_array,mess)
-		matriz = 9 * np.ones([NX,nY])
+		matriz = 9 * np.ones([NX,NY])
 	else:	
 		# Copio matrizTemp en matriz para la proxima iteracion
 		matriz = np.copy(matrizTemp)
@@ -145,6 +147,7 @@ def exec_4_game(game):
 		if (n % BASE_PRINT == 0):
 		#if (n % base_print == 0):
 			print(f"n-> {n} | cpu name {multiprocessing.current_process().name} |  mp name {multiprocessing.Process().name}")
+			
 			show_4_matrix(matriz1,matriz2,matriz3,matriz4)
 		
 		n+=1
