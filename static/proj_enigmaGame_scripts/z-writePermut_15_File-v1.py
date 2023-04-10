@@ -58,7 +58,7 @@ if __name__ == "__main__":
     # time  
     elapsed_time = "{:.2f}".format(time.time()-inicio)
     print(f"\n{FR_GREEN}\tTotal new alphabets generated: {numb_alphab}{NO_COLOR}\n")
-    print(f"\n{FR_GREEN}\tTotal new alphabets with char conflict: {alphab_with_char_conflict}{NO_COLOR}\n")
+    print(f"\n{FR_GREEN}\tTotal alphabets discarded by conflict in character position: {alphab_with_char_conflict}{NO_COLOR}\n")
     
     
     print(f"\n================  Elapsed time: {elapsed_time}  =================\n\n")
