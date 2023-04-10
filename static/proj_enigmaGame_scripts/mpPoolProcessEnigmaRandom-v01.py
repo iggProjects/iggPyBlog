@@ -28,7 +28,7 @@ ENCRYPTED_TEXT = 'jhmare diqot cgfspu tjqls vrjmirn'
 # FUNCIONS SECTION
 
 def decipher(alphab1, target, found_event):  
-    print(f"sub alphab list: {alphab1}")
+    #print(f"sub alphab list: {alphab1}")
     #print(f'\n\t{FR_GREEN}parent process: {os.getppid()}, {FR_YELL}child pid: {os.getpid()} {NO_COLOR} started at "{datetime.now()}"\n') 
 
     decoded_text = ''     
@@ -86,10 +86,10 @@ if __name__ == "__main__":
     messy_alphab2 = ['n', 'w', 'y', 'x', 'o', 'v', 'r', 'l', 'u', 'z', 'q', 'a', 'b', 'm', 'd', 'h', 'f', 'c', 's', 't', 'k', 'e', 'g', 'i', 'p', 'j']
 
     messy_alphabets = []
-    messy_alphabets.append(ALPHAB_TO_ENCRYPT)   
-    for i in range(100):
-        messy_alphabets.append(messy_alphab1)
     #messy_alphabets.append(ALPHAB_TO_ENCRYPT)   
+    for i in range(1000):
+        messy_alphabets.append(messy_alphab1)
+    messy_alphabets.append(ALPHAB_TO_ENCRYPT)   
 
 
     print("\n-----------------------------------------------------------------------\n")
@@ -141,4 +141,5 @@ if __name__ == "__main__":
     # elapsed time
     elapsed_time = "{:.2f}".format(time.time()-inicio)
     print(f'\n\t{FR_YELL}================ Elapsed time: "{elapsed_time}" ================={NO_COLOR}\n\n')
+    pause()
 
