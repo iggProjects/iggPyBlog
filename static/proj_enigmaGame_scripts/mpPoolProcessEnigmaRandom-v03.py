@@ -32,7 +32,7 @@ ENCRYPTED_TEXT = 'ib dnlsaibmru ietm hmdclaigtu'
 def decipher(alphab1, target, found_event):  
     
     #print(f'\n\t{FR_GREEN}parent process: {os.getppid()}, {FR_YELL}child pid: {os.getpid()} {NO_COLOR} started at "{datetime.now()}"\n') 
-    print(f"sub alphab : {alphab1}")
+    #print(f"sub alphab : {alphab1}")
     # rewrite alphab1 with correct position in alphabet of 26
     alphab1_26 = ""
     for i in range(5):
@@ -106,6 +106,7 @@ if __name__ == "__main__":
     messy_alphab  = list('basmiunodpglcer')
     #good_alphabet = list('mcspirabdguolen')
 
+    print(f'{FR_YELL}\n\t--- reading file of sub alphab str started at "{datetime.now()}" ---{NO_COLOR}\n')
     messy_alphabets = []
     #messy_alphabets.append(ALPHAB_15_TO_ENCRYPT)  
     messy_lines = set(open('z-permutFileSorted.txt').readlines())
@@ -113,6 +114,7 @@ if __name__ == "__main__":
         messy_alphabets.append(list(messy_str))
         #messy_alphabets.append(messy_str)
     messy_alphabets.append(ALPHAB_15_TO_ENCRYPT)  
+    print(f'{FR_YELL}\n\t--- reading file process finished at "{datetime.now()}" ---{NO_COLOR}\n')
 
     """
     for i in range(10):
