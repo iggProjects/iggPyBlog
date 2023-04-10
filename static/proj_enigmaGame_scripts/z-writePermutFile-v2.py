@@ -30,7 +30,7 @@ if __name__ == "__main__":
     exists=0
     #permutFile = open("z-permutFile.txt", "w")
 
-    for i in range(10):
+    for i in range(10000):
         alp = list(alphab)
         random.shuffle(alp)
         alp = ''.join(alp)
@@ -60,17 +60,13 @@ if __name__ == "__main__":
             alphab_repeated =+ 1 
     permutFile.close()    
 
-    """
-    # reading permutations file
-    f = open("z-permutFile.txt","r")
-    print(f"{FR_GREEN}\nprinting alphab permut {f.name}{NO_COLOR}\n")
+    # delete duplicated lines and sort
+    uniqlines = set(open('z-permutFile.txt').readlines())
+    uniqlines = sorted(uniqlines)
+    #print(f"uniqlines type is {type(uniqlines)}")
+    #print(f"uniqlines; {uniqlines}")
+    open('z-permutFileSorted.txt', 'w').writelines(uniqlines)
 
-    # read lines
-    lines = f.readlines()
-    for line in lines:  
-        print(f"\t{line}")
-    f.close()
-    """
     # time  
     elapsed_time = "{:.2f}".format(time.time()-inicio)
     print(f"\n{FR_GREEN}\tTotal new alphabets generated: {numb_alphab}{NO_COLOR}\n")

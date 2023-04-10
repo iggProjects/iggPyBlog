@@ -65,12 +65,14 @@ if __name__ == "__main__":
     
     # random.shuffle() to create new_alphab
     random.shuffle(old_alphab)
-    new_alphab=old_alphab       
+    #new_alphab=old_alphab  
+    new_alphab = list('mcspifrhajkbdguoqletnvwxyz')     
     print(f"{FR_GREEN}new alphabet list:{NO_COLOR}\t{new_alphab}\n")
     pause()
 
     # my text
-    my_text = 'abcdef ghijk lmnopq KAIXO TEACHER'
+    my_text = "El murcielago esta hambriento"
+    # my_text = 'abcdef ghijk lmnopq KAIXO TEACHER'
 
     print(f"{FR_GREEN}my text:{NO_COLOR}\t{my_text}\n")
 
