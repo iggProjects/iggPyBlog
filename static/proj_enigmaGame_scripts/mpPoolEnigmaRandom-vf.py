@@ -4,8 +4,9 @@
 
 import time
 from time import sleep
+from datetime import datetime
 from multiprocessing import Event
-from multiprocessing import Manager
+from multiprocessing import Manager, cpu_count
 from multiprocessing.pool import Pool
 import os
 from os import system
@@ -29,9 +30,12 @@ ALPHAB_STR = 'abcdefghijklmnopqrstuvwxyz'
 ORIG_ALPHAB = list(string.ascii_lowercase)      # in list mode
 ALPHAB = list(string.ascii_lowercase)
 MY_TEXT = 'abcdef ghijk lmnopq KAIXO TEACHER'
-
-ALPHAB_TO_ENCRYPT  = ['j', 'h', 'm', 'a', 'r', 'e', 'd', 'i', 'q', 'o', 't', 'c', 'g', 'f', 's', 'p', 'u', 'n', 'z', 'v', 'k', 'w', 'y', 'l', 'x', 'b']     
-ENCRYPTED_TEXT = 'jhmare diqot cgfspu tjqls vrjmirn'
+ALPHAB_15_STR        = 'abcdegilmnoprsu'
+ALPHAB_15_TO_ENCRYPT = list('mcspirabdguolen')
+ALPHAB_TO_ENCRYPT = list('mcspifrhajkbdguoqletnvwxyz')
+TEMP_LIST = ['m', 'c', 's', 'p', 'i', 'f', 'r', 'h', 'a', 'j', 'k', 'b', 'd', 'g', 'u', 'o', 'q', 'l', 'e', 't', 'n', 'v', 'w', 'x', 'y', 'z']
+MY_TEXT = 'El murcielago esta hambriento'
+ENCRYPTED_TEXT = 'ib dnlsaibmru ietm hmdclaigtu'
 
 # FUNCIONS SECTION
 
@@ -39,7 +43,8 @@ def decipher(alphab1, event):
 
     if event.is_set():
         return
-    else:    
+    else:  
+        """  
         decoded_text = ''     
         for ch in ENCRYPTED_TEXT:
             # find 'ch' in new_alphab 
@@ -50,25 +55,55 @@ def decipher(alphab1, event):
                 decoded_text += ch
             else:      
                 pass 
-        
+        """
+        alphab1_26 = ""
+        for i in range(5):
+            alphab1_26 += alphab1[i]   # a - e 
+        alphab1_26 += ORIG_ALPHAB[5]   # f 
+        alphab1_26 += alphab1[5]       # g
+        alphab1_26 += ORIG_ALPHAB[7]   # h  
+        alphab1_26 += alphab1[6]       # i
+        alphab1_26 += ORIG_ALPHAB[9]   # j
+        alphab1_26 += ORIG_ALPHAB[10]  # k
+        alphab1_26 += alphab1[7]       # l
+        alphab1_26 += alphab1[8]       # m
+        alphab1_26 += alphab1[9]       # n
+        alphab1_26 += alphab1[10]      # 0
+        alphab1_26 += alphab1[11]      # p  
+        alphab1_26 += ORIG_ALPHAB[16]  # q
+        alphab1_26 += alphab1[12]      # r
+        alphab1_26 += alphab1[13]      # s
+        alphab1_26 += ORIG_ALPHAB[19]  # t
+        alphab1_26 += alphab1[14]      # u
+        alphab1_26 += ORIG_ALPHAB[21]  # v
+        alphab1_26 += ORIG_ALPHAB[22]  # w
+        alphab1_26 += ORIG_ALPHAB[23]  # x
+        alphab1_26 += ORIG_ALPHAB[24]  # y
+        alphab1_26 += ORIG_ALPHAB[25]  # z
+        #print(f"----> alphab1_26: {alphab1_26}")  
+        #['m', 'c', 's', 'p', 'i', 'f', 'r', 'h', 'a', 'j', 'k', 'b', 'd', 'g', 'u', 'o', 'q', 'l', 'e', 't', 'n', 'v', 'w', 'x', 'y', 'z']
+
+        decoded_text = '' 
+        for ch in ENCRYPTED_TEXT:
+            # find 'ch' in new_alphab 
+            if ch in alphab1_26:
+                ind = alphab1_26.index(ch) 
+                decoded_text += ALPHAB[ind]
+            elif ch == ' ':
+                decoded_text += ch
+            else:      
+                pass 
+
         if MY_TEXT.casefold() == decoded_text:
-            print(f"{FR_YELL}------ BINGO ------ BINGO ------ BINGO ------ BINGO ------ BINGO ------ BINGO ------")
-            print(f"{FR_GREEN}\tPID process child: {os.getpid} {NO_COLOR}\n")
-            print(f"{FR_GREEN}\tDecoded text is correct: {NO_COLOR}{decoded_text}\n")
-            print(f"{FR_GREEN}\tEncrypted text: {NO_COLOR}{ENCRYPTED_TEXT}\n")
-            print(f'{FR_GREEN}\tCorrect Alphabet Decoder: {NO_COLOR}{(",".join(alphab1))}', flush=True)
-            print(f"{FR_YELL}-----------------------------------------------------------------------------------")
-            print(f'{FR_MAG}\n...stop process started...{NO_COLOR}', flush=True)
+            print(f"\t{FR_YELL}------ BINGO ------ BINGO ------ BINGO ------ BINGO ------ BINGO ------ BINGO -------")
+            print(f'\n\t{FR_GREEN}Parent Process "{os.getppid()}" | Child Process "{os.getpid()}" --> THE SOLUTION WAS FOUND !{NO_COLOR}') 
+            #print(f"{FR_GREEN}\tPID process child: {os.getpid} {NO_COLOR}\n")
+            print(f"\n\t\t{FR_GREEN}Decoded text is correct: {NO_COLOR}{decoded_text}")
+            print(f"\t\t{FR_GREEN}Encrypted text: {NO_COLOR}{ENCRYPTED_TEXT}")
+            print(f'\t\t{FR_GREEN}Correct Alphabet Decoder: {NO_COLOR}{(",".join(alphab1_26))}', flush=True)
+            print(f"\n\t{FR_YELL}-------------------------------------------------------------------------------------")
+            print(f"\n\t\033[2;33;41m-------- STOP PROCESS STARTED --------{NO_COLOR}\n")
             event.set()
-
-
-    """
-    # check if the task should stop
-    if event.is_set():
-        print(f'{FR_MAG}\tTask {identifier} stopping...{NO_COLOR}', flush=True)
-        # stop the task
-        break
-    """
 
 # protect the entry point
 if __name__ == '__main__':
@@ -77,30 +112,32 @@ if __name__ == '__main__':
     # time
     inicio = time.time()
 
-    print(f"{FR_GREEN}\n---------- main ----------\n\n{NO_COLOR}")   
-    print(f"{FR_YELL}Original Alphabet:{NO_COLOR}\n\t{(','.join(ORIG_ALPHAB))}\n")
-    print(f"{FR_GREEN}Original text:{NO_COLOR}\n\t{MY_TEXT}\n")
-    print(f"{FR_GREEN}Encrypted text:{NO_COLOR}\n\t{ENCRYPTED_TEXT}\n")
+    print(f'\n{FR_GREEN}\t================ "Multiprocess started with pid: {os.getpid()}"" ================\n{NO_COLOR}')
+    print(f'{FR_YELL}\n\t--- reading file of sub alphab str started at "{datetime.now()}" ---{NO_COLOR}\n')
 
     messy_alphabets = []
-    messy_alphab1 = ['w', 'n', 'y', 'x', 'o', 'v', 'r', 'l', 'u', 'z', 'q', 'a', 'b', 'm', 'd', 'h', 'f', 'c', 's', 't', 'k', 'e', 'g', 'i', 'p', 'j']            
-    print(f"{FR_GREEN}Random Messy Alphabet used to encrypt original text:{NO_COLOR}\n\t{(','.join(ALPHAB_TO_ENCRYPT))}\n")
+    #messy_alphabets.append(ALPHAB_15_TO_ENCRYPT)  
+    messy_lines = set(open('z-permutFileSorted.txt').readlines())
+    for messy_str in messy_lines:
+        messy_alphabets.append(list(messy_str))
+        #messy_alphabets.append(messy_str)
+    #messy_alphabets.append(ALPHAB_15_TO_ENCRYPT)
+
+    print(f'{FR_YELL}\t--- reading file process finished at "{datetime.now()}" ---{NO_COLOR}\n')  
+
+    print(f"{FR_GREEN}\tOriginal Alphabet:{NO_COLOR}\n\t\t{(','.join(ORIG_ALPHAB))}")
+    print(f"{FR_GREEN}\tOriginal text:{NO_COLOR}\n\t\t{MY_TEXT}")
+    print(f"{FR_GREEN}\tEncrypted text:{NO_COLOR}\n\t\t{ENCRYPTED_TEXT}")
+    print(f"{FR_GREEN}\tMax Number of CPU's:{NO_COLOR} {cpu_count()}\n")
+    m_alp = '{:,}'.format(len(messy_alphabets)).replace(',','.')    
+    print(f'{FR_YELL}\t--- CHECKING "{m_alp}" ALPHABETS BEGAN AT "{datetime.now()}" ---{NO_COLOR}\n')    
     
-    #messy_alphabets.append(ALPHAB_TO_ENCRYPT)   
-    for i in range(30000):
-        messy_alphabets.append(messy_alphab1)
-    #messy_alphabets.append(ALPHAB_TO_ENCRYPT)  
-    for i in range(30000):
-        messy_alphabets.append(messy_alphab1)
-
-    print(f"{FR_YELL}====== Total Alphabets: {len(messy_alphabets)} ======{NO_COLOR}\n")          
-
     # create the manager
     with Manager() as manager:
         # create the shared event
         event = manager.Event()
         
-        print(f'\n{FR_YELL}From Main - With Manager() as manager:{NO_COLOR}\n\tevent -> {event}\n', flush=True)
+        print(f'\n{FR_YELL}\tFrom Main - With Manager() as manager:{NO_COLOR}\n\t\tevent -> {event}\n', flush=True)
 
         # create and configure the process pool
         # Note: if you do not put a valid number of CPU's, Pool() assume the maximum of PC 
@@ -108,26 +145,16 @@ if __name__ == '__main__':
 
             # prepare arguments 
             alphabets = [(messy_alphabets[i],event) for i in range(len(messy_alphabets))]
-            print(f'{FR_YELL}From Main - With Pool() as pool:{NO_COLOR}\n\tpool -> {pool}\n', flush=True)
+            print(f'{FR_YELL}\tFrom Main - With Pool() as pool:{NO_COLOR}\n\t\tpool -> {pool}\n', flush=True)
 
-            """
-            for alphabet in alphabets:
-                print(f'{FR_YELL}From Main:{NO_COLOR} decipher with {alphabet} running', flush=True)    
-            print()
-            """
             # issue tasks asynchronously
-            result = pool.starmap_async(decipher, alphabets)
+            result = pool.starmap_async(decipher, alphabets)            
             
-            # safely stop the issued tasks
-            #sleep(10)
-            #print(f'\n{FR_MAG}Safely stopping all tasks{NO_COLOR}\n')
-            #event.set()
-            
-            # wait for all tasks to stop            
-            #print(f'\n{FR_RED}=== ALL TASKS STOPED ==={NO_COLOR}\n')
             result.wait()
+            # wait for all tasks to stop            
+            print(f'\n\t{FR_RED}=== ALL TASKS STOPED ==={NO_COLOR}\n')
 
             # elapsed time
             elapsed_time = "{:.2f}".format(time.time()-inicio)
-            print(f"\n{FR_YELL}================  Elapsed time: {elapsed_time}  ================={NO_COLOR}\n\n")
+            print(f"\n\t{FR_YELL}================  Elapsed time: {elapsed_time} seconds ================={NO_COLOR}\n\n")
 

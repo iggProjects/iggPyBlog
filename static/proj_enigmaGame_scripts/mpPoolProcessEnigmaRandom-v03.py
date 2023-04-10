@@ -82,7 +82,7 @@ def decipher(alphab1, target, found_event):
         print(f"\n\t\033[2;33;41m-------- STOP PROCESS STARTED --------{NO_COLOR}\n")
         found_event.set() 
     else:
-        sleep(0.00001)       
+        sleep(0.000001)       
 
     
 #
@@ -116,22 +116,8 @@ if __name__ == "__main__":
     messy_alphabets.append(ALPHAB_15_TO_ENCRYPT)  
     print(f'{FR_YELL}\n\t--- reading file process finished at "{datetime.now()}" ---{NO_COLOR}\n')
 
-    """
-    for i in range(10):
-        messy_alphabets.append(messy_alphab)
-    messy_alphabets.append(ALPHAB_15_TO_ENCRYPT)       
-    messy_lines = set(open('z-permutFileSorted.txt').readlines())    
-    i=0
-    for messy_str in messy_lines:
-        if i % 10 == 0:
-            print(f"messy_str: {messy_str} --- mod {i%10}")
-        i += 1
-    """
-
-
     print("\n-----------------------------------------------------------------------\n")
 
-    #alphabets = [(messy_alphabets[i],event) for i in range(len(messy_alphabets))]    
     alphabets = [(messy_alphabets[i]) for i in range(len(messy_alphabets))]    
     #print(f"alphabets list: {alphabets}\n")
     print(f"{FR_GREEN}alphabets list length: {len(alphabets)}{NO_COLOR}\n")

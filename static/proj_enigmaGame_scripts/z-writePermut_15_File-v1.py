@@ -24,14 +24,14 @@ if __name__ == "__main__":
     alphab_with_char_conflict = 0
     num_chars_equal = 0
 
-    while numb_alphab < 2000:
+    while numb_alphab < 500000:
     #for i in range(10):
         alp = list(alphab_15)
         random.shuffle(alp)
         
         for i in range(15):
             if alp[i] == alphab_15_list[i]:
-                print(f"\t{i+1}: {''.join(alp)} | {''.join(alphab_15_list)}")
+                #print(f"\t{i+1}: {''.join(alp)} | {''.join(alphab_15_list)}")
                 num_chars_equal +=1
         print()       
 

@@ -1,15 +1,15 @@
 LIFE GAME PROJECT BITAKORA
 
 tasks   
-- alphabets list:  10.000 random alphabets with one is correct
-    - print all permutatiosn of alphab in txt file
-        - https://beamtic.com/permutations-alphabet
+- alphabets list:  500.000 random alphabets with one is correct
+    - print 500.000 permutations of alphab_14 mask in txt file
+        - 500.000 valid & 861.146 invalid (same position not valid)
 
-- event.set()
-- time.sleep
-- decoration
-- how to obtain the pid where is achieved the solution
-- delete repeated lines in file
+- event.set() ✔😎
+- time.sleep  
+- decoration 
+- how to obtain the pid where is achieved the solution  ✔😎
+- delete repeated lines in file  ✔😎
     - https://www.tutorialspoint.com/How-to-eliminate-repeated-lines-in-a-python-function
     - https://stackoverflow.com/questions/1215208/how-might-i-remove-duplicate-lines-from-a-file
     -
@@ -25,6 +25,8 @@ LINKS
 First n permut:
     https://www.geeksforgeeks.org/print-first-n-distinct-permutations-of-string-using-itertools-in-python/
     https://www.tutorialspoint.com/print-first-n-distinct-permutations-of-string-using-itertools-in-python
+    https://beamtic.com/permutations-alphabet
+
 
 All permut
     https://stackoverflow.com/questions/8306654/finding-all-possible-permutations-of-a-given-string-in-python
