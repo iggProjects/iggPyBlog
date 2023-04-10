@@ -28,7 +28,7 @@ ENCRYPTED_TEXT = 'jhmare diqot cgfspu tjqls vrjmirn'
 # FUNCIONS SECTION
 
 def decipher(alphab1, target, found_event):  
-    
+    print(f"sub alphab list: {alphab1}")
     #print(f'\n\t{FR_GREEN}parent process: {os.getppid()}, {FR_YELL}child pid: {os.getpid()} {NO_COLOR} started at "{datetime.now()}"\n') 
 
     decoded_text = ''     
@@ -98,7 +98,6 @@ if __name__ == "__main__":
     alphabets = [(messy_alphabets[i]) for i in range(len(messy_alphabets))]    
     #print(f"alphabets list: {alphabets}\n")
     print(f"{FR_GREEN}alphabets list length: {len(alphabets)}{NO_COLOR}\n")
-
 
     target = MY_TEXT.casefold()              # <-- worker finding this value triggers massacre
     #target = int(250e6)                     # <-- worker finding this value triggers massacre

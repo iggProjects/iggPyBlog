@@ -32,7 +32,7 @@ ENCRYPTED_TEXT = 'ib dnlsaibmru ietm hmdclaigtu'
 def decipher(alphab1, target, found_event):  
     
     #print(f'\n\t{FR_GREEN}parent process: {os.getppid()}, {FR_YELL}child pid: {os.getpid()} {NO_COLOR} started at "{datetime.now()}"\n') 
-
+    print(f"sub alphab string: {alphab1}")
     # rewrite alphab1 with correct position in alphabet of 26
     alphab1_26 = ""
     for i in range(5):
@@ -61,23 +61,6 @@ def decipher(alphab1, target, found_event):
     # print(f"----> alphab1_26: {alphab1_26}")  
     #['m', 'c', 's', 'p', 'i', 'f', 'r', 'h', 'a', 'j', 'k', 'b', 'd', 'g', 'u', 'o', 'q', 'l', 'e', 't', 'n', 'v', 'w', 'x', 'y', 'z']
 
-    #alphab1_26_list = list(alphab1_26) 
-    """
-    alphabet = ""
-    for ch in ALPHAB_STR:
-        if ch in alphab1_26_list:   
-            ind = alphab1_26_list.index(ch) 
-            alphabet += ALPHAB[ind]
-        elif ch == ' ':
-            alphabet += ch
-        else:      
-            alphabet += ch
-    """
-    #print(f"\nALPHAB_STR: {ALPHAB_STR} | alphab1_26: {''.join(alphab1_26)} | alphabet: {alphabet}")  
-    #print(f"\nALPHAB_STR: {ALPHAB_STR} | alphab1_26: {''.join(alphab1_26)}")  
-    #print(f"temp_list {TEMP_LIST}\n")   
-    
-    #alphabet_list = list(alphabet)
     decoded_text = '' 
     for ch in ENCRYPTED_TEXT:
         # find 'ch' in new_alphab 
