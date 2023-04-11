@@ -13,8 +13,8 @@ import time
 # Constantes
 #
 SLEEP= 0.2
-NX = 20
-NY = 40
+NX = 24
+NY = 60
 NITER= 500
 MSG_TEXT  = 'Games record-> '
 BASE_PRINT = int(NITER/10)
@@ -164,7 +164,7 @@ def exec_4_game(game):
 		matriz4 = exec_game_iter(matriz4,'matriz4')
 
 		if ( (multiprocessing.current_process().name == "SpawnPoolWorker-1") and (n % BASE_PRINT == 0) ):
-			print(f"\033[0;93mPrinting only for cpu name {multiprocessing.current_process().name} - mp process {multiprocessing.Process().name} | iteration-> {n}\033[0m")
+			print(f"\033[0;93m\n\t\t\t\tPrinting only for cpu name {multiprocessing.current_process().name} - mp process {multiprocessing.Process().name} | iteration-> {n}\033[0m")
 			show_4_matrix(matriz1,matriz2,matriz3,matriz4)
 			time.sleep(SLEEP)			
 		n+=1
