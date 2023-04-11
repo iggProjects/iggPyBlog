@@ -6,8 +6,8 @@ import time
 #
 # Constantes
 #
-ITERAC = 100
-DORMIR= 0.01
+ITERAC = 500
+DORMIR= 0.005
 
 #
 # Funciones
@@ -15,7 +15,7 @@ DORMIR= 0.01
 
 # Pauso la ejecucion
 def pausar():
-	userInput = input('Presiona ENTER para continuar CTRL-C para salir. ');
+	userInput = input('Presiona ENTER para continuar CTRL-C para salir. ')
 
 # Forzo a que el numero sea par quitando uno cuando son impares
 def parificar(numero):
@@ -96,17 +96,14 @@ def calcular_matriz(matriz):
 
 if __name__ == '__main__':
 
-	os.system('cls')
 
 	n=1																								# Numero Iteraciones
 	# nX, nY = os.get_terminal_size(0)						# Linux Obtengo COLUMNAS y LINEAS de la consola
 	# nX, nY = os.get_terminal_size()						# Windows Obtengo COLUMNAS y LINEAS de la consola
 	# nX, nY = parificar(int(nX/2)), parificar(nY-2)		# Ajusto por espacios e indicador de iteraciones
-	nX, nY = 20, 20
+	nX, nY = 35, 35
 
 	print(f"\nPlaying LifeGame with a Matrix of {nX} x {nY} and {ITERAC} iterations\n ")
-	pausar()
-
 
 	# Intento capturar nombre de archivo de la llamada
 	try:
@@ -116,9 +113,11 @@ if __name__ == '__main__':
 		archivo = 'NO_ARCHIVO'
 
 	matriz = crear_matriz(archivo)								# Obtengo la matriz
-	# mostrar_matriz(matriz)
+	mostrar_matriz(matriz)
+	pausar()
 
-	# pausar()
+	# Registro hora-seg inicio
+	inicio = time.time()
 
 	# Iteraciones del programa
 	while n <= ITERAC:
@@ -127,7 +126,13 @@ if __name__ == '__main__':
 		matriz = calcular_matriz(matriz)
 
 		# Muestro la nueva cara de la matriz
-		# mostrar_matriz(matriz)
-		print(f"Iteraciones: {n} de {ITERAC} | Matriz({nX} x {nY})")
+		if n % 40 == 0:
+			mostrar_matriz(matriz)
+			print(f"Iteración: {n} de {ITERAC} | Matriz {nX} x {nY}")
+
 		time.sleep(DORMIR)
 		n+=1
+
+	elapsed_time = "{:.2f}".format(time.time()-inicio)
+	print(f"\n\tElapsed Time: {elapsed_time} seconds\n")
+	print(f"\n\033[0;93m\t----------THAT's ALL----------\033[0m\n")

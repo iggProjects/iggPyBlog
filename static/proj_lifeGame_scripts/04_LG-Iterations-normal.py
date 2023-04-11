@@ -14,7 +14,7 @@ import time
 #
 # Constantes
 #
-ITERAC = 100 
+ITERAC = 300 
 DORMIR= 0.005
 
 #
@@ -86,11 +86,10 @@ def crear_matriz(nombre_archivo):
 os.system('cls')
 
 n=1										# Numero Iteraciones
-nY, nX = os.get_terminal_size()			# Obtengo COLUMNAS y LINEAS de la consola
-print(f"\n\033[0;93mTERMINAL SIZE: {os.get_terminal_size()[0]} x {os.get_terminal_size()[1]} |  MATRIX SIZE: {nX} x {nY}\033[0m\n")
+#nY, nX = os.get_terminal_size()			# Obtengo COLUMNAS y LINEAS de la consola
+#print(f"\n\033[0;93mTERMINAL SIZE: {os.get_terminal_size()[0]} x {os.get_terminal_size()[1]} |  MATRIX SIZE: {nX} x {nY}\033[0m\n")
 #nX, nY = nX-10, int(nY/3)				# Ajusto por espacios e indicador de iteraciones
 nX,nY=25,25
-pausar()
 
 # Intento capturar nombre de archivo de la llamada
 try:
@@ -103,6 +102,10 @@ mostrar_matriz(matriz)					# muestro matriz inicial
 print(F"\nMATRIZ INICIAL ALEATORIA (0 Y 1)\n")
 
 pausar()
+
+# Registro hora-seg inicio
+inicio = time.time()
+
 
 # Iteraciones del programa
 while n <= ITERAC:
@@ -135,7 +138,13 @@ while n <= ITERAC:
 	matriz = np.copy(matrizTemp)
 
 	# Muestro la nueva cara de la matriz
-	mostrar_matriz(matriz)
-	print(f"\033[0;93m\n ==== Iteración {n} de {ITERAC}, Matriz {nX} x {nY} ===\033[0m")
+	if n % 10 == 0:
+		mostrar_matriz(matriz)
+		print(f"\033[0;93m\n ==== Iteración {n} de {ITERAC}, Matriz {nX} x {nY} ===\033[0m")
 	time.sleep(DORMIR)
 	n+=1
+
+elapsed_time = "{:.2f}".format(time.time()-inicio)
+print(f"\n\tElapsed Time: {elapsed_time} seconds\n")
+print(f"\n\033[0;93m\t----------THAT's ALL----------\033[0m\n")
+

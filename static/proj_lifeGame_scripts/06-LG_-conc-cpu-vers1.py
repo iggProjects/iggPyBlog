@@ -17,7 +17,7 @@ NX = 20
 NY = 40
 NITER= 500
 MSG_TEXT  = 'Games record-> '
-BASE_PRINT = int(NITER/3)
+BASE_PRINT = int(NITER/10)
 
 
 #
@@ -28,12 +28,28 @@ BASE_PRINT = int(NITER/3)
 def pausar():
 	userInput = input('\t ---- Presiona ENTER para continuar CTRL-C para salir ----\n')
 
+def print_args(**kwargs):
+	for arg_name in kwargs:
+		return kwargs[arg_name], arg_name
+	
 # Creo matriz a partir de una archivo si es suministrado
 def crear_matriz():	
 	#print(f"......from crear_matriz() NX: {NX} , NY: {NY}")
 	matriz = np.zeros((NX, NY))					 	# Inicializo la matriz con ceros
 	matriz = np.random.randint(2, size=(NX, NY))
 	return matriz
+
+def mostrar_matriz(matriz):
+	#os.system('cls')                                    # Ejecuto el comando 'clear' del OS
+	X, Y = matriz.shape                                   # Dimensiones de la matriz
+	for x in range(0, X):
+		for y in range(0, Y):
+			if matriz[x,y] == 1:
+				print(f"\033[0;91m{int(matriz[x,y])}\033[0m", end ="")
+			else:
+				print(f"\033[0;37m{int(matriz[x,y])}\033[0m", end ="")
+		print()
+
 
 # Muestro las 4 Matrices (games)
 def show_4_matrix(mat1,mat2,mat3,mat4):
@@ -47,7 +63,7 @@ def show_4_matrix(mat1,mat2,mat3,mat4):
 	for x in range(0, 2*X+1):
 		for y in range(0, 2*Y+1):
 			
-			# matriz1
+			# matriz1  (1er cuadrante)
 			if x<X and y<Y:
 				if mat1[x,y] == 1:
 					print(f"\033[0;91m{int(mat1[x,y])}\033[0m", end ="")
@@ -58,7 +74,7 @@ def show_4_matrix(mat1,mat2,mat3,mat4):
 			if y == Y:
 				print(f"\033[0;34m\033[0m", end =" ")
 			
-			# matriz2		
+			# matriz2	(2do cuadrante)	
 			if ( x<X ) and ( y > Y ):
 				if mat2[x,(y-Y-1)] == 1:
 					print(f"\033[0;91m{int(mat2[x,y-Y-1])}\033[0m", end ="")
@@ -68,20 +84,21 @@ def show_4_matrix(mat1,mat2,mat3,mat4):
 			# línea entre matrices 1 y 2 con 3 y 4
 			if x == X:
 				print(f"\033[0;34m\033[0m", end =" ")
-		
-			# matriz3
-			if ( x>X ) and ( y<Y ):
-				if mat3[x-X-1,y] == 1:
-					print(f"\033[0;91m{int(mat3[x-X-1,y])}\033[0m", end ="")
-				else:
-					print(f"\033[0;37m{int(mat3[x-X-1,y])}\033[0m", end ="")
 			
-			#matriz4
+			# matriz3 (3er cuadrante)
+			if ( x>X ) and ( y<Y ):
+				if mat3[x-X-1,y] == 1:					
+					print(f"\033[0;91m{int(mat3[x-X-1,y])}\033[0m", end ="")
+				else:					
+					print(f"\033[0;37m{int(mat3[x-X-1,y])}\033[0m", end ="")	
+
+			#matriz4 (4to cuadrante)
 			if ( x>X ) and ( y>Y ):
 				if mat4[x-X-1,y-Y-1] == 1:
 					print(f"\033[0;91m{int(mat4[x-X-1,y-Y-1])}\033[0m", end ="")
 				else:
 					print(f"\033[0;37m{int(mat4[x-X-1,y-Y-1])}\033[0m", end ="")
+			
 		print()
 		#time.sleep(SLEEP)
 
@@ -89,8 +106,7 @@ def show_4_matrix(mat1,mat2,mat3,mat4):
 #  Ejecuto matriz (game) según reglas
 #
 
-def exec_game_iter(matriz):
-	msg_array = []
+def exec_game_iter(matriz,name):
 	
 	# Copio la matriz para poner en ella los cambios
 	matrizTemp = np.copy(matriz)
@@ -118,9 +134,9 @@ def exec_game_iter(matriz):
 	
   # try to control event pf equal matrixes
 	if np.array_equal(matriz,matrizTemp):
-		#mess = 'game reach equality '
-		#msg_array = np.append(msg_array,mess)
-		#print(f"\t\033[0;93mfor cpu name {multiprocessing.current_process().name} - process {multiprocessing.Process().name} ==> game reach equality ===\033[0m\n")
+		if multiprocessing.current_process().name == "SpawnPoolWorker-1":
+			#mostrar_matriz(matriz)
+			print(f"\t\033[0;93cpu name {multiprocessing.current_process().name} - process {multiprocessing.Process().name} ==> game reach equality with matriz {name} ===\033[0m")
 		matriz = 9 * np.ones([NX,NY])
 	else:	
 		# Copio matrizTemp en matriz para la proxima iteracion
@@ -142,10 +158,10 @@ def exec_4_game(game):
 	while n <= NITER:	  
 	# while n<= nIter or [CONDICION DE MATRIZ IDENTICA ENTRE DOS ITER]:	  
 
-		matriz1 = exec_game_iter(matriz1)
-		matriz2 = exec_game_iter(matriz2)
-		matriz3 = exec_game_iter(matriz3)
-		matriz4 = exec_game_iter(matriz4)
+		matriz1 = exec_game_iter(matriz1,'matriz1')
+		matriz2 = exec_game_iter(matriz2,'matriz2')
+		matriz3 = exec_game_iter(matriz3,'matriz3')
+		matriz4 = exec_game_iter(matriz4,'matriz4')
 
 		if ( (multiprocessing.current_process().name == "SpawnPoolWorker-1") and (n % BASE_PRINT == 0) ):
 			print(f"\033[0;93mPrinting only for cpu name {multiprocessing.current_process().name} - mp process {multiprocessing.Process().name} | iteration-> {n}\033[0m")
@@ -153,7 +169,6 @@ def exec_4_game(game):
 			time.sleep(SLEEP)			
 		n+=1
 
-	
 	print(f"\033[0;93m\n{multiprocessing.current_process().name} ===> Set {game} finished\033[0m | {NITER} of iterations for each game | total games: 4, total iterat {NITER*4}")
 	
 	#return n
@@ -180,9 +195,6 @@ def exec_games(list_g,n_cpu):
 
 if __name__ == '__main__':
 
-	# time
-	inicio = time.time()
-
 	os.system('cls')
 
 	# READ PARAMETERS 
@@ -201,6 +213,9 @@ if __name__ == '__main__':
 	print(f"\t.... Printing only for first process ....\n")
 	#print(f"\t{list_games}")
 	pausar()	
+	# time
+	inicio = time.time()
+
 
 	# CALL MULTIPROCESSING
 	exec_games(list_games,nCPU)

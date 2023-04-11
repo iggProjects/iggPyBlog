@@ -7,7 +7,7 @@ import time
 # Constantes
 #
 ITERAC = 300
-DORMIR= 0.05
+DORMIR= 0.005
 
 from os import system
 
@@ -132,11 +132,11 @@ def contraer_matriz(matriz):
 if __name__ == '__main__':
 
 	n=1																								# Numero Iteraciones
-	nX, nY = os.get_terminal_size()					 	# Windows Obtengo COLUMNAS y LINEAS de la consola
+	#nX, nY = os.get_terminal_size()					 	# Windows Obtengo COLUMNAS y LINEAS de la consola
 	#nX, nY = os.get_terminal_size(0)					# Linux   Obtengo COLUMNAS y LINEAS de la consola
-	nX, nY = parificar(int(nX/2)), parificar(nY-2)		# Ajusto por espacios e indicador de iteraciones
+	#nX, nY = parificar(int(nX/2)), parificar(nY-2)		# Ajusto por espacios e indicador de iteraciones
 
-	nX, nY = 20,20
+	nX, nY = 25,25
 
 	# Intento capturar nombre de archivo de la llamada
 	try:
@@ -148,6 +148,9 @@ if __name__ == '__main__':
 	mostrar_matriz(matriz,"Matriz Inicial")
 	print(f"{FR_GREEN}MATRIZ INICIAL{NO_COLOR}")
 	pausar()
+
+	# Registro hora-seg inicio
+	inicio = time.time()
 
 	# Iteraciones del programa
 	while n <= ITERAC:
@@ -175,7 +178,13 @@ if __name__ == '__main__':
 
 		# Recombino las matrices particionadas
 		matriz = np.hstack( (np.vstack( (m0,m1) ), np.vstack( (m2,m3) )) )
-		mostrar_matriz(matriz,"Nueva cara Matriz")
-		print(f"Iteraciones: {n} de {ITERAC} | Matriz {nX} x {nY}")
+		# Print cada 10 iteraciones
+		if n % 10 == 0:
+			mostrar_matriz(matriz,"Nueva cara Matriz")
+			print(f"Iteraciones: {n} de {ITERAC} | Matriz {nX} x {nY}")
 		time.sleep(DORMIR)
 		n+=1
+
+	elapsed_time = "{:.2f}".format(time.time()-inicio)
+	print(f"\n\tElapsed Time: {elapsed_time} seconds\n")
+	print(f"\n\033[0;93m\t----------THAT's ALL----------\033[0m\n")

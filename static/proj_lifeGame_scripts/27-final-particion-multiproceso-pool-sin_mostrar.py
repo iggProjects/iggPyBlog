@@ -7,8 +7,8 @@ import time
 #
 # Constantes
 #
-ITERAC = 100
-DORMIR= 0.0
+ITERAC = 500
+DORMIR= 0.005
 
 #
 # Funciones
@@ -133,11 +133,9 @@ if __name__ == '__main__':
 	# nX, nY = os.get_terminal_size(0)		        		# Linux Obtengo COLUMNAS y LINEAS de la consola							  
 	# nX, nY = os.get_terminal_size()						# Windows Obtengo COLUMNAS y LINEAS de la consola	
 	# nX, nY = parificar(int(nX/2)), parificar(nY-2)		# Ajusto por espacios e indicador de iteraciones
-	nX, nY = 20, 20
+	nX, nY = 35, 35
 
 	print(f"\nPlaying LifeGame with a Matrix of {nX} x {nY} and {ITERAC} iterations\n\n")
-	pausar()
-	print()
 
 	# Intento capturar nombre de archivo de la llamada
 	try:
@@ -147,8 +145,12 @@ if __name__ == '__main__':
 		archivo = 'NO_ARCHIVO'
 
 	matriz = crear_matriz(archivo)								# Obtengo la matriz
-	# mostrar_matriz(matriz)
-	# pausar()
+	mostrar_matriz(matriz)
+	print(f"MATRIZ INICIAL")
+	pausar()
+
+	# Registro hora-seg inicio
+	inicio = time.time()
 
 	# Iteraciones del programa
 	while n <= ITERAC:
@@ -176,13 +178,19 @@ if __name__ == '__main__':
 		# Recombino las matrices particionadas
 		matriz = np.hstack( (np.vstack( (m0,m1) ), np.vstack( (m2,m3) )) )
 
-		# Muestro la nueva cara de la matriz
-		# mostrar_matriz(matriz)
-		if n % 10 == 0:
+		# Muestro la nueva cara de la matriz		
+		if n % 100 == 0:
+			#mostrar_matriz(matriz)
 			print(f"\tIteracion {n} de {ITERAC} | Matriz de {nX} x {nY}")
 		
 		time.sleep(DORMIR)
 		n+=1
 
-	print(f"\nLa Matriz terminó así:|n")
 	mostrar_matriz(matriz)
+	print(f"\nLa Matriz terminó así:\n")
+	
+
+	elapsed_time = "{:.2f}".format(time.time()-inicio)
+	print(f"\n\tElapsed Time: {elapsed_time} seconds\n")
+	print(f"\n\033[0;93m\t----------THAT's ALL----------\033[0m\n")
+
