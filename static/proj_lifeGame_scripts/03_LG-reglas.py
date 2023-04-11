@@ -8,9 +8,9 @@ os.system('cls')
 #
 # Constantes
 #
-ITERAC=5
-nX = 20
-nY = 20
+ITERAC = 100
+nX = 10
+nY = 10
 yExt = 2*nY + 1
 # nX, nY = os.get_terminal_size(0)
 # nX, nY = int(nX/2)-5, (nY-5)
@@ -19,7 +19,7 @@ yExt = 2*nY + 1
 # Funciones
 #
 def pausar(i):
-	userInput = input(f"Pausa No: {i}... Presiona ENTER para continuar CTRL-C para salir");
+	userInput = input(f"\nIteración No: {i}, matriz {nX} x {nY}\nPresiona ENTER para continuar CTRL-C para salir\n")
 
 def mostrar_matriz(matriz):
 	# os.system('clear')
@@ -38,9 +38,9 @@ def mostrar_matriz(matriz):
 		print()
 
 #
-# Programa
+# MAIN
 #
-n=1
+
 matriz  = np.random.randint(2, size=(nX, nY))
 matriz_ext = np.zeros((nX,yExt))
 
@@ -63,10 +63,8 @@ for x in range(0,nX):
 for x in range (0,nX):
 	matriz_ext[x,nY] = 999 
 
-# mostrar_matriz(matriz_ext)		
-# pausar(0)
-
-while n<= ITERAC:
+n=1
+while n <= ITERAC:
 	# pausar(n)
 	matrizTemp = np.copy(matriz_ext)
 	# mostrar_matriz(matrizTemp)
@@ -98,9 +96,16 @@ while n<= ITERAC:
 			matrizTemp[x,y+nY+1] = nVecinos
 
 	matriz_ext = np.copy(matrizTemp)
+	print(f"\n\033[0;93m Matriz Life Game\033[0m   ---  \033[0;96mMatriz Num Vecinos\033[0m")
 	mostrar_matriz( matriz_ext )
-	print(f"Iteraciones: {n} de {ITERAC} ({nX}, {nY}) ")
-#	time.sleep(2)
+	#print(f"Iteraciones: {n} de {ITERAC} ({nX}, {nY}) ")
+	#time.sleep(2)
+	if n < 5:
+		pausar(n)
+	else:
+		print(f"Iteración No: {n}\nmatriz {nX} x {nY}\n")	
 	n += 1
+
+print(f"\n\033[0;93mTotal iteraciones Life Game: {ITERAC}\033[0m\nmatriz {nX} x {nY}\n")
 	
-print("FIN")
+print("FIN\n")

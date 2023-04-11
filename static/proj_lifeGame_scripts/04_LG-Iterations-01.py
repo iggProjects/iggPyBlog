@@ -15,7 +15,7 @@ import time
 # Constantes
 #
 ITERAC = 100 
-DORMIR= 0.05
+DORMIR= 0.005
 
 #
 # Funciones
@@ -76,31 +76,31 @@ def crear_matriz(nombre_archivo):
 
 	else:
 		matriz = np.random.randint(2, size=(nX, nY))
-		print(f"Matriz aleatorios")
-		pausar()								# Matriz de aleatorios
 	
 	return matriz
 
 #
-# Programa
+# MAIN
 #
+
+os.system('cls')
 
 n=1										# Numero Iteraciones
 nY, nX = os.get_terminal_size()			# Obtengo COLUMNAS y LINEAS de la consola
-print(f"\nterminal columns: {os.get_terminal_size()[0]} , lines: {os.get_terminal_size()[1]}\n")
-nX, nY = nX-10, int(nY/3)				# Ajusto por espacios e indicador de iteraciones
-# print(f"{nX},{nY}")
-
+print(f"\n\033[0;93mTERMINAL SIZE: {os.get_terminal_size()[0]} x {os.get_terminal_size()[1]} |  MATRIX SIZE: {nX} x {nY}\033[0m\n")
+#nX, nY = nX-10, int(nY/3)				# Ajusto por espacios e indicador de iteraciones
+nX,nY=25,25
 pausar()
-print(f"{nX},{nY}")
+
 # Intento capturar nombre de archivo de la llamada
 try:
 	archivo = sys.argv[1]
 except:
 	archivo = 'NO_ARCHIVO'
 
-matriz = crear_matriz(archivo)								# Obtengo la matriz
-mostrar_matriz(matriz)
+matriz = crear_matriz(archivo)			# Obtengo la matriz inicial en forma aleatoria
+mostrar_matriz(matriz)					# muestro matriz inicial
+print(F"\nMATRIZ INICIAL ALEATORIA (0 Y 1)\n")
 
 pausar()
 
@@ -136,6 +136,6 @@ while n <= ITERAC:
 
 	# Muestro la nueva cara de la matriz
 	mostrar_matriz(matriz)
-	print(f"Iteraciones: {n} de {ITERAC} ({nX}, {nY})")
+	print(f"\033[0;93m\n ==== Iteración {n} de {ITERAC}, Matriz {nX} x {nY} ===\033[0m")
 	time.sleep(DORMIR)
 	n+=1

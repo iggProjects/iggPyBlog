@@ -1,14 +1,15 @@
 #!/usr/bin/python3
 import numpy as np
-import multiprocessing as mp
 import os, sys, traceback
 import time
 
 #
 # Constantes
 #
-ITERAC = 250
+ITERAC = 300
 DORMIR= 0.05
+
+from os import system
 
 # Colors
 NO_COLOR = "\033[00m"
@@ -32,7 +33,8 @@ def parificar(numero):
 	return numero
 
 # Muestro la Matriz
-def mostrar_matriz(matriz):
+def mostrar_matriz(matriz,msg):
+	#print(f"\n{FR_YELL}{msg}{NO_COLOR}\n")
 	os.system('cls')                                    # Ejecuto el comando 'clear' del OS
 	X, Y = matriz.shape                                   # Dimensiones de la matriz
 	for y in range(0, Y):
@@ -71,7 +73,7 @@ def crear_matriz(nombre_archivo):
 	return matriz
 
 # Calculo la evolucion de la matriz
-def calcular_matriz(matriz):
+def calcular_matriz(matriz):	
 	X, Y = matriz.shape
 	# Copio la matriz para poner en ella los cambios
 	matrizTemp = np.copy(matriz)
@@ -123,28 +125,18 @@ def contraer_matriz(matriz):
 	matriz = matriz[ 1:(X-1), 1:(Y-1) ]
 	return matriz
 
-# Mandar a calcular las matrices usando MP
-def calcular_matrices(matrices):
-	with mp.Pool(4) as pool:
-		return pool.map(calcular_matriz, matrices)
-
-
 #
 # Programa
 #
 
 if __name__ == '__main__':
 
-	os.system('cls')
+	n=1																								# Numero Iteraciones
+	nX, nY = os.get_terminal_size()					 	# Windows Obtengo COLUMNAS y LINEAS de la consola
+	#nX, nY = os.get_terminal_size(0)					# Linux   Obtengo COLUMNAS y LINEAS de la consola
+	nX, nY = parificar(int(nX/2)), parificar(nY-2)		# Ajusto por espacios e indicador de iteraciones
 
-	n=1													# Numero Iteraciones
-	nX, nY = os.get_terminal_size()					    # Obtengo COLUMNAS y LINEAS de la consola
-	#nX, nY = os.get_terminal_size(0)					# Linux Obtengo COLUMNAS y LINEAS de la consola
-	#nX, nY = parificar(int(nX/2)), parificar(nY-2)		# Ajusto por espacios e indicador de iteraciones
-	nX, nY = 25, 25
-
-	print(f"\nPlaying LifeGame with {nX} cols, {nY} rows and {ITERAC} iterations\n ")
-	pausar()
+	nX, nY = 20,20
 
 	# Intento capturar nombre de archivo de la llamada
 	try:
@@ -152,20 +144,18 @@ if __name__ == '__main__':
 	except:
 		archivo = 'NO_ARCHIVO'
 
-	matriz = crear_matriz(archivo)			# Obtengo la matriz
-	mostrar_matriz(matriz)
+	matriz = crear_matriz(archivo)								# Obtengo la matriz
+	mostrar_matriz(matriz,"Matriz Inicial")
 	print(f"{FR_GREEN}MATRIZ INICIAL{NO_COLOR}")
 	pausar()
 
 	# Iteraciones del programa
 	while n <= ITERAC:
-
 		# particiono la matriz
 		m0 = matriz[ 0:int(nX/2), 0:int(nY/2) ]
 		m1 = matriz[ int(nX/2):nX, 0:int(nY/2) ]
 		m2 = matriz[ 0:int(nX/2), int(nY/2):nY ]
 		m3 = matriz[ int(nX/2):nX, int(nY/2):nY ]
-		
 		# Expando las matrices
 		m0e = expandir_matriz(m0, m1, m2, m3)
 		m1e = expandir_matriz(m1, m0, m3, m2)
@@ -173,8 +163,10 @@ if __name__ == '__main__':
 		m3e = expandir_matriz(m3, m2, m1, m0)
 
 		# Calculo la iteracion de la matriz
-		m0e, m1e, m2e, m3e = calcular_matrices([m0e, m1e, m2e, m3e])
-
+		m0e = calcular_matriz(m0e)
+		m1e = calcular_matriz(m1e)
+		m2e = calcular_matriz(m2e)
+		m3e = calcular_matriz(m3e)
 		# contraigo las matricez
 		m0 = contraer_matriz(m0e)
 		m1 = contraer_matriz(m1e)
@@ -183,7 +175,7 @@ if __name__ == '__main__':
 
 		# Recombino las matrices particionadas
 		matriz = np.hstack( (np.vstack( (m0,m1) ), np.vstack( (m2,m3) )) )
-		mostrar_matriz(matriz)
-		print(f"Iteración: {n} de {ITERAC} | Matriz {nX} x {nY}")
+		mostrar_matriz(matriz,"Nueva cara Matriz")
+		print(f"Iteraciones: {n} de {ITERAC} | Matriz {nX} x {nY}")
 		time.sleep(DORMIR)
 		n+=1
