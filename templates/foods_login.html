@@ -1,0 +1,22 @@
+{% extends 'foods-layout-login.html' %}
+
+{% block body %}
+    <div class="container disp-cols-cent" style="width:50%;">
+        <h1 style="text-align: center; margin-top: 50px;">Please login</h1>
+        
+        {% if error %}
+            <p class="error" style="margin-top: 20px; text-align: center; color:rgb(255, 68, 0)"><strong>Error:</strong> {{ error }}</p>
+        {% endif %}
+        
+        <div style="margin-top:50px; padding:20px;text-align: center; border:10px solid rgb(190, 209, 250)">
+            <form  action="" method="post">
+                <input style="width: 80%; height: 40px;" type="text" placeholder="Username" name="username" value="{{ request.form.username }}">
+                <br><br>
+                <input style="width: 80%; height: 40px;" type="password" placeholder="Password" name="password" value="{{ request.form.password }}">
+                <br><br>
+                <input class="btn btn-default" type="submit" value="Login">        
+            </form>
+        </div>
+
+    </div>
+{% endblock %}

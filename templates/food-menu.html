@@ -1,0 +1,56 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+
+<div style="text-align:center;margin:auto;margin-top:20px;"><img src="/static/img/urrutia.jpg" style="border-radius: 10px; border:3px solid rgb(155, 2, 2);" alt="urrutia-01" width="70"/></div>
+<h1 style="text-align: center; font-size:20px; margin-top: 10px; color:rgb(155, 2, 2);">Ongi Etorri URRUTIA Jatetxera<br><span style="font-size: 15px;;">Caracas - Venezuela</span></h1>
+<div style="width:80px; margin:auto; padding:2px; text-align: center; border-radius: 10px; background-color: blue;">
+    <a style="font-size: 16px; color: white;text-decoration: none;" href="{{ url_for('foods_login') }}">Login</a>
+</div>
+<div class="content w50" style="margin:auto; text-align: center;">
+    {% block content %} 
+    <h2 style="text-align: center; margin:10px; font-size: 18px;">{% block platos %} MENÚ DEL DÍA {% endblock %}</h2>
+    <div id="urrutia_menu" class="disp-row-cent">
+
+        <div class="entrada" style="border:solid 10px rgb(218, 216, 216)" title="entrada menú">
+            <table >
+            {% for plato in entrada %}
+                <tr>                        
+                    <td>#{{ plato.id }}</td>
+                    <td>{{ plato.nombre }}</td>
+                    <td>{{ plato.precio }}</td>     
+                </tr>        
+            {% endfor %}
+            </table>
+        </div>
+        <div class="ppal" title="plato ppal menú">
+            <table>
+            {% for plato in ppal %}
+                <tr>                        
+                    <td>#{{ plato.id }}</td>
+                    
+                    <td>{{ plato.nombre }}</td>
+                    <td>{{ plato.precio }}</td>     
+                </tr>        
+            {% endfor %}
+            </table>
+        </div>
+        <div class="postre" title="postre menú">
+            <table>
+            {% for plato in postre %}
+                <tr>                        
+                    <td>#{{ plato.id }}</td>
+                    
+                    <td>{{ plato.nombre }}</td>
+                    <td>{{ plato.precio }}</td>     
+                </tr>        
+            {% endfor %}
+            </table>
+        </div>
+
+
+    </div>        
+    {% endblock %}
+</div>
+
+{% endblock %}

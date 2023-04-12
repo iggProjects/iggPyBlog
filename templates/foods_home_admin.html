@@ -1,0 +1,23 @@
+{% extends 'foods-layout-admin.html' %}
+
+{% block body %}
+    <div class="jumbtron text-center disp-row-cent">
+        
+        <img src="/static/img/urrutia.jpg" style="margin-top:40px;border-radius: 10px; border:3px solid rgb(102, 102, 250)" alt="urrutia-01" width="120"/>        
+
+        <div style="width:180px; margin:auto; margin-top:20px; padding:2px; text-align: center; border-radius: 10px; background-color: blue;">
+            <a style="font-size: 16px; color: white;text-decoration: none;" href="{{ url_for('home') }}">iggPyBlog</a>
+        </div>    
+
+        <div class="disp-row-cent" style="width:350px; text-align: center; margin:auto; margin-top: 30px; padding: 20px; border:5px solid rgb(197, 196, 196)">            
+
+            <div class="ppal" style="font-size:25px;"><a href="{{ url_for('foods_reg_matrix') }}" style="color:rgb(177, 101, 2);">Listado de Comidas</a></div>
+            <div class="ppal" style="font-size:25px;"><a href="{{ url_for('foods_reg_insert') }}" style="color:rgb(177, 101, 2);">Agregar Comida</a></div>
+
+        </div>       
+  
+
+        
+    </div>
+{% endblock %}
+

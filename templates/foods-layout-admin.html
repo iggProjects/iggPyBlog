@@ -2,12 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>iggPyBlog</title>
+    <title>URRUTIA</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">    
     <link rel="icon" type="image/x-icon" href="/static/img/icons8-bulb-64.png">
     <style>
-
-        body { margin:0px;}
 
         /* width */
         ::-webkit-scrollbar {
@@ -25,51 +23,32 @@
         }
         /* Handle on hover */
         ::-webkit-scrollbar-thumb:hover {
-        background: rgb(105, 0, 128); 
+        background: green; 
         }
 
         .nav-disp-rows-cent{ display: flex; flex-direction: row; flex-wrap: wrap; justify-content: space-around; align-items: center; align-content: stretch; }
+        .ppal    { text-align: center; padding: 5px; margin:10px; border:10px solid #029da5; background-color: #5af4fc;  }
 
         .disp-rows-cent{ display: flex; flex-direction: row; flex-wrap: wrap; justify-content: space-around; align-items: center; align-content: stretch; }
         .disp-cols-cent{ display: flex; flex-direction: column; flex-wrap: wrap; justify-content: flex-start; align-items: stretch; align-content: stretch; }
-        
-        hr {width:70%; height:5px; border-width:0; background-color:rgb(190, 209, 250)}
         table { margin:auto; border-collapse: collapse; }
+        table td { padding:3px; font-size:15px;}
+        .tableWithBorders { border: 1px solid rgb(156, 156, 156); padding:3px; }
         table th { width:16%; }        
         th, td { text-align: center; }
         td { font-size: 12px;}
         #trBody { height: 300px;}
         #trBody td { text-align: left; vertical-align: baseline; padding: 3px; }
         table img { border:1px solid rgb(115, 40, 255); border-radius: 10px;  }
+
         #tableCourse { border: none; }
-        .tableWithBorders { width:98%; text-align: left; border:1px solid rgb(190, 209, 250); border-radius: 10px; }
-        .tableWithBorders td { padding:5px; }
-        .tblBGC_Red_Light { background-color: rgb(252, 77, 77); }
-        .tblBGC_Grn_Light { background-color: #4efd51; }
-        .tblBGC_Org_Light { background-color: orange; }
-        .tblBGC_Yel_Light { background-color: yellow; }
-        .tblBGC_Bl_Light { background-color: rgb(26, 136, 252); }
-        .tblBGC_Grn_2 { background-color: rgb(90, 172, 2); }
-        .tblBGC_Red_2 { background-color: rgb(255, 53, 53); }
-        .tableWithBorders textarea { resize:none }
-
-        .w50 { width:50%}
-
-        #urrutia_menu table {margin: 0 auto; }        
-        #urrutia_menu table td { width:30%; padding:3px; font-size: 16px;}
-
-        .entrada { border:10px solid rgb(173, 172, 172); background-color: #c1fb87;   }
-        .ppal    { border:10px solid #029da5; background-color: #5af4fc;  }
-        .postre  { border:10px solid #ff25af; background-color: #fa9cd8;  }
-        .entrada, .ppal, .postre {text-align: center; font-size: 20px; height:15vh; padding: 5px; margin:20px; border-radius: 10px; ; overflow-y: auto; }
-       
 
     </style>
 
 </head>
 <body>    
     
-    {% include 'includes/_navbar.html' %}
+    
     <div class="container" style="width:90%;">        
         {% block body%} {% endblock%}
     </div>
