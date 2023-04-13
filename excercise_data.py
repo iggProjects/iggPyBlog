@@ -14,7 +14,7 @@ def Excercises():
             
             'homework': 'Use colors for print.  Ascii format for colors is easily used in the print function.   Constants can be used, or specific functions can be created to print messages with the desired effects. Printing with style is a good practice. Go ahead with some ideas.',
 
-            'body': 'SOME CONSTANTS FOR COLORS\n\tNO_COLOR="\\033[00m"\tFR_RED="\\033[91m"\tFR_GREEN="\\033\[92m"\tFR_YELL="\\033\[93m"\tFR_BLUE="\\033\[94m"\n\nSIMPLE SYNTAX FOR PRINTING "MAIN" WHEN STARTING THE PRINTING OF RESULTS\n\tprint(f"\\n{FR_GREEN}---------- main ----------{NO_COLOR}\\n"):\n\nAN EXAMPLE OF FUNCTION TO PRINT SOME MESSAGE:\n\tdef prRed(msg):\n\t\tprint(f"{FR_YELL} {} {NO_COLOR}".format(msg))\n\n\tprRED("TESTING COLOR FUNCTION")',          
+            'body': 'SOME CONSTANTS FOR FOREGROUND COLORS\n\tNO_COLOR="\\033[00m"\tFR_RED="\\033[91m"\tFR_GREEN="\\033\[92m"\tFR_YELL="\\033\[93m"\tFR_BLUE="\\033\[94m"\n\nSIMPLE SYNTAX FOR PRINTING "------- MAIN -------" WHEN STARTING THE PRINTING OF RESULTS\n\tprint(f"\\n{FR_GREEN}------- MAIN -------{NO_COLOR}\\n"):\n\nAN EXAMPLE OF FUNCTION TO PRINT SOME MESSAGE:\n\tdef prRed(msg):\n\t\tprint(f"{FR_YELL} {} {NO_COLOR}".format(msg))\n\n\tprRED("TESTING COLOR FUNCTION")',          
 
             'zip_url': '/static/py_excercises/20230213-PrototypeScript/20230213-PrototypeScript.rar',  
             'img': '/img/icons8-consola-100.png'    
