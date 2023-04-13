@@ -36,11 +36,6 @@ ENCRYPTED_TEXT = 'jhmare diqot cgfspu tjqls vrjmirn'
 def decipher(alphab1, event):
     
     decoded_text = ''     
-    #print(f"{FR_GREEN}From decipher{NO_COLOR}")  
-    #print(f'\tmessy alphabet: {alphab1}', flush=True)
-    #print(f'\tOrig alphabet:  {ALPHAB}', flush=True)      
-    #print(f'\tEvent:          {event}', flush=True)      
-    #print(f"\tEncripted text: {ENCRYPTED_TEXT}", flush=True)
     for ch in ENCRYPTED_TEXT:
         # find 'ch' in new_alphab 
         if ch in alphab1:
@@ -53,34 +48,10 @@ def decipher(alphab1, event):
     
     if MY_TEXT.casefold() == decoded_text:
         print(f'{FR_GREEN}\n\tdecode text: {NO_COLOR}{decoded_text} {FR_YELL}------ BINGO ------ BINGO ------{NO_COLOR}\n')
-        #sleep(2)
-        #print(f'{FR_MAG}\t==== From decipher {alphab1}, event {event} event.set() process activated {NO_COLOR}', flush=True)        
         print(f'{FR_MAG}\t...stopping...{NO_COLOR}', flush=True)
-        #print(f'\t\t...Task Stopped', flush=True)
         event.set()
-        #sleep(5)
-        #result.wait()
-        #print(f"{FR_YELL}\t\t-------- BINGO -- BINGO --  BINGO -- BINGO -- BINGO --------{NO_COLOR}")
     else:
         print(f'{FR_GREEN}\n\tdecode text: {NO_COLOR}{decoded_text}')
-
-"""
-# task executed in a worker process
-def task(identifier, event):    
-    print(f'From Task: {FR_GREEN}Task {identifier} running{NO_COLOR}', flush=True)   
-    while not event.is_set():
-        number = randrange(150)
-        print(f"\t{identifier} -- {number}")
-        if number == 22:
-            print(f'{FR_MAG}\t==== From Task {identifier}, number {number} call event.set() process{NO_COLOR}', flush=True)
-            sleep(1)
-            #print(f'\t\n==== From Task: {FR_GREEN}Task {identifier} call event.set() ====\n{NO_COLOR}', flush=True)
-            # safely stop the issued tasks
-            print(f'{FR_MAG}\tTask {identifier} stopping...{NO_COLOR}', flush=True)
-            print(f'\t\tTask {identifier} Stopped', flush=True)
-            event.set()
-            break
-"""
 
 # protect the entry point
 if __name__ == '__main__':
@@ -100,9 +71,6 @@ if __name__ == '__main__':
         # Note: if you do not put a valid number of CPU's, Pool() assume the maximum of PC 
         with Pool(4) as pool:   
 
-            # random.shuffle() to create new_alphab
-            #random.shuffle(ORIG_ALPHAB)    
-            #messy_alphab=ORIG_ALPHAB  
             # prepare arguments            
             messy_alphab1 = ['w', 'n', 'y', 'x', 'o', 'v', 'r', 'l', 'u', 'z', 'q', 'a', 'b', 'm', 'd', 'h', 'f', 'c', 's', 't', 'k', 'e', 'g', 'i', 'p', 'j']
             print(f"{FR_GREEN}Random Messy Alphabet used to encrypt original text:\n{NO_COLOR}{ALPHAB_TO_ENCRYPT}\n")
@@ -126,12 +94,10 @@ if __name__ == '__main__':
 
             # issue tasks asynchronously
             result = pool.starmap_async(decipher, alphabets)
-
-            
+          
             # safely stop the issued tasks
             sleep(5)
             print(f'\n{FR_MAG}Safely stopping all tasks{NO_COLOR}\n')
-            #event.set()
             
             # wait for all tasks to stop            
             print(f'\n{FR_RED}=== ALL TASKS STOPED ==={NO_COLOR}\n')

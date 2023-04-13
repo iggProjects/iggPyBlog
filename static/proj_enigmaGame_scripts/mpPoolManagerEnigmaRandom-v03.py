@@ -7,6 +7,7 @@ from time import sleep
 from multiprocessing import Event
 from multiprocessing import Manager
 from multiprocessing.pool import Pool
+import os
 from os import system
 import random
 from random import randrange
@@ -36,39 +37,29 @@ ENCRYPTED_TEXT = 'jhmare diqot cgfspu tjqls vrjmirn'
 
 def decipher(alphab1, event):
 
-    decoded_text = ''     
-    for ch in ENCRYPTED_TEXT:
-        # find 'ch' in new_alphab 
-        if ch in alphab1:
-            ind = alphab1.index(ch) 
-            decoded_text += ALPHAB[ind]
-        elif ch == ' ':
-            decoded_text += ch
-        else:      
-            pass 
-    
-    if MY_TEXT.casefold() == decoded_text:
-        print(f"{FR_YELL}------ BINGO ------ BINGO ------ BINGO ------ BINGO ------ BINGO ------ BINGO ------")
-        print(f"{FR_GREEN}\tDecoded text is correct: {NO_COLOR}{decoded_text}\n")
-        print(f"{FR_GREEN}\tEncrypted text: {NO_COLOR}{ENCRYPTED_TEXT}\n")
-        print(f'{FR_GREEN}\tCorrect Alphabet Decoder: {NO_COLOR}{(",".join(alphab1))}', flush=True)
-        print(f"{FR_YELL}-----------------------------------------------------------------------------------")
-        print(f'{FR_MAG}\n...stop process started...{NO_COLOR}', flush=True)
-        event.set()
-        #sleep(5)
-        #print(f'\n{FR_MAG}Safely stopping all tasks{NO_COLOR}\n')
-
-    else: 
-        sleep(0.0001)       
-        #print(f'{FR_GREEN}\n\tDecode text failed: {NO_COLOR}{decoded_text}')
-
-    """
-    # check if the task should stop
     if event.is_set():
-        print(f'{FR_MAG}\tTask {identifier} stopping...{NO_COLOR}', flush=True)
-        # stop the task
-        break
-    """
+        return
+    else:    
+        decoded_text = ''     
+        for ch in ENCRYPTED_TEXT:
+            # find 'ch' in new_alphab 
+            if ch in alphab1:
+                ind = alphab1.index(ch) 
+                decoded_text += ALPHAB[ind]
+            elif ch == ' ':
+                decoded_text += ch
+            else:      
+                pass 
+        
+        if MY_TEXT.casefold() == decoded_text:
+            print(f"{FR_YELL}------ BINGO ------ BINGO ------ BINGO ------ BINGO ------ BINGO ------ BINGO ------")
+            print(f"{FR_GREEN}\tPID process child: {os.getpid} {NO_COLOR}\n")
+            print(f"{FR_GREEN}\tDecoded text is correct: {NO_COLOR}{decoded_text}\n")
+            print(f"{FR_GREEN}\tEncrypted text: {NO_COLOR}{ENCRYPTED_TEXT}\n")
+            print(f'{FR_GREEN}\tCorrect Alphabet Decoder: {NO_COLOR}{(",".join(alphab1))}', flush=True)
+            print(f"{FR_YELL}-----------------------------------------------------------------------------------")
+            print(f'{FR_MAG}\n...stop process started...{NO_COLOR}', flush=True)
+            event.set()
 
 # protect the entry point
 if __name__ == '__main__':
@@ -86,10 +77,13 @@ if __name__ == '__main__':
     messy_alphab1 = ['w', 'n', 'y', 'x', 'o', 'v', 'r', 'l', 'u', 'z', 'q', 'a', 'b', 'm', 'd', 'h', 'f', 'c', 's', 't', 'k', 'e', 'g', 'i', 'p', 'j']            
     print(f"{FR_GREEN}Random Messy Alphabet used to encrypt original text:{NO_COLOR}\n\t{(','.join(ALPHAB_TO_ENCRYPT))}\n")
     
-    messy_alphabets.append(ALPHAB_TO_ENCRYPT)   
-    for i in range(50000):
-        messy_alphabets.append(messy_alphab1)
     #messy_alphabets.append(ALPHAB_TO_ENCRYPT)   
+    for i in range(100000):
+        messy_alphabets.append(messy_alphab1)
+    messy_alphabets.append(ALPHAB_TO_ENCRYPT)  
+    for i in range(100000):
+        messy_alphabets.append(messy_alphab1)
+
     print(f"{FR_YELL}====== Total Alphabets: {len(messy_alphabets)} ======{NO_COLOR}\n")          
 
     # create the manager

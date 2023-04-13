@@ -18,6 +18,7 @@ if __name__ == "__main__":
     print(f"\n{FR_GREEN}---------- main ----------{NO_COLOR}\n")
 
     #alphab = 'abcdefghijklmnopqrstuvwxyz'
+    # substr of alphabet chosen to create permutations
     alphab_15 = 'abcdegilmnoprsu'
     alphab_15_list = list(alphab_15)
     numb_alphab = 0
@@ -25,10 +26,11 @@ if __name__ == "__main__":
     num_chars_equal = 0
 
     while numb_alphab < 500000:
-    #for i in range(10):
+
         alp = list(alphab_15)
         random.shuffle(alp)
         
+        # discard permutations that keep the character in place
         for i in range(15):
             if alp[i] == alphab_15_list[i]:
                 #print(f"\t{i+1}: {''.join(alp)} | {''.join(alphab_15_list)}")
@@ -46,20 +48,17 @@ if __name__ == "__main__":
             alphab_with_char_conflict += 1    
 
         num_chars_equal = 0              
-
     
     # delete duplicated lines and sort
     uniqlines = set(open('z-permutFile.txt').readlines())
     uniqlines = sorted(uniqlines)
     #print(f"uniqlines type is {type(uniqlines)}")
-    #print(f"uniqlines; {uniqlines}")
     open('z-permutFileSorted.txt', 'w').writelines(uniqlines)
 
     # time  
     elapsed_time = "{:.2f}".format(time.time()-inicio)
     print(f"\n{FR_GREEN}\tTotal new alphabets generated: {numb_alphab}{NO_COLOR}\n")
     print(f"\n{FR_GREEN}\tTotal alphabets discarded by conflict in character position: {alphab_with_char_conflict}{NO_COLOR}\n")
-    
     
     print(f"\n================  Elapsed time: {elapsed_time}  =================\n\n")
     

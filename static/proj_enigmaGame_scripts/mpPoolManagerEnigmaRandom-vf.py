@@ -121,7 +121,7 @@ if __name__ == '__main__':
     for messy_str in messy_lines:
         messy_alphabets.append(list(messy_str))
         #messy_alphabets.append(messy_str)
-    #messy_alphabets.append(ALPHAB_15_TO_ENCRYPT)
+    messy_alphabets.append(ALPHAB_15_TO_ENCRYPT)
 
     print(f'{FR_YELL}\t--- reading file process finished at "{datetime.now()}" ---{NO_COLOR}\n')  
 
@@ -130,7 +130,7 @@ if __name__ == '__main__':
     print(f"{FR_GREEN}\tEncrypted text:{NO_COLOR}\n\t\t{ENCRYPTED_TEXT}")
     print(f"{FR_GREEN}\tMax Number of CPU's:{NO_COLOR} {cpu_count()}\n")
     m_alp = '{:,}'.format(len(messy_alphabets)).replace(',','.')    
-    print(f'{FR_YELL}\t--- CHECKING "{m_alp}" ALPHABETS BEGAN AT "{datetime.now()}" ---{NO_COLOR}\n')    
+    print(f'{FR_YELL}\t--- CHECKING "{m_alp} ALPHABETS" BEGAN AT "{datetime.now()}" ---{NO_COLOR}\n')    
     
     # create the manager
     with Manager() as manager:

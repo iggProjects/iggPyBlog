@@ -30,22 +30,6 @@ MY_TEXT = 'abcdef ghijk lmnopq KAIXO TEACHER'
 ENCRYPTED_TEXT = 'jhmare diqot cgfspu tjqls vrjmirn'
 # FUNCIONS SECTION
 
-"""
-# funtion to encrypt a text
-def encrypt(text,alphab1,alphab2):
-    #print(alphab1)
-    #print(alphab2)
-    global encripted_text 
-    for ch in text:
-        # find 'ch' in new_alphab 
-        if ch in alphab1:
-            ind = alphab1.index(ch) 
-            encripted_text += alphab2[ind]
-        elif ch == ' ':
-            encripted_text += ch
-        else:      
-            pass     
-"""
 def decipher(alphab1, event):
     
     decoded_text = ''     
@@ -104,15 +88,13 @@ if __name__ == '__main__':
         # Note: if you do not put a valid number of CPU's, Pool() assume the maximum of PC 
         with Pool(4) as pool:   
 
-            # random.shuffle() to create new_alphab
-            #random.shuffle(ORIG_ALPHAB)    
-            #messy_alphab=ORIG_ALPHAB  
             # prepare arguments
             messy_alphab  = ['j', 'h', 'm', 'a', 'r', 'e', 'd', 'i', 'q', 'o', 't', 'c', 'g', 'f', 's', 'p', 'u', 'n', 'z', 'v', 'k', 'w', 'y', 'l', 'x', 'b']     
             messy_alphab1 = ['w', 'n', 'y', 'x', 'o', 'v', 'r', 'l', 'u', 'z', 'q', 'a', 'b', 'm', 'd', 'h', 'f', 'c', 's', 't', 'k', 'e', 'g', 'i', 'p', 'j']
             print(f"{FR_GREEN}Random Messy Alphabet to encrypt original text:\n{NO_COLOR}{messy_alphab}\n")
             pause()
 
+            # only two alphabets, one is the correct 
             messy_alphabets = []
             messy_alphabets.append(messy_alphab)
             messy_alphabets.append(messy_alphab1)
@@ -127,12 +109,10 @@ if __name__ == '__main__':
             result = pool.starmap_async(decipher, alphabets)
 
             # safely stop the issued tasks
-            #if event.is_set():
             sleep(5)
             print(f'\n{FR_MAG}Safely stopping all tasks{NO_COLOR}\n')
-            #event.set()
             
             # wait for all tasks to stop            
             print(f'\n{FR_RED}=== ALL TASKS STOPED ==={NO_COLOR}\n')
-            #result.wait()
+            result.wait()
                     
