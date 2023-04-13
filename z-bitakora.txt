@@ -81,6 +81,9 @@ DO IT !!!
     cómo pasar variables de python a JavaScript
         - https://www.codespeedy.com/how-to-pass-javascript-variables-to-python-in-flask/
 
+- github - eu.pythonanywhere
+    - https://www.youtube.com/watch?v=4sTZN15J33A
+    - https://help.pythonanywhere.com/pages/UploadingAndDownloadingFiles/
 
 - link with pythonanywhere  ✔✔
 
