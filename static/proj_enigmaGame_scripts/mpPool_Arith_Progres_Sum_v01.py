@@ -35,7 +35,7 @@ RAZON_INIC = 1
 # param 3: número de términos a sumar
 N_TER = 10000 
 # param 4: número de sucesiones a calcular
-N_SUCESIONES = 100
+N_SUCESIONES = 1000
 # param 5: número de CPU's a usar
 N_CPUS = 4
 # Número para fijar frecuencia de prints
