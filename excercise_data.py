@@ -10,11 +10,11 @@ def Excercises():
             'source_url': '',
             'section': 'Prototype Script',
             'title': 'Colors Function',
-            'fileDirPath': 'static/py_excercises/20230213-PrototypeScript/0-prototype.py',            
+            'fileDirPath': 'static/py_excercises/20230213-PrototypeScript-colors/0-prototype.py',           
             
-            'homework': 'Use colors for print.\n',
+            'homework': 'Use colors for print.  Ascii format for colors is easily used in the print function.   Constants can be used, or specific functions can be created to print messages with the desired effects. Printing with style is a good practice. Go ahead with some ideas.',
 
-            'body': 'Printing with style is a good practice.....',          
+            'body': 'SOME CONSTANTS FOR COLORS\n\tNO_COLOR="\\033[00m"\tFR_RED="\\033[91m"\tFR_GREEN="\\033\[92m"\tFR_YELL="\\033\[93m"\tFR_BLUE="\\033\[94m"\n\nSIMPLE SYNTAX FOR PRINTING "MAIN" WHEN STARTING THE PRINTING OF RESULTS\n\tprint(f"\\n{FR_GREEN}---------- main ----------{NO_COLOR}\\n"):\n\nAN EXAMPLE OF FUNCTION TO PRINT SOME MESSAGE:\n\tdef prRed(msg):\n\t\tprint(f"{FR_YELL} {} {NO_COLOR}".format(msg))\n\n\tprRED("TESTING COLOR FUNCTION")',          
 
             'zip_url': '/static/py_excercises/20230213-PrototypeScript/20230213-PrototypeScript.rar',  
             'img': '/img/icons8-consola-100.png'    
@@ -27,7 +27,7 @@ def Excercises():
             'source_url': '',
             'section': 'Prototype Script',
             'title': 'Pause Function',
-            'fileDirPath': 'static/py_excercises/20230213-PrototypeScript/0-prototype.py',            
+            'fileDirPath': 'static/py_excercises/20230213-PrototypeScript-PauseFunc/0-prototype.py',            
             
             'homework': 'Use "pause() function" to ask what to do after.\n',
 

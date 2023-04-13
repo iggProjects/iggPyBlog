@@ -8,12 +8,24 @@
 #
 from MyFunc import *
 from MyColors import *
+from os import  system
+
+# CONSTANTS
+# Colors
+NO_COLOR = "\033[00m"
+FR_RED   = "\033[91m"
+FR_GREEN = "\033[92m"
+FR_YELL  = "\033[93m"
+FR_BLUE  = "\033[94m"
+FR_MAG   = "\033[95m"
 
 #
 # ---------- COURSE EXCERCISE ----------
 #
 
 if __name__ == "__main__":
+
+    system('cls')
     print(f"\n{FR_GREEN}---------- main ----------{NO_COLOR}\n")
     pause()
 
@@ -27,12 +39,12 @@ if __name__ == "__main__":
             self.__inst_cost = inst_prize*0,8
 
         def play(self):
-            print(f"{FR_GREEN}{self.inst_name} is playing now{NO_COLOR}\n")
+            print(f"\t{FR_GREEN}{self.inst_name} is playing now{NO_COLOR}")
 
         def displayInfo(self):
-            print(f"{FR_BLUE}Instrument {self.inst_name}:{NO_COLOR}\n\t--> type: {self.inst_type}, prize: {self.inst_prize}\n")            
+            print(f"\t\t{FR_YELL}Instrument {self.inst_name}:{NO_COLOR}\n\t\t--> type: {self.inst_type}, prize: {self.inst_prize}\n")            
 
-    guitar=musicalInstruments("guitar", "cords", "100")
+    guitar=musicalInstruments("Guitar", "cords", "100")
     guitar.play()
     guitar.displayInfo()
 
@@ -43,7 +55,7 @@ if __name__ == "__main__":
             self.inst_keys = inst_keys
 
         def displayPianosInfo(self):
-            print(f"\n{FR_BLUE}Instrument {self.inst_name}:{NO_COLOR}\n\t--> type: {self.inst_type}, prize: {self.inst_prize}, keys: {self.inst_keys}{NO_COLOR}\n")            
+            print(f"\t{FR_YELL}Instrument {self.inst_name}:{NO_COLOR}\n\t\t--> type: {self.inst_type}, prize: {self.inst_prize}, keys: {self.inst_keys}{NO_COLOR}\n")            
     
 
     PianoCola = Pianos("Piano de Cola","cuerdas",1000,24)
@@ -56,7 +68,7 @@ if __name__ == "__main__":
             super().__init__(inst_name,inst_type,inst_prize)
             
         def displayMusicianInfo(self):
-            print(f"\n{FR_BLUE}{self.musician_name}{NO_COLOR}  plays with a {FR_GREEN}{self.inst_name}{NO_COLOR}\n")            
+            print(f"\t{FR_YELL}{self.musician_name}{NO_COLOR} plays with a {FR_GREEN}{self.inst_name}{NO_COLOR}\n")            
 
     Beethoven = musicians("Ludwig van Beethoven","Piano", "Cuerdas", 20000 )
     Beethoven.displayMusicianInfo()
@@ -74,7 +86,7 @@ if __name__ == "__main__":
             self.inst_keys = Pianos(inst_keys)           
 
         def displayMusicalTeam(self):
-            print(f"\n{FR_BLUE}Musician {self.musician_name}, Instrument {self.inst_name}{NO_COLOR}\n")            
+            print(f"\n{FR_YELL}Musician {self.musician_name}, Instrument {self.inst_name}{NO_COLOR}\n")            
 
     Beethoven_Piano = musicalTeam(Beethoven,PianoCola)
     Beethoven_Piano.displayMusicalTeam()"""

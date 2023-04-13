@@ -1,14 +1,9 @@
-"""  
-    Testing reliability of the random function
 
-    We will make a thousand executions of the random function in the interval 1 to 10 to verify the probability that a certain number will come out
+"""  
+THIS SCRIPT IS FOR..................
 
 """
-#
 # IMPORT SECTION
-#
-import random
-
 from MyFunc import *
 from MyColors import *
 from os import  system
@@ -22,35 +17,25 @@ FR_YELL  = "\033[93m"
 FR_BLUE  = "\033[94m"
 FR_MAG   = "\033[95m"
 
-
 #
-# ---------- COURSE EXCERCISE ----------
+# ---------- MAIN ----------
 #
 
 if __name__ == "__main__":
 
     system('cls')
-    print(f"\n{FR_GREEN}---------- main ----------{NO_COLOR}\n")
-    pause()
+    print(frGREEN("\n---------- main ----------\n"))
 
-    list=list(range(1,11))
-    print(list)
-    pause()
-    my_value = random.choice(list)
-    print(f"my_value:  {my_value}")
-    i=1
-    #print("my_value: " + my_value)
-    while my_value != 5:
-        i += 1
-        my_value = random.choice(list)
-        print(f"attempt {i}, value:  {my_value}")
+    msg="TESTING COLOR FUNCTION"
+    prRed(msg)   
 
-    print(frGREEN(f"\nattempt {i} , my_value:  {my_value}\n"))
+    print()
 
-    
     # ------------------------------------------------
-    #          SHOW VARS CHARACTERISTICS 
-    #------------------------------------------------ 
+    #           ASKING FOR SHOW VARS INFO 
+    #------------------------------------------------- 
+    """
+    # with Y_N_2 function
     yesss=True   
     while yesss:
         _msg = "Do you want to see attributes for a specific VAR ? (Y,N): "
@@ -71,11 +56,13 @@ if __name__ == "__main__":
         except NameError:
             print(f"\n\t{FR_RED}---- Var '{_what_var}' doesn't exits 🙄🙄  ----")
             print(f"\n{FR_GREEN}--------------- That's all for today 👌 ---------------{NO_COLOR}\n")
+            #_my_Obj_name = None 
 
     else:
         print(f"\n{FR_GREEN}---------- That's all for today 👌 ----------{NO_COLOR}\n")
+    """
 
 else:
     # something wrong
-    print(f"\n{FR_RED}---- upsssssssss something is wrong 😢😢  ---{NO_COLOR}\n")
+    print(frRED("\n---- upsssssssss something is wrong 😢😢  ----\n"))
     pause()

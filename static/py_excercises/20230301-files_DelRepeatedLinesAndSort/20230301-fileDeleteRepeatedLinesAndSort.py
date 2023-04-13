@@ -1,27 +1,43 @@
-
 """  
-THIS SCRIPT IS FOR..................
+THIS SCRIPT IS FOR DELETE REPEATED LINES AND SORT RESULTING FILE
 
 """
+#
 # IMPORT SECTION
+#
 from MyFunc import *
 from MyColors import *
+import math
+from os import  system
+
+# CONSTANTS
+# Colors
+NO_COLOR = "\033[00m"
+FR_RED   = "\033[91m"
+FR_GREEN = "\033[92m"
+FR_YELL  = "\033[93m"
+FR_BLUE  = "\033[94m"
+FR_MAG   = "\033[95m"
 
 #
-# ---------- MAIN ----------
+# ---------- COURSE EXCERCISE ----------
 #
 
 if __name__ == "__main__":
-    print(frGREEN("\n---------- main ----------\n"))
-    pause()
 
+    system('cls')
+    print(f"\n{FR_GREEN}---------- main ----------{NO_COLOR}\n")
+    pause()
     
+    uniqlines = set(open('z-fileRepeatedLines.txt').readlines())
+    uniqlines = sorted(uniqlines)
+    print(f"\tuniqlines type is {type(uniqlines)}\n")
+    print(f"\tuniqlines; {uniqlines}\n")
+    open('z-fileWithOutRepetitionLines.txt', 'w').writelines(uniqlines)
 
     # ------------------------------------------------
-    #           ASKING FOR SHOW VARS INFO 
-    #------------------------------------------------- 
-
-    # with Y_N_2 function
+    #          SHOW VARS CHARACTERISTICS 
+    #------------------------------------------------ 
     yesss=True   
     while yesss:
         _msg = "Do you want to see attributes for a specific VAR ? (Y,N): "
@@ -42,12 +58,6 @@ if __name__ == "__main__":
         except NameError:
             print(f"\n\t{FR_RED}---- Var '{_what_var}' doesn't exits 🙄🙄  ----")
             print(f"\n{FR_GREEN}--------------- That's all for today 👌 ---------------{NO_COLOR}\n")
-            #_my_Obj_name = None 
 
     else:
         print(f"\n{FR_GREEN}---------- That's all for today 👌 ----------{NO_COLOR}\n")
-
-else:
-    # something wrong
-    print(frRED("\n---- upsssssssss something is wrong 😢😢  ----\n"))
-    pause()

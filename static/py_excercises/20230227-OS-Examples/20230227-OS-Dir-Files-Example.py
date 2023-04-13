@@ -14,6 +14,16 @@ from MyFunc import *
 # my colors functions&contants,
 from MyColors import *
 # from colorama import Fore, Back, Style
+from os import  system
+
+# CONSTANTS
+# Colors
+NO_COLOR = "\033[00m"
+FR_RED   = "\033[91m"
+FR_GREEN = "\033[92m"
+FR_YELL  = "\033[93m"
+FR_BLUE  = "\033[94m"
+FR_MAG   = "\033[95m"
 
 #
 # ---------- COURSE EXCERCISE ----------
@@ -21,6 +31,7 @@ from MyColors import *
 
 if __name__ == "__main__":
     #print(f"\n{Fore.RED}---------- main ----------{Style.RESET_ALL}\n")
+    system('cls')
     print(f"\n{FR_GREEN}---------- main ----------{NO_COLOR}\n")
     pause()
 
@@ -65,6 +76,7 @@ if __name__ == "__main__":
         try: 
             _what_var
             _my_Obj_name = eval(_what_var)
+    
             print(f"\n{FR_GREEN}---------- INFO FOR OBJECT '{_my_Obj_name}' ----------{NO_COLOR}\n")
             pause()
             # my objects functions  

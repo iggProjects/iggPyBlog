@@ -17,8 +17,8 @@ if __name__ == "__main__":
     system('cls')
     print(f"\n{FR_GREEN}---------- main ----------{NO_COLOR}\n")
 
-    #alphab = 'abcdefghijklmnopqrstuvwxyz'
-    # substr of alphabet chosen to create permutations
+    # alphab = 'abcdefghijklmnopqrstuvwxyz'
+    # substr size 15, of alphabet chars chosen to create permutations
     alphab_15 = 'abcdegilmnoprsu'
     alphab_15_list = list(alphab_15)
     numb_alphab = 0

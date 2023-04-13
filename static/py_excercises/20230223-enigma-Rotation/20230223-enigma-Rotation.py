@@ -7,6 +7,16 @@ from MyFunc import *
 from MyColors import *
 import string
 import random
+from os import  system
+
+# CONSTANTS
+# Colors
+NO_COLOR = "\033[00m"
+FR_RED   = "\033[91m"
+FR_GREEN = "\033[92m"
+FR_YELL  = "\033[93m"
+FR_BLUE  = "\033[94m"
+FR_MAG   = "\033[95m"
 
 
 # Yes-No function
@@ -50,7 +60,10 @@ def decipher(text,alphab1,alphab2):
 # ---------- MAIN ----------
 #
 if __name__ == "__main__":
+
+    system('cls')
     print(frGREEN("\n---------- main ----------\n"))
+    pause()
 
     # create list of alphabet
     string.ascii_lowercase

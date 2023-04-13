@@ -13,12 +13,24 @@
 from MyFunc import *
 from MyColors import *
 from math import ceil
+from os import  system
+
+# CONSTANTS
+# Colors
+NO_COLOR = "\033[00m"
+FR_RED   = "\033[91m"
+FR_GREEN = "\033[92m"
+FR_YELL  = "\033[93m"
+FR_BLUE  = "\033[94m"
+FR_MAG   = "\033[95m"
 
 #
 # ---------- COURSE EXCERCISE ----------
 #
 
 if __name__ == "__main__":
+
+    system('cls')
     print(f"\n{FR_GREEN}---------- main ----------{NO_COLOR}\n")
     pause()
 
@@ -93,7 +105,7 @@ if __name__ == "__main__":
     myHeroe.displayname()
 
     # in this case, we will have an error
-    print(f"{FR_GREEN}in this case, we will have an error\n---- myHeroe.__name can't be invoked ----{NO_COLOR}\n")
+    print(f"{FR_GREEN}\tIN THIS CASE, we will have an error ==> {FR_YELL}\"myHeroe.__name can't be invoked\"{NO_COLOR}\n")
     print(myHeroe.__name)
 
 

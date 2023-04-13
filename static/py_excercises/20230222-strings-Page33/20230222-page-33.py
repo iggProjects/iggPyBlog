@@ -13,12 +13,24 @@
 from MyFunc import *
 from MyColors import *
 from math import ceil
+from os import  system
+
+# CONSTANTS
+# Colors
+NO_COLOR = "\033[00m"
+FR_RED   = "\033[91m"
+FR_GREEN = "\033[92m"
+FR_YELL  = "\033[93m"
+FR_BLUE  = "\033[94m"
+FR_MAG   = "\033[95m"
 
 #
 # ---------- COURSE EXCERCISE ----------
 #
 
 if __name__ == "__main__":
+
+    system('cls')
     print(f"\n{FR_GREEN}---------- main ----------{NO_COLOR}\n")
     pause()
 
@@ -47,7 +59,7 @@ if __name__ == "__main__":
     if texto.find('codigo') > -1:
         print(frGREEN(f"La palabra 'código' SI está en el texto,\n   y empieaza en la posición {texto.find('código')} 👌\n"))
     else: 
-        print(frRED(f"La palabra 'código' NO está en el texto 😢\n"))
+        print(frRED(f"La palabra 'código' NO está en el texto \n"))
 
     #Reemplazar Python por PYTHON
     texto = texto.replace('Python','\033[92mPYTHON\033[00m')
@@ -83,13 +95,13 @@ if __name__ == "__main__":
             mostrar(_my_Obj_name)       
 
         except NameError:
-            print(f"\n\t{FR_RED}---- Var '{_what_var}' doesn't exits 🙄🙄  ----")
-            print(f"\n{FR_GREEN}--------------- That's all for today 👌 ---------------{NO_COLOR}\n")
+            print(f"\n\t{FR_RED}---- Var '{_what_var}' doesn't exits ----")
+            print(f"\n{FR_GREEN}--------------- That's all for today ---------------{NO_COLOR}\n")
 
     else:
-        print(f"\n{FR_GREEN}---------- That's all for today 👌 ----------{NO_COLOR}\n")
+        print(f"\n{FR_GREEN}---------- That's all for today ----------{NO_COLOR}\n")
 
 else:
     # something wrong
-    print(f"\n{FR_RED}---- upsssssssss something is wrong 😢😢  ---{NO_COLOR}\n")
+    print(f"\n{FR_RED}---- upsssssssss something is wrong ---{NO_COLOR}\n")
     pause()

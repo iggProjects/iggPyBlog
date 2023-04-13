@@ -14,6 +14,15 @@ from os import system
 from MyFunc import *
 from MyColors import *
 
+# CONSTANTS
+# Colors
+NO_COLOR = "\033[00m"
+FR_RED   = "\033[91m"
+FR_GREEN = "\033[92m"
+FR_YELL  = "\033[93m"
+FR_BLUE  = "\033[94m"
+FR_MAG   = "\033[95m"
+
 # classes for this excercise
 from Classes_Nomina import *
 
@@ -25,7 +34,6 @@ if __name__ == "__main__":
     
     # clean screen
     system('cls')
-
     print(f"\n{FR_GREEN}---------- main ----------{NO_COLOR}\n")
     pause()
 
@@ -40,14 +48,14 @@ if __name__ == "__main__":
     Comerciales_empresa.append(Comercial(4, 'Che','1980','Bilbo','ventas empresas grandes',2500, 250,))
     Comerciales_empresa.append(Comercial(5, 'Oihana','1985','New York','staff marketing',3500, 500))
 
-    print(f'\n{FR_BLUE}======= Calculando Nómina General ========{NO_COLOR}\n')
+    print(f'\n{FR_YELL}======= Calculando Nómina General ========{NO_COLOR}\n')
     
     corrida_nomina = SistemaNominas()    
 
-    print(f"\n\t{FR_BLUE}=== Grupo Oficinas ==={NO_COLOR}\n")
+    print(f"\n\t{FR_YELL}=== Grupo Oficinas ==={NO_COLOR}\n")
     corrida_nomina.calculo_nomina(Empleados_empresa)
 
-    print(f"\n\t{FR_BLUE}=== Grupo Comerciales ==={NO_COLOR}\n")
+    print(f"\n\t{FR_YELL}=== Grupo Comerciales ==={NO_COLOR}\n")
     corrida_nomina.calculo_nomina(Comerciales_empresa)
 
     print(f"{FR_GREEN}\n======= Fin Corrida Nómina Empresa =======\n{NO_COLOR}")    
