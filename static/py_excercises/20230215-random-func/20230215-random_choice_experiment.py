@@ -30,24 +30,40 @@ FR_MAG   = "\033[95m"
 if __name__ == "__main__":
 
     system('cls')
-    print(f"\n{FR_GREEN}---------- main ----------{NO_COLOR}\n")
+    print(f"\n\t{FR_GREEN}---------- main ----------{NO_COLOR}\n")
+    print(f"An experiment to check random function, simulating a 'dice'")
     pause()
 
-    list=list(range(1,11))
-    print(list)
+    my_dice = {'1':0,'2':0,'3':0,'4':0,'5':0,'6':0}
+
+    ideal_perc = 100 * (1/6)
+    ideal_dice = {'1':ideal_perc,'2':ideal_perc,'3':ideal_perc,'4':ideal_perc,'5':ideal_perc,'6':ideal_perc}
+    face_list=list(range(1,7))
+    print(f"\tDICE faces: {face_list}")
     pause()
-    my_value = random.choice(list)
-    print(f"my_value:  {my_value}")
-    i=1
-    #print("my_value: " + my_value)
-    while my_value != 5:
-        i += 1
-        my_value = random.choice(list)
-        print(f"attempt {i}, value:  {my_value}")
 
-    print(frGREEN(f"\nattempt {i} , my_value:  {my_value}\n"))
+    for i in range(1,21):
+        iterations = 10000 * 2 * i
+        #print("my_value: " + my_value)
+        for i in range(iterations):        
+            face = random.choice(face_list)
+            my_dice[str(face)] += 1        
 
-    
+        print(frGREEN(f"\n\tExperiment result with {iterations:,d} dice rolls:\n"))
+        for key in my_dice:
+            #face_perc = "{:.4f}".format(100*(dice[key]/iterations))
+            ideal_dice = int( (ideal_perc/100) * iterations)
+            face_diff = my_dice[key] - ideal_dice
+            face_diff_perc = "{:.4f}".format(100 * (face_diff / iterations))
+            print(f"\t{key}: my dice: {my_dice[key]} | ideal dice: {ideal_dice} | diff: {face_diff} | in perc: {face_diff_perc} ")
+        
+        # reset
+        my_dice = {'1':0,'2':0,'3':0,'4':0,'5':0,'6':0}   
+
+        print()
+
+    print()    
+
     # ------------------------------------------------
     #          SHOW VARS CHARACTERISTICS 
     #------------------------------------------------ 

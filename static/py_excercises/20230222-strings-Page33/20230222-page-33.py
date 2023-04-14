@@ -32,7 +32,7 @@ if __name__ == "__main__":
 
     system('cls')
     print(f"\n{FR_GREEN}---------- main ----------{NO_COLOR}\n")
-    pause()
+    pause()    
 
     # first case 
     # function -> replace()
@@ -49,28 +49,31 @@ if __name__ == "__main__":
     texto = "    Lo más importante que nos ha mantenido en Python... bueno, hay 2 cosas importantes. Uno son las bibliotecas. La otra cosa que nos mantiene en Python, y esto es lo más importante, es facil de leer y entender. Cuando contratamos nuevos empleados. Solo digo, 'todo lo que escribas debe estar en python'. Sólo para que pueda leerlo. Y es increíble porque puedo ver desde el otro lado de la habitación, mirando su pantalla, si su código es bueno o malo. Porque un buen código de Python tiene una estructura muy obvia. Y eso hace que mi vida sea mucho más fácil        "
 
     #Contar las veces que la palabra Python aparece en el texto...y si a veces aparece en el texto con mayusculas y minusculas - Python, python
-    print(frGREEN(f"occurrences of the word 'Python': {texto.count('Python')}\n"))
+    print(frGREEN(f"\n\toccurrences of the word 'Python': {texto.count('Python')}"))
 
     #Encuentras la ubicación (numero de carácter) donde esta la primera ocurrencia de la palabra Python. ¿Y la segunda?
-    print(frGREEN(f"First occurrence of python -> {texto.find('Python')}"))
-    print(frGREEN(f"Second occurrence of python -> {texto.find('Python',texto.find('Python')+1)}\n"))
+    print(frGREEN(f"\tFirst occurrence of python -> {texto.find('Python')}"))
+    print(frGREEN(f"\tSecond occurrence of python -> {texto.find('Python',texto.find('Python')+1)}\n"))
 
     #La palabra 'código' esta en el texto? Usar if ... in ...:
     if texto.find('codigo') > -1:
-        print(frGREEN(f"La palabra 'código' SI está en el texto,\n   y empieaza en la posición {texto.find('código')} 👌\n"))
+        print(frGREEN(f"La palabra 'código' SI está en el texto,\ny empieaza en la posición {texto.find('código')} 👌\n"))
     else: 
         print(frRED(f"La palabra 'código' NO está en el texto \n"))
 
     #Reemplazar Python por PYTHON
     texto = texto.replace('Python','\033[92mPYTHON\033[00m')
+    print(f"\n{FR_YELL}Substitute Python with PYTHON\n{NO_COLOR}")
     print(texto + '\n')
 
     #Quitar los espacios
     texto = texto.strip()
+    print(f"\n{FR_YELL}Delete spaces\n{NO_COLOR}")
     print(texto + '\n')
 
     #Cambiar la letra de todo el texto a "lO MÁS IMPORTANTE QUE NOS HA MANTENIDO EN pYTHON... "
     texto = texto.swapcase()
+    print(f"\n{FR_YELL}Change letters with swapcase method{NO_COLOR}\n")
     print(texto + '\n')
 
     

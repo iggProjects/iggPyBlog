@@ -29,9 +29,9 @@ def Excercises():
             'title': 'Colors Function',
             'fileDirPath': 'static/py_excercises/20230213-PrototypeScript-colors/0-prototype.py',           
             
-            'homework': 'Use colors for print.  Ascii format for colors is easily used in the print function.   Constants can be used, or specific functions can be created to print messages with the desired effects. Printing with style is a good practice. Go ahead with some ideas.',
+            'homework': 'Use colors for print. Printing with style is a good practice. Go ahead with some ideas.',
 
-            'body': 'SOME CONSTANTS FOR FOREGROUND COLORS\n\tNO_COLOR="\\033[00m"\tFR_RED="\\033[91m"\tFR_GREEN="\\033\[92m"\tFR_YELL="\\033\[93m"\tFR_BLUE="\\033\[94m"\n\nSIMPLE SYNTAX FOR PRINTING "------- MAIN -------" WHEN STARTING THE PRINTING OF RESULTS\n\tprint(f"\\n{FR_GREEN}------- MAIN -------{NO_COLOR}\\n"):\n\nAN EXAMPLE OF FUNCTION TO PRINT SOME MESSAGE:\n\tdef prRed(msg):\n\t\tprint(f"{FR_YELL} {} {NO_COLOR}".format(msg))\n\n\tprRed("TESTING COLOR FUNCTION")',
+            'body': 'Ascii format for colors works very well with the print function. Constants can be used, or specific functions can be created to print messages with the desired effects.\n\nSOME CONSTANTS FOR FOREGROUND COLORS\n\tNO_COLOR="\\033[00m"\tFR_RED="\\033[91m"\tFR_GREEN="\\033\[92m"\tFR_YELL="\\033\[93m"\tFR_BLUE="\\033\[94m"\n\nSIMPLE SYNTAX FOR PRINTING "------- MAIN -------" WHEN STARTING THE PRINTING OF RESULTS\n\tprint(f"\\n{FR_GREEN}------- MAIN -------{NO_COLOR}\\n"):\n\nAN EXAMPLE OF FUNCTION TO PRINT SOME MESSAGE:\n\tdef prRed(msg):\n\t\tprint(f"{FR_YELL} {} {NO_COLOR}".format(msg))\n\tprRed("TESTING COLOR FUNCTION")',
             'zip_url': '--',  
             'img': '/img/icons8-consola-100.png'    
         },
@@ -154,6 +154,61 @@ def Excercises():
             'zip_url': '--',
             'img': '/img/icons8-consola-100.png'    
         },
+
+        {      
+            'id': 9, 
+            'author': 'Igg',
+            'date_created': '15-02-2023',
+            'source_url': '',
+            'section': 'Random Methods',
+            'title': 'An experiment !',
+            'fileDirPath': 'static/py_excercises/20230215-random-func/20230215-random_choice_experiment.py',            
+            
+            'homework': 'A short experiment to check behavior of random  built-in unction.\n',
+
+            'body': 'Native functions for random tests must respect the law of large numbers. Suppose we have a 6-sided die (1-6), and we roll it 10,000 times. what should the results be for each face? Well, let\'s try the random function that outputs a natural number between 1 and 6.\n\nDefine three variables:\n\tmy_dice = {\'1\':0,\'2\':0,\'3\':0,\'4\':0,\'5\':0,\'6\':0},\n\tideal_dice with 1/6 probability,\n\tand face_list=list(range(1,7)) to simulate numbre 1,2,3,4,5,6.\n\nThen make a loop to simulate 20 series of dice rolls each of one with increasing iterations according the rule iterations = 10000 * 2 * i, where i is the particular series called from main loop.',          
+
+            'zip_url': '--',
+            'img': '/img/icons8-consola-100.png'    
+        },
+
+        {      
+            'id': 10, 
+            'author': 'Igg',
+            'date_created': '15-02-2023',
+            'source_url': '',
+            'section': 'Input example',
+            'title': 'Controling data type in input process',
+            'fileDirPath': 'static/py_excercises/20230220-input/20230220-InputTrabajadores.py',            
+            
+            'homework': 'A simple input process with \"try\" \"except\" rules to control data type is correct.',
+
+            'body': 'Create the function \"input_worker_data()\" which will be called from a while loop in main.  This function calls 2 functions: Y_N() and input_worker_age(). Also contains 3 global variables (global moreData, workers, worker):\n\n\tmoreData boolean type,\n\tworkers as a list\n\tand worker as dict.\n\nFunction Y_N() is checking if the user like to follow inserting workers o no.\n\nInitially, from main, the \"true\" value is assigned to moreData.\n\nPrincipal loop is as simple as:\n\twhile moreData:\n\t\tinput_worker_data()\n\nThe function input_worker_data() checks if the answer is correct and call Y_N() to know if process will continue worling or not (moreData \"true\" or \"false\").\n\n',          
+
+            'zip_url': '--',
+            'img': '/img/icons8-consola-100.png'    
+        },
+
+        {      
+            'id': 11, 
+            'author': 'Igg',
+            'date_created': '15-02-2023',
+            'source_url': '',
+            'section': 'String methods',
+            'title': '',
+            'fileDirPath': 'static/py_excercises/20230222-strings-Page33/20230222-page-33.py',            
+            
+            'homework': '',
+
+            'body': '',          
+
+            'zip_url': '--',
+            'img': '/img/icons8-consola-100.png'    
+        },
+
+
+
+
 
 
         {
