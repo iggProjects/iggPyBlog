@@ -36,6 +36,8 @@ if __name__ == "__main__":
 
     # my code
     # page 71
+    print(f"\n-------------------users-----------------------\n")
+
     class User:
         def __init__(self, name, mobile, age):
             self.name = name
@@ -48,16 +50,18 @@ if __name__ == "__main__":
                     and self.age == other.age
 
         def __str__(self):
-            return f"name:{self.name}, "\
+            return f"\tname:{self.name}, "\
                 f"age:{self.age}, "\
-                    f"mobile:{self.mobile}"
+                f"mobile:{self.mobile}"
 
 
     user_1 = User("Jon","111",20)
     user_2 = User("Igg","222",20)
-    print(user_1.age)    
-    print(user_1==user_2)
-    print(user_1.__str__())
+
+    print(f"{FR_GREEN}some operations with 'Users' Object\n{NO_COLOR}")
+    print(f"\t{user_1.age}")    
+    print(f"\t{user_1==user_2}")
+    print(f"{user_1.__str__()}")
 
     # -------------------perros-----------------
 
@@ -82,10 +86,13 @@ if __name__ == "__main__":
     perros.append(jack)
     perros.append(jim)
 
-    print(f"{FR_GREEN}perros list:{NO_COLOR}\n{perros}\n")
+    print(f"{FR_GREEN}perros object list:{NO_COLOR}\n")
+    matrix_view(perros,1)
+    print()
 
+    print(f"{FR_GREEN}perros details:{NO_COLOR}\n")
     for p in perros:
-        print(f"El perro se llama {p.nombre} y es {p.raza}")
+        print(f"\tEl perro se llama {p.nombre} y es {p.raza}")
 
     print()    
 

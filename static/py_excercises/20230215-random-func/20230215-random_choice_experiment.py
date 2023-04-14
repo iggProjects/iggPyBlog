@@ -55,6 +55,9 @@ if __name__ == "__main__":
             ideal_dice = int( (ideal_perc/100) * iterations)
             face_diff = my_dice[key] - ideal_dice
             face_diff_perc = "{:.4f}".format(100 * (face_diff / iterations))
+            #face_diff = str(face_diff).center(5)
+            face_diff = str(face_diff).rjust(5,' ')
+            face_diff_perc = str(face_diff_perc).rjust(7)
             print(f"\t{key}: my dice: {my_dice[key]} | ideal dice: {ideal_dice} | diff: {face_diff} | in perc: {face_diff_perc} ")
         
         # reset

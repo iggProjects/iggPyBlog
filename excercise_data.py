@@ -31,7 +31,7 @@ def Excercises():
             
             'homework': 'Use colors for print. Printing with style is a good practice. Go ahead with some ideas.',
 
-            'body': 'Ascii format for colors works very well with the print function. Constants can be used, or specific functions can be created to print messages with the desired effects.\n\nSOME CONSTANTS FOR FOREGROUND COLORS\n\tNO_COLOR="\\033[00m"\tFR_RED="\\033[91m"\tFR_GREEN="\\033\[92m"\tFR_YELL="\\033\[93m"\tFR_BLUE="\\033\[94m"\n\nSIMPLE SYNTAX FOR PRINTING "------- MAIN -------" WHEN STARTING THE PRINTING OF RESULTS\n\tprint(f"\\n{FR_GREEN}------- MAIN -------{NO_COLOR}\\n"):\n\nAN EXAMPLE OF FUNCTION TO PRINT SOME MESSAGE:\n\tdef prRed(msg):\n\t\tprint(f"{FR_YELL} {} {NO_COLOR}".format(msg))\n\tprRed("TESTING COLOR FUNCTION")',
+            'body': 'Ascii format for colors works very well with the print function. Constants can be used, or specific functions can be created to print messages with the desired effects.\n\nSOME CONSTANTS FOR FOREGROUND COLORS\n\tNO_COLOR="\\033[00m"\tFR_RED="\\033[91m"\tFR_GREEN="\\033\[92m"\tFR_YELL="\\033\[93m"\tFR_BLUE="\\033\[94m"\n\nSIMPLE SYNTAX FOR PRINTING "------- MAIN -------" WHEN STARTING THE PRINTING OF RESULTS\n\tprint(f"\\n{FR_GREEN}------- MAIN -------{NO_COLOR}\\n"):\n\nAN EXAMPLE OF FUNCTION TO PRINT SOME MESSAGE:\n\tdef prRed(msg):\n\t\tprint(f"{FR_YELL} {} {NO_COLOR}".format(msg))\n\tprRed("TESTING COLOR FUNCTION")\n\nLink: https://xdevs.com/guide/color_serial/',
             'zip_url': '--',  
             'img': '/img/icons8-consola-100.png'    
         },
@@ -206,13 +206,130 @@ def Excercises():
             'img': '/img/icons8-consola-100.png'    
         },
 
+        {      
+            'id': 12, 
+            'author': 'Igg',
+            'date_created': '23-02-2023',
+            'source_url': '',
+            'section': 'Encrypt a msg',
+            'title': 'Get random alphabet to encrypt msg',
+            'fileDirPath': 'static/py_excercises/20230223-enigma-Random/20230223-enigma-random.py',            
+            
+            'homework': 'Random suffle method to get messy alphabet',
+
+            'body': '',          
+
+            'zip_url': '--',
+            'img': '/img/icons8-consola-100.png'    
+        },
+
+        {      
+            'id': 13, 
+            'author': 'Igg',
+            'date_created': '23-02-2023',
+            'source_url': '',
+            'section': 'Encrypt a msg',
+            'title': 'Get rotated alphabet to encrypt msg',
+            'fileDirPath': 'static/py_excercises/20230223-enigma-Rotation/20230223-enigma-Rotation.py',            
+            
+            'homework': 'Rotate with alphab[position:]  + alphab[:position] to get messy alphabet',
+
+            'body': '',          
+
+            'zip_url': '--',
+            'img': '/img/icons8-consola-100.png'    
+        },
+
+        {      
+            'id': 14, 
+            'author': 'Igg',
+            'date_created': '27-02-2023',
+            'source_url': '',
+            'section': 'OS module',
+            'title': 'OS methods',
+            'fileDirPath': 'static/py_excercises/20230227-OS-Examples/20230227-OS-Dir-Files-Example.py',            
+            
+            'homework': 'Working with paths, folders, files, .....',
+
+            'body': '',          
+
+            'zip_url': '--',
+            'img': '/img/icons8-consola-100.png'    
+        },
 
 
+        {      
+            'id': 15, 
+            'author': 'Igg',
+            'date_created': '27-02-2023',
+            'source_url': '',
+            'section': 'OS module',
+            'title': 'Import form parallel folders',
+            'fileDirPath': 'static/py_excercises/20230227-OS-Examples/20230227-OS-Dir-Files-Example.py',            
+            
+            'homework': 'Working with paths, folders, files, .....',
+
+            'body': '',          
+
+            'zip_url': '--',
+            'img': '/img/icons8-consola-100.png'    
+        },
+
+        {      
+            'id': 16, 
+            'author': 'Igg',
+            'date_created': '27-02-2023',
+            'source_url': '',
+            'section': 'OS module',
+            'title': 'Page 43-44',
+            'fileDirPath': 'static/py_excercises/20230227-page_43_44/20230227_Page43_44.py',            
+            
+            'homework': '',
+
+            'body': '',          
+
+            'zip_url': '--',
+            'img': '/img/icons8-consola-100.png'    
+        },
+
+        {      
+            'id': 17, 
+            'author': 'Igg',
+            'date_created': '01-03-2023',
+            'source_url': '',
+            'section': 'OS module',
+            'title': 'Delete repeated lines in file and sort',
+            'fileDirPath': 'static/py_excercises/20230301-files_DelRepeatedLinesAndSort/20230301-fileDelRepeatedLines_Sort.py',            
+            
+            'homework': '',
+
+            'body': '',          
+
+            'zip_url': '--',
+            'img': '/img/icons8-consola-100.png'    
+        },
+
+        {      
+            'id': 18, 
+            'author': 'Igg',
+            'date_created': '01-03-2023',
+            'source_url': '',
+            'section': 'OS module',
+            'title': 'Working with files',
+            'fileDirPath': 'static/py_excercises/20230301-files_Read_write/20230301-WorkingWithFiles.py',            
+            
+            'homework': '',
+
+            'body': '',          
+
+            'zip_url': '--',
+            'img': '/img/icons8-consola-100.png'    
+        },
 
 
 
         {
-            'id': 20,             
+            'id': 30,             
             'author': 'Igg',
             'date_created': '26-01-2022',
             'source_url': 'https://docs.google.com/document/d/1XvFyC3xnEg6VGgrWOUcDmx1oNT6XALru59Kd0_SgGrk/edit#heading=h.xzp25aduswxa',

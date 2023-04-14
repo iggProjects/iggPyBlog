@@ -61,28 +61,28 @@ if __name__ == "__main__":
     'abcdefghijklmnopqrstuvwxyz'
     alphab = list(string.ascii_lowercase)
     old_alphab = list(string.ascii_lowercase)
-    print(frGREEN(f"old alphabet list\033[00m:➡ {old_alphab}\n"))
+    print(frGREEN(f"{FR_YELL}Alphabet list{NO_COLOR}\n{old_alphab}\n"))
     
     # random.shuffle() to create new_alphab
     random.shuffle(old_alphab)
     new_alphab=old_alphab       
-    print(frGREEN(f"new alphabet list\033[00m ➡ {new_alphab}\n"))
+    print(frGREEN(f"{FR_GREEN}Messy alphabet list to encrypt{NO_COLOR}\n{new_alphab}\n"))
     pause()
 
     # my text
     my_text = 'abcdef ghijk lmnopq KAIXO TEACHER'
 
-    print(frGREEN(f"my text ➡ \033[00m {my_text}\n"))
+    print(frGREEN(f"my text\n\t{my_text}\n"))
 
     # call encrypt function to change original text
     encripted_text = ''    
     encrypt(my_text.casefold(),alphab,new_alphab)
-    print(frGREEN(f"encrypted text ➡ \033[00m {encripted_text}\n"))    
+    print(frRED(f"encrypted text\n\t{encripted_text}\n"))    
 
     # decode process
     decoded_text=''
     decipher(encripted_text,new_alphab,alphab)
-    print(frGREEN(f"decoded text ➡ \033[00m {decoded_text}\n"))
+    print(f"{FR_YELL}decoded text\n\t{NO_COLOR} {decoded_text}\n")
     pause()
 
     # ------------------------------------------------

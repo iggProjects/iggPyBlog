@@ -119,10 +119,19 @@ DO IT !!!
     - https://realpython.com/python-zipfile/
 
 - COLORS codes (oct, hexa) 
+    - https://www.geeksforgeeks.org/print-colors-python-terminal/
     - http://jafrog.com/2013/11/23/colors-in-terminal.html
     - https://xdevs.com/guide/color_serial/
     - https://en.wikipedia.org/wiki/ANSI_escape_code#8-bit
     - https://chrisyeh96.github.io/2020/03/28/terminal-colors.html
+    - https://github.com/fidian/ansi
+    - https://gist.github.com/fnky/458719343aabd01cfb17a3a4f7296797
+    - https://gist.github.com/RabaDabaDoba/145049536f815903c79944599c6f952a
+    - https://www.ascii-code.com/html-color-names
+    - printf("\033[%dm %3d\033[m", n, n);
+
+- LJUST 
+    ex: num2 = str(color_).ljust(3, ' ')
 
 - COLORS in power shell  ✔   (-->  os.system('cls') )
     - https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_ansi_terminals?view=powershell-7.3

@@ -70,27 +70,30 @@ if __name__ == "__main__":
     'abcdefghijklmnopqrstuvwxyz'
     alphab = list(string.ascii_lowercase)
     old_alphab = list(string.ascii_lowercase)
-    print(frGREEN(f"old alphabet list ➡  {NO_COLOR}{old_alphab}\n"))
+    print(f"{FR_YELL}Alphabet list\n\t{NO_COLOR}{old_alphab}\n")
     
     # random.shuffle() to create new_alphab
-    random.shuffle(old_alphab)
-    new_alphab=old_alphab       
-    print(frGREEN(f"new alphabet list ➡  {NO_COLOR}{new_alphab}\n"))
+    #random.shuffle(old_alphab)
+    #new_alphab=old_alphab   
+    new_alphab = alphab[3:] + alphab[:3]
+    
+    print(f"{FR_GREEN}new alphabet list by rotation 3 places\n\t{NO_COLOR}{new_alphab}\n")
+    pause()
     
 
     # my text
     my_text = 'abcdef ghijk hello world'
-    print(frGREEN(f"my text ➡  {NO_COLOR}{my_text}\n"))
+    print(frGREEN(f"my text{NO_COLOR}\n\t{my_text}\n"))
 
     # call encrypt function to change original text
     encripted_text = ''    
     encrypt(my_text,alphab,new_alphab)
-    print(frGREEN(f"encrypted text ➡  {NO_COLOR}{encripted_text}\n"))    
+    print(frGREEN(f"encrypted text{NO_COLOR}\n\t{encripted_text}\n"))    
 
     # decode process
     decoded_text=''
     decipher(encripted_text,new_alphab,alphab)
-    print(frGREEN(f"decoded text ➡ \033[00m {decoded_text}\n"))
+    print(frGREEN(f"decoded text{NO_COLOR}\n\t{decoded_text}\n"))
     print((frGREEN("\n---------- That's all for today 👌 ----------\n")))
     pause()
    
