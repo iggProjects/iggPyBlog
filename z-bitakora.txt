@@ -118,6 +118,8 @@ DO IT !!!
     - https://thispointer.com/python-how-to-create-a-zip-archive-from-multiple-files-or-directory/
     - https://realpython.com/python-zipfile/
 
+- WA colors: https://usbrandcolors.com/whatsapp-colors/
+
 - COLORS codes (oct, hexa) 
     - https://www.geeksforgeeks.org/print-colors-python-terminal/
     - http://jafrog.com/2013/11/23/colors-in-terminal.html
