@@ -99,7 +99,7 @@ def library_methods(my_lib):
 # Show attributes and methods avalaible for "obj"
 def mostrar(obj):      
 
-  if type(obj) in ['list','dict']:
+  if 'list' in str(type(obj)) or 'tuple' in str(type(obj)):
     print(f"Object elements view in matrix form (8 columns by row)\n")
     matrix_view(obj,8)
 

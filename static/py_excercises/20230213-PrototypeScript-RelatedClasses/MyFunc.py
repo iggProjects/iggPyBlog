@@ -89,7 +89,7 @@ def matrix_view(obj_l_t,n_cols):
 def library_methods(my_lib):
   for method in dir(my_lib):
     LIB_method  = method
-    print(f"{FR_GREEN}{str(my_lib)}.method --> {NO_COLOR}´{LIB_method}")
+    print(f"{FR_GREEN}{str(my_lib)}.method --> {NO_COLOR}{LIB_method}")
   print()  
 
 #
@@ -250,7 +250,7 @@ def desc_obj_method(obj,todo=True):
 # checking related classes in a composite class 
 def relatedClasses(clas):   
 
-    print(f"\n----- analysis of {FR_BLUE}\"classes related\"{NO_COLOR} with class \"{FR_GREEN}{clas}{NO_COLOR}\" -----\n")
+    print(f"\n----- analysis of {FR_GREEN}\"classes related\"{NO_COLOR} with class \"{FR_GREEN}{clas}{NO_COLOR}\" -----\n")
     for clas_rel in clas.__mro__:
         print(f"{FR_GREEN}\trelated clas --> {clas_rel}\n")
     print(f"{NO_COLOR}----- end analysis -----\n")    

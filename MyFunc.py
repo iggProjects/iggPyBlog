@@ -262,11 +262,13 @@ def relatedClasses(clas):
 
 # writing comments in log file
 def write_comments_log():
+   # in process 
    print("here write_comments log file")
 
    
 # redirect errors msg to 'own' errors log file
 def write_comments_log():
+   # in process
    print("here my errors log file")
 
 

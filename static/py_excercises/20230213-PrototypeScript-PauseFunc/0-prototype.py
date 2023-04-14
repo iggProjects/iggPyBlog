@@ -24,17 +24,20 @@ FR_MAG   = "\033[95m"
 if __name__ == "__main__":
 
     system('cls')
+
     print(frGREEN("\n---------- main ----------\n"))
-    
+    print(frGREEN("\n--------------- pause() called --------------\n"))
     pause()
 
-    msg="EXIT PAUSE FUNCTION COMPLETED"
-    prRed(msg)   
+    msg="------- EXIT PAUSE FUNCTION COMPLETED -------\n"
+    prYellow(msg)   
+
+    print(f"\n{FR_GREEN}---------- That's all for today 👌 ----------{NO_COLOR}\n")
 
     # ------------------------------------------------
     #           ASKING FOR SHOW VARS INFO 
     #------------------------------------------------- 
-
+    """
     # with Y_N_2 function
     yesss=True   
     while yesss:
@@ -60,7 +63,7 @@ if __name__ == "__main__":
 
     else:
         print(f"\n{FR_GREEN}---------- That's all for today 👌 ----------{NO_COLOR}\n")
-
+    """
 else:
     # something wrong
     print(frRED("\n---- upsssssssss something is wrong 😢😢  ----\n"))

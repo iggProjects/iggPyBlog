@@ -89,7 +89,7 @@ def matrix_view(obj_l_t,n_cols):
 def library_methods(my_lib):
   for method in dir(my_lib):
     LIB_method  = method
-    print(f"{FR_GREEN}{str(my_lib)}.method --> {NO_COLOR}´{LIB_method}")
+    print(f"{FR_GREEN}{str(my_lib)}.method --> {NO_COLOR}{LIB_method}")
   print()  
 
 #
@@ -99,7 +99,8 @@ def library_methods(my_lib):
 # Show attributes and methods avalaible for "obj"
 def mostrar(obj):      
 
-  if type(obj) in ['list','dict']:
+  if 'list' in str(type(obj)) or 'tuple' in str(type(obj)):
+  #if type(obj) in ['list','dict']:
     print(f"Object elements view in matrix form (8 columns by row)\n")
     matrix_view(obj,8)
 

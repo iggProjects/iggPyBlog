@@ -1,12 +1,13 @@
 
 """  
-THIS SCRIPT IS FOR PRINTING WITH COLORS
+THIS SCRIPT IS FOR..................
 
 """
 # IMPORT SECTION
 from MyFunc import *
 from MyColors import *
 from os import  system
+
 
 # CONSTANTS
 # Colors
@@ -24,31 +25,17 @@ FR_MAG   = "\033[95m"
 if __name__ == "__main__":
 
     system('cls')
+
     print(frGREEN("\n---------- main ----------\n"))
-
-    print(frGREEN("\n---------- using CONTANTS ----------\n"))
     pause()
-    colors= [FR_RED,FR_GREEN,FR_YELL,FR_BLUE,FR_MAG]
-    colors_str=['\\033[91m - Red','\\033[92m - Green','\\033[93m - Yellow','\\033[94m - Blue','\\033[95m - Magenta']
-    
-    i=0
-    for color in colors:
-        color_str = color
-        msg="--> TESTING COLOR FUNCTION"
-        #print("FR_RED value: " + colors_str[0])
-        print("\tPrint with ascii " + colors_str[i] + f":\t{color}{msg}{NO_COLOR}") 
-        i+=1   
 
-    msg="print with default color\t\t--> TESTING COLOR FUNCTION"
-    print(f"\t{msg}")    
+    sqr_var = [i*i for i in range(100)]
 
-    msg="\tprint with function pfRed() --> TESTING COLOR FUNCTION"
-    print(frGREEN("\n---------- using function prRed(msg) ----------\n"))
-    pause()
-    prYellow(msg)   
-    
+    prYellow("\n---------- list of first hundred numbers squared ----------\n")
+
+    matrix_view(sqr_var,20)
+ 
     print(f"\n{FR_GREEN}---------- That's all for today 👌 ----------{NO_COLOR}\n")
-    
 
     # ------------------------------------------------
     #           ASKING FOR SHOW VARS INFO 
@@ -80,7 +67,6 @@ if __name__ == "__main__":
     else:
         print(f"\n{FR_GREEN}---------- That's all for today 👌 ----------{NO_COLOR}\n")
     """
-
 else:
     # something wrong
     print(frRED("\n---- upsssssssss something is wrong 😢😢  ----\n"))
