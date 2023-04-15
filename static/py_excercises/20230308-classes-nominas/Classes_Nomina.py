@@ -63,5 +63,5 @@ class Comercial(SalarioEmpleado):
 # testing __mro__ built function
 system('cls')
 
-relatedClasses(Comercial)
+#relatedClasses(Comercial)
 

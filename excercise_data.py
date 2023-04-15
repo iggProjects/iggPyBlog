@@ -181,9 +181,9 @@ def Excercises():
             'title': 'Controling data type in input process',
             'fileDirPath': 'static/py_excercises/20230220-input/20230220-InputTrabajadores.py',            
             
-            'homework': 'A simple input process with \"try\" \"except\" rules to control data type is correct.',
+            'homework': 'A simple input process with \"try -- except\" rules to control data type is correct. For example, ssee \"input_worker_age()\" function...',
 
-            'body': 'Create the function \"input_worker_data()\" which will be called from a while loop in main.  This function calls 2 functions: Y_N() and input_worker_age(). Also contains 3 global variables (global moreData, workers, worker):\n\n\tmoreData boolean type,\n\tworkers as a list\n\tand worker as dict.\n\nFunction Y_N() is checking if the user like to follow inserting workers o no.\n\nInitially, from main, the \"true\" value is assigned to moreData.\n\nPrincipal loop is as simple as:\n\twhile moreData:\n\t\tinput_worker_data()\n\nThe function input_worker_data() checks if the answer is correct and call Y_N() to know if process will continue worling or not (moreData \"true\" or \"false\").\n\n',          
+            'body': 'Create the function \"input_worker_data()\" which will be called from a while loop in main.  This function calls 2 functions: Y_N() and input_worker_age(). Also contains 3 global variables (global moreData, workers, worker):\n\n\tmoreData boolean type,\n\tworkers as a list\n\tworker as dict.\n\nFunction Y_N() is checking if the user like to follow inserting workers o no.\n\nInitially, from main, the \"true\" value is assigned to moreData.\n\nPrincipal loop is as simple as:\n\twhile moreData:\n\t\tinput_worker_data()\n\nThe function input_worker_data() checks if the answer is correct and call Y_N() to know if process will continue worling or not (moreData \"true\" or \"false\").\n\n\"try except\" in  input_worker_age() function\n\ndef input_worker_age():\n\tglobal moreData,workers,worker\n\t try:\n\t\tworker_age=int(input(frRED("Please indicate \"age\" (integer between 18-65): ")))\n\t\tif worker_age in range(18,65):\n\t\t\tprint(frRED(f"age entered -> {worker_age}"))worker["age"] = worker_age\n\t\t\tworkers.append(worker)\n\t\t\t# ask for continue (Y,N)\n\t\t\tY_N()\n\t\telse:\n\t\t\tfrRED("Please indicate \"age\" (integer between 18-65): ")\n\t\t\tinput_worker_age()\n\texcept ValueError:\n\t\tfrRED("Please indicate \"age\" (integer between 18-65): ")\n\t\tinput_worker_age()',          
 
             'zip_url': '--',
             'img': '/img/icons8-consola-100.png'    
@@ -326,6 +326,22 @@ def Excercises():
             'img': '/img/icons8-consola-100.png'    
         },
 
+        {      
+            'id': 19, 
+            'author': 'Igg',
+            'date_created': '08-03-2023',
+            'source_url': 'OOP',
+            'section': 'Working with Classes',
+            'title': '\"Nominas\" Class as example',
+            'fileDirPath': 'static/py_excercises/20230308-classes-nominas/20230308-classes-Nominas.py',            
+            
+            'homework': 'This example work with \"related classes\" for \"Sistema Nómina\"',
+
+            'body': '======= Calculando Nómina General ========\n\nCreate a file with class objects (Classes-Nomina.py). this file will be imported from main script.  ',          
+
+            'zip_url': '--',
+            'img': '/img/icons8-consola-100.png'    
+        },
 
 
         {

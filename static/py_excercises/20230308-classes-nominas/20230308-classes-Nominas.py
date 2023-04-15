@@ -58,11 +58,13 @@ if __name__ == "__main__":
     print(f"\n\t{FR_YELL}=== Grupo Comerciales ==={NO_COLOR}\n")
     corrida_nomina.calculo_nomina(Comerciales_empresa)
 
-    print(f"{FR_GREEN}\n======= Fin Corrida Nómina Empresa =======\n{NO_COLOR}")    
+    print(f"{FR_GREEN}\n======= Fin Corrida Nómina Empresa =======\n{NO_COLOR}")   
+    pause()
 
+    print(f"\n{FR_YELL}See related classes for \"Comercial\" object{NO_COLOR}\n")     
+    relatedClasses(Comercial)
+    pause()
 
-    
-    
     # ------------------------------------------------
     #          SHOW VARS CHARACTERISTICS 
     #------------------------------------------------ 
