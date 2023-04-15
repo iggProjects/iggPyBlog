@@ -83,7 +83,7 @@ if __name__ == "__main__":
     while moreData:    
         input_worker_data()     
 
-    print("\nsession terminated by user\n")        
+    print("\nSession terminated by user\n")        
     print(f"Workers is {type(workers)}:\n\t{workers}\n")
     for i in range(len(workers)):
         print(f"{workers[i]}, and data type is: {type(workers[i])}")

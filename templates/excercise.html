@@ -9,7 +9,7 @@
                 <th><a href="{{ excercise.source_url }}" target="_blank"><span style="color:green">section</span><br><span style="color:rgb(163, 23, 2)">"{{ excercise.section }}"</span></a></th>
                 <th><span style="color:green">title</span><br><span style="color:rgb(163, 23, 2)">"{{excercise.title}}"</span></a></th>                
                 <th><span style="color:green">script name</span><br><span style="color:rgb(163, 23, 2)">"{{ excercise.fileDirPath.split('/')[3] }}"</span></th>
-                <th><img class="myImg" onclick='' src="{{ url_for('static', filename='img/icons8-flow-chart-64.png') }}" title='Zoom flow chart' alt="console-100" width="30"/></th>                
+                <!-- <th><img class="myImg" onclick='' src="{{ url_for('static', filename='img/icons8-flow-chart-64.png') }}" title='Zoom flow chart' alt="console-100" width="30"/></th> -->               
                 <th><a href="{{excercise.zip_url}}" target="_blank"><img class="myImg" onclick='ExecPythonScript()' src="{{ url_for('static', filename='img/icons8-descargar-de-la-nube-100.png') }}" title='Download py script' alt="download-100" width="30"/></a></th>                              
                 <th style="padding:10px;">
                     <img class="myImg" onclick="ExecPythonScript('{{excercise.fileDirPath}}')" src="{{ url_for('static', filename='img/icons8-consola-100.png') }}" title='Run in command line console' alt="console-100" width="30"/>

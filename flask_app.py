@@ -258,7 +258,6 @@ def ExecPythonScript():
     py_file = excercise["fileDirPath"]            
     """
     from os import system
-
     # clear screen
     system('cls')    
        
@@ -278,8 +277,6 @@ def ExecPythonScript():
         #file = open(r'z_execution_file-2.bat','r').read()
         #exec(file)    
     #return ""
-
-
 
 if __name__ == '__main__':
     app.run(debug=True)
