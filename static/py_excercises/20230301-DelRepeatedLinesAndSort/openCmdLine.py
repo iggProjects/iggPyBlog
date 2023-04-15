@@ -4,5 +4,5 @@ import os
 os.system('cls')
 
 # execute in console 
-os.system('cmd /c "20230301-WorkingWithFiles.py"')
+os.system('cmd /c "20230301-DelRepeatedLinesAndSort.py"')
 
