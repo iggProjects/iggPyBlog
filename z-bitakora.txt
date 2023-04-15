@@ -9,6 +9,13 @@ STILL TO DO !
 4.- MyFunctions: 
     - ADD script zip_file_list(list, zipname)
     - alert window - copy from mySQLadmin
+        function invoke_Alert_Window(my_msg) {
+            document.getElementById('p-alert-msg').innerHTML = my_msg;
+            document.getElementById("my-alert-window").style.display = "block";
+        }
+        function close_Alert_Window() {
+            document.getElementById("my-alert-window").style.display = "none";
+        }    
 
 5.- modal for img
     - modal for img  vs image zoom by click
