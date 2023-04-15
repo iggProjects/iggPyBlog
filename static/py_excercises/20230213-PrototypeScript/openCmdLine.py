@@ -4,4 +4,4 @@ import os
 os.system('cls')
 
 # execute in console 
-os.system('cmd /c "0-prototype-colors.py"')
+os.system('cmd /c "0-prototype.py"')
