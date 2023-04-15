@@ -1,0 +1,1 @@
+python.exe 20230221-strings.py

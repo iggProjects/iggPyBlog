@@ -29,10 +29,26 @@ if __name__ == "__main__":
     print(f"\n{FR_GREEN}---------- main ----------{NO_COLOR}\n")
     pause()
     
+    file = open("z-fileRepeatedLines.txt","r")
+    print(f"\n{FR_YELL}\tRead and print '{file.name}'{NO_COLOR}\n")
+    # read lines
+    lines = file.readlines()
+    # print lines of backup file    
+    for line in lines:  
+        print(f"\t\t{line}")
+    file.close()
+
+    print(f"{FR_YELL}\tRead 'file z-fileRepeatedLines.txt' with 'uniqlines = set('z-fileRepeatedLines.txt').readlines'{NO_COLOR}\n")
     uniqlines = set(open('z-fileRepeatedLines.txt').readlines())
+    print(f"\tuniqlines before: {uniqlines}\n")
+
+    print(f"{FR_YELL}\tSort \"uniqlines\" with sorted(uniqlines){NO_COLOR}\n")
     uniqlines = sorted(uniqlines)
+
     print(f"\tuniqlines type is {type(uniqlines)}\n")
-    print(f"\tuniqlines; {uniqlines}\n")
+    print(f"\tuniqlines after: {uniqlines}\n")
+
+    print(f"{FR_YELL}\tWrite List \"uniqlines\" in file \"z-fileWithOutRepetitionLines.txt\"\n")
     open('z-fileWithOutRepetitionLines.txt', 'w').writelines(uniqlines)
 
     # ------------------------------------------------
