@@ -1,19 +1,27 @@
 BITAKORA
 
---- https://stackoverflow.com/questions/52835681/how-can-i-run-a-python-script-from-within-flask
-
---- ExecPythonScript() :  how to pass file parameter to .bat
-
---- body in list... how to accept line jump in text
-    - https://stackoverflow.com/questions/59718855/how-to-insert-a-new-line-every-entry-in-a-dictionary
-
-
 STILL TO DO !
  
-1.- fill all excercises info
+1.- fill all excercises info  😎✔✔
+    - test colab posts input process
+    - EMAIL pythonanywhere console
+
+4.- MyFunctions: 
+    - ADD script zip_file_list(list, zipname)
+    - alert window - copy from mySQLadmin
+
+5.- modal for img
+    - modal for img  vs image zoom by click
+        - https://linuxhint.com/image-zoom-in-zoom-out-javascript/
+
+8.- upload images
+10.- open windows   
+    - https://www.youtube.com/watch?v=R5N8TA0KFxc
+
+postergados
 2.- login and users: admin, colab
+
 3.- crud for posts
-4.- test colab posts input process
     - forms: https://www.youtube.com/watch?v=Rxp3mkg2mRQ
     - Add A Blog Post Model and Form: https://www.youtube.com/watch?v=1RmU8lderG8
     - Edit blog post: https://www.youtube.com/watch?v=N4Nz0cYuCnc
@@ -22,16 +30,9 @@ STILL TO DO !
             - pip install flask-ckeditor
             - https://flask-ckeditor.readthedocs.io/en/latest/
 
-5.- MyFunctions: ADD script zip_file_list(list, zipname)
-6.- modal for img
-    - modal for img  vs image zoom by click
-        - https://linuxhint.com/image-zoom-in-zoom-out-javascript/
-7.- menu bar when width like phone
-8.- search in list-dict
-9.- upload images
-10.- drag & drop
-11.- open windows   
-    - https://www.youtube.com/watch?v=R5N8TA0KFxc
+6.- menu bar when width like phone
+7.- search in list-dict
+9.- drag & drop
 
 PROJECTS 
 1.- life game
@@ -65,6 +66,12 @@ DB FOR USERS (admin, colab), ARTICLES AND EXCERCISES
     - https://mindlesstechnology.wordpress.com/2008/03/29/make-python-scripts-droppable-in-windows/
     - https://stackoverflow.com/questions/142844/drag-and-drop-onto-python-script-in-windows-explorer
 
+- https://stackoverflow.com/questions/52835681/how-can-i-run-a-python-script-from-within-flask
+
+- ExecPythonScript() :  how to pass file parameter to .bat
+
+- body in list... how to accept line jump in text
+    - https://stackoverflow.com/questions/59718855/how-to-insert-a-new-line-every-entry-in-a-dictionary
 
 *********************************************************************************************
 
