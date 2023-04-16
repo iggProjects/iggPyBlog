@@ -12,7 +12,7 @@ def LG_scripts():
             'title': 'Working with Matrices',
             'fileDirPath': 'static/proj_lifeGame_scripts/01_LG-ExploracionMatrices.py',            
             
-            'homework': 'Manipulate matrices with numpy\n',
+            'homework': 'Manipulate matrices with numpy',
 
             'body': 'To work with matrices Numpy is a very powerful module, rich in methods. For this game, we will work with:\n\tA\n\tB\n\tC',  
 
@@ -30,7 +30,7 @@ def LG_scripts():
             'title': 'Expand and contract matrices',
             'fileDirPath': 'static/proj_lifeGame_scripts/02_LG-expandir-contraer-funciones.py',            
             
-            'homework': 'First step in life game: create custom matrices to apply the \"game of life\" algorithm\n',
+            'homework': 'First step in life game: create custom matrices to apply the \"game of life\" algorithm',
 
             'body': 'Expand and contract matrices with numpy:\n\tA\n\tB\n\tC',  
 
@@ -48,7 +48,7 @@ def LG_scripts():
             'title': 'Expand and contract matrices',
             'fileDirPath': 'static/proj_lifeGame_scripts/03_LG-reglas.py',            
             
-            'homework': 'Simulate Game of Life iterations\n',
+            'homework': 'Simulate Game of Life iterations',
 
             'body': '',  
 
@@ -66,7 +66,7 @@ def LG_scripts():
             'title': 'Expand and contract matrices',
             'fileDirPath': 'static/proj_lifeGame_scripts/04_LG-iterations-funciones.py',            
             
-            'homework': 'Functions to invoke in MAIN of Game of Life script\n',
+            'homework': 'Functions to invoke in MAIN of Game of Life script',
 
             'body': '',  
 
@@ -84,7 +84,7 @@ def LG_scripts():
             'title': 'Expand and contract matrices',
             'fileDirPath': 'static/proj_lifeGame_scripts/05_LG-Iterations-ejec-normal.py',            
             
-            'homework': 'Execute 500 iterations of Game of Life script\n',
+            'homework': 'Execute 500 iterations of Game of Life script',
 
             'body': '',  
 
@@ -102,7 +102,7 @@ def LG_scripts():
             'title': 'Simulate set of 4 games (matrices)',
             'fileDirPath': 'static/proj_lifeGame_scripts/06_LG-show-four-matrices.py',            
             
-            'homework': 'Execute 500 iterations of Game of Life script\n',
+            'homework': 'Execute 500 iterations of Game of Life script.',
 
             'body': '',  
 
@@ -120,7 +120,7 @@ def LG_scripts():
             'title': 'Simulate set of 4 games (matrices)',
             'fileDirPath': 'static/proj_lifeGame_scripts/07-LG_-multiprocessing-cpu.py',            
             
-            'homework': 'Execute Sets of 4 Games with multiprocessing\n',
+            'homework': 'Execute Sets of 4 Games with multiprocessing.',
 
             'body': '',  
 

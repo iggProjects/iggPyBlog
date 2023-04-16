@@ -10,11 +10,9 @@ from multiprocessing import Manager, cpu_count
 from multiprocessing.pool import Pool
 import os
 from os import system
-import random
+#import random
 from random import randrange
-
 import string
-from MyFunc import pause
 
 # CONSTANTS
 # Colors
@@ -38,6 +36,10 @@ MY_TEXT = 'El murcielago esta hambriento'
 ENCRYPTED_TEXT = 'ib dnlsaibmru ietm hmdclaigtu'
 
 # FUNCIONS SECTION
+
+# pause function
+def pause():  
+  userInput = input(f"{FR_RED}Press ENTER to continue, or CTRL-C to exit{NO_COLOR}\n")  
 
 def decipher(alphab1, event):
 

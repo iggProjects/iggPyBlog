@@ -6,19 +6,39 @@ def Enigma_scripts():
         {
             'id': 1,             
             'author': 'Igg',
-            'date_created': '13-02-2023',
+            'date_created': '27-03-2023',
             'source_url': '',
-            'section': 'Enigma Game',
-            'title': 'Enigma Script for...',
-            'fileDirPath': 'static/py_excercises/20230213-PrototypeScript/0-prototype.py',            
+            'section': 'Multiprocessing',
+            'title': ' Use of two or more CPUs within your PC',
+            'fileDirPath': '/static/proj_enigmaGame_scripts/mpPool_Arith_Progres_Sum.py',  
             
-            'homework': '.................Enigma Game ....................\n.................Enigma Game ....................\n.................Enigma Game ....................\n',
+            'homework': 'Execute in a few seconds sums of 10,000 arithmetic progressions of 50,000 terms each.',
 
-            'body': '.................Enigma Game ....................\n.................Enigma Game ....................\n.................Enigma Game ....................\n',          
+            'body': '................. Multiprocessing ....................',          
 
-            'zip_url': '/static/proj_EnigmaGame_scripts/20230213-Prototypescript/20230213-PrototypeScript.rar',  
+            'code_url': '/static/proj_enigmaGame_scripts/mpPool_Arith_Progres_Sum.py',  
+            'zip_url' : '/static/proj_enigmaGame_scripts/mpPool_Arith_Progres_Sum.zip',  
+            'img': '/img/icons8-consola-100.png'    
+        },     
+        {
+            'id': 2,             
+            'author': 'Igg',
+            'date_created': '10-04-2023',
+            'source_url': '',
+            'section': 'Multiprocessing',
+            'title': ' use of two or more CPUs within your PC',
+            'fileDirPath': 'static/proj_enigmaGame_scripts/mpPoolManagerEnigmaRandom-vf.py',  
+            
+            'homework': 'Execute in a few seconds sums of 10,000 arithmetic progressions of 50,000 terms each.',
+
+            'body': '................. Multiprocessing ....................',          
+
+            'code_url': 'static/proj_enigmaGame_scripts/mpPoolManagerEnigmaRandom-vf.py',  
+            'zip_url' : 'static/proj_enigmaGame_scripts/mpPoolManagerEnigmaRandom-vf.zip',  
             'img': '/img/icons8-consola-100.png'    
         },       
+  
+        
 
     ]
 

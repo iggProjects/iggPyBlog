@@ -5,7 +5,7 @@
   <div class="disp-cols-cent"  style="height:78vh; overflow: auto; border:10px solid rgb(200, 199, 199); border-radius: 10px;">    
     <ul class="list-group">
       {% for excercise in excercises %}
-        <li class="list-group-item" style="margin-top:0px; padding:2px; border:none;">
+        <li class="list-group-item" style="margin-top:2px; padding:4px; border:none;">
           <table class="tableWithBorders" style="width:98%; margin-top:0px; text-align: left;">
             <tr>
               <td rowspan="3"><a href="excercise/?id={{excercise.id}}"><span style="font-size:16px;">{{excercise.id}} - {{excercise.author}}</span><br><span style="color:rgb(75, 72, 252); font-size: 11px;;">{{excercise.date_created}}</span></a></td>
@@ -13,8 +13,8 @@
               <td></td>
             </tr>
             <tr>              
-              <td style="width:75%; padding:2px;text-align:center; font-size:15px;  border:1px solid rgb(201, 201, 251)">{{excercise.homework}}</td>
-              <td style="width:5%; padding:2px; text-align: center; border:1px solid rgb(201, 201, 251)"><img src="/static/img/Lorea.jpg" style="border:2px solid rgb(190, 209, 250) ;border-radius: 10px;" width="40"></td>
+              <td style="width:75%; padding:2px;text-align:center; font-size:15px;  border:1px solid rgb(83, 134, 253)">{{excercise.homework}}</td>
+              <td style="width:5%; padding:2px; text-align: center; border:1px solid rgb(83, 134, 253)"><img src="/static/img/Lorea.jpg" style="border:2px solid rgb(190, 209, 250) ;border-radius: 10px;" width="35"></td>
             </tr>
           </table>
         </li>

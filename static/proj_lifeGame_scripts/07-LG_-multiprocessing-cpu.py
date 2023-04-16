@@ -18,7 +18,7 @@ NY = 60
 NITER= 500
 MSG_TEXT  = 'Games record-> '
 BASE_PRINT = int(NITER/10)
-
+N_CPU = multiprocessing.cpu_count()
 
 #
 # Funciones
@@ -28,10 +28,6 @@ BASE_PRINT = int(NITER/10)
 def pausar():
 	userInput = input('\t ---- Presiona ENTER para continuar CTRL-C para salir ----\n')
 
-def print_args(**kwargs):
-	for arg_name in kwargs:
-		return kwargs[arg_name], arg_name
-	
 # Creo matriz a partir de una archivo si es suministrado
 def crear_matriz():	
 	#print(f"......from crear_matriz() NX: {NX} , NY: {NY}")
@@ -196,6 +192,8 @@ def exec_games(list_g,n_cpu):
 if __name__ == '__main__':
 
 	os.system('cls')
+
+	# multiprocessing.cpu_count()
 
 	# READ PARAMETERS 
 	# number of SET's, each of one of four games (matrixs)

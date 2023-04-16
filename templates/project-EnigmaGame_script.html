@@ -3,16 +3,16 @@
 {%  block body %}    
 
     <h1 style="text-align: center; margin-left:25px; margin-top: 3px; font-size:25px;  color:rgb(93, 92, 92)">Life Game Script {{ enigma_script.id }}, Author {{enigma_script.author}}, date {{enigma_script.date_created}}</h1>    
-    <div class="disp-rows-cent"  style="width:100%; padding:5px; height:80vh; border:10px solid rgb(194, 251, 134); border-radius: 10px;">
+    <div class="disp-rows-cent"  style="width:100%; padding:5px; height:80vh; border:10px solid rgb(90, 172, 2); border-radius: 10px;">
         <table style="width:90%; margin:3px; border: 1px solid rgb(208, 207, 207)">
             <tr>                
-                <th><a href="{{ enigma_script.source_url }}" target="_blank"><span style="color:green">section</span><br><span style="color:rgb(163, 23, 2)">"{{ enigma_script.section }}"</span></a></th>
-                <th><span style="color:green">title</span><br><span style="color:rgb(163, 23, 2)">"{{enigma_script.title}}"</span></a></th>                
-                <th><span style="color:green">script name</span><br><span style="color:rgb(163, 23, 2)">"{{ enigma_script.fileDirPath.split('/')[3] }}"</span></th>
-                <th><img class="myImg" onclick='' src="{{ url_for('static', filename='img/icons8-flow-chart-64.png') }}" title='Zoom flow chart' alt="console-100" width="30"/></th>                
-                <th><a href="{{enigma_script.zip_url}}" target="_blank"><img class="myImg" onclick='ExecPythonScript()' src="{{ url_for('static', filename='img/icons8-descargar-de-la-nube-100.png') }}" title='Download py script' alt="download-100" width="30"/></a></th>                              
-                <th style="padding:10px;">
-                    <img class="myImg" onclick="ExecPythonScript('{{enigma_script.fileDirPath}}')" src="{{ url_for('static', filename='img/icons8-consola-100.png') }}" title='Run in command line console' alt="console-100" width="30"/>
+                <th style="width:15%"><a href="{{ enigma_script.source_url }}" target="_blank"><span style="color:green">section</span><br><span style="color:rgb(163, 23, 2)">"{{ enigma_script.section }}"</span></a></th>
+                <th style="width:30%"><span style="color:green">title</span><br><span style="color:rgb(163, 23, 2)">"{{enigma_script.title}}"</span></a></th>                
+                <th style="width:30%"><span style="color:green">script name</span><br><span style="color:rgb(163, 23, 2)">"{{ enigma_script.fileDirPath.split('/')[3] }}"</span></th>
+                <th style="width:10%"><a href="{{enigma_script.code_url}}" target="_blank"><img class="myImg" onclick='' src="{{ url_for('static', filename='img/icons8-script-68.png') }}" title='Zoom flow chart' alt="console-100" width="35"/></a></th>                
+                <th style="width:10%"><a href="{{enigma_script.zip_url}}" target="_blank"><img class="myImg" onclick='ExecPythonScript()' src="{{ url_for('static', filename='img/icons8-descargar-de-la-nube-100.png') }}" title='Download py script' alt="download-100" width="35"/></a></th>                              
+                <th style="width:10%; padding:10px;">
+                    <img class="myImg" onclick="ExecPythonScript('{{enigma_script.fileDirPath}}')" src="{{ url_for('static', filename='img/icons8-consola-100.png') }}" title='Run in command line console' alt="console-100" width="35"/>
                 </th>                
             </tr>            
         </table>           

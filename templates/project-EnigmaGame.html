@@ -2,23 +2,22 @@
 
 {% block body %}
   <h1 style="margin-left:15px; margin-top:3px; color:rgb(90, 172, 2);">Enigma Project Scripts</h1>
-  <div class="disp-cols-cent"  style="height:78vh; overflow: auto; border:10px solid rgb(194, 251, 134); border-radius: 10px;">    
+  <div class="disp-cols-cent"  style="max-height:78vh; overflow: auto; border:10px solid rgb(108, 208, 1); border-radius: 10px;">    
     <ul class="list-group">
       {% for enigma_script in enigma_scripts %}
-        <li class="list-group-item" style="border:none;">
+        <li class="list-group-item" style="margin-top:2px; padding:4px; border:none;">
           <table class="tableWithBorders tblBGC_Grn_2" style="text-align: left; border:none;">
             <tr>
               <td rowspan="3">
                 <a href="project-EnigmaGame_script/?id={{enigma_script.id}}"><span style="color:white; font-size:17px;">{{enigma_script.id}} - {{enigma_script.author}}</span><br><span style="color:white; font-size: 11px;;">{{enigma_script.date_created}}</span></a>
                 <br>
-                <img src="/static/img/Lorea.jpg" style="border:2px solid green; border-radius: 10px;" width="40">
+                <img src="/static/img/Lorea.jpg" style="border:2px solid green; border-radius: 10px;" width="30">
               </td>
-              <td style="padding-left:5px;"><a style="color:white; font-size: 14px;" href="project-EnigmaGame_script/?id={{enigma_script.id}}">section "{{enigma_script.section}}":  {{enigma_script.title}}</a></td>
+              <td style="padding-top:7px; padding-left:5px; "><a style="color:white; font-size: 14px; " href="project-EnigmaGame_script/?id={{enigma_script.id}}">section "{{enigma_script.section}}":  {{enigma_script.title}}</a></td>
               <td></td>
             </tr>
             <tr>              
-              <td style="width:75%; padding:5px; text-align:center; color:white; font-size:15px;  "><textarea readonly style="width:100%; padding:5px;  border:1px solid white; background-color: transparent;">{{enigma_script.homework}}</textarea></td>
-              
+              <td style="width:75%; padding:5px; color:black; font-size:18px;  "><textarea rows="1" readonly style="width:100%; text-align:center; padding:5px;  border:1px solid white; background-color: transparent;">{{enigma_script.homework}}</textarea></td>              
             </tr>
           </table>
         </li>
