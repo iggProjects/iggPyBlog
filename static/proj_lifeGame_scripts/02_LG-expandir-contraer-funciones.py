@@ -59,7 +59,7 @@ system('cls')
 nX, nY = 6, 6
 
 matriz = np.arange(nX*nY).reshape(nX, nY)
-mostrar_matriz(matriz,"Matriz inicial")
+mostrar_matriz(matriz," matriz = np.arange(nX*nY).reshape(nX, nY)")
 
 # particiono la matriz
 m0 = matriz[ 0:int(nX/2), 0:int(nY/2) ]
@@ -69,46 +69,43 @@ m3 = matriz[ int(nX/2):nX, int(nY/2):nY ]
 
 print(f"{FR_MAG}\n============== Matrices partidas ==============={NO_COLOR}\n")
 
-mostrar_matriz(m0,"Matriz m0:  matriz[ 0:int(nX/2), 0:int(nY/2) ]")
+mostrar_matriz(m0," Matriz m0:  matriz[ 0:int(nX/2), 0:int(nY/2) ]")
 print()
-mostrar_matriz(m1,"Matriz m1:  matriz[int(nX/2):nX, 0:int(nY/2) ]")
+mostrar_matriz(m1," Matriz m1:  matriz[int(nX/2):nX, 0:int(nY/2) ]")
 print()
-mostrar_matriz(m2,"Matriz m2:  matriz[ 0:int(nX/2), int(nY/2):nY ]")
+mostrar_matriz(m2," Matriz m2:  matriz[ 0:int(nX/2), int(nY/2):nY ]")
 print()
-mostrar_matriz(m3,"Matriz m3:  matriz[ int(nX/2):nX, int(nY/2):nY ]")
+mostrar_matriz(m3," Matriz m3:  matriz[ int(nX/2):nX, int(nY/2):nY ]")
 print()
 
-# Expando las matrices
+# Expandimos las matrices m0, m1, m2, m3
 m0e = expandir_matriz(m0, m1, m2, m3)
 m1e = expandir_matriz(m1, m0, m3, m2)
 m2e = expandir_matriz(m2, m3, m0, m1)
 m3e = expandir_matriz(m3, m2, m1, m0)
 
-print(f"{FR_MAG}\n====== Matrices expandidas ======\n{NO_COLOR}")
-mostrar_matriz(m0e,"m0e: expandir_matriz(m0, m1, m2, m3)")
+print(f"{FR_MAG}\n====== Matrices expandidas ======{NO_COLOR}\n")
+mostrar_matriz(m0e," m0e: expandir_matriz(m0, m1, m2, m3)")
 print()
-mostrar_matriz(m1e,"m1e: expandir_matriz(m1, m0, m3, m2)")
+mostrar_matriz(m1e," m1e: expandir_matriz(m1, m0, m3, m2)")
 print()
-mostrar_matriz(m2e,"m2e: expandir_matriz(m2, m3, m0, m1)")
+mostrar_matriz(m2e," m2e: expandir_matriz(m2, m3, m0, m1)")
 print()
-mostrar_matriz(m3e,"m3e: expandir_matriz(m3, m2, m1, m0)")
+mostrar_matriz(m3e," m3e: expandir_matriz(m3, m2, m1, m0)")
 print()
 
-# contraigo las matricez
+# contraemos las matrices m0e, m1e, m2e, m3e
 m0c = contraer_matriz(m0e)
 m1c = contraer_matriz(m1e)
 m2c = contraer_matriz(m2e)
 m3c = contraer_matriz(m3e)
 
 print(f"{FR_MAG}\n====== Matrices contraidas ======\n{NO_COLOR}")
-mostrar_matriz(m0c,"m0c: contraer_matriz(m0e)")
-print()
-mostrar_matriz(m1c,"m1c: contraer_matriz(m1e)")
-print()
-mostrar_matriz(m2c,"m2c: contraer_matriz(m2e)")
-print()
-mostrar_matriz(m3c,"m3c: contraer_matriz(m3e)")
-print()
+
+mostrar_matriz(m0c," m0c: contraer_matriz(m0e)")
+mostrar_matriz(m1c," m1c: contraer_matriz(m1e)")
+mostrar_matriz(m2c," m2c: contraer_matriz(m2e)")
+mostrar_matriz(m3c," m3c: contraer_matriz(m3e)")
 
 print(f"{FR_GREEN}\n====== MATRIZ FINAL COMPLETA ======\n{NO_COLOR}")
 matrizFinal = np.hstack( (np.vstack( (m0c, m1c) ), np.vstack( (m2c, m3c) )) )

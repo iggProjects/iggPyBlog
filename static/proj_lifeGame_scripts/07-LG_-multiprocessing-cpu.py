@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
 #
-#  4 Games of life to execute, 1 for each quadrant,  without multiprocessing.
+#  Execute Sets of 4 "Games of life", 1 for each quadrant, with multiprocessing.
 #
 
 import multiprocessing 
@@ -208,10 +208,10 @@ if __name__ == '__main__':
 	list_games = [(x+1) for x in range(0,nSets)]
 
 	print(f"\n\033[0;93m----------- Starting Life Game Series ----------- \033[0m\n ")
-	print(f"\t.... Number of Sets of 4 simultaneous 'life game' (matrix): {len(list_games)}\n\t.... Iterations for each game: {NITER}\n\t.... number of cpu's participating: {nCPU} ....")
-	print(f"\t.... matrices of {NX} cols, {NY} rows ....")
-	print(f"\t.... Printing only for first process ....\n")
-	#print(f"\t{list_games}")
+	print(f"\t ..... Number of Sets of 4 simultaneous 'life game' (matrix): {len(list_games)}\n\t ..... Iterations for each game: {NITER}\n\t ..... number of cpu's participating: {nCPU}")
+	print(f"\t ..... matrices of {NX} cols, {NY} rows")
+	print(f"\t ..... Printing only for first process")
+	print(f"\t ..... List of Sets: {list_games}\n")
 	pausar()	
 	# time
 	inicio = time.time()

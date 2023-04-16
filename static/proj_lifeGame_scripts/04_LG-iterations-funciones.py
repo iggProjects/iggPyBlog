@@ -40,9 +40,9 @@ def mostrar_matriz(matriz,msg):
 	for y in range(0, Y):
 		for x in range(0, X):
 			if matriz[x,y] == 1:
-				print(f"\033[0;91m{int(matriz[x,y])}\033[0m", end =" ")
+				print(f"{FR_RED}{int(matriz[x,y])}{NO_COLOR}", end =" ")
 			else:
-				print(f"\033[0;37m{int(matriz[x,y])}\033[0m", end =" ")
+				print(f"\033[0;37m{int(matriz[x,y])}{NO_COLOR}", end =" ")
 		print()
 
 # Creo matriz a partir de una archivo si es suministrado
@@ -159,6 +159,7 @@ if __name__ == '__main__':
 		m1 = matriz[ int(nX/2):nX, 0:int(nY/2) ]
 		m2 = matriz[ 0:int(nX/2), int(nY/2):nY ]
 		m3 = matriz[ int(nX/2):nX, int(nY/2):nY ]
+
 		# Expando las matrices
 		m0e = expandir_matriz(m0, m1, m2, m3)
 		m1e = expandir_matriz(m1, m0, m3, m2)
@@ -170,6 +171,7 @@ if __name__ == '__main__':
 		m1e = calcular_matriz(m1e)
 		m2e = calcular_matriz(m2e)
 		m3e = calcular_matriz(m3e)
+
 		# contraigo las matricez
 		m0 = contraer_matriz(m0e)
 		m1 = contraer_matriz(m1e)
@@ -186,5 +188,5 @@ if __name__ == '__main__':
 		n+=1
 
 	elapsed_time = "{:.2f}".format(time.time()-inicio)
-	print(f"\n\tElapsed Time: {elapsed_time} seconds\n")
-	print(f"\n\033[0;93m\t----------THAT's ALL----------\033[0m\n")
+	print(f"\n{FR_GREEN}   Elapsed Time: {elapsed_time} seconds{NO_COLOR}\n")
+	print(f"\n{FR_YELL}   ----------THAT's ALL----------\033[0m\n")

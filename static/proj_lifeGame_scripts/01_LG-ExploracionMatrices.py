@@ -40,55 +40,53 @@ def mostrar_matriz(matriz,msg):
 			else:
 				print(f"\t\033[0;37m{int(matriz[x,y])}\033[0m", end =" ")
 		print()
-	#print()	
+	print()	# 	
 	pausar()	
 
 
 os.system('cls')        # Ejecuto el comando 'clear' del OS
 nX, nY = 8, 8
 
-print("-------------------------------------------------------------------")
+print("\n-------------------------- MAIN -------------------------------------\n")
 print(f"{FR_YELL}\t======= MATRIX WITH NUMPY METHODS   ======={NO_COLOR}\n")
-pausar()
-    
 
 matriz = np.arange(nX*nY).reshape(nX, nY)
-msg = "Matriz inicial de " + str(nX) + " col y " + str(nY) + " rows"
+msg = " Matriz inicial de nX= " + str(nX) + " cols y nY= " + str(nY) + " rows | numpy: matriz = np.arange(nX*nY).reshape(nX, nY) "
 mostrar_matriz(matriz,msg)
 
 m0 = matriz[ 0:int(nX/2), 0:int(nY/2) ]
-mostrar_matriz(m0, "m0")
+mostrar_matriz(m0, " m0 = matriz[ 0:int(nX/2), 0:int(nY/2) ]")
 
 m1 = matriz[ int(nX/2):nX, 0:int(nY/2) ]
-mostrar_matriz(m1, "m1")
+mostrar_matriz(m1, " m1 = matriz[ int(nX/2):nX, 0:int(nY/2) ]")
 
 m2 = matriz[ 0:int(nX/2), int(nY/2):nY ]
-mostrar_matriz(m2,"m2")
+mostrar_matriz(m2," m2 = matriz[ 0:int(nX/2), int(nY/2):nY ]")
 
 m3 = matriz[ int(nX/2):nX, int(nY/2):nY ]
-mostrar_matriz(m3,"m3")
+mostrar_matriz(m3," m3 = matriz[ int(nX/2):nX, int(nY/2):nY ]")
 
 der = m1[ [0], : ]
-mostrar_matriz(der, "derecha")
+mostrar_matriz(der, " derecha = m1[ [0], : ]")
 
 izq = m1[ [int(nX/2)-1], : ]
-mostrar_matriz(izq, "izquierda")
+mostrar_matriz(izq, " izquierda = m1[ [int(nX/2)-1], : ]")
 
-m0e=np.vstack( (izq, m0, der) )
-mostrar_matriz(m0e, "m0 expandida fase 1")
+m0e = np.vstack( (izq, m0, der) )
+mostrar_matriz(m0e, " m0 expandida fase 1 = np.vstack( (izq, m0, der) )")
 
 bot = np.vstack(
 	( [m3[int(nX/2)-1, 0]], m2[ :, [0] ], [m3[0, 0]] )
 )
-mostrar_matriz(bot, "bot")
+mostrar_matriz(bot, " bot = np.vstack( ( [m3[int(nX/2)-1, 0]], m2[ :, [0] ], [m3[0, 0]] ) )")
 
 top = np.vstack(
 	( [m3[int(nX/2)-1, int(nY/2)-1]], m2[ :, [int(nY/2)-1] ], [m3[0, int(nY/2)-1]] )
 )
-mostrar_matriz(top, "top")
+mostrar_matriz(top, " top = np.vstack( ( [m3[int(nX/2)-1, int(nY/2)-1]], m2[ :, [int(nY/2)-1] ], [m3[0, int(nY/2)-1]] ) )")
 
 m0e = np.hstack( ( top, m0e, bot) )
-mostrar_matriz(m0e, "m0e expandida")
+mostrar_matriz(m0e, " m0e expandida = np.hstack( ( top, m0e, bot) )")
 
 print(f"\n{FR_YELL}======== that's all ========{NO_COLOR}\n")
 

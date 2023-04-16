@@ -5,12 +5,20 @@ import time
 
 os.system('cls')
 
-#
 # Constantes
-#
+
+# Colors
+NO_COLOR = "\033[00m"
+FR_GREEN = "\033[92m"
+FR_RED   = "\033[91m"
+FR_BLUE  = "\033[94m"
+FR_YELL  = "\033[93m"
+FR_MAG   = "\033[95m"
+
+# 
 ITERAC = 100
-nX = 10
-nY = 10
+nX = 12
+nY = 12
 yExt = 2*nY + 1
 # nX, nY = os.get_terminal_size(0)
 # nX, nY = int(nX/2)-5, (nY-5)
@@ -30,7 +38,7 @@ def mostrar_matriz(matriz):
 				print(f"\033[0;91m{int(matriz[x,y])}\033[0m", end =" ")
 			elif matriz[x,y] == 0:
 				print(f"\033[0;37m{int(matriz[x,y])}\033[0m", end =" ")
-			elif matriz[x,y] == 999:
+			elif matriz[x,y] == 99999:
 				print(f"\033[0;32m{int(matriz[x,y])}\033[0m", end =" ")
 			else:
 				print(f"\033[0;37m{int(matriz[x,y])}\033[0m", end =" ")
@@ -61,7 +69,7 @@ for x in range(0,nX):
 		matriz_ext[x,y+nY+1] = nVecinos
 
 for x in range (0,nX):
-	matriz_ext[x,nY] = 999 
+	matriz_ext[x,nY] = 99999 
 
 n=1
 while n <= ITERAC:
@@ -96,7 +104,7 @@ while n <= ITERAC:
 			matrizTemp[x,y+nY+1] = nVecinos
 
 	matriz_ext = np.copy(matrizTemp)
-	print(f"\n\033[0;93m Matriz Life Game\033[0m   ---  \033[0;96mMatriz Num Vecinos\033[0m")
+	print(f"\n{FR_YELL} Matriz Game of Life\033[0m    ----     {FR_GREEN}Matriz Num Vecinos{NO_COLOR}")
 	mostrar_matriz( matriz_ext )
 	#print(f"Iteraciones: {n} de {ITERAC} ({nX}, {nY}) ")
 	#time.sleep(2)
@@ -106,6 +114,6 @@ while n <= ITERAC:
 		print(f"Iteración No: {n}\nmatriz {nX} x {nY}\n")	
 	n += 1
 
-print(f"\n\033[0;93mTotal iteraciones Life Game: {ITERAC}\033[0m\nmatriz {nX} x {nY}\n")
+print(f"\n\033[0;93mTotal iteraciones Game of Life: {ITERAC}\033[0m\nmatriz {nX} x {nY}\n")
 	
 print("FIN\n")
