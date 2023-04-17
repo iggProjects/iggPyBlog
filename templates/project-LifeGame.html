@@ -1,11 +1,11 @@
 {% extends 'layout.html' %}
 
 {% block body %}
-  <h1 style="margin-left:15px; margin-top: 3px; color:rgb(26, 136, 252);">Game of Life Project</h1>
-  <div class="disp-cols-cent"  style="height:78vh; width:80%; margin:auto; overflow: auto; border:10px solid rgb(162, 205, 251); border-radius: 10px;">    
-    <ul class="list-group">
+  <h1 style="text-align: center; margin-top: 5px; color:rgb(26, 136, 252);">Game of Life Project</h1>
+  <div class="disp-cols-cent"  style="max-height:75vh; width:80%; margin:auto; padding:3px; overflow: auto; border:10px solid rgb(162, 205, 251); border-radius: 10px;">    
+    <ul class="list-group"style="max-height:68vh;">
       {% for lg_script in lg_scripts %}
-        <li class="list-group-item" style="margin-top:2px; padding:4px; border:none; ">
+        <li class="list-group-item" style="margin-top:3px; padding:4px; border:none; ">
           <table class="tableWithBorders tblBGC_Bl_Light" style="text-align: left; border:none;">
             <tr>
               <td rowspan="3">

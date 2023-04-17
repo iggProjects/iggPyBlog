@@ -1,0 +1,1 @@
+python.exe mpPool_Arith_Progres_Sum.py
