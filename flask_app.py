@@ -15,7 +15,7 @@ from os import system
 app = Flask(__name__)
 
 basedir = os.path.abspath(os.path.dirname(__file__))
-print(f"............ basedir===> {basedir}")
+#print(f"............ basedir===> {basedir}")
 app.config['SQLALCHEMY_DATABASE_URI'] ='sqlite:///' + os.path.join(basedir, 'foods.db')
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
@@ -245,38 +245,20 @@ def login():
 
 @app.route('/pythonScript/')
 def ExecPythonScript():
-
-    # parameter from JS
-    py_script_path = request.args['py_path']   
-    #print("Excercise: " + file_path)
-
-    """
-    id = int(request.args['id'])    
-    for i in range(len(Excercises)):
-        if Excercises[i]['id'] == id:
-            excercise = Excercises[i]
-    py_file = excercise["fileDirPath"]            
-    """
     from os import system
+    # parameter from JS
+    py_script_path = request.args['py_path']
+    #print(f"===> File path:\n\t{py_script_path}")
     # clear screen
-    system('cls')    
-       
+    system('cls')
     # execution string
     exec_command = 'cmd /c \"python.exe ' + py_script_path + '\"'
     system(exec_command)    
     
-    return ""
-    
-    # to check later
-        #system('cmd /c "z_execution_file.bat"')
-        #system('cmd /c "python.exe static/py_excercises/20230227-OS-Examples/20230227-OS-Dir-Files-Example.py"')
-
-    # relative path: 
-        #file = open(r'openCmdLine.py','r').read()
-        #file = open(r'z_execution_file.bat','r').read()    
-        #file = open(r'z_execution_file-2.bat','r').read()
-        #exec(file)    
-    #return ""
+    return ""    
+#
+# MAIN
+#
 
 if __name__ == '__main__':
     app.run(debug=True)
