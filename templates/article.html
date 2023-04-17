@@ -2,26 +2,30 @@
 
 {%  block body %}     
     
-    <h1 style="text-align: left; margin-left:20px; margin-top: 3px; color:gray">Article {{ article.id }} - {{ article.title }}</h1>
+    <h1 style="text-align: left; margin-left:20px; margin-top: 3px; font-size:28px; color:rgb(198, 129, 2)">Article {{ article.id }} - {{ article.title }}</h1>
     <div class="disp-cols-cent"  style="padding:5px; height:78vh; border:10px solid rgb(250, 211, 140); border-radius: 10px;">
 
-        <div style="width:95%; height:auto; margin: auto; padding: 2px; overflow: auto;  border:2px solid rgb(190, 209, 250);">
+        <div style="width:95%; height:auto; margin: auto; padding: 2px; overflow: auto;  border:1px solid rgb(250, 194, 90);">
                 <table style="width:85%;">
                     <tr>
-                        <th>{{ article.date_created }}</th>
-                        <th>pages: {{ article.pages }}</th>
+                        <th style="font-size:16px;">Author: {{ article.author }}</th>
+                        <!--
+                        <th>section: {{ article.section }}</th>
                         <th><a href="" target="_blank">github url</a></th>
                         <th><a href="" target="_blank">python AW url</a></th>
-                        <th><a href="{{article.zip_url}}" target="_blank">download zip</a></th>
+                        -->
+                        <th style="font-size:16px;"><a href="{{article.page_url}}" target="_blank">link</a></th>
+                        <!--
                         <th style="padding:3px;">
                             <img class="myImg" src="/static/img/Lorea.jpg" alt="ame-01" width="40"/>
                         </th>
+                        -->
                     </tr>
                 </table>
             </div>    
       
-        <div style="width:95%; height:85%; margin: auto; padding: 2px;    border:2px solid rgb(190, 209, 250);">
-            <h4 style="text-align: center; margin-top: 10px; padding-bottom: 5px; color:rgb(19, 1, 121); border-bottom: 1px solid gray;">aaa</h4>          
+        <div style="width:95%; height:85%; margin: auto; padding: 2px; border:1px solid rgb(250, 194, 90);">
+            <!-- <h4 style="text-align: center; margin-top: 10px; padding-bottom: 5px; color:rgb(19, 1, 121); border-bottom: 1px solid rgb(250, 194, 90);">aaa</h4> -->
             <div style="height:90%; margin-top: 10px; overflow-y: auto; ">
                 <table style="width:95%;">                
                     <tr id="trBody">
