@@ -1,5 +1,0 @@
-uniqlines = set(open('z-fileRepeatedLines.txt').readlines())
-uniqlines = sorted(uniqlines)
-print(f"uniqlines type is {type(uniqlines)}")
-print(f"uniqlines; {uniqlines}")
-open('z-fileWithOutRepetitionLines.txt', 'w').writelines(uniqlines)
