@@ -1,10 +1,14 @@
 BITAKORA
 
 STILL TO DO !
+
+0.- authentication - login required
+
+    - https://www.digitalocean.com/community/tutorials/how-to-add-authentication-to-your-app-with-flask-login
  
 1.- fill all excercises info  😎✔✔
     - test colab posts input process
-    - EMAIL pythonanywhere console
+    - EMAIL pythonanywhere console  😎✔✔
 
 4.- MyFunctions: 
     - ADD script zip_file_list(list, zipname)
