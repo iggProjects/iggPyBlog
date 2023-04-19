@@ -56,7 +56,7 @@ if __name__ == "__main__":
 
     # reading backup file
     f = open("agathaBackup.txt","r")
-    print(f"\n{FR_YELL}\tprinting bakup file: {NO_COLOR}{f.name}\n")
+    print(f"\n{FR_YELL}\tprinting backup file: {NO_COLOR}{f.name}\n")
 
     # read lines
     lines = f.readlines()

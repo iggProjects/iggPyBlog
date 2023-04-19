@@ -38,6 +38,7 @@ Excercises = Excercises()
 LG_scripts = LG_scripts()
 Enigma_scripts = Enigma_scripts()
 
+"""
 @app.route('/',methods=['GET', 'POST'])
 def login():      
     error = None
@@ -49,9 +50,10 @@ def login():
             #return render_template('home.html')
         
     return render_template('login.html', error=error)
+"""
 
-
-@app.route('/home')
+@app.route('/')
+#@app.route('/home')
 def home():
     return render_template('home.html')
 
