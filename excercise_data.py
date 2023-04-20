@@ -5,6 +5,24 @@ def Excercises():
     excercises = [   
 
         {
+            'id': 0,             
+            'author': 'Igg',
+            'date_created': '20-04-2023',
+            'source_url': '',
+            'section': 'The experience',
+            'title': 'Python Course experience.',
+            'fileDirPath': '',           
+            
+            'homework': '',
+            
+            'body': '',
+
+            'code_url':'../static/py_excercises/20230213-PrototypeScript-colors/0-Prototype-colors.py',
+            'zip_url': '../static/py_excercises/20230213-PrototypeScript-colors/20230213-PrototypeScript-colors.zip',  
+            'img': '/img/icons8-consola-100.png'    
+        },
+
+        {
             'id': 1,             
             'author': 'Igg',
             'date_created': '13-02-2023',
