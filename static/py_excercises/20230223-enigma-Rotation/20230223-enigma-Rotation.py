@@ -72,14 +72,11 @@ if __name__ == "__main__":
     old_alphab = list(string.ascii_lowercase)
     print(f"{FR_YELL}Alphabet list\n\t{NO_COLOR}{old_alphab}\n")
     
-    # random.shuffle() to create new_alphab
-    #random.shuffle(old_alphab)
-    #new_alphab=old_alphab   
+    # rotate alphab
     new_alphab = alphab[3:] + alphab[:3]
     
     print(f"{FR_GREEN}new alphabet list by rotation 3 places\n\t{NO_COLOR}{new_alphab}\n")
-    pause()
-    
+    pause()    
 
     # my text
     my_text = 'abcdef ghijk hello world'

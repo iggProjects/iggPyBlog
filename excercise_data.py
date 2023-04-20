@@ -49,9 +49,9 @@ def Excercises():
             'title': 'Show Object Attributes',
             'fileDirPath': 'static/py_excercises/20230213-PrototypeScript-MostrarObject/0-prototype-mostrar-obj.py',            
             
-            'homework': 'Use "mostrar(obj) function" to know properties and methods of certain varibles used in your script.',
+            'homework': 'Use "mostrar(obj) function" to know properties and methods of some variables of interest used in your script.',
 
-            'body': '# Show attributes and methods avalaible for "obj"\ndef mostrar(obj):\n\tif type(obj) in [\'list\'\'dict\']:\n\t\tprint(f"Object elements view in matrix form (8 columns by row)")\n\t\tmatrix_view(obj,8)\n\t# obj type and mem dir\n\tprint(f\"Object type is {type(obj)} and mem dir is: {id(obj)}")\n\t# obj attributes\n\t# attributes = [attr for attr in dir(obj) if not attr.startswith(\'__\')]\n\tattr_meth = [attr for attr in dir(obj)]\n\t# print attributes and methods in matrix form\n\tprint(f"Object assigned attributes and methods are:")\n\tmatrix_view(attr_meth,8)\n\tprint()\n\tprBG(\"-----------------END MOSTRAR OBJECT TYPE AND ATTRIB-METHODS-----------------",17)\n\tprint()',
+            'body': '# Show attributes and methods avalaible for "obj"\ndef mostrar(obj):\n\tif \'list\' in str(type(obj)) or \'tuple\' in str(type(obj)):\n\t\tprint(f"Object elements view in matrix form (8 columns by row)")\n\t\tmatrix_view(obj,8)\n\t# obj type and mem dir\n\tprint(f\"Object type is {type(obj)} and mem dir is: {id(obj)}")\n\t# obj attributes\n\t# attributes = [attr for attr in dir(obj) if not attr.startswith(\'__\')]\n\tattr_meth = [attr for attr in dir(obj)]\n\t# print attributes and methods in matrix form\n\tprint(f"Object assigned attributes and methods are:")\n\tmatrix_view(attr_meth,8)\n\tprint()\n\tprBG(\"-----------------END MOSTRAR OBJECT TYPE AND ATTRIB-METHODS-----------------",17)\n\tprint()',
 
             'code_url':'../static/py_excercises/20230213-PrototypeScript-MostrarObject/0-prototype-mostrar-obj.py',
             'zip_url': '../static/py_excercises/20230213-PrototypeScript-MostrarObject/20230213-PrototypeScript-MostrarObject.zip',  
@@ -67,9 +67,9 @@ def Excercises():
             'title': 'Print Lists or Tuples in matrix form',
             'fileDirPath': 'static/py_excercises/20230213-PrototypeScript-MatrixView/0-prototype-matrix-view.py',            
             
-            'homework': 'Use "matrix_view(obj_l_t,n_cols) function" to print the list o tuples elements in matrix form.\n',
+            'homework': 'Use "matrix_view(obj_l_t,n_cols) function" to print the elements of a list o tuple in matrix form.\n',
 
-            'body': '# print \'lists-tuples\' in matrix form\ndef matrix_view(obj_l_t,n_cols):\n\tif \'list\' in str(type(obj_l_t)) or \'tuple\' in str(type(obj_l_t)):\n\timport math\n\tmatrix_rows=math.ceil(len(obj_l_t)/n_cols)\n\tlines=[]\n\tline=[]\n\ti=0\n\tfor i in  range(matrix_rows):\n\tfor j in range(n_cols):\n\t\tif i*n_cols+j<len(obj_l_t):\n\t\tline.append(obj_l_t[i*n_cols+j])\n\t\tprint(f"line: {i+1} --> {line}")\n\t\tline=[]\n\telse:\n\t\tprint(frRED(f"\\nWarning FROM matrix_view(): Object \'{obj_l_t}\' in not  list neither tupla !\\n" ))',          
+            'body': '# print \'lists-tuples\' in matrix form\ndef matrix_view(obj_l_t,n_cols):\n\tif \'list\' in str(type(obj_l_t)) or \'tuple\' in str(type(obj_l_t)):\n\t\timport math\n\t\tmatrix_rows=math.ceil(len(obj_l_t)/n_cols)\n\t\tlines=[]\n\t\tline=[]\n\t\ti=0\n\t\tfor i in  range(matrix_rows):\n\t\t\tfor j in range(n_cols):\n\t\t\t\tif i*n_cols+j<len(obj_l_t):\n\t\t\t\tline.append(obj_l_t[i*n_cols+j])\n\t\t\t\tprint(f"line: {i+1} --> {line}")\n\t\t\tline=[]\n\telse:\n\t\tprint(frRED(f"\\nWarning FROM matrix_view(): Object \'{obj_l_t}\' in not  list neither tupla !\\n" ))',          
 
             'code_url':'../static/py_excercises/20230213-PrototypeScript-MatrixView/0-prototype-matrix-view.py',
             'zip_url': '../static/py_excercises/20230213-PrototypeScript-MatrixView/20230213-PrototypeScript-MatrixView.zip',  
@@ -87,7 +87,7 @@ def Excercises():
             
             'homework': 'Use "library_methods(my_lib) function" to print the methods of a library.\n',
 
-            'body': 'def library_methods(my_lib):\n    for method in dir(my_lib):\n        LIB_method = method\n        print(f"FR_GREEN}{str(my_lib)}.method --> {NO_COLOR}{LIB_method}")\n    print()',          
+            'body': 'def library_methods(my_lib):\n    for method in dir(my_lib):\n        LIB_method = method\n        print(f"FR_GREEN}{str(my_lib)}.method ==> {NO_COLOR}{LIB_method}")\n    print()',          
 
             'code_url':'../static/py_excercises/20230213-PrototypeScript-ModuleMethods/0-prototype-mod-methods.py',
             'zip_url': '../static/py_excercises/20230213-PrototypeScript-ModuleMethods/20230213-PrototypeScript-ModuleMethods.zip',  
@@ -103,7 +103,7 @@ def Excercises():
             'title': 'Print Help',
             'fileDirPath': 'static/py_excercises/20230213-PrototypeScript-HelpObj/0-prototype-help.py',            
             
-            'homework': 'Use "help_obj_method(obj) function" to call help option for a specific object.\n',
+            'homework': 'Use "help_obj_method(obj) function" to call help option for a specific object. The Python help() function invokes the interactive built-in help system. If the argument is a string, then the string is treated as the name of a module, function, class, keyword, or documentation topic, and a help page is printed on the console. If the argument is any other kind of object, a help page on the object is displayed.\n',
 
             'body': 'def help_obj_method(obj):\n    print(help(type(obj)))',          
 
@@ -121,9 +121,9 @@ def Excercises():
             'title': 'Know about related classes',
             'fileDirPath': 'static/py_excercises/20230213-PrototypeScript-RelatedClasses/0-prototype-related-classes.py',            
             
-            'homework': 'Use "relatedClasses(clas) function" to know the relations of a class.\n',
+            'homework': 'Use "relatedClasses(clas) function" to know the relations of a class. Method Resolution Order(__mro__) it denotes the way a programming language resolves a method or attribute.  MRO defines the order in which the base classes are searched when executing a method.\n',
 
-            'body': 'def relatedClasses(clas):\n    print(f"\\n----- analysis of {FR_BLUE}"classes related"{NO_COLOR} with class \"{FR_GREEN}{clas}{NO_COLOR}\" -----\\n")\n    for clas_rel in clas.__mro__:\n        print(f"{FR_GREEN}\\trelated clas --> {clas_rel}\\n")\n    print(f"{NO_COLOR}----- end analysis -----\\n")',          
+            'body': 'def relatedClasses(clas):\n\n\tprint(f"\\n----- analysis of {FR_BLUE}"classes related"{NO_COLOR} with class \"{FR_GREEN}{clas}{NO_COLOR}\" -----\\n")\n\n\tfor clas_rel in clas.__mro__:\n \t\tprint(f"{FR_GREEN}\\trelated clas --> {clas_rel}\\n")\n\n\tprint(f"{NO_COLOR}----- end analysis -----")',          
 
             'code_url':'../static/py_excercises/20230213-PrototypeScript-RelatedClasses/0-prototype-related-classes.py',
             'zip_url': '../static/py_excercises/20230213-PrototypeScript-RelatedClasses/20230213-PrototypeScript-RelatedClasses.zip',
@@ -141,7 +141,7 @@ def Excercises():
             
             'homework': 'Download the prototype scrip, MyFunc.py and MyColors.py.\n',
 
-            'body': 'Download the prototype script folder.',          
+            'body': 'OWN FUNCTIONS FOR:\n\t- see objects types, methods and attributes,\n\t- view objectS info in matrix form\n\t- time functions like pause\n\t- printing with colors options\n\t- decisions functions\n\t -use HELP native function\n\t- write in log files, like "comments log", "errors log", "sql msg"\n\t- OS most used functions\n\t- MODULES info',          
 
             'code_url':'../static/py_excercises/20230213-PrototypeScript/0-prototype.py',
             'zip_url': '../static/py_excercises/20230213-PrototypeScript/20230213-PrototypeScript.zip',
@@ -193,9 +193,9 @@ def Excercises():
             'title': 'Teacher example',
             'fileDirPath': 'static/py_excercises/20230221-strings/20230221-strings.py',            
             
-            'homework': '',
+            'homework': 'NEXT WEEK',
 
-            'body': '',          
+            'body': '====== NEXT WEEK ======',          
 
             'code_url':'../static/py_excercises/20230221-strings/20230221-strings.py',
             'zip_url': '../static/py_excercises/20230221-strings/20230221-strings.zip',
@@ -211,9 +211,9 @@ def Excercises():
             'title': 'String task page 33',
             'fileDirPath': 'static/py_excercises/20230222-strings-Page33/20230222-page-33.py',            
             
-            'homework': '',
+            'homework': 'NEXT WEEK',
 
-            'body': '',          
+            'body': '====== NEXT WEEK ======',          
 
             'code_url':'../static/py_excercises/20230222-strings-Page33/20230222-page-33.py',
             'zip_url': '../static/py_excercises/20230222-strings-Page33/20230222-strings-Page33.zip',
@@ -227,14 +227,14 @@ def Excercises():
             'source_url': '',
             'section': 'Encrypt a msg',
             'title': 'Get random alphabet to encrypt msg',
-            'fileDirPath': 'static/py_excercises/20230223-enigma-Random/20230223-enigma-random.py',            
+            'fileDirPath': 'static/py_excercises/20230223-enigma-Random/20230223-enigma-Random.py',            
             
-            'homework': 'Random suffle method to get messy alphabet',
+            'homework': 'Random suffle method to get messy alphabet, encode a message and decode after with this  messy alphab.',
 
-            'body': '',          
+            'body': '\t# create list of alphabet\n\tstring.ascii_lowercase "abcdefghijklmnopqrstuvwxyz"\n\talphab = list(string.ascii_lowercase)\n\told_alphab = list(string.ascii_lowercase)\n\tprint(frGREEN(f"{FR_YELL}Alphabet list{NO_COLOR}\\n{old_alphab}\\n"))\n\t# random.shuffle() to create new_alphab\n\trandom.shuffle(old_alphab)\n\tnew_alphab=old_alphab\n\tprint(frGREEN(f"{FR_GREEN}Messy alphabet list to encrypt{NO_COLOR}{new_alphab}\\n"))\n\tpause()',          
 
-            'code_url':'../static/py_excercises/20230223-enigma-Random/20230223-enigma-random.py',
-            'zip_url': '../static/py_excercises/20230223-enigma-Random/20230223-enigma-random.',
+            'code_url':'../static/py_excercises/20230223-enigma-Random/20230223-enigma-Random.py',
+            'zip_url': '../static/py_excercises/20230223-enigma-Random/20230223-enigma-Random.zip',
             'img': '/img/icons8-consola-100.png'    
         },
 
@@ -247,12 +247,12 @@ def Excercises():
             'title': 'Rotate alphabet twice to encrypt msg',
             'fileDirPath': 'static/py_excercises/20230223-enigma-Rotation/20230223-RotateAlphab-twice.py',            
             
-            'homework': 'Rotate with alphab[position:]  + alphab[:position] to get messy alphabet',
+            'homework': 'Rotate twice with alphab[position:]  + alphab[:position] to get messy alphabet',
 
-            'body': '../static/py_excercises/20230223-enigma-Rotation/20230223-enigma-Rotation.zip',          
+            'body': '# ask for position to rotate list\nposit1 = int(input("Position to obtain first alphab list rotation? "))\nalphab_01 = alphab[posit1:] + alphab[:posit1]\n\n# Printing list after left rotate\nprint (f"\\n{FR_YELL}First  alphabet after left rotate by {posit1}{NO_COLOR}\\n{str(alphab_01)}" )\n',          
 
             'code_url':'../static/py_excercises/20230223-enigma-Rotation/20230223-RotateAlphab-twice.py',
-            'zip_url': '--',
+            'zip_url': '../static/py_excercises/20230223-enigma-Rotation/20230223-RotateAlphab-twice.zip',
             'img': '/img/icons8-consola-100.png'    
         },
 
@@ -267,7 +267,7 @@ def Excercises():
             
             'homework': 'Working with paths, folders, files, .....',
 
-            'body': '',          
+            'body': '====== NEXT WEEK ======',          
 
             'code_url':'../static/py_excercises/20230227-OS-Examples/20230227-OS-Dir-Files-Example.py',
             'zip_url': '../static/py_excercises/20230227-OS-Examples/20230227-OS-examples.zip',
@@ -280,17 +280,36 @@ def Excercises():
             'date_created': '27-02-2023',
             'source_url': '',
             'section': 'OS module',
-            'title': 'Import from parallel folders',
+            'title': 'Import function in a script that is in a parallel folder.',
             'fileDirPath': 'static/py_excercises/20230227-OS-Examples-2/20230227-ImportModuleFromParallel_folder.py',            
             
-            'homework': 'Working with paths, folders, files, .....',
+            'homework': 'Import function in a script that is in a parallel folder.',
 
-            'body': '',          
+            'body': '====== NEXT WEEK ======',          
 
             'code_url':'../static/py_excercises/20230227-OS-Examples-2/20230227-ImportModuleFromParallel_folder.py',
             'zip_url': '../static/py_excercises/20230227-OS-Examples-2/',
             'img': '/img/icons8-consola-100.png'    
         },
+
+        {      
+            'id': 17, 
+            'author': 'Igg',
+            'date_created': '27-02-2023',
+            'source_url': '',
+            'section': 'OS module',
+            'title': 'Page 43-47',
+            'fileDirPath': 'static/py_excercises/20230227-page-43to47/20230227_Page43to47.py',            
+            
+            'homework': 'Working with paths, folders, files, .....',
+
+            'body': '===== NEXT WEEK =====',          
+
+            'code_url':'../static/py_excercises/20230227-page-43to47/20230227_Page43to47.py',
+            'zip_url': '../static/py_excercises/20230227-page-43to44/20230227_Page43to47.zip',
+            'img': '/img/icons8-consola-100.png'    
+        },
+        
 
         {      
             'id': 18, 
@@ -319,12 +338,12 @@ def Excercises():
             'title': 'Working with files',
             'fileDirPath': 'static/py_excercises/20230301-files_Read_write/20230301-WorkingWithFiles.py',            
             
-            'homework': '',
+            'homework': 'Read and write using OS methods',
 
-            'body': '',          
+            'body': '===== NEXT WEEK =====',          
 
             'code_url':'../static/py_excercises/20230301-files_Read_write/20230301-WorkingWithFiles.py',
-            'zip_url': '../static/py_excercises/20230301-files_Read_write/20230301-files_Read_write.zip',
+            'zip_url': '../static/py_excercises/20230301-files_Read_write/20230301-WorkingWithFiles.zip',
             'img': '/img/icons8-consola-100.png'    
         },
 
@@ -339,7 +358,7 @@ def Excercises():
             
             'homework': 'This example work with \"related classes\" for \"Sistema Nómina\"',
 
-            'body': '======= Calculando Nómina General ========\n\nCreate a file with class objects (Classes-Nomina.py). this file will be imported from main script.  ',          
+            'body': 'Use "relatedClasses(Comercial)" function to see relations of "Comercial" object with other objects in Classes_Nomina.py. .\n\nUML schema\n\nEmpleado(id, nombre, año_ncto, dir_resid, cargo)\n\t\t⇧\n\t\t|\n\t\t|\n\t\textends\nSalarioEmpleado  (+ salario)     -----> sistemaNominas\n\t\t⇧\n\t\t| calculo_nomina():float\n\t\t|\n\t\textends\n\t\t|\nComercial (+ comision_ventas)\n\t\t|   calculo_nomina(): float',          
 
             'code_url':'../static/py_excercises/20230308-classes-nominas/20230308-classes-nominas.py',
             'zip_url': '../static/py_excercises/20230308-classes-nominas/20230308-classes-nominas.zip',
@@ -349,23 +368,3 @@ def Excercises():
     ]
 
     return excercises
-
-"""
-        {      
-            'id': 17, 
-            'author': 'Igg',
-            'date_created': '27-02-2023',
-            'source_url': '',
-            'section': 'OS module',
-            'title': 'Page 43-44',
-            'fileDirPath': 'static/py_excercises/20230227-page-43to47/20230227_Page43to47.py',            
-            
-            'homework': '',
-
-            'body': '',          
-
-            'code_url':'../static/py_excercises/20230227-page-43to47/20230227_Page43to47.py',
-            'zip_url': '../static/py_excercises/20230227-page-43to44/20230227_Page43to47.zip',
-            'img': '/img/icons8-consola-100.png'    
-        },
-"""

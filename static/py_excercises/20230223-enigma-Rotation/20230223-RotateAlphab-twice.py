@@ -11,6 +11,10 @@ FR_YELL  = "\033[93m"
 FR_BLUE  = "\033[94m"
 FR_MAG   = "\033[95m"
 
+# pause function
+def pause():  
+  userInput = input(f"{FR_RED}Press ENTER to continue, or CTRL-C to exit{NO_COLOR}\n")  
+
 # create list of alphabet
 string.ascii_lowercase
 'abcdefghijklmnopqrstuvwxyz'
@@ -18,21 +22,22 @@ alphab = list(string.ascii_lowercase)
 print(f"{FR_YELL}\nORIGINAL ALPHABET LIST{NO_COLOR} (length: {len(alphab)})\n{alphab}\n")
 
 # position to rotate list
-posit = int(input("Position to make alphab list rotation ? "))
+posit1 = int(input("Position to obtain first alphab list rotation? "))
 
-# printing original list
-print (f"\n{FR_GREEN}Original alphabet{NO_COLOR}\n{str(alphab)}")
-
-alphab_01 = alphab[posit:] + alphab[:posit]
+alphab_01 = alphab[posit1:] + alphab[:posit1]
 # Printing list after left rotate
-print (f"\n{FR_YELL}First  alphabet after left rotate by {posit}{NO_COLOR}\n{str(alphab_01)}" )
+print (f"\n{FR_YELL}First  alphabet after left rotate by {posit1}{NO_COLOR}\n{str(alphab_01)}" )
 
-alphab_02 = alphab_01[posit:] + alphab_01[:posit]
+# position to rotate list
+posit2 = int(input("\nPosition to obtain second alphab list rotation ? "))
+
+alphab_02 = alphab_01[posit2:] + alphab_01[:posit2]
 # Printing list after left rotate
-print (f"{FR_YELL}Second alphabet after left rotate by {posit}{NO_COLOR}\n{str(alphab_02)}" )
+print (f"\n{FR_YELL}Second alphabet after left rotate by {posit2}{NO_COLOR}\n{str(alphab_02)}\n" )
+pause()
 
 # back to Original using slicing to right rotate by 3
-orig_alphab = alphab_01[-posit:] + alphab_01[:-posit]
+orig_alphab = alphab_01[-posit1:] + alphab_01[:-posit1]
  
 # Printing after right rotate
-print (f"\nAlphabet list after right inverse rotate (-{posit}) (back to original)\n{str(orig_alphab)}\n")
+print (f"\n{FR_GREEN}First rotated alphabet list after right inverse rotate (back to original){NO_COLOR}\n{str(orig_alphab)}\n")
