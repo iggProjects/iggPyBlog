@@ -2,6 +2,18 @@ def Articles():
     articles = [ 
 
         {
+            'id': 0,          
+            'title': 'Python Course experience.',   
+            'author': 'Igg',
+            'date_created': '20-04-2023',
+            'section': 'The experience',           
+            'summary': '',            
+            'body': '',
+            'page_url':'',
+            'icon-img': 'icons8-lectura-80.png'    
+        },
+
+        {
             'id': 1, 
             'title': 'Connect PythonAnywhere with GitHub.',            
             'author': 'Kev in Tech',
