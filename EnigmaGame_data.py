@@ -12,7 +12,7 @@ def Enigma_scripts():
             'title': 'Use of two or more CPUs within your PC',
             'fileDirPath': 'static/proj_enigmaGame_scripts/mpPool_Arith_Progres_Sum.py',  
             
-            'homework': 'Execute in a few seconds sums of 10,000 arithmetic progressions\n of 50,000 terms each.',
+            'homework': 'Execute in a few seconds the sum of the 50,000 terms\nof each of the 10,000 arithmetic progressions',
 
             'body': '................. Multiprocessing ....................\n\n============== DETAILS NEXT WEEK ==============\n\nFor now, you can execute in console button, or download the .zip (download button) and execute .bat file in your local "downloads folder".\n\nTIP: create a folder called "py_files" inside "downloads", and move the .zip to that folder. Extract the files and run the .bat (with double click).ºn\nNOTE: you must have python in the "path" of your pc, which you can check in "environment variables"',          
 
@@ -30,7 +30,7 @@ def Enigma_scripts():
             'title': 'Generate permutations of alphab of 15 chars',
             'fileDirPath': 'static/proj_enigmaGame_scripts/z-writePermut_15_File-v1.py',  
             
-            'homework': 'Create the file \'z-permutFileSorted.txt\' whichs contains 500.000 permutationss of the substr \'a b c d e g i l m n o p r s u\' of alphab with size 15 chars.',
+            'homework': 'Create the file \'z-permutFileSorted.txt\' whichs contains 500.000 permutationss\nof the substr \'a b c d e g i l m n o p r s u\' of alphab with size 15 chars.',
 
             'body': '................. Multiprocessing ....................\n\n============== DETAILS NEXT WEEK ==============\n\nFor now, you can execute in console button, or download the .zip (download button) and execute .bat file in your local "downloads folder".\n\nTIP: create a folder called "py_files" inside "downloads", and move the .zip to that folder. Extract the files and run the .bat (with double click).\n\nNOTE: you must have python in the "path" of your pc, which you can check in "environment variables"',          
 
