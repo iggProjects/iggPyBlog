@@ -13,8 +13,52 @@ STILL TO DO !
     example of data capture 
         text = subprocess.run(["cmd", "/c", "dir .."],capture_output=True)
         subprocess.run(["cmd", "/c", "01_LG-ExploracionMatrices.py"])
+    @app.route('/pythonScript/')
+    def ExecPythonScript():
+        from os import system
+        import subprocess
+
+        # parameter from JS
+        py_script_path = request.args['py_path']
+        
+        # clear screen
+        system('cls')
+        
+        # execution string windows
+        # exec_command = 'cmd /c \"python.exe ' + py_script_path + '\"'
+        # system(exec_command)
+
+        # call subprocess
+        subprocess.run(["cmd", "/c", "01_LG-ExploracionMatrices_copy.py"])
+        
+        return ""
+
+        2023-04-21 18:42:57,920: Exception on /pythonScript/ [GET]
+        Traceback (most recent call last):
+        File "/usr/local/lib/python3.10/site-packages/flask/app.py", line 2077, in wsgi_app
+            response = self.full_dispatch_request()
+        File "/usr/local/lib/python3.10/site-packages/flask/app.py", line 1525, in full_dispatch_request
+            rv = self.handle_user_exception(e)
+        File "/usr/local/lib/python3.10/site-packages/flask/app.py", line 1523, in full_dispatch_request
+            rv = self.dispatch_request()
+        File "/usr/local/lib/python3.10/site-packages/flask/app.py", line 1509, in dispatch_request
+            return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+        File "/home/iggWebNz/mysite/flask_app.py", line 260, in ExecPythonScript
+            subprocess.run(["cmd", "/c", "01_LG-ExploracionMatrices_copy.py"])
+        File "/usr/local/lib/python3.10/subprocess.py", line 501, in run
+            with Popen(*popenargs, **kwargs) as process:
+        File "/usr/local/lib/python3.10/subprocess.py", line 969, in __init__
+            self._execute_child(args, executable, preexec_fn, close_fds,
+        File "/usr/local/lib/python3.10/subprocess.py", line 1845, in _execute_child
+            raise child_exception_type(errno_num, err_msg, err_filename)
+        FileNotFoundError: [Errno 2] No such file or directory: 'cmd'
 
 
+
+
+
+
+==============================
 
 --- https://stackoverflow.com/questions/52835681/how-can-i-run-a-python-script-from-within-flask
 

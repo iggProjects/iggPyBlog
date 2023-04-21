@@ -10,7 +10,8 @@ from EnigmaGame_data import Enigma_scripts
 
 from flask_sqlalchemy import *
 import os
-from os import system
+#from os import system
+#import subprocess
 
 app = Flask(__name__)
 
@@ -248,14 +249,22 @@ def login():
 @app.route('/pythonScript/')
 def ExecPythonScript():
     from os import system
+    import subprocess
+    
     # parameter from JS
     py_script_path = request.args['py_path']
     #print(f"===> File path:\n\t{py_script_path}")
     # clear screen
     system('cls')
-    # execution string
-    exec_command = 'cmd /c \"python.exe ' + py_script_path + '\"'
-    system(exec_command)    
+    # execution string windows
+    # exec_command = 'cmd /c \"python.exe ' + py_script_path + '\"'
+    # system(exec_command) 
+    #    
+    # call subprocess
+    subprocess.run(["cmd", "/c", "python.exe", py_script_path])
+    # subprocess.run(["cmd", "/c", "python.exe", "01_LG-ExploracionMatrices_copy.py"])
+    # system('subprocess.run(["cmd", "/c", "python.exe", "01_LG-ExploracionMatrices_copy.py"])')
+    
     
     return ""    
 #
