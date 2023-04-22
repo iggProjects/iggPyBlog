@@ -1,0 +1,10 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+    <h1>SCRIPT RESULT FOR "{{py_name}}"</h1>
+    
+    {% for line in list_lines %}
+        <p>{{ line[1] }}</p>        
+    {% endfor %}
+
+{% endblock %}

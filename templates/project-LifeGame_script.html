@@ -10,7 +10,7 @@
                 <th style="width:30%"><span style="color:green">title</span><br><span style="color:rgb(163, 23, 2)">"{{lg_script.title}}"</span></a></th>                
                 <th style="width:30%"><span style="color:green">script name</span><br><span style="color:rgb(163, 23, 2)">"{{ lg_script.fileDirPath.split('/')[2] }}"</span></th>
                 <th style="width:10%"><a href="{{lg_script.code_url}}" target="_blank"><img class="myImg" onclick='' src="{{ url_for('static', filename='img/icons8-script-68.png') }}" title='code' alt="console-100" width="30"/></a></th>
-                <th style="width:10%"><a href="{{lg_script.zip_url}}" target="_blank"><img class="myImg" onclick='ExecPythonScript()' src="{{ url_for('static', filename='img/icons8-descargar-de-la-nube-100.png') }}" title='Download py script' alt="download-100" width="30"/></a></th>                              
+                <th style="width:10%"><a href="{{lg_script.zip_url}}" target="_blank"><img class="myImg" src="{{ url_for('static', filename='img/icons8-descargar-de-la-nube-100.png') }}" title='Download py script' alt="download-100" width="30"/></a></th>                              
                 <th style="width:10%; padding:10px;">
                     <img class="myImg" onclick="ExecPythonScript('{{lg_script.fileDirPath}}')" src="{{ url_for('static', filename='img/icons8-consola-100.png') }}" title='Run in command line console' alt="console-100" width="30"/>
                 </th>                

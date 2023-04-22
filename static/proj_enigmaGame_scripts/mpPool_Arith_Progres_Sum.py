@@ -84,7 +84,7 @@ if __name__ == '__main__':
 	print(f"\n{FR_GREEN}\tNumber of CPU for this multiprocessing task: {N_CPUS}{NO_COLOR}")
 	print(f"\n\tNumber of artihmetical progresions: {place_comma(N_PROGR)}\n\t\tfirst term: {ELEM_1}\n\t\tfirst 'd': {D_1}\n\t\tnumber of terms to include for each AP: {place_comma(N_TER)}\n")
 	
-	pause()	
+	# pause()	
 	# hora inicio
 	inicio = time.time()
 

@@ -269,7 +269,7 @@ def ExecPythonScript():
     # execution string windows
     # exec_command = 'cmd /c \"python.exe ' + py_script_path + '\"'
     # system(exec_command) 
- 
+    # 
         
     # call subprocess to exceute py_script_path
     subprocess.run(["cmd", "/c", "python.exe", py_script_path])    
@@ -297,52 +297,19 @@ def ExecPythonScript():
     #return render_template('result_script_exec.html/?list_lines=' + str(list_lines))
     return ""
 
-# https://stackoverflow.com/questions/37259740/passing-variables-from-flask-to-javascript
-# https://www.youtube.com/watch?v=CJ3XiQgjNE8
-# https://stackoverflow.com/questions/11178426/how-can-i-pass-data-from-flask-to-javascript-in-a-template
-
-
-@app.route('/result_script_exec/')
+@app.route('/result_script_exec')
 def result_script_exec():
     print(f"{FR_YELL}\n======> Entrando en result...{NO_COLOR}\n")
-    
-    import subprocess
 
-    # read path to script
-    py_script_path = request.args['py_path']
-    #print(f"py_path --> {py_script_path}")
-    py_list = py_script_path.split('/')
-    py_name = py_list[len(py_list)-1]
-    #print(f"py_list: {py_list} --- {py_name}")
+    #list_lines = list(request.args['list_lines'])	
+    list_lines=[1,2,3,4] 	
+    print(f"===> param list_lines: {list_lines}\n")
+    for line in list_lines:
+        print(f"{FR_GREEN}\t===> text_lines:{NO_COLOR} {line}")
+    print(f"{NO_COLOR}")   
 
-    # execute subprocess with script
-    text = subprocess.run(["cmd", "/c", "python.exe", py_script_path],capture_output=True)    
-    # text = subprocess.run(["cmd", "/c", "dir .."],capture_output=True)
-
-    print(f"\n\n{FR_YELL}===> text type: {type(text)}{NO_COLOR}")
-    list_b_lines = text.stdout.splitlines()
-    list_text_color = []    
-    #lines_colors = []
-    for line in list_b_lines:
-        print(f"line to print: {line}")
-        #new_line = "<p>" + str(line) + "</p>"
-        line = str(line)
-        color = "blue"
-        list = [color,line]
-        
-        #new_line = new_line.replace('\\t','')
-        #new_line = new_line.replace('b\'','')
-        #new_line = new_line.replace('x1b[91m','<span style="color:red;">')
-        #new_line = new_line.replace('\\x1b[00m','<\span>')
-        list_text_color.append(list)        
-
-        # TypeError: a bytes-like object is required, not 'str'
-        print(f"new_line formatted => {list}")
-
-    #print(f"\n\n{FR_YELL}===> text_lines type: {type(list_lines)}{NO_COLOR}")
-    
     print(f"{FR_YELL}======> Saliendo de  result...{NO_COLOR}\n") 
-    return render_template('result_script_exec.html',list_lines=list_text_color,py_name=py_name)
+    return render_template('result_script_exec.html',list_lines=list_lines)
 
 
 

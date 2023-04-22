@@ -27,7 +27,7 @@ if __name__ == "__main__":
     print(frGREEN("\n---------- main ----------\n"))
 
     print(frGREEN("\n---------- using CONTANTS ----------\n"))
-    pause()
+    # pause()
     colors= [FR_RED,FR_GREEN,FR_YELL,FR_BLUE,FR_MAG]
     colors_str=['\\033[91m - Red','\\033[92m - Green','\\033[93m - Yellow','\\033[94m - Blue','\\033[95m - Magenta']
     
@@ -44,8 +44,8 @@ if __name__ == "__main__":
 
     msg="\tprint with function pfRed() --> TESTING COLOR FUNCTION"
     print(frGREEN("\n---------- using function prRed(msg) ----------\n"))
-    pause()
-    prYellow(msg)   
+    # pause()
+    prRed(msg)   
     
     print(f"\n{FR_GREEN}---------- That's all for today 👌 ----------{NO_COLOR}\n")
     
@@ -68,7 +68,7 @@ if __name__ == "__main__":
             _what_var
             _my_Obj_name = eval(_what_var)
             print(f"\n{FR_GREEN}---------- INFO FOR OBJECT '{_my_Obj_name}' ----------{NO_COLOR}\n")
-            pause()
+            # pause()
             # my objects functions  
             mostrar(_my_Obj_name)       
 
@@ -84,4 +84,4 @@ if __name__ == "__main__":
 else:
     # something wrong
     print(frRED("\n---- upsssssssss something is wrong 😢😢  ----\n"))
-    pause()
+    # pause()

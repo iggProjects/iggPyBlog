@@ -2,6 +2,8 @@ BITAKORA
 
 STILL TO DO !
 
+--- https://stackoverflow.com/questions/24251898/flask-app-update-progress-bar-while-function-runs
+
 --- Just use subprocess (https://docs.python.org/3/library/subprocess.html) 
 --- to run a Python binary that exists in your account.  Glenn Jones glenn@pythonanywhere.com
 --- https://realpython.com/python-subprocess/
