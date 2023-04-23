@@ -1,11 +1,19 @@
-
 """  
-THIS SCRIPT IS FOR PRINTING WITH COLORS
+THIS SCRIPT IS FOR..................
 
 """
+#
 # IMPORT SECTION
+#
+
+import os
+import platform
+
+#  my own functions
 from MyFunc import *
+# my colors functions&contants,
 from MyColors import *
+# from colorama import Fore, Back, Style
 from os import  system
 
 # CONSTANTS
@@ -18,43 +26,44 @@ FR_BLUE  = "\033[94m"
 FR_MAG   = "\033[95m"
 
 #
-# ---------- MAIN ----------
+# ---------- COURSE EXCERCISE ----------
 #
 
 if __name__ == "__main__":
-
+    #print(f"\n{Fore.RED}---------- main ----------{Style.RESET_ALL}\n")
     system('cls')
-    print(frGREEN("\n---------- main ----------\n"))
-
-    print(frGREEN("\n---------- using CONTANTS ----------\n"))
+    print(f"\n{FR_GREEN}---------- main ----------{NO_COLOR}\n")
     pause()
-    colors= [FR_RED,FR_GREEN,FR_YELL,FR_BLUE,FR_MAG]
-    colors_str=['\\033[91m - Red','\\033[92m - Green','\\033[93m - Yellow','\\033[94m - Blue','\\033[95m - Magenta']
-    
-    i=0
-    for color in colors:
-        color_str = color
-        msg="--> TESTING COLOR FUNCTION"
-        #print("FR_RED value: " + colors_str[0])
-        print("\tPrint with ascii " + colors_str[i] + f":\t{color}{msg}{NO_COLOR}") 
-        i+=1   
 
-    msg="print with default color\t\t--> TESTING COLOR FUNCTION"
-    print(f"\t{msg}")    
+    # my code    
+    myPath = os.getcwd()
+    f = []
+    for (dirpath, dirnames, filenames) in os.walk(myPath):
+        f.extend(filenames)
+        break
+    print(f"{FR_GREEN}path -->{NO_COLOR} {myPath}\n")
+    matrix_view(f,3)
+    print(f"\n------------------------------------------------\n")
 
-    msg="\tprint with function pfRed() --> TESTING COLOR FUNCTION"
-    print(frGREEN("\n---------- using function prRed(msg) ----------\n"))
+    parent = os.chdir('../')
+    parentPath = os.getcwd()
+    print(f"{FR_GREEN}parent path -->{NO_COLOR} {parentPath}\n")
+    f = []
+    for (dirpath, dirnames, filenames) in os.walk(parentPath):
+        f.extend(filenames)
+        break
+    matrix_view(f,3)
+    print(f"\n------------------------------------------------\n")
+
+    # Library methods info 
     pause()
-    prRed(msg)   
-    
-    print(f"\n{FR_GREEN}---------- That's all for today 👌 ----------{NO_COLOR}\n")
-    
-
+    library_methods(os)
+    pause()
+    library_methods(platform)
+   
     # ------------------------------------------------
-    #           ASKING FOR SHOW VARS INFO 
-    #------------------------------------------------- 
-    """
-    # with Y_N_2 function
+    #          SHOW VARS CHARACTERISTICS 
+    #------------------------------------------------ 
     yesss=True   
     while yesss:
         _msg = "Do you want to see attributes for a specific VAR ? (Y,N): "
@@ -67,8 +76,9 @@ if __name__ == "__main__":
         try: 
             _what_var
             _my_Obj_name = eval(_what_var)
+    
             print(f"\n{FR_GREEN}---------- INFO FOR OBJECT '{_my_Obj_name}' ----------{NO_COLOR}\n")
-            # pause()
+            pause()
             # my objects functions  
             mostrar(_my_Obj_name)       
 
@@ -79,9 +89,10 @@ if __name__ == "__main__":
 
     else:
         print(f"\n{FR_GREEN}---------- That's all for today 👌 ----------{NO_COLOR}\n")
-    """
 
 else:
     # something wrong
-    print(frRED("\n---- upsssssssss something is wrong 😢😢  ----\n"))
-    # pause()
+    print(f"\n{FR_RED}---- upsssssssss something is wrong 😢😢  ---{NO_COLOR}\n")
+    pause()
+
+pause()    

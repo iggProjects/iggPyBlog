@@ -1,0 +1,34 @@
+{% extends 'layout.html' %}
+
+
+{% block body %}
+    <script>        
+        var my_list_lines = [1,2];
+        /*var my_name = {{py_name|tojson}};*/
+        console.log('list_lines ===>  ' + my_list_lines)
+
+        function div_lines() {
+            var html=""
+            var html_lines = {{list_lines}}
+            console.log('html_lines ===> ' + html_lines)
+        }
+
+    </script>    
+
+    <h1 style= "font-size:25px;">SCRIPT RESULT FOR "{{py_name}}"</h1>
+    <div class="disp-cols-cent" style=" max-height:75vh; padding: 20px; border:10px solid rgb(182, 111, 249); border-radius: 10px;">
+    {% for line in list_lines %}
+        <p style='color:{{line[0]}}' onclick='alert("{{line[0]}}")'>{{ line[1] }}</p>        
+    {% endfor %}
+    </div>
+    <button style="margin-top:20px;" onclick='var my_list_lines = {{list_lines}};alert("my_name ===>  " + my_list_lines)'>See Data </button>
+    <button style="margin-top:20px;" onclick="div_lines()">See Lines</button>
+
+    <div id="result"></div>
+
+
+
+{% endblock %}
+
+
+

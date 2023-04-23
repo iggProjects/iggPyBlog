@@ -11,7 +11,8 @@ def Excercises():
             'source_url': '',
             'section': 'Prototype Script',
             'title': 'Colors Function',
-            'fileDirPath': 'static/py_excercises/20230213-PrototypeScript-colors/0-prototype-colors.py',           
+            'fileDirPath': 'static/py_excercises/20230213-PrototypeScript-colors/0-prototype-colors.py',
+            'fileDirPath1': 'static/py_excercises/20230213-PrototypeScript-colors/0-prototype-colors1.py',
             
             'homework': 'Use colors for print. Printing with style is a good practice. Go ahead with some ideas.',
             
@@ -30,6 +31,7 @@ def Excercises():
             'section': 'Prototype Script',
             'title': 'Pause Function',
             'fileDirPath': 'static/py_excercises/20230213-PrototypeScript-PauseFunc/0-prototype-pause.py',            
+            'fileDirPath1': 'static/py_excercises/20230213-PrototypeScript-PauseFunc/0-prototype-pause1.py',            
             
             'homework': 'Use "pause() function" to ask what to do after.',
 
@@ -48,6 +50,7 @@ def Excercises():
             'section': 'Prototype Script',
             'title': 'Show Object Attributes',
             'fileDirPath': 'static/py_excercises/20230213-PrototypeScript-MostrarObject/0-prototype-mostrar-obj.py',            
+            'fileDirPath1': 'static/py_excercises/20230213-PrototypeScript-MostrarObject/0-prototype-mostrar-obj1.py',            
             
             'homework': 'Use "mostrar(obj) function" to know properties and methods of some variables of interest used in your script.',
 
@@ -66,6 +69,7 @@ def Excercises():
             'section': 'Prototype Script',
             'title': 'Print Lists or Tuples in matrix form',
             'fileDirPath': 'static/py_excercises/20230213-PrototypeScript-MatrixView/0-prototype-matrix-view.py',            
+            'fileDirPath1': 'static/py_excercises/20230213-PrototypeScript-MatrixView/0-prototype-matrix-view1.py',            
             
             'homework': 'Use "matrix_view(obj_l_t,n_cols) function" to print the elements of a list o tuple in matrix form.\n',
 
@@ -84,6 +88,7 @@ def Excercises():
             'section': 'Prototype Script',
             'title': 'Print Module Methods',
             'fileDirPath': 'static/py_excercises/20230213-PrototypeScript-ModuleMethods/0-prototype-mod-methods.py',            
+            'fileDirPath1': 'static/py_excercises/20230213-PrototypeScript-ModuleMethods/0-prototype-mod-methods1.py',            
             
             'homework': 'Use "library_methods(my_lib) function" to print the methods of a library.\n',
 
@@ -102,6 +107,7 @@ def Excercises():
             'section': 'Prototype Script',
             'title': 'Print Help',
             'fileDirPath': 'static/py_excercises/20230213-PrototypeScript-HelpObj/0-prototype-help.py',            
+            'fileDirPath1': 'static/py_excercises/20230213-PrototypeScript-HelpObj/0-prototype-help1.py',            
             
             'homework': 'Use "help_obj_method(obj) function" to call help option for a specific object. The Python help() function invokes the interactive built-in help system. If the argument is a string, then the string is treated as the name of a module, function, class, keyword, or documentation topic, and a help page is printed on the console. If the argument is any other kind of object, a help page on the object is displayed.\n',
 
@@ -120,6 +126,7 @@ def Excercises():
             'section': 'Prototype Script',
             'title': 'Know about related classes',
             'fileDirPath': 'static/py_excercises/20230213-PrototypeScript-RelatedClasses/0-prototype-related-classes.py',            
+            'fileDirPath1': 'static/py_excercises/20230213-PrototypeScript-RelatedClasses/0-prototype-related-classes1.py',
             
             'homework': 'Use "relatedClasses(clas) function" to know the relations of a class. Method Resolution Order(__mro__) it denotes the way a programming language resolves a method or attribute.  MRO defines the order in which the base classes are searched when executing a method.\n',
 
@@ -138,6 +145,7 @@ def Excercises():
             'section': 'Prototype Script',
             'title': 'MyFunc.py imported by 0-prototype.py',
             'fileDirPath': 'static/py_excercises/20230213-PrototypeScript/0-prototype.py',            
+            'fileDirPath1': 'static/py_excercises/20230213-PrototypeScript/0-prototype1.py',            
             
             'homework': 'Download the prototype scrip, MyFunc.py and MyColors.py.\n',
 
@@ -156,6 +164,7 @@ def Excercises():
             'section': 'Random Methods',
             'title': 'An experiment !',
             'fileDirPath': 'static/py_excercises/20230215-random-func/20230215-random_choice_experiment.py',            
+            'fileDirPath1': 'static/py_excercises/20230215-random-func/20230215-random_choice_experiment1.py',            
             
             'homework': 'A short experiment to check behavior of random  built-in unction.\n',
 
@@ -174,6 +183,7 @@ def Excercises():
             'section': 'Input example',
             'title': 'Controling data type in input process',
             'fileDirPath': 'static/py_excercises/20230220-input/20230220-InputTrabajadores.py',            
+            'fileDirPath1': 'static/py_excercises/20230220-input/20230220-InputTrabajadores1.py',            
             
             'homework': 'A simple input process with \"try -- except\" rules to control data type is correct. For example, see \"input_worker_age()\" function...',
 
@@ -192,6 +202,7 @@ def Excercises():
             'section': 'String methods',
             'title': 'Teacher example',
             'fileDirPath': 'static/py_excercises/20230221-strings/20230221-strings.py',            
+            'fileDirPath1': 'static/py_excercises/20230221-strings/20230221-strings1.py',            
             
             'homework': 'NEXT WEEK',
 
@@ -210,6 +221,7 @@ def Excercises():
             'section': 'String methods',
             'title': 'String task page 33',
             'fileDirPath': 'static/py_excercises/20230222-strings-Page33/20230222-page-33.py',            
+            'fileDirPath1': 'static/py_excercises/20230222-strings-Page33/20230222-page-331.py',            
             
             'homework': 'NEXT WEEK',
 
@@ -228,6 +240,7 @@ def Excercises():
             'section': 'Encrypt a msg',
             'title': 'Get random alphabet to encrypt msg',
             'fileDirPath': 'static/py_excercises/20230223-enigma-Random/20230223-enigma-Random.py',            
+            'fileDirPath1': 'static/py_excercises/20230223-enigma-Random/20230223-enigma-Random1.py',            
             
             'homework': 'Random suffle method to get messy alphabet, encode a message and decode after with this  messy alphab.',
 
@@ -246,6 +259,7 @@ def Excercises():
             'section': 'Encrypt a msg',
             'title': 'Rotate alphabet twice to encrypt msg',
             'fileDirPath': 'static/py_excercises/20230223-enigma-Rotation/20230223-RotateAlphab-twice.py',            
+            'fileDirPath1': 'static/py_excercises/20230223-enigma-Rotation/20230223-RotateAlphab-twice1.py',            
             
             'homework': 'Rotate twice with alphab[position:]  + alphab[:position] to get messy alphabet',
 
@@ -264,6 +278,7 @@ def Excercises():
             'section': 'OS module',
             'title': 'OS methods',
             'fileDirPath': 'static/py_excercises/20230227-OS-Examples/20230227-OS-Dir-Files-Example.py',            
+            'fileDirPath1': 'static/py_excercises/20230227-OS-Examples/20230227-OS-Dir-Files-Example1.py',            
             
             'homework': 'Working with paths, folders, files, .....',
 
@@ -282,6 +297,7 @@ def Excercises():
             'section': 'OS module',
             'title': 'Import function in a script that is in a parallel folder.',
             'fileDirPath': 'static/py_excercises/20230227-OS-Examples-2/20230227-ImportModuleFromParallel_folder.py',            
+            'fileDirPath1': 'static/py_excercises/20230227-OS-Examples-2/20230227-ImportModuleFromParallel_folder1.py',            
             
             'homework': 'Import function in a script that is in a parallel folder.',
 
@@ -300,6 +316,7 @@ def Excercises():
             'section': 'OS module',
             'title': 'Page 43-47',
             'fileDirPath': 'static/py_excercises/20230227-page-43to47/20230227_Page43to47.py',            
+            'fileDirPath1': 'static/py_excercises/20230227-page-43to47/20230227_Page43to471.py',            
             
             'homework': 'Working with paths, folders, files, .....',
 
@@ -319,6 +336,7 @@ def Excercises():
             'section': 'OS module',
             'title': 'Delete repeated lines in file and sort',
             'fileDirPath': 'static/py_excercises/20230301-DelRepeatedLinesAndSort/20230301-DelRepeatedLinesAndSort.py',            
+            'fileDirPath1': 'static/py_excercises/20230301-DelRepeatedLinesAndSort/20230301-DelRepeatedLinesAndSort1.py',            
             
             'homework': 'Use SET to read a file and after delete repeated lines and sort the set to write in new file.',
 
@@ -337,6 +355,7 @@ def Excercises():
             'section': 'OS module',
             'title': 'Working with files',
             'fileDirPath': 'static/py_excercises/20230301-files_Read_write/20230301-WorkingWithFiles.py',            
+            'fileDirPath1': 'static/py_excercises/20230301-files_Read_write/20230301-WorkingWithFiles1.py',            
             
             'homework': 'Read and write using OS methods',
 
@@ -355,6 +374,7 @@ def Excercises():
             'section': 'Working with Classes',
             'title': '\"Nominas\" Class as example',
             'fileDirPath': 'static/py_excercises/20230308-classes-nominas/20230308-classes-Nominas.py',            
+            'fileDirPath1': 'static/py_excercises/20230308-classes-nominas/20230308-classes-Nominas1.py',            
             
             'homework': 'This example work with \"related classes\" for \"Sistema Nómina\"',
 

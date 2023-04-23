@@ -67,13 +67,12 @@ def Y_N_2(msg):
 def matrix_view(obj_l_t,n_cols):
   if 'list' in str(type(obj_l_t)) or 'tuple' in str(type(obj_l_t)):  # cambiar la pregunta
     import math
-    matrix_rows=math.ceil(len(obj_l_t)/n_cols)
-    lines=[]
+    matrix_rows=math.ceil(len(obj_l_t)/n_cols)    
     line=[]
     i=0
     for i in  range(matrix_rows):    
       for j in range(n_cols):
-        if i*n_cols+j<len(obj_l_t):
+        if i*n_cols+j<len(obj_l_t):          
           line.append(obj_l_t[i*n_cols+j])
       print(f"line: {i+1} --> {line}")
       line=[]  
@@ -89,7 +88,7 @@ def matrix_view(obj_l_t,n_cols):
 def library_methods(my_lib):
   for method in dir(my_lib):
     LIB_method  = method
-    print(f"{FR_GREEN}{str(my_lib)}.method --> {NO_COLOR}{LIB_method}")
+    print(f"{str(my_lib)}.method --> {LIB_method}")
   print()  
 
 #

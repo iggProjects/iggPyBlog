@@ -306,7 +306,8 @@ def ExecPythonScript():
 def result_script_exec():
     print(f"{FR_YELL}\n======> Entrando en result...{NO_COLOR}\n")
     
-    import subprocess
+    import subprocess, json
+
 
     # read path to script
     py_script_path = request.args['py_path']
@@ -327,7 +328,7 @@ def result_script_exec():
         #new_line = "<p>" + str(line) + "</p>"
         new_line = str(line)
         color = "black"
-        if new_line == 'b\'\\x0c\\x1b[92m\'' or new_line == 'b\' \\x1b[00m\'' or new_line == 'b\'\\x1b[92m\'' or ('pause()' in new_line): 
+        if new_line == 'b\'\\x0c\\x1b[92m\'' or new_line == 'b\' \\x1b[00m\'' or new_line == 'b\'\\x1b[92m\'': 
             pass    
         else: 
             new_line = new_line.replace('b\'','')
@@ -336,7 +337,7 @@ def result_script_exec():
             new_line = new_line.replace('\\x1b[00m','')
             #new_line = new_line.replace('\\t','&nbsp;&nbsp;&nbsp;')
             new_line = new_line.replace('\\t','')
-            new_line = new_line.replace('-->','')
+            #new_line = new_line.replace('-->','')
             if '\\x1b[91m' in new_line:
                 new_line = new_line.replace('\\x1b[91m','')
                 color = "red;"
@@ -358,16 +359,13 @@ def result_script_exec():
             print(f"line to print: {new_line}")
 
             list = [color,new_line]
-            list_text_color.append(list)        
-
-        # TypeError: a bytes-like object is required, not 'str'
+            list_text_color.append(list) 
+            
             print(f"new_line formatted => {list}")
-
-    #print(f"\n\n{FR_YELL}===> text_lines type: {type(list_lines)}{NO_COLOR}")
     
     print(f"{FR_YELL}======> Saliendo de  result...{NO_COLOR}\n") 
-    return render_template('result_script_exec.html',list_lines=list_text_color,py_name=py_name)
 
+    return render_template('result_script_exec.html',list_lines=list_text_color,py_name=py_name)
 
 
 #

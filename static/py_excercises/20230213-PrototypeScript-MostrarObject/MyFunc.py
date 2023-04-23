@@ -19,14 +19,13 @@ from MyColors import *
 
 #
 # COLORS CONSTANTS
-#
-"""
-# FOREGORUND CONSTANTS AS TEXT
-FG_WH_TXT = "\033[00m"
-FR_GREEN = "\033[92m"
-FR_RED   = "\033[91m"
+# Colors
 NO_COLOR = "\033[00m"
-"""
+FR_RED   = "\033[91m"
+FR_GREEN = "\033[92m"
+FR_YELL  = "\033[93m"
+FR_BLUE  = "\033[94m"
+FR_MAG   = "\033[95m"
 
 #
 # TIME FUNCTIONS
@@ -112,7 +111,7 @@ def mostrar(obj):
   print(f"Object assigned attributes and methods are:\n")
   matrix_view(attr_meth,8)
   print()
-  prBG("-----------------END MOSTRAR OBJECT TYPE AND ATTRIB-METHODS-----------------",17)    
+  print(f"{FR_MAG}-----------------END MOSTRAR OBJECT TYPE AND ATTRIB-METHODS-----------------{NO_COLOR}")    
   print()
   
 # Show elements looking at dir(obj)
