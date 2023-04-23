@@ -324,20 +324,44 @@ def result_script_exec():
     list_text_color = []    
     #lines_colors = []
     for line in list_b_lines:
-        print(f"line to print: {line}")
         #new_line = "<p>" + str(line) + "</p>"
-        line = str(line)
-        color = "blue"
-        list = [color,line]
-        
-        #new_line = new_line.replace('\\t','')
-        #new_line = new_line.replace('b\'','')
-        #new_line = new_line.replace('x1b[91m','<span style="color:red;">')
-        #new_line = new_line.replace('\\x1b[00m','<\span>')
-        list_text_color.append(list)        
+        new_line = str(line)
+        color = "black"
+        if new_line == 'b\'\\x0c\\x1b[92m\'' or new_line == 'b\' \\x1b[00m\'' or new_line == 'b\'\\x1b[92m\'' or ('pause()' in new_line): 
+            pass    
+        else: 
+            new_line = new_line.replace('b\'','')
+            new_line = new_line.replace(new_line[len(new_line)-1],'')
+            new_line = new_line.replace('\\n','<br>')
+            new_line = new_line.replace('\\x1b[00m','')
+            #new_line = new_line.replace('\\t','&nbsp;&nbsp;&nbsp;')
+            new_line = new_line.replace('\\t','')
+            new_line = new_line.replace('-->','')
+            if '\\x1b[91m' in new_line:
+                new_line = new_line.replace('\\x1b[91m','')
+                color = "red;"
+            elif '\\x1b[92m' in new_line:
+                new_line = new_line.replace('\\x1b[92m','')
+                color= "green;" 
+            elif '\\x1b[93m' in new_line:
+                new_line = new_line.replace('\\x1b[93m','')
+                color= "yellow;" 
+            elif '\\x1b[94m' in new_line:
+                new_line = new_line.replace('\\x1b[94m','')
+                color= "blue;"
+            elif '\\x1b[95m' in new_line:
+                new_line = new_line.replace('\\x1b[95m','')
+                color= "magenta;"
+            else:
+                pass
+
+            print(f"line to print: {new_line}")
+
+            list = [color,new_line]
+            list_text_color.append(list)        
 
         # TypeError: a bytes-like object is required, not 'str'
-        print(f"new_line formatted => {list}")
+            print(f"new_line formatted => {list}")
 
     #print(f"\n\n{FR_YELL}===> text_lines type: {type(list_lines)}{NO_COLOR}")
     
