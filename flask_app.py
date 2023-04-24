@@ -307,7 +307,7 @@ def result_script_exec():
     print(f"{FR_YELL}\n======> Entrando en result...{NO_COLOR}\n")
     
     import subprocess, json
-
+    from flask import Markup   
 
     # read path to script
     py_script_path = request.args['py_path']
@@ -344,9 +344,9 @@ def result_script_exec():
                 new_line= new_line[2:]
             new_line = new_line.replace(new_line[len(new_line)-1],'')
             #new_line = new_line.replace('\\n','')
-            #new_line = new_line.replace('\\n','<br>')
+            new_line = new_line.replace('\\n','<br>')
             new_line = new_line.replace('\\x1b[00m','')
-            new_line = new_line.replace('\\t','>>>')
+            new_line = new_line.replace('\\t','&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;')
             new_line = new_line.replace('\\t','>>>')
             new_line = new_line.replace('-->','==>')
             if '\\x1b[91m' in new_line:
@@ -368,7 +368,7 @@ def result_script_exec():
                 pass
 
             print(f"line to print: {new_line}")
-
+            new_line=Markup(new_line)
             list = [color,new_line]
             list_text_color.append(list) 
             
