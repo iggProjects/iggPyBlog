@@ -24,8 +24,8 @@ FR_MAG   = "\033[95m"
 if __name__ == "__main__":
 
 
-    print("\n---------- main ----------\n")
-    print("\n--------------- display the relations of class 'Comercial' --------------\n")
+    print("---------- main ----------")
+    print("--------------- display the relations of class 'Comercial' --------------")
     
 
     #  Class Hierarchies
@@ -33,7 +33,8 @@ if __name__ == "__main__":
         def calculo_nomina(self, empleados):
             for empleado in empleados:
                 nomina_emp = '{:,.2f}'.format(empleado.calculo_nomina()).replace(',','.')
-                print(f"{FR_GREEN}\t{empleado.nombre} ({empleado.id}) | cargo '{empleado.cargo}'{NO_COLOR}\n\t\tpago: {nomina_emp} €\n")            
+                print(f"{FR_GREEN}\t{empleado.nombre} ({empleado.id}) | cargo '{empleado.cargo}'{NO_COLOR}")
+                print(f"\t\tpago: {nomina_emp} €")            
 
     class Empleado:    
         def __init__(self, id, nombre, año_ncto, dir_resid, cargo):
@@ -56,9 +57,9 @@ if __name__ == "__main__":
 
     relatedClasses(Comercial)
 
-    print(f"\n{FR_GREEN}---------- That's all for today ----------{NO_COLOR}\n")
+    print(f"{FR_GREEN}---------- That's all for today ----------{NO_COLOR}")
 
 else:
     # something wrong
-    print(frRED("\n---- upsssssssss something is wrong ----\n"))
+    print(frRED("---- upsssssssss something is wrong ----"))
     

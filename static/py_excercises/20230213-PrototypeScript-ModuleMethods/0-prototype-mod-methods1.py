@@ -34,5 +34,5 @@ if __name__ == "__main__":
 
 else:
     # something wrong
-    print("\n---- upsssssssss something is wrong  ----\n")
+    print("---- upsssssssss something is wrong  ----")
     

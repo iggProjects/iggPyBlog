@@ -25,16 +25,16 @@ if __name__ == "__main__":
 
     system('cls')
 
-    print(frGREEN("\n---------- main ----------\n"))
-    print(frGREEN("\n--------------- pause() called --------------\n"))
+    print(frGREEN("---------- main ----------"))
+    print(frGREEN("--------------- pause() called --------------"))
 
-    msg="------- EXIT PAUSE FUNCTION COMPLETED -------\n"
+    msg="------- EXIT PAUSE FUNCTION COMPLETED -------"
     prGreen(msg)   
 
-    print(f"\n{FR_GREEN}---------- That's all for today 👌 ----------{NO_COLOR}\n")
+    print(f"{FR_GREEN}---------- That's all for today ----------{NO_COLOR}")
 
 
 else:
     # something wrong
-    print(frRED("\n---- upsssssssss something is wrong 😢😢  ----\n"))
+    print(frRED("---- upsssssssss something is wrong ----"))
     pause()

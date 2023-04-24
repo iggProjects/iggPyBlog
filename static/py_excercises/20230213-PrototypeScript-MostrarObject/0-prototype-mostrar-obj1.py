@@ -30,22 +30,22 @@ def matrix_view(obj_l_t,n_cols):
       print(f"line: {i+1} --> {line}")
       line=[]  
   else:
-    print("\nWarning FROM matrix_view(): Object '{obj_l_t}' in not  list neither tupla !\n" ) 
+    print("Warning FROM matrix_view(): Object '{obj_l_t}' in not  list neither tupla !" ) 
 
 # Show attributes and methods avalaible for "obj"
 def mostrar(obj):      
 
   if 'list' in str(type(obj)) or 'tuple' in str(type(obj)):
-    print(f"Object elements view in matrix form (8 columns by row)\n")
+    print(f"Object elements view in matrix form (8 columns by row)")
     matrix_view(obj,4)
 
   # obj type and mem dir
-  print(f"Object type is {type(obj)} and mem dir is: {id(obj)}\n")
+  print(f"Object type is {type(obj)} and mem dir is: {id(obj)}")
   # obj attributes
   # attributes = [attr for attr in dir(obj) if not attr.startswith('__')]
   attr_meth = [attr for attr in dir(obj)]
   # print attributes and methods in matrix form
-  print(f"Object assigned attributes and methods are:\n")
+  print(f"Object assigned attributes and methods are:")
   matrix_view(attr_meth,8)
   print()
   print("-----------------END MOSTRAR OBJECT TYPE AND ATTRIB-METHODS-----------------")    
@@ -60,18 +60,18 @@ if __name__ == "__main__":
 
     #system('cls')
 
-    print(f"\n{FR_GREEN}---------- main ----------\n")
-    print(f"\n{FR_BLUE}--------------- Show Object Info --------------\n")
+    print(f"{FR_GREEN}---------- main ----------")
+    print(f"{FR_BLUE}--------------- Show Object Info --------------")
     
-    print("colors_str = ['\\033[91m - Red','\\033[92m - Green','\\033[93m - Yellow','\\033[94m - Blue','\\033[95m - Magenta']\n")
-    print("print colors_str attributes\n")
+    print("colors_str = ['\\033[91m - Red','\\033[92m - Green','\\033[93m - Yellow','\\033[94m - Blue','\\033[95m - Magenta']")
+    print("print colors_str attributes")
     colors_str=['\\033[91m - Red','\\033[92m - Green','\\033[93m - Yellow','\\033[94m - Blue','\\033[95m - Magenta']
     mostrar(colors_str)            
 
-    print(f"\n{FR_GREEN}---------- That's all for today ----------{NO_COLOR}\n")
+    print(f"{FR_GREEN}---------- That's all for today ----------{NO_COLOR}")
 
     
 else:
     # something wrong
-    print("\n---- upsssssssss something is wrong  ----\n")
+    print("---- upsssssssss something is wrong  ----")
     

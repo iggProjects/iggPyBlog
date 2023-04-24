@@ -48,8 +48,8 @@ nombre, apellido = nombre_completo.split("#")
 print(type(nombre), type(apellido))
 pause()
 
-# multi-linea con \n
-print("programazioan\ngustatzen\nzait")
+# multi-linea con 
+print("programazioangustatzenzait")
 # substring
 print(texto[13:22])
 # los primeros 10 caracteres
@@ -205,7 +205,7 @@ for email in emails:
   if dominio not in dominios:
     dominios.append(dominio)
 
-print(f"\ndominios -> {dominios}\n")
+print(f"dominios -> {dominios}")
 
 # con los nombres, generar un texto en format CSV con nuevos correos e.g maria@nazaret.eus,jon@nazaret.eus,david@nazaret.eus
 
@@ -217,4 +217,4 @@ for nombre in nombres:
   correos.append(correo)
 
 texto = ",".join(correos)
-print(f"texto \n")
+print(f"texto: {texto}")

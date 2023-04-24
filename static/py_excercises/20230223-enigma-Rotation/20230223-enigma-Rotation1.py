@@ -23,7 +23,7 @@ FR_MAG   = "\033[95m"
 def Y_N(msg):
     global moreData    
     ans=str(input(msg))
-    print(f"\t\tAnswer -> {ans}\n")  
+    print(f"\t\tAnswer -> {ans}")  
     if ans == 'N':                        
         moreData=False
     elif ans == 'Y':                                
@@ -62,7 +62,7 @@ def decipher(text,alphab1,alphab2):
 if __name__ == "__main__":
 
     system('cls')
-    print(frGREEN("\n---------- main ----------\n"))
+    print(frGREEN("---------- main ----------"))
     pause()
 
     # create list of alphabet
@@ -70,28 +70,28 @@ if __name__ == "__main__":
     'abcdefghijklmnopqrstuvwxyz'
     alphab = list(string.ascii_lowercase)
     old_alphab = list(string.ascii_lowercase)
-    print(f"{FR_YELL}Alphabet list\n\t{NO_COLOR}{old_alphab}\n")
+    print(f"{FR_YELL}Alphabet list: {NO_COLOR}{old_alphab}")
     
     # rotate alphab
     new_alphab = alphab[3:] + alphab[:3]
     
-    print(f"{FR_GREEN}new alphabet list by rotation 3 places\n\t{NO_COLOR}{new_alphab}\n")
+    print(f"{FR_GREEN}new alphabet list by rotation 3 places: {NO_COLOR}{new_alphab}")
     pause()    
 
     # my text
     my_text = 'abcdef ghijk hello world'
-    print(frGREEN(f"my text{NO_COLOR}\n\t{my_text}\n"))
+    print(frGREEN(f"my text{NO_COLOR}: {my_text}"))
 
     # call encrypt function to change original text
     encripted_text = ''    
     encrypt(my_text,alphab,new_alphab)
-    print(frGREEN(f"encrypted text{NO_COLOR}\n\t{encripted_text}\n"))    
+    print(frGREEN(f"encrypted text{NO_COLOR}: {encripted_text}"))    
 
     # decode process
     decoded_text=''
     decipher(encripted_text,new_alphab,alphab)
-    print(frGREEN(f"decoded text{NO_COLOR}\n\t{decoded_text}\n"))
-    print((frGREEN("\n---------- That's all for today 👌 ----------\n")))
+    print(frGREEN(f"decoded text{NO_COLOR}: {decoded_text}"))
+    print((frGREEN("---------- That's all for today 👌 ----------")))
     pause()
    
     # ------------------------------------------------
@@ -109,19 +109,19 @@ if __name__ == "__main__":
         try: 
             _what_var
             _my_Obj_name = eval(_what_var)
-            print(f"\n{FR_GREEN}---------- INFO FOR OBJECT '{_my_Obj_name}' ----------{NO_COLOR}\n")
+            print(f"{FR_GREEN}---------- INFO FOR OBJECT '{_my_Obj_name}' ----------{NO_COLOR}")
             pause()
             # my objects functions  
             mostrar(_my_Obj_name)       
 
         except NameError:
-            print(f"\n\t{FR_RED}---- Var '{_what_var}' doesn't exits 🙄🙄  ----")
-            print(f"\n{FR_GREEN}--------------- That's all for today 👌 ---------------{NO_COLOR}\n")
+            print(f"\t{FR_RED}---- Var '{_what_var}' doesn't exits  ----")
+            print(f"{FR_GREEN}--------------- That's all for today ---------------{NO_COLOR}")
 
     else:
-        print(f"\n{FR_GREEN}---------- That's all for today 👌 ----------{NO_COLOR}\n")
+        print(f"{FR_GREEN}---------- That's all for today ----------{NO_COLOR}")
 
 else:
     # something wrong
-    print(frRED("\n---- upsssssssss something is wrong 😢😢  ---\n"))
+    print(frRED("---- upsssssssss something is wrong ---"))
     pause()

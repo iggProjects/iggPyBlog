@@ -23,30 +23,30 @@ FR_MAG   = "\033[95m"
 
 if __name__ == "__main__":
 
-    system('cls')
-    print(frGREEN("\n---------- main ----------\n"))
+    print(f"{FR_GREEN}---------- main ----------{NO_COLOR}")
 
-    print(frGREEN("\n---------- using CONTANTS ----------\n"))
+    print(f"---------- using CONTANTS for colors ----------")
+
     colors= [FR_RED,FR_GREEN,FR_YELL,FR_BLUE,FR_MAG]
     colors_str=['\\033[91m - Red','\\033[92m - Green','\\033[93m - Yellow','\\033[94m - Blue','\\033[95m - Magenta']
     
     i=0
     for color in colors:
         color_str = color
-        msg="--> TESTING COLOR FUNCTION"
+        msg=" ==> TESTING COLOR FUNCTION"
         #print("FR_RED value: " + colors_str[0])
         print("\tPrint with ascii " + colors_str[i] + f":\t{color}{msg}{NO_COLOR}") 
         i+=1   
 
-    msg="print with default color\t\t--> TESTING COLOR FUNCTION"
+    msg="print with default color\t\t==> TESTING COLOR FUNCTION"
     print(f"\t{msg}")    
 
     msg="\tprint with function pfRed() --> TESTING COLOR FUNCTION"
-    print(frGREEN("\n---------- using function prRed(msg) ----------\n"))    
+    print(frGREEN("---------- using function prRed(msg) ----------"))    
     prRed(msg)   
     
-    print(f"\n{FR_GREEN}---------- That's all for today 👌 ----------{NO_COLOR}\n")
+    print(f"{FR_GREEN}---------- That's all for today ----------{NO_COLOR}")
 
 else:
     # something wrong
-    print(frRED("\n---- upsssssssss something is wrong 😢😢  ----\n"))
+    print(frRED("---- upsssssssss something is wrong ----"))

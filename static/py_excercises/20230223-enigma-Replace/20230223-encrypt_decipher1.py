@@ -43,7 +43,7 @@ def decipher(text):
 if __name__ == "__main__":
     
     system('cls')
-    print(frGREEN("\n---------- main ----------\n"))
+    print(frGREEN("---------- main ----------"))
     pause()
 
     # your code
@@ -51,13 +51,13 @@ if __name__ == "__main__":
     decoded_text = ''
 
     my_text = 'Mi buen amigo, como has estado?'
-    print(frGREEN(f"orig text:\n {my_text}\n"))
+    print(frGREEN(f"orig text: {my_text}"))
     
     encrypt(my_text)
-    print(frGREEN(f"encripted text:\n {encripted_text}\n"))
+    print(frGREEN(f"encripted text: {encripted_text}"))
     
     decipher(encripted_text)
-    print(frGREEN(f"decoded text:\n {decoded_text}\n"))
+    print(frGREEN(f"decoded text: {decoded_text}"))
 
     
     # ------------------------------------------------
@@ -76,20 +76,20 @@ if __name__ == "__main__":
         try: 
             _what_var
             _my_Obj_name = eval(_what_var)
-            print(f"\n{FR_GREEN}---------- INFO FOR OBJECT '{_my_Obj_name}' ----------{NO_COLOR}\n")
+            print(f"{FR_GREEN}---------- INFO FOR OBJECT '{_my_Obj_name}' ----------{NO_COLOR}")
             pause()
             # my objects functions  
             mostrar(_my_Obj_name)       
 
         except NameError:
-            print(f"\n\t{FR_RED}---- Var '{_what_var}' doesn't exits ----")
-            print(f"\n{FR_GREEN}--------------- That's all for today ---------------{NO_COLOR}\n")
+            print(f"\t{FR_RED}---- Var '{_what_var}' doesn't exits ----")
+            print(f"{FR_GREEN}--------------- That's all for today ---------------{NO_COLOR}")
             #_my_Obj_name = None 
 
     else:
-        print(f"\n{FR_GREEN}---------- That's all for today ----------{NO_COLOR}\n")
+        print(f"{FR_GREEN}---------- That's all for today ----------{NO_COLOR}")
 
 else:
     # something wrong
-    print(frRED("\n---- upsssssssss something is wrong ---\n"))
+    print(frRED("---- upsssssssss something is wrong ---"))
     pause()

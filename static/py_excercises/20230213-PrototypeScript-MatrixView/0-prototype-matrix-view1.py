@@ -28,7 +28,7 @@ if __name__ == "__main__":
 
     sqr_var = [i*i for i in range(100)]
 
-    print(f"\n{FR_BLUE}---------- list of first hundred numbers squared ----------{NO_COLOR}\n")
+    print(f"{FR_BLUE}---------- list of first hundred numbers squared ----------{NO_COLOR}")
 
     matrix_view(sqr_var,20)
  
@@ -36,5 +36,5 @@ if __name__ == "__main__":
 
 else:
     # something wrong
-    print("\n---- upsssssssss something is wrong ----\n")
+    print("---- upsssssssss something is wrong ----")
     

@@ -29,7 +29,7 @@ FR_MAG   = "\033[95m"
 
 if __name__ == "__main__":
 
-    print(f"\n\t{FR_GREEN}---------- main ----------{NO_COLOR}\n")
+    print(f"\t{FR_GREEN}---------- main ----------{NO_COLOR}")
     print(f"An experiment to check random function, simulating a 'dice'")
 
     my_dice = {'1':0,'2':0,'3':0,'4':0,'5':0,'6':0}
@@ -47,7 +47,7 @@ if __name__ == "__main__":
             face = random.choice(face_list)
             my_dice[str(face)] += 1        
 
-        print(f"\n\t{FR_GREEN}Experiment result with {iterations:,d} dice rolls:")
+        print(f"\t{FR_GREEN}Experiment result with {iterations:,d} dice rolls:")
         for key in my_dice:
             #face_perc = "{:.4f}".format(100*(dice[key]/iterations))
             ideal_dice = int( (ideal_perc/100) * iterations)
@@ -68,5 +68,5 @@ if __name__ == "__main__":
 
 else:
     # something wrong
-    print(f"\n{FR_RED}---- upsssssssss something is wrong 😢😢  ---{NO_COLOR}\n")
+    print(f"{FR_RED}---- upsssssssss something is wrong 😢😢  ---{NO_COLOR}")
     

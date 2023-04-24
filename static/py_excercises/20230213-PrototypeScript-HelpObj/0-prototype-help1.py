@@ -26,16 +26,16 @@ if __name__ == "__main__":
 
     system('cls')
 
-    print(frGREEN("\n---------- main ----------\n"))
-    prYellow("\n---------- help for object 'list' ----------\n")
+    print(frGREEN("---------- main ----------"))
+    prYellow("---------- help for object 'list' ----------")
 
     my_obj = [1,2,3,4,5]
     
     help_obj_method(my_obj)
      
-    print(f"\n{FR_GREEN}---------- That's all for today 👌 ----------{NO_COLOR}\n")
+    print(f"{FR_GREEN}---------- That's all for today 👌 ----------{NO_COLOR}")
 
 else:
     # something wrong
-    print(frRED("\n---- upsssssssss something is wrong 😢😢  ----\n"))
+    print(frRED("---- upsssssssss something is wrong 😢😢  ----"))
     

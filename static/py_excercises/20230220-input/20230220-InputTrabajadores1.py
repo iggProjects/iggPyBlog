@@ -19,8 +19,8 @@ FR_MAG   = "\033[95m"
 # Y,N answer function
 def Y_N():
     global moreData    
-    ans=str(input("\nDo you want to continue including workers? (Y,N): "))
-    print(f"\t\tAnswer -> {ans}\n")  
+    ans=str(input("Do you want to continue including workers? (Y,N): "))
+    print(f"\t\tAnswer -> {ans}")  
     if ans == 'N':                        
         moreData=False
     elif ans == 'Y':                                
@@ -32,7 +32,7 @@ def Y_N():
 def input_worker_age():
     global moreData,workers,worker    
     try:
-        worker_age=int(input(frRED("\nPlease indicate \"age\" (integer between 18-65): ")))
+        worker_age=int(input(frRED("Please indicate \"age\" (integer between 18-65): ")))
         if worker_age in range(18,65):
             print(frRED(f"\t\tage entered -> {worker_age}")) # next version: redirect a log file for answer
             # DB code or use var type dictionary to print data session
@@ -41,10 +41,10 @@ def input_worker_age():
             # ask for continue (Y,N)
             Y_N()
         else:
-            frRED("\nPlease indicate \"age\" (integer between 18-65): ") 
+            frRED("Please indicate \"age\" (integer between 18-65): ") 
             input_worker_age()    
     except ValueError:
-        frRED("\nPlease indicate \"age\" (integer between 18-65): ")
+        frRED("Please indicate \"age\" (integer between 18-65): ")
         #print('please indicate age (integer between 18-65)')
         input_worker_age()
 
@@ -70,7 +70,7 @@ def input_worker_data():
 # MAIN
 if __name__ == "__main__":
 
-    print(f"\n{FR_GREEN}---------- main ----------{NO_COLOR}\n")
+    print(f"{FR_GREEN}---------- main ----------{NO_COLOR}")
     pause()
     system('cls')
     
@@ -83,8 +83,8 @@ if __name__ == "__main__":
     while moreData:    
         input_worker_data()     
 
-    print("\nSession terminated by user\n")        
-    print(f"Workers is {type(workers)}:\n\t{workers}\n")
+    print("Session terminated by user")        
+    print(f"Workers is {type(workers)}:\t{workers}")
     for i in range(len(workers)):
         print(f"{workers[i]}, and data type is: {type(workers[i])}")
         print(f"\tworker {i}:")
@@ -107,20 +107,20 @@ if __name__ == "__main__":
         try: 
             _what_var
             _my_Obj_name = eval(_what_var)
-            print(f"\n{FR_GREEN}---------- INFO FOR OBJECT '{_my_Obj_name}' ----------{NO_COLOR}\n")
+            print(f"{FR_GREEN}---------- INFO FOR OBJECT '{_my_Obj_name}' ----------{NO_COLOR}")
             pause()
             # my objects functions  
             mostrar(_my_Obj_name)       
 
         except NameError:
-            print(f"\n\t{FR_RED}---- Var '{_what_var}' doesn't exits ----")
-            print(f"\n{FR_GREEN}--------------- That's all for today ---------------{NO_COLOR}\n")
+            print(f"\t{FR_RED}---- Var '{_what_var}' doesn't exits ----")
+            print(f"{FR_GREEN}--------------- That's all for today ---------------{NO_COLOR}")
             #_my_Obj_name = None 
 
     else:
-        print(f"\n{FR_GREEN}---------- That's all for today ----------{NO_COLOR}\n")
+        print(f"{FR_GREEN}---------- That's all for today ----------{NO_COLOR}")
 
 else:
     # something wrong
-    print(f"\n{FR_RED}---- upsssssssss something is wrong 😢😢  ---{NO_COLOR}\n")
+    print(f"{FR_RED}---- upsssssssss something is wrong 😢😢  ---{NO_COLOR}")
     pause()

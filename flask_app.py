@@ -329,15 +329,26 @@ def result_script_exec():
         new_line = str(line)
         color = "black"
         if new_line == 'b\'\\x0c\\x1b[92m\'' or new_line == 'b\' \\x1b[00m\'' or new_line == 'b\'\\x1b[92m\'': 
-            pass    
+            pass
+        elif 'print empty line' in new_line:
+            new_line = "---"
+            color = "transparent"
+            list = [color,new_line]
+            list_text_color.append(list) 
+
+            #print("=====> print empty line") 
         else: 
-            new_line = new_line.replace('b\'','')
+            print(f"0,1 --> {new_line[0:2]}")
+            if "b'" in new_line[0:2]  or "b\"" in new_line[0:2]:
+                print(f"0,1 ==> {new_line[0:2]}")
+                new_line= new_line[2:]
             new_line = new_line.replace(new_line[len(new_line)-1],'')
-            new_line = new_line.replace('\\n','<br>')
+            #new_line = new_line.replace('\\n','')
+            #new_line = new_line.replace('\\n','<br>')
             new_line = new_line.replace('\\x1b[00m','')
-            #new_line = new_line.replace('\\t','&nbsp;&nbsp;&nbsp;')
-            new_line = new_line.replace('\\t','')
-            #new_line = new_line.replace('-->','')
+            new_line = new_line.replace('\\t','>>>')
+            new_line = new_line.replace('\\t','>>>')
+            new_line = new_line.replace('-->','==>')
             if '\\x1b[91m' in new_line:
                 new_line = new_line.replace('\\x1b[91m','')
                 color = "red;"

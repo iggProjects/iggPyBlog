@@ -23,7 +23,7 @@ FR_MAG   = "\033[95m"
 
 if __name__ == "__main__":
 
-    print(f"\n{FR_GREEN}---------- prototype py model ----------{NO_COLOR}\n")
+    print(f"{FR_GREEN}---------- prototype py model ----------{NO_COLOR}")
 
     #
     # YOUR CODE
@@ -31,4 +31,4 @@ if __name__ == "__main__":
 
 else:
     # something wrong
-    print(frRED("\n---- upsssssssss something is wrong 😢😢  ----\n"))
+    print(f"{FR_GREEN}---- upsssssssss something is wrong ----{NO_COLOR}")
