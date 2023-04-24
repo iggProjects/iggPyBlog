@@ -24,18 +24,19 @@ FR_MAG   = "\033[95m"
 
 if __name__ == "__main__":
 
-    system('cls')
 
     print(frGREEN("---------- main ----------"))
-    prYellow("---------- help for object 'list' ----------")
+    prBlue("---------- help for object 'list' ----------")
+    print("print empty line")
 
     my_obj = [1,2,3,4,5]
-    
+    print("my_obj = [1,2,3,4] ==> help_obj_method(my_obj)")
+    print("print empty line")
     help_obj_method(my_obj)
      
-    print(f"{FR_GREEN}---------- That's all for today 👌 ----------{NO_COLOR}")
+    print(f"{FR_GREEN}---------- That's all for today ----------{NO_COLOR}")
 
 else:
     # something wrong
-    print(frRED("---- upsssssssss something is wrong 😢😢  ----"))
+    print(frRED("---- upsssssssss something is wrong ----"))
     

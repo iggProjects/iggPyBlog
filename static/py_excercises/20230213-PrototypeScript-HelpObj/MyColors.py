@@ -35,7 +35,7 @@ def prLightPurple(msg): print("\033[94m{}\033[00m".format(msg))
 def prPurple(msg):      print("\033[95m{}\033[00m".format(msg)) 
 def prCyan(msg):        print("\033[96m{}\033[00m".format(msg)) 
 def prLightGray(msg):   print("\033[97m{}\033[00m".format(msg)) 
-def prBlue(msg):        print("\033[34m{}\033[00m".format(msg)) 
+def prBlue(msg):        print("\033[94m{}\033[00m".format(msg)) 
 def prBlack(msg):       print("\033[98m{}\033[00m".format(msg)) 
 
 # FOREGROUND CONSTANTS FOR PRINT FUNCTION
