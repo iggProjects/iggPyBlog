@@ -3,6 +3,15 @@ BITAKORA
 STILL TO DO !
 
 --- https://stackoverflow.com/questions/24251898/flask-app-update-progress-bar-while-function-runs
+--- http://www.trianglesis.org.ua/python-3-showing-progressbar-while-subprocess-popen
+
+--- file path for OS scripts like 2DelRepeatedLinesAndSort.py"
+
+--- make work for game of life and enigma project scripts
+
+--- sincronyze pythonAW with github to upload files
+
+==============================
 
 --- Just use subprocess (https://docs.python.org/3/library/subprocess.html) 
 --- to run a Python binary that exists in your account.  Glenn Jones glenn@pythonanywhere.com
@@ -54,13 +63,6 @@ STILL TO DO !
         File "/usr/local/lib/python3.10/subprocess.py", line 1845, in _execute_child
             raise child_exception_type(errno_num, err_msg, err_filename)
         FileNotFoundError: [Errno 2] No such file or directory: 'cmd'
-
-
-
-
-
-
-==============================
 
 --- https://stackoverflow.com/questions/52835681/how-can-i-run-a-python-script-from-within-flask
 

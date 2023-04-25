@@ -25,14 +25,23 @@ from os import system
 
 # my generic functions
 from MyFunc import *
-from MyColors import *
+#from MyColors import *
+
+# CONSTANTS
+NO_COLOR = "\033[00m"
+FR_RED   = "\033[91m"
+FR_GREEN = "\033[92m"
+FR_YELL  = "\033[93m"
+FR_BLUE  = "\033[94m"
+FR_MAG   = "\033[95m"
+
 
 #  Class Hierarchies
 class SistemaNominas:
     def calculo_nomina(self, empleados):
         for empleado in empleados:
             nomina_emp = '{:,.2f}'.format(empleado.calculo_nomina()).replace(',','.')
-            print(f"{FR_GREEN}\t{empleado.nombre} ({empleado.id}) | cargo '{empleado.cargo}'{NO_COLOR}\n\t\tpago: {nomina_emp} €\n")            
+            print(f"{FR_GREEN}\t{empleado.nombre} ({empleado.id}) | cargo '{empleado.cargo}'{NO_COLOR}\n\t\tpago: {nomina_emp} euros\n")            
 
 class Empleado:    
     def __init__(self, id, nombre, año_ncto, dir_resid, cargo):
@@ -61,7 +70,7 @@ class Comercial(SalarioEmpleado):
         return fijo + self.commision_ventas
 
 # testing __mro__ built function
-system('cls')
+# system('cls')
 
 #relatedClasses(Comercial)
 

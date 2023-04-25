@@ -34,12 +34,12 @@ if __name__ == "__main__":
     i=0
     for color in colors:
         color_str = color
-        msg="--> TESTING COLOR FUNCTION"
+        msg=" ==> TESTING COLOR FUNCTION"
         #print("FR_RED value: " + colors_str[0])
         print("\tPrint with ascii " + colors_str[i] + f":\t{color}{msg}{NO_COLOR}") 
         i+=1   
 
-    msg="print with default color\t\t--> TESTING COLOR FUNCTION"
+    msg="print with default color\t\t ==> TESTING COLOR FUNCTION"
     print(f"\t{msg}")    
 
     msg="\tprint with function pfRed() --> TESTING COLOR FUNCTION"

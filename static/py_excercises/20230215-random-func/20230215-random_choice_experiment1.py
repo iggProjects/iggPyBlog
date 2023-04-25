@@ -29,16 +29,17 @@ FR_MAG   = "\033[95m"
 
 if __name__ == "__main__":
 
-    print(f"\t{FR_GREEN}---------- main ----------{NO_COLOR}")
+    print(f"{FR_GREEN}---------- MAIN ----------{NO_COLOR}")
+    print("print empty line")
     print(f"An experiment to check random function, simulating a 'dice'")
-
+    print("print empty line")
     my_dice = {'1':0,'2':0,'3':0,'4':0,'5':0,'6':0}
 
     ideal_perc = 100 * (1/6)
     ideal_dice = {'1':ideal_perc,'2':ideal_perc,'3':ideal_perc,'4':ideal_perc,'5':ideal_perc,'6':ideal_perc}
     face_list=list(range(1,7))
     print(f"\tDICE faces: {face_list}")
-    
+
 
     for i in range(1,21):
         iterations = 10000 * 2 * i
@@ -47,6 +48,7 @@ if __name__ == "__main__":
             face = random.choice(face_list)
             my_dice[str(face)] += 1        
 
+        print("print empty line")   
         print(f"\t{FR_GREEN}Experiment result with {iterations:,d} dice rolls:")
         for key in my_dice:
             #face_perc = "{:.4f}".format(100*(dice[key]/iterations))
@@ -54,19 +56,21 @@ if __name__ == "__main__":
             face_diff = my_dice[key] - ideal_dice
             face_diff_perc = "{:.4f}".format(100 * (face_diff / iterations))
             #face_diff = str(face_diff).center(5)
-            face_diff = str(face_diff).rjust(5,' ')
-            face_diff_perc = str(face_diff_perc).rjust(7)
-            print(f"\t{key}: my dice: {my_dice[key]} | ideal dice: {ideal_dice} | diff: {face_diff} | in perc: {face_diff_perc} ")
+            face_diff = str(face_diff).rjust(8,' ')
+            face_diff_perc = str(face_diff_perc).rjust(7, ' ')
+            #result = f"\t\t{key}: my dice: {my_dice[key]} | ideal dice: {ideal_dice} | diff: {face_diff} | in perc: {face_diff_perc} "
+            #print(f"{result}")
+            print(f"\t\t{key}: my dice: {my_dice[key]} | ideal dice: {ideal_dice} | diff: {face_diff}  ({face_diff_perc}%) ")
         
         # reset
         my_dice = {'1':0,'2':0,'3':0,'4':0,'5':0,'6':0}   
 
-        print()
+        print("print empty line")
 
-    print()    
+    print(f"\t{FR_GREEN}---------- That's all for today ----------{NO_COLOR}\n")
 
 
 else:
     # something wrong
-    print(f"{FR_RED}---- upsssssssss something is wrong 😢😢  ---{NO_COLOR}")
+    print(f"{FR_RED}---- upsssssssss something is wrong ----{NO_COLOR}")
     

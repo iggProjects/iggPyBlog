@@ -27,7 +27,7 @@ def matrix_view(obj_l_t,n_cols):
       for j in range(n_cols):
         if i*n_cols+j<len(obj_l_t):
           line.append(obj_l_t[i*n_cols+j])
-      print(f"line: {i+1} --> {line}")
+      print(f"\tline: {i+1} --> {line}")
       line=[]  
   else:
     print("Warning FROM matrix_view(): Object '{obj_l_t}' in not  list neither tupla !" ) 
@@ -39,17 +39,19 @@ def mostrar(obj):
     print(f"Object elements view in matrix form (8 columns by row)")
     matrix_view(obj,4)
 
+  print("print empty line")
   # obj type and mem dir
   print(f"Object type is {type(obj)} and mem dir is: {id(obj)}")
+  print("print empty line")
   # obj attributes
   # attributes = [attr for attr in dir(obj) if not attr.startswith('__')]
   attr_meth = [attr for attr in dir(obj)]
   # print attributes and methods in matrix form
   print(f"Object assigned attributes and methods are:")
   matrix_view(attr_meth,8)
-  print()
+  print("print empty line")
   print("-----------------END MOSTRAR OBJECT TYPE AND ATTRIB-METHODS-----------------")    
-  print()
+  print("print empty line")
 
 
 #
@@ -60,12 +62,14 @@ if __name__ == "__main__":
 
     #system('cls')
 
-    print(f"{FR_GREEN}---------- main ----------")
+    print(f"{FR_GREEN}---------- MAIN ----------")
     print(f"{FR_BLUE}--------------- Show Object Info --------------")
+    print("print empty line")
     
     print("colors_str = ['\\033[91m - Red','\\033[92m - Green','\\033[93m - Yellow','\\033[94m - Blue','\\033[95m - Magenta']")
     print("print colors_str attributes")
     colors_str=['\\033[91m - Red','\\033[92m - Green','\\033[93m - Yellow','\\033[94m - Blue','\\033[95m - Magenta']
+    print("print empty line")
     mostrar(colors_str)            
 
     print(f"{FR_GREEN}---------- That's all for today ----------{NO_COLOR}")

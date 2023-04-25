@@ -34,15 +34,16 @@ if __name__ == "__main__":
     for color in colors:
         color_str = color
         msg=" ==> TESTING COLOR FUNCTION"
+        msg = msg.rjust(30)
         #print("FR_RED value: " + colors_str[0])
-        print("\tPrint with ascii " + colors_str[i] + f":\t{color}{msg}{NO_COLOR}") 
+        print("\tPrint with ascii " + colors_str[i] + f":\t{color}{msg}") 
         i+=1   
 
-    msg="print with default color\t\t==> TESTING COLOR FUNCTION"
+    msg="print with default color:\t\t ==> TESTING COLOR FUNCTION"
     print(f"\t{msg}")    
 
-    msg="\tprint with function pfRed() --> TESTING COLOR FUNCTION"
-    print(frGREEN("---------- using function prRed(msg) ----------"))    
+    msg="\tprint with function pfRed(msg) --> TESTING COLOR FUNCTION"
+    print(frGREEN(f"---------- using function prRed(msg) ----------"))    
     prRed(msg)   
     
     print(f"{FR_GREEN}---------- That's all for today ----------{NO_COLOR}")

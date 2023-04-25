@@ -56,16 +56,16 @@ if __name__ == "__main__":
             face_diff = my_dice[key] - ideal_dice
             face_diff_perc = "{:.4f}".format(100 * (face_diff / iterations))
             #face_diff = str(face_diff).center(5)
-            face_diff = str(face_diff).rjust(5,' ')
-            face_diff_perc = str(face_diff_perc).rjust(7)
-            print(f"\t{key}: my dice: {my_dice[key]} | ideal dice: {ideal_dice} | diff: {face_diff} | in perc: {face_diff_perc} ")
+            face_diff = str(face_diff).rjust(6,' ')
+            face_diff_perc = str(face_diff_perc).rjust(8,' ')
+            print(f"\t{key}: my dice: {my_dice[key]} | ideal dice: {ideal_dice} | diff: {face_diff} ({face_diff_perc}%) ")
         
         # reset
         my_dice = {'1':0,'2':0,'3':0,'4':0,'5':0,'6':0}   
 
         print()
 
-    print()    
+    print(f"\t{FR_GREEN}---------- That's all for today ----------{NO_COLOR}\n")
 
     # ------------------------------------------------
     #          SHOW VARS CHARACTERISTICS 

@@ -20,13 +20,13 @@ from MyColors import *
 #
 # COLORS CONSTANTS
 #
-"""
-# FOREGORUND CONSTANTS AS TEXT
-FG_WH_TXT = "\033[00m"
-FR_GREEN = "\033[92m"
-FR_RED   = "\033[91m"
+
 NO_COLOR = "\033[00m"
-"""
+FR_RED   = "\033[91m"
+FR_GREEN = "\033[92m"
+FR_YELL  = "\033[93m"
+FR_BLUE  = "\033[94m"
+FR_MAG   = "\033[95m"
 
 #
 # TIME FUNCTIONS
@@ -250,7 +250,7 @@ def desc_obj_method(obj,todo=True):
 # checking related classes in a composite class 
 def relatedClasses(clas):   
 
-    print(f"\n----- analysis of {FR_BLUE}\"classes related\"{NO_COLOR} with class \"{FR_GREEN}{clas}{NO_COLOR}\" -----\n")
+    print(f"----- analysis of {FR_BLUE} \"classes related\"{NO_COLOR} with class \"{FR_GREEN}{clas}{NO_COLOR}\" -----\n")
     for clas_rel in clas.__mro__:
         print(f"{FR_GREEN}\trelated clas --> {clas_rel}\n")
     print(f"{NO_COLOR}----- end analysis -----\n")    

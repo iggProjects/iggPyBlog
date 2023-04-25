@@ -322,7 +322,7 @@ def result_script_exec():
 
     print(f"\n\n{FR_YELL}===> text type: {type(text)}{NO_COLOR}")
     list_b_lines = text.stdout.splitlines()
-    list_text_color = []    
+    list_color_text = []    
     #lines_colors = []
     for line in list_b_lines:
         #new_line = "<p>" + str(line) + "</p>"
@@ -334,7 +334,7 @@ def result_script_exec():
             new_line = "---"
             color = "transparent"
             list = [color,new_line]
-            list_text_color.append(list) 
+            list_color_text.append(list) 
 
             #print("=====> print empty line") 
         else: 
@@ -342,13 +342,15 @@ def result_script_exec():
             if "b'" in new_line[0:2]  or "b\"" in new_line[0:2]:
                 print(f"0,1 ==> {new_line[0:2]}")
                 new_line= new_line[2:]
+            new_line = new_line.replace('-->','==>')
+            new_line = new_line.replace('<','<&nbsp;&nbsp;')
+            new_line = new_line.replace('>','&nbsp;>')
             new_line = new_line.replace(new_line[len(new_line)-1],'')
             #new_line = new_line.replace('\\n','')
             new_line = new_line.replace('\\n','<br>')
             new_line = new_line.replace('\\x1b[00m','')
-            new_line = new_line.replace('\\t','&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;')
-            new_line = new_line.replace('\\t','>>>')
-            new_line = new_line.replace('-->','==>')
+            new_line = new_line.replace('\\t','&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;')            
+            
             if '\\x1b[91m' in new_line:
                 new_line = new_line.replace('\\x1b[91m','')
                 color = "red;"
@@ -370,13 +372,13 @@ def result_script_exec():
             print(f"line to print: {new_line}")
             new_line=Markup(new_line)
             list = [color,new_line]
-            list_text_color.append(list) 
+            list_color_text.append(list) 
             
             print(f"new_line formatted => {list}")
     
     print(f"{FR_YELL}======> Saliendo de  result...{NO_COLOR}\n") 
 
-    return render_template('result_script_exec.html',list_lines=list_text_color,py_name=py_name)
+    return render_template('result_script_exec.html',list_lines=list_color_text,py_name=py_name)
 
 
 #
