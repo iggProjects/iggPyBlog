@@ -24,14 +24,13 @@ FR_MAG   = "\033[95m"
 
 if __name__ == "__main__":
 
-    print(f"{FR_GREEN}---------- main ----------{NO_COLOR}")    
-
+    print(f"{FR_GREEN}---------- MAIN ----------{NO_COLOR}")    
+    print("print empty line")
     sqr_var = [i*i for i in range(100)]
-
     print(f"{FR_BLUE}---------- list of first hundred numbers squared ----------{NO_COLOR}")
-
+    print("print empty line")
     matrix_view(sqr_var,20)
- 
+    print("print empty line")
     print(f"{FR_GREEN}---------- That's all for today ----------{NO_COLOR}")
 
 else:
