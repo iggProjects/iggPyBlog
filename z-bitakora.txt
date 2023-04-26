@@ -2,74 +2,90 @@ BITAKORA
 
 STILL TO DO !
 
---- https://stackoverflow.com/questions/24251898/flask-app-update-progress-bar-while-function-runs
---- http://www.trianglesis.org.ua/python-3-showing-progressbar-while-subprocess-popen
+0.- clean result_script_exec() of flask_app and include "window" for alert
 
---- file path for OS scripts like 2DelRepeatedLinesAndSort.py"
+1.- make work for game of life and enigma project scripts, and review MyFunc, MyColors
 
---- make work for game of life and enigma project scripts
+2.- sincronyze pythonAW with github to upload files
 
---- sincronyze pythonAW with github to upload files
+3.- file path for OS scripts like DelRepeatedLinesAndSort.py"
+
+4.- complete info for all excercises, game of life & enigma scripts (video)
+
+5.- authentication - login required
+
+6.- posting with DB
+
+7.- progress bar
+
 
 ==============================
 
---- Just use subprocess (https://docs.python.org/3/library/subprocess.html) 
---- to run a Python binary that exists in your account.  Glenn Jones glenn@pythonanywhere.com
---- https://realpython.com/python-subprocess/
-    import subprocess
-    import shlex
-    subprocess.run(shlex.split("python z-timer.py 5"))
-    example of call notepad
-        subprocess.run(["notepad"])
-    example of data capture 
-        text = subprocess.run(["cmd", "/c", "dir .."],capture_output=True)
-        subprocess.run(["cmd", "/c", "01_LG-ExploracionMatrices.py"])
-    @app.route('/pythonScript/')
-    def ExecPythonScript():
-        from os import system
+PROGRESS BAR
+    - https://stackoverflow.com/questions/24251898/flask-app-update-progress-bar-while-function-runs
+    - http://www.trianglesis.org.ua/python-3-showing-progressbar-while-subprocess-popen
+    - https://theautomatic.net/2020/10/12/how-to-create-a-progress-bar-in-python/
+    - https://builtin.com/software-engineering-perspectives/python-progress-bar
+
+
+SUBPROCESS
+    - Just use subprocess (https://docs.python.org/3/library/subprocess.html) 
+    - to run a Python binary that exists in your account.  Glenn Jones glenn@pythonanywhere.com
+    - https://realpython.com/python-subprocess/
         import subprocess
+        import shlex
+        subprocess.run(shlex.split("python z-timer.py 5"))
+        example of call notepad
+            subprocess.run(["notepad"])
+        example of data capture 
+            text = subprocess.run(["cmd", "/c", "dir .."],capture_output=True)
+            subprocess.run(["cmd", "/c", "01_LG-ExploracionMatrices.py"])
+        @app.route('/pythonScript/')
+        def ExecPythonScript():
+            from os import system
+            import subprocess
 
-        # parameter from JS
-        py_script_path = request.args['py_path']
-        
-        # clear screen
-        system('cls')
-        
-        # execution string windows
-        # exec_command = 'cmd /c \"python.exe ' + py_script_path + '\"'
-        # system(exec_command)
+            # parameter from JS
+            py_script_path = request.args['py_path']
+            
+            # clear screen
+            system('cls')
+            
+            # execution string windows
+            # exec_command = 'cmd /c \"python.exe ' + py_script_path + '\"'
+            # system(exec_command)
 
-        # call subprocess
-        subprocess.run(["cmd", "/c", "01_LG-ExploracionMatrices_copy.py"])
-        
-        return ""
-
-        2023-04-21 18:42:57,920: Exception on /pythonScript/ [GET]
-        Traceback (most recent call last):
-        File "/usr/local/lib/python3.10/site-packages/flask/app.py", line 2077, in wsgi_app
-            response = self.full_dispatch_request()
-        File "/usr/local/lib/python3.10/site-packages/flask/app.py", line 1525, in full_dispatch_request
-            rv = self.handle_user_exception(e)
-        File "/usr/local/lib/python3.10/site-packages/flask/app.py", line 1523, in full_dispatch_request
-            rv = self.dispatch_request()
-        File "/usr/local/lib/python3.10/site-packages/flask/app.py", line 1509, in dispatch_request
-            return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
-        File "/home/iggWebNz/mysite/flask_app.py", line 260, in ExecPythonScript
+            # call subprocess
             subprocess.run(["cmd", "/c", "01_LG-ExploracionMatrices_copy.py"])
-        File "/usr/local/lib/python3.10/subprocess.py", line 501, in run
-            with Popen(*popenargs, **kwargs) as process:
-        File "/usr/local/lib/python3.10/subprocess.py", line 969, in __init__
-            self._execute_child(args, executable, preexec_fn, close_fds,
-        File "/usr/local/lib/python3.10/subprocess.py", line 1845, in _execute_child
-            raise child_exception_type(errno_num, err_msg, err_filename)
-        FileNotFoundError: [Errno 2] No such file or directory: 'cmd'
+            
+            return ""
 
---- https://stackoverflow.com/questions/52835681/how-can-i-run-a-python-script-from-within-flask
+            2023-04-21 18:42:57,920: Exception on /pythonScript/ [GET]
+            Traceback (most recent call last):
+            File "/usr/local/lib/python3.10/site-packages/flask/app.py", line 2077, in wsgi_app
+                response = self.full_dispatch_request()
+            File "/usr/local/lib/python3.10/site-packages/flask/app.py", line 1525, in full_dispatch_request
+                rv = self.handle_user_exception(e)
+            File "/usr/local/lib/python3.10/site-packages/flask/app.py", line 1523, in full_dispatch_request
+                rv = self.dispatch_request()
+            File "/usr/local/lib/python3.10/site-packages/flask/app.py", line 1509, in dispatch_request
+                return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+            File "/home/iggWebNz/mysite/flask_app.py", line 260, in ExecPythonScript
+                subprocess.run(["cmd", "/c", "01_LG-ExploracionMatrices_copy.py"])
+            File "/usr/local/lib/python3.10/subprocess.py", line 501, in run
+                with Popen(*popenargs, **kwargs) as process:
+            File "/usr/local/lib/python3.10/subprocess.py", line 969, in __init__
+                self._execute_child(args, executable, preexec_fn, close_fds,
+            File "/usr/local/lib/python3.10/subprocess.py", line 1845, in _execute_child
+                raise child_exception_type(errno_num, err_msg, err_filename)
+            FileNotFoundError: [Errno 2] No such file or directory: 'cmd'
 
---- ExecPythonScript() :  how to pass file parameter to .bat
+    - https://stackoverflow.com/questions/52835681/how-can-i-run-a-python-script-from-within-flask
 
---- body in list... how to accept line jump in text
-    - https://stackoverflow.com/questions/59718855/how-to-insert-a-new-line-every-entry-in-a-dictionary
+    - ExecPythonScript() :  how to pass file parameter to .bat
+
+    - body in list... how to accept line jump in text
+        - https://stackoverflow.com/questions/59718855/how-to-insert-a-new-line-every-entry-in-a-dictionary
 
 
 - Python Shell Commands 
@@ -98,7 +114,6 @@ STILL TO DO !
                 return exec(file)
 
 
-0.- authentication - login required
 
     - https://www.digitalocean.com/community/tutorials/how-to-add-authentication-to-your-app-with-flask-login
  
