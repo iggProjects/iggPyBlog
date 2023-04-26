@@ -343,8 +343,10 @@ def result_script_exec():
                 print(f"0,1 ==> {new_line[0:2]}")
                 new_line= new_line[2:]
             new_line = new_line.replace('-->','==>')
-            new_line = new_line.replace('<','<&nbsp;&nbsp;')
-            new_line = new_line.replace('>','&nbsp;>')
+            new_line = new_line.replace('<','&lt;')
+            #new_line = new_line.replace('<','<&nbsp;&nbsp;')
+            new_line = new_line.replace('>','&gt;')
+            #new_line = new_line.replace('>','&nbsp;>')
             new_line = new_line.replace('^','&nbsp;')
             new_line = new_line.replace(new_line[len(new_line)-1],'')
             #new_line = new_line.replace('\\n','')
