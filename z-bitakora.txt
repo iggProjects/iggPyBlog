@@ -5,13 +5,12 @@ STILL TO DO !
 0.- clean result_script_exec() of flask_app and include "window" for alert
     Simplify use of MyFunc and MyColors !!!
 
-1.- make work for game of life and enigma project scripts, and review MyFunc, MyColors
+1.- make work for game of life and enigma project scripts (video), complete info and review MyFunc, MyColors
 
 2.- sincronyze pythonAW with github to upload files
 
 3.- file path for OS scripts like DelRepeatedLinesAndSort.py"
 
-4.- complete info for all excercises, game of life & enigma scripts (video)
 
 5.- authentication - login required
 
