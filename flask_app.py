@@ -304,7 +304,7 @@ def ExecPythonScript():
 
 @app.route('/result_script_exec/')
 def result_script_exec():
-    print(f"{FR_YELL}\n======> Entrando en result...{NO_COLOR}\n")
+    print(f"{FR_YELL}\n====== Entrando en result_script_exec() ======{NO_COLOR}\n")
     
     import subprocess, json
     from flask import Markup   
@@ -320,7 +320,7 @@ def result_script_exec():
     text = subprocess.run(["cmd", "/c", "python.exe", py_script_path],capture_output=True)    
     # text = subprocess.run(["cmd", "/c", "dir .."],capture_output=True)
 
-    print(f"\n\n{FR_YELL}===> text type: {type(text)}{NO_COLOR}")
+    #print(f"\n\n{FR_YELL}===> text type: {type(text)}{NO_COLOR}")
     list_b_lines = text.stdout.splitlines()
     list_color_text = []    
     #lines_colors = []
@@ -338,9 +338,9 @@ def result_script_exec():
 
             #print("=====> print empty line") 
         else: 
-            print(f"0,1 --> {new_line[0:2]}")
+            #print(f"0,1 --> {new_line[0:2]}")
             if "b'" in new_line[0:2]  or "b\"" in new_line[0:2]:
-                print(f"0,1 ==> {new_line[0:2]}")
+                #print(f"0,1 ==> {new_line[0:2]}")
                 new_line= new_line[2:]
             new_line = new_line.replace('-->','==>')
             new_line = new_line.replace('<','&lt;')
@@ -372,14 +372,14 @@ def result_script_exec():
             else:
                 pass
 
-            print(f"line to print: {new_line}")
+            #print(f"line to print: {new_line}")
             new_line=Markup(new_line)
             list = [color,new_line]
             list_color_text.append(list) 
             
-            print(f"new_line formatted => {list}")
+            #print(f"new_line formatted => {list}")
     
-    print(f"{FR_YELL}======> Saliendo de  result...{NO_COLOR}\n") 
+    print(f"{FR_YELL}====== Saliendo en result_script_exec() ======{NO_COLOR}\n") 
 
     return render_template('result_script_exec.html',list_lines=list_color_text,py_name=py_name)
 
