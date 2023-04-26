@@ -3,7 +3,7 @@
 {% block body %}
 
     <h1 style= "margin-left:11%; font-size:25px;">PY CLIENT RUN FOR&nbsp;&nbsp;&nbsp;==> "{{py_name}}"</h1>
-    <div  style="max-width:80%; max-height:75vh; margin:auto; overflow-y:scroll; padding: 20px;padding-left: 50px; ; border:10px solid rgb(182, 111, 249); border-radius: 10px;">
+    <div  style="max-width:80%; max-height:75vh; margin:auto; overflow-y:scroll; padding: 20px;padding-left: 50px; ; border:10px solid rgb(182, 111, 249); border-radius: 10px; background-color: rgb(24, 1, 154); ">
     {% for line in list_lines %}
         <p class="p_result" style='color:{{line[0]}}'>{{ line[1] }}</p>        
         <!-- <p style='color:{{line[0]}}' onclick='alert("{{line[0]}}")'>{{ line[1] }}</p> -->       
