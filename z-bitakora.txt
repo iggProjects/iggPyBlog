@@ -1,6 +1,6 @@
 BITAKORA
 
-STILL TO DO !
+STILL TO DO !!!
 
 Actual web
     0.- clean result_script_exec() of flask_app and include "window" for alert
