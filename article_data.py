@@ -10,7 +10,7 @@ def Articles():
             'summary': '',            
             'body': '',
             'page_url':'',
-            'icon-img': 'icons8-lectura-80.png'    
+            'icon_img':'icons8-lectura-80.png'
         },
 
         {
@@ -34,7 +34,7 @@ def Articles():
             'summary': 'En este tutorial veremos qué es y cómo utilizar Google Colab, la herramienta de Google en la nube para ejecutar código Python y crear modelos de Machine Learning a través de la nube de Google y con la posibilidad de hacer uso de sus GPU . Sí, has leído bien: con sus GPU y en la nube.',
             'body': '',
             'page_url': 'https://www.adictosaltrabajo.com/2019/06/04/google-colab-python-y-machine-learning-en-la-nube/',
-            'icon_img':'icons8-lectura-80.png'       
+            'icon_img':'icons8-lectura-80.png'
         },      
 
         {
