@@ -21,6 +21,16 @@ STILL TO DO !
 
 ==============================
 
+PROGRESS BAR WITH SOCKET IO
+    - Make a Progress Bar With SocketIO | Flask Tutorial
+      - https://www.youtube.com/watch?v=bUfUKtJqaxQ
+      - https://github.com/MyPingO/FlaskProgressBarTutorial
+
+
+CHAT WITH SOCKET
+    - https://www.youtube.com/watch?v=AMp6hlA8xKA
+    - https://github.com/PrettyPrinted/youtube_video_code/tree/master/2023/03/30/Creating%20a%20Chat%20App%20With%20Flask-SocketIO
+
 PROGRESS BAR
     - https://stackoverflow.com/questions/24251898/flask-app-update-progress-bar-while-function-runs
     - http://www.trianglesis.org.ua/python-3-showing-progressbar-while-subprocess-popen
