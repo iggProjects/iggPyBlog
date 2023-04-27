@@ -16,9 +16,7 @@ Web with DB scripts
 
 
 
-
-
-==============================
+===========LINKS==============
 
 PROGRESS BAR WITH SOCKET IO
     - Make a Progress Bar With SocketIO | Flask Tutorial
