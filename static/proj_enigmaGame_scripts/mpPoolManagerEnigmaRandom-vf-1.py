@@ -43,7 +43,7 @@ ENCRYPTED_TEXT = 'ib dnlsaibmru ietm hmdclaigtu'
 
 # pause function
 def pause():  
-  userInput = input(f"{FR_RED}Press ENTER to continue, or CTRL-C to exit{NO_COLOR}\n")  
+  userInput = input(f"{FR_RED}Press ENTER to continue, or CTRL-C to exit\n")  
 
 def decipher(alphab1, event):
 
@@ -102,16 +102,16 @@ def decipher(alphab1, event):
 
         if MY_TEXT.casefold() == decoded_text:
             #print("print empty line")
-            print(f"\t{FR_YELL}------ BINGO ------ BINGO ------ BINGO ------ BINGO ------ BINGO ------ BINGO -------{NO_COLOR}")            
-            print(f'\t{FR_BLUE}Parent Process "{os.getppid()}" | Child Process "{os.getpid()}" --> THE SOLUTION WAS FOUND !{NO_COLOR}') 
+            print(f"\t{FR_YELL}------ BINGO ------ BINGO ------ BINGO ------ BINGO ------ BINGO ------ BINGO -------")            
+            print(f'\t{FR_BLUE}Parent Process "{os.getppid()}" | Child Process "{os.getpid()}" --> THE SOLUTION WAS FOUND !') 
             print("print empty line")
-            #print(f"{FR_MAG}\tPID process child: {os.getpid} {NO_COLOR}\n")
+            #print(f"{FR_MAG}\tPID process child: {os.getpid} \n")
             print(f"\t\tDecoded text is correct: {decoded_text}")
             print(f"\t\tEncrypted text: {ENCRYPTED_TEXT}")
             print(f'\t\tCorrect Alphabet Decoder: {(",".join(alphab1_26))}', flush=True)
-            print(f"\t{FR_BLUE}--------------------------------------------------------------------------------------------------------------{NO_COLOR}")
+            print(f"\t{FR_BLUE}--------------------------------------------------------------------------------------------------------------")
             print("print empty line")
-            print(f"\t{FR_RED}-------- STOP PROCESS STARTED --------{NO_COLOR}")
+            print(f"\t{FR_RED}-------- STOP PROCESS STARTED --------")
             event.set()
 
 # protect the entry point
@@ -122,8 +122,8 @@ if __name__ == '__main__':
     inicio = time.time()
     print("print empty line")
 
-    print(f'{FR_YELL}\t================ "Multiprocess started with pid: {os.getpid()}"" ================{NO_COLOR}')
-    print(f'{FR_BLUE}\t--- reading file of 500,000 sub alphab started at:\t"{datetime.now()}" ---{NO_COLOR}')
+    print(f'{FR_YELL}\t================ "Multiprocess started with pid: {os.getpid()}"" ================')
+    print(f'{FR_BLUE}\t--- reading file of 500,000 sub alphab started at:\t"{datetime.now()}" ---')
 
     messy_alphabets = []
     #messy_alphabets.append(ALPHAB_15_TO_ENCRYPT)  
@@ -152,7 +152,7 @@ if __name__ == '__main__':
     print("print empty line")
 
     m_alp = '{:,}'.format(len(messy_alphabets)).replace(',','.')    
-    #print(f'{FR_BLUE}\t--- CHECKING "{m_alp} ALPHABETS" BEGAN AT "{datetime.now()}" ---{NO_COLOR}')    
+    #print(f'{FR_BLUE}\t--- CHECKING "{m_alp} ALPHABETS" BEGAN AT "{datetime.now()}" ---')    
     
     # create the manager
     with Manager() as manager:
@@ -178,10 +178,10 @@ if __name__ == '__main__':
             result.wait()
             # wait for all tasks to stop    
             # print("print empty line")        
-            print(f'\t{FR_RED}=== ALL TASKS STOPED ==={NO_COLOR}')
+            print(f'\t{FR_RED}=== ALL TASKS STOPED ===')
 
             # elapsed time
             elapsed_time = "{:.2f}".format(time.time()-inicio)
             print("print empty line")
-            print(f"\t{FR_BLUE}================  Elapsed time: {elapsed_time} seconds ================={NO_COLOR}")
+            print(f"\t{FR_BLUE}================  Elapsed time: {elapsed_time} seconds =================")
 

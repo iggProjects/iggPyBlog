@@ -14,8 +14,8 @@ if __name__ == "__main__":
 
     # time
     inicio = time.time()
-    system('cls')
-    print(f"\n{FR_GREEN}---------- main ----------{NO_COLOR}\n")
+    #system('cls')
+    print(f"\n{FR_GREEN}---------- main ----------\n")
 
     # alphab = 'abcdefghijklmnopqrstuvwxyz'
     # substr size 15, of alphabet chars chosen to create permutations
@@ -40,7 +40,7 @@ if __name__ == "__main__":
         if num_chars_equal == 0:
             alp = ''.join(alp)
             alp = alp + '\n'
-            permutFile = open("z-permutFile.txt", "a")
+            permutFile = open("static\proj_enigmaGame_scripts\z-permutFile.txt", "a")
             permutFile.write(alp)
             permutFile.close()
             numb_alphab += 1
@@ -50,20 +50,20 @@ if __name__ == "__main__":
         num_chars_equal = 0              
     
     # delete duplicated lines and sort
-    uniqlines = set(open('z-permutFile.txt').readlines())
+    uniqlines = set(open('static\proj_enigmaGame_scripts\z-permutFile.txt').readlines())
     uniqlines = sorted(uniqlines)
     #print(f"uniqlines type is {type(uniqlines)}")
-    open('z-permutFileSorted.txt', 'w').writelines(uniqlines)
+    open('static\proj_enigmaGame_scripts\z-permutFileSorted.txt', 'w').writelines(uniqlines)
 
     # time  
     elapsed_time = "{:.2f}".format(time.time()-inicio)
-    print(f"\n{FR_GREEN}\tTotal new alphabets generated: {numb_alphab}{NO_COLOR}\n")
-    print(f"\n{FR_GREEN}\tTotal alphabets discarded by conflict in character position: {alphab_with_char_conflict}{NO_COLOR}\n")
+    print(f"\n{FR_GREEN}\tTotal new alphabets generated: {numb_alphab}")
+    print(f"\n{FR_GREEN}\tTotal alphabets discarded by conflict in character position: {alphab_with_char_conflict}")
     
-    print(f"\n================  Elapsed time: {elapsed_time}  =================\n\n")
+    print(f"================  Elapsed time: {elapsed_time}  =================")
     
 
 else:
     # something wrong
-    print(f"\n{FR_RED}---- upsssssssss something is wrong 😢😢  ---{NO_COLOR}\n")
+    print(f"\n{FR_RED}---- upsssssssss something is wrong 😢😢  ---\n")
     pause()

@@ -324,8 +324,8 @@ def result_script_exec():
 
     # see order in list_b_lines
     list_b_lines = text.stdout.splitlines()
-    for line in list_b_lines:
-        print(f"==> line: {line}")
+    #for line in list_b_lines:
+    #    print(f"==> line: {line}")
 
     list_color_text = []    
     #lines_colors = []
@@ -361,13 +361,13 @@ def result_script_exec():
             
             if '\\x1b[91m' in new_line:
                 new_line = new_line.replace('\\x1b[91m','')
-                color = "red;"
+                color = "#990000;"
             elif '\\x1b[92m' in new_line:
                 new_line = new_line.replace('\\x1b[92m','')
                 color= "green;" 
             elif '\\x1b[93m' in new_line:
                 new_line = new_line.replace('\\x1b[93m','')
-                color= "yellow;" 
+                color= "#cc5200;" 
             elif '\\x1b[94m' in new_line:
                 new_line = new_line.replace('\\x1b[94m','')
                 color= "blue;"
