@@ -3,16 +3,53 @@ BITAKORA  iggwebnz.eu.pythonanywhere.com
 STILL TO DO !!!
 
 Actual web
+
     0.- clean result_script_exec() of flask_app and include "window" for alert
         Simplify use of MyFunc and MyColors !!!
     1.- make work for game of life and enigma project scripts (video), complete info and review MyFunc, MyColors
+        correct read files path
+            - file path for OS scripts like DelRepeatedLinesAndSort.py"
+            - enigma vf1
     2.- sincronyze pythonAW with github to upload files
-    3.- file path for OS scripts like DelRepeatedLinesAndSort.py"
-    4.- progress bar
+    3.- 
+    4.- CSS file
+    5.- progress bar mail
+    6.- MyFunctions: 
+        - ADD script zip_file_list(list, zipname)
+        - alert window - copy from mySQLadmin
+            function invoke_Alert_Window(my_msg) {
+                document.getElementById('p-alert-msg').innerHTML = my_msg;
+                document.getElementById("my-alert-window").style.display = "block";
+            }
+            function close_Alert_Window() {
+                document.getElementById("my-alert-window").style.display = "none";
+            }    
+    7.- modal for img
+        - modal for img  vs image zoom by click
+            - https://linuxhint.com/image-zoom-in-zoom-out-javascript/
+    8.- upload images
+    9.- open windows   
+        - https://www.youtube.com/watch?v=R5N8TA0KFxc
+
+postergados
+2.- login and users: admin, colab
+
+3.- crud for posts
+    - forms: https://www.youtube.com/watch?v=Rxp3mkg2mRQ
+    - Add A Blog Post Model and Form: https://www.youtube.com/watch?v=1RmU8lderG8
+    - Edit blog post: https://www.youtube.com/watch?v=N4Nz0cYuCnc
+    - Add A Rich Text Editor
+        - https://www.youtube.com/watch?v=5jnAnnxZGQQ
+            - pip install flask-ckeditor
+            - https://flask-ckeditor.readthedocs.io/en/latest/
+
+6.- menu bar when width like phone
+
+
 
 Web with DB scripts
     1.- authentication - login required
-    2- posting with DB
+    2.- posting with DB
 
 
 
@@ -128,40 +165,8 @@ SUBPROCESS
     - test colab posts input process
     - EMAIL pythonanywhere console  😎✔✔
 
-4.- MyFunctions: 
-    - ADD script zip_file_list(list, zipname)
-    - alert window - copy from mySQLadmin
-        function invoke_Alert_Window(my_msg) {
-            document.getElementById('p-alert-msg').innerHTML = my_msg;
-            document.getElementById("my-alert-window").style.display = "block";
-        }
-        function close_Alert_Window() {
-            document.getElementById("my-alert-window").style.display = "none";
-        }    
-
-5.- modal for img
-    - modal for img  vs image zoom by click
-        - https://linuxhint.com/image-zoom-in-zoom-out-javascript/
-
-8.- upload images
-10.- open windows   
-    - https://www.youtube.com/watch?v=R5N8TA0KFxc
-
-postergados
-2.- login and users: admin, colab
-
-3.- crud for posts
-    - forms: https://www.youtube.com/watch?v=Rxp3mkg2mRQ
-    - Add A Blog Post Model and Form: https://www.youtube.com/watch?v=1RmU8lderG8
-    - Edit blog post: https://www.youtube.com/watch?v=N4Nz0cYuCnc
-    - Add A Rich Text Editor
-        - https://www.youtube.com/watch?v=5jnAnnxZGQQ
-            - pip install flask-ckeditor
-            - https://flask-ckeditor.readthedocs.io/en/latest/
-
-6.- menu bar when width like phone
-7.- search in list-dict
-9.- drag & drop
+2.- search in list-dict
+3.- drag & drop
 
 PROJECTS 
 1.- life game

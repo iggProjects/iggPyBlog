@@ -13,7 +13,8 @@
                 <th style="width:8%"><a href="{{enigma_script.zip_url}}" target="_blank"><img class="myImg" onclick='' src="{{ url_for('static', filename='img/icons8-descargar-de-la-nube-100.png') }}" title='Download py script' alt="download-100" width="35"/></a></th>
         
                 <!-- <th style="width:8%"><a href="/result_script_exec" target="_blank"><img class="myImg" onclick='' src="{{ url_for('static', filename='img/icons8-html-filetype-50.png') }}" title='Visualize the scrip run in html format' alt="console-100" width="35"/></a></th>  -->
-                <th style="width:8%"><a href="/result_script_exec/?py_path={{enigma_script.fileDirPath}}" target="_blank"><img class="myImg" onclick='' src="{{ url_for('static', filename='img/icons8-html-filetype-50.png') }}" title='Visualize the scrip run in html format' alt="console-100" width="35"/></a></th>
+                
+                <th style="width:9%"><a href="/result_script_exec/?py_path={{enigma_script.fileDirPath1}}" target="_blank"><img class="myImg" onclick='alert("Please wait a bit while the script runs in the background !")' src="{{ url_for('static', filename='img/icons8-html-filetype-50.png') }}" title='Visualize the scrip run in html format' alt="console-100" width="35"/></a></th>
                 <th style="width:8%; padding:10px;">
                     <img class="myImg" onclick="ExecPythonScript('{{enigma_script.fileDirPath}}')" src="{{ url_for('static', filename='img/icons8-consola-100.png') }}" title='If you are in localhost mode, run in terminal' alt="console-100" width="35"/>
                 </th> 

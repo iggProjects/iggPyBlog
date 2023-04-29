@@ -56,21 +56,21 @@ def suma_AP(d):
 	if ( (d-1) % (BASE) == 0):		
 		pid=str(multiprocessing.Process.pid)
 		name=str(multiprocessing.Process.name)
-		print(" ")
-		print(f"\t{FR_GREEN}'d' value {d} => Process: {pid} | name: {name}{NO_COLOR}")
+		print("print empty line")
+		print(f"\t{FR_GREEN} | d value: {d} | Process: {pid} | name: {name}{NO_COLOR}")
 		print(f"\t\t====== SUM: {place_comma(resultado)} ======")
 	
 # Ejecuta la suma para una lista de razones, todas con el mismo elemento inicial 
 def suma(lista,N_CPUS):	
 	
 	print(f"\tmultiprocessing pool: {multiprocessing.Pool(N_CPUS)} | var type: {type(multiprocessing.Pool(N_CPUS))}")
-	print(" ")	
+	print("print empty line")	
 	with multiprocessing.Pool(N_CPUS) as pool:		
-		print(f"\t{FR_MAG}===== pool : {pool}{NO_COLOR} =====")
+		print(f"\t{FR_YELL}===== pool : {pool}{NO_COLOR} =====")
 		pool.map(suma_AP,lista)
 		# pool.map(suma_AP,lista,N_TER)
-		print(" ")	
-	print(" ")		
+		print("print empty line")	
+	print("print empty line")		
 
 #
 # PROGRAMA
@@ -79,7 +79,7 @@ def suma(lista,N_CPUS):
 if __name__ == '__main__':
 
 	system('cls')
-	print(" ")
+	print("print empty line")
 	print("\t=================  MAIN =================")
 
 	if N_CPUS > multiprocessing.cpu_count():	
@@ -88,15 +88,15 @@ if __name__ == '__main__':
 
 	# Max Number of CPU's
 	
-	print(" ")
-	print(f"{FR_MAG}\t======= Max number of cpu's in PC: {multiprocessing.cpu_count()} ======={NO_COLOR}")
-	print(" ")
+	print("print empty line")
+	print(f"{FR_YELL}\t======= Max number of cpu's in PC: {multiprocessing.cpu_count()} ======={NO_COLOR}")
+	print("print empty line")
 	print(f"{FR_GREEN}\tNumber of CPU for this multiprocessing task: {N_CPUS}{NO_COLOR}")
 	print(f"\t\tNumber of artihmetical progresions: {place_comma(N_PROGR)}")
 	print(f"\t\tfirst term: {ELEM_1}")
 	print(f"\t\tfirst 'd': {D_1}")
 	print(f"\t\tnumber of terms to include for each AP: {place_comma(N_TER)}")
-	print(" ")
+	print("print empty line")
 	#print(f"\tNumber of artihmetical progresions: {place_comma(N_PROGR)}")
 	#print(f"\t\tfirst term: {ELEM_1}\n\t\tfirst 'd': {D_1}\n\t\tnumber of terms to include for each AP: {place_comma(N_TER)}\n")
 	
@@ -123,24 +123,24 @@ if __name__ == '__main__':
 	elap_time = time.time() - inicio
 	time_5_dec = "{:.5f}".format(elap_time)
 
-	print(f"{FR_MAG}\t============ BALANCE ============{NO_COLOR}")
-	print(" ")	
-	print(f"\t{FR_MAG}{place_comma(N_PROGR)} Progressions{NO_COLOR}")
+	print(f"{FR_YELL}\t============ BALANCE ============{NO_COLOR}")
+	print("print empty line")	
+	print(f"\t{FR_YELL}{place_comma(N_PROGR)} Progressions{NO_COLOR}")
 	print(f"\tFor each Arith P:")
 	print(f"\t\tFirst Element: {ELEM_1}")
 	print(f"\t\tFirst 'd': {D_1}")
 	print(f"\t\tNumber of terms: {place_comma(N_TER)}")
-	print(" ")
+	print("print empty line")
 	print(f"\tFormula to create List of 'd': [(D_1 + 2*x) for x in range(0, N_PROGR)]")	
 	#print(f"{FR_GREEN}======= d_list ======={NO_COLOR}\n{d_list}")
 	print(f"\tNumb CPU's used: {N_CPUS} | Number of artihmetic operations (aprox): {place_comma(arit_oper)}")
 	print(f"\tNumber of prints: {count_prints}")
-	print(" ")
+	print("print empty line")
 
 	print(f"\t{FR_GREEN}Elapsed time: {time_5_dec} seconds{NO_COLOR}")
-	print(" ")
+	print("print empty line")
 
-	print(f"\t{FR_MAG}======== that's all ========{NO_COLOR}")
-	print(" ")
+	print(f"\t{FR_YELL}======== that's all ========{NO_COLOR}")
+	print("print empty line")
 
 	

@@ -25,7 +25,7 @@ FR_MAG   = "\033[95m"
 app = Flask(__name__)
 
 basedir = os.path.abspath(os.path.dirname(__file__))
-#print(f"............ basedir===> {basedir}")
+print(f"............ basedir===> {basedir}")
 app.config['SQLALCHEMY_DATABASE_URI'] ='sqlite:///' + os.path.join(basedir, 'foods.db')
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
@@ -320,15 +320,20 @@ def result_script_exec():
     text = subprocess.run(["cmd", "/c", "python.exe", py_script_path],capture_output=True)    
     # text = subprocess.run(["cmd", "/c", "dir .."],capture_output=True)
 
-    #print(f"\n\n{FR_YELL}===> text type: {type(text)}{NO_COLOR}")
+    print(f"\n\n{FR_YELL}===> text type: {type(text)}{NO_COLOR}")
+
+    # see order in list_b_lines
     list_b_lines = text.stdout.splitlines()
+    for line in list_b_lines:
+        print(f"==> line: {line}")
+
     list_color_text = []    
     #lines_colors = []
     for line in list_b_lines:
         #new_line = "<p>" + str(line) + "</p>"
         new_line = str(line)
         color = "black"
-        if new_line == 'b\'\\x0c\\x1b[92m\'' or new_line == 'b\' \\x1b[00m\'' or new_line == 'b\'\\x1b[92m\'': 
+        if new_line == 'b\'\\x0c\\x1b[92m\'' or new_line == 'b\' \\x1b[00m\'' or new_line == 'b\'\\x1b[92m\'' or new_line == '\\x0c': 
             pass
         elif 'print empty line' in new_line:
             new_line = "---"

@@ -25,8 +25,13 @@ FR_MAG   = "\033[95m"
 
 if __name__ == "__main__":
 
+    import os
+
     system('cls')
     print(f"{FR_GREEN}---------- main ----------")
+
+    base_dir = os.path.dirname("/baz/foo")
+    print(f"base dir: {base_dir}")
         
     file = open("z-fileRepeatedLines.txt","r")
     print(f"{FR_BLUE}\tRead and print '{file.name}'")

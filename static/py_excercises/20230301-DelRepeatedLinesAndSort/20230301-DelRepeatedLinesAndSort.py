@@ -25,11 +25,20 @@ FR_MAG   = "\033[95m"
 
 if __name__ == "__main__":
 
+    import os
+
     system('cls')
     print(f"\n{FR_GREEN}---------- main ----------{NO_COLOR}\n")
     pause()
-    
-    file = open("z-fileRepeatedLines.txt","r")
+
+    cwd = os.getcwd()
+    print(f"cwd: {cwd}")
+    #base_dir = os.path.dirname(os.getcwd())
+    #print(f"base dir: {base_dir}")
+    file_path = os.path.join(cwd, 'z-fileRepeatedLines.txt')
+    print(f"file: {file_path}")
+    file = open(file_path,"r")
+    #file = open("z-fileRepeatedLines.txt","r")
     print(f"\n{FR_YELL}\tRead and print '{file.name}'{NO_COLOR}\n")
     # read lines
     lines = file.readlines()
