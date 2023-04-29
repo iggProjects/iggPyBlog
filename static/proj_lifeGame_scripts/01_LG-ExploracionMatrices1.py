@@ -31,25 +31,24 @@ def pausar():
 
 # Muestro la Matriz
 def mostrar_matriz(matriz,msg):
-	X, Y = matriz.shape                                   # Dimensiones de la matriz
+	X, Y = matriz.shape                          # Dimensiones de la matriz
 	print(f"{FR_GREEN}{msg}")
 	print(f"{NO_COLOR}")
 	for y in range(0, Y):
 		for x in range(0, X):
 			if matriz[x,y] == 1:
-				print(f"\t{FR_RED}{int(matriz[x,y])}{NO_COLOR}", end =" ")
+				print(f"\t{FR_RED}{int(matriz[x,y])}", end =" ")
 			else:
-				print(f"\t{int(matriz[x,y])}", end =" ")
+				print(f"\t{NO_COLOR}{int(matriz[x,y])}", end =" ")
 		print()
-	print()	# 	
-	pausar()	
+	print("print empty line") 	
+	#pausar()	
 
-
-os.system('cls')        # Ejecuto el comando 'clear' del OS
+#os.system('cls')        # Ejecuto el comando 'clear' del OS
 nX, nY = 8, 8
 
-print("\n-------------------------- MAIN -------------------------------------\n")
-print(f"{FR_YELL}\t======= MATRIX WITH NUMPY METHODS   ======={NO_COLOR}\n")
+#print("\n-------------------------- MAIN -------------------------------------\n")
+print(f"{FR_YELL}======= MATRIX WITH NUMPY METHODS   =======")
 
 matriz = np.arange(nX*nY).reshape(nX, nY)
 msg = " Matriz inicial de nX= " + str(nX) + " cols y nY= " + str(nY) + " rows | numpy: matriz = np.arange(nX*nY).reshape(nX, nY) "
@@ -89,7 +88,7 @@ mostrar_matriz(top, " top = np.vstack( ( [m3[int(nX/2)-1, int(nY/2)-1]], m2[ :, 
 m0e = np.hstack( ( top, m0e, bot) )
 mostrar_matriz(m0e, " m0e expandida = np.hstack( ( top, m0e, bot) )")
 
-print(f"\n{FR_YELL}======== that's all ========{NO_COLOR}\n")
+print(f"{FR_YELL}======== that's all ========")
 
 #print()
 #mostrar_matriz( np.vstack( (m0,m1) ) )

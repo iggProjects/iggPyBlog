@@ -3,16 +3,13 @@ import numpy as np
 import os
 import time
 
-os.system('cls')
-
 # Constantes
-
 # Colors
 NO_COLOR = "\033[00m"
-FR_GREEN = "\033[92m"
 FR_RED   = "\033[91m"
-FR_BLUE  = "\033[94m"
+FR_GREEN = "\033[92m"
 FR_YELL  = "\033[93m"
+FR_BLUE  = "\033[94m"
 FR_MAG   = "\033[95m"
 
 # 
@@ -27,7 +24,7 @@ yExt = 2*nY + 1
 # Funciones
 #
 def pausar(i):
-	userInput = input(f"\nIteración No: {i}, matriz {nX} x {nY}\nPresiona ENTER para continuar CTRL-C para salir\n")
+	userInput = input(f"\niteracion No: {i}, matriz {nX} x {nY}\nPresiona ENTER para continuar CTRL-C para salir\n")
 
 def mostrar_matriz(matriz):
 	# os.system('clear')
@@ -35,16 +32,16 @@ def mostrar_matriz(matriz):
 	for x in range(0, X):
 		for y in range(0, Y):
 			if matriz[x,y] == 1:
-				print(f"\033[0;91m{int(matriz[x,y])}\033[0m", end =" ")
+				print(f"{int(matriz[x,y])}", end =" ")
 			elif matriz[x,y] == 0:
-				print(f"\033[0;37m{int(matriz[x,y])}\033[0m", end =" ")
+				print(f"{int(matriz[x,y])}", end =" ")
 			elif matriz[x,y] == 99999:
-				print(f"\033[0;32m{int(matriz[x,y])}\033[0m", end =" ")
+				print(f"{int(matriz[x,y])}", end =" ")
 			else:
-				print(f"\033[0;37m{int(matriz[x,y])}\033[0m", end =" ")
+				print(f"{int(matriz[x,y])}", end =" ")
 				 	 	
 		print()
-
+	print("print empty line")
 #
 # MAIN
 #
@@ -69,7 +66,7 @@ for x in range(0,nX):
 		matriz_ext[x,y+nY+1] = nVecinos
 
 for x in range (0,nX):
-	matriz_ext[x,nY] = 99999 
+	matriz_ext[x,nY] = 99999
 
 n=1
 while n <= ITERAC:
@@ -104,16 +101,17 @@ while n <= ITERAC:
 			matrizTemp[x,y+nY+1] = nVecinos
 
 	matriz_ext = np.copy(matrizTemp)
-	print(f"\n{FR_YELL}  Matriz Game of Life{NO_COLOR}   -----    {FR_GREEN}Matriz Num Vecinos{NO_COLOR}")
+	print(f"{FR_GREEN}--- Matriz Game of Life ------- Matriz Num Vecinos ---")
 	mostrar_matriz( matriz_ext )
 	#print(f"Iteraciones: {n} de {ITERAC} ({nX}, {nY}) ")
 	#time.sleep(2)
 	if n < 5:
-		pausar(n)
+		pass
+		#pausar(n)
 	else:
-		print(f"Iteración No: {n}\nmatriz {nX} x {nY}\n")	
+		print(f"{FR_BLUE}Iteracion No: {n} | matriz {nX} x {nY}\n")	
 	n += 1
 
-print(f"\n\033[0;93mTotal iteraciones Game of Life: {ITERAC}\033[0m\nmatriz {nX} x {nY}\n")
+#print(f"{FR_BLUE}Total iteraciones Game of Life: {ITERAC} -- matriz {nX} x {nY}")
 	
-print("FIN\n")
+print("print empty line")

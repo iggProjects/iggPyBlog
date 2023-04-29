@@ -34,16 +34,17 @@ def parificar(numero):
 
 # Muestro la Matriz
 def mostrar_matriz(matriz,msg):
-	#print(f"\n{FR_YELL}{msg}{NO_COLOR}\n")
-	os.system('cls')                                    # Ejecuto el comando 'clear' del OS
-	X, Y = matriz.shape                                   # Dimensiones de la matriz
+	X, Y = matriz.shape                          # Dimensiones de la matriz
+	print(f"{FR_GREEN}{msg}")
+	print(f"{NO_COLOR}")
 	for y in range(0, Y):
 		for x in range(0, X):
 			if matriz[x,y] == 1:
-				print(f"{FR_RED}{int(matriz[x,y])}{NO_COLOR}", end =" ")
+				print(f"\t{FR_RED}{int(matriz[x,y])}", end ="")
 			else:
-				print(f"\033[0;37m{int(matriz[x,y])}{NO_COLOR}", end =" ")
+				print(f"\t{FR_BLUE}{int(matriz[x,y])}", end ="")
 		print()
+	print("print empty line") 	
 
 # Creo matriz a partir de una archivo si es suministrado
 def crear_matriz(nombre_archivo):
@@ -66,7 +67,7 @@ def crear_matriz(nombre_archivo):
 					if y > (nY-1): break
 		except Exception:
 			traceback.print_exc()
-			pausar()
+			# pausar()
 	else:
 		matriz = np.random.randint(2, size=(nX, nY))										# Matriz de aleatorios
 	
@@ -83,12 +84,12 @@ def calcular_matriz(matriz):
 		for y in range(1, Y-1):
 			# Numero de Vecinos
 			nVecinos = matriz[	(x-1), (y-1) ] 		\
-							 + matriz[	(x), 	(y-1) ] 		\
+							 + matriz[	(x),   (y-1) ] 		\
 							 + matriz[	(x+1), (y-1) ] 		\
 							 + matriz[	(x-1), (y) ] 			\
 							 + matriz[	(x+1), (y) ] 			\
 							 + matriz[	(x-1), (y+1) ] 		\
-							 + matriz[	(x), 	(y+1) ] 		\
+							 + matriz[	(x),   (y+1) ] 		\
 							 + matriz[	(x+1), (y+1) ]
 
 			# Regla 1: celda muerta (0) con 3 vecinas revive (1)
@@ -136,7 +137,7 @@ if __name__ == '__main__':
 	#nX, nY = os.get_terminal_size(0)					# Linux   Obtengo COLUMNAS y LINEAS de la consola
 	#nX, nY = parificar(int(nX/2)), parificar(nY-2)		# Ajusto por espacios e indicador de iteraciones
 
-	nX, nY = 25,25
+	nX, nY = 20,20
 
 	# Intento capturar nombre de archivo de la llamada
 	try:
@@ -145,9 +146,9 @@ if __name__ == '__main__':
 		archivo = 'NO_ARCHIVO'
 
 	matriz = crear_matriz(archivo)								# Obtengo la matriz
-	mostrar_matriz(matriz,"Matriz Inicial")
-	print(f"{FR_GREEN}MATRIZ INICIAL{NO_COLOR}")
-	pausar()
+	mostrar_matriz(matriz,"MATRIZ INICIAL")
+	
+	# pausar()
 
 	# Registro hora-seg inicio
 	inicio = time.time()
@@ -181,12 +182,14 @@ if __name__ == '__main__':
 		# Recombino las matrices particionadas
 		matriz = np.hstack( (np.vstack( (m0,m1) ), np.vstack( (m2,m3) )) )
 		# Print cada 10 iteraciones
-		if n % 10 == 0:
-			mostrar_matriz(matriz,"Nueva cara Matriz")
-			print(f"Iteraciones: {n} de {ITERAC} | Matriz {nX} x {nY}")
-		time.sleep(DORMIR)
+		if n % 50 == 0:
+			print(f"Iteracion {n} de {ITERAC} | Matriz {nX} x {nY}")
+			mostrar_matriz(matriz,"")
+		# time.sleep(DORMIR)
 		n+=1
 
 	elapsed_time = "{:.2f}".format(time.time()-inicio)
-	print(f"\n{FR_GREEN}   Elapsed Time: {elapsed_time} seconds{NO_COLOR}\n")
-	print(f"\n{FR_YELL}   ----------THAT's ALL----------\033[0m\n")
+	print(f"{FR_GREEN}   Elapsed Time: {elapsed_time} seconds")
+	print("print empty line")
+	print(f"{FR_YELL}   ----------THAT's ALL----------")
+	print("print empty line")
