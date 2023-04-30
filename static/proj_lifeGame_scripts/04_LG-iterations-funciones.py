@@ -6,7 +6,7 @@ import time
 #
 # Constantes
 #
-ITERAC = 300
+ITERAC = 500
 DORMIR= 0.005
 
 from os import system
