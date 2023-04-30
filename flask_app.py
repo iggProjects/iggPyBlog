@@ -327,8 +327,10 @@ def result_script_exec():
     #for line in list_b_lines:
     #    print(f"==> line: {line}")
 
-    list_color_text = []    
+    list_color_text = []
+    list_JS_lines = []
     #lines_colors = []
+
     for line in list_b_lines:
         #new_line = "<p>" + str(line) + "</p>"
         new_line = str(line)
@@ -359,34 +361,43 @@ def result_script_exec():
             new_line = new_line.replace('\\x1b[00m','')
             new_line = new_line.replace('\\t','&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;')            
             
-            if '\\x1b[91m' in new_line:
+            if '\\x1b[91m' in new_line:      # red
                 new_line = new_line.replace('\\x1b[91m','')
-                color = "#990000;"
-            elif '\\x1b[92m' in new_line:
+                color = "#800000;"
+            elif '\\x1b[92m' in new_line:    # green
                 new_line = new_line.replace('\\x1b[92m','')
                 color= "green;" 
-            elif '\\x1b[93m' in new_line:
+            elif '\\x1b[93m' in new_line:    # orange - (FR_YELL)
                 new_line = new_line.replace('\\x1b[93m','')
-                color= "#cc5200;" 
-            elif '\\x1b[94m' in new_line:
+                color= "#cc5200;"            
+            elif '\\x1b[94m' in new_line:    # blue
                 new_line = new_line.replace('\\x1b[94m','')
                 color= "blue;"
-            elif '\\x1b[95m' in new_line:
+            elif '\\x1b[95m' in new_line:    # magenta
                 new_line = new_line.replace('\\x1b[95m','')
                 color= "magenta;"
             else:
                 pass
 
             #print(f"line to print: {new_line}")
+            js_line = new_line
+            
+            if js_line != "":
+                #print(f"==> js_line {js_line}")
+                list_JS_lines.append(js_line.replace(' ',''))
+
+
             new_line=Markup(new_line)
+
             list = [color,new_line]
             list_color_text.append(list) 
             
             #print(f"new_line formatted => {list}")
     
+    print(f"list_JS_lines type: {type(list_JS_lines)} | first line: {list_JS_lines[2]}")
     print(f"{FR_YELL}====== Saliendo en result_script_exec() ======{NO_COLOR}\n") 
 
-    return render_template('result_script_exec.html',list_lines=list_color_text,py_name=py_name)
+    return render_template('result_script_exec.html', list_lines=list_color_text, list_JS_lines=list_JS_lines, py_name=py_name)
 
 
 #

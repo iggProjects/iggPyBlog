@@ -87,7 +87,7 @@ def LG_scripts():
             'section': 'Game of life',
             'title': 'Expand and contract matrices',
             'fileDirPath': 'static/proj_lifeGame_scripts/05_LG-Iterations-ejec-normal.py',            
-            'fileDirPath1': 'static/proj_lifeGame_scripts/05_LG-Iterations-ejec-normal1.py',            
+            'fileDirPath1': '',            
             
             'homework': 'Execute 500 iterations of Game of Life script',
 
@@ -106,7 +106,7 @@ def LG_scripts():
             'section': 'Game of life',
             'title': 'Simulate set of 4 games (matrices)',
             'fileDirPath': 'static/proj_lifeGame_scripts/06_LG-show-four-matrices.py',            
-            'fileDirPath1': 'static/proj_lifeGame_scripts/06_LG-show-four-matrices1.py',            
+            'fileDirPath1': '',            
             
             'homework': 'Execute 500 iterations of Game of Life script.',
 
@@ -125,7 +125,7 @@ def LG_scripts():
             'section': 'Game of life',
             'title': 'Simulate set of 4 games (matrices)',
             'fileDirPath': 'static/proj_lifeGame_scripts/07-LG_-multiprocessing-cpu.py',            
-            'fileDirPath1': 'static/proj_lifeGame_scripts/07-LG_-multiprocessing-cpu1.py',            
+            'fileDirPath1': '',            
             
             'homework': 'Execute Sets of 4 Games with multiprocessing.',
 

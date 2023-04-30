@@ -16,9 +16,10 @@ import string
 
 # CONSTANTS
 # Colors
+# Colors
 NO_COLOR = "\033[00m"
 FR_RED   = "\033[91m"
-FR_MAG = "\033[92m"
+FR_GREEN = "\033[92m"
 FR_YELL  = "\033[93m"
 FR_BLUE  = "\033[94m"
 FR_MAG   = "\033[95m"
@@ -102,7 +103,7 @@ def decipher(alphab1, event):
 
         if MY_TEXT.casefold() == decoded_text:
             #print("print empty line")
-            print(f"\t{FR_YELL}------ BINGO ------ BINGO ------ BINGO ------ BINGO ------ BINGO ------ BINGO -------")            
+            print(f"\t{FR_GREEN}------ BINGO ------ BINGO ------ BINGO ------ BINGO ------ BINGO ------ BINGO -------")            
             print(f'\t{FR_BLUE}Parent Process "{os.getppid()}" | Child Process "{os.getpid()}" --> THE SOLUTION WAS FOUND !') 
             print("print empty line")
             #print(f"{FR_MAG}\tPID process child: {os.getpid} \n")
@@ -122,7 +123,7 @@ if __name__ == '__main__':
     inicio = time.time()
     print("print empty line")
 
-    print(f'{FR_YELL}\t================ "Multiprocess started with pid: {os.getpid()}"" ================')
+    print(f'{FR_GREEN}\t================ "Multiprocess started with pid: {os.getpid()}"" ================')
     print(f'{FR_BLUE}\t--- reading file of 500,000 sub alphab started at:\t"{datetime.now()}" ---')
 
     messy_alphabets = []

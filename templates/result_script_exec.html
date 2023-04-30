@@ -9,5 +9,16 @@
         <!-- <p style='color:{{line[0]}}' onclick='alert("{{line[0]}}")'>{{ line[1] }}</p> -->       
     {% endfor %}
     </div>
+    <script type="text/javascript">
+        var lines = {{ list_JS_lines | tojson }};
+        console.log('type of lines var: ' + typeof(lines))
+        console.log('type of lines var: ' + Object.prototype.toString.call(lines))
+        
+        for (i=0; i < lines.length; i++) {
+            console.log('===> list line ' + i + ' -- ' + lines[i])
+        }
+        
+        
+    </script>
 
 {% endblock %}

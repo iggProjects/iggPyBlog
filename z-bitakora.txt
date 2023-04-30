@@ -8,8 +8,9 @@ Actual web
         Simplify use of MyFunc and MyColors !!!
     1.- make work for game of life and enigma project scripts (video), complete info and review MyFunc, MyColors
         correct read files path
-            - file path for OS scripts like DelRepeatedLinesAndSort.py"
-            - enigma vf1
+            - 04_LG colors for 1, and JS for animation  (pass lines to JS)
+            - file path for OS scripts like DelRepeatedLinesAndSort.py"   ✔✔😎
+            - enigma vf1  ✔✔😎
     2.- sincronyze pythonAW with github to upload files
     3.- 
     4.- CSS file

@@ -20,8 +20,8 @@ import os
 # Colors
 NO_COLOR = "\033[00m"
 FR_RED   = "\033[91m"
-FR_GREEN = "\033[92m"
-FR_YELL  = "\033[93m"
+FR_BLUE = "\033[92m"
+FR_RED  = "\033[93m"
 FR_BLUE  = "\033[94m"
 FR_MAG   = "\033[95m"
 
@@ -32,12 +32,13 @@ def pausar():
 # Muestro la Matriz
 def mostrar_matriz(matriz,msg):
 	X, Y = matriz.shape                          # Dimensiones de la matriz
-	print(f"{FR_GREEN}{msg}")
+	print(f"{FR_BLUE}{msg}")
 	print(f"{NO_COLOR}")
 	for y in range(0, Y):
 		for x in range(0, X):
 			if matriz[x,y] == 1:
-				print(f"\t{FR_RED}{int(matriz[x,y])}", end =" ")
+				print(f"\t{NO_COLOR}{int(matriz[x,y])}", end =" ")
+				#print(f"\t{FR_RED}{int(matriz[x,y])}", end =" ")
 			else:
 				print(f"\t{NO_COLOR}{int(matriz[x,y])}", end =" ")
 		print()
@@ -48,7 +49,8 @@ def mostrar_matriz(matriz,msg):
 nX, nY = 8, 8
 
 #print("\n-------------------------- MAIN -------------------------------------\n")
-print(f"{FR_YELL}======= MATRIX WITH NUMPY METHODS   =======")
+print(f"{FR_RED}======= MATRIX WITH NUMPY METHODS   =======")
+print("print empty line")
 
 matriz = np.arange(nX*nY).reshape(nX, nY)
 msg = " Matriz inicial de nX= " + str(nX) + " cols y nY= " + str(nY) + " rows | numpy: matriz = np.arange(nX*nY).reshape(nX, nY) "
@@ -88,7 +90,7 @@ mostrar_matriz(top, " top = np.vstack( ( [m3[int(nX/2)-1, int(nY/2)-1]], m2[ :, 
 m0e = np.hstack( ( top, m0e, bot) )
 mostrar_matriz(m0e, " m0e expandida = np.hstack( ( top, m0e, bot) )")
 
-print(f"{FR_YELL}======== that's all ========")
+print(f"{FR_RED}======== THAT'S ALL ========")
 
 #print()
 #mostrar_matriz( np.vstack( (m0,m1) ) )

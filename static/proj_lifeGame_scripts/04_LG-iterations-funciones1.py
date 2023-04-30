@@ -6,7 +6,7 @@ import time
 #
 # Constantes
 #
-ITERAC = 300
+ITERAC = 500
 DORMIR= 0.005
 
 from os import system
@@ -35,14 +35,16 @@ def parificar(numero):
 # Muestro la Matriz
 def mostrar_matriz(matriz,msg):
 	X, Y = matriz.shape                          # Dimensiones de la matriz
-	print(f"{FR_GREEN}{msg}")
+	print(f"{FR_BLUE}{msg}")
 	print(f"{NO_COLOR}")
 	for y in range(0, Y):
 		for x in range(0, X):
 			if matriz[x,y] == 1:
-				print(f"\t{FR_RED}{int(matriz[x,y])}", end ="")
+				print(f"{int(matriz[x,y])}", end =" ")
+				#print(f"\t{FR_RED}{int(matriz[x,y])}", end ="")
 			else:
-				print(f"\t{FR_BLUE}{int(matriz[x,y])}", end ="")
+				print(f"{int(matriz[x,y])}", end =" ")
+				#print(f"\t{FR_BLUE}{int(matriz[x,y])}", end ="")				
 		print()
 	print("print empty line") 	
 
@@ -137,7 +139,7 @@ if __name__ == '__main__':
 	#nX, nY = os.get_terminal_size(0)					# Linux   Obtengo COLUMNAS y LINEAS de la consola
 	#nX, nY = parificar(int(nX/2)), parificar(nY-2)		# Ajusto por espacios e indicador de iteraciones
 
-	nX, nY = 20,20
+	nX, nY = 40,20
 
 	# Intento capturar nombre de archivo de la llamada
 	try:
@@ -183,7 +185,7 @@ if __name__ == '__main__':
 		matriz = np.hstack( (np.vstack( (m0,m1) ), np.vstack( (m2,m3) )) )
 		# Print cada 10 iteraciones
 		if n % 50 == 0:
-			print(f"Iteracion {n} de {ITERAC} | Matriz {nX} x {nY}")
+			print(f"{FR_BLUE}Iteracion {n} de {ITERAC} | Matriz {nX} x {nY}")
 			mostrar_matriz(matriz,"")
 		# time.sleep(DORMIR)
 		n+=1

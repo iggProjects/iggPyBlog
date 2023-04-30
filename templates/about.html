@@ -1,6 +1,34 @@
 {% extends 'layout.html' %}
 
 {% block body %}
+
     <h1>ABOUT COURSE</h1>
-    <p>Program</p>
+    <div class="disp-rows-cent"  style="height:70vh;  margin: auto; margin-left:20px; ">
+        <div style="width:15%; text-align: center; border:1px solid blue;">
+            <p style="margin-top:10px;" onclick="document.getElementById('div_info').innerHTML = document.getElementById('program').innerHTML">Program</p>    
+            <p onclick="document.getElementById('div_info').innerHTML = document.getElementById('bitakora').innerHTML">My Bitakora</p>
+            <p onclick="document.getElementById('div_info').innerHTML = document.getElementById('links').innerHTML">Links</p>
+            <p onclick="document.getElementById('div_info').innerHTML = document.getElementById('suggestions').innerHTML">Suggestions</p>
+        </div>
+
+        <div id="div_info" style="width:80%; height:68vh; padding:10px; margin:auto; border: 10px solid rgb(120, 120, 252); border-radius:10px;"></div>
+
+        <div id="program" class="block_hide" style="display:none;">
+            <p>Program</p>        
+            <p>Program</p>        
+            <p>Program</p>        
+            <p>Program</p>        
+        </div>
+        <div id="bitakora" class="block_hide" style="display:none;">
+            My Bitakora        
+        </div>
+        <div id="links" class="block_hide" style="display:none;">
+            Interest links        
+        </div>
+        <div id="suggestions" class="block_hide" style="display:none;">
+            Suggestions        
+        </div>
+    </div>
+
+
 {% endblock %}
