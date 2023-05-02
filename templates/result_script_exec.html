@@ -13,6 +13,7 @@
     </div>
     <script type="text/javascript">
 
+        /* <span> for '1' */
         function span_ones(line){
             span_line="";
             for ( j=0; j<line.length; j++ ){
@@ -25,33 +26,90 @@
             return span_line; 
         }
 
+
+        /* Print matrix in html page */
+        function print_html_matrix(mat) {
+
+            // console.log('from function, mat ===> ' + mat)
+                
+            div_html = "";
+            
+            for ( l=0; l < mat.length; l++ ) {
+
+                // console.log(' ===> matrix line ' + l + ' --> ' + mat[l])
+                if ( mat[l][0] == 'M' || mat[l][0] == 'I' ) {                      
+
+                    div_html += "<br><p class='p_result' style='color:yellow;'>" + mat[l] + "</p>";
+                
+                } else if ( mat[l][0] == 0 || mat[l][0] == 1) {    
+
+                    div_html += "<p class='p_result'>" + span_ones(mat[l]) + "</p>";
+
+                }   
+
+            }
+            
+            document.getElementById("div_matrix").innerHTML = div_html;
+            // return div_html
+            
+        }
+
+        // read server data as array
         var lines = {{ list_JS_lines | tojson }};
         console.log('type of lines var: ' + typeof(lines));
         console.log('type of lines var: ' + Object.prototype.toString.call(lines));
 
-
+        /* variables  */  
         div_matrix_html = "";
         list_matrices = []
         matrix = []
 
+        // create array for all matrices
         for (i=0; i < lines.length; i++) {
             // console.log('===> list line ' + i + ' -- ' + lines[i])
-            if ( lines[i][0] == 'M' || lines[i][0] == 'I'  ) {
-                list_matrices.push(matrix)
+            if ( lines[i][0] == 'M' ) {                
+                //console.log('initial matrix ===> ' + matrix)
                 matrix = []
                 div_matrix_html += "<br><p class='p_result' style='color:yellow;'>" + lines[i] + "</p>";
-                matrix.push(lines[i])
-                console.log('matrix: ' + matrix)
+                matrix.push(lines[i])                
+            
+            } else if ( lines[i][0] == 'I' ) { 
+                //console.log('matrix ===> ' + matrix)              
+                list_matrices.push(matrix)
+                matrix = []
+                div_matrix_html = "<br><p class='p_result' style='color:yellow;'>" + lines[i] + "</p>";  
+                matrix.push(lines[i])                
+
             } else if ( lines[i][0] == 0 || lines[i][0] == 1) {    
                 div_matrix_html += "<p class='p_result'>" + span_ones(lines[i]) + "</p>";   
                 matrix.push(lines[i])     
-            } else {
+
+            } else if ( lines[i][0] == 'E' ) {      
+                list_matrices.push(matrix)     
+                //console.log('matrix ===> ' + matrix)                   
                 div_matrix_html += "<br><p class='p_result' style='color:yellow;'>" + lines[i] + "</p>";
             }   
         }
+
+        //list_matrices.push(matrix)
         
-        document.getElementById("div_matrix").innerHTML = div_matrix_html;
+        // document.getElementById("div_matrix").innerHTML = div_matrix_html;
         console.log('list_matrices===> ' + list_matrices.length)
+
+        // call function to print list_matrices with delay 
+        for ( k=0; k < list_matrices.length; k++ ) {
+
+            // https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_win_setinterval
+
+            // print matrix with delay
+            // setInterval(displayHello, 1000);
+            setInterval( print_html_matrix(list_matrices[1]), 2000);           
+
+        }
+
+        
+
+
         
     </script>
 

@@ -1,4 +1,4 @@
-BITAKORA  iggwebnz.eu.pythonanywhere.com
+BITAKORA  www.iggwebnz.eu.pythonanywhere.com
 
 STILL TO DO !!!
 
