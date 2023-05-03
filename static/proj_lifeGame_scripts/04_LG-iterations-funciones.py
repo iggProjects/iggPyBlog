@@ -6,7 +6,7 @@ import time
 #
 # Constantes
 #
-ITERAC = 500
+ITERAC = 1000
 DORMIR= 0.005
 
 from os import system
@@ -181,7 +181,7 @@ if __name__ == '__main__':
 		# Recombino las matrices particionadas
 		matriz = np.hstack( (np.vstack( (m0,m1) ), np.vstack( (m2,m3) )) )
 		# Print cada 10 iteraciones
-		if n % 10 == 0:
+		if n % 50 == 0:
 			mostrar_matriz(matriz,"Nueva cara Matriz")
 			print(f"Iteraciones: {n} de {ITERAC} | Matriz {nX} x {nY}")
 		time.sleep(DORMIR)

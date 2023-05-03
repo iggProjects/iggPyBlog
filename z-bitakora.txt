@@ -12,7 +12,10 @@ Actual web
             - file path for OS scripts like DelRepeatedLinesAndSort.py"   ✔✔😎
             - enigma vf1  ✔✔😎
     2.- sincronyze pythonAW with github to upload files
-    3.- 
+    3.- setInterval to work html tag with time
+        https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_win_setinterval
+        https://stackoverflow.com/questions/64488429/innerhtml-with-settimeout-prints-only-the-last-part-in-loop
+
     4.- CSS file
     5.- progress bar mail
     6.- MyFunctions: 

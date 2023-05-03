@@ -3,7 +3,7 @@
 {% block body %}
 
     <h1 style= "margin-left:11%; font-size:25px;">PY CLIENT SUBPROCESS FOR&nbsp;&nbsp;&nbsp;==> "{{py_name}}"</h1>
-    <div id="div_matrix" style="max-width:80%; max-height:75vh; margin:auto; overflow-y:scroll; padding: 20px;padding-left: 50px; border:10px solid rgb(128, 106, 252); border-radius: 10px; background-color: rgb(8, 8, 124); ">
+    <div id="div_matrix" style="max-width:80%; max-height:75vh; margin:auto; padding: 20px; padding-top: 0px; text-align: center; overflow-y:scroll; border:10px solid rgb(128, 106, 252); border-radius: 10px; background-color: rgb(8, 8, 124); ">
     <!--        
     {% for line in list_lines %}
         <p class="p_result" style='color:{{line[0]}}'>{{ line[1] }}</p>        
@@ -11,6 +11,7 @@
     {% endfor %}
     -->
     </div>
+
     <script type="text/javascript">
 
         /* <span> for '1' */
@@ -24,34 +25,6 @@
                 }
             }
             return span_line; 
-        }
-
-
-        /* Print matrix in html page */
-        function print_html_matrix(mat) {
-
-            // console.log('from function, mat ===> ' + mat)
-                
-            div_html = "";
-            
-            for ( l=0; l < mat.length; l++ ) {
-
-                // console.log(' ===> matrix line ' + l + ' --> ' + mat[l])
-                if ( mat[l][0] == 'M' || mat[l][0] == 'I' ) {                      
-
-                    div_html += "<br><p class='p_result' style='color:yellow;'>" + mat[l] + "</p>";
-                
-                } else if ( mat[l][0] == 0 || mat[l][0] == 1) {    
-
-                    div_html += "<p class='p_result'>" + span_ones(mat[l]) + "</p>";
-
-                }   
-
-            }
-            
-            document.getElementById("div_matrix").innerHTML = div_html;
-            // return div_html
-            
         }
 
         // read server data as array
@@ -90,26 +63,60 @@
                 div_matrix_html += "<br><p class='p_result' style='color:yellow;'>" + lines[i] + "</p>";
             }   
         }
-
-        //list_matrices.push(matrix)
         
-        // document.getElementById("div_matrix").innerHTML = div_matrix_html;
         console.log('list_matrices===> ' + list_matrices.length)
 
-        // call function to print list_matrices with delay 
-        for ( k=0; k < list_matrices.length; k++ ) {
+        // call function to print list_matrices with delay
+        let k = 0;        
+        let k_max = list_matrices.length; 
+        // console.log('k is: ' + k + ' | k_max is: ' + k_max);
+        div_html = "";
+        matrix = [];
+        //const words= ['w1111111','w222','w333','w444','w1111111','w222','w333','w1111111','w222','w333','w1111111','w222','w333'];
 
-            // https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_win_setinterval
+        iter = setInterval(print_html_MATRIX,200);
 
-            // print matrix with delay
-            // setInterval(displayHello, 1000);
-            setInterval( print_html_matrix(list_matrices[1]), 2000);           
+        function print_html_MATRIX() {
+            div_html = "";
+            matrix = list_matrices[k];            
+            for ( var l=0; l < matrix.length; l++ ) {
+                //console.log(' ===> matrix line ' + l + ' --> ' + matrix[l])
+                if ( matrix[l][0] == 'M' || matrix[l][0] == 'I' ) {  
+                    div_html += "<br><p class='p_result' style='color:yellow;'>" + matrix[l] + "</p>";
+                
+                } else if ( matrix[l][0] == 0 || matrix[l][0] == 1) {
+                    div_html += "<p class='p_result'>" + span_ones(matrix[l]) + "</p>";
 
+                }   
+            }
+            // document.getElementById("test").innerHTML = words[k];
+            document.getElementById("div_matrix").innerHTML = div_html;
+            k++;
+            // console.log('k is: ' + k + ' | k_max is: ' + k_max);
+            if ( k >= k_max ) {  
+                // console.log('exit loop for k: ' + k);
+                clearInterval(iter);
+            }
         }
 
-        
-
-
+/*
+        // Print matrix in html page 
+        function print_html_matrix(mat) {
+            // console.log('from function, mat ===> ' + mat)                
+            div_html = "";            
+            for ( l=0; l < mat.length; l++ ) {
+                // console.log(' ===> matrix line ' + l + ' --> ' + mat[l])
+                if ( mat[l][0] == 'M' || mat[l][0] == 'I' ) {
+                    div_html += "<br><p class='p_result' style='color:yellow;'>" + mat[l] + "</p>";
+                
+                } else if ( mat[l][0] == 0 || mat[l][0] == 1) { 
+                    div_html += "<p class='p_result'>" + span_ones(mat[l]) + "</p>";
+                }   
+            }            
+            // document.getElementById("div_matrix").innerHTML = div_html;
+            return div_html            
+        }
+*/        
         
     </script>
 
