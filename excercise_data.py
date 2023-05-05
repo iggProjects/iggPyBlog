@@ -18,7 +18,7 @@ def Excercises():
             
             'body': 'Ascii format for colors works very well with the print function. Constants can be used, or specific functions can be created to print messages with the desired effects.\n\nSOME CONSTANTS FOR FOREGROUND COLORS\n\tNO_COLOR="\\033[00m"\tFR_RED="\\033[91m"\tFR_GREEN="\\033\[92m"\tFR_YELL="\\033\[93m"\tFR_BLUE="\\033\[94m"\n\nSIMPLE SYNTAX FOR PRINTING "------- MAIN -------" WHEN STARTING THE PRINTING OF RESULTS\n\tprint(f"\\n{FR_GREEN}------- MAIN -------{NO_COLOR}\\n"):\n\nAN EXAMPLE OF FUNCTION TO PRINT SOME MESSAGE:\n\tdef prRed(msg):\n\t\tprint(f"{FR_YELL} {} {NO_COLOR}".format(msg))\n\tprRed("TESTING COLOR FUNCTION")\n\nLink: https://xdevs.com/guide/color_serial/',
 
-            'code_url':'../static/py_excercises/20230213-PrototypeScript-colors/0-Prototype-colors.py',
+            'code_url':'../static/py_excercises/20230213-PrototypeScript-colors/0-prototype-colors.py',
             'zip_url': '../static/py_excercises/20230213-PrototypeScript-colors/20230213-PrototypeScript-colors.zip',  
             'img': '/img/icons8-consola-100.png'    
         },
