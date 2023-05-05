@@ -48,6 +48,20 @@ Excercises = Excercises()
 LG_scripts = LG_scripts()
 Enigma_scripts = Enigma_scripts()
 
+"""
+@app.route('/',methods=['GET', 'POST'])
+def login():      
+    error = None
+    if request.method == 'POST':
+        if request.form['username'] != 'admin' or request.form['password'] != 'admin':
+            error = 'Invalid Credentials. Please try again.'
+        else:
+            return redirect(url_for('home'))
+            #return render_template('home.html')
+        
+    return render_template('login.html', error=error)
+"""
+
 @app.route('/')
 #@app.route('/home')
 def home():
@@ -191,6 +205,9 @@ def foods_reg_delete(uid):
     #return render_template('reg_matrix.html')
 
 
+
+# ==================================================================================#
+
 @app.route('/project-EnigmaGame')
 def project_EnigmaGame():    
     return render_template('project-EnigmaGame.html', enigma_scripts = Enigma_scripts)
@@ -222,6 +239,21 @@ def display_LifeGame_script():
 @app.route('/about')
 def about():
     return render_template('about.html')
+
+"""
+# Route for handling the login page logic
+@app.route('/login', methods=['GET', 'POST'])
+def login():
+    error = None
+    if request.method == 'POST':
+        if request.form['username'] != 'admin' or request.form['password'] != 'admin':
+            error = 'Invalid Credentials. Please try again.'
+        else:
+            #return redirect(url_for('home'))
+            return render_template('home.html')
+        
+    return render_template('login.html', error=error)
+"""
 
 @app.route('/pythonScript/')
 def ExecPythonScript():
