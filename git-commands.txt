@@ -1,0 +1,36 @@
+2023-05-06 11:08:32.521 [info] > git config --get commit.template [77ms]
+2023-05-06 11:08:32.538 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [85ms]
+2023-05-06 11:08:32.632 [info] > git status -z -uall [87ms]
+2023-05-06 11:08:32.775 [info] > git config --local branch.main.github-pr-owner-number [64ms]
+2023-05-06 11:08:32.787 [info] > git config --get commit.template [63ms]
+2023-05-06 11:08:32.794 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [61ms]
+2023-05-06 11:08:32.825 [info] > git config --get commit.template [45ms]
+2023-05-06 11:08:32.832 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [46ms]
+2023-05-06 11:08:32.916 [info] > git status -z -uall [79ms]
+2023-05-06 11:08:33.705 [info] > git ls-files --stage -- C:\ML_Project\NazarethCourse2023\iggPyBlog\z-bitakora.txt [74ms]
+2023-05-06 11:08:33.781 [info] > git cat-file -s 9448b3011b1d295bf183c1e2ed9a1492a196ee63 [69ms]
+2023-05-06 11:08:33.862 [info] > git show --textconv :z-bitakora.txt [72ms]
+2023-05-06 11:08:38.833 [info] > git log --oneline --cherry main...main@{upstream} -- [81ms]
+2023-05-06 11:08:39.925 [info] > git pull --tags origin main [1080ms]
+2023-05-06 11:08:39.925 [info] From https://github.com/iggProjects/iggPyBlog
+ * branch            main       -> FETCH_HEAD
+2023-05-06 11:08:41.247 [info] > git ls-files --stage -- C:\ML_Project\NazarethCourse2023\iggPyBlog\z-bitakora.txt [76ms]
+2023-05-06 11:08:41.330 [info] > git cat-file -s 9448b3011b1d295bf183c1e2ed9a1492a196ee63 [75ms]
+2023-05-06 11:08:41.431 [info] > git show --textconv :z-bitakora.txt [90ms]
+2023-05-06 11:08:42.510 [info] > git push origin main:main [2581ms]
+2023-05-06 11:08:42.510 [info] remote: Resolving deltas:   0% (0/2)        
+remote: Resolving deltas:  50% (1/2)        
+remote: Resolving deltas: 100% (2/2)        
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.        
+To https://github.com/iggProjects/iggPyBlog.git
+   97d5425..35b1b5e  main -> main
+2023-05-06 11:08:42.612 [info] > git config --get commit.template [91ms]
+2023-05-06 11:08:42.628 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [95ms]
+2023-05-06 11:08:42.743 [info] > git status -z -uall [107ms]
+2023-05-06 11:08:42.892 [info] > git config --local branch.main.github-pr-owner-number [86ms]
+2023-05-06 11:08:42.994 [info] > git config --get commit.template [92ms]
+2023-05-06 11:08:43.006 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [92ms]
+2023-05-06 11:08:43.118 [info] > git status -z -uall [104ms]
+2023-05-06 11:08:43.855 [info] > git ls-files --stage -- C:\ML_Project\NazarethCourse2023\iggPyBlog\z-bitakora.txt [68ms]
+2023-05-06 11:08:43.918 [info] > git cat-file -s 9448b3011b1d295bf183c1e2ed9a1492a196ee63 [57ms]
+2023-05-06 11:08:44.011 [info] > git show --textconv :z-bitakora.txt [82ms]
