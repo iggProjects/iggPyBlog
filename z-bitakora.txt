@@ -101,6 +101,11 @@ PROGRESS BAR
 
 
 SUBPROCESS
+    - https://stackoverflow.com/questions/37259740/passing-variables-from-flask-to-javascript
+    - https://www.youtube.com/watch?v=CJ3XiQgjNE8
+    - https://stackoverflow.com/questions/11178426/how-can-i-pass-data-from-flask-to-javascript-in-a-template
+    
+    EMAIL pythonAW
     - Just use subprocess (https://docs.python.org/3/library/subprocess.html) 
     - to run a Python binary that exists in your account.  Glenn Jones glenn@pythonanywhere.com
     - https://realpython.com/python-subprocess/

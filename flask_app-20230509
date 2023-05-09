@@ -232,14 +232,13 @@ def about():
 def ExecPythonScript():
     from os import system
     import subprocess
-
     # clear screen
     system('cls')
-    print(f"{FR_YELL}======> Entrando en ExecPythonScript in console ...{NO_COLOR}\n")
+    print(f"{FR_YELL}======> Entrando en ExecPythonScript...{NO_COLOR}\n")
     
     # parameter from JS
     py_script_path = request.args['py_path']
-    print(f"{FR_GREEN} ===> File path:\n\t{py_script_path}{NO_COLOR}")
+    #print(f"===> File path:\n\t{py_script_path}")
         
     # call subprocess to excecute py_script_path 
     if opSys == "Windows":        
@@ -247,20 +246,46 @@ def ExecPythonScript():
     elif opSys == "Linux":
         subprocess.run(["/usr/bin/bash", "-c", f"python {py_script_path}"])
     else:
-        print(f"Please check how to pass list of parameters for operating system: {opSys}")
-   
+        print(f"check list of parameters for operating system: {opSys}")
+
+    # return ""
+
+    #text = subprocess.run(["cmd", "/c", "dir .."],capture_output=True)
+    #print(f"\n\n{FR_YELL}===> text type: {type(text)}{NO_COLOR}")
+    #list_lines = text.stdout.splitlines()
+    #print(f"\n\n{FR_YELL}===> text_lines type: {type(list_lines)}{NO_COLOR}")
+    
     #for line in list_lines:
     #    print(f"{FR_GREEN}===> text_lines:{NO_COLOR} {line}")    
 
-    print(f"{FR_YELL}======> saliendo ExecPythonScript in console ...{NO_COLOR}\n")
-   
+    print(f"{FR_YELL}======> saliendo ExecPythonScript...{NO_COLOR}\n")
+
+    #result_script_exec(list_lines)
+    #return redirect(url_for('about'))
+    #return render_template('about')
+    #return render_template('result_script_exec.html', text_lines = list_lines)
+    #return redirect(url_for('result_script_exec'))
+    
+    #return render_template('result_script_exec.html')
+    #return render_template('result_script_exec.html/?list_lines=' + str(list_lines))
+
+    # execution string windows
+    # exec_command = 'cmd /c \"python.exe ' + py_script_path + '\"'
+    # system(exec_command) 
+    
     return ""
+
+# https://stackoverflow.com/questions/37259740/passing-variables-from-flask-to-javascript
+# https://www.youtube.com/watch?v=CJ3XiQgjNE8
+# https://stackoverflow.com/questions/11178426/how-can-i-pass-data-from-flask-to-javascript-in-a-template
+
 
 @app.route('/result_script_exec/')
 def result_script_exec():
-    print(f"{FR_YELL}\n====== in result_script_exec() for html ======{NO_COLOR}\n")
+    print(f"{FR_YELL}\n====== Entrando en result_script_exec() ======{NO_COLOR}\n")
     from os import system
-   
+
+    
     import subprocess, json
     from flask import Markup   
 
@@ -271,24 +296,21 @@ def result_script_exec():
     py_name = py_list[len(py_list)-1]
     #print(f"py_list: {py_list} --- {py_name}")
 
-    # call subprocess to excecute py_script_path 
-    if opSys == "Windows":        
-        text = subprocess.run(["cmd", "/c", "python.exe", py_script_path],capture_output=True)    
-    elif opSys == "Linux":
-        text = subprocess.run(["/usr/bin/bash", "-c", f"python {py_script_path}"],capture_output=True)
-    else:
-        print(f"Please check how to pass list of parameters for operating system: {opSys}")
+    # execute subprocess with script
+    # WINDOWS OS CASE
+    text = subprocess.run(["cmd", "/c", "python.exe", py_script_path],capture_output=True)    
+    # text = subprocess.run(["cmd", "/c", "dir .."],capture_output=True)
+
+    # LINUX OS CASE
+    # subprocess.run(["/usr/bin/bash", "-c", f"python {py_script_path}"])
 
 
-    print(f"\n\n{FR_YELL}===> text type: {type(text)}{NO_COLOR}")    
+    print(f"\n\n{FR_YELL}===> text type: {type(text)}{NO_COLOR}")
 
     # see order in list_b_lines
     list_b_lines = text.stdout.splitlines()
-    print(f"\n\n{FR_YELL} ===> 'list_b_line' type: {type(list_b_lines)}{NO_COLOR}")
-    print(f"\n\n{FR_YELL} ===> 'list_b_line' data: {list_b_lines}{NO_COLOR}")
-
-    for line in list_b_lines:
-        print(f"==> line: {line}")
+    #for line in list_b_lines:
+    #    print(f"==> line: {line}")
 
     list_color_text = []
     list_JS_lines = []
@@ -357,7 +379,7 @@ def result_script_exec():
             # print(f"new_line formatted => {list}")
     
     # print(f"list_JS_lines type: {type(list_JS_lines)} | first line: {list_JS_lines[2]}")
-    print(f"{FR_YELL}====== exit result_script_exec() in html ======{NO_COLOR}\n") 
+    print(f"{FR_YELL}====== Saliendo en result_script_exec() ======{NO_COLOR}\n") 
 
     return render_template('result_script_exec.html', list_lines=list_color_text, list_JS_lines=list_JS_lines, py_name=py_name)
 
