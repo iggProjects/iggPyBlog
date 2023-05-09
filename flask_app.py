@@ -277,6 +277,8 @@ def ExecPythonScript():
 @app.route('/result_script_exec/')
 def result_script_exec():
     print(f"{FR_YELL}\n====== Entrando en result_script_exec() ======{NO_COLOR}\n")
+    from os import system
+
     
     import subprocess, json
     from flask import Markup   
