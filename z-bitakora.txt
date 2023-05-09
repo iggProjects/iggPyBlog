@@ -11,6 +11,8 @@ STILL TO DO !!!
 Actual web
 
     Check what's happens in pythonAW when calling console
+        - https://stackoverflow.com/questions/4856583/how-do-i-pipe-a-subprocess-call-to-a-text-file
+        - https://www.annasyme.com/docs/python-subprocess.html
 
     SUBPROCESS.RUN
     Gracias por el mensaje. Parece que ha escrito una llamada a subprocess.run que usa la 
