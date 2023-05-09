@@ -239,9 +239,13 @@ def ExecPythonScript():
     # system(exec_command) 
  
         
-    # call subprocess to exceute py_script_path
+    # call subprocess to excecute py_script_path 
+    # WINDOWS OS CASE
     subprocess.run(["cmd", "/c", "python.exe", py_script_path])    
     # system('subprocess.run(["cmd", "/c", "python.exe", "01_LG-ExploracionMatrices_copy.py"])')
+
+    # LINUX OS CASE
+    # subprocess.run(["/usr/bin/bash", "-c", f"python {py_script_path}"])
 
     # return ""
 
@@ -285,8 +289,13 @@ def result_script_exec():
     #print(f"py_list: {py_list} --- {py_name}")
 
     # execute subprocess with script
+    # WINDOWS OS CASE
     text = subprocess.run(["cmd", "/c", "python.exe", py_script_path],capture_output=True)    
     # text = subprocess.run(["cmd", "/c", "dir .."],capture_output=True)
+
+    # LINUX OS CASE
+    # subprocess.run(["/usr/bin/bash", "-c", f"python {py_script_path}"])
+
 
     print(f"\n\n{FR_YELL}===> text type: {type(text)}{NO_COLOR}")
 
