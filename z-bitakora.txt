@@ -10,6 +10,8 @@ STILL TO DO !!!
 
 Actual web
 
+    Check what's happens in pythonAW when calling console
+
     SUBPROCESS.RUN
     Gracias por el mensaje. Parece que ha escrito una llamada a subprocess.run que usa la 
     sintaxis de Windows para el comando. 
@@ -104,7 +106,7 @@ SUBPROCESS
     - https://stackoverflow.com/questions/37259740/passing-variables-from-flask-to-javascript
     - https://www.youtube.com/watch?v=CJ3XiQgjNE8
     - https://stackoverflow.com/questions/11178426/how-can-i-pass-data-from-flask-to-javascript-in-a-template
-    
+
     EMAIL pythonAW
     - Just use subprocess (https://docs.python.org/3/library/subprocess.html) 
     - to run a Python binary that exists in your account.  Glenn Jones glenn@pythonanywhere.com
