@@ -4,9 +4,28 @@ igg.git.h@g @gittut....@
 https://eu.pythonanywhere.com/login/ @n.20..N.@
     - bash console: https://eu.pythonanywhere.com/user/iggWebNz/consoles/373990/
 
+
+
 STILL TO DO !!!
 
 Actual web
+
+    SUBPROCESS.RUN
+    Gracias por el mensaje. Parece que ha escrito una llamada a subprocess.run que usa la 
+    sintaxis de Windows para el comando. 
+    En PythonAnywhere, su código se ejecuta en Linux, por lo que el comando sería diferente.
+    
+    En general, no podemos brindar una instrucción detallada o ayuda general con la 
+    programación de Python, pero en este caso, el cambio es lo suficientemente simple, 
+    por lo que sería particularmente inútil de mi parte no decirle de qué se trata. 
+    
+    En general, no podemos brindar una instrucción detallada o ayuda general con la 
+    programación de Python, pero en este caso, el cambio es lo suficientemente simple 
+    como para que yo no sea de gran ayuda si no le permitiera saber qué es: 
+
+    La lista que pasa a la función "ejecutar" debería ser esto: 
+        ["/usr/bin/bash", "-c", f"python {py_script_path}"]
+
 
     0.- clean result_script_exec() of flask_app and include "window" for alert
         Simplify use of MyFunc and MyColors !!!
