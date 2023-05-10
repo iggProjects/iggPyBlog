@@ -2,18 +2,18 @@
 
 {%  block body %}    
 
-    <h1 style="text-align: center; margin-left:25px; margin-top: 3px; font-size:25px;  color:rgb(93, 92, 92)">Excercise {{ excercise.id }}, Author {{excercise.author}}, date {{excercise.date_created}}</h1>    
+    <h1 style="text-align: center; margin-left:25px; margin-top: 3px; font-size:20px;  color:rgb(93, 92, 92)">Excercise {{ excercise.id }}, Author {{excercise.author}}, date {{excercise.date_created}}</h1>    
     <div class="disp-rows-cent"  style="width:100%; padding:5px; height:80vh; border:10px solid rgb(190, 209, 250)">
         <table style="width:90%; margin:3px; border: 1px solid rgb(208, 207, 207)">
             <tr>                
                 <th style="width:15%"><a href="{{ excercise.source_url }}" target="_blank"><span style="color:green">section</span><br><span style="color:rgb(163, 23, 2)">"{{ excercise.section }}"</span></a></th>
                 <th style="width:25%"><span style="color:green">title</span><br><span style="color:rgb(163, 23, 2)">"{{excercise.title}}"</span></a></th>                
                 <th style="width:25%"><span style="color:green">script name</span><br><span style="color:rgb(163, 23, 2)">"{{ excercise.fileDirPath.split('/')[3] }}"</span></th>
-                <th style="width:9%"><a href="{{excercise.code_url}}" target="_blank"><img class="myImg" onclick='' src="{{ url_for('static', filename='img/icons8-script-68.png') }}" title='Zoom flow chart' alt="console-100" width="30"/></a></th>                
+                <th style="width:9%"><a href="{{excercise.code_url}}" target="_blank"><img class="myImg" onclick='' src="{{ url_for('static', filename='img/icons8-script-68.png') }}" title='Script code' alt="console-100" width="30"/></a></th>                
                 <th style="width:9%"><a href="{{excercise.zip_url}}" target="_blank"><img class="myImg" onclick='ExecPythonScript()' src="{{ url_for('static', filename='img/icons8-descargar-de-la-nube-100.png') }}" title='Download py script' alt="download-100" width="30"/></a></th>                              
-                <th style="width:9%"><a href="/result_script_exec/?py_path={{excercise.fileDirPath1}}" target="_blank"><img class="myImg" onclick='alert("Please wait a bit while the script runs in the background !")' src="{{ url_for('static', filename='img/icons8-html-filetype-50.png') }}" title='Visualize the scrip run in html format' alt="console-100" width="35"/></a></th>
+                <th style="width:9%"><a href="/result_script_exec/?py_path={{excercise.fileDirPath1}}" target="_blank"><img class="myImg" onclick='alert("Please wait a bit while the script runs in the background !")' src="{{ url_for('static', filename='img/icons8-html-filetype-50.png') }}" title='Visualize the scrip execution in html format' alt="console-100" width="35"/></a></th>
                 <th style="width:9%; padding:10px;">
-                    <img class="myImg" onclick="ExecPythonScript('{{excercise.fileDirPath}}')" src="{{ url_for('static', filename='img/icons8-consola-100.png') }}" title='Run in command line console' alt="console-100" width="30"/>
+                    <img class="myImg" onclick='ExecPythonScript("{{excercise.fileDirPath}}")' src="{{ url_for('static', filename='img/icons8-consola-100.png') }}" title='Running in command line console' alt="console-100" width="30"/>
                 </th>                
             </tr>            
         </table>           
@@ -33,7 +33,7 @@
 
         function ExecPythonScript(py_path){
             /* alert('py script path: ' + py_path) */
-            
+            alert("Please check your server console to see script execution !"); 
             var request = new XMLHttpRequest()
             request.open("GET", "/pythonScript/?py_path=" + py_path, true)            
             request.send()            

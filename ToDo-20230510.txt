@@ -1,0 +1,38 @@
+CSS 
+  - font size in title
+      - https://stackoverflow.com/questions/17472440/styling-html-title-attribute-using-css
+
+  - Hover Effects
+    - on button zoom
+
+
+
+WRITE IN LOG FILES
+
+
+EXCERCISES
+
+-  2.- pause --> html: mensaje | console mens
+-  3.- mostrar obj
+	- agregar info dl objeto en Description
+-  8.- DO IT ???
+- 10.- Msg to html button "case not working with input"
+- 11.- parameter for html button in blank ! 
+       - make msg in result_script_exec
+       - fill info in excercise_data
+- 12.- - fill info in excercise_data
+       - msg for result_script_exec
+- 14.- - fill info for html button  (position )
+- 15.- - fill info
+- 16.- parallel folder --> DO IT   	
+- 17.- Page 43 - 47 --> DO IT
+- 18.- Correct Files path, add info in excercise_data
+- 19.- Correct Files path, add info in excercise_data
+
+ACTUALIZAR EN PYTHON_AW
+
+- repl excercise.html
+- repl excercise_data
+- repl result_script_exec
+- load 20230223-RotateAlphab-twice1.py
+- repl 20230223-RotateAlphab-twice1.py

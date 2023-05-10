@@ -52,7 +52,7 @@ def Excercises():
             'fileDirPath': 'static/py_excercises/20230213-PrototypeScript-MostrarObject/0-prototype-mostrar-obj.py',            
             'fileDirPath1': 'static/py_excercises/20230213-PrototypeScript-MostrarObject/0-prototype-mostrar-obj1.py',            
             
-            'homework': 'Use "mostrar(obj) function" to know properties and methods of some variables of interest used in your script.',
+            'homework': 'Use "mostrar(obj) function" to know properties and methods of some variables of interest used in your script.\nIn this case we use 2 variables: string and list. See script clicking in \"code button\".',
 
             'body': '# Show attributes and methods avalaible for "obj"\ndef mostrar(obj):\n\tif \'list\' in str(type(obj)) or \'tuple\' in str(type(obj)):\n\t\tprint(f"Object elements view in matrix form (8 columns by row)")\n\t\tmatrix_view(obj,8)\n\t# obj type and mem dir\n\tprint(f\"Object type is {type(obj)} and mem dir is: {id(obj)}")\n\t# obj attributes\n\t# attributes = [attr for attr in dir(obj) if not attr.startswith(\'__\')]\n\tattr_meth = [attr for attr in dir(obj)]\n\t# print attributes and methods in matrix form\n\tprint(f"Object assigned attributes and methods are:")\n\tmatrix_view(attr_meth,8)\n\tprint()\n\tprBG(\"-----------------END MOSTRAR OBJECT TYPE AND ATTRIB-METHODS-----------------",17)\n\tprint()',
 
@@ -166,7 +166,7 @@ def Excercises():
             'fileDirPath': 'static/py_excercises/20230215-random-func/20230215-random_choice_experiment.py',            
             'fileDirPath1': 'static/py_excercises/20230215-random-func/20230215-random_choice_experiment1.py',            
             
-            'homework': 'A short experiment to check behavior of random  built-in unction.\n',
+            'homework': 'A short experiment to check behavior of \"random built-in function\".\n',
 
             'body': 'Native functions for random tests must respect the law of large numbers. Suppose we have a 6-sided die (1-6), and we roll it 10,000 times. what should the results be for each face? Well, let\'s try the random function that outputs a natural number between 1 and 6.\n\nDefine three variables:\n\tmy_dice = {\'1\':0,\'2\':0,\'3\':0,\'4\':0,\'5\':0,\'6\':0},\n\tideal_dice with 1/6 probability,\n\tand face_list=list(range(1,7)) to simulate numbre 1,2,3,4,5,6.\n\nThen make a loop to simulate 20 series of dice rolls each of one with increasing iterations according the rule iterations = 10000 * 2 * i, where i is the particular series called from main loop.',          
 
@@ -202,7 +202,7 @@ def Excercises():
             'section': 'String methods',
             'title': 'Teacher example',
             'fileDirPath': 'static/py_excercises/20230221-strings/20230221-strings.py',            
-            'fileDirPath1': 'static/py_excercises/20230221-strings/20230221-strings1.py',            
+            'fileDirPath1': '',            
             
             'homework': 'NEXT WEEK',
 
@@ -221,7 +221,7 @@ def Excercises():
             'section': 'String methods',
             'title': 'String task page 33',
             'fileDirPath': 'static/py_excercises/20230222-strings-Page33/20230222-page-33.py',            
-            'fileDirPath1': 'static/py_excercises/20230222-strings-Page33/20230222-page-331.py',            
+            'fileDirPath1': '',            
             
             'homework': 'NEXT WEEK',
 
