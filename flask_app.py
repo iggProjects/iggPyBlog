@@ -269,8 +269,9 @@ def result_script_exec():
     #print(f"py_path --> {py_script_path}")
     py_list = py_script_path.split('/')
     py_name = py_list[len(py_list)-1]
-    #print(f"py_list: {py_list} --- {py_name}")
-
+    print(f"py_list: {py_list}")
+    print(f"script name: {py_name}")
+    """
     # call subprocess to excecute py_script_path 
     if opSys == "Windows":        
         text = subprocess.run(["cmd", "/c", "python.exe", py_script_path],capture_output=True)    
@@ -278,14 +279,26 @@ def result_script_exec():
         text = subprocess.run(["/usr/bin/bash", "-c", f"python {py_script_path}"],capture_output=True)
     else:
         print(f"Please check how to pass list of parameters for operating system: {opSys}")
+    """ 
 
+    # call subprocess to excecute py_script_path
+    if opSys == "Windows":
+        text = subprocess.run(["cmd", "/c", "python.exe", py_script_path],capture_output=True)
+    elif opSys == "Linux":
+        # put mysite/ in path for "pythonanywhere"
+        text = subprocess.run(["/usr/bin/bash", "-c", f"python mysite/{py_script_path}"],capture_output=True)
+    else:
+        print(f"Please check how to pass list of parameters for operating system: {opSys}")
 
-    print(f"\n\n{FR_YELL}===> text type: {type(text)}{NO_COLOR}")    
+    #print(f" ===> 'text'   type: {type(text)}")
+    print(f" ===> 'text' attrib: {dir(text)}")
+    #print(f" ===> 'text'   data: {text}")    
 
     # see order in list_b_lines
     list_b_lines = text.stdout.splitlines()
-    print(f"\n\n{FR_YELL} ===> 'list_b_line' type: {type(list_b_lines)}{NO_COLOR}")
-    print(f"\n\n{FR_YELL} ===> 'list_b_line' data: {list_b_lines}{NO_COLOR}")
+    print(f" ===> 'list_b_lines' type: {type(list_b_lines)}")
+    print(f" ===> 'list_b_lines' attrib: {dir(list_b_lines)}")
+    # print(f" ===> 'list_b_lines' data: {list_b_lines}")
 
     for line in list_b_lines:
         print(f"==> line: {line}")
