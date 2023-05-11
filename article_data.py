@@ -39,7 +39,7 @@ def Articles():
 
         {
             'id': 3, 
-            'title': 'Google Colab: Python y Machine Learning en la nube.',            
+            'title': 'Google Colab: Jupyter Notebook in Cloud and Github - Google link.',            
             'author': 'Jake VanderPlas',
             'date_created': '16-08-2022',
             'section':'',

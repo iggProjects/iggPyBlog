@@ -300,8 +300,8 @@ def result_script_exec():
     print(f" ===> 'list_b_lines' attrib: {dir(list_b_lines)}")
     # print(f" ===> 'list_b_lines' data: {list_b_lines}")
 
-    for line in list_b_lines:
-        print(f"==> line: {line}")
+    #for line in list_b_lines:
+    #    print(f"==> line: {line}")
 
     list_color_text = []
     list_JS_lines = []

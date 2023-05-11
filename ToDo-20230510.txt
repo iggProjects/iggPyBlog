@@ -5,10 +5,12 @@ CSS
   - Hover Effects
     - on button zoom
 
-
+WINDOWS MSG simulting alert
 
 WRITE IN LOG FILES
 
+
+==============================================================
 
 EXCERCISES
 
@@ -29,10 +31,23 @@ EXCERCISES
 - 18.- Correct Files path, add info in excercise_data
 - 19.- Correct Files path, add info in excercise_data
 
+LIFE GAME
+
+-  1.- make html py script for 5,6,7
+-  2.- checking equal matrices to stop !
+
+ENIGMA
+-  1.- arith prog -> write formula for each case before display SUM
+
+
+
 ACTUALIZAR EN PYTHON_AW
 
+. repl articles.py
 - repl excercise.html
-- repl excercise_data
-- repl result_script_exec
+- repl excercise_data.py
+- repl result_script_exec.py
+- repl lifegame_data.py
+
 - load 20230223-RotateAlphab-twice1.py
 - repl 20230223-RotateAlphab-twice1.py
