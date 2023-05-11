@@ -47,8 +47,7 @@ Actual web
     5.- progress bar mail
     6.- MyFunctions: 
         - ADD script zip_file_list(list, zipname)
-        - alert window - copy fr
-        om mySQLadmin
+        - alert window - copy from mySQLadmin
             function invoke_Alert_Window(my_msg) {
                 document.getElementById('p-alert-msg').innerHTML = my_msg;
                 document.getElementById("my-alert-window").style.display = "block";

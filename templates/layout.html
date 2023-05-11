@@ -66,16 +66,57 @@
         .p_result {margin:auto; padding-left:0px; color:rgb(186, 185, 185); }  
         .p_result span {color: #990000; }  
 
+        #my-alert-window { 
+            display: none; 
+            background-color: #e2e2e2;  
+            border: 10px solid rgb(172, 172, 254);
+            border-radius: 10px;
+            position: fixed;
+            z-index:1;
+            min-height: 200px;
+            min-width: 350px;
+            max-width: 700px;
+            left: 35%;
+            /* left: auto;  */
+            top: 15%;
+            padding: 6px 8px 8px;
+            text-align: center;
+        }
+
+        #my-alert-window #p-alert-msg { margin-top:10px; font-size: 18px; color: rgb(92, 92, 92); }
+        #my-alert-window #alert-close { position: absolute; right: 20px; bottom: 10px; }
+        #my-alert-window .alert-button { border-radius: 10px; height: 5rem; padding-left: 10px; padding-right: 10px; cursor: pointer; border: 5px solid rgb(127, 127, 127); background-color: blue; color:white; }
+
     </style>
 
 </head>
 <body>    
     
     {% include 'includes/_navbar.html' %}
+
+    <!-- <div class="my-alert-msg alert-disp">Alert message<br>Alert message<br>Alert message</div> -->
+
     <div class="container" style="width:90%;">        
-        {% block body%} {% endblock%}
+        
+        <div id="my-alert-window">
+            <p id="p-alert-msg"></p>
+            <button id="alert-close" class="alert-button" onclick = "close_Alert_Window()">Close<br>Window</button>
+        </div>            
+        
+        {% block body%} 
+        
+        {% endblock%}
     </div>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
+    <script>
+        function invoke_Alert_Window(my_msg) {
+            document.getElementById('p-alert-msg').innerHTML = my_msg;
+            document.getElementById("my-alert-window").style.display = "block";
+        }
+        function close_Alert_Window() {
+            document.getElementById("my-alert-window").style.display = "none";
+        }    
+    </script>
 </body>
 </html>

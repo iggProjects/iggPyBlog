@@ -5,7 +5,9 @@ CSS
   - Hover Effects
     - on button zoom
 
-WINDOWS MSG simulting alert
+WINDOWS MSG simulating alert
+  - how to stop until close window
+  - use setTimeout....	
 
 WRITE IN LOG FILES
 
@@ -43,6 +45,7 @@ ENIGMA
 
 ACTUALIZAR EN PYTHON_AW
 
+. repl layout.html
 . repl articles.py
 - repl excercise.html
 - repl excercise_data.py
