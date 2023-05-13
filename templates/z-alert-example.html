@@ -15,81 +15,31 @@
             box-sizing:border-box;	
         }
 
-        #mesuOverlay { 
-            display: none;
-            position: fixed;
-            top: 0px;
-            left: 0px;
-            background: #00F;
-            opacity: .05;
-            width: 100%;
-            z-index: 10;
-        }
+        #msgOverLay { display: none; position: fixed; top: 0px; left: 0px; background-color: #00F; opacity: .3; width: 100%;  z-index: 1; }
 
-        #mesuBox {
-            margin:auto;	
+        #msgBox { 
+            margin:auto;
+            padding:3px;	
             width: 320px;
             height: auto;
             display: none;
             position: fixed;
-            background: white;
-            border: 2px #999999 solid; 	
+            background-color: white;                        
             border-radius: 10px;
+            box-shadow: 0 0 0 .8em blue;
             left:35%;
             z-index: 10;
             font-family: "Arial",  sans-serif;
         }
 
-        #mesuBox div { 
-        /*	border-radius: 2px;
-            margin:2px; */
-            padding:2px;
-        }
+        #msgBox #msgBoxHead { height:20px; background-color:green; border-radius: 10px; padding: 2px; color:white; font-size: 14px; text-align: center; }
 
-        #mesuBox div #mesuBoxHead { 
-            height:25px;
-            background:#d9d9d9;
-            border-radius: 10px;;
-            padding: 2px; 
-            color:#000;
-            font-size: 14px; 
-            text-align: center;
-        }
+        #msgBox #msgBoxBody { margin: 10px; color: black; font-size: 15px; }
 
-        #mesuBox div #mesuBoxBody { 
-            /* background: #bfbfbf; 
-            border: 1px solid #ccccff;  */		
-            margin: 10px; 
-            color: black; 
-            font-size: 15px; 	
-        }
+        #msgBox #msgBoxFoot  { margin-top:30px; height:40px; text-align: right; }
 
-        #mesuBox div #mesuBoxFoot  { 
-            margin-top:30px;;           
-            height:40px;
-        /*	background:#d9d9d9;  */
-            color:#00F;
-            padding-bottom: 2px; 
-        /*	padding-right:10px; */
-            text-align: right; 
-        }
-
-        #mesuBox button {
-            margin-top:3px;	
-            width:150px; 
-            height:30px; 
-        /*	margin-top:1px;  */
-            background-color: #f2f2f2; 
-            border: 1px solid #ccccff;		
-            color:black;
-            border-radius: 10px;
-            font-size: 15px;
-        }	
-            
-        #mesuBox1 { 
-            margin:0px;
-        }
-
+        #msgBox #msgBoxFoot button { margin-top:3px; margin-right: 10px; width:60px; height:30px; border: 3px solid #acacfd; color:blue; border-radius: 10px; font-size: 15px; }
+           
     </style>
 
 
@@ -97,52 +47,49 @@
 
 <body>
 
-<div id = "mesuOverlay"></div>
-<div id = "mesuBox" style="border:2px solid gray;">
-	<div id="mesuBox1">
-        <div id = "mesuBoxHead"></div>
-		<div id = "mesuBoxBody"></div>	
-		<div id = "mesuBoxFoot"></div>	  
-	</div>
+<div id = "msgOverLay"></div>
+<div id = "msgBox">    
+        <div id = "msgBoxHead"></div>
+        <div id = "msgBoxBody"></div>	
+        <div id = "msgBoxFoot"></div>    
 </div>
+
 
 <div style="width:80%; margin:auto; margin-top:50px; text-align: center; border: 10px solid rgb(172, 171, 171);">	
     <h1>My Alert<br><br>
-    <p style="margin:30px;"><button onclick="Mesua.render('KAIXO','ZER MODUZ ZAUDE?<br>OSO ONDO')">Press here</button></p>
+    <p style="margin:30px;"><button onclick="my_msg.render('ALERT','ZER MODUZ ZAUDE? OSO ONDO ! Eta zu?')">Press here</button></p>
 </div>
 
 <script>
     	// Ejecución de alerts personalizados
-	function MyMesu() { 
+	function MyMsg() { 
 	
-		this.render = function(mesuaH,mesuaB) { 
+		this.render = function(msg_H,msg_B) { 
             
 			var winW = window.innerWidth ;
 			var winH = window.innerHeight ;
-			var mesuOverlay = document.getElementById ('mesuOverlay') ;
-			var mesuBox = document.getElementById ("mesuBox") ;
-			mesuOverlay.style.display = "block" ;
-			mesuOverlay.style.height = winH + "px" ;            
-			mesuBox.style.left = ( winW / 2 ) - ( 320 * .5 ) + "px";
-			mesuBox.style.top = "50px";
-            mesuBox.style.minHeight = "100px";
-			mesuBox.style.display = "block";
-			document.getElementById( 'mesuBoxHead' ).innerHTML = '<p><strong>' + mesuaH + '</strong></p>';  
-			document.getElementById( 'mesuBoxBody' ).innerHTML = '<p>' + mesuaB + '</p>';  
-			document.getElementById( 'mesuBoxFoot' ).innerHTML = '<button onclick = "Mesua.ok()">OK</button>' ;  
+			var msgOverLay = document.getElementById ('msgOverLay') ;
+			var msgBox = document.getElementById ("msgBox") ;
+			msgOverLay.style.display = "block" ;
+			msgOverLay.style.height = winH + "px" ;            
+			msgBox.style.left = ( winW / 2 ) - ( 320 * .5 ) + "px";
+			msgBox.style.top = "50px";
+            msgBox.style.minHeight = "100px";
+			msgBox.style.display = "block";
+			document.getElementById( 'msgBoxHead' ).innerHTML = '<p><strong>' + msg_H + '</strong></p>';  
+			document.getElementById( 'msgBoxBody' ).innerHTML = '<p>' + msg_B + '</p>';  
+			document.getElementById( 'msgBoxFoot' ).innerHTML = '<button onclick = "my_msg.ok()">OK</button>' ;  
 		}
 	
 		this.ok = function() {
-			document.getElementById ( 'mesuBox' ).style.display = "none"; 
-			document.getElementById ( 'mesuOverlay' ).style.display = "none";
+			document.getElementById ( 'msgBox' ).style.display = "none"; 
+			document.getElementById ( 'msgOverLay' ).style.display = "none";
 		}
 	};
 
-    var Mesua = new MyMesu();
+    var my_msg = new MyMsg();
 
 </script>
-
-
 
 </body>
 

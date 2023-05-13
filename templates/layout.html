@@ -66,23 +66,23 @@
         .p_result {margin:auto; padding-left:0px; color:rgb(186, 185, 185); }  
         .p_result span {color: #990000; }  
 
-        #my-alert-window { 
-            display: none; 
-            background-color: #e2e2e2;  
-            border: 10px solid rgb(172, 172, 254);
-            border-radius: 10px;
-            position: fixed;
-            z-index:1;
-            min-height: 200px;
-            min-width: 350px;
-            max-width: 700px;
-            left: 35%;
-            /* left: auto;  */
-            top: 15%;
-            padding: 6px 8px 8px;
-            text-align: center;
-        }
 
+        #msgOverLay { display: none; position: fixed; top: 0px; left: 0px; background-color: #00F; opacity: .3; width: 100%;  z-index: 1; }
+        
+        #my-alert-window {
+            margin:auto;
+            padding:3px;	
+            width: 320px;
+            height: auto;
+            display: none;
+            position: fixed;
+            background-color: white;                        
+            border-radius: 10px;
+            box-shadow: 0 0 0 .8em blue;
+            left:35%;
+            z-index: 10;
+            font-family: "Arial",  sans-serif;
+        }
         #my-alert-window #p-alert-msg { margin-top:10px; font-size: 18px; color: rgb(92, 92, 92); }
         #my-alert-window #alert-close { position: absolute; right: 20px; bottom: 10px; }
         #my-alert-window .alert-button { border-radius: 10px; height: 5rem; padding-left: 10px; padding-right: 10px; cursor: pointer; border: 5px solid rgb(127, 127, 127); background-color: blue; color:white; }
@@ -96,6 +96,7 @@
 
     <!-- <div class="my-alert-msg alert-disp">Alert message<br>Alert message<br>Alert message</div> -->
 
+    <div id = "msgOverLay"></div>
     <div class="container" style="width:90%;">        
         
         <div id="my-alert-window">
@@ -110,11 +111,22 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
     <script>
+        
         function invoke_Alert_Window(my_msg) {
-            document.getElementById('p-alert-msg').innerHTML = my_msg;
-            document.getElementById("my-alert-window").style.display = "block";
+			var winW = window.innerWidth ;
+			var winH = window.innerHeight ;
+			var msgOverLay = document.getElementById ('msgOverLay') ;
+			msgOverLay.style.display = "block" ;
+			msgOverLay.style.height = winH + "px" ;
+			document.getElementById("my-alert-window").style.left = ( winW / 2 ) - ( 320 * .5 ) + "px";
+			document.getElementById("my-alert-window").style.top = "50px";
+            document.getElementById("my-alert-window").minHeight = "100px";
+			document.getElementById("my-alert-window").style.display = "block";
+            document.getElementById('p-alert-msg').innerHTML = my_msg;            
         }
+
         function close_Alert_Window() {
+            document.getElementById ( 'msgOverLay' ).style.display = "none";            
             document.getElementById("my-alert-window").style.display = "none";
         }    
     </script>

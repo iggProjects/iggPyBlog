@@ -5,6 +5,10 @@ CSS
   - Hover Effects
     - on button zoom
 
+JS Customize alert
+  - https://codepen.io/nishanc/pen/NWWPdZE
+
+
 WINDOWS MSG simulating alert
   - how to stop until close window
   - use setTimeout....	
