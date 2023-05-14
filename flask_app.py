@@ -257,6 +257,7 @@ def ExecPythonScript():
     return ""
 
 @app.route('/result_script_exec/')
+
 def result_script_exec():
     print(f"{FR_YELL}\n====== in result_script_exec() for html ======{NO_COLOR}\n")
     from os import system
@@ -266,7 +267,7 @@ def result_script_exec():
 
     # read path to script
     py_script_path = request.args['py_path']
-    #print(f"py_path --> {py_script_path}")
+    print(f"py_path --> {py_script_path}")
     py_list = py_script_path.split('/')
     py_name = py_list[len(py_list)-1]
     print(f"py_list: {py_list}")
@@ -371,9 +372,7 @@ def result_script_exec():
     
     # print(f"list_JS_lines type: {type(list_JS_lines)} | first line: {list_JS_lines[2]}")
     print(f"{FR_YELL}====== exit result_script_exec() in html ======{NO_COLOR}\n") 
-
     return render_template('result_script_exec.html', list_lines=list_color_text, list_JS_lines=list_JS_lines, py_name=py_name)
-
 
 #
 # MAIN
