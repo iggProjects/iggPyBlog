@@ -49,11 +49,15 @@ ENIGMA
 
 ACTUALIZAR EN PYTHON_AW
 
-. repl layout.html
-. repl articles.py
+- repl layout.html
 - repl excercise.html
-- repl excercise_data.py
+- repl project-LifeGame_script.html
+- repl project-EnigmaGame_script.html
+
 - repl result_script_exec.py
+
+- repl articles_data.py
+- repl excercise_data.py
 - repl lifegame_data.py
 
 - load 20230223-RotateAlphab-twice1.py

@@ -47,49 +47,49 @@
 
 <body>
 
-<div id = "msgOverLay"></div>
-<div id = "msgBox">    
-        <div id = "msgBoxHead"></div>
-        <div id = "msgBoxBody"></div>	
-        <div id = "msgBoxFoot"></div>    
-</div>
+    <div id = "msgOverLay"></div>
+    <div id = "msgBox">    
+            <div id = "msgBoxHead"></div>
+            <div id = "msgBoxBody"></div>	
+            <div id = "msgBoxFoot"></div>    
+    </div>
 
 
-<div style="width:80%; margin:auto; margin-top:50px; text-align: center; border: 10px solid rgb(172, 171, 171);">	
-    <h1>My Alert<br><br>
-    <p style="margin:30px;"><button onclick="my_msg.render('ALERT','ZER MODUZ ZAUDE? OSO ONDO ! Eta zu?')">Press here</button></p>
-</div>
+    <div style="width:80%; margin:auto; margin-top:50px; text-align: center; border: 10px solid rgb(172, 171, 171);">	
+        <h1>My Alert<br><br>
+        <p style="margin:30px;"><button onclick="my_msg.render('ALERT','ZER MODUZ ZAUDE? OSO ONDO ! Eta zu?')">Press here</button></p>
+    </div>
 
-<script>
-    	// Ejecución de alerts personalizados
-	function MyMsg() { 
-	
-		this.render = function(msg_H,msg_B) { 
-            
-			var winW = window.innerWidth ;
-			var winH = window.innerHeight ;
-			var msgOverLay = document.getElementById ('msgOverLay') ;
-			var msgBox = document.getElementById ("msgBox") ;
-			msgOverLay.style.display = "block" ;
-			msgOverLay.style.height = winH + "px" ;            
-			msgBox.style.left = ( winW / 2 ) - ( 320 * .5 ) + "px";
-			msgBox.style.top = "50px";
-            msgBox.style.minHeight = "100px";
-			msgBox.style.display = "block";
-			document.getElementById( 'msgBoxHead' ).innerHTML = '<p><strong>' + msg_H + '</strong></p>';  
-			document.getElementById( 'msgBoxBody' ).innerHTML = '<p>' + msg_B + '</p>';  
-			document.getElementById( 'msgBoxFoot' ).innerHTML = '<button onclick = "my_msg.ok()">OK</button>' ;  
-		}
-	
-		this.ok = function() {
-			document.getElementById ( 'msgBox' ).style.display = "none"; 
-			document.getElementById ( 'msgOverLay' ).style.display = "none";
-		}
-	};
+    <script>
+        // Custom Alert  (codepen)
+        function MyMsg() { 
+        
+            this.render = function(msg_H,msg_B) { 
+                
+                var winW = window.innerWidth ;
+                var winH = window.innerHeight ;
+                var msgOverLay = document.getElementById ('msgOverLay') ;
+                var msgBox = document.getElementById ("msgBox") ;
+                msgOverLay.style.display = "block" ;
+                msgOverLay.style.height = winH + "px" ;            
+                msgBox.style.left = ( winW / 2 ) - ( 320 * .5 ) + "px";
+                msgBox.style.top = "50px";
+                msgBox.style.minHeight = "100px";
+                msgBox.style.display = "block";
+                document.getElementById( 'msgBoxHead' ).innerHTML = '<p><strong>' + msg_H + '</strong></p>';  
+                document.getElementById( 'msgBoxBody' ).innerHTML = '<p>' + msg_B + '</p>';  
+                document.getElementById( 'msgBoxFoot' ).innerHTML = '<button onclick = "my_msg.ok()">OK</button>' ;  
+            }
+        
+            this.ok = function() {
+                document.getElementById ( 'msgBox' ).style.display = "none"; 
+                document.getElementById ( 'msgOverLay' ).style.display = "none";
+            }
+        };
 
-    var my_msg = new MyMsg();
+        var my_msg = new MyMsg();
 
-</script>
+    </script>
 
 </body>
 

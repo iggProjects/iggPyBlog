@@ -66,10 +66,16 @@
         .p_result {margin:auto; padding-left:0px; color:rgb(186, 185, 185); }  
         .p_result span {color: #990000; }  
 
+        * {
+            margin:  0px; 
+            padding: 0px; 
+            box-sizing:border-box;	
+        }
+
+        /* Custom Alert*/
 
         #msgOverLay { display: none; position: fixed; top: 0px; left: 0px; background-color: #00F; opacity: .3; width: 100%;  z-index: 1; }
-        
-        #my-alert-window {
+        #msgBox { 
             margin:auto;
             padding:3px;	
             width: 320px;
@@ -83,9 +89,35 @@
             z-index: 10;
             font-family: "Arial",  sans-serif;
         }
-        #my-alert-window #p-alert-msg { margin-top:10px; font-size: 18px; color: rgb(92, 92, 92); }
-        #my-alert-window #alert-close { position: absolute; right: 20px; bottom: 10px; }
-        #my-alert-window .alert-button { border-radius: 10px; height: 5rem; padding-left: 10px; padding-right: 10px; cursor: pointer; border: 5px solid rgb(127, 127, 127); background-color: blue; color:white; }
+        #msgBox #msgBoxHead { height:20px; background-color:green; border-radius: 10px; padding: 2px; color:white; font-size: 14px; text-align: center; }
+        #msgBox #msgBoxBody { margin: 10px; color: black; font-size: 15px; }
+        #msgBox #msgBoxFoot  { margin-top:30px; height:40px; text-align: right; }
+        #msgBox #msgBoxFoot button { margin-top:3px; margin-right: 10px; width:60px; height:30px; border: 3px solid #acacfd; color:blue; border-radius: 10px; font-size: 15px; }
+
+        [data-title]:hover:after {
+            opacity: 1;
+            transition: all 0.1s ease 0.5s;
+            visibility: visible;
+        }
+        [data-title]:after {
+            content: attr(data-title);
+            background-color: #00FF00;
+            color: #111;
+            font-size: 150%;
+            position: absolute;
+            padding: 1px 5px 2px 5px;
+            bottom: -1.6em;
+            left: 100%;
+            white-space: nowrap;
+            box-shadow: 1px 1px 3px #222222;
+            opacity: 0;
+            border: 1px solid #111111;
+            z-index: 99999;
+            visibility: hidden;
+        }
+        [data-title] {
+            position: relative;
+        }
 
     </style>
 
@@ -97,38 +129,47 @@
     <!-- <div class="my-alert-msg alert-disp">Alert message<br>Alert message<br>Alert message</div> -->
 
     <div id = "msgOverLay"></div>
-    <div class="container" style="width:90%;">        
-        
-        <div id="my-alert-window">
-            <p id="p-alert-msg"></p>
-            <button id="alert-close" class="alert-button" onclick = "close_Alert_Window()">Close<br>Window</button>
-        </div>            
-        
+    <div id = "msgBox">    
+            <div id = "msgBoxHead"></div>
+            <div id = "msgBoxBody"></div>	
+            <div id = "msgBoxFoot"></div>    
+    </div>
+   <div class="container" style="width:90%;">  
         {% block body%} 
         
         {% endblock%}
     </div>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>  -->
 
     <script>
-        
-        function invoke_Alert_Window(my_msg) {
-			var winW = window.innerWidth ;
-			var winH = window.innerHeight ;
-			var msgOverLay = document.getElementById ('msgOverLay') ;
-			msgOverLay.style.display = "block" ;
-			msgOverLay.style.height = winH + "px" ;
-			document.getElementById("my-alert-window").style.left = ( winW / 2 ) - ( 320 * .5 ) + "px";
-			document.getElementById("my-alert-window").style.top = "50px";
-            document.getElementById("my-alert-window").minHeight = "100px";
-			document.getElementById("my-alert-window").style.display = "block";
-            document.getElementById('p-alert-msg').innerHTML = my_msg;            
-        }
 
-        function close_Alert_Window() {
-            document.getElementById ( 'msgOverLay' ).style.display = "none";            
-            document.getElementById("my-alert-window").style.display = "none";
-        }    
+        function MyMsgWindow() { 
+            
+            this.render = function(msg_H,msg_B) { 
+                
+                var winW = window.innerWidth ;
+                var winH = window.innerHeight ;
+                var msgOverLay = document.getElementById ('msgOverLay') ;
+                var msgBox = document.getElementById ("msgBox") ;
+                msgOverLay.style.display = "block" ;
+                msgOverLay.style.height = winH + "px" ;            
+                msgBox.style.left = ( winW / 2 ) - ( 320 * .5 ) + "px";
+                msgBox.style.top = "50px";
+                msgBox.style.minHeight = "100px";
+                msgBox.style.display = "block";
+                document.getElementById( 'msgBoxHead' ).innerHTML = '<p><strong>' + msg_H + '</strong></p>';  
+                document.getElementById( 'msgBoxBody' ).innerHTML = '<p>' + msg_B + '</p>';  
+                document.getElementById( 'msgBoxFoot' ).innerHTML = '<button onclick = "my_msg_window.ok()">OK</button>' ;  
+            }
+
+            this.ok = function() {
+                document.getElementById ( 'msgBox' ).style.display = "none"; 
+                document.getElementById ( 'msgOverLay' ).style.display = "none";
+            }
+        };
+
+        var my_msg_window = new MyMsgWindow();
+    
     </script>
 </body>
 </html>

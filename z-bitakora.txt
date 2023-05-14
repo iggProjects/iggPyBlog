@@ -47,14 +47,6 @@ Actual web
     5.- progress bar mail
     6.- MyFunctions: 
         - ADD script zip_file_list(list, zipname)
-        - alert window - copy from mySQLadmin
-            function invoke_Alert_Window(my_msg) {
-                document.getElementById('p-alert-msg').innerHTML = my_msg;
-                document.getElementById("my-alert-window").style.display = "block";
-            }
-            function close_Alert_Window() {
-                document.getElementById("my-alert-window").style.display = "none";
-            }    
     7.- modal for img
         - modal for img  vs image zoom by click
             - https://linuxhint.com/image-zoom-in-zoom-out-javascript/

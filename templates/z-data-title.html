@@ -1,0 +1,51 @@
+<!DOCTYPE html> 
+<html> 
+      
+<head> 
+    <title> 
+        How to Change the Style of
+        Anchor Tag Title Attribute?
+    </title> 
+      
+    <style> 
+        [data-title]:hover:after {
+            visibility: visible;
+        }
+          
+        [data-title]:after {
+            content: attr(data-title);
+            background-color: #4b9c2c;    
+            color: #ffffff;
+            font-size: 150%;
+            position: absolute;
+            padding: 4px 8px 4px 8px;
+            visibility: hidden;
+        }
+    </style> 
+</head> 
+  
+<body style="text-align:center;"> 
+    <h1 style="color:green">
+        GeeksforGeeks
+    </h1>
+      
+    <h3>
+        Change the Style of Anchor
+        Tag Title Attribute
+    </h3>
+  
+    <a href="geeksforgeeks.org" 
+            data-title="GFG">
+        Link 
+    </a> Title with different
+        background color and style
+    <br>
+      
+    <a href="geeksforgeeks.org" title="GFG">
+        Link
+    </a> Title with a normal tool-tip
+
+    <img src="/static/img/ame-01.jpg" width="50" data-title="MY IMAGE">
+</body> 
+  
+</html>
