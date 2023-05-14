@@ -8,6 +8,11 @@ CSS
 JS Customize alert
   - https://codepen.io/nishanc/pen/NWWPdZE
 
+  - try two steps in flask_app 
+    1.- first call from JS via XMLHttpRequest
+    2.- call render from server
+
+
 
 WINDOWS MSG simulating alert
   - how to stop until close window
