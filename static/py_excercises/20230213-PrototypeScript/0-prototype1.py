@@ -25,6 +25,11 @@ if __name__ == "__main__":
 
     print(f"{FR_GREEN}---------- prototype py model ----------{NO_COLOR}")
 
+    print("print empty line")
+    print("print empty line")
+
+    print(f"{FR_BLUE}\t\t\t\t\t\t---------- USE DOWNLOAD OPTION ----------{NO_COLOR}")
+
     #
     # YOUR CODE
     #     

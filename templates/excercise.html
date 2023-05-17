@@ -11,9 +11,17 @@
                 <th style="width:25%"><span style="color:green">script name</span><br><span style="color:rgb(163, 23, 2)">"{{ excercise.fileDirPath.split('/')[3] }}"</span></th>
                 <th style="width:9%"><a href="{{excercise.code_url}}" target="_blank"><img class="myImg" onclick='' src="{{ url_for('static', filename='img/icons8-script-68.png') }}" title='Script code' alt="console-100" width="30"/></a></th>                
                 <th style="width:9%"><a href="{{excercise.zip_url}}" target="_blank"><img class="myImg" onclick='ExecPythonScript()' src="{{ url_for('static', filename='img/icons8-descargar-de-la-nube-100.png') }}" title='Download py script' alt="download-100" width="30"/></a></th>                              
+
+        <!--    
+            LOOKiNG FOR function in js and in python that make it possible to call the window and then render the new web page.
+                - WHEN working with <a> tag, all is done, but with the alert of JS 
+                - Doing with a customized window using JS, then the web page is doesn't display
+                - Working with SESSION variable in Python... Checking if the data pass to render-template process
+        -->        
+
            <!-- <th style="width:9%"><img class="myImg" onclick='html_script_exec("{{excercise.fileDirPath1}}")' src="{{ url_for('static', filename='img/icons8-html-filetype-50.png') }}" title='Visualize the scrip execution in html format' alt="console-100" width="35"/></a></th>  -->
-                <th style="width:9%"><a href="/result_script_exec/?py_path={{excercise.fileDirPath1}}" target="_blank"><img class="myImg" onclick='alert("\n=====  PLEASE WAIT A BIT  =====\n\nWHILE THE SCRIPT RUNS IN THE BACKGROUND !")' src="{{ url_for('static', filename='img/icons8-html-filetype-50.png') }}" title='Visualize the scrip execution in html format' alt="console-100" width="35"/></a></th>  
-           <!-- <th style="width:9%"><a href="/result_script_exec/?py_path={{excercise.fileDirPath1}}" target="_blank"><img class="myImg" onclick='my_msg_window.render("Please wait a bit while the script runs in the background !")' src="{{ url_for('static', filename='img/icons8-html-filetype-50.png') }}" title='Visualize the scrip execution in html format' alt="console-100" width="35"/></a></th>-->
+                <th style="width:9%"><a href="/result_script_exec/?py_path={{excercise.fileDirPath1}}" target="_blank"><img class="myImg" onclick='alert("\n=====  PLEASE WAIT A BIT  =====\n\nWHILE THE SCRIPT RUNS IN THE BACKGROUND !")' src="{{ url_for('static', filename='img/icons8-html-filetype-50.png') }}" title='Visualize the scrip execution in html format' alt="console-100" width="35"/></a></th>
+           <!-- <th style="width:9%"><a href="/result_script_exec/?py_path={{excercise.fileDirPath1}}" target="_blank"><img class="myImg" onclick='my_msg_window.render("ALERT","Please wait a bit while the script runs in the background !")' src="{{ url_for('static', filename='img/icons8-html-filetype-50.png') }}" title='Visualize the scrip execution in html format' alt="console-100" width="35"/></a></th>  -->
                 <th style="width:9%; padding:10px;">
                     <img class="myImg" onclick='ExecPythonScript("{{excercise.fileDirPath}}")' src="{{ url_for('static', filename='img/icons8-consola-100.png') }}" title='= PLEASE CHECK CONSOLE TO SEE SCRIPT EXECUTION =' alt="console-100" width="30"/>
                     <!-- <span data-title='= PLEASE CHECK CONSOLE TO SEE SCRIPT EXECUTION =' ><img class="myImg" onclick='ExecPythonScript("{{excercise.fileDirPath}}")' src="{{ url_for('static', filename='img/icons8-consola-100.png') }}" alt="console-100" width="30"/></span> -->
@@ -44,11 +52,11 @@
             request.send()            
         }
 
-
+        // https://stackoverflow.com/questions/44749605/xmlhttprequest-does-not-render-template-flask-javascript
         function html_script_exec(py_path){
             // alert('py script path: ' + py_path)
             // alert("\n=====  PLEASE WAIT A BIT  =====\n\nWHILE THE SCRIPT RUNS IN THE BACKGROUND !");
-            // my_msg_window.render("ALERT","Please wait a bit while the script runs in the background !") 
+            my_msg_window.render("ALERT","Please wait a bit while the script runs in the background !") 
 
             // go to result_script_exec.html 
             var request = new XMLHttpRequest()
@@ -57,9 +65,6 @@
             request.send()   
                      
         }
-
-
-
 
 
     </script>

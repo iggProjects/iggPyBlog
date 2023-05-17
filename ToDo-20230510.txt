@@ -11,12 +11,7 @@ JS Customize alert
   - try two steps in flask_app 
     1.- first call from JS via XMLHttpRequest
     2.- call render from server
-
-
-
-WINDOWS MSG simulating alert
-  - how to stop until close window
-  - use setTimeout....	
+    3.- SESSION variable in Python to pass data to render-template process
 
 WRITE IN LOG FILES
 
@@ -24,11 +19,10 @@ WRITE IN LOG FILES
 ==============================================================
 
 EXCERCISES
-
+ number -- correct
 -  2.- pause --> html: mensaje | console mens
 -  3.- mostrar obj
-	- agregar info dl objeto en Description
--  8.- DO IT ???
+	     - agregar info del objeto en Description
 - 10.- Msg to html button "case not working with input"
 - 11.- parameter for html button in blank ! 
        - make msg in result_script_exec
@@ -53,6 +47,8 @@ ENIGMA
 
 
 ACTUALIZAR EN PYTHON_AW
+
+- 0-prototype1.py from sub folder 20230213-PrototypeScript
 
 - repl layout.html
 - repl excercise.html

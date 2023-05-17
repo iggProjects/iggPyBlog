@@ -147,9 +147,9 @@ def Excercises():
             'fileDirPath': 'static/py_excercises/20230213-PrototypeScript/0-prototype.py',            
             'fileDirPath1': 'static/py_excercises/20230213-PrototypeScript/0-prototype1.py',            
             
-            'homework': 'Download the prototype scrip, MyFunc.py and MyColors.py.\n',
+            'homework': 'Download:\n\t\t1: 0-prototype.py;  2: MyFunc.py;  3: MyColors.py.\n',
 
-            'body': 'OWN FUNCTIONS FOR:\n\t- see objects types, methods and attributes,\n\t- view objectS info in matrix form\n\t- time functions like pause\n\t- printing with colors options\n\t- decisions functions\n\t -use HELP native function\n\t- write in log files, like "comments log", "errors log", "sql msg"\n\t- OS most used functions\n\t- MODULES info',          
+            'body': 'OWN FUNCTIONS FOR:\n\t- see objects types, methods and attributes,\n\t- view objects info in matrix form\n\t- time functions like pause\n\t- printing with colors options\n\t- decisions functions\n\t -use HELP native function\n\t- write in log files, like "comments log", "errors log", "sql msg"\n\t- OS most used functions\n\t- MODULES info',          
 
             'code_url':'../static/py_excercises/20230213-PrototypeScript/0-prototype.py',
             'zip_url': '../static/py_excercises/20230213-PrototypeScript/20230213-PrototypeScript.zip',
