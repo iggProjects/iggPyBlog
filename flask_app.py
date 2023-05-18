@@ -387,7 +387,7 @@ def result_script_html():
     list_JS_lines = session['list_JS_lines']
     py_name = session['py_name']
     print(f"py_name: {py_name}")
-    print(f"list_lines: {list_lines}")
+    # print(f"list_lines: {list_lines}")
     return render_template('result_script_html.html', list_lines=list_lines, list_JS_lines=list_JS_lines, py_name=py_name)
 
 
