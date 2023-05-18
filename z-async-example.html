@@ -1,0 +1,182 @@
+<!DOCTYPE html> 
+<html> 
+      
+<head> 
+    <title> 
+        How to Change the Style of
+        Anchor Tag Title Attribute?
+    </title> 
+      
+    <style> 
+        [data-title]:hover:after {
+            visibility: visible;
+        }
+          
+        [data-title]:after {
+            content: attr(data-title);
+            background-color: #4b9c2c;    
+            color: #ffffff;
+            font-size: 150%;
+            position: absolute;
+            padding: 4px 8px 4px 8px;
+            visibility: hidden;
+        }
+
+        #msgOverLay { display: none; position: fixed; top: 0px; left: 0px; background-color: #00F; opacity: .3; width: 100%;  z-index: 1; }
+        #msgBox { 
+            margin:auto;
+            padding:3px;	
+            width: 320px;
+            height: auto;
+            display: none;
+            position: fixed;
+            background-color: white;                        
+            border-radius: 10px;
+            box-shadow: 0 0 0 .8em blue;
+            left:35%;
+            z-index: 10;
+            font-family: "Arial",  sans-serif;
+        }
+        
+        #msgBox #msgBoxHead { height:auto; background-color:green; border-radius: 10px; padding: 2px; color:white; font-size: 14px; text-align: center; }
+        #msgBox #msgBoxHead p { margin:0px; }
+        #msgBox #msgBoxBody { margin: 10px; color: black; font-size: 15px; }
+     /* 
+        #msgBox #msgBoxFoot  { margin-top:30px; height:40px; text-align: right; }
+        #msgBox #msgBoxFoot button { margin-top:3px; margin-right: 10px; width:60px; height:30px; border: 3px solid #acacfd; color:blue; border-radius: 10px; font-size: 15px; }
+     */   
+        
+    </style> 
+</head> 
+  
+<body style="text-align:center;"> 
+
+    <div id = "msgOverLay"></div>
+    <div id = "msgBox">    
+            <div id = "msgBoxHead"></div>
+            <div id = "msgBoxBody"></div>	
+            <!-- <div id = "msgBoxFoot"></div>  -->  
+    </div>
+
+    <h3 style="margin-top:50px;">
+        Change the Style of Anchor
+        Tag Title Attribute
+    </h3>
+  
+    <a href="" 
+            data-title="GFG">
+        Link 
+    </a> Title with different
+        background color and style
+    <br>
+      
+    <a href="" title="GFG">
+        Link
+    </a> Title with a normal tool-tip
+
+    <br><br>
+    <img src="/static/img/ame-01.jpg" style="margin-left: 20px;" width="50" title="MY IMAGE">
+    <span  data-title="MY IMAGE"><img src="/static/img/ame-01.jpg" style="margin-left: 20px;" width="50"></span>
+
+    <div id="asyncDiv" style="margin: auto; margin-top:30px; padding:20px; width:30%; text-align: center; border:10px solid rgb(208, 207, 207)"></div>
+
+</body> 
+
+<script>
+    function MyMsgWindow() { 
+        
+        this.render = function(msg_H,msg_B) { 
+            
+            var winW = window.innerWidth ;
+            var winH = window.innerHeight ;
+            var msgOverLay = document.getElementById ('msgOverLay') ;
+            var msgBox = document.getElementById ("msgBox") ;
+            msgOverLay.style.display = "block" ;
+            msgOverLay.style.height = winH + "px" ;            
+            msgBox.style.left = ( winW / 2 ) - ( 320 * .5 ) + "px";
+            msgBox.style.top = "50px";
+            msgBox.style.minHeight = "100px";
+            msgBox.style.display = "block";
+            document.getElementById( 'msgBoxHead' ).innerHTML = '<p><strong>' + msg_H + '</strong></p>';  
+            document.getElementById( 'msgBoxBody' ).innerHTML = '<p>' + msg_B + '</p>';  
+            // document.getElementById( 'msgBoxFoot' ).innerHTML = '<button onclick = "my_msg_window.ok()">OK</button>' ;  
+        }
+
+        this.ok = function() {
+            document.getElementById ( 'msgBox' ).style.display = "none"; 
+            document.getElementById ( 'msgOverLay' ).style.display = "none";
+        }
+    };
+
+    var my_msg_window = new MyMsgWindow();
+
+</script>
+
+
+
+<script>
+
+function delay(milliseconds){
+    return new Promise(resolve => {
+        setTimeout(resolve, milliseconds);
+    });
+}
+
+async function init(){
+
+    screenLog("First Log");
+
+    //alert("First Alert ==> HERE I AM !")
+    my_msg_window.render("ALERT","Please wait a bit while the script runs in the background !");
+    await delay(4000);
+
+    document.getElementById ( 'msgBox' ).style.display = "none"; 
+    document.getElementById ( 'msgOverLay' ).style.display = "none";
+
+    await delay(2000);
+    screenLog("second Log: Executed after 2 seconds wait");
+    
+    //alert("Second Alert ==> HERE I AM !")    
+    await delay(1000);
+    my_msg_window.render("ALERT","Please wait a bit while the script runs in the background !");    
+    await delay(4000);
+    
+    document.getElementById ( 'msgBox' ).style.display = "none"; 
+    document.getElementById ( 'msgOverLay' ).style.display = "none";
+
+    await delay(2000);
+    screenLog("Third Log: Executed after 2 seconds wait");
+
+    await delay(1000);
+    my_msg_window.render("ALERT","Please wait a bit while the script runs in the background !");  
+    await delay(4000);
+    
+    document.getElementById ( 'msgBox' ).style.display = "none"; 
+    document.getElementById ( 'msgOverLay' ).style.display = "none";    
+
+    await delay(3000);
+    screenLog("Fourth Log: Executed after 3 seconds wait");
+
+    await delay(1000);
+    my_msg_window.render("ALERT","That's all !");  
+    await delay(3000);
+
+    document.getElementById ( 'msgBox' ).style.display = "none"; 
+    document.getElementById ( 'msgOverLay' ).style.display = "none";    
+
+
+}
+
+init();
+
+asyncDiv = document.getElementById("asyncDiv");
+
+screenLog("Second Log: Executed after the 1st log and before the 2 delays");
+
+function screenLog(text){
+  asyncDiv.innerHTML += '<br> ==> ' + text + '<br>';
+}
+
+</script>
+  
+</html>
