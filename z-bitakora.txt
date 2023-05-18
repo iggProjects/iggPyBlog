@@ -46,6 +46,11 @@ Actual web
     0.- clean result_script_exec() of flask_app and include "window" for alert
         Simplify use of MyFunc and MyColors !!!
 
+        LIKE SLEEP
+        - https://stackoverflow.com/questions/16623852/how-to-pause-javascript-code-execution-for-2-seconds
+        - https://www.sitepoint.com/delay-sleep-pause-wait/
+        - https://www.tutorialrepublic.com/faq/how-to-sleep-before-continuing-in-javascript.php
+
         flask render template does not work  with xmlhttprequest
         - https://stackoverflow.com/questions/44749605/xmlhttprequest-does-not-render-template-flask-javascript
 
