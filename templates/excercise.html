@@ -55,31 +55,15 @@
 
         // https://stackoverflow.com/questions/44749605/xmlhttprequest-does-not-render-template-flask-javascript
         function html_script_exec(py_path){
-            // alert('py script path: ' + py_path)
-            // alert("\n=====  PLEASE WAIT A BIT  =====\n\nWHILE THE SCRIPT RUNS IN THE BACKGROUND !");
-           
-            my_msg_window.render("ALERT","Please wait a bit while the script runs in the background !")
-            // pause = setInterval(my_msg_window.render("ALERT","Please wait a bit while the script runs in the background !"),5000)
-            
-            const pauseTime = setTimeout(myRequest(py_path),3000)
-            
+            alert("\n=====  PLEASE WAIT A BIT  =====\n\nWHILE THE SCRIPT RUNS IN THE BACKGROUND !");
+            // my_msg_window.render("ALERT","Please wait a bit while the script runs in the background !");
             // go to result_script_exec.html 
-            /*
-            var request = new XMLHttpRequest()
-            request.open("GET", "/result_script_exec/?py_path=" + py_path, true)            
-            request.onreadystatechange = function() {
-                if(request.readyState == XMLHttpRequest.DONE && request.status == 200) {
-                    window.location.href = '/result_script_html';
-                }
-            }                                    
-            // request.open("GET", "/result_script_data/?py_path=" + py_path, true)           
-            request.send()  
-            */
+            myRequest(py_path);
         }
 
         function myRequest(py_file) {
             console.log("==== from myRequest: py_file => " + py_file)
-            setTimeout(document.getElementById ( 'msgBox' ).style.display = "none",3000); 
+            document.getElementById ( 'msgBox' ).style.display = "none"; 
             document.getElementById ( 'msgOverLay' ).style.display = "none";
             
             var request = new XMLHttpRequest()
