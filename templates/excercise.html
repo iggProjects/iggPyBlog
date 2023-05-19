@@ -42,6 +42,12 @@
 
     <script>
 
+        function delay(milliseconds){
+            return new Promise(resolve => {
+                setTimeout(resolve, milliseconds);
+            });
+        }
+
         function ExecPythonScript(py_path){
             /* alert('py script path: ' + py_path) */
             alert("\n=====  PLEASE CHECK YOUR SERVER CONSOLE  =====\n\n=====  SEE SCRIPT EXECUTION  ====="); 
@@ -54,11 +60,16 @@
 
 
         // https://stackoverflow.com/questions/44749605/xmlhttprequest-does-not-render-template-flask-javascript
-        function html_script_exec(py_path){
-            alert("\n=====  PLEASE WAIT A BIT  =====\n\nWHILE THE SCRIPT RUNS IN THE BACKGROUND !");
-            // my_msg_window.render("ALERT","Please wait a bit while the script runs in the background !");
+        async function html_script_exec(py_path){
+
+            // alert("\n=====  PLEASE WAIT A BIT  =====\n\nWHILE THE SCRIPT RUNS IN THE BACKGROUND !");
+            
+            my_msg_window.render("ALERT","Please wait a bit while the script runs in the background !");
+            await delay(4000);
+
             // go to result_script_exec.html 
             myRequest(py_path);
+            
         }
 
         function myRequest(py_file) {
@@ -76,8 +87,6 @@
             // request.open("GET", "/result_script_data/?py_path=" + py_path, true)           
             request.send()  
         }
-
-
 
     </script>
 
