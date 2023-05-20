@@ -90,7 +90,7 @@
             font-family: "Arial",  sans-serif;
         }
         #msgBox #msgBoxHead { height:20px; background-color:green; border-radius: 10px; padding: 2px; color:white; font-size: 14px; text-align: center; }
-        #msgBox #msgBoxBody { margin: 10px; color: black; font-size: 15px; }
+        #msgBox #msgBoxBody { margin: 10px; text-align:center; color: black; font-size: 15px; }
         #msgBox #msgBoxFoot  { margin-top:30px; height:40px; text-align: right; }
         #msgBox #msgBoxFoot button { margin-top:3px; margin-right: 10px; width:60px; height:30px; border: 3px solid #acacfd; color:blue; border-radius: 10px; font-size: 15px; }
 
@@ -101,17 +101,21 @@
         }
         [data-title]:after {
             content: attr(data-title);
-            background-color: #00FF00;
-            color: #111;
-            font-size: 150%;
+            border: 2px solid gray;
+            border-radius: 5px;
+            background-color: blue;
+            color: white;
+            font-weight: lighter;
+            font-size:11px;
+            /* font-size: 120%; */
             position: absolute;
-            padding: 1px 5px 2px 5px;
-            bottom: -1.6em;
-            left: 100%;
+            padding: 2px 5px 2px 5px;
+            top: 30px;
+            /* bottom: -2.5em; */
+            left: -60px;
             white-space: nowrap;
-            box-shadow: 1px 1px 3px #222222;
+            /* box-shadow: 1px 1px 3px #222222; */
             opacity: 0;
-            border: 1px solid #111111;
             z-index: 99999;
             visibility: hidden;
         }
@@ -158,7 +162,7 @@
                 msgBox.style.minHeight = "100px";
                 msgBox.style.display = "block";
                 document.getElementById( 'msgBoxHead' ).innerHTML = '<p><strong>' + msg_H + '</strong></p>';  
-                document.getElementById( 'msgBoxBody' ).innerHTML = '<p>' + msg_B + '</p>';  
+                document.getElementById( 'msgBoxBody' ).innerHTML = '<p> ' + msg_B + ' </p><br><p>Your HOST is ' + location.hostname + ' </p>';  
                 document.getElementById( 'msgBoxFoot' ).innerHTML = '<button onclick = "my_msg_window.ok()">OK</button>' ;  
             }
 

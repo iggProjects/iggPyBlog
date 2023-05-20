@@ -1,17 +1,42 @@
 CSS 
+
+  - coolies modal 
+
   - font size in title
       - https://stackoverflow.com/questions/17472440/styling-html-title-attribute-using-css
 
   - Hover Effects
     - on button zoom
 
-JS Customize alert
+JS Customize alert 
   - https://codepen.io/nishanc/pen/NWWPdZE
 
   - try two steps in flask_app 
-    1.- first call from JS via XMLHttpRequest
-    2.- call render from server
-    3.- SESSION variable in Python to pass data to render-template process
+    1.- first call from JS via XMLHttpRequest  ✔✔
+    2.- call render from server  ✔✔
+    3.- SESSION variable in Python to pass data to render-template process ✔✔
+    4.- FADING Effects to exit from alert window
+        - https://codepen.io/thebabydino/pen/MWYJdNY
+        - https://www.geeksforgeeks.org/image-transition-with-fading-effect-using-javascript/
+
+
+CONSOLE button
+  - PYTHON check if user is in localhost
+    - https://stackoverflow.com/questions/47885832/determine-if-host-is-localhost
+    - https://gist.github.com/bennr01/7043a460155e8e763b3a9061c95faaa0
+    - https://www.geeksforgeeks.org/display-hostname-ip-address-python/
+
+      def get_Host_name_IP():
+      try:
+          host_name = socket.gethostname()
+          host_ip = socket.gethostbyname(host_name)
+          print("Hostname :  ", host_name)
+          print("IP : ", host_ip)
+      except:
+          print("Unable to get Hostname and IP")
+
+  - JS check host is localhost
+    - https://stackoverflow.com/questions/3162457/how-to-check-with-javascript-if-connection-is-local-host        
 
 WRITE IN LOG FILES
 

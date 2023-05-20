@@ -56,6 +56,7 @@ Actual web
 
         flask render template does not work  with xmlhttprequest
         - https://stackoverflow.com/questions/44749605/xmlhttprequest-does-not-render-template-flask-javascript
+        
 
         USE SESSION VARIABLE TO STORE INFO AND CALL TEMPLATE TO RENDER NEW PAGE WITH THAT INFO
         - https://www.javatpoint.com/flask-session

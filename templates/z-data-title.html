@@ -14,9 +14,11 @@
           
         [data-title]:after {
             content: attr(data-title);
-            background-color: #4b9c2c;    
+            background-color: #4b9c2c;
+            border:2px solid blue;
+            border-radius: 10px;;  
             color: #ffffff;
-            font-size: 150%;
+            font-size: 120%;
             position: absolute;
             padding: 4px 8px 4px 8px;
             visibility: hidden;
@@ -44,8 +46,10 @@
     <a href="geeksforgeeks.org" title="GFG">
         Link
     </a> Title with a normal tool-tip
-
-    <img src="/static/img/ame-01.jpg" width="50" data-title="MY IMAGE">
+    <br>
+    <img src="/static/img/ame-01.jpg" width="50" style="margin-top:20px;" title="MY IMAGE">
+    <br>
+    <span data-title="MY IMAGE"><img src="/static/img/ame-01.jpg" width="50" data-title="MY IMAGE" style="margin-top:20px;"></span>
 </body> 
   
 </html>

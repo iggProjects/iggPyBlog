@@ -9,11 +9,23 @@
                 <th style="width:15%"><a href="{{ lg_script.source_url }}" target="_blank"><span style="color:green">section</span><br><span style="color:rgb(163, 23, 2)">"{{ lg_script.section }}"</span></a></th>
                 <th style="width:25%"><span style="color:green">title</span><br><span style="color:rgb(163, 23, 2)">"{{lg_script.title}}"</span></a></th>                
                 <th style="width:25%"><span style="color:green">script name</span><br><span style="color:rgb(163, 23, 2)">"{{ lg_script.fileDirPath.split('/')[2] }}"</span></th>
-                <th style="width:9%"><a href="{{lg_script.code_url}}" target="_blank"><img class="myImg" onclick='' src="{{ url_for('static', filename='img/icons8-script-68.png') }}" title='code' alt="console-100" width="30"/></a></th>
-                <th style="width:9%"><a href="{{lg_script.zip_url}}" target="_blank"><img class="myImg" src="{{ url_for('static', filename='img/icons8-descargar-de-la-nube-100.png') }}" title='Download py script' alt="download-100" width="30"/></a></th>                              
-                <th style="width:9%"><a href="/result_script_exec/?py_path={{lg_script.fileDirPath1}}" target="_blank"><img class="myImg" onclick='alert("\n=====  PLEASE WAIT A BIT  =====\n\nWHILE THE SCRIPT RUNS IN THE BACKGROUND !")' src="{{ url_for('static', filename='img/icons8-html-filetype-50.png') }}" title='Visualize the scrip run in html format' alt="console-100" width="35"/></a></th>
+                <th style="width:9%">
+                    <a href="{{lg_script.code_url}}" target="_blank" data-title=" Script code ">
+                        <img class="myImg" onclick='' src="{{ url_for('static', filename='img/icons8-script-68.png') }}" alt="console-100" width="30"/>
+                    </a>
+                </th>
+                <th style="width:9%">
+                    <a href="{{lg_script.zip_url}}" target="_blank" data-title=" Download py script (zip) ">
+                        <img class="myImg" src="{{ url_for('static', filename='img/icons8-descargar-de-la-nube-100.png') }}" alt="download-100" width="30"/>
+                    </a>
+                </th>
+
+                <!-- <th style="width:9%"><a href="/result_script_exec/?py_path={{lg_script.fileDirPath1}}" target="_blank"><img class="myImg" onclick='alert("\n=====  PLEASE WAIT A BIT  =====\n\nWHILE THE SCRIPT RUNS IN THE BACKGROUND !")' src="{{ url_for('static', filename='img/icons8-html-filetype-50.png') }}" title='Visualize the scrip run in html format' alt="console-100" width="35"/></a></th>  -->
+                <th style="width:9%">
+                    <span data-title=' Visualize the scrip execution in html format '><img class="myImg" onclick='html_script_exec("{{lg_script.fileDirPath1}}")' src="{{ url_for('static', filename='img/icons8-html-filetype-50.png') }}" alt="console-100" width="35"/></span>
+                </th>
                 <th style="width:9%; padding:10px;">
-                    <img class="myImg" onclick="ExecPythonScript('{{lg_script.fileDirPath}}')" src="{{ url_for('static', filename='img/icons8-consola-100.png') }}" title='Run in command line console' alt="console-100" width="30"/>
+                    <span data-title=' Only use if you are in Locahost. Check Flask Console '><img class="myImg" onclick="ExecPythonScript('{{lg_script.fileDirPath}}')" src="{{ url_for('static', filename='img/icons8-consola-100.png') }}" alt="console-100" width="30"/></span>
                 </th>                
             </tr>            
         </table>        
@@ -38,6 +50,41 @@
             request.open("GET", "/pythonScript/?py_path=" + py_path, true)            
             request.send()            
         }
+
+        function delay(milliseconds){
+            return new Promise(resolve => {
+                setTimeout(resolve, milliseconds);
+            });
+        }
+
+        // asynchronous function to call custom alert window
+        async function html_script_exec(py_path){
+            // alert("\n=====  PLEASE WAIT A BIT  =====\n\nWHILE THE SCRIPT RUNS IN THE BACKGROUND !");
+            my_msg_window.render("ALERT","Please WAIT a BIT while the script runs in the background !");
+            await delay(1000);
+            // go to result_script_exec.html 
+            myRequest(py_path);
+        }
+
+        // function onvoking window.location.href for /result_script_html 
+        async function myRequest(py_file) {
+            console.log("==== from myRequest: py_file => " + py_file)
+            await delay(2000);
+            document.getElementById ( 'msgBox' ).style.display = "none"; 
+            await delay(2000);
+            document.getElementById ( 'msgOverLay' ).style.display = "none";
+            
+            var request = new XMLHttpRequest()
+            request.open("GET", "/result_script_exec/?py_path=" + py_file, true)            
+            request.onreadystatechange = function() {
+                if(request.readyState == XMLHttpRequest.DONE && request.status == 200) {
+                    window.location.href = '/result_script_html';
+                }
+            }                                    
+            // request.open("GET", "/result_script_data/?py_path=" + py_path, true)           
+            request.send()  
+        }
+
 
     </script>
 
