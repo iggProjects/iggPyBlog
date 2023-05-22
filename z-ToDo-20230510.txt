@@ -1,27 +1,32 @@
+result_script_html.html
+  - JS function ... print lines (<p>) with delay. possible ???
+
+FADING Effects to exit from alert window
+        - https://codepen.io/thebabydino/pen/MWYJdNY
+        - https://www.geeksforgeeks.org/image-transition-with-fading-effect-using-javascript/
+
+COOKIES modal 
+
+WRITE IN LOG FILES
+
+==============================================================================================
+
 CSS 
-
-  - coolies modal 
-
-  - font size in title
+  - text effects in title  ✔✔ 
       - https://stackoverflow.com/questions/17472440/styling-html-title-attribute-using-css
-
   - Hover Effects
     - on button zoom
 
 JS Customize alert 
   - https://codepen.io/nishanc/pen/NWWPdZE
-
   - try two steps in flask_app 
     1.- first call from JS via XMLHttpRequest  ✔✔
     2.- call render from server  ✔✔
     3.- SESSION variable in Python to pass data to render-template process ✔✔
-    4.- FADING Effects to exit from alert window
-        - https://codepen.io/thebabydino/pen/MWYJdNY
-        - https://www.geeksforgeeks.org/image-transition-with-fading-effect-using-javascript/
 
 
 CONSOLE button
-  - PYTHON check if user is in localhost
+  - PYTHON check if user is in localhost ✔✔
     - https://stackoverflow.com/questions/47885832/determine-if-host-is-localhost
     - https://gist.github.com/bennr01/7043a460155e8e763b3a9061c95faaa0
     - https://www.geeksforgeeks.org/display-hostname-ip-address-python/
@@ -35,40 +40,82 @@ CONSOLE button
       except:
           print("Unable to get Hostname and IP")
 
-  - JS check host is localhost
+  - JS check host is localhost ==> location.hostname  ✔✔
     - https://stackoverflow.com/questions/3162457/how-to-check-with-javascript-if-connection-is-local-host        
-
-WRITE IN LOG FILES
 
 
 ==============================================================
 
 EXCERCISES
- number -- correct
--  2.- pause --> html: mensaje | console mens
--  3.- mostrar obj
-	     - agregar info del objeto en Description
-- 10.- Msg to html button "case not working with input"
-- 11.- parameter for html button in blank ! 
-       - make msg in result_script_exec
-       - fill info in excercise_data
-- 12.- - fill info in excercise_data
-       - msg for result_script_exec
-- 14.- - fill info for html button  (position )
-- 15.- - fill info
-- 16.- parallel folder --> DO IT   	
-- 17.- Page 43 - 47 --> DO IT
-- 18.- Correct Files path, add info in excercise_data
-- 19.- Correct Files path, add info in excercise_data
+ numb -- ToDo
+
+-  2.-   pause --> html: mensaje | console mens
+
+-  3.-   mostrar obj
+	       - agregar info del objeto en Description
+         
+- 10.-   Msg to html button "case not working with input"
+
+- 11.-   parameter for html button in blank ! 
+         - make msg in result_script_exec
+         - fill info in excercise_data
+- 12.-   - fill info in excercise_data
+         - msg for result_script_exec
+
+- 14.-   - fill info for html button  (position )
+
+- 15.-   - fill info
+
+- 16.-   parallel folder --> DO IT   	
+
+- 17.-   Page 43 - 47 --> DO IT
+
+- 18.-   Correct Files path, add info in excercise_data
+
+- 19.-   Correct Files path, add info in excercise_data
 
 LIFE GAME
 
--  1.- make html py script for 5,6,7
+-  1.- make html py script for 5, 6 y 7
+
 -  2.- checking equal matrices to stop !
+
+-  5.- problems session size
+
+      C:\ML_Project\NazarethCourse2023\iggPyBlog\igg_venv\lib\site-packages\werkzeug\sansio\response.py:230: UserWarning: The 'session' cookie is too large: the value was 6222 bytes but the header required 26 extra bytes. The final size was 6248 bytes but the limit is 4093 bytes. Browsers may silently ignore cookies larger than this.
+        dump_cookie(
+      127.0.0.1 - - [22/May/2023 12:18:29] "GET /result_script_exec/?py_path=static/proj_lifeGame_scripts/05_LG-Iterations-ejec-normal1.py HTTP/1.1" 200 -
+      ===>  py_name: 04_LG-iterations-funciones1.py   ???
+      127.0.0.1 - - [22/May/2023 12:18:29] "GET /result_script_html HTTP/1.1" 200 -
+
+      CHECK LIST LINES MODEL FROM PYTHON result_script_exec function
+      C:\ML_Project\NazarethCourse2023\iggPyBlog\igg_venv\lib\site-packages\werkzeug\sansio\response.py:230: UserWarning: The 'session' cookie is too large: the value was 20106 bytes but the header required 26 extra bytes. The final size was 20132 bytes but the limit is 4093 
+      bytes. Browsers may silently ignore cookies larger than this.
+        dump_cookie(
+      127.0.0.1 - - [22/May/2023 11:56:44] "GET /result_script_exec/?py_path=static/proj_lifeGame_scripts/05_LG-Iterations-ejec-normal1.py HTTP/1.1" 200 -
+      127.0.0.1 - - [22/May/2023 11:56:44] "GET /result_script_html HTTP/1.1" 500 -
+      Traceback (most recent call last):
+        File "C:\ML_Project\NazarethCourse2023\iggPyBlog\igg_venv\lib\site-packages\flask\app.py", line 2551, in __call__
+          return self.wsgi_app(environ, start_response)
+        File "C:\ML_Project\NazarethCourse2023\iggPyBlog\igg_venv\lib\site-packages\flask\app.py", line 2531, in wsgi_app
+          response = self.handle_exception(e)
+        File "C:\ML_Project\NazarethCourse2023\iggPyBlog\igg_venv\lib\site-packages\flask\app.py", line 2528, in wsgi_app
+          response = self.full_dispatch_request()
+        File "C:\ML_Project\NazarethCourse2023\iggPyBlog\igg_venv\lib\site-packages\flask\app.py", line 1825, in full_dispatch_request       
+          rv = self.handle_user_exception(e)
+        File "C:\ML_Project\NazarethCourse2023\iggPyBlog\igg_venv\lib\site-packages\flask\app.py", line 1823, in full_dispatch_request       
+          rv = self.dispatch_request()
+        File "C:\ML_Project\NazarethCourse2023\iggPyBlog\igg_venv\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+          return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+        File "C:\ML_Project\NazarethCourse2023\iggPyBlog\flask_app.py", line 386, in result_script_html
+          list_lines = session['list_lines']
+        File "C:\ML_Project\NazarethCourse2023\iggPyBlog\igg_venv\lib\site-packages\flask\sessions.py", line 80, in __getitem__
+          return super().__getitem__(key)
+      KeyError: 'list_lines'
+
 
 ENIGMA
 -  1.- arith prog -> write formula for each case before display SUM
-
 
 
 ACTUALIZAR EN PYTHON_AW

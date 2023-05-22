@@ -89,9 +89,9 @@
             z-index: 10;
             font-family: "Arial",  sans-serif;
         }
-        #msgBox #msgBoxHead { height:20px; background-color:green; border-radius: 10px; padding: 2px; color:white; font-size: 14px; text-align: center; }
+        #msgBox #msgBoxHead { height:20px; margin-top:2px; background-color:green; border-radius: 10px; padding: 2px; color:white; font-size: 14px; text-align: center; }
         #msgBox #msgBoxBody { margin: 10px; text-align:center; color: black; font-size: 15px; }
-        #msgBox #msgBoxFoot  { margin-top:30px; height:40px; text-align: right; }
+        #msgBox #msgBoxFoot  { margin-top:15px; height:40px; text-align: right; }
         #msgBox #msgBoxFoot button { margin-top:3px; margin-right: 10px; width:60px; height:30px; border: 3px solid #acacfd; color:blue; border-radius: 10px; font-size: 15px; }
 
         [data-title]:hover:after {
@@ -159,11 +159,11 @@
                 msgOverLay.style.height = winH + "px" ;            
                 msgBox.style.left = ( winW / 2 ) - ( 320 * .5 ) + "px";
                 msgBox.style.top = "50px";
-                msgBox.style.minHeight = "100px";
+                msgBox.style.minHeight = "80px";
                 msgBox.style.display = "block";
                 document.getElementById( 'msgBoxHead' ).innerHTML = '<p><strong>' + msg_H + '</strong></p>';  
                 document.getElementById( 'msgBoxBody' ).innerHTML = '<p> ' + msg_B + ' </p><br><p>Your HOST is ' + location.hostname + ' </p>';  
-                document.getElementById( 'msgBoxFoot' ).innerHTML = '<button onclick = "my_msg_window.ok()">OK</button>' ;  
+                // document.getElementById( 'msgBoxFoot' ).innerHTML = '<button onclick = "my_msg_window.ok()">OK</button>' ;  
             }
 
             this.ok = function() {

@@ -85,7 +85,7 @@
         matrix = [];
         //const words= ['w1111111','w222','w333','w444','w1111111','w222','w333','w1111111','w222','w333','w1111111','w222','w333'];
 
-        iter = setInterval(print_html_MATRIX,200);
+        iter = setInterval(print_html_MATRIX,500);
 
         function print_html_MATRIX() {
             div_html = "";
@@ -108,8 +108,7 @@
             document.getElementById("div_matrix").innerHTML = div_html;
             k++;
             // console.log('k is: ' + k + ' | k_max is: ' + k_max);
-            if ( k >= k_max ) {  
-                // console.log('exit loop for k: ' + k);
+            if ( k >= k_max ) {                  
                 clearInterval(iter);
             }
         }

@@ -44,19 +44,58 @@
 
     <script>
 
-        function ExecPythonScript(py_path){
-            /* alert('py script path: ' + py_path) */
-            
-            var request = new XMLHttpRequest()
-            request.open("GET", "/pythonScript/?py_path=" + py_path, true)            
-            request.send()            
-        }
-
         function delay(milliseconds){
             return new Promise(resolve => {
                 setTimeout(resolve, milliseconds);
             });
         }
+    /*
+        function ExecPythonScript(py_path){
+            var request = new XMLHttpRequest()
+            request.open("GET", "/pythonScript/?py_path=" + py_path, true)            
+            request.send()            
+        }
+    */
+
+        async function ExecPythonScript(py_path){
+            if ( location.hostname == 'localhost' || location.hostname == '127.0.0.1') {
+                my_msg_window.render("Alert"," PLEASE CHECK FLASK CONSOLE !"); 
+                await delay(500)
+                consoleRequest(py_path);    
+            } else {
+                my_msg_window.render("ALERT"," THIS OPTION ONLY WORKS FOR LOCALHOST !");
+                await delay(2500);
+                document.getElementById ( 'msgBox' ).style.display = "none"; 
+                await delay(500);
+                document.getElementById ( 'msgOverLay' ).style.display = "none";
+
+            }           
+        }
+
+
+        // function onvoking window.location.href for /result_script_html 
+        async function consoleRequest(py_file) {
+            console.log("==== from myRequest: py_file => " + py_file)
+            await delay(2000);
+            document.getElementById ( 'msgBox' ).style.display = "none"; 
+            await delay(1000);
+            document.getElementById ( 'msgOverLay' ).style.display = "none";
+            
+            var request = new XMLHttpRequest()
+            request.open("GET", "/pythonScript/?py_path=" + py_file, true)     
+        /*       
+            request.onreadystatechange = function() {
+                if(request.readyState == XMLHttpRequest.DONE && request.status == 200) {
+                    window.location.href = '/result_script_html';
+                }
+            }                                    
+            // request.open("GET", "/result_script_data/?py_path=" + py_path, true)           
+        */
+
+            request.send()  
+        }
+
+
 
         // asynchronous function to call custom alert window
         async function html_script_exec(py_path){

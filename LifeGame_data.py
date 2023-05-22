@@ -87,7 +87,7 @@ def LG_scripts():
             'section': 'Game of life',
             'title': 'Expand and contract matrices',
             'fileDirPath': 'static/proj_lifeGame_scripts/05_LG-Iterations-ejec-normal.py',            
-            'fileDirPath1': '',            
+            'fileDirPath1': 'static/proj_lifeGame_scripts/05_LG-Iterations-ejec-normal1.py',            
             
             'homework': 'Execute 500 iterations of Game of Life script',
 
