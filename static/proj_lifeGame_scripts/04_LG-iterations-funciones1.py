@@ -134,8 +134,8 @@ def contraer_matriz(matriz):
 
 if __name__ == '__main__':
 
-	n=1																								# Numero Iteraciones
-	#nX, nY = os.get_terminal_size()					 	# Windows Obtengo COLUMNAS y LINEAS de la consola
+	n=1													# Numero Iteraciones
+	#nX, nY = os.get_terminal_size()					# Windows Obtengo COLUMNAS y LINEAS de la consola
 	#nX, nY = os.get_terminal_size(0)					# Linux   Obtengo COLUMNAS y LINEAS de la consola
 	#nX, nY = parificar(int(nX/2)), parificar(nY-2)		# Ajusto por espacios e indicador de iteraciones
 
@@ -154,7 +154,7 @@ if __name__ == '__main__':
 
 	# Registro hora-seg inicio
 	inicio = time.time()
-
+	
 	# Iteraciones del programa
 	while n <= ITERAC:
 		# particiono la matriz

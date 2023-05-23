@@ -17,13 +17,13 @@ import time
 
 # Colors
 NO_COLOR = "\033[00m"
-FR_GREEN = "\033[92m"
 FR_RED   = "\033[91m"
-FR_BLUE  = "\033[94m"
+FR_GREEN = "\033[92m"
 FR_YELL  = "\033[93m"
+FR_BLUE  = "\033[94m"
 FR_MAG   = "\033[95m"
 
-ITERAC = 100 
+ITERAC = 500
 DORMIR= 0.005
 
 #
@@ -37,15 +37,16 @@ def pausar():
 """
 
 # Muestro la Matriz
-def mostrar_matriz(matriz):
-	os.system('cls')                                    # Ejecuto el comando 'clear' del OS
+def mostrar_matriz(matriz,msg):
+	print(f"{FR_BLUE}{msg}")
+	print(f"{NO_COLOR}")
 	X, Y = matriz.shape                                   # Dimensiones de la matriz
 	for x in range(0, X):
 		for y in range(0, Y):
 			if matriz[x,y] == 1:
-				print(f"\033[0;91m{int(matriz[x,y])}\033[0m", end =" ")
+				print(f"{int(matriz[x,y])}", end =" ")
 			else:
-				print(f"\033[0;37m{int(matriz[x,y])}\033[0m", end =" ")
+				print(f"{int(matriz[x,y])}", end =" ")
 		print()
 	print("print empty line") 		
 
@@ -97,11 +98,11 @@ def crear_matriz(nombre_archivo):
 
 # os.system('cls')
 
-n=1										# Numero Iteraciones
-#nY, nX = os.get_terminal_size()			# Obtengo COLUMNAS y LINEAS de la consola
+n=1										# Contador Iteraciones
+#nY, nX = os.get_terminal_size()		# Obtengo COLUMNAS y LINEAS de la consola
 #print(f"\n\033[0;93mTERMINAL SIZE: {os.get_terminal_size()[0]} x {os.get_terminal_size()[1]} |  MATRIX SIZE: {nX} x {nY}\033[0m\n")
 #nX, nY = nX-10, int(nY/3)				# Ajusto por espacios e indicador de iteraciones
-nX,nY=30,40
+nX,nY=20,30
 
 # Intento capturar nombre de archivo de la llamada
 try:
@@ -110,8 +111,8 @@ except:
 	archivo = 'NO_ARCHIVO'
 
 matriz = crear_matriz(archivo)			# Obtengo la matriz inicial en forma aleatoria
-mostrar_matriz(matriz)					# muestro matriz inicial
-print(F"\n\t{FR_YELL}MATRIZ INICIAL ALEATORIA (0 Y 1){NO_COLOR}\n")
+mostrar_matriz(matriz, "MATRIZ INICIAL")					# muestro matriz inicial
+# print(F"\n\t{FR_YELL}MATRIZ INICIAL ALEATORIA (0 Y 1){NO_COLOR}\n")
 # print(F"\t{FR_GREEN}Se mostrará la matriz cada 20 iteraciones{NO_COLOR}\n")
 
 # pausar()
@@ -152,12 +153,14 @@ while n <= ITERAC:
 
 	# Muestro la nueva cara de la matriz
 	if n % 20 == 0:
-		mostrar_matriz(matriz)
-		print(f"{FR_BLUE}Iteración {n} de {ITERAC}, Matriz {nX} x {nY}")
+		mostrar_matriz(matriz,"")
+		print(f"{FR_BLUE}Iter {n} de {ITERAC}, Matriz {nX} x {nY}")
 	# time.sleep(DORMIR)
 	n+=1
 
 elapsed_time = "{:.2f}".format(time.time()-inicio)
-print(f"\n\tElapsed Time: {elapsed_time} seconds\n")
-print(f"\n\033[0;93m\t----------THAT's ALL----------\033[0m\n")
+print(f"{FR_GREEN}Elapsed Time: {elapsed_time} seconds")
+print("print empty line")
+print(f"{FR_YELL}----------THAT's ALL----------")
+print("print empty line")
 
