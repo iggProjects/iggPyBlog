@@ -106,7 +106,7 @@ def LG_scripts():
             'section': 'Game of life',
             'title': 'Simulate set of 4 games (matrices)',
             'fileDirPath': 'static/proj_lifeGame_scripts/06_LG-show-four-matrices.py',            
-            'fileDirPath1': '',            
+            'fileDirPath1': 'static/proj_lifeGame_scripts/06_LG-show-four-matrices1.py',            
             
             'homework': 'Execute 500 iterations of Game of Life script.',
 

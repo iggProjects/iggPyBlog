@@ -359,7 +359,7 @@ def result_script_exec():
             #print(f"line to print: {new_line}")
             js_line = new_line
             
-            if '0' or '1' in js_line[0]:                
+            if '0' or '1' or '9' in js_line[0]:                
                 list_JS_lines.append(js_line.replace(' ',''))
             else:
                 pass

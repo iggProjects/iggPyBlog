@@ -20,8 +20,12 @@
             for ( j=0; j<line.length; j++ ){
                 if (line[j] == 1) {
                     span_line += "<span>&nbsp;1</span>";
-                } else {
+                } else if (line[j] == 0) {
                     span_line += "&nbsp;" + line[j];
+                } else if (line[j] == 9) {
+                    span_line += "&nbsp;&nbsp;";    
+                } else {
+
                 }
             }
             return span_line; 
@@ -61,7 +65,7 @@
                     div_matrix_html = "<br><p class='p_result' style='color:yellow;'>" + lines[i] + "</p>";  
                     matrix.push(lines[i])                
 
-                } else if ( lines[i][0] == 0 || lines[i][0] == 1) {    
+                } else if ( lines[i][0] == 0 || lines[i][0] == 1 || lines[i][0] == 9 ) {    
                     div_matrix_html += "<p class='p_result'>" + span_ones(lines[i]) + "</p>";   
                     matrix.push(lines[i])     
 
@@ -85,6 +89,8 @@
         matrix = [];
         //const words= ['w1111111','w222','w333','w444','w1111111','w222','w333','w1111111','w222','w333','w1111111','w222','w333'];
 
+
+        blank_line =[]
         iter = setInterval(print_html_MATRIX,500);
 
         function print_html_MATRIX() {
@@ -98,6 +104,11 @@
                 } else if ( matrix[l][0] == 0 || matrix[l][0] == 1) {
                     div_html += "<p class='p_result'>" + span_ones(matrix[l]) + "</p>";
 
+                } else if ( matrix[l][0] == 9 ) {
+                    for (m=0; m < matrix[l].length; m++) {
+                        blank_line+="&nbsp;";
+                    }    
+                    div_html += "<p class='p_result'>" + blank_line + "</p>";    
                 } else {
                     // console.log('==> matrix[l]' + matrix[l])
                     div_html += "<p class='p_result' style='text-align: left; color: " + matrix[l][0]  + "'>" + matrix[l][1] + "</p>";

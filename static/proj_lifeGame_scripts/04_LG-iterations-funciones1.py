@@ -183,7 +183,7 @@ if __name__ == '__main__':
 
 		# Recombino las matrices particionadas
 		matriz = np.hstack( (np.vstack( (m0,m1) ), np.vstack( (m2,m3) )) )
-		# Print cada 10 iteraciones
+		# Print cada 50 iteraciones
 		if n % 50 == 0:
 			print(f"{FR_BLUE}Iteracion {n} de {ITERAC} | Matriz {nX} x {nY}")
 			mostrar_matriz(matriz,"")
