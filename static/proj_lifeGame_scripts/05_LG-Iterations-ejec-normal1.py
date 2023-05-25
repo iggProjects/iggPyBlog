@@ -23,7 +23,7 @@ FR_YELL  = "\033[93m"
 FR_BLUE  = "\033[94m"
 FR_MAG   = "\033[95m"
 
-ITERAC = 500
+ITERAC = 300
 DORMIR= 0.005
 
 #
@@ -112,8 +112,8 @@ except:
 
 matriz = crear_matriz(archivo)			# Obtengo la matriz inicial en forma aleatoria
 mostrar_matriz(matriz, "MATRIZ INICIAL")					# muestro matriz inicial
-# print(F"\n\t{FR_YELL}MATRIZ INICIAL ALEATORIA (0 Y 1){NO_COLOR}\n")
-# print(F"\t{FR_GREEN}Se mostrará la matriz cada 20 iteraciones{NO_COLOR}\n")
+#print(F"\n\t{FR_YELL}MATRIZ INICIAL ALEATORIA (0 Y 1){NO_COLOR}\n")
+#print(F"\t{FR_GREEN}M Se mostrará la matriz cada 20 iteraciones{NO_COLOR}\n")
 
 # pausar()
 
@@ -152,15 +152,16 @@ while n <= ITERAC:
 	matriz = np.copy(matrizTemp)
 
 	# Muestro la nueva cara de la matriz
-	if n % 20 == 0:
-		mostrar_matriz(matriz,"")
+	if n % 20 == 0 or n != 1:
 		print(f"{FR_BLUE}Iter {n} de {ITERAC}, Matriz {nX} x {nY}")
+		mostrar_matriz(matriz,"")
+		
 	# time.sleep(DORMIR)
 	n+=1
 
 elapsed_time = "{:.2f}".format(time.time()-inicio)
-print(f"{FR_GREEN}Elapsed Time: {elapsed_time} seconds")
-print("print empty line")
-print(f"{FR_YELL}----------THAT's ALL----------")
-print("print empty line")
+#print(f"{FR_GREEN}Elapsed Time: {elapsed_time} seconds")
+#print("print empty line")
+#print(f"{FR_YELL}----------THAT's ALL----------")
+#print("print empty line")
 

@@ -265,6 +265,10 @@ def result_script_exec():
     import subprocess, json
     from flask import Markup   
 
+    session['py_name'] = ""
+    session['list_lines'] = []
+    session['list_JS_lines'] = []
+
     # read path to script
     py_script_path = request.args['py_path']
     print(f"py_path --> {py_script_path}")
@@ -326,6 +330,7 @@ def result_script_exec():
             if "b'" in new_line[0:2]  or "b\"" in new_line[0:2]:
                 #print(f"0,1 ==> {new_line[0:2]}")
                 new_line= new_line[2:]
+
             new_line = new_line.replace('-->','==>')
             new_line = new_line.replace('<','&lt;')
             #new_line = new_line.replace('<','<&nbsp;&nbsp;')
@@ -368,7 +373,7 @@ def result_script_exec():
             list = [color,new_line]
             list_color_text.append(list) 
             
-            # print(f"new_line formatted => {list}")
+            #print(f"new_line formatted => {list}")
     
     # print(f"list_JS_lines type: {type(list_JS_lines)} | first line: {list_JS_lines[2]}")
     print(f"{FR_YELL}====== exit result_script_exec() in html ======{NO_COLOR}\n")
@@ -387,7 +392,10 @@ def result_script_html():
     print(f"py_name: {py_name}")
     list_lines = session['list_lines']
     list_JS_lines = session['list_JS_lines']
-    # print(f"list_lines: {list_lines}")
+    print(f"{FR_YELL}===== Lines list length:{NO_COLOR} {len(list_JS_lines)}")
+    #for line in list_JS_lines:
+    #    print(f"{FR_YELL}Line: {line}")
+    
     return render_template('result_script_html.html', list_lines=list_lines, list_JS_lines=list_JS_lines, py_name=py_name)
 
 

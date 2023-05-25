@@ -188,10 +188,11 @@ inicio = time.time()
 matriz = crear_matriz()
 
 ejecutar_matriz(matriz)
-
+"""
 print(f"{FR_GREEN}-----------BALANCE--------------")
 print("print empty line") 	
 print(f"{FR_MAG}Duración: {time.time()-inicio}")
 print("print empty line") 	
 print(f"{FR_YELL}Iteraciones: {n-1} de {ITERAC} | 4 matrices de {nX} filas y {nY} columnas{NO_COLOR}")
 print("print empty line") 	
+"""

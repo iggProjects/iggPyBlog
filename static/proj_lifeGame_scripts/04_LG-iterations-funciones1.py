@@ -6,7 +6,7 @@ import time
 #
 # Constantes
 #
-ITERAC = 1000
+ITERAC = 300
 DORMIR= 0.005
 
 from os import system
@@ -35,8 +35,8 @@ def parificar(numero):
 # Muestro la Matriz
 def mostrar_matriz(matriz,msg):
 	X, Y = matriz.shape                          # Dimensiones de la matriz
-	print(f"{FR_BLUE}{msg}")
-	print(f"{NO_COLOR}")
+	#print(f"{FR_BLUE}{msg}")
+	#print(f"{NO_COLOR}")
 	for y in range(0, Y):
 		for x in range(0, X):
 			if matriz[x,y] == 1:
@@ -134,6 +134,7 @@ def contraer_matriz(matriz):
 
 if __name__ == '__main__':
 
+	os.system('cls')
 	n=1													# Numero Iteraciones
 	#nX, nY = os.get_terminal_size()					# Windows Obtengo COLUMNAS y LINEAS de la consola
 	#nX, nY = os.get_terminal_size(0)					# Linux   Obtengo COLUMNAS y LINEAS de la consola
@@ -147,8 +148,11 @@ if __name__ == '__main__':
 	except:
 		archivo = 'NO_ARCHIVO'
 
-	matriz = crear_matriz(archivo)								# Obtengo la matriz
-	mostrar_matriz(matriz,"MATRIZ INICIAL")
+	
+	matriz = crear_matriz(archivo)						# Obtengo la matriz
+	print("print empty line") 	
+	print(f"Matriz inicial | Matriz {nX} x {nY}")
+	mostrar_matriz(matriz,"")
 	
 	# pausar()
 
@@ -185,13 +189,13 @@ if __name__ == '__main__':
 		matriz = np.hstack( (np.vstack( (m0,m1) ), np.vstack( (m2,m3) )) )
 		# Print cada 50 iteraciones
 		if n % 50 == 0:
-			print(f"{FR_BLUE}Iteracion {n} de {ITERAC} | Matriz {nX} x {nY}")
+			print(f"Iteracion {n} de {ITERAC} | Matriz {nX} x {nY}")
 			mostrar_matriz(matriz,"")
 		# time.sleep(DORMIR)
 		n+=1
 
 	elapsed_time = "{:.2f}".format(time.time()-inicio)
-	print(f"{FR_GREEN}   Elapsed Time: {elapsed_time} seconds")
-	print("print empty line")
-	print(f"{FR_YELL}   ----------THAT's ALL----------")
-	print("print empty line")
+	#print("print empty line")
+	#print(f"{FR_GREEN}M   Elapsed Time: {elapsed_time} seconds")	
+	#print(f"{FR_YELL}   ----------THAT's ALL----------")
+	#print("print empty line")

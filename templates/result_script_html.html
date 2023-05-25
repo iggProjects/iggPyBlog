@@ -35,6 +35,7 @@
         var lines = {{ list_JS_lines | tojson }};
         console.log('type of lines var: ' + typeof(lines));
         console.log('type of lines var: ' + Object.prototype.toString.call(lines));
+        console.log('Length of lines var: ' + lines.length);
         var lines_col_txt = {{ list_lines | tojson }};
         console.log('type of lines_col_txt var: ' + typeof(lines_col_txt));
         console.log('type of lines_col_txt var: ' + Object.prototype.toString.call(lines_col_txt));
@@ -51,29 +52,32 @@
             // create array for all matrices
             for (i=0; i < lines.length; i++) {
                 // console.log('===> list line ' + i + ' -- ' + lines[i])            
-                if ( lines[i][0] == 'M' ) {                
-
-                    //console.log('initial matrix ===> ' + matrix)
+                if ( lines[i][0] == 'M' ) {                      
                     matrix = []
                     div_matrix_html += "<br><p class='p_result' style='color:yellow;'>" + lines[i] + "</p>";
-                    matrix.push(lines[i])                
+                    matrix.push(lines[i])     
+                    console.log('initial matrix ===> ' + matrix)          
                 
                 } else if ( lines[i][0] == 'I' ) { 
                     //console.log('matrix ===> ' + matrix)              
                     list_matrices.push(matrix)
                     matrix = []
                     div_matrix_html = "<br><p class='p_result' style='color:yellow;'>" + lines[i] + "</p>";  
-                    matrix.push(lines[i])                
+                    matrix.push(lines[i])
+
 
                 } else if ( lines[i][0] == 0 || lines[i][0] == 1 || lines[i][0] == 9 ) {    
                     div_matrix_html += "<p class='p_result'>" + span_ones(lines[i]) + "</p>";   
                     matrix.push(lines[i])     
+                    console.log('matrix ===> ' + matrix)          
 
                 } else if ( lines[i][0] == 'E' ) {      
-                    list_matrices.push(matrix)     
-                    //console.log('matrix ===> ' + matrix)                   
+                    list_matrices.push(matrix)   
                     div_matrix_html += "<br><p class='p_result' style='color:yellow;'>" + lines[i] + "</p>";
-                }   
+                } else {
+                    console.log('lines[i][0] ===> ' + lines[i][0])
+                }
+
             }
         } else {
             list_matrices.push(lines_col_txt);
@@ -91,7 +95,7 @@
 
 
         blank_line =[]
-        iter = setInterval(print_html_MATRIX,500);
+        iter = setInterval(print_html_MATRIX,1000);
 
         function print_html_MATRIX() {
             div_html = "";
