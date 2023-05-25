@@ -23,7 +23,7 @@ FR_YELL  = "\033[93m"
 FR_BLUE  = "\033[94m"
 FR_MAG   = "\033[95m"
 
-ITERAC = 300
+ITERAC = 100
 DORMIR= 0.005
 
 #
@@ -38,8 +38,8 @@ def pausar():
 
 # Muestro la Matriz
 def mostrar_matriz(matriz,msg):
-	print(f"{FR_BLUE}{msg}")
-	print(f"{NO_COLOR}")
+	#print(f"{FR_BLUE}{msg}")
+	#print(f"{NO_COLOR}")
 	X, Y = matriz.shape                                   # Dimensiones de la matriz
 	for x in range(0, X):
 		for y in range(0, Y):
@@ -111,7 +111,8 @@ except:
 	archivo = 'NO_ARCHIVO'
 
 matriz = crear_matriz(archivo)			# Obtengo la matriz inicial en forma aleatoria
-mostrar_matriz(matriz, "MATRIZ INICIAL")					# muestro matriz inicial
+print(f"MATRIZ INICIAL--{nX}x{nY}")
+mostrar_matriz(matriz, "")					# muestro matriz inicial
 #print(F"\n\t{FR_YELL}MATRIZ INICIAL ALEATORIA (0 Y 1){NO_COLOR}\n")
 #print(F"\t{FR_GREEN}M Se mostrará la matriz cada 20 iteraciones{NO_COLOR}\n")
 
@@ -152,8 +153,8 @@ while n <= ITERAC:
 	matriz = np.copy(matrizTemp)
 
 	# Muestro la nueva cara de la matriz
-	if n % 20 == 0 or n != 1:
-		print(f"{FR_BLUE}Iter {n} de {ITERAC}, Matriz {nX} x {nY}")
+	if n % 10 == 0:
+		print(f"Iter-{n}/{ITERAC}, Matriz-{nX}x{nY}")
 		mostrar_matriz(matriz,"")
 		
 	# time.sleep(DORMIR)

@@ -37,7 +37,7 @@ def mostrar_matriz(matriz,loc):
 	os.system('cls')                                  # Ejecuto el comando 'clear' del OS
 	X, Y = matriz.shape                                 # Dimensiones de la matriz
 	matriz_Ext = np.zeros((2*X+1, 2*Y+1))				# Inicializo la matriz con ceros
-	print(f"ITERACION {n}-ROTANDO-MATRIZ-POR-CUADRANTE")
+	print(f"ITERA--{n}--ROTANDO-MATRIZ-POR-CUADRANTE")
 	if loc == 1:
 		for x in range(0, 2*X+1):
 			for y in range(0, 2*Y+1):
