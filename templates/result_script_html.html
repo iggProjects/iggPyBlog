@@ -56,7 +56,7 @@
                     matrix = []
                     div_matrix_html += "<br><p class='p_result' style='color:yellow;'>" + lines[i] + "</p>";
                     matrix.push(lines[i])     
-                    console.log('initial matrix ===> ' + matrix)          
+                    console.log('initial matrix M ===> ' + lines[i])          
                 
                 } else if ( lines[i][0] == 'I' ) { 
                     //console.log('matrix ===> ' + matrix)              
@@ -64,21 +64,25 @@
                     matrix = []
                     div_matrix_html = "<br><p class='p_result' style='color:yellow;'>" + lines[i] + "</p>";  
                     matrix.push(lines[i])
-
+                    console.log('matrix ===> I ' + lines[i])          
 
                 } else if ( lines[i][0] == 0 || lines[i][0] == 1 || lines[i][0] == 9 ) {    
                     div_matrix_html += "<p class='p_result'>" + span_ones(lines[i]) + "</p>";   
                     matrix.push(lines[i])     
-                    console.log('matrix ===> ' + matrix)          
+                    //console.log('matrix ===> 0,1,9 ' + matrix)          
 
                 } else if ( lines[i][0] == 'E' ) {      
                     list_matrices.push(matrix)   
                     div_matrix_html += "<br><p class='p_result' style='color:yellow;'>" + lines[i] + "</p>";
-                } else {
+                    console.log('matrix ===> E ' + lines[i])  
+
+                } else {                    
                     console.log('lines[i][0] ===> ' + lines[i][0])
                 }
-
             }
+            
+            list_matrices.push(matrix)   
+
         } else {
             list_matrices.push(lines_col_txt);
         }    
@@ -88,7 +92,7 @@
         // call function to print list_matrices with delay
         let k = 0;        
         let k_max = list_matrices.length; 
-        // console.log('k is: ' + k + ' | k_max is: ' + k_max);
+        console.log('k is: ' + k + ' | k_max is: ' + k_max);
         div_html = "";
         matrix = [];
         //const words= ['w1111111','w222','w333','w444','w1111111','w222','w333','w1111111','w222','w333','w1111111','w222','w333'];
@@ -98,7 +102,7 @@
         iter = setInterval(print_html_MATRIX,1000);
 
         function print_html_MATRIX() {
-            div_html = "";
+            div_html =  "";
             matrix = list_matrices[k];            
             for ( var l=0; l < matrix.length; l++ ) {
                 //console.log(' ===> matrix line ' + l + ' --> ' + matrix[l])
@@ -123,7 +127,7 @@
             document.getElementById("div_matrix").innerHTML = div_html;
             k++;
             // console.log('k is: ' + k + ' | k_max is: ' + k_max);
-            if ( k >= k_max ) {                  
+            if ( k >= k_max ) {                     
                 clearInterval(iter);
             }
         }
