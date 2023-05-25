@@ -17,18 +17,21 @@
         /* <span> for '1' */
         function span_ones(line){
             span_line="";
+            
             for ( j=0; j<line.length; j++ ){
                 if (line[j] == 1) {
-                    span_line += "<span>&nbsp;1</span>";
+                    span_line += "<span> 1</span>";
                 } else if (line[j] == 0) {
-                    span_line += "&nbsp;" + line[j];
+                    span_line += " " + line[j];
                 } else if (line[j] == 9) {
-                    span_line += "&nbsp;&nbsp;";    
+                    span_line += "&nbsp;";    
                 } else {
-
+                    span_line += " " + line[j];
                 }
             }
-            return span_line; 
+            console.log("=== FROM span_ones, length of span_line: " + span_line.length); 
+            console.log("=== FROM span_ones, span_line: " + span_line); 
+            return span_line;
         }
 
         // read server data JS as array
@@ -54,26 +57,26 @@
                 // console.log('===> list line ' + i + ' -- ' + lines[i])            
                 if ( lines[i][0] == 'M' ) {                      
                     matrix = []
-                    div_matrix_html += "<br><p class='p_result' style='color:yellow;'>" + lines[i] + "</p>";
+                    // div_matrix_html += "<br><p class='p_result' style='color:yellow;'>" + lines[i] + "</p>";
                     matrix.push(lines[i])     
                     console.log('initial matrix M ===> ' + lines[i])          
                 
                 } else if ( lines[i][0] == 'I' ) { 
                     //console.log('matrix ===> ' + matrix)              
                     list_matrices.push(matrix)
-                    matrix = []
-                    div_matrix_html = "<br><p class='p_result' style='color:yellow;'>" + lines[i] + "</p>";  
+                    matrix = []                    
+                    // div_matrix_html = "<br><p class='p_result' style='color:yellow;'>" + lines[i] + "</p>";  
                     matrix.push(lines[i])
                     console.log('matrix ===> I ' + lines[i])          
 
                 } else if ( lines[i][0] == 0 || lines[i][0] == 1 || lines[i][0] == 9 ) {    
-                    div_matrix_html += "<p class='p_result'>" + span_ones(lines[i]) + "</p>";   
+                    // div_matrix_html += "<p class='p_result'>" + span_ones(lines[i]) + "</p>";   
                     matrix.push(lines[i])     
                     //console.log('matrix ===> 0,1,9 ' + matrix)          
 
                 } else if ( lines[i][0] == 'E' ) {      
                     list_matrices.push(matrix)   
-                    div_matrix_html += "<br><p class='p_result' style='color:yellow;'>" + lines[i] + "</p>";
+                    //div_matrix_html += "<br><p class='p_result' style='color:yellow;'>" + lines[i] + "</p>";
                     console.log('matrix ===> E ' + lines[i])  
 
                 } else {                    
@@ -103,7 +106,9 @@
 
         function print_html_MATRIX() {
             div_html =  "";
-            matrix = list_matrices[k];            
+            document.getElementById("div_matrix").innerHTML = "";
+            matrix = list_matrices[k];     
+            console.log("=== list_matrices[k]" + list_matrices[k])       
             for ( var l=0; l < matrix.length; l++ ) {
                 //console.log(' ===> matrix line ' + l + ' --> ' + matrix[l])
                 if ( matrix[l][0] == 'M' || matrix[l][0] == 'I' ) {  
@@ -113,10 +118,12 @@
                     div_html += "<p class='p_result'>" + span_ones(matrix[l]) + "</p>";
 
                 } else if ( matrix[l][0] == 9 ) {
+                    /*
                     for (m=0; m < matrix[l].length; m++) {
                         blank_line+="&nbsp;";
-                    }    
-                    div_html += "<p class='p_result'>" + blank_line + "</p>";    
+                    } 
+                    */   
+                    div_html += "<p class='p_result'>&nbsp;&nbsp;&nbsp;&nbsp;</p>";    
                 } else {
                     // console.log('==> matrix[l]' + matrix[l])
                     div_html += "<p class='p_result' style='text-align: left; color: " + matrix[l][0]  + "'>" + matrix[l][1] + "</p>";

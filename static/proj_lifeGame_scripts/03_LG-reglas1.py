@@ -15,7 +15,7 @@ FR_MAG   = "\033[95m"
 # 
 ITERAC = 100
 nX = 12
-nY = 12
+nY = 15
 yExt = 2*nY + 1
 # nX, nY = os.get_terminal_size(0)
 # nX, nY = int(nX/2)-5, (nY-5)
@@ -35,7 +35,7 @@ def mostrar_matriz(matriz):
 				print(f"{int(matriz[x,y])}", end =" ")
 			elif matriz[x,y] == 0:
 				print(f"{int(matriz[x,y])}", end =" ")
-			elif matriz[x,y] == 99999:
+			elif matriz[x,y] == 9:
 				print(f"{int(matriz[x,y])}", end =" ")
 			else:
 				print(f"{int(matriz[x,y])}", end =" ")
@@ -66,7 +66,7 @@ for x in range(0,nX):
 		matriz_ext[x,y+nY+1] = nVecinos
 
 for x in range (0,nX):
-	matriz_ext[x,nY] = 99999
+	matriz_ext[x,nY] = 9
 
 n=1
 while n <= ITERAC:
@@ -101,17 +101,17 @@ while n <= ITERAC:
 			matrizTemp[x,y+nY+1] = nVecinos
 
 	matriz_ext = np.copy(matrizTemp)
-	print(f"{FR_GREEN}--- Matriz Game of Life ------- Matriz Num Vecinos ---")
-	mostrar_matriz( matriz_ext )
-	#print(f"Iteraciones: {n} de {ITERAC} ({nX}, {nY}) ")
-	#time.sleep(2)
-	if n < 5:
-		pass
-		#pausar(n)
-	else:
-		print(f"{FR_BLUE}Iteracion No: {n} | matriz {nX} x {nY}\n")	
+	#print(f"-----MatrizGameLife----------MatrizNumVecinos----")
+	if n==1:
+		print(f"-----MatrizGameLife----------MatrizNumVecinos-----")		
+
+	if n % 5 == 0:
+		print(f"Iterac--{n}--matriz-{nX}x{nY}")	
+		#print(f"----MatrizGameLife----------MatrizNumVecinos-----")		
+		mostrar_matriz( matriz_ext )		
+	
 	n += 1
 
 #print(f"{FR_BLUE}Total iteraciones Game of Life: {ITERAC} -- matriz {nX} x {nY}")
 	
-print("print empty line")
+#print("print empty line")
