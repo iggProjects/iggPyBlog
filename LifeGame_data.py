@@ -125,7 +125,7 @@ def LG_scripts():
             'section': 'Game of life',
             'title': 'Simulate set of 4 games (matrices)',
             'fileDirPath': 'static/proj_lifeGame_scripts/07-LG_-multiprocessing-cpu.py',            
-            'fileDirPath1': '',            
+            'fileDirPath1': 'static/proj_lifeGame_scripts/07-LG_-multiprocessing-cpu1.py',            
             
             'homework': 'Execute Sets of 4 Games with multiprocessing.',
 
