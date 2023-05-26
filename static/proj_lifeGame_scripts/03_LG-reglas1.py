@@ -23,8 +23,8 @@ yExt = 2*nY + 1
 #
 # Funciones
 #
-def pausar(i):
-	userInput = input(f"\niteracion No: {i}, matriz {nX} x {nY}\nPresiona ENTER para continuar CTRL-C para salir\n")
+#def pausar(i):
+#	userInput = input(f"\niteracion No: {i}, matriz {nX} x {nY}\nPresiona ENTER para continuar CTRL-C para salir\n")
 
 def mostrar_matriz(matriz):
 	# os.system('clear')
@@ -83,7 +83,6 @@ while n <= ITERAC:
 
 			elif matriz_ext[x,y] == 1 and ( matriz_ext[x,y+nY+1]  < 2 or matriz_ext[x,y+nY+1] > 3 ):
 				matrizTemp[x,y] = 0
-	
 				
 	for x in range(0, nX):
 		for y in range(0, nY):
@@ -103,13 +102,14 @@ while n <= ITERAC:
 	matriz_ext = np.copy(matrizTemp)
 	#print(f"-----MatrizGameLife----------MatrizNumVecinos----")
 	if n==1:
-		print(f"-----MatrizGameLife----------MatrizNumVecinos-----")		
-
-	if n % 5 == 0:
+		print(f"MATRIZ-INICIAL-{nX}x{nY}-Acompañada-Matriz-Nro-Vecinos")	
+		mostrar_matriz( matriz_ext )		
+		#print(f"-----MatrizGameLife----------MatrizNumVecinos-----")	
+	elif n % 5 == 0:
 		print(f"Iterac--{n}--matriz-{nX}x{nY}")	
 		#print(f"----MatrizGameLife----------MatrizNumVecinos-----")		
-		mostrar_matriz( matriz_ext )		
-	
+		mostrar_matriz( matriz_ext )
+
 	n += 1
 
 #print(f"{FR_BLUE}Total iteraciones Game of Life: {ITERAC} -- matriz {nX} x {nY}")

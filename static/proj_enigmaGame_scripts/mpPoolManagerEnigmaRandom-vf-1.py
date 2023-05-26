@@ -149,7 +149,7 @@ if __name__ == '__main__':
     print(f"{FR_RED}\t\tOriginal Text:\t\t{MY_TEXT}")
     print(f"{FR_RED}\t\tEncrypted Text:\t\t{ENCRYPTED_TEXT}")
     print("print empty line")
-    print(f"{FR_RED}\t\t{N_CPU} CPU used -- (Max Number of CPU's for PC: {cpu_count()})")
+    print(f"{FR_RED}\t\t{N_CPU} CPU used -- (Max Number of CPU's for your PC: {cpu_count()})")
     print("print empty line")
 
     m_alp = '{:,}'.format(len(messy_alphabets)).replace(',','.')    
