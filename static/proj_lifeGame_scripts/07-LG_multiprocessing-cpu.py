@@ -25,9 +25,10 @@ N_CPU = multiprocessing.cpu_count()
 #
 
 # Pausa ejecucion
+"""
 def pausar():
 	userInput = input('\t ---- Presiona ENTER para continuar CTRL-C para salir ----\n')
-
+"""
 # Creo matriz a partir de una archivo si es suministrado
 def crear_matriz():	
 	#print(f"......from crear_matriz() NX: {NX} , NY: {NY}")
@@ -197,9 +198,12 @@ if __name__ == '__main__':
 
 	# READ PARAMETERS 
 	# number of SET's, each of one of four games (matrixs)
-	nSets = int(sys.argv[1])
+	nSets = 4
+	#nSets = int(sys.argv[1])
+
 	# number of CPU in multiprocessing call
-	nCPU = int(sys.argv[2])
+	nCPU = 2
+	#nCPU = int(sys.argv[2])
 
 
 	# parameter for multiporcessing call
@@ -210,7 +214,7 @@ if __name__ == '__main__':
 	print(f"\t ..... matrices of {NX} cols, {NY} rows")
 	print(f"\t ..... Printing only for first process")
 	print(f"\t ..... List of Sets: {list_games}\n")
-	pausar()	
+	#pausar()	
 	# time
 	inicio = time.time()
 

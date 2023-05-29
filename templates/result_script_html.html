@@ -73,6 +73,7 @@
                 } else if ( lines[i][0] == 0 || lines[i][0] == 1 || lines[i][0] == 9 ) {    
                     // div_matrix_html += "<p class='p_result'>" + span_ones(lines[i]) + "</p>";   
                     if ( comment ) {
+                        console.log('COMMENT ' + lines[i])          
                         list_matrices.push(matrix);
                         comment = false;
                         matrix = [];

@@ -13,8 +13,8 @@ import time
 # Constantes
 #
 SLEEP= 0.2
-NX = 20
-NY = 40
+NX = 15
+NY = 30
 NITER= 500
 MSG_TEXT  = 'Games record-> '
 BASE_PRINT = int(NITER/5)
@@ -76,8 +76,8 @@ def show_4_matrix(mat1,mat2,mat3,mat4):
 					print(f"{NO_COLOR}{int(mat1[x,y])}", end ="")
 			
 			#separación entre matrices 1 y 2
-			if y == Y:
-				print(f"{FR_YELL}", end ="9")
+			if y == Y and x != X:
+				print(f" ", end ="")
 			
 			# matriz2	(2do cuadrante)	
 			if ( x<X ) and ( y > Y ):
@@ -88,7 +88,7 @@ def show_4_matrix(mat1,mat2,mat3,mat4):
 
 			# línea entre matrices 1 y 2 con 3 y 4
 			if x == X:
-				print(f"{FR_YELL}", end ="9")
+				print(f" ", end ="")
 			
 			# matriz3 (3er cuadrante)
 			if ( x>X ) and ( y<Y ):
@@ -142,7 +142,7 @@ def exec_game_iter(matriz,name):
 	if np.array_equal(matriz,matrizTemp):
 		if multiprocessing.current_process().name == "SpawnPoolWorker-1":
 			#mostrar_matriz(matriz)
-			print(f"COMMENT:\tcpu name:{multiprocessing.current_process().name}||process-name:{multiprocessing.Process().name}||obs:game-reach-equality-with-matrix:{name}")
+			print(f"COMMENT:cpu name:{multiprocessing.current_process().name}||{multiprocessing.Process().name}||obs:game-reach-equality:{name}")
 		matriz = 9 * np.ones([NX,NY])
 	else:	
 		# Copio matrizTemp en matriz para la proxima iteracion
@@ -153,7 +153,7 @@ def exec_game_iter(matriz,name):
 # Execute 4 matrixes (games) simultaneously 
 def exec_4_game(game):
 	
-	print(f"COMMENT:\tSet:{game}||cpu-name:{multiprocessing.current_process().name}||multiproc-name:{multiprocessing.Process().name}")
+	print(f"COMMENT:Set:{game}||cpu-name:{multiprocessing.current_process().name}||multiproc-name:{multiprocessing.Process().name}")
 	 
 	matriz1 = crear_matriz()
 	matriz2 = crear_matriz()
@@ -170,12 +170,12 @@ def exec_4_game(game):
 		matriz4 = exec_game_iter(matriz4,'matriz4')
 
 		if ( (multiprocessing.current_process().name == "SpawnPoolWorker-1") and (n % BASE_PRINT == 0) ):
-			print(f"COMMENT:\tPrinting-only-for-cpu-name:{multiprocessing.current_process().name}||multiprocess:{multiprocessing.Process().name}||iteration:{n}")
+			print(f"COMMENT:Printing-only-for-cpu-name:{multiprocessing.current_process().name}||{multiprocessing.Process().name}||iteration:{n}")
 			show_4_matrix(matriz1,matriz2,matriz3,matriz4)
 			time.sleep(SLEEP)			
 		n+=1
 
-	print(f"COMMENT:\t{multiprocessing.current_process().name}===>Set:{game}-finished||{NITER}-of-iterations-for-each-game||total-games:4,total-iterat-{NITER*4}")
+	print(f"COMMENT:{multiprocessing.current_process().name}==>Set:{game}-finished||{NITER}-of-iterat-for-each-game||games:4,total-iterat-{NITER*4}")
 	
 	#return n
 
@@ -216,11 +216,11 @@ if __name__ == '__main__':
 	# parameter for multiporcessing call
 	list_games = [(x+1) for x in range(0,nSets)]
 
-	print(f"COMMENT:\t=====Starting Life Game Series=====")
-	print(f"COMMENT:\t.....NumberSetsfor-4-simultaneous'Life_Game_Matrix':{len(list_games)}||Iterations-for-each-game:{NITER}||number-of-cpu's-participating:{nCPU}")
-	print(f"COMMENT:\t.....matrices-of-{NX}-cols,{NY}-rows")
-	print(f"COMMENT:\t.....Printing-only-for-first-process")
-	print(f"COMMENT:\t.....List-of-Sets:{list_games}")
+	print(f"COMMENT:=====Starting Life Game Series=====")
+	print(f"COMMENT:.....NumberSetsfor-4-simultaneous'Life_Game_Matrix':{len(list_games)}||Iterations-for-each-game:{NITER}||number-of-cpu's-participating:{nCPU}")
+	print(f"COMMENT:.....matrices-of-{NX}-cols,{NY}-rows")
+	print(f"COMMENT:.....Printing-only-for-first-process")
+	print(f"COMMENT:.....List-of-Sets:{list_games}")
 	#pausar()	
 	# time
 	inicio = time.time()
@@ -230,14 +230,14 @@ if __name__ == '__main__':
 	exec_games(list_games,nCPU)
 
 	# BALANCE
-	print(f"COMMENT:\t----------BALANCE----------")
-	print(f"COMMENT:\tNumber-of-cpu's-participating:{nCPU}")
-	print(f"COMMENT:\tSets-executed:{list_games[nSets-1]}\t-Games executed:{list_games[nSets-1]*4}")
-	print(f"COMMENT:\tEach-game-(matrix)-includes-{NITER}-iterations-of-game-of-life")
-	print(f"COMMENT:\t\twith-a-matrix-of-{NX}x{NY}-in-each-quadrant-of-the screen")
-	print(f"COMMENT:\t\tand-only-{int(NITER/BASE_PRINT)}-print-screens-for-each-game-(matrix)-of-the-first-process")
+	print(f"COMMENT:----------BALANCE----------")
+	print(f"COMMENT:Number-of-cpu's-participating:{nCPU}")
+	print(f"COMMENT:Sets-executed:{list_games[nSets-1]}\t-Games executed:{list_games[nSets-1]*4}")
+	print(f"COMMENT:Each-game-(matrix)-includes-{NITER}-iterations-of-game-of-life")
+	print(f"COMMENT:\twith-a-matrix-of-{NX}x{NY}-in-each-quadrant-of-the screen")
+	print(f"COMMENT:\tand-only-{int(NITER/BASE_PRINT)}-print-screens-for-each-game-(matrix)-of-the-first-process")
 	#print(f"\tAprox of operations: ???")
 	
 	elapsed_time = "{:.2f}".format(time.time()-inicio)
-	print(f"COMMENT:\tElapsed-Time:{elapsed_time}-seconds")
-	print(f"COMMENT:\t----------THAT's-ALL----------")
+	print(f"COMMENT:Elapsed-Time:{elapsed_time}-seconds")
+	print(f"COMMENT:----------THAT's-ALL----------")
