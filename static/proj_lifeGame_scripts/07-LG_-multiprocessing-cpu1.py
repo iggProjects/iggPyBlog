@@ -61,7 +61,7 @@ def show_4_matrix(mat1,mat2,mat3,mat4):
   
 	# Ejecuto el comando 'clear' del OS
 	#os.system('cls')
-	print()
+	#print()
 	
 	X, Y = NX, NY
 
