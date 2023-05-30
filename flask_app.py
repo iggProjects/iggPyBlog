@@ -403,6 +403,14 @@ def result_script_exec():
     # print(f"list_JS_lines type: {type(list_JS_lines)} | first line: {list_JS_lines[2]}")
     print(f"{FR_YELL}====== exit result_script_exec() in html ======{NO_COLOR}\n")
     
+    # write list as text file
+
+    with open('list_JS_lines.txt', 'w') as f:
+        for line in list_JS_lines:
+            f.write(f"{line}\n")
+
+
+    # session variable to call render_template
     session['py_name'] = py_name
     session['list_lines'] = list_color_text
     session['list_JS_lines'] = list_JS_lines    
