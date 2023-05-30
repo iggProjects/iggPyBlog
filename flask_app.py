@@ -404,33 +404,71 @@ def result_script_exec():
     print(f"{FR_YELL}====== exit result_script_exec() in html ======{NO_COLOR}\n")
     
     # write list as text file
-
+    # first case, output with matrix of (0,1,9) form from 'list_JS_lines' 
+    # delete if exists    
+    if os.path.exists("list_JS_lines.txt"):
+        os.remove("list_JS_lines.txt")
+        print(f"{FR_GREEN}........ old list_JS_lines.txt deleted")    
+    
     with open('list_JS_lines.txt', 'w') as f:
         for line in list_JS_lines:
             f.write(f"{line}\n")
-
-
+    
+    # second case, output with lines of text from 'list_color_text' 
+    # delete if exists  
+    if os.path.exists("list_text_lines.txt"):
+        os.remove("list_text_lines.txt")
+        print(f"{FR_GREEN}........ old list_text_lines.txt deleted")    
+    
+    with open('list_text_lines.txt', 'w') as f:
+        for line in list_color_text:
+            f.write(f"{line}\n")
+    
     # session variable to call render_template
+    session['matrix_file_name'] = 'list_JS_lines.txt'
+    session['textLines_file_name'] = 'list_text_lines.txt'
+
     session['py_name'] = py_name
     session['list_lines'] = list_color_text
     session['list_JS_lines'] = list_JS_lines    
     
     # return redirect(url_for('result_script_html'))
-    return render_template('result_script_exec.html', list_lines=list_color_text, list_JS_lines=list_JS_lines, py_name=py_name)
+    return render_template('result_script_exec.html',list_lines=list_color_text, list_JS_lines=list_JS_lines, py_name=py_name)
 
 
 @app.route('/result_script_html')
 def result_script_html():
+
     py_name = session['py_name']
     print(f"py_name: {py_name}")
-    list_lines = session['list_lines']
-    list_JS_lines = session['list_JS_lines']
-    print(f"{FR_YELL}===== Lines list length:{NO_COLOR} {len(list_JS_lines)}")
-    #for line in list_JS_lines:
-    #    print(f"{FR_YELL}Line: {line}")
-    
-    return render_template('result_script_html.html', list_lines=list_lines, list_JS_lines=list_JS_lines, py_name=py_name)
 
+    # read file of matrix lines
+    matrix_file_name = session['matrix_file_name'] 
+    with open(matrix_file_name) as f:
+        list_matrix_lines = f.readlines()        
+    """
+    for line in list_matrix_lines:
+        print(f"{FR_GREEN}...... {line}")    
+    """
+    # read file of text lines
+    textLines_file_name = session['textLines_file_name'] 
+    with open(textLines_file_name) as f:
+        list_text_lines = f.readlines()    
+    print(f"{FR_RED}.....type of var list_text_lines: {type(list_text_lines)} | length: {len(list_text_lines)}{NO_COLOR}")    
+    
+    for line in list_text_lines:
+        print(f"{FR_GREEN}list_text_lines---> {line}")    
+        
+    list_lines = session['list_lines']
+    print(f"{FR_RED}.....type of var list_lines: {type(list_lines)} | length: {len(list_lines)}{NO_COLOR}")
+    for line in list_lines:
+        print(f"{FR_YELL}list_lines===> {line}")    
+    
+    #list_JS_lines = session['list_JS_lines']
+    print(f"{FR_RED}===== list_matrix_lines length:{NO_COLOR} {len(list_matrix_lines)}")
+    
+    return render_template('result_script_html.html', list_lines=list_lines, list_JS_lines=list_matrix_lines, py_name=py_name)
+    #return render_template('result_script_html.html', list_lines=list_text_lines, list_JS_lines=list_matrix_lines, py_name=py_name)
 
 #
 # MAIN
