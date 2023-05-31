@@ -36,15 +36,15 @@
 
         // read server data JS as array
         var lines = {{ list_JS_lines | tojson }};
-        console.log('type of lines var: ' + typeof(lines));
-        console.log('type of lines var: ' + Object.prototype.toString.call(lines));
+        console.log('type of lines[0] var: ' + typeof(lines[0]));
+        console.log('type of lines[0] var: ' + Object.prototype.toString.call(lines[0]));
         console.log('Length of lines var: ' + lines.length);
 
         var lines_col_txt = {{ list_lines | tojson }};        
-        console.log('type of lines_col_txt var: ' + typeof(lines_col_txt));
-        console.log('type of lines_col_txt var: ' + Object.prototype.toString.call(lines_col_txt));
+        console.log('type of lines_col_txt[0] var: ' + typeof(lines_col_txt[0]));
+        console.log('type of lines_col_txt[0] var: ' + Object.prototype.toString.call(lines_col_txt[0]));
         console.log('Length of lines_col_txt var: ' + lines_col_txt.length);
-        console.log('lines_col_text: ' + lines_col_txt[0])
+        console.log('color: ' + lines_col_txt[0][0] + ' | text: ' + lines_col_txt[0][1])
 
         /* variables  */  
         div_matrix_html = "";

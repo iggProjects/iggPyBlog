@@ -419,14 +419,36 @@ def result_script_exec():
     if os.path.exists("list_text_lines.txt"):
         os.remove("list_text_lines.txt")
         print(f"{FR_GREEN}........ old list_text_lines.txt deleted")    
-    
+
+    # https://www.geeksforgeeks.org/python-save-list-to-csv/
+    import csv
+
+    # delete if exists  
+    if os.path.exists("list_text_lines.csv"):
+        os.remove("list_text_lines.csv")
+        print(f"{FR_GREEN}........ old list_text_lines.csv deleted")    
+
+    # data rows of csv file --> list_color_text
+    with open('list_text_lines.csv', 'w') as f:
+        
+        # using csv.writer method from CSV package
+        write = csv.writer(f)
+        write.writerows(list_color_text)
+
+    """
     with open('list_text_lines.txt', 'w') as f:
         for line in list_color_text:
             f.write(f"{line}\n")
+    """
+
+    """
+    with open('list_text_lines.txt', "w") as f:
+        json.dump(list_color_text, f)
+    """       
     
     # session variable to call render_template
     session['matrix_file_name'] = 'list_JS_lines.txt'
-    session['textLines_file_name'] = 'list_text_lines.txt'
+    session['textLines_file_name'] = 'list_text_lines.csv'
 
     session['py_name'] = py_name
     session['list_lines'] = list_color_text
@@ -439,11 +461,15 @@ def result_script_exec():
 @app.route('/result_script_html')
 def result_script_html():
 
+    import json
+    print("----------------------------------------------")
     py_name = session['py_name']
     print(f"py_name: {py_name}")
 
+    print("----------------------------------------------")
     # read file of matrix lines
     matrix_file_name = session['matrix_file_name'] 
+    list_matrix_lines = []
     with open(matrix_file_name) as f:
         list_matrix_lines = f.readlines()        
     """
@@ -452,21 +478,35 @@ def result_script_html():
     """
     # read file of text lines
     textLines_file_name = session['textLines_file_name'] 
+    list_text_lines = []
     with open(textLines_file_name) as f:
-        list_text_lines = f.readlines()    
-    print(f"{FR_RED}.....type of var list_text_lines: {type(list_text_lines)} | length: {len(list_text_lines)}{NO_COLOR}")    
+        list_text_lines = f.readlines()
     
+    print(f"{FR_GREEN}.....type of var list_text_lines: {type(list_text_lines)} | length: {len(list_text_lines)}{NO_COLOR}")    
+    print(f"{FR_GREEN}.....type of var list_text_lines[0]: {type(list_text_lines[0])} | value: {list_text_lines[0]}{NO_COLOR}")
+    print(f"{FR_GREEN}.....type of var list_text_lines[0]: {type(list_text_lines[0])} | value: {list_text_lines[0].split()}{NO_COLOR}")
+
+    print(f"{FR_GREEN}.....type of var list_text_lines[0][0]: {type(list_text_lines[0][0])} | value: {list_text_lines[0][0]}{NO_COLOR}")
+    #print(f"{FR_GREEN}.....list: {list_text_lines}")   
+    """
     for line in list_text_lines:
         print(f"{FR_GREEN}list_text_lines---> {line}")    
-        
+    """    
+    print("----------------------------------------------")
     list_lines = session['list_lines']
-    print(f"{FR_RED}.....type of var list_lines: {type(list_lines)} | length: {len(list_lines)}{NO_COLOR}")
+    print(f"{FR_YELL}.....type of var list_lines: {type(list_lines)} | length: {len(list_lines)}{NO_COLOR}")
+    print(f"{FR_YELL}.....type of var list_text_lines[0]: {type(list_lines[0])} | value: {list_lines[0]}{NO_COLOR}")    
+    print(f"{FR_YELL}.....type of var list_text_lines[0][0]: {type(list_lines[0][0])} | value: {list_lines[0][0]}{NO_COLOR}") 
+    #print(f"{FR_YELL}.....list: {list_lines}")   
+    """
     for line in list_lines:
         print(f"{FR_YELL}list_lines===> {line}")    
-    
+    """
+    print("----------------------------------------------")
+
     #list_JS_lines = session['list_JS_lines']
-    print(f"{FR_RED}===== list_matrix_lines length:{NO_COLOR} {len(list_matrix_lines)}")
-    
+    #print(f"===== list_matrix_lines length:{NO_COLOR} {len(list_matrix_lines)}")
+    #print("----------------------------------------------")
     return render_template('result_script_html.html', list_lines=list_lines, list_JS_lines=list_matrix_lines, py_name=py_name)
     #return render_template('result_script_html.html', list_lines=list_text_lines, list_JS_lines=list_matrix_lines, py_name=py_name)
 
