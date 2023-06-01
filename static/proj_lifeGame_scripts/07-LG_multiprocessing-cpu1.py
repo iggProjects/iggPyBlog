@@ -218,7 +218,7 @@ if __name__ == '__main__':
 
 	print(f"COMMENT:=====Starting Life Game Series=====")
 	print(f"COMMENT:.....NumberSetsfor-4-simultaneous'Life_Game_Matrix':{len(list_games)}||Iterations-for-each-game:{NITER}||number-of-cpu's-participating:{nCPU}")
-	print(f"COMMENT:.....matrices-of-{NX}-cols,{NY}-rows")
+	print(f"COMMENT:.....matrices-{NX}x{NY}")
 	print(f"COMMENT:.....Printing-only-for-first-process")
 	print(f"COMMENT:.....List-of-Sets:{list_games}")
 	#pausar()	
