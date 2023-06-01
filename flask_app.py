@@ -432,7 +432,7 @@ def result_script_exec():
     with open('list_text_lines.csv', 'w') as f:
         
         # using csv.writer method from CSV package
-        write = csv.writer(f)
+        write = csv.writer(f,delimiter=",")
         write.writerows(list_color_text)
 
     """
@@ -484,14 +484,20 @@ def result_script_html():
     
     print(f"{FR_GREEN}.....type of var list_text_lines: {type(list_text_lines)} | length: {len(list_text_lines)}{NO_COLOR}")    
     print(f"{FR_GREEN}.....type of var list_text_lines[0]: {type(list_text_lines[0])} | value: {list_text_lines[0]}{NO_COLOR}")
-    print(f"{FR_GREEN}.....type of var list_text_lines[0]: {type(list_text_lines[0])} | value: {list_text_lines[0].split()}{NO_COLOR}")
+    print(f"{FR_GREEN}.....type of var list_text_lines[0]: {type(list_text_lines[0])} | value: {list_text_lines[0].split(',')}{NO_COLOR}")
+    print(f"{FR_GREEN}.....type of var list_text_lines[0].split(','): {type((list_text_lines[0]).split(','))}")
 
-    print(f"{FR_GREEN}.....type of var list_text_lines[0][0]: {type(list_text_lines[0][0])} | value: {list_text_lines[0][0]}{NO_COLOR}")
+    #print(f"{FR_GREEN}.....type of var list_text_lines[0][0]: {type(list_text_lines[0][0])} | value: {list_text_lines[0][0]}{NO_COLOR}")
     #print(f"{FR_GREEN}.....list: {list_text_lines}")   
-    """
-    for line in list_text_lines:
-        print(f"{FR_GREEN}list_text_lines---> {line}")    
-    """    
+    
+    for line in list_text_lines:        
+        temp_line1 = line.replace('\n','')
+        temp_line2 = temp_line1.split(',')
+
+        if len(temp_line2) > 1:
+            #print(f"{FR_GREEN}list_text_lines---> {temp_line2}")    
+            print(f"{FR_GREEN}list_text_lines---> {temp_line2[0]} | {temp_line2[1]}")    
+        
     print("----------------------------------------------")
     list_lines = session['list_lines']
     print(f"{FR_YELL}.....type of var list_lines: {type(list_lines)} | length: {len(list_lines)}{NO_COLOR}")
@@ -507,8 +513,8 @@ def result_script_html():
     #list_JS_lines = session['list_JS_lines']
     #print(f"===== list_matrix_lines length:{NO_COLOR} {len(list_matrix_lines)}")
     #print("----------------------------------------------")
-    return render_template('result_script_html.html', list_lines=list_lines, list_JS_lines=list_matrix_lines, py_name=py_name)
-    #return render_template('result_script_html.html', list_lines=list_text_lines, list_JS_lines=list_matrix_lines, py_name=py_name)
+    #return render_template('result_script_html.html', list_lines=list_lines, list_JS_lines=list_matrix_lines, py_name=py_name)
+    return render_template('result_script_html.html', list_lines=list_text_lines, list_JS_lines=list_matrix_lines, py_name=py_name)
 
 #
 # MAIN
