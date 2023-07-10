@@ -163,10 +163,14 @@ os.system('cls')
 
 n = 1  # iteration counter
 #nY, nX = os.get_terminal_size(0)		# Linux Obtengo COLUMNAS y LINEAS de la consola
-nY, nX = os.get_terminal_size()		    # Windows Obtengo COLUMNAS y LINEAS de la consola
+#nY, nX = os.get_terminal_size()		    # Windows Obtengo COLUMNAS y LINEAS de la consola
 #print(f"cols: {os.get_terminal_size()[0]} , rows:  {os.get_terminal_size()[1]} ")
-nX, nY = int(nX/2) -5 , int(nY/2)-10		  	# Ajusto por espacios e indicador de iteraciones
-print(f"\n\033[0;93mTERMINAL SIZE: {os.get_terminal_size()[0]} x {os.get_terminal_size()[1]} |  MATRIX SIZE: {nX} x {nY}\033[0m\n")
+#nX, nY = int(nX/2) -10 , int(nY/3) - 20		  	# Ajusto por espacios e indicador de iteraciones
+#print(f"\n\033[0;93mTERMINAL SIZE: {os.get_terminal_size()[0]} x {os.get_terminal_size()[1]} |  MATRIX SIZE: {nX} x {nY}\033[0m\n")
+nX= 15
+nY=40
+print(f"\n\033[0;93mMATRIX SIZE: {nX} x {nY}\033[0m\n")
+
 pausar()
 
 inicio = time.time()

@@ -22,7 +22,7 @@
 
                 <!-- <th style="width:9%"><a href="/result_script_exec/?py_path={{lg_script.fileDirPath1}}" target="_blank"><img class="myImg" onclick='alert("\n=====  PLEASE WAIT A BIT  =====\n\nWHILE THE SCRIPT RUNS IN THE BACKGROUND !")' src="{{ url_for('static', filename='img/icons8-html-filetype-50.png') }}" title='Visualize the scrip run in html format' alt="console-100" width="35"/></a></th>  -->
                 <th style="width:9%">
-                    <span data-title=' Visualize the scrip execution in html format '><img class="myImg" onclick='html_script_exec("{{lg_script.fileDirPath1}}")' src="{{ url_for('static', filename='img/icons8-html-filetype-50.png') }}" alt="console-100" width="35"/></span>
+                    <span data-title=' Visualize the scrip execution in html format '><img class="myImg" onclick='html_script_exec("{{lg_script.fileDirPath1}}")' src="{{ url_for('static', filename='img/icons8-html-filetype-50.png') }}" alt="html-console-100" width="35"/></span>
                 </th>
                 <th style="width:9%; padding:10px;">
                     <span data-title=' Only use if you are in Locahost. Check Flask Console '><img class="myImg" onclick="ExecPythonScript('{{lg_script.fileDirPath}}')" src="{{ url_for('static', filename='img/icons8-consola-100.png') }}" alt="console-100" width="30"/></span>

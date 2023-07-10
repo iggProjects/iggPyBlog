@@ -1,11 +1,21 @@
-result_script_html.html
-  - JS function ... print lines (<p>) with delay. possible ???
+- responsive: check 
+
+- article 0
+
+- About tab: fill content 
+
+- fill excercises & lifeGame & Enigma explanations
+
+- game of life: If the matrices are equal, stop the process
+
+result_script_html.html -> review JS 
+  - Case LifeGame ex 7: JS function ... print lines (<p>) with delay. possible ???
 
 FADING Effects to exit from alert window
         - https://codepen.io/thebabydino/pen/MWYJdNY
         - https://www.geeksforgeeks.org/image-transition-with-fading-effect-using-javascript/
 
-COOKIES modal 
+COOKIES modal
 
 WRITE IN LOG FILES
 
@@ -52,8 +62,11 @@ EXCERCISES
 
 -  3.-   mostrar obj
 	       - agregar info del objeto en Description
+         - check scripts
          
-- 10.-   Msg to html button "case not working with input"
+- 10.-   Input example  
+          - HTML console: Msg to html button "case not working with input"
+          - Flask Console: check  
 
 - 11.-   parameter for html button in blank ! 
          - make msg in result_script_exec
