@@ -112,7 +112,7 @@ def Articles():
 
         {
             'id': 9, 
-            'title': 'Stack Overflow survey data further confirms Python’s popularity.',            
+            'title': 'What’s the Future of Python Development?',            
             'author': 'Matthew Harper',
             'date_created': '17-10-2022',
             'section':'',

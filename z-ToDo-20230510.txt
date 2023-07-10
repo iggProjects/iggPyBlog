@@ -24,7 +24,6 @@ JS Customize alert
     2.- call render from server  ✔✔
     3.- SESSION variable in Python to pass data to render-template process ✔✔
 
-
 CONSOLE button
   - PYTHON check if user is in localhost ✔✔
     - https://stackoverflow.com/questions/47885832/determine-if-host-is-localhost
@@ -59,6 +58,7 @@ EXCERCISES
 - 11.-   parameter for html button in blank ! 
          - make msg in result_script_exec
          - fill info in excercise_data
+
 - 12.-   - fill info in excercise_data
          - msg for result_script_exec
 
@@ -73,6 +73,7 @@ EXCERCISES
 - 18.-   Correct Files path, add info in excercise_data
 
 - 19.-   Correct Files path, add info in excercise_data
+
 
 LIFE GAME
 
