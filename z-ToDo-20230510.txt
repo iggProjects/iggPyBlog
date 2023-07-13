@@ -1,14 +1,16 @@
-- responsive: check 
+- responsive: check for table size 
 
 - article 0
 
-- About tab: fill content 
+- About 'tab': fill content 
 
-- fill excercises & lifeGame & Enigma explanations
+- fill info for excercises & lifeGame & Enigma explanations
 
 - game of life: If the matrices are equal, stop the process
 
-result_script_html.html -> review JS 
+- how to simulate python "input"
+
+- result_script_html.html -> review JS 
   - Case LifeGame ex 7: JS function ... print lines (<p>) with delay. possible ???
 
 FADING Effects to exit from alert window
