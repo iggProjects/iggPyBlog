@@ -1,7 +1,11 @@
 {% extends 'layout.html' %}
 
 {% block body %}
-  <h1 style="text-align: center; margin-top:20px; color:rgb(90, 172, 2);">Enigma Project Scripts</h1>
+  <h1 style="text-align: center; margin-top:20px; color:rgb(72, 138, 2);">
+    <img src="/static/img/enigma.jpg" width="60px" height="40px" style="margin-right: 10px; border: 1px solid green; border-radius: 10px;">
+    Enigma Project Scripts
+    <a href="https://www.youtube.com/watch?v=Hb44bGY2KdU" target="_blank" title="enigma_machine"><img src="/static/img/icons8-video-50.png" title="enigma_machine" width="40px" style="margin-left: 10px;"></a>
+  </h1>
   <div class="disp-cols-cent"  style="max-height:78vh; width:80%; margin:auto; padding:auto; overflow: auto; border:10px solid rgb(102, 128, 74); border-radius: 10px;">    
     <ul class="list-group" style="margin-top:2vh;">
       {% for enigma_script in enigma_scripts %}

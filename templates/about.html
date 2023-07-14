@@ -2,16 +2,28 @@
 
 {% block body %}
 
-    <h1>ABOUT COURSE</h1>
+    <h1>THE EXPERIENCE</h1>
     <div class="disp-rows-cent"  style="height:70vh;  margin: auto; margin-left:20px; ">
 
         <div style="width:15%; text-align: center; border:1px solid blue;">
+            <p style="margin-top:10px;" onclick="document.getElementById('div_info').innerHTML = document.getElementById('the_experience').innerHTML">The Experience</p>            
             <p style="margin-top:10px;" onclick="document.getElementById('div_info').innerHTML = document.getElementById('bitakora').innerHTML">My Bitakora</p>            
             <p onclick="document.getElementById('div_info').innerHTML = document.getElementById('suggestions').innerHTML">Suggestions</p>
             <p style="margin-bottom:10px;" onclick="document.getElementById('div_info').innerHTML = document.getElementById('program').innerHTML">Program</p>    
         </div>
 
         <div id="div_info" style="width:80%; height:68vh; padding:10px; margin:auto; border: 10px solid rgb(120, 120, 252); border-radius:10px; overflow-y:scroll;" onload="loadBitakora()"></div>
+
+        <div id="the_experience" class="block_hide" style="display:none;">
+            <p style="margin-top:10px; font-size:25px; text-align: center;" ><b>My experience in the course</b></p>
+            <p style="font-size:16px; margin-left:10px; margin-right:10px;">
+                First of all, I must emphasize that the facility where we received the course was up to the challenge. On the other hand, the professor is a young person, who enjoys teaching, and who is concerned about keeping up with the news related to Python and the emerging programming web environments.<br><Br>
+                The program covered many topics, which does not make it easy to understand some core elements. For example, spending only three days on object-oriented programming only allows you to see a small part of that world.<br><br>
+                It is not easy for a professor to teach a course where there are different levels of programming and systems knowledge, and most likely, different expectations about the program.<br><br>
+                In my particular case, I think I was able to meet the expectations that I set out to develop in the course. In addition, I had the support of the people at pythonanywhere, who quickly answered my questions about running code in the background.<br><br>
+                In short, I was satisfied with the relationship between my expectations and the product I developed.<br>
+        </p>
+        </div>
 
         <div id="bitakora" class="block_hide" style="display:none;">
             <p style="margin-top: 10px;font-size:25px; text-align: center;" ><a href="https://docs.google.com/document/d/1hIT46qJwzMoyma3dKn37S29hwzMxnleFOlgFaaXx0MU/edit?usp=sharing" target="_blank" title="bitakora of course">My Bitakora</a></p>
@@ -64,7 +76,7 @@
 
     </div>
     <script>
-        document.getElementById('div_info').innerHTML = document.getElementById('bitakora').innerHTML;
+        document.getElementById('div_info').innerHTML = document.getElementById('the_experience').innerHTML;
     </script>
 
 

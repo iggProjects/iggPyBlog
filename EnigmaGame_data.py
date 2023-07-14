@@ -51,7 +51,7 @@ def Enigma_scripts():
             'fileDirPath': 'static/proj_enigmaGame_scripts/mpPoolManagerEnigmaRandom-vf.py',  
             'fileDirPath1': 'static/proj_enigmaGame_scripts/mpPoolManagerEnigmaRandom-vf-1.py',  
             
-            'homework': 'Encode a message with a "messy alphabet", and try to decode it reading 500.000 permutations of the alphabet, each with the property that de permutated alphabet letter doesn\'t coincide with the it\'s position in the normal alphabet.',
+            'homework': 'Encode a message with a "messy alphabet", and try to decode it reading 500.000 permutations of the alphabet, each with the property that the permutated alphabet letter doesn\'t coincide with its position in the normal alphabet.',
 
             'body': '................. Multiprocessing ....................\n\n============== DETAILS NEXT WEEK ==============\n\nFor now, you can execute in console button, or download the .zip (download button) and execute .bat file in your local "downloads folder".\n\nTIP: create a folder called "py_files" inside "downloads", and move the .zip to that folder. Extract the files and run the .bat (with double click).\n\nNOTE: you must have python in the "path" of your pc, which you can check in "environment variables"',          
 

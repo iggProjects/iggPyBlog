@@ -3,13 +3,13 @@ def Articles():
 
         {
             'id': 0,          
-            'title': 'Python Course experience.',   
+            'title': 'Python Course Experience.',   
             'author': 'Igg',
             'date_created': '20-04-2023',
             'section': 'The experience',           
-            'summary': '',            
+            'summary': 'In my particular case, I think I was able to meet the expectations that I set out to develop in the course.....',            
             'body': '',
-            'page_url':'',
+            'page_url':'/about',
             'icon_img':'icons8-lectura-80.png'
         },
 
