@@ -11,7 +11,7 @@
             <p style="margin-bottom:10px;" onclick="document.getElementById('div_info').innerHTML = document.getElementById('program').innerHTML">Program</p>    
         </div>
 
-        <div id="div_info" style="width:80%; height:68vh; padding:10px; margin:auto; border: 10px solid rgb(120, 120, 252); border-radius:10px; overflow:scroll;" onload="loadBitakora()"></div>
+        <div id="div_info" style="width:80%; height:68vh; padding:10px; margin:auto; border: 10px solid rgb(120, 120, 252); border-radius:10px; overflow-y:scroll;" onload="loadBitakora()"></div>
 
         <div id="bitakora" class="block_hide" style="display:none;">
             <p style="margin-top: 10px;font-size:25px; text-align: center;" ><a href="https://docs.google.com/document/d/1hIT46qJwzMoyma3dKn37S29hwzMxnleFOlgFaaXx0MU/edit?usp=sharing" target="_blank" title="bitakora of course">My Bitakora</a></p>
@@ -35,7 +35,9 @@
                 <br>}<br><br>
                 Some fields of the dictionary are 'url' addresses, which will be called in the internal pages to which the navigation leads.<br><br>
                 Another element of the design was to include three buttons to execute the python code related to the requested exercise and a button to access the code. The first option is to download a zip file containing the python code and a '.bat' file to run it from the folder where they are downloaded. The second option simulates a web console, in which you will see the execution of the script. And the third option is to run the script in the VSC console itself, used to activate the flask_app.py application.<br><br>
-                Finally, I must comment that in order to document the obstacles that were being presented and the tasks to be done, two files are included in Github, 'z-bitakora.txt' and 'z-ToDo-fecha.txt'. They present the topics and links consulted for the search for solutions, and the tasks to be completed by a certain date.<br>               
+                To simulate the <i>'web console'</i>, I first run the selected python code in the background, and then, each line of the result is interpreted, so that it can be drawn on the web page via javascript.<br><br>
+                Finally, I must comment that in order to document the obstacles that were being presented and the tasks to be done, two files are included in Github, 'z-bitakora.txt' and 'z-ToDo-date.txt'. They present the topics and links consulted for the search for solutions, and the tasks to be completed by a certain date.<br><br>
+                Three important things remain pending: 1.- in the 'web console', simulate the python 'input command', in order to be able to run codes that ask the user for data before executing the operations; 2.- Create the function to write the warnings and/or errors in log files, in order to prevent them from appearing on the user's screen, except in the case of 'fatal errors', in which a friendly message is placed for the user explaining the situation and what to do in those cases; 3.- Improve the css style to make the page really responsive.<br>               
                  
 
             </p>
@@ -44,12 +46,20 @@
 
         <div id="suggestions" class="block_hide" style="display:none;">
             <p style="margin-top:10px; font-size:25px; text-align: center;" ><b>Suggestions</b></p>
-            <p style="margin-top:10px; margin-left:10px; font-size:15px;">sug 1</p>        
+            <p style="margin-top:10px; margin-left:10px; font-size:15px;">This course has a very extensive program, and given its
+                duration (100 hours), it implies that it is not possible to delve into the points that are being touched on.
+                It would be interesting to divide it into three courses: 1.- algorithms in Python; 2.- database management and web development in Python; 3.- data analysis and automation tasks.<br><br>
+                The three courses would be introductory, since on the one hand, Python is an open source language that is growing a lot on the market, and on the other, the topics themselves are very extensive.<br><Br>
+                Both the Nazareth Academy and Professor Kulhan would have an excellent opportunity to support Lanbide in bringing young people and professionals closer to the world of Big Data and Machine Learning, as well as automation tasks.<br>
+            </p>        
         </div>
 
         <div id="program" class="block_hide" style="display:none;">
-            <p style="margin-top:10px;font-size:25px; text-align: center;" ><a href="https://drive.google.com/file/d/1ZuwE33-Emid-ArhcHrQhKrHE1klX_FS-/view?usp=sharing" target="_blank" title="bitakora of course"><b>Course Program</b></a></p>
-            <p><a href="https://drive.google.com/file/d/1ZuwE33-Emid-ArhcHrQhKrHE1klX_FS-/view?usp=sharing" target="_blank" style="padding: 5px; color:blue; text-decoration: none;">Course Program</a></p>        
+            <p style="margin-top:5px; margin-bottom:0px; font-size: 25px; text-align: center;" ><b>Program</b></p>
+            <p style="margin-top:0px;padding: 3px; color:blue; text-align: center; text-decoration: none;">
+                <a href="https://drive.google.com/file/d/1ZuwE33-Emid-ArhcHrQhKrHE1klX_FS-/view?usp=sharing" target="_blank" >Click Here</a>
+            </p>        
+            <div style="text-align: center; margin: auto;"><img src="/static/Nazaret/ProgramaPython.jpg" width="80%" height="350px"></img></div>
         </div>
 
     </div>
