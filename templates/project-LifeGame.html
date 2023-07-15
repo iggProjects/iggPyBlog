@@ -1,7 +1,11 @@
 {% extends 'layout.html' %}
 
 {% block body %}
-  <h1 style="text-align: center; margin-top: 5px; color:rgb(26, 136, 252);">Game of Life Project</h1>
+  <h1 style="text-align: center; margin-top: 5px; color:rgb(26, 136, 252);">
+    <span data-title='game_life_article'><a href="https://medium.com/codesphere-cloud/building-conways-game-of-life-in-javascript-ab07dc7c1950" target="_blank"><img class="myImg" src="/static/img/LifeGame.jpg" width="40px" height="35px" style="margin-right: 15px; border: 1px solid gray; border-radius: 5px;"></a></span>
+    Game of Life Project
+    <span data-title='game_life_video'><a href="https://conwaylife.com/" target="_blank"><img class="myImg" src="/static/img/icons8-video-50.png" alt="enigma_machine" width="35px" height="35px" style="margin-left: 15px; border: 1px solid gray; border-radius: 5px;"></a></span>
+  </h1>
   <div class="disp-cols-cent"  style="max-height:75vh; width:80%; margin:auto; padding:3px; overflow: auto; border:10px solid rgb(162, 205, 251); border-radius: 10px;">    
     <ul class="list-group"style="max-height:68vh;">
       {% for lg_script in lg_scripts %}

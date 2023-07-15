@@ -1,10 +1,8 @@
-- responsive: check for table size 
-
-- article 0
-
-- About 'tab': fill content 
+- check enigma 1,2,3 web console vs flask console
 
 - fill info for excercises & lifeGame & Enigma explanations
+
+- game of life: 7 case
 
 - game of life: If the matrices are equal, stop the process
 
@@ -13,15 +11,21 @@
 - result_script_html.html -> review JS 
   - Case LifeGame ex 7: JS function ... print lines (<p>) with delay. possible ???
 
-FADING Effects to exit from alert window
+- FADING Effects to exit from alert window
         - https://codepen.io/thebabydino/pen/MWYJdNY
         - https://www.geeksforgeeks.org/image-transition-with-fading-effect-using-javascript/
 
-COOKIES modal
+- COOKIES modal
 
-WRITE IN LOG FILES
+- responsive: check for table size 
+
+- WRITE MSG & WARNINGS & ERRORS IN LOG FILES
 
 ==============================================================================================
+
+- article 0 ✔✔
+
+- About 'tab': fill content  ✔✔
 
 CSS 
   - text effects in title  ✔✔ 
