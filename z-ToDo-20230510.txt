@@ -1,5 +1,8 @@
 - check enigma 1,2,3 web console vs flask console
 
+      html                            console
+  1   colores pasteles, " in line ====== SUM
+
 - fill info for excercises & lifeGame & Enigma explanations
 
 - game of life: 7 case

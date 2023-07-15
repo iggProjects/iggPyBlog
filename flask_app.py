@@ -296,13 +296,13 @@ def result_script_exec():
         print(f"Please check how to pass list of parameters for operating system: {opSys}")
 
     #print(f" ===> 'text'   type: {type(text)}")
-    print(f" ===> 'text' attrib: {dir(text)}")
+    #print(f" ===> 'text' attrib: {dir(text)}")
     #print(f" ===> 'text'   data: {text}")    
 
     # see order in list_b_lines
     list_b_lines = text.stdout.splitlines()
-    print(f" ===> 'list_b_lines' type: {type(list_b_lines)}")
-    print(f" ===> 'list_b_lines' attrib: {dir(list_b_lines)}")
+    # print(f" ===> 'list_b_lines' type: {type(list_b_lines)}")
+    # print(f" ===> 'list_b_lines' attrib: {dir(list_b_lines)}")
     # print(f" ===> 'list_b_lines' data: {list_b_lines}")
 
     #for line in list_b_lines:
@@ -363,9 +363,6 @@ def result_script_exec():
                 new_line = new_line.replace('\\x1b[95m','')
                 color= "magenta;"
 
-            
-
-
             """
             if '\\x1b[91m' in new_line:      # red
                 new_line = new_line.replace('\\x1b[91m','')
@@ -401,7 +398,8 @@ def result_script_exec():
             print(f"new_line formatted => {list}")
     
     # print(f"list_JS_lines type: {type(list_JS_lines)} | first line: {list_JS_lines[2]}")
-    print(f"{FR_YELL}====== exit result_script_exec() in html ======{NO_COLOR}\n")
+    
+    # print(f"{FR_YELL}====== exit result_script_exec() in html ======{NO_COLOR}\n")
     
     # write list as text file
     # first case, output with matrix of (0,1,9) form from 'list_JS_lines' 
@@ -454,6 +452,9 @@ def result_script_exec():
     session['list_lines'] = list_color_text
     session['list_JS_lines'] = list_JS_lines    
     
+    print(f"{FR_YELL}====== exit result_script_exec() in html ======{NO_COLOR}\n")
+    print(f"{FR_YELL}====== go to result_script_exec.html ======{NO_COLOR}\n")
+
     # return redirect(url_for('result_script_html'))
     return render_template('result_script_exec.html',list_lines=list_color_text, list_JS_lines=list_JS_lines, py_name=py_name)
 
@@ -493,7 +494,7 @@ def result_script_html():
     list_color_text_lines = []
     for line in list_text_lines:        
         temp_line1 = line.replace('\n','').split(',')
-        #emp_line1 = temp_line1.split(',')       
+        #temp_line1 = temp_line1.split(',')       
 
         if len(temp_line1) > 1:
             #print(f"{FR_GREEN}list_text_lines---> {temp_line2}")    
