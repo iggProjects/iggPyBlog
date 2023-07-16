@@ -3,6 +3,7 @@
 #
 from MyFunc import *
 from MyColors import *
+import os
 from os import system
 import string, random, time
 
@@ -25,7 +26,17 @@ if __name__ == "__main__":
     alphab_with_char_conflict = 0
     num_chars_equal = 0
 
-    while numb_alphab < 500000:
+    # delete if exists  
+    if os.path.exists("z-permutFile.txt"):
+        os.remove("z-permutFile.txt")
+        print(f"{FR_GREEN}........ old z-permutFile.txt deleted")    
+
+    if os.path.exists("z-permutFileSorted.txt"):
+        os.remove("z-permutFileSorted.txt")
+        print(f"{FR_GREEN}........ old z-permutFileSorted.txt deleted")    
+
+
+    while numb_alphab < 5000:
 
         alp = list(alphab_15)
         random.shuffle(alp)
@@ -35,12 +46,12 @@ if __name__ == "__main__":
             if alp[i] == alphab_15_list[i]:
                 #print(f"\t{i+1}: {''.join(alp)} | {''.join(alphab_15_list)}")
                 num_chars_equal +=1
-        print()       
+        #print()       
 
         if num_chars_equal == 0:
             alp = ''.join(alp)
             alp = alp + '\n'
-            permutFile = open("static\proj_enigmaGame_scripts\z-permutFile.txt", "a")
+            permutFile = open("z-permutFile.txt", "a")
             permutFile.write(alp)
             permutFile.close()
             numb_alphab += 1
@@ -50,10 +61,10 @@ if __name__ == "__main__":
         num_chars_equal = 0              
     
     # delete duplicated lines and sort
-    uniqlines = set(open('static\proj_enigmaGame_scripts\z-permutFile.txt').readlines())
+    uniqlines = set(open('z-permutFile.txt').readlines())
     uniqlines = sorted(uniqlines)
     #print(f"uniqlines type is {type(uniqlines)}")
-    open('static\proj_enigmaGame_scripts\z-permutFileSorted.txt', 'w').writelines(uniqlines)
+    open('z-permutFileSorted.txt', 'w').writelines(uniqlines)
 
     # time  
     elapsed_time = "{:.2f}".format(time.time()-inicio)

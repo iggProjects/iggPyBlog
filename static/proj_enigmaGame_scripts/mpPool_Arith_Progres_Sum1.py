@@ -33,7 +33,7 @@ D_1 = 1
 # param 3: number of terms to sum
 N_TER = 50000
 # param 4: number of progressions
-N_PROGR = 1000
+N_PROGR = 10000
 # param 5: number of CPU's (< max of PC)
 N_CPUS = 4
 
@@ -42,7 +42,10 @@ BASE = 500  # ( sequence of d:  1, 501, 101, 1501, ..... )
 
 # place thousands separator
 def place_comma(numb):
-    return ("{:,}".format(numb))
+    # thousands separated with dot
+    return format(numb,',d').replace(",",".")
+    #return ("{:.}".format(numb))
+
 
 # pause function
 def pause():  
@@ -82,12 +85,12 @@ if __name__ == '__main__':
 	print("print empty line")
 	print("\t=================  MAIN =================")
 
+	# to control limit of cpu in your laptop
 	if N_CPUS > multiprocessing.cpu_count():	
 		print(f"\tThis PC doesn't have {N_CPUS} CPU's, then we assume max of PC: {multiprocessing.cpu_count()}")
 		N_CPUS = multiprocessing.cpu_count()
 
-	# Max Number of CPU's
-	
+	# Max Number of CPU's	
 	print("print empty line")
 	print(f"{FR_YELL}\t======= Max number of cpu's in PC: {multiprocessing.cpu_count()} ======={NO_COLOR}")
 	print("print empty line")
@@ -105,7 +108,7 @@ if __name__ == '__main__':
 	time.sleep(1)
 	inicio = time.time()
 
-	# d-lista 
+	# d-lista of arithmetic progressions 
 	d_list = [(D_1 + 2*x) for x in range(0, N_PROGR)]
 	
 	# CALL multiprocessing function
@@ -131,7 +134,7 @@ if __name__ == '__main__':
 	print(f"\t\tFirst 'd': {D_1}")
 	print(f"\t\tNumber of terms: {place_comma(N_TER)}")
 	print("print empty line")
-	print(f"\tFormula to create List of 'd': [(D_1 + 2*x) for x in range(0, N_PROGR)]")	
+	print(f"\tFormula to create List of 'd': [(D_1 + 2*x) for x in range(0 .. N_PROGR)]")	
 	#print(f"{FR_GREEN}======= d_list ======={NO_COLOR}\n{d_list}")
 	print(f"\tNumb CPU's used: {N_CPUS} | Number of artihmetic operations (aprox): {place_comma(arit_oper)}")
 	print(f"\tNumber of prints: {count_prints}")

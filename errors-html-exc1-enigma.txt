@@ -1,0 +1,26 @@
+Enigma
+
+1
+Flask Console
+	'fileDirPath': 'static/proj_enigmaGame_scripts/mpPool_Arith_Progres_Sum.py',  
+HTML 
+	'fileDirPath1': 'static/proj_enigmaGame_scripts/mpPool_Arith_Progres_Sum1.py',  
+	no escribe el encabezado
+
+ 		Number of CPU for this multiprocessing task: 4
+                Number of artihmetical progresions: 1,000
+                first term: 1
+                first 'd': 1
+                number of terms to include for each AP: 50,000
+
+
+	No escribe la línea --> | d value: 1 |
+	pone " 
+
+	REVISAR LA SECUENCIA
+	JS html_script_exec --> myRequest --> 
+		(flask_app) -> request.open("GET", "/result_script_exec/?py_path=" + py_file, true)   
+		 --> window.location.href = '/result_script_html'
+
+ 	flask_app line 495 to 502	
+	---> see how to format thousands with .

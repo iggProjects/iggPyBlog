@@ -1,44 +1,10 @@
-transparent,---
-green;,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | d value: 1 | Process: &lt;property object at 0x0000027DCE153F10&gt; | name: &lt;property object at 0x0000027DCE16C270&gt;
-black,"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;====== SUM: 1,250,025,000 ======"
-transparent,---
-green;,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | d value: 501 | Process: &lt;property object at 0x000001A4DBFE3F10&gt; | name: &lt;property object at 0x000001A4DBFFC270&gt;
-black,"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;====== SUM: 626,237,525,000 ======"
-transparent,---
-green;,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | d value: 1001 | Process: &lt;property object at 0x0000022E18BC3F10&gt; | name: &lt;property object at 0x0000022E18BDC270&gt;
-black,"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;====== SUM: 1,251,225,025,000 ======"
-transparent,---
-green;,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | d value: 1501 | Process: &lt;property object at 0x0000022E18BC3F10&gt; | name: &lt;property object at 0x0000022E18BDC270&gt;
-black,"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;====== SUM: 1,876,212,525,000 ======"
-transparent,---
-black,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=================  MAIN =================
-transparent,---
-#cc5200;,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;======= Max number of cpu's in PC: 8 =======
-transparent,---
-green;,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Number of CPU for this multiprocessing task: 4
-black,"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Number of artihmetical progresions: 1,000"
-black,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;first term: 1
-black,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;first 'd': 1
-black,"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;number of terms to include for each AP: 50,000"
-transparent,---
-black,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;multiprocessing pool: &lt;multiprocessing.pool.Pool state=RUN pool_size=4&gt; | var type: &lt;class 'multiprocessing.pool.Pool'&gt;
-transparent,---
-#cc5200;,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;===== pool : &lt;multiprocessing.pool.Pool state=RUN pool_size=4&gt; =====
-transparent,---
-transparent,---
-#cc5200;,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;============ BALANCE ============
-transparent,---
-#cc5200;,"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1,000 Progressions"
-black,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;For each Arith P:
-black,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;First Element: 1
-black,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;First 'd': 1
-black,"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Number of terms: 50,000"
-transparent,---
-black,"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Formula to create List of 'd': [(D_1 + 2*x) for x in range(0, N_PROGR)]"
-black,"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Numb CPU's used: 4 | Number of artihmetic operations (aprox): 49,999,000"
-black,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Number of prints: 4
-transparent,---
-green;,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Elapsed time: 1.91101 seconds
-transparent,---
-#cc5200;,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;======== that's all ========
-transparent,---
+black,
+green;,---------- main ----------
+black,
+green;,........ old z-permutFile.txt deleted
+green;,........ old z-permutFileSorted.txt deleted
+black,
+green;,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Total new alphabets generated: 5000
+black,
+green;,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Total alphabets discarded by conflict in character position: 8864
+black,================  Elapsed time: 1.15  =================

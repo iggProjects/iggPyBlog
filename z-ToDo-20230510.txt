@@ -1,7 +1,7 @@
 - check enigma 1,2,3 web console vs flask console
 
       html                            console
-  1   colores pasteles, " in line ====== SUM
+  2   delete file if exists           delete file if exists
 
 - fill info for excercises & lifeGame & Enigma explanations
 

@@ -33,12 +33,12 @@ D_1 = 1
 # param 3: number of terms to sum
 N_TER = 50000
 # param 4: number of progressions
-N_PROGR = 1000
+N_PROGR = 10000
 # param 5: number of CPU's (< max of PC)
 N_CPUS = 4
 
 # number to calculate 'd-condition' for print  [ (d-1) % BASE) == 0 ]
-BASE = 500  # ( sequence of d:  1, 501, 101, 1501, ..... )
+BASE = 500  # ( sequence of d:  1, 501, 1001, 1501, ..... )
 
 # place thousands separator
 def place_comma(numb):
