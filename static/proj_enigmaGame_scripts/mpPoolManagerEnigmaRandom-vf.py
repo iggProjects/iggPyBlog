@@ -119,7 +119,7 @@ if __name__ == '__main__':
 
     messy_alphabets = []
     #messy_alphabets.append(ALPHAB_15_TO_ENCRYPT)  
-    messy_lines = set(open('z-permutFileSorted.txt').readlines())
+    messy_lines = set(open('zz-permutFileSorted.txt').readlines())
     for messy_str in messy_lines:
         messy_alphabets.append(list(messy_str))
         #messy_alphabets.append(messy_str)
@@ -143,11 +143,11 @@ if __name__ == '__main__':
 
         # create and configure the process pool
         # Note: if you do not put a valid number of CPU's, Pool() assume the maximum of PC 
-        with Pool(8) as pool:   
+        with Pool(cpu_count()) as pool:   
 
             # prepare arguments 
             alphabets = [(messy_alphabets[i],event) for i in range(len(messy_alphabets))]
-            print(f'{FR_YELL}\tFrom Main - With Pool() as pool:{NO_COLOR}\n\t\tpool -> {pool}\n', flush=True)
+            print(f'{FR_YELL}\tFrom Main - With Pool({cpu_count()}) as pool:{NO_COLOR}\n\t\tpool -> {pool}\n', flush=True)
 
             # issue tasks asynchronously
             result = pool.starmap_async(decipher, alphabets)            

@@ -26,6 +26,7 @@ FR_MAG   = "\033[95m"
 
 BG_RED   = "\033[2;33;41m"
 
+#N_CPU    = cpu_count()
 N_CPU    = 4
 
 # my text
@@ -104,52 +105,60 @@ def decipher(alphab1, event):
         if MY_TEXT.casefold() == decoded_text:
             #print("print empty line")
             print(f"\t{FR_GREEN}------ BINGO ------ BINGO ------ BINGO ------ BINGO ------ BINGO ------ BINGO -------")            
-            print(f'\t{FR_BLUE}Parent Process "{os.getppid()}" | Child Process "{os.getpid()}" --> THE SOLUTION WAS FOUND !') 
+            print(f'\t{FR_BLUE}Parent Process "{os.getppid()}" | Child Process "{os.getpid()}" --> THE SOLUTION WAS FOUND !{NO_COLOR}') 
             print("print empty line")
-            #print(f"{FR_MAG}\tPID process child: {os.getpid} \n")
-            print(f"\t\tDecoded text is correct: {decoded_text}")
-            print(f"\t\tEncrypted text: {ENCRYPTED_TEXT}")
-            print(f'\t\tCorrect Alphabet Decoder: {(",".join(alphab1_26))}', flush=True)
-            print(f"\t{FR_BLUE}--------------------------------------------------------------------------------------------------------------")
+            #print(f"{FR_MAG}\tPID process child: {os.getpid} ")
+            print(f"\tDecoded text is correct: {decoded_text}")
+            print(f"\tEncrypted text: {ENCRYPTED_TEXT}")
+            print(f'\tCorrect Alphabet Decoder: {(" ".join(alphab1_26))}', flush=True)
+            print(f"\t{FR_BLUE}--------------------------------------------------------------------------------------------------------------{NO_COLOR}")
             print("print empty line")
-            print(f"\t{FR_RED}-------- STOP PROCESS STARTED --------")
+            print(f"\t{FR_RED}-------- STOP PROCESS STARTED --------{NO_COLOR}")
             event.set()
 
 # protect the entry point
 if __name__ == '__main__':
     # clean screen
-    # system('cls')
+    system('cls')
     # time
     inicio = time.time()
     print("print empty line")
 
-    print(f'{FR_GREEN}\t================ "Multiprocess started with pid: {os.getpid()}"" ================')
-    print(f'{FR_BLUE}\t--- reading file of 500,000 sub alphab started at:\t"{datetime.now()}" ---')
-
+    print(f'\t================ Multiprocess started with pid: {os.getpid()} ================')
+    print(f'\t--- Reading file of sub alphab str started at {datetime.now()} ---')
+    
     messy_alphabets = []
-    #messy_alphabets.append(ALPHAB_15_TO_ENCRYPT)  
-    #cwd = os.getcwd()
-    #print(f"\tcwd: {cwd}")
-    #file_path = os.path.join(cwd, 'z-permutFileSorted.txt')
-    #print(f"\tfile: {file_path}")
-    #messy_lines = set(open(file_path).readlines())
+    print("print empty line")    
+
+    print(f'\t--- Reading file process finished at: {datetime.now()} ---') 
     print("print empty line")
-    
-    
-    messy_lines = set(open('static\proj_enigmaGame_scripts\z-permutFileSorted.txt').readlines())
+
+    print(f"\tOrig Alphabet:\t{(' '.join(ORIG_ALPHAB))}")
+    print("print empty line")
+    print(f'{FR_RED}\tOriginal Text:\t{MY_TEXT}{NO_COLOR}')
+    print("print empty line")
+    print(f'{FR_RED}\tEncrypted Text:\t{ENCRYPTED_TEXT}{NO_COLOR}')
+    print("print empty line")
+    print(f'{FR_GREEN}\tMax Number of CPUs:{NO_COLOR} {cpu_count()}')
+
+    messy_lines = set(open('zz-permutFileSorted.txt').readlines())
     for messy_str in messy_lines:
         messy_alphabets.append(list(messy_str))
         #messy_alphabets.append(messy_str)
     messy_alphabets.append(ALPHAB_15_TO_ENCRYPT)
+    
+    #messy_alphabets.append(ALPHAB_15_TO_ENCRYPT)  
+    #cwd = os.getcwd()
+    #print(f"\tcwd: {cwd}")
+    #file_path = os.path.join(cwd, 'zz-permutFileSorted.txt')
+    #print(f"\tfile: {file_path}")
+    #messy_lines = set(open(file_path).readlines())
 
-    print(f'\t--- reading file process finished at:\t"{datetime.now()}" ---') 
-    print("print empty line") 
+    print(f"....... messy_alphabets length: {len(messy_alphabets)}")
+    m_alp = '{:,}'.format(len(messy_alphabets)).replace(',','.')    
+    print(f'{FR_GREEN}\t--- CHECKING "{m_alp} ALPHABETS" BEGAN AT "{datetime.now()}" ---{NO_COLOR}')    
 
-    print(f"{FR_RED}\t\tOrig Alphabet:\t\t{(','.join(ORIG_ALPHAB))}")
-    print(f"{FR_RED}\t\tOriginal Text:\t\t{MY_TEXT}")
-    print(f"{FR_RED}\t\tEncrypted Text:\t\t{ENCRYPTED_TEXT}")
-    print("print empty line")
-    print(f"{FR_RED}\t\t{N_CPU} CPU used -- (Max Number of CPU's for your PC: {cpu_count()})")
+    #print(f"{FR_RED}\t\t{N_CPU} CPU used -- (Max Number of CPU's for your PC: {cpu_count()})")
     print("print empty line")
 
     m_alp = '{:,}'.format(len(messy_alphabets)).replace(',','.')    
@@ -160,6 +169,7 @@ if __name__ == '__main__':
         # create the shared event
         event = manager.Event()
         
+        print(f'{FR_YELL}\tFrom Main - With Manager() as manager:{NO_COLOR}\t\tevent -> {event}', flush=True)
         #print(f"{FR_BLUE}\tFrom Main - With Manager() as manager:")
         #print(f"\t\t\tevent => {event}', flush=True")
 
@@ -169,7 +179,8 @@ if __name__ == '__main__':
 
             # prepare arguments 
             alphabets = [(messy_alphabets[i],event) for i in range(len(messy_alphabets))]
-            #print(f"{FR_BLUE}\tFrom Main ---- With Pool() as pool:")
+            print(f'{FR_YELL}\tFrom Main - With Pool({N_CPU}) as pool:{NO_COLOR}\t\tpool -> {pool}', flush=True)
+            # print(f"{FR_BLUE}\tFrom Main ---- With Pool() as pool:")
             #print(f"\t\t\tpool => {pool}', flush=True")
 
 
@@ -179,10 +190,11 @@ if __name__ == '__main__':
             result.wait()
             # wait for all tasks to stop    
             # print("print empty line")        
-            print(f'\t{FR_RED}=== ALL TASKS STOPED ===')
+            print(f'\t{FR_RED}=== ALL TASKS STOPED ==={NO_COLOR}')
 
             # elapsed time
             elapsed_time = "{:.2f}".format(time.time()-inicio)
             print("print empty line")
-            print(f"\t{FR_BLUE}================  Elapsed time: {elapsed_time} seconds =================")
+            print(f"\t================  Elapsed time: {elapsed_time} seconds =================")
+            print("print empty line")
 

@@ -1,10 +1,31 @@
-black,
-green;,---------- main ----------
-black,
-green;,........ old z-permutFile.txt deleted
-green;,........ old z-permutFileSorted.txt deleted
-black,
-green;,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Total new alphabets generated: 5000
-black,
-green;,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Total alphabets discarded by conflict in character position: 8864
-black,================  Elapsed time: 1.15  =================
+transparent,---
+black,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;================ Multiprocess started with pid: 6388 ================
+black,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;--- Reading file of sub alphab str started at 2023-07-16 21:18:29.464161 ---
+transparent,---
+black,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;--- Reading file process finished at: 2023-07-16 21:18:29.464161 ---
+transparent,---
+black,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Orig Alphabet:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a b c d e f g h i j k l m n o p q r s t u v w x y z
+transparent,---
+#800000;,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Original Text:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;El murcielago esta hambriento
+transparent,---
+#800000;,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Encrypted Text:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ib dnlsaibmru ietm hmdclaigtu
+transparent,---
+green;,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Max Number of CPUs: 8
+black,....... messy_alphabets length: 500001
+green;,"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;--- CHECKING ""500.001 ALPHABETS"" BEGAN AT ""2023-07-16 21:18:30.182585"" ---"
+transparent,---
+#cc5200;,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;From Main - With Manager() as manager:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;event -&gt; &lt;threading.Event object at 0x00000260EE169930&gt;
+#cc5200;,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;From Main - With Pool(4) as pool:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;pool -&gt; &lt;multiprocessing.pool.Pool state=RUN pool_size=4&gt;
+green;,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;------ BINGO ------ BINGO ------ BINGO ------ BINGO ------ BINGO ------ BINGO -------
+blue;,"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Parent Process ""6388"" | Child Process ""9540"" ==&gt; THE SOLUTION WAS FOUND !"
+transparent,---
+black,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Decoded text is correct: el murcielago esta hambriento
+black,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Encrypted text: ib dnlsaibmru ietm hmdclaigtu
+black,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Correct Alphabet Decoder: m c s p i f r h a j k b d g u o q l e t n v w x y z
+blue;,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;--------------------------------------------------------------------------------------------------------------
+transparent,---
+#800000;,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-------- STOP PROCESS STARTED --------
+#800000;,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=== ALL TASKS STOPED ===
+transparent,---
+black,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;================  Elapsed time: 15.95 seconds =================
+transparent,---
