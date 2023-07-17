@@ -27,11 +27,8 @@ FR_MAG   = "\033[95m"
 ALPHAB_STR = 'abcdefghijklmnopqrstuvwxyz'
 ORIG_ALPHAB = list(string.ascii_lowercase)      # in list mode
 ALPHAB = list(string.ascii_lowercase)
-#ALPHAB_15_STR        = 'abcdegilmnoprsu'
-#ALPHAB_15_TO_ENCRYPT = list('mcspirabdguolen')
+
 ALPHAB_TO_ENCRYPT = 'mcspifrhajkbdguoqletnvwxyz'
-#ALPHAB_TO_ENCRYPT = list('mcspifrhajkbdguoqletnvwxyz')
-TEMP_LIST = ['m', 'c', 's', 'p', 'i', 'f', 'r', 'h', 'a', 'j', 'k', 'b', 'd', 'g', 'u', 'o', 'q', 'l', 'e', 't', 'n', 'v', 'w', 'x', 'y', 'z']
 MY_TEXT = 'El murcielago esta hambriento'
 ENCRYPTED_TEXT = 'ib dnlsaibmru ietm hmdclaigtu'
 
