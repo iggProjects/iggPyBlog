@@ -33,7 +33,6 @@ N_CPU    = 4
 ALPHAB_STR = 'abcdefghijklmnopqrstuvwxyz'
 ORIG_ALPHAB = list(string.ascii_lowercase)      # in list mode
 ALPHAB = list(string.ascii_lowercase)
-MY_TEXT = 'abcdef ghijk lmnopq KAIXO TEACHER'
 ALPHAB_15_STR        = 'abcdegilmnoprsu'
 ALPHAB_15_TO_ENCRYPT = list('mcspirabdguolen')
 ALPHAB_TO_ENCRYPT = list('mcspifrhajkbdguoqletnvwxyz')
@@ -103,9 +102,9 @@ def decipher(alphab1, event):
                 pass 
 
         if MY_TEXT.casefold() == decoded_text:
-            #print("print empty line")
-            print(f"\t{FR_GREEN}------ BINGO ------ BINGO ------ BINGO ------ BINGO ------ BINGO ------ BINGO -------")            
-            print(f'\t{FR_BLUE}Parent Process "{os.getppid()}" | Child Process "{os.getpid()}" --> THE SOLUTION WAS FOUND !{NO_COLOR}') 
+            print("print empty line")
+            print(f"\t{FR_GREEN}----- BINGO ------ BINGO ------ BINGO ------ BINGO ------ BINGO ------ BINGO ------")            
+            print(f'\t{FR_BLUE}Parent Process {os.getppid()} | Child Process {os.getpid()} ==> THE SOLUTION WAS FOUND !{NO_COLOR}') 
             print("print empty line")
             #print(f"{FR_MAG}\tPID process child: {os.getpid} ")
             print(f"\tDecoded text is correct: {decoded_text}")
@@ -113,7 +112,7 @@ def decipher(alphab1, event):
             print(f'\tCorrect Alphabet Decoder: {(" ".join(alphab1_26))}', flush=True)
             print(f"\t{FR_BLUE}--------------------------------------------------------------------------------------------------------------{NO_COLOR}")
             print("print empty line")
-            print(f"\t{FR_RED}-------- STOP PROCESS STARTED --------{NO_COLOR}")
+            print(f"\t{FR_GREEN}=== STOP PROCESS STARTED AT {datetime.now()} ==={NO_COLOR}")
             event.set()
 
 # protect the entry point
@@ -125,19 +124,19 @@ if __name__ == '__main__':
     print("print empty line")
 
     print(f'\t================ Multiprocess started with pid: {os.getpid()} ================')
+    print("print empty line")    
     print(f'\t--- Reading file of sub alphab str started at {datetime.now()} ---')
     
     messy_alphabets = []
-    print("print empty line")    
-
+    
     print(f'\t--- Reading file process finished at: {datetime.now()} ---') 
     print("print empty line")
 
     print(f"\tOrig Alphabet:\t{(' '.join(ORIG_ALPHAB))}")
     print("print empty line")
-    print(f'{FR_RED}\tOriginal Text:\t{MY_TEXT}{NO_COLOR}')
+    print(f'\tOriginal Text:\t{MY_TEXT}')
     print("print empty line")
-    print(f'{FR_RED}\tEncrypted Text:\t{ENCRYPTED_TEXT}{NO_COLOR}')
+    print(f'{FR_BLUE}\tEncrypted Text:{NO_COLOR}\t{ENCRYPTED_TEXT}')
     print("print empty line")
     print(f'{FR_GREEN}\tMax Number of CPUs:{NO_COLOR} {cpu_count()}')
 
@@ -154,9 +153,8 @@ if __name__ == '__main__':
     #print(f"\tfile: {file_path}")
     #messy_lines = set(open(file_path).readlines())
 
-    print(f"....... messy_alphabets length: {len(messy_alphabets)}")
     m_alp = '{:,}'.format(len(messy_alphabets)).replace(',','.')    
-    print(f'{FR_GREEN}\t--- CHECKING "{m_alp} ALPHABETS" BEGAN AT "{datetime.now()}" ---{NO_COLOR}')    
+    print(f'{FR_GREEN}\t--- CHECKING {m_alp} ALPHABETS BEGAN AT {datetime.now()} ---{NO_COLOR}')    
 
     #print(f"{FR_RED}\t\t{N_CPU} CPU used -- (Max Number of CPU's for your PC: {cpu_count()})")
     print("print empty line")
@@ -169,7 +167,7 @@ if __name__ == '__main__':
         # create the shared event
         event = manager.Event()
         
-        print(f'{FR_YELL}\tFrom Main - With Manager() as manager:{NO_COLOR}\t\tevent -> {event}', flush=True)
+        print(f'\tFrom Main - With Manager() as manager:\t\tevent ==> {event}', flush=True)
         #print(f"{FR_BLUE}\tFrom Main - With Manager() as manager:")
         #print(f"\t\t\tevent => {event}', flush=True")
 
@@ -179,18 +177,17 @@ if __name__ == '__main__':
 
             # prepare arguments 
             alphabets = [(messy_alphabets[i],event) for i in range(len(messy_alphabets))]
-            print(f'{FR_YELL}\tFrom Main - With Pool({N_CPU}) as pool:{NO_COLOR}\t\tpool -> {pool}', flush=True)
+            print(f'\tFrom Main - With Pool({N_CPU}) as pool:\t\tpool ==> {pool}', flush=True)
             # print(f"{FR_BLUE}\tFrom Main ---- With Pool() as pool:")
             #print(f"\t\t\tpool => {pool}', flush=True")
-
 
             # issue tasks asynchronously
             result = pool.starmap_async(decipher, alphabets)            
             
             result.wait()
             # wait for all tasks to stop    
-            # print("print empty line")        
-            print(f'\t{FR_RED}=== ALL TASKS STOPED ==={NO_COLOR}')
+            print("print empty line")        
+            print(f'\t{FR_GREEN}=== ALL TASKS STOPED AT {datetime.now()} ==={NO_COLOR}')
 
             # elapsed time
             elapsed_time = "{:.2f}".format(time.time()-inicio)

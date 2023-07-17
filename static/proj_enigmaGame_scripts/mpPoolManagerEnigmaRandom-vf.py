@@ -27,7 +27,6 @@ FR_MAG   = "\033[95m"
 ALPHAB_STR = 'abcdefghijklmnopqrstuvwxyz'
 ORIG_ALPHAB = list(string.ascii_lowercase)      # in list mode
 ALPHAB = list(string.ascii_lowercase)
-MY_TEXT = 'abcdef ghijk lmnopq KAIXO TEACHER'
 ALPHAB_15_STR        = 'abcdegilmnoprsu'
 ALPHAB_15_TO_ENCRYPT = list('mcspirabdguolen')
 ALPHAB_TO_ENCRYPT = list('mcspifrhajkbdguoqletnvwxyz')
