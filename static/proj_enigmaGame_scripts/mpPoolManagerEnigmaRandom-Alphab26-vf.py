@@ -28,9 +28,11 @@ ALPHAB_STR = 'abcdefghijklmnopqrstuvwxyz'
 ORIG_ALPHAB = list(string.ascii_lowercase)      # in list mode
 ALPHAB = list(string.ascii_lowercase)
 
-ALPHAB_TO_ENCRYPT = 'mcspifrhajkbdguoqletnvwxyz'
+ALPHAB_TO_ENCRYPT = 'ejnkzcmtslbrdhgfwvxqoaiyup'
+#ALPHAB_TO_ENCRYPT = 'mcspifrhajkbdguoqletnvwxyz'
 MY_TEXT = 'El murcielago esta hambriento'
-ENCRYPTED_TEXT = 'ib dnlsaibmru ietm hmdclaigtu'
+ENCRYPTED_TEXT =  'zr dovnszremg zxqe tedjvszhqg'
+#ENCRYPTED_TEXT = 'ib dnlsaibmru ietm hmdclaigtu'
 
 # FUNCIONS SECTION
 
@@ -61,7 +63,7 @@ def decipher(alphab1, event):
             #print(f"{FR_GREEN}\tPID process child: {os.getpid} {NO_COLOR}\n")
             print(f"\n\t\t{FR_GREEN}Decoded text is correct: {NO_COLOR}{decoded_text}")
             print(f"\t\t{FR_GREEN}Encrypted text: {NO_COLOR}{ENCRYPTED_TEXT}")
-            print(f'\t\t{FR_GREEN}Correct Alphabet Decoder: {NO_COLOR}{(",".join(alphab1_26))}', flush=True)
+            print(f'\t\t{FR_GREEN}Correct Alphabet Decoder: {NO_COLOR}{(",".join(alphab1))}', flush=True)
             print(f"\n\t{FR_YELL}-------------------------------------------------------------------------------------")
             print(f"\n\t\033[2;33;41m-------- STOP PROCESS STARTED --------{NO_COLOR}\n")
             event.set()
@@ -78,13 +80,15 @@ if __name__ == '__main__':
 
     messy_alphabets = []
     #messy_alphabets.append(ALPHAB_15_TO_ENCRYPT)  
-    messy_lines = set(open('z-permutFileSorted.txt').readlines())
+    messy_lines = set(open('zzz-permutFileSorted.txt').readlines())
     for messy_str in messy_lines:
         #messy_alphabets.append(list(messy_str))
         messy_alphabets.append(messy_str)
     messy_alphabets.append(ALPHAB_TO_ENCRYPT)
-    print(f"........... messy_alphabets[0] ===> {messy_alphabets[0]}")
-    print(f"........... messy_alphabets[500001] ===> {messy_alphabets[500000]}")
+    m_alp = '{:,}'.format(len(messy_alphabets)).replace(',','.')    
+
+    print(f"\t== first messy_alphabets[0] ===> {messy_alphabets[0]}")
+    print(f"\t== last messy_alphabets[{len(messy_alphabets)-1}] ===> {messy_alphabets[len(messy_alphabets)-1]}")
 
     print(f'{FR_YELL}\t--- reading file process finished at "{datetime.now()}" ---{NO_COLOR}\n')  
 
@@ -92,7 +96,7 @@ if __name__ == '__main__':
     print(f"{FR_GREEN}\tOriginal text:{NO_COLOR}\n\t\t{MY_TEXT}")
     print(f"{FR_GREEN}\tEncrypted text:{NO_COLOR}\n\t\t{ENCRYPTED_TEXT}")
     print(f"{FR_GREEN}\tMax Number of CPU's:{NO_COLOR} {cpu_count()}\n")
-    m_alp = '{:,}'.format(len(messy_alphabets)).replace(',','.')    
+    
     print(f'{FR_YELL}\t--- CHECKING "{m_alp} ALPHABETS" BEGAN AT "{datetime.now()}" ---{NO_COLOR}\n')    
     
     # create the manager

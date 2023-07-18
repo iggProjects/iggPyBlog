@@ -6,6 +6,10 @@ from MyColors import *
 import os
 from os import system
 import string, random, time
+from datetime import datetime
+
+# CONSTANTS
+NUM_ALPHAB = 2000000
 
 #
 # ---------- COURSE EXCERCISE ----------
@@ -17,9 +21,8 @@ if __name__ == "__main__":
     inicio = time.time()
     system('cls')
     print(f"\n{FR_GREEN}---------- main ----------{NO_COLOR}\n")
+    print(f"\n{FR_GREEN}---------- process generating alphabets start at {NO_COLOR}{datetime.now()} {FR_GREEN}----------{NO_COLOR}\n")
 
-    # alphab = 'abcdefghijklmnopqrstuvwxyz'
-    # substr size 15, of alphabet chars chosen to create permutations
     alphab_26 = 'abcdefghijklmnopqrstuvwxyz'
     alphab_26_list = list(alphab_26)
     numb_alphab = 0
@@ -29,14 +32,14 @@ if __name__ == "__main__":
     # delete if exists  
     if os.path.exists("z-permutFile.txt"):
         os.remove("z-permutFile.txt")
-        print(f"{FR_GREEN}........ old z-permutFile.txt deleted")    
+        print(f"\t== old z-permutFile.txt deleted")    
 
     if os.path.exists("z-permutFileSorted.txt"):
         os.remove("z-permutFileSorted.txt")
-        print(f"{FR_GREEN}........ old z-permutFileSorted.txt deleted")    
+        print(f"\t== old z-permutFileSorted.txt deleted")    
 
 
-    while numb_alphab < 500000:
+    while numb_alphab < NUM_ALPHAB:
     #while numb_alphab < 500000:    
 
         alp = list(alphab_26)
@@ -71,7 +74,7 @@ if __name__ == "__main__":
     elapsed_time = "{:.2f}".format(time.time()-inicio)
     print(f"\n{FR_GREEN}\tTotal new alphabets generated: {numb_alphab}{NO_COLOR}\n")
     print(f"\n{FR_GREEN}\tTotal alphabets discarded by conflict in character position: {alphab_with_char_conflict}{NO_COLOR}\n")
-    
+    print(f"\n{FR_GREEN}---------- process generating alphabets stoped at {NO_COLOR}{datetime.now()} {FR_GREEN}----------{NO_COLOR}\n")
     print(f"\n================  Elapsed time: {elapsed_time}  =================\n\n")
     
 

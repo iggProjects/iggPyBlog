@@ -67,10 +67,12 @@ if __name__ == "__main__":
     random.shuffle(old_alphab)
     new_alphab=old_alphab       
     print(frGREEN(f"{FR_GREEN}Messy alphabet list to encrypt{NO_COLOR}\n{new_alphab}\n"))
+    print(frGREEN(f"{FR_GREEN}Messy alphabet string to encrypt{NO_COLOR}\n{''.join(new_alphab)}\n"))
     pause()
 
     # my text
-    my_text = 'abcdef ghijk lmnopq KAIXO TEACHER'
+    my_text = 'El murcielago esta hambriento'
+    #my_text = 'abcdef ghijk lmnopq KAIXO TEACHER'
 
     print(frGREEN(f"my text\n\t{my_text}\n"))
 

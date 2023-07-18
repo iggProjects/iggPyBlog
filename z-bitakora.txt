@@ -6,6 +6,11 @@ https://eu.pythonanywhere.com/login/ @n.20..N.@
 
 jo.gainzarain@aulanz.net nz2223Nz
 
+WINDOWS 10
+    - cmd line to see Admin ==> Ctr  + Shift + Esc 
+        - CPU performance 
+
+
 
 STILL TO DO !!!
 
