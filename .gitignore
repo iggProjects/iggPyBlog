@@ -1,6 +1,10 @@
 # virtual env
 igg_venv/
 
+# text permutations files
+z*permutFile*.*
+static/proj_enigmaGame_scripts/z*permutFile*.*
+
 # Build and Release Folders
 bin-debug/
 bin-release/
