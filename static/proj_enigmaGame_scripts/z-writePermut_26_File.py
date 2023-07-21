@@ -9,7 +9,7 @@ import string, random, time
 from datetime import datetime
 
 # CONSTANTS
-NUM_ALPHAB = 50000
+NUM_ALPHAB = 100000
 
 #
 # ---------- COURSE EXCERCISE ----------
@@ -70,13 +70,23 @@ if __name__ == "__main__":
     #print(f"uniqlines type is {type(uniqlines)}")
     open('z-permutFileSorted.txt', 'w').writelines(uniqlines)
 
+    # delete z-permutFile.txt
+    if os.path.exists("z-permutFile.txt"):
+        os.remove("z-permutFile.txt")
+        print(f"\t== z-permutFile.txt deleted\n")   
+
     # time  
     elapsed_time = "{:.2f}".format(time.time()-inicio)
+    alphab_per_seconds = (numb_alphab + alphab_with_char_conflict)/(time.time()-inicio)
+    alphab_per_seconds_format = "{:,.2f}".format(alphab_per_seconds)
+
     print(f"\n{FR_GREEN}\tTotal new alphabets generated: {numb_alphab}{NO_COLOR}\n")
     print(f"\n{FR_GREEN}\tTotal alphabets discarded by conflict in character position: {alphab_with_char_conflict}{NO_COLOR}\n")
     print(f"\n{FR_GREEN}---------- process generating alphabets stoped at {NO_COLOR}{datetime.now()} {FR_GREEN}----------{NO_COLOR}\n")
-    print(f"\n================  Elapsed time: {elapsed_time}  =================\n\n")
+    print(f"\n================  Elapsed time: {elapsed_time}  =================\n")
+    print(f"\n================  Total Alphab per Seconds: {alphab_per_seconds_format}  =================\n\n")
     
+
 
 else:
     # something wrong
