@@ -1,0 +1,15 @@
+commit 29e42c4 previo a los 5 mill|| 29e42c4 HEAD@{8}: commit: upd EnigmaGame_data.py
+git rest 29e42c4
+
+git reset --hard 29e42c4
+git push -f origin master
+
+GIT ERROR
+> git push origin main:main
+remote: error: Trace: 9fabc0f237bfbe9d41cb04257ea1421015a85592d6cf0618dc18610324b0d423        
+remote: error: See https://gh.io/lfs for more information.        
+remote: error: File static/proj_enigmaGame_scripts/z-permutFile.txt is 128.75 MB; this exceeds GitHub's file size limit of 100.00 MB        
+remote: error: GH001: Large files detected. You may want to try Git Large File Storage - https://git-lfs.github.com.        
+To https://github.com/iggProjects/iggPyBlog.git
+ ! [remote rejected] main -> main (pre-receive hook declined)
+error: failed to push some refs to 'https://github.com/iggProjects/iggPyBlog.git'
