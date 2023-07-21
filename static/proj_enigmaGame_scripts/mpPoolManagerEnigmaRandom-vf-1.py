@@ -140,7 +140,7 @@ if __name__ == '__main__':
     print("print empty line")
     print(f'{FR_GREEN}\tMax Number of CPUs:{NO_COLOR} {cpu_count()}')
 
-    messy_lines = set(open('zz-permutFileSorted.txt').readlines())
+    messy_lines = set(open('z-permutFileSorted.txt').readlines())
     for messy_str in messy_lines:
         messy_alphabets.append(list(messy_str))
         #messy_alphabets.append(messy_str)

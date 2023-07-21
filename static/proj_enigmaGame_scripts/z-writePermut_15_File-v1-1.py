@@ -66,6 +66,12 @@ if __name__ == "__main__":
     #print(f"uniqlines type is {type(uniqlines)}")
     open('z-permutFileSorted.txt', 'w').writelines(uniqlines)
 
+    # delete z-permutFile.txt
+    if os.path.exists("z-permutFile.txt"):
+        os.remove("z-permutFile.txt")
+        print(f"{FR_GREEN}........ old z-permutFile.txt deleted")    
+
+
     # time  
     elapsed_time = "{:.2f}".format(time.time()-inicio)
     print(f"\n{FR_GREEN}\tTotal new alphabets generated: {numb_alphab}")
