@@ -9,7 +9,7 @@ import string, random, time
 from datetime import datetime
 
 # CONSTANTS
-NUM_ALPHAB = 2000000
+NUM_ALPHAB = 50000
 
 #
 # ---------- COURSE EXCERCISE ----------
