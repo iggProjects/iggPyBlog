@@ -9,7 +9,7 @@ import string, random, time
 from datetime import datetime
 
 # CONSTANTS
-NUM_ALPHAB = 50000
+NUM_ALPHAB = 100000
 
 #
 # ---------- COURSE EXCERCISE ----------
@@ -40,7 +40,8 @@ if __name__ == "__main__":
 
 
     while numb_alphab < NUM_ALPHAB:
-    
+    #while numb_alphab < 500000:    
+
         alp = list(alphab_26)
         random.shuffle(alp)
         
