@@ -66,3 +66,6 @@ GetProcess  (top-htop in linux)
     - https://forsenergy.com/es-es/windowspowershellhelp/html/27a05dbd-4b69-48a3-8d55-b295f6225f15.htm
     - https://superuser.com/questions/176624/linux-top-command-for-windows-powershell
         - While(1) {ps | sort -des cpu | select -f 15 | ft -a; sleep 1; cls}
+
+multiprocessing Manager() -- Objects
+    - https://superfastpython.com/multiprocessing-manager/
