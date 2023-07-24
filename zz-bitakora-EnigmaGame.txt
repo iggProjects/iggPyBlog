@@ -69,3 +69,30 @@ GetProcess  (top-htop in linux)
 
 multiprocessing Manager() -- Objects
     - https://superfastpython.com/multiprocessing-manager/
+
+
+multiprocessing and background processing
+    - https://docs.python.org/3/library/multiprocessing.html
+    - https://help.edgecam.com/Content/Online_Help/en/2020_1/User_Guide/Content/manufacture/manufacture/multi_threading_definition.htm
+    - https://superfastpython.com/multiprocessing-pool-vs-process/
+    - https://www.tutorialspoint.com/concurrency_in_python/concurrency_in_python_multiprocessing.htm
+    - https://www.datacamp.com/tutorial/python-multiprocessing-tutorial
+
+    Multiprocessing
+        It is the use of two or more CPUs units within a single computer system. It is the best approach to get the full potential from our hardware by utilizing full number of CPU cores available in our computer system.
+
+    Multithreading
+        It is the ability of a CPU to manage the use of operating system by executing multiple threads concurrently. The main idea of multithreading is to achieve parallelism by dividing a process into multiple threads.
+
+    Manager 
+        https://www.tutorialspoint.com/concurrency_in_python/concurrency_in_python_processes_intercommunication.htm    
+
+            Manager is a class of multiprocessing module that provides a way to coordinate shared information between all its users. A manager object controls a server process, which manages shared objects and allows other processes to manipulate them. In other words, managers provide a way to create data that can be shared between different processes. Following are the different properties of manager object −
+
+            The main property of manager is to control a server process, which manages the shared objects.
+
+            Another important property is to update all the shared objects when any process modifies it.
+
+        https://superfastpython.com/multiprocessing-manager/
+
+            You can create a hosted centralized version of Python objects using a Manager and share proxy objects that allow child processes to interact with the hosted object in a process-safe manager.
