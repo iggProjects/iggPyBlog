@@ -1,10 +1,10 @@
 ===main
-===processgeneratingpermutationsof'abcdefghijklmnopqrstuvwxyz'startat2023-07-2419:11:35.410980
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;==oldz-permutFileSorted.txtdeleted
+===processgeneratingpermutationsof'abcdefghijklmnopqrstuvwxyz'startat2023-07-2419:30:26.190004
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;oldz-permutFileSorted.txtdeleted
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;==z-permutFile.txtdeleted
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Numberofnewalphabetsinz-permutFileSorted.txt:50000
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Totalalphabetsdiscardedbyconflictincharacterposition:86735
-===processgeneratingalphabetsstopedat2023-07-2419:11:42.998453
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Elapsedtime:7.59
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TotalAlphabperSeconds:18.021
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Totalalphabetsdiscardedbyconflictincharacterposition:86167
+===processgeneratingalphabetsstopedat2023-07-2419:30:33.437425
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Elapsedtimeinseconds:7.247420787811279
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TotalAlphabetsperSeconds:18.788
 ===That'sAll

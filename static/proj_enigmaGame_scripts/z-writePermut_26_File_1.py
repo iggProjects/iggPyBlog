@@ -37,11 +37,11 @@ if __name__ == "__main__":
     # delete if exists  
     if os.path.exists("z-permutFile.txt"):
         os.remove("z-permutFile.txt")
-        print(f"\t== old z-permutFile.txt deleted")    
+        print(f"\told z-permutFile.txt deleted")    
 
     if os.path.exists("z-permutFileSorted.txt"):
         os.remove("z-permutFileSorted.txt")
-        print(f"\t== old z-permutFileSorted.txt deleted")    
+        print(f"\told z-permutFileSorted.txt deleted")    
 
 
     while numb_alphab < NUM_ALPHAB:
@@ -77,11 +77,12 @@ if __name__ == "__main__":
     # delete z-permutFile.txt
     if os.path.exists("z-permutFile.txt"):
         os.remove("z-permutFile.txt")
-        print(f"\t== z-permutFile.txt deleted")
+        print(f"\tz-permutFile.txt deleted")
         print("print empty line")   
 
     # time
-    elapsed_time = "{:.2f}".format(time.time()-inicio)
+    elapsed_time = (time.time()-inicio)
+    #elapsed_time = "{:.2f}".format(time.time()-inicio)
     alphab_per_seconds = (numb_alphab + alphab_with_char_conflict)/(time.time()-inicio)
     alphab_per_seconds_format = place_comma(int(alphab_per_seconds))
     #alphab_per_seconds_format = "{:,.0f}".format(alphab_per_seconds)
@@ -91,7 +92,7 @@ if __name__ == "__main__":
     print("print empty line")
     print(f"{FR_GREEN}=== process generating alphabets stoped at {datetime.now()}")
     print("print empty line")
-    print(f"\tElapsed time in seconds: {elapsed_time}")
+    print(f"\tElapsed time in seconds: {str(elapsed_time).replace(',','.')}")
     print("print empty line")
     print(f"\tTotal Alphabets per Seconds: {alphab_per_seconds_format}")
     print("print empty line")

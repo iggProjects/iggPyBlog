@@ -1,17 +1,17 @@
 green;,=== main
 transparent,---
-green;,=== process generating permutations of 'abcdefghijklmnopqrstuvwxyz' start at 2023-07-24 19:11:35.410980
+green;,=== process generating permutations of 'abcdefghijklmnopqrstuvwxyz' start at 2023-07-24 19:30:26.190004
 transparent,---
-black,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;== old z-permutFileSorted.txt deleted
+black,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;old z-permutFileSorted.txt deleted
 black,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;== z-permutFile.txt deleted
 transparent,---
 green;,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Number of new alphabets in z-permutFileSorted.txt: 50000
-green;,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Total alphabets discarded by conflict in character position: 86735
+green;,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Total alphabets discarded by conflict in character position: 86167
 transparent,---
-green;,=== process generating alphabets stoped at 2023-07-24 19:11:42.998453
+green;,=== process generating alphabets stoped at 2023-07-24 19:30:33.437425
 transparent,---
-black,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Elapsed time: 7.59
+black,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Elapsed time in seconds: 7.247420787811279
 transparent,---
-black,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Total Alphab per Seconds: 18.021
+black,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Total Alphabets per Seconds: 18.788
 transparent,---
 green;,=== That's All
