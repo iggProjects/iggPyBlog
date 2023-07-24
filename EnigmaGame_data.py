@@ -30,7 +30,7 @@ def Enigma_scripts():
             'section': 'Multiprocessing',
             'title': 'Generate permutations of alphab of 26 chars',
             'fileDirPath': 'static/proj_enigmaGame_scripts/z-writePermut_26_File.py',  
-            'fileDirPath1': 'static/proj_enigmaGame_scripts/z-writePermut_26_File-1.py',  
+            'fileDirPath1': 'static/proj_enigmaGame_scripts/z-writePermut_26_File_1.py',  
             
             'homework': 'For runtime reasons, in this exercise we will generate a file containing fifty thousand (50,000) permutations of \'abcdefghijklmnopqrstuvwxyz\' with a special condition: no letter in the permuted alphabet can match its position in the original alphabet.\n\nIt must be taken into account that if we want 5 million permutations, a file larger than 100 Mb will be generated, and we will have problems when synchronizing the update of the repository on Github. When generating files larger than 100 Mb, you must follow the guidelines for Git Large File Storage - https://git-lfs.github.com.\n\nHowever, for exercise number 3, we will use a file of 2 million permutations. If you want to do your own tests, download the py code (z-writePermut_26_File.py) using the "download button", and run the variants in number of permutations in a console on your pc, measuring execution time, number of permutations discarded, zize of the file, etc...',
 

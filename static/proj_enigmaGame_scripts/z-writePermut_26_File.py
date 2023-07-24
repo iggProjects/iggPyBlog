@@ -11,8 +11,14 @@ from datetime import datetime
 # CONSTANTS
 NUM_ALPHAB = 50000
 
+# place thousands separator
+def place_comma(numb):
+    # thousands separated with dot
+    return format(numb,',d').replace(",",".")
+    #return ("{:.}".format(numb))
+
 #
-# ---------- COURSE EXCERCISE ----------
+# ---------- MAIN ----------
 #
 
 if __name__ == "__main__":
@@ -20,8 +26,8 @@ if __name__ == "__main__":
     # time
     inicio = time.time()
     system('cls')
-    print(f"\n{FR_GREEN}---------- main ----------{NO_COLOR}\n")
-    print(f"\n{FR_GREEN}---------- process generating alphabets start at {NO_COLOR}{datetime.now()} {FR_GREEN}----------{NO_COLOR}\n")
+    print(f"\n{FR_GREEN}=== MAIN ==={NO_COLOR}\n")
+    print(f"\n{FR_GREEN}=== process generating permutations of 'abcdefghijklmnopqrstuvwxyz' start at {NO_COLOR}{datetime.now()} {FR_GREEN}{NO_COLOR}\n")
 
     alphab_26 = 'abcdefghijklmnopqrstuvwxyz'
     alphab_26_list = list(alphab_26)
@@ -32,11 +38,11 @@ if __name__ == "__main__":
     # delete if exists  
     if os.path.exists("z-permutFile.txt"):
         os.remove("z-permutFile.txt")
-        print(f"\t== old z-permutFile.txt deleted")    
+        print(f"\told z-permutFile.txt deleted")    
 
     if os.path.exists("z-permutFileSorted.txt"):
         os.remove("z-permutFileSorted.txt")
-        print(f"\t== old z-permutFileSorted.txt deleted")    
+        print(f"\told z-permutFileSorted.txt deleted")    
 
 
     while numb_alphab < NUM_ALPHAB:
@@ -75,15 +81,18 @@ if __name__ == "__main__":
         print(f"\t== z-permutFile.txt deleted\n")   
 
     # time  
-    elapsed_time = "{:.2f}".format(time.time()-inicio)
+    elapsed_time = (time.time()-inicio)
+    #elapsed_time = "{:..2f}".format(time.time()-inicio)
     alphab_per_seconds = (numb_alphab + alphab_with_char_conflict)/(time.time()-inicio)
-    alphab_per_seconds_format = "{:,.2f}".format(alphab_per_seconds)
+    alphab_per_seconds_format = place_comma(int(alphab_per_seconds))
+    #alphab_per_seconds_format = "{:,.2f}".format(alphab_per_seconds)
 
-    print(f"\n{FR_GREEN}\tTotal new alphabets generated: {numb_alphab}{NO_COLOR}\n")
-    print(f"\n{FR_GREEN}\tTotal alphabets discarded by conflict in character position: {alphab_with_char_conflict}{NO_COLOR}\n")
-    print(f"\n{FR_GREEN}---------- process generating alphabets stoped at {NO_COLOR}{datetime.now()} {FR_GREEN}----------{NO_COLOR}\n")
-    print(f"\n================  Elapsed time: {elapsed_time}  =================\n")
-    print(f"\n================  Total Alphab per Seconds: {alphab_per_seconds_format}  =================\n\n")
+    print(f"\n{FR_GREEN}\tNumber of new alphabets in z-permutFileSorted.txt:{NO_COLOR} {place_comma(numb_alphab)}\n")
+    print(f"\n{FR_GREEN}\tTotal alphabets discarded by conflict in character position:{NO_COLOR} {place_comma(alphab_with_char_conflict)}\n")
+    print(f"\n{FR_GREEN}=== process generating alphabets stoped at {NO_COLOR}{datetime.now()}\n")
+    print(f"\n{FR_GREEN}===  Elapsed time in seconds:{NO_COLOR} {str(elapsed_time).replace('.',',')}\n")
+    
+    print(f"\n{FR_GREEN}===  Total Alphabets per Seconds:{NO_COLOR} {alphab_per_seconds_format}\n\n")
     
 
 

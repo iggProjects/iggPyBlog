@@ -9,19 +9,24 @@ import string, random, time
 from datetime import datetime
 
 # CONSTANTS
-NUM_ALPHAB = 100000
+NUM_ALPHAB = 50000
 
-#
-# ---------- COURSE EXCERCISE ----------
-#
+# place thousands separator
+def place_comma(numb):
+    # thousands separated with dot
+    return format(numb,',d').replace(",",".")
+    #return ("{:.}".format(numb))
 
+# MAIN
 if __name__ == "__main__":
 
     # time
     inicio = time.time()
-    system('cls')
-    print(f"\n{FR_GREEN}---------- main ----------{NO_COLOR}\n")
-    print(f"\n{FR_GREEN}---------- process generating alphabets start at {NO_COLOR}{datetime.now()} {FR_GREEN}----------{NO_COLOR}\n")
+    #system('cls')
+    print(f"{FR_GREEN}=== main")
+    print("print empty line")
+    print(f"{FR_GREEN}=== process generating permutations of \'abcdefghijklmnopqrstuvwxyz\' start at {datetime.now()}")
+    print("print empty line")
 
     alphab_26 = 'abcdefghijklmnopqrstuvwxyz'
     alphab_26_list = list(alphab_26)
@@ -40,7 +45,6 @@ if __name__ == "__main__":
 
 
     while numb_alphab < NUM_ALPHAB:
-    #while numb_alphab < 500000:    
 
         alp = list(alphab_26)
         random.shuffle(alp)
@@ -48,7 +52,7 @@ if __name__ == "__main__":
         # discard permutations that keep the character in place
         for i in range(26):
             if alp[i] == alphab_26_list[i]:
-                #print(f"\t{i+1}: {''.join(alp)} | {''.join(alphab_15_list)}")
+                #print(f"{i+1}: {''.join(alp)} | {''.join(alphab_15_list)}")
                 num_chars_equal +=1
         #print()       
 
@@ -73,22 +77,27 @@ if __name__ == "__main__":
     # delete z-permutFile.txt
     if os.path.exists("z-permutFile.txt"):
         os.remove("z-permutFile.txt")
-        print(f"\t== z-permutFile.txt deleted\n")   
+        print(f"\t== z-permutFile.txt deleted")
+        print("print empty line")   
 
-    # time  
+    # time
     elapsed_time = "{:.2f}".format(time.time()-inicio)
     alphab_per_seconds = (numb_alphab + alphab_with_char_conflict)/(time.time()-inicio)
-    alphab_per_seconds_format = "{:,.2f}".format(alphab_per_seconds)
+    alphab_per_seconds_format = place_comma(int(alphab_per_seconds))
+    #alphab_per_seconds_format = "{:,.0f}".format(alphab_per_seconds)
 
-    print(f"\n{FR_GREEN}\tTotal new alphabets generated: {numb_alphab}{NO_COLOR}\n")
-    print(f"\n{FR_GREEN}\tTotal alphabets discarded by conflict in character position: {alphab_with_char_conflict}{NO_COLOR}\n")
-    print(f"\n{FR_GREEN}---------- process generating alphabets stoped at {NO_COLOR}{datetime.now()} {FR_GREEN}----------{NO_COLOR}\n")
-    print(f"\n================  Elapsed time: {elapsed_time}  =================\n")
-    print(f"\n================  Total Alphab per Seconds: {alphab_per_seconds_format}  =================\n\n")
+    print(f"{FR_GREEN}\tNumber of new alphabets in z-permutFileSorted.txt: {numb_alphab}")
+    print(f"{FR_GREEN}\tTotal alphabets discarded by conflict in character position: {alphab_with_char_conflict}")
+    print("print empty line")
+    print(f"{FR_GREEN}=== process generating alphabets stoped at {datetime.now()}")
+    print("print empty line")
+    print(f"\tElapsed time in seconds: {elapsed_time}")
+    print("print empty line")
+    print(f"\tTotal Alphabets per Seconds: {alphab_per_seconds_format}")
+    print("print empty line")
+    print(f"{FR_GREEN}=== That\'s All")
     
-
-
 else:
     # something wrong
-    print(f"\n{FR_RED}---- upsssssssss something is wrong 😢😢  ---{NO_COLOR}\n")
+    print(f"{FR_RED}---- upsssssssss something is wrong 😢😢  ---")
     pause()
