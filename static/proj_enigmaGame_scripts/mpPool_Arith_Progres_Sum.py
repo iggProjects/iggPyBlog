@@ -131,7 +131,7 @@ if __name__ == '__main__':
 	print(f"\t\tFirst 'd': {D_1}")
 	print(f"\t\tNumber of terms: {place_comma(N_TER)}")
 	print(" ")
-	print(f"\tFormula to create List of 'd': [(D_1 + 2*x) for x in range(0, N_PROGR)]")	
+	print(f"\tFormula to create List of 'd': [(Initial_D + 2 * x) for x in range(0, N_PROGR)]")	
 	#print(f"{FR_GREEN}======= d_list ======={NO_COLOR}\n{d_list}")
 	print(f"\tNumb CPU's used: {N_CPUS} | Number of artihmetic operations (aprox): {place_comma(arit_oper)}")
 	print(f"\tNumber of prints: {count_prints}")

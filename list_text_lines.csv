@@ -1,29 +1,23 @@
+green;,=== MAIN
 transparent,---
-green;,=== 'MULTIPROCESSING' started with pid: 16060
+blue;,=== Show Object Info
 transparent,---
-#cc5200;,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reading file of sub alphab strings started at: '2023-07-26 17:08:44.407606'
-black,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;First messy_alphabets[0] =&gt; pkzndjqfhrbysmvicxeaotgwul
-black,
-black,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Last messy_alphabets[50000] =&gt; ejnkzcmtslbrdhgfwvxqoaiyup
-#cc5200;,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reading file of sub alphab strings finished at: '2023-07-26 17:08:44.423458'
+blue;,Object: variable colors_str =['\\033[91m - Red' '\\033[92m - Green' '\\033[93m - Yellow' '\\033[94m - Blue' '\\033[95m - Magenta']
 transparent,---
-green;,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Original Alphabet:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a b c d e f g h i j k l m n o p q r s t u v w x y z
-green;,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Original text:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;El murcielago esta hambriento
-green;,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Encrypted text:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;zr dovnszremg zxqe tedjvszhqg
-green;,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Max Number of CPU's: 8
+black,Object elements view in matrix form (8 columns by row)
+black,"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;line: 1 ==&gt; ['\\\\033[91m - Red', '\\\\033[92m - Green', '\\\\033[93m - Yellow', '\\\\033[94m - Blue']"
+black,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;line: 2 ==&gt; ['\\\\033[95m - Magenta']
 transparent,---
-blue;,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CHECKING '50.001' ALPHABETS BEGAN AT '2023-07-26 17:08:44.423458'
+black,Object type is &lt;class 'list'&gt; and mem dir is: 2088634169536
 transparent,---
-#cc5200;,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;From Main - With Manager() as manager:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;event -&gt; &lt;threading.Event object at 0x000001913BA99870&gt;
-#cc5200;,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;From Main - With Pool(8) as pool:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;pool -&gt; &lt;multiprocessing.pool.Pool state=RUN pool_size=8&gt;
+black,Object assigned attributes and methods are:
+black,"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;line: 1 ==&gt; ['__add__', '__class__', '__class_getitem__', '__contains__', '__delattr__', '__delitem__', '__dir__', '__doc__']"
+black,"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;line: 2 ==&gt; ['__eq__', '__format__', '__ge__', '__getattribute__', '__getitem__', '__gt__', '__hash__', '__iadd__']"
+black,"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;line: 3 ==&gt; ['__imul__', '__init__', '__init_subclass__', '__iter__', '__le__', '__len__', '__lt__', '__mul__']"
+black,"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;line: 4 ==&gt; ['__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__reversed__', '__rmul__', '__setattr__']"
+black,"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;line: 5 ==&gt; ['__setitem__', '__sizeof__', '__str__', '__subclasshook__', 'append', 'clear', 'copy', 'count']"
+black,"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;line: 6 ==&gt; ['extend', 'index', 'insert', 'pop', 'remove', 'reverse', 'sort']"
 transparent,---
-#cc5200;,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;------ BINGO ------ BINGO ------ BINGO ------ BINGO ------ BINGO ------ BINGO -------
-green;,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Parent Process '16060' | Child Process '17364' ==&gt; THE SOLUTION WAS FOUND !
-green;,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Decoded text is correct: el murcielago esta hambriento
-green;,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Encrypted text: zr dovnszremg zxqe tedjvszhqg
-green;,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Correct Alphabet Decoder: e j n k z c m t s l b r d h g f w v x q o a i y u p
+black,-----------------END MOSTRAR OBJECT TYPE AND ATTRIB-METHODS-----------------
 transparent,---
-#800000;,=== ALL TASKS STOPED ===
-transparent,---
-#cc5200;,================  Elapsed time: 1.73 seconds =================
-transparent,---
+green;,---------- That's all for today ----------

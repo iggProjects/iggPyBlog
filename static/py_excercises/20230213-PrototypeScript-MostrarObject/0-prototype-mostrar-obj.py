@@ -25,17 +25,20 @@ if __name__ == "__main__":
 
     system('cls')
 
-    print(frGREEN("\n---------- main ----------\n"))
-    print(frGREEN("\n--------------- Show Object Info --------------\n"))
+    print(frGREEN("\n=== MAIN"))
+    print(frGREEN("\n=== Show Object Info"))
+    
+    print(frGREEN("\nObject: variable msg = '------- EXIT PAUSE FUNCTION COMPLETED -------'\n"))
+    msg="------- EXIT PAUSE FUNCTION COMPLETED -------\n"
     pause()
 
-    msg="------- EXIT PAUSE FUNCTION COMPLETED -------\n"
     mostrar(msg)   
     pause()
 
+    print(frGREEN("\nObject: variable colors_str =['\\033[91m - Red','\\033[92m - Green','\\033[93m - Yellow','\\033[94m - Blue','\\033[95m - Magenta']\n"))
     colors_str=['\\033[91m - Red','\\033[92m - Green','\\033[93m - Yellow','\\033[94m - Blue','\\033[95m - Magenta']
-    mostrar(colors_str)            
     pause()
+    mostrar(colors_str)    
 
     print(f"\n{FR_GREEN}---------- That's all for today 👌 ----------{NO_COLOR}\n")
 

@@ -62,12 +62,13 @@ if __name__ == "__main__":
 
     #system('cls')
 
-    print(f"{FR_GREEN}---------- MAIN ----------")
-    print(f"{FR_BLUE}--------------- Show Object Info --------------")
+    print(f"{FR_GREEN}=== MAIN")
+    print("print empty line")
+    print(f"{FR_BLUE}=== Show Object Info")
     print("print empty line")
     
-    print("colors_str = ['\\033[91m - Red','\\033[92m - Green','\\033[93m - Yellow','\\033[94m - Blue','\\033[95m - Magenta']")
-    print("print colors_str attributes")
+    print(f"{FR_BLUE}Object: variable colors_str =['\\033[91m - Red' '\\033[92m - Green' '\\033[93m - Yellow' '\\033[94m - Blue' '\\033[95m - Magenta']")
+
     colors_str=['\\033[91m - Red','\\033[92m - Green','\\033[93m - Yellow','\\033[94m - Blue','\\033[95m - Magenta']
     print("print empty line")
     mostrar(colors_str)            
