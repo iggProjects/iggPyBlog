@@ -48,14 +48,14 @@ def Enigma_scripts():
             'source_url': '',
             'section': 'Multiprocessing',
             'title': 'Use of two or more CPUs within your PC',
-            'fileDirPath': 'static/proj_enigmaGame_scripts/mpPoolManagerEnigmaRandom-vf.py',  
-            'fileDirPath1': 'static/proj_enigmaGame_scripts/mpPoolManagerEnigmaRandom-vf-1.py',  
+            'fileDirPath': 'static/proj_enigmaGame_scripts/mpPoolManagerEnigmaRandom-Alphab26.py',  
+            'fileDirPath1': 'static/proj_enigmaGame_scripts/mpPoolManagerEnigmaRandom-Alphab26-1.py',  
             
-            'homework': 'Encode a message with a "messy alphabet", and try to decode it reading 2 million permutations of the alphabet, each with the property that the permutated alphabet letter doesn\'t coincide with its position in the normal alphabet.',
+            'homework': 'Encode a message with a "messy alphabet", and try to decode it reading millions permutations of the alphabet, each with the property that the permutated alphabet letter doesn\'t coincide with its position in the normal alphabet.',
 
-            'body': '................. Multiprocessing ....................\n\n============== DETAILS NEXT WEEK ==============\n\nFor now, you can execute in console button, or download the .zip (download button) and execute .bat file in your local "downloads folder".\n\nTIP: create a folder called "py_files" inside "downloads", and move the .zip to that folder. Extract the files and run the .bat (with double click).\n\nNOTE: you must have python in the "path" of your pc, which you can check in "environment variables"',          
+            'body': 'With Multiprocessing we can use two or more CPUs units within a single computer system. It is the best approach to get the full potential from our hardware by utilizing full number of CPU cores available in our computer system.\n\n\'Manager class\' of multiprocessing module provides a way to coordinate shared information between all its users. A manager object controls a server process, which manages shared objects and allows other processes to manipulate them. In other words, managers provide a way to create data that can be shared between different processes. Following are the different properties of manager object. \n\nFor now, you can execute in console button, or download the .zip (download button) and execute .bat file in your local "downloads folder".\n\nTIP: create a folder called "py_files" inside "downloads", and move the .zip to that folder. Extract the files and run the .bat (with double click).\n\nNOTE: you must have python in the "path" of your pc, which you can check in "environment variables"',          
 
-            'code_url': '/static/proj_enigmaGame_scripts/mpPoolManagerEnigmaRandom-vf.py',  
+            'code_url': '/static/proj_enigmaGame_scripts/mpPoolManagerEnigmaRandom-Alphab26-vf.py',  
             'zip_url' : '/static/proj_enigmaGame_scripts/mpPoolManagerEnigmaRandom-vf.zip',  
             'img': '/img/icons8-consola-100.png'    
         },       

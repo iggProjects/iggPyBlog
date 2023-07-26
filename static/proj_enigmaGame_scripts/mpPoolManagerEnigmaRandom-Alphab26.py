@@ -80,15 +80,15 @@ if __name__ == '__main__':
 
     messy_alphabets = []
     #messy_alphabets.append(ALPHAB_15_TO_ENCRYPT)  
-    messy_lines = set(open('zzz-permutFileSorted.txt').readlines())
+    messy_lines = set(open('z-permutFileSorted.txt').readlines())
     for messy_str in messy_lines:
         #messy_alphabets.append(list(messy_str))
         messy_alphabets.append(messy_str)
     messy_alphabets.append(ALPHAB_TO_ENCRYPT)
     m_alp = '{:,}'.format(len(messy_alphabets)).replace(',','.')    
 
-    print(f"\t== first messy_alphabets[0] ===> {messy_alphabets[0]}")
-    print(f"\t== last messy_alphabets[{len(messy_alphabets)-1}] ===> {messy_alphabets[len(messy_alphabets)-1]}")
+    print(f"\tFirst messy_alphabets[0] ===> {messy_alphabets[0]}")
+    print(f"\tLast messy_alphabets[{len(messy_alphabets)-1}] ===> {messy_alphabets[len(messy_alphabets)-1]}")
 
     print(f'{FR_YELL}\t--- reading file process finished at "{datetime.now()}" ---{NO_COLOR}\n')  
 

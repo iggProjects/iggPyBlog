@@ -23,6 +23,7 @@ if __name__ == "__main__":
     # time
     inicio = time.time()
     #system('cls')
+    print("print empty line")
     print(f"{FR_GREEN}=== main")
     print("print empty line")
     print(f"{FR_GREEN}=== process generating permutations of \'abcdefghijklmnopqrstuvwxyz\' start at {datetime.now()}")

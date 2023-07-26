@@ -1,17 +1,29 @@
-green;,=== main
 transparent,---
-green;,=== process generating permutations of 'abcdefghijklmnopqrstuvwxyz' start at 2023-07-24 19:30:26.190004
+green;,=== 'MULTIPROCESSING' started with pid: 16060
 transparent,---
-black,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;old z-permutFileSorted.txt deleted
-black,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;== z-permutFile.txt deleted
+#cc5200;,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reading file of sub alphab strings started at: '2023-07-26 17:08:44.407606'
+black,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;First messy_alphabets[0] =&gt; pkzndjqfhrbysmvicxeaotgwul
+black,
+black,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Last messy_alphabets[50000] =&gt; ejnkzcmtslbrdhgfwvxqoaiyup
+#cc5200;,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reading file of sub alphab strings finished at: '2023-07-26 17:08:44.423458'
 transparent,---
-green;,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Number of new alphabets in z-permutFileSorted.txt: 50000
-green;,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Total alphabets discarded by conflict in character position: 86167
+green;,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Original Alphabet:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a b c d e f g h i j k l m n o p q r s t u v w x y z
+green;,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Original text:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;El murcielago esta hambriento
+green;,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Encrypted text:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;zr dovnszremg zxqe tedjvszhqg
+green;,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Max Number of CPU's: 8
 transparent,---
-green;,=== process generating alphabets stoped at 2023-07-24 19:30:33.437425
+blue;,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CHECKING '50.001' ALPHABETS BEGAN AT '2023-07-26 17:08:44.423458'
 transparent,---
-black,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Elapsed time in seconds: 7.247420787811279
+#cc5200;,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;From Main - With Manager() as manager:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;event -&gt; &lt;threading.Event object at 0x000001913BA99870&gt;
+#cc5200;,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;From Main - With Pool(8) as pool:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;pool -&gt; &lt;multiprocessing.pool.Pool state=RUN pool_size=8&gt;
 transparent,---
-black,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Total Alphabets per Seconds: 18.788
+#cc5200;,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;------ BINGO ------ BINGO ------ BINGO ------ BINGO ------ BINGO ------ BINGO -------
+green;,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Parent Process '16060' | Child Process '17364' ==&gt; THE SOLUTION WAS FOUND !
+green;,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Decoded text is correct: el murcielago esta hambriento
+green;,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Encrypted text: zr dovnszremg zxqe tedjvszhqg
+green;,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Correct Alphabet Decoder: e j n k z c m t s l b r d h g f w v x q o a i y u p
 transparent,---
-green;,=== That's All
+#800000;,=== ALL TASKS STOPED ===
+transparent,---
+#cc5200;,================  Elapsed time: 1.73 seconds =================
+transparent,---
