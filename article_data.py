@@ -52,7 +52,7 @@ def Articles():
         {
             'id': 4, 
             'title': 'Getting Started with Oracle LiveSQL.',            
-            'author': ' holowczak',
+            'author': 'Holowczak.com',
             'date_created': '03-01-2017',
             'section':'',
             'summary': 'Oracle LiveSQL is a cloud based service that provides access to an Oracle 12c database instance. This database can be used to try many of the features of an Oracle 12c database without the need to install anything on a server or local PC. LiveSQL is especially useful for learning to program Oracle databases using Structured Query Language (SQL) and PL/SQL, Oracle’s procedural language extension to SQL.',
@@ -136,9 +136,22 @@ def Articles():
 
         {
             'id': 11, 
+            'title': 'Flask vs Django: Which Python Web Framework to Use in 2023?',            
+            'author': 'Vijay Singh & Robert Johns',
+            'date_created': '31-05-2020',
+            'section':'',
+            'summary': 'When it comes to the Python programming language, most think about data tasks, whether that’s analytics, data science, Machine Learning, or AI. But there’s more than meets the eye with Python, as it’s also used with two popular web application frameworks, Flask and Django.Want the TL-DR? Sure. While they’re both open-source web frameworks that use Python, Django is a full-stack framework with batteries included, and Flask is a lightweight but extensible micro-framework.',
+            'body': '',
+            'page_url': 'https://hackr.io/blog/flask-vs-django',
+            'icon_img':'icons8-lectura-80.png'                   
+        },
+
+
+        {
+            'id': 12, 
             'title': 'Why Python is not the programming language of the future',            
             'author': 'Ari Youry',
-            'date_created': '31-05-2020',
+            'date_created': '28-03-2023',
             'section':'',
             'summary': 'Given the ubiquitous popularity of Python at the moment, it will surely take half a decade, maybe even a whole, for any of these new languages to replace it. Which of the languages it will be — Rust, Go, Julia, or a new language of the future — is hard to say at this point. But given the performance issues that are fundamental in the architecture of Python, one will inevitably take its spot.',
             'body': '',
