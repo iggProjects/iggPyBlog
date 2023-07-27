@@ -87,9 +87,11 @@ def matrix_view(obj_l_t,n_cols):
 # List Library Methods
 # search name of module to abbreviate the print info
 def library_methods(my_lib):
+   
+  my_lib2 = str(my_lib).replace("\\\\","/")
   for method in dir(my_lib):
     LIB_method  = method
-    print(f"{FR_GREEN}{str(my_lib)}.method -->{NO_COLOR} {LIB_method}")
+    print(f'{FR_GREEN}{my_lib2}.method => {NO_COLOR} {LIB_method}')
   print()  
 
 #

@@ -1,23 +1,164 @@
-green;,=== MAIN
 transparent,---
-blue;,=== Show Object Info
+blue;,=== MAIN
 transparent,---
-blue;,Object: variable colors_str =['\\033[91m - Red' '\\033[92m - Green' '\\033[93m - Yellow' '\\033[94m - Blue' '\\033[95m - Magenta']
+green;,=== list of module 'OS' methods
 transparent,---
-black,Object elements view in matrix form (8 columns by row)
-black,"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;line: 1 ==&gt; ['\\\\033[91m - Red', '\\\\033[92m - Green', '\\\\033[93m - Yellow', '\\\\033[94m - Blue']"
-black,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;line: 2 ==&gt; ['\\\\033[95m - Magenta']
+green;,&lt;module 'os' from 'C:/Python310/lib/os.py'&gt;.method =&gt;  DirEntry
+green;,&lt;module 'os' from 'C:/Python310/lib/os.py'&gt;.method =&gt;  F_OK
+green;,&lt;module 'os' from 'C:/Python310/lib/os.py'&gt;.method =&gt;  GenericAlias
+green;,&lt;module 'os' from 'C:/Python310/lib/os.py'&gt;.method =&gt;  Mapping
+green;,&lt;module 'os' from 'C:/Python310/lib/os.py'&gt;.method =&gt;  MutableMapping
+green;,&lt;module 'os' from 'C:/Python310/lib/os.py'&gt;.method =&gt;  O_APPEND
+green;,&lt;module 'os' from 'C:/Python310/lib/os.py'&gt;.method =&gt;  O_BINARY
+green;,&lt;module 'os' from 'C:/Python310/lib/os.py'&gt;.method =&gt;  O_CREAT
+green;,&lt;module 'os' from 'C:/Python310/lib/os.py'&gt;.method =&gt;  O_EXCL
+green;,&lt;module 'os' from 'C:/Python310/lib/os.py'&gt;.method =&gt;  O_NOINHERIT
+green;,&lt;module 'os' from 'C:/Python310/lib/os.py'&gt;.method =&gt;  O_RANDOM
+green;,&lt;module 'os' from 'C:/Python310/lib/os.py'&gt;.method =&gt;  O_RDONLY
+green;,&lt;module 'os' from 'C:/Python310/lib/os.py'&gt;.method =&gt;  O_RDWR
+green;,&lt;module 'os' from 'C:/Python310/lib/os.py'&gt;.method =&gt;  O_SEQUENTIAL
+green;,&lt;module 'os' from 'C:/Python310/lib/os.py'&gt;.method =&gt;  O_SHORT_LIVED
+green;,&lt;module 'os' from 'C:/Python310/lib/os.py'&gt;.method =&gt;  O_TEMPORARY
+green;,&lt;module 'os' from 'C:/Python310/lib/os.py'&gt;.method =&gt;  O_TEXT
+green;,&lt;module 'os' from 'C:/Python310/lib/os.py'&gt;.method =&gt;  O_TRUNC
+green;,&lt;module 'os' from 'C:/Python310/lib/os.py'&gt;.method =&gt;  O_WRONLY
+green;,&lt;module 'os' from 'C:/Python310/lib/os.py'&gt;.method =&gt;  P_DETACH
+green;,&lt;module 'os' from 'C:/Python310/lib/os.py'&gt;.method =&gt;  P_NOWAIT
+green;,&lt;module 'os' from 'C:/Python310/lib/os.py'&gt;.method =&gt;  P_NOWAITO
+green;,&lt;module 'os' from 'C:/Python310/lib/os.py'&gt;.method =&gt;  P_OVERLAY
+green;,&lt;module 'os' from 'C:/Python310/lib/os.py'&gt;.method =&gt;  P_WAIT
+green;,&lt;module 'os' from 'C:/Python310/lib/os.py'&gt;.method =&gt;  PathLike
+green;,&lt;module 'os' from 'C:/Python310/lib/os.py'&gt;.method =&gt;  R_OK
+green;,&lt;module 'os' from 'C:/Python310/lib/os.py'&gt;.method =&gt;  SEEK_CUR
+green;,&lt;module 'os' from 'C:/Python310/lib/os.py'&gt;.method =&gt;  SEEK_END
+green;,&lt;module 'os' from 'C:/Python310/lib/os.py'&gt;.method =&gt;  SEEK_SET
+green;,&lt;module 'os' from 'C:/Python310/lib/os.py'&gt;.method =&gt;  TMP_MAX
+green;,&lt;module 'os' from 'C:/Python310/lib/os.py'&gt;.method =&gt;  W_OK
+green;,&lt;module 'os' from 'C:/Python310/lib/os.py'&gt;.method =&gt;  X_OK
+green;,&lt;module 'os' from 'C:/Python310/lib/os.py'&gt;.method =&gt;  _AddedDllDirectory
+green;,&lt;module 'os' from 'C:/Python310/lib/os.py'&gt;.method =&gt;  _Environ
+green;,&lt;module 'os' from 'C:/Python310/lib/os.py'&gt;.method =&gt;  __all__
+green;,&lt;module 'os' from 'C:/Python310/lib/os.py'&gt;.method =&gt;  __builtins__
+green;,&lt;module 'os' from 'C:/Python310/lib/os.py'&gt;.method =&gt;  __cached__
+green;,&lt;module 'os' from 'C:/Python310/lib/os.py'&gt;.method =&gt;  __doc__
+green;,&lt;module 'os' from 'C:/Python310/lib/os.py'&gt;.method =&gt;  __file__
+green;,&lt;module 'os' from 'C:/Python310/lib/os.py'&gt;.method =&gt;  __loader__
+green;,&lt;module 'os' from 'C:/Python310/lib/os.py'&gt;.method =&gt;  __name__
+green;,&lt;module 'os' from 'C:/Python310/lib/os.py'&gt;.method =&gt;  __package__
+green;,&lt;module 'os' from 'C:/Python310/lib/os.py'&gt;.method =&gt;  __spec__
+green;,&lt;module 'os' from 'C:/Python310/lib/os.py'&gt;.method =&gt;  _check_methods
+green;,&lt;module 'os' from 'C:/Python310/lib/os.py'&gt;.method =&gt;  _execvpe
+green;,&lt;module 'os' from 'C:/Python310/lib/os.py'&gt;.method =&gt;  _exists
+green;,&lt;module 'os' from 'C:/Python310/lib/os.py'&gt;.method =&gt;  _exit
+green;,&lt;module 'os' from 'C:/Python310/lib/os.py'&gt;.method =&gt;  _fspath
+green;,&lt;module 'os' from 'C:/Python310/lib/os.py'&gt;.method =&gt;  _get_exports_list
+green;,&lt;module 'os' from 'C:/Python310/lib/os.py'&gt;.method =&gt;  _walk
+green;,&lt;module 'os' from 'C:/Python310/lib/os.py'&gt;.method =&gt;  _wrap_close
+green;,&lt;module 'os' from 'C:/Python310/lib/os.py'&gt;.method =&gt;  abc
+green;,&lt;module 'os' from 'C:/Python310/lib/os.py'&gt;.method =&gt;  abort
+green;,&lt;module 'os' from 'C:/Python310/lib/os.py'&gt;.method =&gt;  access
+green;,&lt;module 'os' from 'C:/Python310/lib/os.py'&gt;.method =&gt;  add_dll_directory
+green;,&lt;module 'os' from 'C:/Python310/lib/os.py'&gt;.method =&gt;  altsep
+green;,&lt;module 'os' from 'C:/Python310/lib/os.py'&gt;.method =&gt;  chdir
+green;,&lt;module 'os' from 'C:/Python310/lib/os.py'&gt;.method =&gt;  chmod
+green;,&lt;module 'os' from 'C:/Python310/lib/os.py'&gt;.method =&gt;  close
+green;,&lt;module 'os' from 'C:/Python310/lib/os.py'&gt;.method =&gt;  closerange
+green;,&lt;module 'os' from 'C:/Python310/lib/os.py'&gt;.method =&gt;  cpu_count
+green;,&lt;module 'os' from 'C:/Python310/lib/os.py'&gt;.method =&gt;  curdir
+green;,&lt;module 'os' from 'C:/Python310/lib/os.py'&gt;.method =&gt;  defpath
+green;,&lt;module 'os' from 'C:/Python310/lib/os.py'&gt;.method =&gt;  device_encoding
+green;,&lt;module 'os' from 'C:/Python310/lib/os.py'&gt;.method =&gt;  devnull
+green;,&lt;module 'os' from 'C:/Python310/lib/os.py'&gt;.method =&gt;  dup
+green;,&lt;module 'os' from 'C:/Python310/lib/os.py'&gt;.method =&gt;  dup2
+green;,&lt;module 'os' from 'C:/Python310/lib/os.py'&gt;.method =&gt;  environ
+green;,&lt;module 'os' from 'C:/Python310/lib/os.py'&gt;.method =&gt;  error
+green;,&lt;module 'os' from 'C:/Python310/lib/os.py'&gt;.method =&gt;  execl
+green;,&lt;module 'os' from 'C:/Python310/lib/os.py'&gt;.method =&gt;  execle
+green;,&lt;module 'os' from 'C:/Python310/lib/os.py'&gt;.method =&gt;  execlp
+green;,&lt;module 'os' from 'C:/Python310/lib/os.py'&gt;.method =&gt;  execlpe
+green;,&lt;module 'os' from 'C:/Python310/lib/os.py'&gt;.method =&gt;  execv
+green;,&lt;module 'os' from 'C:/Python310/lib/os.py'&gt;.method =&gt;  execve
+green;,&lt;module 'os' from 'C:/Python310/lib/os.py'&gt;.method =&gt;  execvp
+green;,&lt;module 'os' from 'C:/Python310/lib/os.py'&gt;.method =&gt;  execvpe
+green;,&lt;module 'os' from 'C:/Python310/lib/os.py'&gt;.method =&gt;  extsep
+green;,&lt;module 'os' from 'C:/Python310/lib/os.py'&gt;.method =&gt;  fdopen
+green;,&lt;module 'os' from 'C:/Python310/lib/os.py'&gt;.method =&gt;  fsdecode
+green;,&lt;module 'os' from 'C:/Python310/lib/os.py'&gt;.method =&gt;  fsencode
+green;,&lt;module 'os' from 'C:/Python310/lib/os.py'&gt;.method =&gt;  fspath
+green;,&lt;module 'os' from 'C:/Python310/lib/os.py'&gt;.method =&gt;  fstat
+green;,&lt;module 'os' from 'C:/Python310/lib/os.py'&gt;.method =&gt;  fsync
+green;,&lt;module 'os' from 'C:/Python310/lib/os.py'&gt;.method =&gt;  ftruncate
+green;,&lt;module 'os' from 'C:/Python310/lib/os.py'&gt;.method =&gt;  get_exec_path
+green;,&lt;module 'os' from 'C:/Python310/lib/os.py'&gt;.method =&gt;  get_handle_inheritable
+green;,&lt;module 'os' from 'C:/Python310/lib/os.py'&gt;.method =&gt;  get_inheritable
+green;,&lt;module 'os' from 'C:/Python310/lib/os.py'&gt;.method =&gt;  get_terminal_size
+green;,&lt;module 'os' from 'C:/Python310/lib/os.py'&gt;.method =&gt;  getcwd
+green;,&lt;module 'os' from 'C:/Python310/lib/os.py'&gt;.method =&gt;  getcwdb
+green;,&lt;module 'os' from 'C:/Python310/lib/os.py'&gt;.method =&gt;  getenv
+green;,&lt;module 'os' from 'C:/Python310/lib/os.py'&gt;.method =&gt;  getlogin
+green;,&lt;module 'os' from 'C:/Python310/lib/os.py'&gt;.method =&gt;  getpid
+green;,&lt;module 'os' from 'C:/Python310/lib/os.py'&gt;.method =&gt;  getppid
+green;,&lt;module 'os' from 'C:/Python310/lib/os.py'&gt;.method =&gt;  isatty
+green;,&lt;module 'os' from 'C:/Python310/lib/os.py'&gt;.method =&gt;  kill
+green;,&lt;module 'os' from 'C:/Python310/lib/os.py'&gt;.method =&gt;  linesep
+green;,&lt;module 'os' from 'C:/Python310/lib/os.py'&gt;.method =&gt;  link
+green;,&lt;module 'os' from 'C:/Python310/lib/os.py'&gt;.method =&gt;  listdir
+green;,&lt;module 'os' from 'C:/Python310/lib/os.py'&gt;.method =&gt;  lseek
+green;,&lt;module 'os' from 'C:/Python310/lib/os.py'&gt;.method =&gt;  lstat
+green;,&lt;module 'os' from 'C:/Python310/lib/os.py'&gt;.method =&gt;  makedirs
+green;,&lt;module 'os' from 'C:/Python310/lib/os.py'&gt;.method =&gt;  mkdir
+green;,&lt;module 'os' from 'C:/Python310/lib/os.py'&gt;.method =&gt;  name
+green;,&lt;module 'os' from 'C:/Python310/lib/os.py'&gt;.method =&gt;  open
+green;,&lt;module 'os' from 'C:/Python310/lib/os.py'&gt;.method =&gt;  pardir
+green;,&lt;module 'os' from 'C:/Python310/lib/os.py'&gt;.method =&gt;  path
+green;,&lt;module 'os' from 'C:/Python310/lib/os.py'&gt;.method =&gt;  pathsep
+green;,&lt;module 'os' from 'C:/Python310/lib/os.py'&gt;.method =&gt;  pipe
+green;,&lt;module 'os' from 'C:/Python310/lib/os.py'&gt;.method =&gt;  popen
+green;,&lt;module 'os' from 'C:/Python310/lib/os.py'&gt;.method =&gt;  putenv
+green;,&lt;module 'os' from 'C:/Python310/lib/os.py'&gt;.method =&gt;  read
+green;,&lt;module 'os' from 'C:/Python310/lib/os.py'&gt;.method =&gt;  readlink
+green;,&lt;module 'os' from 'C:/Python310/lib/os.py'&gt;.method =&gt;  remove
+green;,&lt;module 'os' from 'C:/Python310/lib/os.py'&gt;.method =&gt;  removedirs
+green;,&lt;module 'os' from 'C:/Python310/lib/os.py'&gt;.method =&gt;  rename
+green;,&lt;module 'os' from 'C:/Python310/lib/os.py'&gt;.method =&gt;  renames
+green;,&lt;module 'os' from 'C:/Python310/lib/os.py'&gt;.method =&gt;  replace
+green;,&lt;module 'os' from 'C:/Python310/lib/os.py'&gt;.method =&gt;  rmdir
+green;,&lt;module 'os' from 'C:/Python310/lib/os.py'&gt;.method =&gt;  scandir
+green;,&lt;module 'os' from 'C:/Python310/lib/os.py'&gt;.method =&gt;  sep
+green;,&lt;module 'os' from 'C:/Python310/lib/os.py'&gt;.method =&gt;  set_handle_inheritable
+green;,&lt;module 'os' from 'C:/Python310/lib/os.py'&gt;.method =&gt;  set_inheritable
+green;,&lt;module 'os' from 'C:/Python310/lib/os.py'&gt;.method =&gt;  spawnl
+green;,&lt;module 'os' from 'C:/Python310/lib/os.py'&gt;.method =&gt;  spawnle
+green;,&lt;module 'os' from 'C:/Python310/lib/os.py'&gt;.method =&gt;  spawnv
+green;,&lt;module 'os' from 'C:/Python310/lib/os.py'&gt;.method =&gt;  spawnve
+green;,&lt;module 'os' from 'C:/Python310/lib/os.py'&gt;.method =&gt;  st
+green;,&lt;module 'os' from 'C:/Python310/lib/os.py'&gt;.method =&gt;  startfile
+green;,&lt;module 'os' from 'C:/Python310/lib/os.py'&gt;.method =&gt;  stat
+green;,&lt;module 'os' from 'C:/Python310/lib/os.py'&gt;.method =&gt;  stat_result
+green;,&lt;module 'os' from 'C:/Python310/lib/os.py'&gt;.method =&gt;  statvfs_result
+green;,&lt;module 'os' from 'C:/Python310/lib/os.py'&gt;.method =&gt;  strerror
+green;,&lt;module 'os' from 'C:/Python310/lib/os.py'&gt;.method =&gt;  supports_bytes_environ
+green;,&lt;module 'os' from 'C:/Python310/lib/os.py'&gt;.method =&gt;  supports_dir_fd
+green;,&lt;module 'os' from 'C:/Python310/lib/os.py'&gt;.method =&gt;  supports_effective_ids
+green;,&lt;module 'os' from 'C:/Python310/lib/os.py'&gt;.method =&gt;  supports_fd
+green;,&lt;module 'os' from 'C:/Python310/lib/os.py'&gt;.method =&gt;  supports_follow_symlinks
+green;,&lt;module 'os' from 'C:/Python310/lib/os.py'&gt;.method =&gt;  symlink
+green;,&lt;module 'os' from 'C:/Python310/lib/os.py'&gt;.method =&gt;  sys
+green;,&lt;module 'os' from 'C:/Python310/lib/os.py'&gt;.method =&gt;  system
+green;,&lt;module 'os' from 'C:/Python310/lib/os.py'&gt;.method =&gt;  terminal_size
+green;,&lt;module 'os' from 'C:/Python310/lib/os.py'&gt;.method =&gt;  times
+green;,&lt;module 'os' from 'C:/Python310/lib/os.py'&gt;.method =&gt;  times_result
+green;,&lt;module 'os' from 'C:/Python310/lib/os.py'&gt;.method =&gt;  truncate
+green;,&lt;module 'os' from 'C:/Python310/lib/os.py'&gt;.method =&gt;  umask
+green;,&lt;module 'os' from 'C:/Python310/lib/os.py'&gt;.method =&gt;  uname_result
+green;,&lt;module 'os' from 'C:/Python310/lib/os.py'&gt;.method =&gt;  unlink
+green;,&lt;module 'os' from 'C:/Python310/lib/os.py'&gt;.method =&gt;  unsetenv
+green;,&lt;module 'os' from 'C:/Python310/lib/os.py'&gt;.method =&gt;  urandom
+green;,&lt;module 'os' from 'C:/Python310/lib/os.py'&gt;.method =&gt;  utime
+green;,&lt;module 'os' from 'C:/Python310/lib/os.py'&gt;.method =&gt;  waitpid
+green;,&lt;module 'os' from 'C:/Python310/lib/os.py'&gt;.method =&gt;  waitstatus_to_exitcode
+green;,&lt;module 'os' from 'C:/Python310/lib/os.py'&gt;.method =&gt;  walk
+green;,&lt;module 'os' from 'C:/Python310/lib/os.py'&gt;.method =&gt;  write
+black,
 transparent,---
-black,Object type is &lt;class 'list'&gt; and mem dir is: 2088634169536
-transparent,---
-black,Object assigned attributes and methods are:
-black,"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;line: 1 ==&gt; ['__add__', '__class__', '__class_getitem__', '__contains__', '__delattr__', '__delitem__', '__dir__', '__doc__']"
-black,"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;line: 2 ==&gt; ['__eq__', '__format__', '__ge__', '__getattribute__', '__getitem__', '__gt__', '__hash__', '__iadd__']"
-black,"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;line: 3 ==&gt; ['__imul__', '__init__', '__init_subclass__', '__iter__', '__le__', '__len__', '__lt__', '__mul__']"
-black,"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;line: 4 ==&gt; ['__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__reversed__', '__rmul__', '__setattr__']"
-black,"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;line: 5 ==&gt; ['__setitem__', '__sizeof__', '__str__', '__subclasshook__', 'append', 'clear', 'copy', 'count']"
-black,"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;line: 6 ==&gt; ['extend', 'index', 'insert', 'pop', 'remove', 'reverse', 'sort']"
-transparent,---
-black,-----------------END MOSTRAR OBJECT TYPE AND ATTRIB-METHODS-----------------
-transparent,---
-green;,---------- That's all for today ----------
+green;,=== That's all for today ===

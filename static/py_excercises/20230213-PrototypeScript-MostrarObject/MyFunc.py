@@ -73,11 +73,11 @@ def matrix_view(obj_l_t,n_cols):
     for i in  range(matrix_rows):    
       for j in range(n_cols):
         if i*n_cols+j<len(obj_l_t):
-          line.append(obj_l_t[i*n_cols+j])
+          line.append(obj_l_t[i*n_cols+j])      
       print(f"line: {i+1} --> {line}")
       line=[]  
   else:
-    print(frRED(f"\nWarning FROM matrix_view(): Object '{obj_l_t}' in not  list neither tupla !\n" )) 
+    print(frRED(f"\nWarning FROM matrix_view(): Object '{obj_l_t}' is not list neither tupla !\n" )) 
 
 #
 # SHOW LIBRARY INFO

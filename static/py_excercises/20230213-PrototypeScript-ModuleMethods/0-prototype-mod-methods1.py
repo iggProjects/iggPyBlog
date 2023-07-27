@@ -24,15 +24,16 @@ FR_MAG   = "\033[95m"
 
 if __name__ == "__main__":
 
-    print("---------- main ----------")    
-
-    print("---------- list of module 'OS' methods ----------")
-
+    print("print empty line")
+    print(f"{FR_BLUE}=== MAIN")    
+    print("print empty line")
+    print(f"{FR_GREEN}=== List of OS module methods")
+    print("print empty line")
     library_methods(os)    
- 
-    print(f"{FR_GREEN}---------- That's all for today ----------{NO_COLOR}")
+    print("print empty line")
+    print(f"{FR_GREEN}=== That's all for today ===")
 
 else:
     # something wrong
-    print("---- upsssssssss something is wrong  ----")
+    print(f"{FR_RED}---- upsssssssss something is wrong  ----")
     
