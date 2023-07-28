@@ -23,10 +23,11 @@ FR_MAG   = "\033[95m"
 
 if __name__ == "__main__":
 
-
-    print("---------- main ----------")
-    print("--------------- display the relations of class 'Comercial' --------------")
-    
+    print("print empty line")
+    print(f"{FR_BLUE}=== MAIN")
+    print("print empty line")
+    print("=== display the relations of 'Comercial' Class")
+    print("print empty line")    
 
     #  Class Hierarchies
     class SistemaNominas:
@@ -54,10 +55,10 @@ if __name__ == "__main__":
             super().__init__(id, nombre,año_ncto,dir_resid,cargo, salario)
             self.commision_ventas = commision_ventas
         
-
     relatedClasses(Comercial)
 
-    print(f"{FR_GREEN}---------- That's all for today ----------{NO_COLOR}")
+    print("print empty line")    
+    print(f"{FR_GREEN}=== That's all for today{NO_COLOR}")
 
 else:
     # something wrong

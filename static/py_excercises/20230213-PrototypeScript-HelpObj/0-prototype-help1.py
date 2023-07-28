@@ -24,17 +24,18 @@ FR_MAG   = "\033[95m"
 
 if __name__ == "__main__":
 
-
+    print("print empty line")
     print(frGREEN("---------- main ----------"))
     prBlue("---------- help for object 'list' ----------")
     print("print empty line")
 
     my_obj = [1,2,3,4,5]
-    print("my_obj = [1,2,3,4] ==> help_obj_method(my_obj)")
+    print("my_obj = [1;2;3;4;5] ==> calling help_obj_method(my_obj) in MyFunc Module")
     print("print empty line")
     help_obj_method(my_obj)
-     
+    print("print empty line") 
     print(f"{FR_GREEN}---------- That's all for today ----------{NO_COLOR}")
+    print("print empty line")
 
 else:
     # something wrong

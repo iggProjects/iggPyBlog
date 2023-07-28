@@ -382,6 +382,8 @@ def result_script_exec():
             else:
                 pass
             """
+            # Replace ',' by ';' in temp_line1[1] field for html printing effects
+            new_line = new_line.replace(',',';')
 
             #print(f"line to print: {new_line}")
             js_line = new_line
@@ -498,10 +500,11 @@ def result_script_html():
 
         if len(temp_line1) > 1:
             #print(f"{FR_GREEN}list_text_lines---> {temp_line2}")    
-            print(f"{FR_GREEN}list_text_lines---> {temp_line1[0]} | {temp_line1[1]}") 
+            print(f"{FR_GREEN}list_text_lines---> {temp_line1[0]} | {temp_line1[1]}")
             list_color_text_lines.append(temp_line1)   
         
     print("----------------------------------------------")
+
     list_lines = session['list_lines']
     print(f"{FR_YELL}.....type of var list_lines: {type(list_lines)} | length: {len(list_lines)}{NO_COLOR}")
     print(f"{FR_YELL}.....type of var list_text_lines[0]: {type(list_lines[0])} | value: {list_lines[0]}{NO_COLOR}")    

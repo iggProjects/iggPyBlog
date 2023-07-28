@@ -29,7 +29,8 @@ FR_MAG   = "\033[95m"
 
 if __name__ == "__main__":
 
-    print(f"{FR_GREEN}---------- MAIN ----------{NO_COLOR}")
+    print("print empty line")
+    print(f"{FR_GREEN}=== MAIN")
     print("print empty line")
     print(f"An experiment to check random function, simulating a 'dice'")
     print("print empty line")
@@ -39,7 +40,6 @@ if __name__ == "__main__":
     ideal_dice = {'1':ideal_perc,'2':ideal_perc,'3':ideal_perc,'4':ideal_perc,'5':ideal_perc,'6':ideal_perc}
     face_list=list(range(1,7))
     print(f"\tDICE faces: {face_list}")
-
 
     for i in range(1,21):
         iterations = 10000 * 2 * i
@@ -65,9 +65,8 @@ if __name__ == "__main__":
         # reset
         my_dice = {'1':0,'2':0,'3':0,'4':0,'5':0,'6':0}   
 
-        print("print empty line")
-
-    print(f"\t{FR_GREEN}---------- That's all for today ----------{NO_COLOR}\n")
+    print("print empty line")
+    print(f"\t{FR_GREEN}---------- That's all for today ----------")
 
 
 else:
