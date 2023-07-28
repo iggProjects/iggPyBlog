@@ -30,8 +30,11 @@ FR_MAG   = "\033[95m"
 #
 
 if __name__ == "__main__":
+
     #print(f"{Fore.RED}---------- main ----------{Style.RESET_ALL}")
-    print(f"{FR_GREEN}---------- main ----------")
+    print("print empty line")
+    print(f"{FR_GREEN}=== MAIN")
+    print("print empty line")
  
     # my code    
     myPath = os.getcwd()
@@ -39,25 +42,38 @@ if __name__ == "__main__":
     for (dirpath, dirnames, filenames) in os.walk(myPath):
         f.extend(filenames)
         break
-    print(f"{FR_GREEN}path --> {myPath}")
+    print(f"{FR_GREEN}Path: {myPath}")
+    print("print empty line")
+    print(f"{FR_GREEN}FILES IN {myPath}: ")
+    print("print empty line")
     matrix_view(f,3)
- 
-    print(f"------------------------------------------------")
+    print("print empty line")
 
     parent = os.chdir('../')
     parentPath = os.getcwd()
-    print(f"{FR_GREEN}parent path --> {parentPath}")
+    print(f"{FR_GREEN}parent path: {parentPath}")
     f = []
+    d = []
     for (dirpath, dirnames, filenames) in os.walk(parentPath):
         f.extend(filenames)
+        d.extend(dirnames)
         break
+
+    print("print empty line")
+    print(f"{FR_GREEN}DIRS IN {parentPath}: ")
+    print("print empty line")
+    matrix_view(d,3)
+    print("print empty line")
+    print(f"{FR_GREEN}FILES IN {parentPath}: ")
+    print("print empty line")
     matrix_view(f,3)
+
  
-    print(f"------------------------------------------------")
+    print(f"----------------- That's All -----------------")
 
     # Library methods info 
-    library_methods(os)
-    library_methods(platform)
+    #library_methods(os)
+    #library_methods(platform)
   
 
 else:

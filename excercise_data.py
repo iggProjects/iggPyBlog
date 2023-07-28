@@ -164,7 +164,7 @@ def Excercises():
             'section': 'Random Methods',
             'title': 'An experiment !',
             'fileDirPath': 'static/py_excercises/20230215-random-func/20230215-random_choice_experiment.py',            
-            'fileDirPath1': 'static/py_excercises/20230215-random-func/20230215-random_choice_experiment1.py',            
+            'fileDirPath1': 'static/py_excercises/20230215-random-func/20230215-random-choice-experiment1.py',            
             
             'homework': 'A short experiment to check behavior of \"random built-in function\".\n',
 

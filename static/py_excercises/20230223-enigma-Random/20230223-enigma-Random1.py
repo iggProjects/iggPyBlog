@@ -52,7 +52,8 @@ def decipher(text,alphab1,alphab2):
 
 if __name__ == "__main__":
 
-    print(f"{FR_GREEN}---------- main ----------")    
+    print("print empty line")
+    print(f"{FR_GREEN}=== MAIN")    
     print("print empty line")
     # create list of alphabet
     string.ascii_lowercase
@@ -75,7 +76,8 @@ if __name__ == "__main__":
     # call encrypt function to change original text
     encripted_text = ''    
     encrypt(my_text.casefold(),alphab,new_alphab)
-    print(frRED(f"encrypted text\n\t{encripted_text}"))    
+    print(f"{FR_RED}encrypted text\n\t{encripted_text}")    
+    #print(frRED(f"encrypted text\n\t{encripted_text}"))    
 
     # decode process
     decoded_text=''

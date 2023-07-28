@@ -36,13 +36,14 @@ if __name__ == "__main__":
     print("print empty line")
     my_dice = {'1':0,'2':0,'3':0,'4':0,'5':0,'6':0}
 
-    ideal_perc = 100 * (1/6)
+    ideal_perc = (1/6)
+    #ideal_perc = 100 * (1/6)
     ideal_dice = {'1':ideal_perc,'2':ideal_perc,'3':ideal_perc,'4':ideal_perc,'5':ideal_perc,'6':ideal_perc}
     face_list=list(range(1,7))
     print(f"\tDICE faces: {face_list}")
 
-    for i in range(1,21):
-        iterations = 10000 * 2 * i
+    for i in range(1,11):
+        iterations = 6000 * 2 * i
         #print("my_value: " + my_value)
         for i in range(iterations):        
             face = random.choice(face_list)
@@ -52,7 +53,8 @@ if __name__ == "__main__":
         print(f"\t{FR_GREEN}Experiment result with {iterations:,d} dice rolls:")
         for key in my_dice:
             #face_perc = "{:.4f}".format(100*(dice[key]/iterations))
-            ideal_dice = int( (ideal_perc/100) * iterations)
+            ideal_dice = int( ideal_perc * iterations )
+            #ideal_dice = int( (ideal_perc/100) * iterations )
             face_diff = my_dice[key] - ideal_dice
             face_diff_perc = "{:.4f}".format(100 * (face_diff / iterations))
             #face_diff = str(face_diff).center(5)
