@@ -372,7 +372,7 @@ def Excercises():
             'date_created': '08-03-2023',
             'source_url': 'OOP',
             'section': 'Working with Classes',
-            'title': '\"Nominas\" Class as example',
+            'title': 'Nominas Class as example',
             'fileDirPath': 'static/py_excercises/20230308-classes-nominas/20230308-classes-Nominas.py',            
             'fileDirPath1': 'static/py_excercises/20230308-classes-nominas/20230308-classes-Nominas1.py',            
             
