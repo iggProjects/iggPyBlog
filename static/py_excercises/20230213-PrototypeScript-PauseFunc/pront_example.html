@@ -1,0 +1,65 @@
+<!-- https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_prompt -->
+
+<!DOCTYPE html>
+<html>
+<body style="margin: auto; margin-top:30px; text-align: center; font-size: 16px; ">
+
+<h1>The Window Object</h1>
+<h2>The prompt() Method</h2>
+
+<p>Click the button to execute the prompt box and subsequent alert.</p>
+
+<button onclick="inputData('Please enter a number, between 1 and 3')">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+   
+function inputData(msg) {
+
+  let answer = prompt(msg, 1);
+
+  /*
+   check if 'cancel' button was clicked
+        https://stackoverflow.com/questions/20009105/how-can-you-tell-when-user-clicked-cancel-from-a-javascript-prompt-with-a-defa
+        http://www.javascripter.net/faq/canceled.htm
+        https://www.codecademy.com/forum_questions/53ba8ab7548c35a5c7000ade#:~:text=To%20detect%20the%20Cancel%20button,from%20the%20prompt()%20function.&text=response%20will%20be%20null%20on,false%2C%20as%20does%2C%20null%20.
+  */
+
+  if ( !answer ) {
+     // bye bye
+  } else {
+
+    alert("typeof(answer): " + typeof(answer))
+    //alert("typeof(answer): " + typeof(answer) + " | typeof(parseInt(answer)): " + typeof(parseInt(answer)))
+    alert("parseInt(answer): " + parseInt(answer))  
+
+    if ( isNaN(parseInt(answer)) ) {
+
+        inputData("Please remember that you have to enter a natural number between 1 and 3 !!!")    
+
+    } else {
+
+        ans = parseInt(answer)
+    
+        if (ans === 1) {
+            alert("your answer was: " + ans)
+        }
+        else if (ans === 2) {
+            alert("your answer was: " + ans)
+        }
+        else if (ans === 3) {
+            alert("your answer was: " + ans)
+        }
+        else {
+            alert("your answer was out of interval: " + ans)
+        }
+    }
+}
+
+}
+
+</script>
+
+</body>
+</html>
