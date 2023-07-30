@@ -8,7 +8,8 @@ THIS SCRIPT IS FOR..................
 from MyFunc import *
 from MyColors import *
 import math
-from os import  system
+import os
+from os import system
 
 # CONSTANTS
 # Colors
@@ -26,15 +27,18 @@ FR_MAG   = "\033[95m"
 if __name__ == "__main__":
 
     system('cls')
-    print(f"\n{FR_GREEN}---------- main ----------{NO_COLOR}\n")
-    pause()
+    print(f"\n{FR_BLUE}---------- MAIN ----------{NO_COLOR}\n")
 
     #
     # MY CODE
     #
 
+    cwd = os.getcwd()
+    print(f"\ncwd: {cwd}\n")
+
     # read file "agatha.txt"
-    f = open("agatha.txt","r")
+    file_path = os.path.join(cwd,'static\py_excercises\\20230301-files_Read_write\z-agatha.txt')
+    f = open(file_path,'r')
     #f = open(agatha.txt,"r")
     lines = f.readlines()
 
@@ -46,7 +50,7 @@ if __name__ == "__main__":
     f.close()
 
     # create file copy agathaBkup.txt
-    fBkup = open("agathaBackup.txt", "w")
+    fBkup = open(os.path.join(cwd,'static\py_excercises\\20230301-files_Read_write\z-agathaBackup.txt'), 'w')
 
     # write list in copy file
     for line in agathaLines:
@@ -55,8 +59,8 @@ if __name__ == "__main__":
     fBkup.close()
 
     # reading backup file
-    f = open("agathaBackup.txt","r")
-    print(f"\n{FR_YELL}\tprinting backup file: {NO_COLOR}{f.name}\n")
+    f = open('static\py_excercises\\20230301-files_Read_write\z-agathaBackup.txt','r')
+    print(f"\n{FR_YELL}\tPrinting 'z-agatha' backup file{NO_COLOR}\n\n\t(relative path: {f.name})\n")
 
     # read lines
     lines = f.readlines()

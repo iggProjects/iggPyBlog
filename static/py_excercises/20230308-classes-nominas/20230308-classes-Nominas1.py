@@ -44,7 +44,8 @@ class SistemaNominas:
     def calculo_nomina(self, empleados):
         for empleado in empleados:
             nomina_emp = '{:,.2f}'.format(empleado.calculo_nomina()).replace(',','.')
-            print(f"{FR_GREEN}\t{empleado.nombre} ({empleado.id}) | cargo '{empleado.cargo}'{NO_COLOR}\n\t\tpago: {nomina_emp} euros\n")            
+            print(f"{FR_GREEN}\t\t{empleado.nombre} ({empleado.id}) | cargo '{empleado.cargo}'")
+            print(f"\t\t\tImporte: {nomina_emp} euros")
 
 class Empleado:    
     def __init__(self, id, nombre, año_ncto, dir_resid, cargo):
@@ -74,7 +75,8 @@ class Comercial(SalarioEmpleado):
 
 if __name__ == "__main__":
     
-    print(f"{FR_BLUE}---------- MAIN ----------")  
+    print("print empty line")
+    print(f"{FR_BLUE}===== MAIN =====")  
     print("print empty line")  
 
     # ------------------- Nominas excercise ------------------
@@ -88,29 +90,31 @@ if __name__ == "__main__":
     Comerciales_empresa.append(Comercial(4, 'Che','1980','Bilbo','ventas empresas grandes',2500, 250,))
     Comerciales_empresa.append(Comercial(5, 'Oihana','1985','New York','staff marketing',3500, 500))
 
-    print(f'{FR_GREEN}======= Calculando Nomina General ========')
+    print(f'\t{FR_BLUE}======= Calculando Nomina General ========')
     print("print empty line")
 
     corrida_nomina = SistemaNominas()    
 
-    print(f"{FR_BLUE}\t=== Grupo Oficinas ===")
+    print(f"{FR_BLUE}\t\t=== Grupo Oficinas ===")
     corrida_nomina.calculo_nomina(Empleados_empresa)
-
-    print(f"{FR_BLUE}\t=== Grupo Comerciales ===")
+    print("print empty line")
+    print(f"{FR_BLUE}\t\t=== Grupo Comerciales ===")
     corrida_nomina.calculo_nomina(Comerciales_empresa)
 
     print("print empty line")
-    print(f"{FR_GREEN}======= Fin Corrida Nomina Empresa =======")   
+    print(f"\t{FR_BLUE}======= Fin Corrida Nomina Empresa =======")   
     
     print("print empty line")
-    print(f"{FR_BLUE}See related classes for \"Comercial\" object")     
+    
     # relatedClasses(Comercial)
-
-    print(f"\t{FR_BLUE}----- analysis of  \"classes related\" with class \"{Comercial}\" -----\n")
-    print("print empty line")
+    print(f"\t{FR_BLUE}=== Analysis of related classes for {Comercial} ===")
+    
     for clas_rel in Comercial.__mro__:
         print(f"{FR_GREEN}\t\trelated clas --> {clas_rel}\n")
-    print(f"\t----- end analysis -----\n")    
+    print("print empty line")
+
+    print(f"{FR_BLUE}===== That's All =====")
+    print("print empty line")    
 
 
 else:

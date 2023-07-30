@@ -27,33 +27,39 @@ if __name__ == "__main__":
 
     import os
 
-    system('cls')
-    print(f"{FR_GREEN}---------- main ----------")
-
+    #system('cls')
+    print("print empty line")
+    print(f"{FR_BLUE}=== MAIN")
+    print("print empty line")
     base_dir = os.path.dirname(os.getcwd())
     print(f"base dir: {base_dir}")
+    print("print empty line")
         
     #file = open("z-fileRepeatedLines.txt","r")
     file = open("static\py_excercises\\20230301-DelRepeatedLinesAndSort\z-fileRepeatedLines.txt")
-    print(f"{FR_GREEN}\tRead and print '{file.name}'")
+    print(f"{FR_GREEN}Read and print '{file.name}'")
     # read lines
     lines = file.readlines()
     # print lines of backup file    
     for line in lines:  
-        print(f"\t\t{line}")
+        print(f"\t{line}")
     file.close()
+    print("print empty line")
 
-    print(f"{FR_GREEN}\tRead 'file z-fileRepeatedLines.txt' with 'uniqlines = set('z-fileRepeatedLines.txt').readlines'")
-    uniqlines = set(open('z-fileRepeatedLines.txt').readlines())
-    print(f"\tuniqlines before: {uniqlines}")
-
-    print(f"{FR_GREEN}\tSort \"uniqlines\" with sorted(uniqlines)")
-    uniqlines = sorted(uniqlines)
-
+    print(f"{FR_GREEN}Read file 'z-fileRepeatedLines.txt' with command <uniqlines = set('z-fileRepeatedLines.txt').readlines>")
+    uniqlines = set(open('static\py_excercises\\20230301-DelRepeatedLinesAndSort\z-fileRepeatedLines.txt').readlines())
+    uniqlines_bef = str(uniqlines).replace(',',';').replace('\\n','')
     print(f"\tuniqlines type is {type(uniqlines)}")
-    print(f"\tuniqlines after: {uniqlines}")
+    print(f"\tuniqlines before: {uniqlines_bef}")
+    print("print empty line")
 
-    print(f"{FR_GREEN}\tWrite List \"uniqlines\" in file \"z-fileWithOutRepetitionLines.txt\"")
-    open('z-fileWithOutRepetitionLines.txt', 'w').writelines(uniqlines)
+    print(f"{FR_GREEN}Sort 'uniqlines' with sorted(uniqlines)")
+    uniqlines = sorted(uniqlines)
+    uniqlines_aft = str(uniqlines).replace(',',';').replace('\\n','')
+    print(f"\tuniqlines after: {uniqlines_aft}")
+    print("print empty line")
+
+    print(f"{FR_GREEN}\tCheck sorted file 'z-fileWithOutRepetitionLines.txt'")
+    open('static\py_excercises\\20230301-DelRepeatedLinesAndSort\z-fileWithOutRepetitionLines.txt', 'w').writelines(uniqlines)
     print(f"{NO_COLOR}")
 

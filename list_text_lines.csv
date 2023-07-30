@@ -1,31 +1,33 @@
 transparent,---
-green;,=== MAIN
+blue;,===== MAIN =====
 transparent,---
-green;,Path: C:\\ML_Project\\NazarethCourse2023\\iggPyBlog
+blue;,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;======= Calculando Nomina General ========
 transparent,---
-green;,FILES IN C:\\ML_Project\\NazarethCourse2023\\iggPyBlog: 
+blue;,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=== Grupo Oficinas ===
+green;,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Inaki (1) | cargo 'programador html'
+black,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Importe: 1.500.00 euros
+green;,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Xabier (2) | cargo 'programador java'
+black,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Importe: 1.700.00 euros
+green;,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pedro (3) | cargo 'programador python'
+black,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Importe: 2.000.00 euros
 transparent,---
-black,line: 1 ==&gt; ['.gitignore'; '01_LG-ExploracionMatrices_copy.py'; '20230422-flask_app.py']
-black,line: 2 ==&gt; ['article_data.py'; 'EnigmaGame_data.py'; 'errors-html-exc1-enigma.txt']
-black,line: 3 ==&gt; ['excercise_data.py'; 'flask_app-20230505'; 'flask_app-20230509']
-black,line: 4 ==&gt; ['flask_app.py'; 'foods-old.db'; 'foods.db']
-black,line: 5 ==&gt; ['git-commands.txt'; 'LifeGame_data.py'; 'list_JS_lines.txt']
-black,line: 6 ==&gt; ['list_text_lines.csv'; 'list_text_lines1.csv'; 'MyColors.py']
-black,line: 7 ==&gt; ['MyFunc.py'; 'openCmdLine.py'; 'README.md']
-black,line: 8 ==&gt; ['requirements.old'; 'requirements.txt'; 'z-20230720-LargeFileProblem.txt']
-black,line: 9 ==&gt; ['z-old_app.py'; 'z-permutFileSorted.txt'; 'z-progressBarExample_1.py']
-black,line: 10 ==&gt; ['z-progressBarExample_2.py'; 'z-progressBarExample_3.py'; 'z-progressBarExample_4.py']
-black,line: 11 ==&gt; ['z-timer.py'; 'z-ToDo-20230726.txt'; 'z-worker.py']
-black,line: 12 ==&gt; ['zz-bitakora-EnigmaGame.txt'; 'zz-bitakora.txt']
+blue;,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=== Grupo Comerciales ===
+green;,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Che (4) | cargo 'ventas empresas grandes'
+black,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Importe: 2.750.00 euros
+green;,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Oihana (5) | cargo 'staff marketing'
+black,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Importe: 4.000.00 euros
 transparent,---
-green;,parent path: C:\\ML_Project\\NazarethCourse2023
+blue;,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;======= Fin Corrida Nomina Empresa =======
 transparent,---
-green;,DIRS IN C:\\ML_Project\\NazarethCourse2023: 
+blue;,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=== Analysis of related classes for &lt;class '__main__.Comercial'&gt; ===
+green;,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;related clas ==&gt; &lt;class '__main__.Comercial'&gt;
+black,
+green;,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;related clas ==&gt; &lt;class '__main__.SalarioEmpleado'&gt;
+black,
+green;,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;related clas ==&gt; &lt;class '__main__.Empleado'&gt;
+black,
+green;,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;related clas ==&gt; &lt;class 'object'&gt;
+black,
 transparent,---
-black,line: 1 ==&gt; ['iggConsoleFiles'; 'iggPyBlog'; 'iggPyBlog-20230413-18.33']
-black,line: 2 ==&gt; ['iggPyBlog-20230721-largeFileProblem'; 'myPyBlog'; 'myPyWeb']
-black,line: 3 ==&gt; ['Python-Nazareth-2023'; 'pythonAW-emails']
+blue;,===== That's All =====
 transparent,---
-green;,FILES IN C:\\ML_Project\\NazarethCourse2023: 
-transparent,---
-black,----------------- That's All -----------------

@@ -168,7 +168,7 @@ def Excercises():
             
             'homework': 'A short experiment to check behavior of \"random built-in function\".\n',
 
-            'body': 'Native functions for random tests must respect the law of large numbers. Suppose we have a 6-sided die (1-6), and we roll it 10,000 times. what should the results be for each face? Well, let\'s try the random function that outputs a natural number between 1 and 6.\n\nDefine three variables:\n\tmy_dice = {\'1\':0,\'2\':0,\'3\':0,\'4\':0,\'5\':0,\'6\':0},\n\tideal_dice with 1/6 probability,\n\tand face_list=list(range(1,7)) to simulate numbre 1,2,3,4,5,6.\n\nThen make a loop to simulate 20 series of dice rolls each of one with increasing iterations according the rule iterations = 10000 * 2 * i, where i is the particular series called from main loop.',          
+            'body': 'Native functions for random tests must respect the law of large numbers. Suppose we have a 6-sided die (1-6), and we roll it 10,000 times. what should the results be for each face? Well, let\'s try the random function that outputs a natural number between 1 and 6.\n\nDefine three variables:\n\tmy_dice = {\'1\':0,\'2\':0,\'3\':0,\'4\':0,\'5\':0,\'6\':0},\n\tideal_dice with 1/6 probability,\n\tand face_list=list(range(1,7)) to simulate numbre 1,2,3,4,5,6.\n\nThen make a loop to simulate 20 series of dice rolls each of one with increasing iterations according the rule iterations = 6000 * 2 * i, where i is the particular series called from main loop.',          
 
             'code_url':'../static/py_excercises/20230215-random-func/20230215-random_choice_experiment.py',
             'zip_url': '../static/py_excercises/20230215-random-func/20230215-random-func.zip',
@@ -338,7 +338,7 @@ def Excercises():
             'fileDirPath': 'static/py_excercises/20230301-DelRepeatedLinesAndSort/20230301-DelRepeatedLinesAndSort.py',            
             'fileDirPath1': 'static/py_excercises/20230301-DelRepeatedLinesAndSort/20230301-DelRepeatedLinesAndSort1.py',            
             
-            'homework': 'Use SET to read a file and after delete repeated lines and sort the set to write in new file.',
+            'homework': 'Use <SET> command to read a file and after delete repeated lines and <SORTED> command to sort the set to write in new file.',
 
             'body': 'Sequence of basic steps:\n\n\t1.- The central command is uniqlines = set(open(\'z-fileRepeatedLines.txt\').readlines()).\n\t2.- Then sort the set with uniqlines = sorted(uniqlines),\n\t3.- conclude with open(\'z-fileWithOutRepetitionLines.txt\', \'w\').writelines(uniqlines)\n\nSets are used to store multiple items in a single variable. Set is one of 4 built-in data types in Python used to store collections of data, the other 3 are List, Tuple, and Dictionary, all with different qualities and usage.\nA set is a collection which is unordered, unchangeable*, and unindexed.',          
 

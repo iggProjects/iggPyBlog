@@ -8,6 +8,7 @@ THIS SCRIPT IS FOR..................
 from MyFunc import *
 from MyColors import *
 import math
+import os
 from os import  system
 
 # CONSTANTS
@@ -25,17 +26,30 @@ FR_MAG   = "\033[95m"
 
 if __name__ == "__main__":
 
-    system('cls')
-    print(f"{FR_GREEN}---------- main ----------")
-    
+    #system('cls')
+    print("print empty line")
+    print(f"{FR_BLUE}=== MAIN")
+    print("print empty line")
+
+    print(f"{FR_GREEN}\tReading 'z-agatha' file to make a backup file{NO_COLOR}")
+    print("print empty line")
 
     #
     # MY CODE
     #
 
     # read file "agatha.txt"
-    f = open("agatha.txt","r")
-    #f = open(agatha.txt,"r")
+    cwd = os.getcwd()
+    print(f"\tbase dir: {cwd}")
+    print("print empty line")
+
+    # read file "agatha.txt"
+    file_path = os.path.join(cwd,'static\py_excercises\\20230301-files_Read_write\z-agatha.txt')
+    print(f"\tz-agatha.txt relative path: 'static\py_excercises\\20230301-files_Read_write\z-agatha.txt'")
+    print("print empty line")
+
+
+    f = open(file_path,'r')
     lines = f.readlines()
 
     # save info in list of lines "agathaLines"
@@ -46,7 +60,7 @@ if __name__ == "__main__":
     f.close()
 
     # create file copy agathaBkup.txt
-    fBkup = open("agathaBackup.txt", "w")
+    fBkup = open(os.path.join(cwd,'static\py_excercises\\20230301-files_Read_write\z-agathaBackup.txt'), 'w')
 
     # write list in copy file
     for line in agathaLines:
@@ -55,22 +69,22 @@ if __name__ == "__main__":
     fBkup.close()
 
     # reading backup file
-    f = open("agathaBackup.txt","r")
-    print(f"{FR_YELL}\tprinting backup file: {f.name}")
-
+    f = open('static\py_excercises\\20230301-files_Read_write\z-agathaBackup.txt','r')
+    print(f"{FR_GREEN}\tPrinting 'z-agatha' backup file{NO_COLOR}")
+    print(f"\t(relative path: {f.name})\n")    
+    print("print empty line")
+    
     # read lines
     lines = f.readlines()
 
     # print lines of backup file
-    print("\033[34m")
+    
     for line in lines:  
-        print(f"\t{FR_GREEN}{line}")
+        print(f"\t{FR_GREEN}{line}")    
 
     f.close()
     # return default color 
-    print(f"")
-
-    
+    print("print empty line")
 
 else:
     # something wrong
