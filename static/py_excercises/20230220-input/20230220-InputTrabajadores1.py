@@ -19,8 +19,8 @@ FR_MAG   = "\033[95m"
 # Y,N answer function
 def Y_N():
     global moreData    
-    ans=str(input("Do you want to continue including workers? (Y,N): "))
-    print(f"\t\tAnswer -> {ans}")  
+    ans=str(input("\n\tDo you want to continue including workers? (Y,N): "))
+    print(f"\t\tAnswer -> {ans}\n")  
     if ans == 'N':                        
         moreData=False
     elif ans == 'Y':                                
@@ -32,19 +32,19 @@ def Y_N():
 def input_worker_age():
     global moreData,workers,worker    
     try:
-        worker_age=int(input(frRED("Please indicate \"age\" (integer between 18-65): ")))
+        worker_age=int(input(frRED("\n\tPlease indicate \"age\" (integer between 18-65): ")))
         if worker_age in range(18,65):
-            print(frRED(f"\t\tage entered -> {worker_age}")) # next version: redirect a log file for answer
+            print(frRED(f"\t\tage -> {worker_age}")) # next version: redirect a log file for answer
             # DB code or use var type dictionary to print data session
             worker["age"] = worker_age
             workers.append(worker)
             # ask for continue (Y,N)
             Y_N()
         else:
-            frRED("Please indicate \"age\" (integer between 18-65): ") 
+            frRED("\n\tPlease indicate \"age\" (integer between 18-65): ") 
             input_worker_age()    
     except ValueError:
-        frRED("Please indicate \"age\" (integer between 18-65): ")
+        frRED("\nPlease indicate \"age\" (integer between 18-65): ")
         #print('please indicate age (integer between 18-65)')
         input_worker_age()
 
@@ -54,7 +54,7 @@ def input_worker_data():
     # first try for worker name
     try:        
         #name_worker=str(input("\033[94mPlease enter your name: \033[00m"))               
-        worker_name = str(input(frGREEN("Please enter your name: ")))     
+        worker_name = str(input(frGREEN("\tPlease enter your name: ")))     
         # check characters
         if re.match("^[A-Za-zñáéíóúü]*$", worker_name):      
             print(frGREEN(f"\t\tname -> {worker_name}"))  # next version: redirect a log file for answer
@@ -64,15 +64,16 @@ def input_worker_data():
             input_worker_age()            
     except ValueError:
         # print('Please enter your name')
-        frGREEN("Please enter your name: ")
+        frGREEN("\tPlease enter your name: ")
         input_worker_data()
 
 # MAIN
 if __name__ == "__main__":
 
-    print(f"{FR_GREEN}---------- main ----------{NO_COLOR}")
-    pause()
     system('cls')
+    print(f"\n{FR_BLUE}=== MAIN ==={NO_COLOR}\n")
+    print(f"{FR_GREEN}=== INPUT WORKERS TABLE\n")
+    #pause()    
     
     # global variables
     moreData=True
@@ -83,44 +84,44 @@ if __name__ == "__main__":
     while moreData:    
         input_worker_data()     
 
-    print("Session terminated by user")        
-    print(f"Workers is {type(workers)}:\t{workers}")
+    print(f"\n\t{FR_YELL}Session terminated by user{NO_COLOR}\n")        
+    print(f"\tVar Workers type: {type(workers)} | Values: {workers}\n")
     for i in range(len(workers)):
-        print(f"{workers[i]}, and data type is: {type(workers[i])}")
-        print(f"\tworker {i}:")
+        print(f"\tworker {i}: - {workers[i]}, type: {type(workers[i])}")        
         for key,value in workers[i].items():
             print(f"\t\t{key}: {value}")
+    print()        
 
     # ------------------------------------------------
-    #          SHOW VARS CHARACTERISTICS 
+    #        OPTIONAL: SHOW VARS CHARACTERISTICS 
     #------------------------------------------------ 
 
-    yesss=True   
-    while yesss:
-        _msg = "Do you want to see attributes for a specific VAR ? (Y,N): "
+    yesss=True
+    _msg = "\tDo you want to see attributes for a specific VAR ? (Y,N): "   
+    while yesss:        
         answer=Y_N_2(_msg)        
         if answer in ['Y','N']: yesss = False
 
     if answer == 'Y':            
         # add question for name of var.....
-        _what_var = str(input("What VAR ? "))
-        try: 
+        _what_var = str(input("\tWhat VAR ? "))
+        try:
             _what_var
             _my_Obj_name = eval(_what_var)
-            print(f"{FR_GREEN}---------- INFO FOR OBJECT '{_my_Obj_name}' ----------{NO_COLOR}")
+            print(f"\n{FR_GREEN}---------- INFO FOR OBJECT '{_my_Obj_name}' ----------{NO_COLOR}\n")
             pause()
             # my objects functions  
             mostrar(_my_Obj_name)       
 
         except NameError:
-            print(f"\t{FR_RED}---- Var '{_what_var}' doesn't exits ----")
-            print(f"{FR_GREEN}--------------- That's all for today ---------------{NO_COLOR}")
+            print(f"\n\t{FR_RED}---- Var '{_what_var}' doesn't exits ----")
+            print(f"\n{FR_GREEN}--------------- That's all for today ---------------{NO_COLOR}\n")
             #_my_Obj_name = None 
 
     else:
-        print(f"{FR_GREEN}---------- That's all for today ----------{NO_COLOR}")
+        print(f"\n{FR_GREEN}---------- That's all for today ----------{NO_COLOR}\n")
 
 else:
     # something wrong
-    print(f"{FR_RED}---- upsssssssss something is wrong 😢😢  ---{NO_COLOR}")
+    print(f"\n{FR_RED}---- upsssssssss something is wrong 😢😢  ---{NO_COLOR}\n")
     pause()
