@@ -296,14 +296,14 @@ def Excercises():
             'source_url': '',
             'section': 'OS module',
             'title': 'Import function in a script that is in a parallel folder.',
-            'fileDirPath': 'static/py_excercises/20230227-OS-Examples-2/20230227-ImportModuleFromParallel_folder.py',            
-            'fileDirPath1': 'static/py_excercises/20230227-OS-Examples-2/20230227-ImportModuleFromParallel_folder1.py',            
+            'fileDirPath': 'static/py_excercises/20230227-OS-Examples-2/py_script/20230227-ImportModuleFromParallel_folder.py',            
+            'fileDirPath1': 'static/py_excercises/20230227-OS-Examples-2/py_script/20230227-ImportModuleFromParallel_folder1.py',            
             
             'homework': 'Import function in a script that is in a parallel folder.',
 
             'body': '====== NEXT WEEK ======',          
 
-            'code_url':'../static/py_excercises/20230227-OS-Examples-2/20230227-ImportModuleFromParallel_folder.py',
+            'code_url':'../static/py_excercises/20230227-OS-Examples-2/py_script/20230227-ImportModuleFromParallel_folder.py',
             'zip_url': '../static/py_excercises/20230227-OS-Examples-2/',
             'img': '/img/icons8-consola-100.png'    
         },
