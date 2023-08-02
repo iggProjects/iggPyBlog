@@ -5,6 +5,10 @@ igg_venv/
 z*permutFile*.*
 static/proj_enigmaGame_scripts/z*permutFile*.*
 
+# files with the background result
+list*.txt
+list*.csv 
+
 # Build and Release Folders
 bin-debug/
 bin-release/
