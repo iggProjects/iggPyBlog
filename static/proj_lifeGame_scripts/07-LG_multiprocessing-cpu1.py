@@ -201,7 +201,7 @@ def exec_games(list_g,n_cpu):
 
 if __name__ == '__main__':
 
-	os.system('cls')
+	#os.system('cls')
 
 	# multiprocessing.cpu_count()
 
@@ -216,7 +216,7 @@ if __name__ == '__main__':
 	# parameter for multiporcessing call
 	list_games = [(x+1) for x in range(0,nSets)]
 
-	print(f"COMMENT:=====Starting Life Game Series=====")
+	print(f"COMMENT:===== Life Game Series =====")
 	print(f"COMMENT:.....NumberSetsfor-4-simultaneous'Life_Game_Matrix':{len(list_games)}||Iterations-for-each-game:{NITER}||number-of-cpu's-participating:{nCPU}")
 	print(f"COMMENT:.....matrices-{NX}x{NY}")
 	print(f"COMMENT:.....Printing-only-for-first-process")

@@ -90,6 +90,7 @@
                     //console.log('matrix ===> 0,1,9 ' + matrix)          
 
                 } else if ( lines[i].toLowerCase().includes("comment") ) {
+                    // lines[i]=lines[i].replace('COMMENT','&nbsp;&nbsp;&nbsp;&nbsp;')
                     matrix.push(lines[i]);
                     comment = true;
 
@@ -106,6 +107,11 @@
             list_matrices.push(matrix)   
 
         } else {
+            /* replace 'COMMENT' with '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'  */
+            for ( i=0; i<lines_col_txt.length; i++) { 
+                lines_col_txt[i][1]=lines_col_txt[i][1].replace('COMMENT:','&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;===> ')
+                //console.log('lines_col_txt[' + i + '][1]: ' + lines_col_txt[i][1])
+            }
             list_matrices.push(lines_col_txt);
         }    
 
