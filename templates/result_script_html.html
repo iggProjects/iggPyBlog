@@ -34,6 +34,25 @@
             return span_line;
         }
 
+        /* <span> for '1' */
+        function span_ones_2(line){
+            span_line="";
+            
+            for ( j=0; j<line.length; j++ ){
+                if (line[j] == 0) {
+                    span_line += "<span class='span0'>0</span>";
+                } else if (line[j] == 1) {
+                    span_line += "<span class='span1'>1</span>";
+                } else {
+                    span_line += "<span class='span9'>" + line[j] + "</span>";
+                }
+            }
+            // console.log("=== FROM span_ones, length of span_line: " + span_line.length); 
+            // console.log("=== FROM span_ones, span_line: " + span_line); 
+            return span_line;
+        }
+
+
         // read server data JS as array
         var lines = {{ list_JS_lines | tojson }};
         console.log('type of lines[0] var: ' + typeof(lines[0]));
@@ -50,7 +69,7 @@
         div_matrix_html = "";
         list_matrices = [];
         matrix = [];
-        comment = false;
+        comment = false;        
 
         if ( lines[0].toLowerCase().includes("matriz") || lines[0].toLowerCase().includes("iter") || lines[0].toLowerCase().includes("starting")) {
                  
@@ -108,11 +127,19 @@
 
         } else {
             /* replace 'COMMENT' with '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'  */
-            for ( i=0; i<lines_col_txt.length; i++) { 
-                lines_col_txt[i][1]=lines_col_txt[i][1].replace('COMMENT:','&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;===> ')
+            for ( i=0; i<lines_col_txt.length; i++) {
+                /*
+                if ( lines_col_txt[i][1][0] == 0 || lines_col_txt[i][1][0] == 1 || lines_col_txt[i][1][0] == 9 ) {
+                    lines_col_txt[i][1] = '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' +  lines_col_txt[i][1]
+                }
+                */
+                lines_col_txt[i][1]=lines_col_txt[i][1].replace('COMMENT:','COMMENT:&nbsp;&nbsp;')
+                //lines_col_txt[i][1]=lines_col_txt[i][1].replace('COMMENT:','&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;===> ')
                 //console.log('lines_col_txt[' + i + '][1]: ' + lines_col_txt[i][1])
             }
+
             list_matrices.push(lines_col_txt);
+            document.getElementById("div_matrix").style.backgroundColor = "#b3ffd9";
         }    
 
         console.log('list_matrices===> ' + list_matrices.length)
@@ -124,7 +151,6 @@
         div_html = "";
         matrix = [];
         //const words= ['w1111111','w222','w333','w444','w1111111','w222','w333','w1111111','w222','w333','w1111111','w222','w333'];
-
 
         blank_line =[]
         iter = setInterval(print_html_MATRIX,500);
@@ -151,8 +177,11 @@
                     div_html += "<p class='p_result'>&nbsp;&nbsp;&nbsp;&nbsp;</p>";    
                 } else {
                     // console.log('==> matrix[l]' + matrix[l])
-                    div_html += "<p class='p_result' style='text-align: left; color: " + matrix[l][0]  + "'>" + matrix[l][1] + "</p>";
-                    
+                    if ( matrix[l][1][0] == 0 || matrix[l][1][0] == 1 || matrix[l][1][0] == 9 ) {
+                        div_html += "<p class='p_result'>" + span_ones_2(matrix[l][1]) + "</p>";    
+                    } else {
+                        div_html += "<p class='p_result' style='text-align: left; color: " + matrix[l][0]  + "'>" + matrix[l][1] + "</p>";
+                    }
                 }  
             }
             // document.getElementById("test").innerHTML = words[k];
