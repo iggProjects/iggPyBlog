@@ -43,8 +43,12 @@
                     span_line += "<span class='span0'>0</span>";
                 } else if (line[j] == 1) {
                     span_line += "<span class='span1'>1</span>";
+                } else if (line[j] == 'x') {
+                    span_line += "<span class='span9'>&nbsp;&nbsp;</span>";
+                } else if (line[j] == '9') {
+                    span_line += "<span class='span9'>9</span>";   
                 } else {
-                    span_line += "<span class='span9'>" + line[j] + "</span>";
+                    span_line += "<span class='span9'>?</span>";
                 }
             }
             // console.log("=== FROM span_ones, length of span_line: " + span_line.length); 
@@ -177,8 +181,11 @@
                     div_html += "<p class='p_result'>&nbsp;&nbsp;&nbsp;&nbsp;</p>";    
                 } else {
                     // console.log('==> matrix[l]' + matrix[l])
-                    if ( matrix[l][1][0] == 0 || matrix[l][1][0] == 1 || matrix[l][1][0] == 9 ) {
+                    if ( ( matrix[l][1][0] == 0 || matrix[l][1][0] == 1 || matrix[l][1][0] == 9 ) && matrix[l][1][1] != '|' ) {
                         div_html += "<p class='p_result'>" + span_ones_2(matrix[l][1]) + "</p>";    
+                    } else if ( matrix[l][1][0] == '-' ) {
+                        div_html += "<p class='p_result' style='height:3px; color:transparent;'>" + matrix[l][1] + "</p>";
+                        // div_html += "<p class='p_result' style='color: " + matrix[l][0]  + "'>" + matrix[l][1] + "</p>";
                     } else {
                         div_html += "<p class='p_result' style='text-align: left; color: " + matrix[l][0]  + "'>" + matrix[l][1] + "</p>";
                     }
@@ -192,6 +199,7 @@
                 clearInterval(iter);
             }
         }
+
 
 /*
         // Print matrix in html page 

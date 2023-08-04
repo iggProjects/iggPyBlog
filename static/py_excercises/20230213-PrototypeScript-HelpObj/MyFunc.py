@@ -179,7 +179,8 @@ def ver_elementos(obj, todo=True):
           pause()
 
 def help_obj_method(obj):
-    print(help(type(obj)))    
+    help(type(obj))    
+    #print(help(type(obj)))    
 
 def desc_obj_method(obj,todo=True):
     
