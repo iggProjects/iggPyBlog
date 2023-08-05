@@ -212,6 +212,8 @@
             /* Printing line by line with small delay*/
             iter = setInterval(print_html_LINE,100);
 
+            /*  change height attribute of getElementById("div_matrix") */
+
             function print_html_LINE() {
                 
                 document.getElementById("div_matrix").innerHTML = "";
@@ -227,15 +229,6 @@
                     clearInterval(iter);
                 }
             }
-
-            
-            
-            
-            //document.getElementById("div_matrix").innerHTML = "one list of text lines: " + total_lines;
-
-
-
-
                 
         } else {
             // UPSSSSSSSS SOMTHING WRONG !!!
