@@ -160,91 +160,69 @@
 
         /* CHECK IF ''list_matrices.length' TO DEFINE 'setInterval' option */
 
-        if ( k_max > 1 ) {  // background response must be work like list of number matrices 
 
-            iter = setInterval(print_html_MATRIX,500);
+        iter = setInterval(print_html_MATRIX,500);
 
-            function print_html_MATRIX() {
-                div_html =  "";
-                document.getElementById("div_matrix").innerHTML = "";
-                matrix = list_matrices[k];     
-                // console.log("=== list_matrices[k]" + list_matrices[k])       
-                for ( var l=0; l < matrix.length; l++ ) {
-                    //console.log(' ===> matrix line ' + l + ' --> ' + matrix[l])
-                    if ( matrix[l][0] == 'M' || matrix[l][0] == 'I' ) {  
-                        div_html += "<br><p class='p_result' style='color:yellow;'>" + matrix[l] + "</p>";
-                    
-                    } else if ( matrix[l][0] == 0 || matrix[l][0] == 1) {
-                        div_html += "<p class='p_result'>" + span_ones(matrix[l]) + "</p>";
-
-                    } else if ( matrix[l][0] == 9 ) {
-                        /*
-                        for (m=0; m < matrix[l].length; m++) {
-                            blank_line+="&nbsp;";
-                        } 
-                        */   
-                        div_html += "<p class='p_result'>&nbsp;&nbsp;&nbsp;&nbsp;</p>";    
-                    } else {
-                        // console.log('==> matrix[l]' + matrix[l])
-                        if ( ( matrix[l][1][0] == 0 || matrix[l][1][0] == 1 || matrix[l][1][0] == 9 ) && matrix[l][1][1] != '|' ) {
-                            div_html += "<p class='p_result'>" + span_ones_2(matrix[l][1]) + "</p>";    
-                        } else if ( matrix[l][1][0] == '-' ) {
-                            div_html += "<p class='p_result' style='height:3px; color:transparent;'>" + matrix[l][1] + "</p>";
-                            // div_html += "<p class='p_result' style='color: " + matrix[l][0]  + "'>" + matrix[l][1] + "</p>";
-                        } else {
-                            div_html += "<p class='p_result' style='text-align: left; color: " + matrix[l][0]  + "'>" + matrix[l][1] + "</p>";
-                        }
-                    }  
-                }
-
-                // document.getElementById("test").innerHTML = words[k];
-                document.getElementById("div_matrix").innerHTML = div_html;
-                k++;
-                // console.log('k is: ' + k + ' | k_max is: ' + k_max);
-                if ( k >= k_max ) {                     
-                    clearInterval(iter);
-                }
-            }
-
-        } else if ( k_max ==1 ) {   // background response must be work like list of text lines 
-
-            //total_lines= list_matrices[0].length
-            /* Printing line by line with small delay*/
-            iter = setInterval(print_html_LINES,100);
-
-            function print_html_LINES() {
-                //div_html =  "";
-                document.getElementById("div_matrix").innerHTML = "";
-                // matrix = list_matrices[k];     
-                console.log("=== list_matrices[0]" + list_matrices[0])   
-
+        function print_html_MATRIX() {
+            div_html =  "";
+            document.getElementById("div_matrix").innerHTML = "";
+            matrix = list_matrices[k];     
+            // console.log("=== list_matrices[k]" + list_matrices[k])       
+            for ( var l=0; l < matrix.length; l++ ) {
                 //console.log(' ===> matrix line ' + l + ' --> ' + matrix[l])
-                div_html += "<p class='p_result' style='text-align: left; color: " + list_matrices[0][k][0]  + "'>" + list_matrices[0][k][1] + "</p>";
- 
-                document.getElementById("div_matrix").innerHTML = div_html;
-                k++;
-                // console.log('k is: ' + k + ' | k_max is: ' + k_max);
-                if ( k >= list_matrices[0].length ) {                     
-                    clearInterval(iter);
-                }
-            }
-
-            
-            
-            
-            //document.getElementById("div_matrix").innerHTML = "one list of text lines: " + total_lines;
-
-
-
-
+                if ( matrix[l][0] == 'M' || matrix[l][0] == 'I' ) {  
+                    div_html += "<br><p class='p_result' style='color:yellow;'>" + matrix[l] + "</p>";
                 
-        } else {
-            // UPSSSSSSSS SOMTHING WRONG !!!
+                } else if ( matrix[l][0] == 0 || matrix[l][0] == 1) {
+                    div_html += "<p class='p_result'>" + span_ones(matrix[l]) + "</p>";
+
+                } else if ( matrix[l][0] == 9 ) {
+                    /*
+                    for (m=0; m < matrix[l].length; m++) {
+                        blank_line+="&nbsp;";
+                    } 
+                    */   
+                    div_html += "<p class='p_result'>&nbsp;&nbsp;&nbsp;&nbsp;</p>";    
+                } else {
+                    // console.log('==> matrix[l]' + matrix[l])
+                    if ( ( matrix[l][1][0] == 0 || matrix[l][1][0] == 1 || matrix[l][1][0] == 9 ) && matrix[l][1][1] != '|' ) {
+                        div_html += "<p class='p_result'>" + span_ones_2(matrix[l][1]) + "</p>";    
+                    } else if ( matrix[l][1][0] == '-' ) {
+                        div_html += "<p class='p_result' style='height:3px; color:transparent;'>" + matrix[l][1] + "</p>";
+                        // div_html += "<p class='p_result' style='color: " + matrix[l][0]  + "'>" + matrix[l][1] + "</p>";
+                    } else {
+                        div_html += "<p class='p_result' style='text-align: left; color: " + matrix[l][0]  + "'>" + matrix[l][1] + "</p>";
+                    }
+                }  
+            }
+            // document.getElementById("test").innerHTML = words[k];
+            document.getElementById("div_matrix").innerHTML = div_html;
+            k++;
+            // console.log('k is: ' + k + ' | k_max is: ' + k_max);
+            if ( k >= k_max ) {                     
+                clearInterval(iter);
+            }
         }
 
-    
 
-
+/*
+        // Print matrix in html page 
+        function print_html_matrix(mat) {
+            // console.log('from function, mat ===> ' + mat)                
+            div_html = "";            
+            for ( l=0; l < mat.length; l++ ) {
+                // console.log(' ===> matrix line ' + l + ' --> ' + mat[l])
+                if ( mat[l][0] == 'M' || mat[l][0] == 'I' ) {
+                    div_html += "<br><p class='p_result' style='color:yellow;'>" + mat[l] + "</p>";
+                
+                } else if ( mat[l][0] == 0 || mat[l][0] == 1) { 
+                    div_html += "<p class='p_result'>" + span_ones(mat[l]) + "</p>";
+                }   
+            }            
+            // document.getElementById("div_matrix").innerHTML = div_html;
+            return div_html            
+        }
+*/        
         
     </script>
 
