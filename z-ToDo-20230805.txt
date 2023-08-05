@@ -1,45 +1,13 @@
+WARNIGNS AND ERRORS LOGS
 
 EXCERCISES
- numb -- ToDo
-
--  2.-   pause --> html: mensaje | console mens
-
--  3.-   mostrar obj
-	       - agregar info del objeto en Description
-         - check script of mostrar in html case
-         
-- 10.-   Input example  
-          - HTML console: Msg to html button "case not working with input"
-          - Flask Console: check  
-
-- 11.-   parameter for html button in blank ! 
-         - make msg in result_script_exec
-         - fill info in excercise_data
-
-- 12.-   - fill info in excercise_data
-         - msg for result_script_exec
-
-- 14.-   - fill info for html button  (position )
-
-- 15.-   - fill info
-
-- 16.-   parallel folder --> DO IT   	
-
-- 17.-   Page 43 - 47 --> DO IT
-
-- 18.-   Correct Files path, add info in excercise_data
-
-- 19.-   Correct Files path, add info in excercise_data
-
+  - SEE EXCEL
 
 LIFE GAME
-
--  0.- fill info data in all excercises
-
+  -  FILL info data in all excercises
 
 ENIGMA
--  1.- Input to ask for numbre of CPU's
-
+-  1.- Input to ask for numbre of CPU's  ???
 
 ACTUALIZAR EN PYTHON_AW
 

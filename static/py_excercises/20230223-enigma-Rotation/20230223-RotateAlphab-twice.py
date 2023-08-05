@@ -40,4 +40,4 @@ pause()
 orig_alphab = alphab_01[-posit1:] + alphab_01[:-posit1]
  
 # Printing after right rotate
-print (f"\n{FR_GREEN}First rotated alphabet list after right inverse rotate (back twice to original){NO_COLOR}\n\t{str(orig_alphab).replace(',','')}\n")
+print (f"\n{FR_GREEN}Rotate back twice to return to the original alphabet{NO_COLOR}\n\t{str(orig_alphab).replace(',','')}\n")

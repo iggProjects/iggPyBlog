@@ -1,15 +1,15 @@
 BITAKORA  iggwebnz.eu.pythonanywhere.com
 
-igg.git.h@g @gittut....@  
-https://eu.pythonanywhere.com/login/ @n.20..N.@
+igg.git.h@g @gittu.....@  
+
+https://eu.pythonanywhere.com/login/  | igg.git.h@ | @n.20..N.@
     - bash console: https://eu.pythonanywhere.com/user/iggWebNz/consoles/373990/
 
-jo.gainzarain@aulanz.net nz2223Nz
+nazareth user: jo.gainzarain@aulanz.net  | nz2223Nz
 
 WINDOWS 10
     - cmd line to see Admin ==> Ctr  + Shift + Esc 
         - CPU performance 
-
 
 
 STILL TO DO !!!
