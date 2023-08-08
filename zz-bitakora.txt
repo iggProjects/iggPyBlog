@@ -11,6 +11,19 @@ WINDOWS 10
     - cmd line to see Admin ==> Ctr  + Shift + Esc 
         - CPU performance 
 
+Pointer in scroll to end of tag
+    - https://stackoverflow.com/questions/18614301/keep-overflow-div-scrolled-to-bottom-unless-user-scrolls-up
+    - https://css-tricks.com/books/greatest-css-tricks/pin-scrolling-to-bottom/
+    - https://codepen.io/chriscoyier/pen/bGbeBdp
+
+LOG FILES
+    - https://stackoverflow.com/questions/2513479/redirect-prints-to-log-file
+    - https://stackoverflow.com/questions/71897916/how-to-redirect-all-error-messages-to-logger
+    - https://docs.python.org/3/howto/logging.html
+    - https://flask.palletsprojects.com/en/1.1.x/logging/
+    - https://www.geeksforgeeks.org/python-flask-redirect-and-errors/
+    - https://www.geeksforgeeks.org/how-to-log-a-python-exception/
+
 
 STILL TO DO !!!
 
