@@ -79,12 +79,14 @@ body {
     function appendChild() {
       
       document.getElementById("div_messages").scrollIntoView(false);  
+      //document.getElementById("div_messages").lastChild.offsetTop;
       let msg = document.createElement('div');
 
       msg.className = 'message';
       msg.innerText = messages[i];
       //msg.innerText = randomMessage();
       scroller.insertBefore(msg, anchor);
+      
       i++;
       if ( i >= messages.length ) { 
         clearInterval(iter);
