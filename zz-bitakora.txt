@@ -15,6 +15,7 @@ Pointer in scroll to end of tag
     - https://stackoverflow.com/questions/18614301/keep-overflow-div-scrolled-to-bottom-unless-user-scrolls-up
     - https://css-tricks.com/books/greatest-css-tricks/pin-scrolling-to-bottom/
     - https://codepen.io/chriscoyier/pen/bGbeBdp
+    - https://stackoverflow.com/questions/270612/scroll-to-bottom-of-div
 
 LOG FILES
     - https://stackoverflow.com/questions/2513479/redirect-prints-to-log-file
