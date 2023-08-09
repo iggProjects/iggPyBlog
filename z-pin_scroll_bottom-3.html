@@ -144,11 +144,12 @@ let messages = [
     //msg.innerText = randomMessage();
     scroller.insertBefore(msg, anchor);
     i++;
-    if ( i >= 20 ) { 
+    if ( i >= 40 ) { 
       clearInterval(iter);
     }      
   }
 
+  const targetNode_Parent = document.getElementById("div_msg");
   const targetNode = document.getElementById("scroller");
   const config = { childList: true };
 
@@ -156,7 +157,7 @@ let messages = [
     for (let mutation of mutationsList) {
       if (mutation.type === "childList") {
         console.log('scrollHeight: ' + document.getElementById("div_msg").scrollHeight)        
-        document.getElementById("div_msg").scrollTo(0, targetNode.scrollHeight);
+        targetNode_Parent.scrollTo(0, targetNode.scrollHeight);
         //window.scrollTo(0, document.body.scrollHeight);
       }
     }
