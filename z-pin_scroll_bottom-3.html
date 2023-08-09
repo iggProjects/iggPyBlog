@@ -14,14 +14,14 @@ h1 { text-align: center; }
 
 .container {
   width:80%;  
-  /* height:500px; */
+  height:500px;
   margin: auto;
   margin-top: 50px;
   text-align: center;
   border:10px solid gray;
 }
 
-#div_msg {overflow: auto;}
+#div_msg {overflow-y: scroll;}
 
 .message {
   padding: 0.5em;
@@ -140,32 +140,33 @@ let messages = [
     //document.getElementById("div_messages").scrollIntoView(false);  
     let msg = document.createElement("div");
     msg.className = "message";
-    msg.innerText = messages[i];
+    msg.innerText = (i+1) + ": " + messages[i];
     //msg.innerText = randomMessage();
     scroller.insertBefore(msg, anchor);
     i++;
-    if ( i >= messages.length ) { 
+    if ( i >= 20 ) { 
       clearInterval(iter);
     }      
   }
 
-  i=0;
-  iter=setInterval(appendChild, 200);
-  //const parent_Node = document.getElementById("div_msg");
   const targetNode = document.getElementById("scroller");
   const config = { childList: true };
+
   const callback = function (mutationsList, observer) {
     for (let mutation of mutationsList) {
       if (mutation.type === "childList") {
         console.log('scrollHeight: ' + document.getElementById("div_msg").scrollHeight)        
+        document.getElementById("div_msg").scrollTo(0, targetNode.scrollHeight);
         //window.scrollTo(0, document.body.scrollHeight);
-        window.scrollTo(0, document.body.scrollHeight);
       }
     }
   };
 
   const observer = new MutationObserver(callback);
   observer.observe(targetNode, config);    
+
+  i=0;
+  iter=setInterval(appendChild, 200);
 
 </script>
     
