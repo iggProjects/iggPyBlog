@@ -1,0 +1,161 @@
+<!--  Example from https://stackoverflow.com/questions/11715646/scroll-automatically-to-the-bottom-of-the-page -->
+
+<!doctype html>
+<html>
+<head>
+
+<style>
+body {
+  font-family: system-ui, sans-serif;
+  background-color: #7fdbff;  
+}
+
+h1 { text-align: center; }
+h2 { text-align: center; }
+
+.container {
+  width:80%;  
+  /* height:500px; */
+  margin: auto;
+  margin-top: 50px;
+  text-align: center;
+  border:10px solid gray;
+}
+
+#div_msg {overflow: auto;}
+
+.message {
+  padding: 0.5em;
+  border-radius: 1em;
+  margin: 0.5em;
+  line-height: 1.1em;
+  background-color: white;
+}
+
+#demo{ 
+  margin: auto;
+  padding: 3px;
+  padding-left: 10px;
+  display:flex;                     /* key 1 */
+  flex-direction:column-reverse;    /* key 2 */
+  overflow-y:scroll;
+  width:650px; 
+  height:250px;
+  border:3px solid black; 
+}
+
+</style>
+
+</head>    
+
+<body>
+<h1>STYLING SCROLL PIN TO BOTTOM</h1>   
+
+<h1>Autoscrolling demo:&#x1f43e;</h1>
+<br>
+<div id='demo'></div>
+
+<script>
+
+let messages = [
+    "I wondered why the baseball was getting bigger. Then it hit me.",
+    "Police were called to a day care, where a three-year-old was resisting a rest.",
+    "Did you hear about the guy whose whole left side was cut off? He’s all right now.",
+    "The roundest knight at King Arthur’s round table was Sir Cumference.",
+    "To write with a broken pencil is pointless.",
+    "When fish are in schools they sometimes take debate.",
+    "The short fortune teller who escaped from prison was a small medium at large.",
+    "A thief who stole a calendar… got twelve months.",
+    "A thief fell and broke his leg in wet cement. He became a hardened criminal.",
+    "Thieves who steal corn from a garden could be charged with stalking.",
+    "When the smog lifts in Los Angeles , U. C. L. A.",
+    "The math professor went crazy with the blackboard. He did a number on it.",
+    "A will is a dead giveaway.",
+    "Time flies like an arrow; fruit flies like a banana.",
+    "A backward poet writes inverse.",
+    "In a democracy it’s your vote that counts; in feudalism, it’s your Count that votes.",
+    "A chicken crossing the road: poultry in motion.",
+    "If you don’t pay your exorcist you can get repossessed.",
+    "With her marriage she got a new name and a dress.",
+    "Show me a piano falling down a mine shaft and I’ll show you A-flat miner.",
+    "When a clock is hungry it goes back four seconds.",
+    "The guy who fell onto an upholstery machine was fully recovered.",
+    "A grenade fell onto a kitchen floor in France and resulted in Linoleum Blownapart.",
+    "You are stuck with your debt if you can’t budge it.",
+    "Local Area Network in Australia : The LAN down under.",
+    "He broke into song because he couldn’t find the key.",
+    "I wondered why the baseball was getting bigger. Then it hit me.",
+    "Police were called to a day care, where a three-year-old was resisting a rest.",
+    "Did you hear about the guy whose whole left side was cut off? He’s all right now.",
+    "The roundest knight at King Arthur’s round table was Sir Cumference.",
+    "To write with a broken pencil is pointless.",
+    "When fish are in schools they sometimes take debate.",
+    "The short fortune teller who escaped from prison was a small medium at large.",
+    "A thief who stole a calendar… got twelve months.",
+    "A thief fell and broke his leg in wet cement. He became a hardened criminal.",
+    "Thieves who steal corn from a garden could be charged with stalking.",
+    "When the smog lifts in Los Angeles , U. C. L. A.",
+    "The math professor went crazy with the blackboard. He did a number on it.",
+    "A will is a dead giveaway.",
+    "Time flies like an arrow; fruit flies like a banana.",
+    "A backward poet writes inverse.",
+    "In a democracy it’s your vote that counts; in feudalism, it’s your Count that votes.",
+    "A chicken crossing the road: poultry in motion.",
+    "If you don’t pay your exorcist you can get repossessed.",
+    "With her marriage she got a new name and a dress.",
+    "Show me a piano falling down a mine shaft and I’ll show you A-flat miner.",
+    "When a clock is hungry it goes back four seconds.",
+    "The guy who fell onto an upholstery machine was fully recovered.",
+    "A grenade fell onto a kitchen floor in France and resulted in Linoleum Blownapart.",
+    "You are stuck with your debt if you can’t budge it.",
+    "Local Area Network in Australia : The LAN down under.",
+    "He broke into song because he couldn’t find the key.",
+    "I wondered why the baseball was getting bigger. Then it hit me.",
+    "Police were called to a day care, where a three-year-old was resisting a rest.",
+    "Did you hear about the guy whose whole left side was cut off? He’s all right now.",
+    "The roundest knight at King Arthur’s round table was Sir Cumference.",
+    "To write with a broken pencil is pointless.",
+    "When fish are in schools they sometimes take debate.",
+    "The short fortune teller who escaped from prison was a small medium at large.",
+    "A thief who stole a calendar… got twelve months.",
+    "A thief fell and broke his leg in wet cement. He became a hardened criminal.",
+    "Thieves who steal corn from a garden could be charged with stalking.",
+    "When the smog lifts in Los Angeles , U. C. L. A.",
+    "The math professor went crazy with the blackboard. He did a number on it.",
+    "A will is a dead giveaway.",
+    "Time flies like an arrow; fruit flies like a banana.",
+    "A backward poet writes inverse.",
+    "In a democracy it’s your vote that counts; in feudalism, it’s your Count that votes.",
+    "A chicken crossing the road: poultry in motion.",
+    "If you don’t pay your exorcist you can get repossessed.",
+    "With her marriage she got a new name and a dress.",
+    "Show me a piano falling down a mine shaft and I’ll show you A-flat miner.",
+    "When a clock is hungry it goes back four seconds.",
+    "The guy who fell onto an upholstery machine was fully recovered.",
+    "A grenade fell onto a kitchen floor in France and resulted in Linoleum Blownapart.",
+    "You are stuck with your debt if you can’t budge it.",
+    "Local Area Network in Australia : The LAN down under.",
+    "He broke into song because he couldn’t find the key.",
+    "A calendar’s days are numbered."
+  ];
+
+  //foo = "Lorem Ipsum & foo in bar or blah ! on and";
+  //foo=foo.split(" ");
+  //setInterval(function(){demo.innerHTML+=foo[i++%foo.length]+' '},200)
+
+  var i=0; 
+  demo=document.getElementById("demo");
+  function my_messages(l) {
+    demo.innerHTML += l + ": " + messages[l] + "<br>";
+    if ( i >= 30 ) { 
+      clearInterval(iter); 
+      demo.innerHTML += "<br>Thats All<br><br>";
+    }      
+  } 
+
+  iter = setInterval(function(){ i++; my_messages(i); },200)
+
+</script>
+    
+</body>
+</html>
