@@ -80,6 +80,7 @@
         #msgOverLay { display: none; position: fixed; top: 0px; left: 0px; background-color: #00F; opacity: .3; width: 100%;  z-index: 1; }
         #msgBox { 
             margin:auto;
+            margin-top: 6%;
             padding:3px;	
             width: 320px;
             height: auto;
@@ -87,15 +88,15 @@
             position: fixed;
             background-color: white;                        
             border-radius: 10px;
-            box-shadow: 0 0 0 .8em blue;
+            box-shadow: 0 0 0 .8em #990000;
             left:35%;
             z-index: 10;
             font-family: "Arial",  sans-serif;
         }
-        #msgBox #msgBoxHead { height:20px; margin-top:2px; background-color:green; border-radius: 10px; padding: 2px; color:white; font-size: 14px; text-align: center; }
+        #msgBox #msgBoxHead { height:22px; margin-top:2px; background-color:rgb(73, 73, 251); border-radius: 10px; padding: 2px; color:white; font-size: 14px; text-align: center; }
         #msgBox #msgBoxBody { margin: 10px; text-align:center; color: black; font-size: 15px; }
-        #msgBox #msgBoxFoot  { margin-top:15px; height:40px; text-align: right; }
-        #msgBox #msgBoxFoot button { margin-top:3px; margin-right: 10px; width:60px; height:30px; border: 3px solid #acacfd; color:blue; border-radius: 10px; font-size: 15px; }
+        #msgBox #msgBoxFoot  { margin-top:2px; height:20px; text-align: right; }
+        #msgBox #msgBoxFoot button { margin-top:2px; margin-right: 10px; width:60px; height:20px; border: 3px solid #acacfd; color:blue; border-radius: 10px; font-size: 15px; }
 
         [data-title]:hover:after {
             opacity: 1;
@@ -144,7 +145,7 @@
             <div id = "msgBoxBody"></div>	
             <div id = "msgBoxFoot"></div>    
     </div>
-   <div class="container" style="width:90%;">  
+    <div class="container" style="width:90%;">  
         {% block body%} 
         
         {% endblock%}
@@ -165,10 +166,10 @@
                 msgOverLay.style.height = winH + "px" ;            
                 msgBox.style.left = ( winW / 2 ) - ( 320 * .5 ) + "px";
                 msgBox.style.top = "50px";
-                msgBox.style.minHeight = "80px";
+                msgBox.style.minHeight = "50px";
                 msgBox.style.display = "block";
                 document.getElementById( 'msgBoxHead' ).innerHTML = '<p><strong>' + msg_H + '</strong></p>';  
-                document.getElementById( 'msgBoxBody' ).innerHTML = '<p> ' + msg_B + ' </p><br><p>Your HOST is ' + location.hostname + ' </p>';  
+                document.getElementById( 'msgBoxBody' ).innerHTML = '<p> ' + msg_B + ' </p><p>Your HOST is ' + location.hostname + ' </p>';
                 // document.getElementById( 'msgBoxFoot' ).innerHTML = '<button onclick = "my_msg_window.ok()">OK</button>' ;  
             }
 

@@ -1,28 +1,26 @@
-PIN TO BOTTOM IN DIV  ✔✔ 😎
 
 COURSE MATERIAL ARTICLE
 
-WARNIGNS AND ERRORS LOGS
+ LOGS: WARNIGNS, ERRORS, MESSAGES
 
 EXCERCISES
   - SEE EXCEL
   - input example
 
 LIFE GAME
-  -  FILL info data in all excercises
+  - FILL info data in all excercises
+  - If the matrices are equal, stop the process
 
 ENIGMA
-  -  if equal matrices --> STOP
-  -  Input to ask for numbre of CPU's  ???
-  -  Permutation and one rotation
+  - if equal matrices --> STOP
+  - Input to ask for numbre of CPU's  ???
+  - Permutation and one rotation
 
 **********************************************************
 
 TO IMPROVE
 
 - final check of writing logic in flask_app (matrix vs comment)
-
-- game of life: If the matrices are equal, stop the process
 
 - result_script_html.html -> review JS 
   - Case LifeGame ex 7: JS function ... print lines (<p>) with delay. possible ✔✔  😎 
@@ -61,8 +59,10 @@ ACTUALIZAR EN PYTHON_AW
 
 **********************************************************
 
+
 CSS 
-  - text effects in title  ✔✔ 
+  - PIN TO BOTTOM IN DIV  ✔✔ 😎
+  - text effects in title  ✔✔ 😎 
       - https://stackoverflow.com/questions/17472440/styling-html-title-attribute-using-css
   - Hover Effects
     - on button zoom
