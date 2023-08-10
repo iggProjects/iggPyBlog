@@ -256,11 +256,15 @@
                 // document.getElementById("div_matrix").scrollIntoView(false);
                 let p_tag_html = document.createElement("p");
                 p_tag_html.className = "p_result";
+                let col = list_matrices[0][k][0].replace(';','') 
+                /*
                 if ( list_matrices[0][k][0] != 'green;' && list_matrices[0][k][0] != 'blue;') {
                     p_tag_html.style.color = list_matrices[0][k][0];
                 } else {
                     p_tag_html.style.color = 'blue';
                 }
+                */
+                p_tag_html.style.color = col;
                 p_tag_html.style.textAlign = 'left';
                 p_tag_html.innerHTML = list_matrices[0][k][1];
                 //p_tag_html.innerText = list_matrices[0][k][1];
