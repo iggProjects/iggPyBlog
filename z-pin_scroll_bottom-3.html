@@ -21,7 +21,7 @@ h1 { text-align: center; }
   border:10px solid gray;
 }
 
-#div_msg {overflow-y: scroll;}
+#div_matrix {overflow-y: scroll;}
 
 .message {
   padding: 0.5em;
@@ -38,7 +38,7 @@ h1 { text-align: center; }
 <body>
 <h1>STYLING SCROLL PIN TO BOTTOM</h1>   
 
-<div id="div_msg" class="container">
+<div id="div_matrix" class="container">
     <div id="scroller" style="width: 80%; margin:auto; margin-top:5px; margin-bottom:5px; border: 1px solid blue;">
         <!-- new content dynamically inserted here -->
         <div id="anchor" style="height: 10px; margin:10px; background-color: green;"></div>
@@ -149,7 +149,7 @@ let messages = [
     }      
   }
 
-  const targetNode_Parent = document.getElementById("div_msg");
+  const targetNode_Parent = document.getElementById("div_matrix");
   const targetNode = document.getElementById("scroller");
   const config = { childList: true };
 

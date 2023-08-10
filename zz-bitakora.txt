@@ -17,6 +17,9 @@ Pointer in scroll to end of tag
     - https://codepen.io/chriscoyier/pen/bGbeBdp
     - https://stackoverflow.com/questions/270612/scroll-to-bottom-of-div
 
+JS insertBefore
+    - https://stackoverflow.com/questions/31590625/uncaught-typeerror-failed-to-execute-insertbefore-on-node-parameter-1-is-n    
+
 LOG FILES
     - https://stackoverflow.com/questions/2513479/redirect-prints-to-log-file
     - https://stackoverflow.com/questions/71897916/how-to-redirect-all-error-messages-to-logger
