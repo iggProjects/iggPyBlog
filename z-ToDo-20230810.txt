@@ -1,13 +1,43 @@
+PIN TO BOTTOM IN DIV  ✔✔ 😎
+
+COURSE MATERIAL ARTICLE
+
 WARNIGNS AND ERRORS LOGS
 
 EXCERCISES
   - SEE EXCEL
+  - input example
 
 LIFE GAME
   -  FILL info data in all excercises
 
 ENIGMA
--  1.- Input to ask for numbre of CPU's  ???
+  -  if equal matrices --> STOP
+  -  Input to ask for numbre of CPU's  ???
+  -  Permutation and one rotation
+
+**********************************************************
+
+TO IMPROVE
+
+- final check of writing logic in flask_app (matrix vs comment)
+
+- game of life: If the matrices are equal, stop the process
+
+- result_script_html.html -> review JS 
+  - Case LifeGame ex 7: JS function ... print lines (<p>) with delay. possible ✔✔  😎 
+
+- FADING Effects to exit from alert window
+        - https://codepen.io/thebabydino/pen/MWYJdNY
+        - https://www.geeksforgeeks.org/image-transition-with-fading-effect-using-javascript/
+
+- COOKIES modal
+
+- responsive: check for table size 
+
+- WRITE MSG & WARNINGS & ERRORS IN LOG FILES
+
+**********************************************************
 
 ACTUALIZAR EN PYTHON_AW
 
@@ -29,29 +59,7 @@ ACTUALIZAR EN PYTHON_AW
 
 - cookies-modal files
 
-
-==============================================================================================
-
-TO IMPROVE
-
-- game of life: If the matrices are equal, stop the process
-
-- how to simulate python "input"
-
-- result_script_html.html -> review JS 
-  - Case LifeGame ex 7: JS function ... print lines (<p>) with delay. possible ???
-
-- FADING Effects to exit from alert window
-        - https://codepen.io/thebabydino/pen/MWYJdNY
-        - https://www.geeksforgeeks.org/image-transition-with-fading-effect-using-javascript/
-
-- COOKIES modal
-
-- responsive: check for table size 
-
-- WRITE MSG & WARNINGS & ERRORS IN LOG FILES
-
-==============================================================================================
+**********************************************************
 
 CSS 
   - text effects in title  ✔✔ 
@@ -89,7 +97,7 @@ CONSOLE button
 
 Case SESSION variable in Life Game examples
 
--  5.- problems session size
+- problems session size
 
       C:\ML_Project\NazarethCourse2023\iggPyBlog\igg_venv\lib\site-packages\werkzeug\sansio\response.py:230: UserWarning: The 'session' cookie is too large: the value was 6222 bytes but the header required 26 extra bytes. The final size was 6248 bytes but the limit is 4093 bytes. Browsers may silently ignore cookies larger than this.
         dump_cookie(

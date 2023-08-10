@@ -7,11 +7,46 @@ https://eu.pythonanywhere.com/login/  | igg.git.h@ | @n.20..N.@
 
 nazareth user: jo.gainzarain@aulanz.net  | nz2223Nz
 
+************************************************
+
+STILL TO DO !!!
+
+Actual web
+
+    - Finish info filling (excercises, lifegame and enigma game) 
+
+    - Read course material and "highlight special elements"
+
+    - check equal matrices in life game excercises
+
+    - simple version of enigma -> one rotation
+
+    - CSS file and responsive
+        - menu like smartphones
+
+    - waiting bar
+
+    - script to make zip in excercises --- zip_file_list(list, zipname)
+
+    - modal for img
+        - modal for img  vs image zoom by click
+            - https://linuxhint.com/image-zoom-in-zoom-out-javascript/
+
+    - upload images option
+
+    - test colab posts input process
+    
+    - live search
+
+    - drag & drop
+
+***********************************************
+
 WINDOWS 10
     - cmd line to see Admin ==> Ctr  + Shift + Esc 
         - CPU performance 
 
-Pointer in scroll to end of tag
+Scrolling to bottom
     - https://stackoverflow.com/questions/18614301/keep-overflow-div-scrolled-to-bottom-unless-user-scrolls-up
     - https://css-tricks.com/books/greatest-css-tricks/pin-scrolling-to-bottom/
     - https://codepen.io/chriscoyier/pen/bGbeBdp
@@ -28,48 +63,10 @@ LOG FILES
     - https://www.geeksforgeeks.org/python-flask-redirect-and-errors/
     - https://www.geeksforgeeks.org/how-to-log-a-python-exception/
 
+***********************************************
 
-STILL TO DO !!!
-
-Actual web
-
-    check equal matrices in life game excercises
-
-    Check what's happens in pythonAW when calling console
-        - https://stackoverflow.com/questions/4856583/how-do-i-pipe-a-subprocess-call-to-a-text-file
-        - https://www.annasyme.com/docs/python-subprocess.html
-
-    SUBPROCESS.RUN
-        Gracias por el mensaje. Parece que ha escrito una llamada a subprocess.run que usa la 
-        sintaxis de Windows para el comando. 
-        En PythonAnywhere, su código se ejecuta en Linux, por lo que el comando sería diferente.
-        
-        En general, no podemos brindar una instrucción detallada o ayuda general con la 
-        programación de Python, pero en este caso, el cambio es lo suficientemente simple, 
-        por lo que sería particularmente inútil de mi parte no decirle de qué se trata. 
-        
-        En general, no podemos brindar una instrucción detallada o ayuda general con la 
-        programación de Python, pero en este caso, el cambio es lo suficientemente simple 
-        como para que yo no sea de gran ayuda si no le permitiera saber qué es: 
-
-        La lista que pasa a la función "ejecutar" debería ser esto: 
-            ["/usr/bin/bash", "-c", f"python {py_script_path}"]
-
-        Subprocess
-
-            https://levelup.gitconnected.com/how-to-execute-shell-commands-properly-in-python-5b90c1a9213f
-            https://www.geeksforgeeks.org/python-execute-and-parse-linux-commands/
-            https://linuxhint.com/execute_shell_python_subprocess_run_method/
-            https://hackthedeveloper.com/python-subprocess-execute-shell-commands/
-            https://dev.to/divshekhar/python-subprocess-execute-shell2-commands-1bl2
-            https://www.section.io/engineering-education/how-to-execute-linux-commands-in-python/
-            https://stackoverflow.com/questions/4760215/running-shell-command-and-capturing-the-output
-            https://learnbyexample.github.io/tips/python-tip-11/
-            https://earthly.dev/blog/python-subprocess/#:~:text=You%20can%20redirect%20the%20output,txt%20file.            
-
-
-    0.- clean result_script_exec() of flask_app and include "window" for alert
-        Simplify use of MyFunc and MyColors !!!
+    0.- clean result_script_exec() of flask_app and include "window" for alert  ✔✔  😎
+        Simplify use of MyFunc and MyColors !!!  
 
         LIKE SLEEP
         - https://stackoverflow.com/questions/16623852/how-to-pause-javascript-code-execution-for-2-seconds
@@ -82,7 +79,6 @@ Actual web
         flask render template does not work  with xmlhttprequest
         - https://stackoverflow.com/questions/44749605/xmlhttprequest-does-not-render-template-flask-javascript
         
-
         USE SESSION VARIABLE TO STORE INFO AND CALL TEMPLATE TO RENDER NEW PAGE WITH THAT INFO
         - https://www.javatpoint.com/flask-session
         - https://pythonbasics.org/flask-sessions/
@@ -91,33 +87,22 @@ Actual web
          
     1.- make work for game of life and enigma project scripts (video), complete info and review MyFunc, MyColors
         correct read files path
-            - 04_LG colors for 1, and JS for animation  (pass lines to JS)
+            - 04_LG colors for 1, and JS for animation  (pass lines to JS)  ✔✔😎
             - file path for OS scripts like DelRepeatedLinesAndSort.py"   ✔✔😎
             - enigma vf1  ✔✔😎
 
-    2.- sincronyze pythonAW with github to upload files
+    2.- sincronyze pythonAW with github to upload files  ✔✔😎
 
     3.- setInterval to work html tag with time
         https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_win_setinterval
         https://stackoverflow.com/questions/64488429/innerhtml-with-settimeout-prints-only-the-last-part-in-loop
         https://www.geeksforgeeks.org/java-script-settimeout-setinterval-method/
         
-    4.- CSS file
-
-    5.- progress bar mail
-
-    6.- MyFunctions: 
-        - ADD script zip_file_list(list, zipname)
-
-    7.- modal for img
-        - modal for img  vs image zoom by click
-            - https://linuxhint.com/image-zoom-in-zoom-out-javascript/
-
-    8.- upload images
 
 POSTPONED
 
-1.- 
+1.- CSS Responsive
+    - menu bar when width like phone
 
 2.- login and users: admin, colab
 
@@ -133,7 +118,6 @@ POSTPONED
 4.- open windows   
         - https://www.youtube.com/watch?v=R5N8TA0KFxc
 
-5.- menu bar when width like phone
 
 Web with DB scripts
     1.- authentication - login required
@@ -157,13 +141,44 @@ PROGRESS BAR
     - https://theautomatic.net/2020/10/12/how-to-create-a-progress-bar-in-python/
     - https://builtin.com/software-engineering-perspectives/python-progress-bar
 
+Check what's happens in pythonAW when calling console
+    - https://stackoverflow.com/questions/4856583/how-do-i-pipe-a-subprocess-call-to-a-text-file
+    - https://www.annasyme.com/docs/python-subprocess.html
+
+SUBPROCESS.RUN
+    Gracias por el mensaje. Parece que ha escrito una llamada a subprocess.run que usa la 
+    sintaxis de Windows para el comando. 
+    En PythonAnywhere, su código se ejecuta en Linux, por lo que el comando sería diferente.
+    
+    En general, no podemos brindar una instrucción detallada o ayuda general con la 
+    programación de Python, pero en este caso, el cambio es lo suficientemente simple, 
+    por lo que sería particularmente inútil de mi parte no decirle de qué se trata. 
+    
+    En general, no podemos brindar una instrucción detallada o ayuda general con la 
+    programación de Python, pero en este caso, el cambio es lo suficientemente simple 
+    como para que yo no sea de gran ayuda si no le permitiera saber qué es: 
+
+    La lista que pasa a la función "ejecutar" debería ser esto: 
+        ["/usr/bin/bash", "-c", f"python {py_script_path}"]
+
+    Subprocess
+
+        https://levelup.gitconnected.com/how-to-execute-shell-commands-properly-in-python-5b90c1a9213f
+        https://www.geeksforgeeks.org/python-execute-and-parse-linux-commands/
+        https://linuxhint.com/execute_shell_python_subprocess_run_method/
+        https://hackthedeveloper.com/python-subprocess-execute-shell-commands/
+        https://dev.to/divshekhar/python-subprocess-execute-shell2-commands-1bl2
+        https://www.section.io/engineering-education/how-to-execute-linux-commands-in-python/
+        https://stackoverflow.com/questions/4760215/running-shell-command-and-capturing-the-output
+        https://learnbyexample.github.io/tips/python-tip-11/
+        https://earthly.dev/blog/python-subprocess/#:~:text=You%20can%20redirect%20the%20output,txt%20file.
 
 SUBPROCESS
     - https://stackoverflow.com/questions/37259740/passing-variables-from-flask-to-javascript
     - https://www.youtube.com/watch?v=CJ3XiQgjNE8
     - https://stackoverflow.com/questions/11178426/how-can-i-pass-data-from-flask-to-javascript-in-a-template
 
-    EMAIL pythonAW
+EMAIL pythonAW
     - Just use subprocess (https://docs.python.org/3/library/subprocess.html) 
     - to run a Python binary that exists in your account.  Glenn Jones glenn@pythonanywhere.com
     - https://realpython.com/python-subprocess/
@@ -223,14 +238,14 @@ SUBPROCESS
         - https://stackoverflow.com/questions/59718855/how-to-insert-a-new-line-every-entry-in-a-dictionary
 
 
-- Python Shell Commands 
+PYTHON Shell Commands 
     - https://www.the-analytics.club/python-shell-commands
 
-- Running python script on cmd(Windows) through java script
+Running python script on cmd(Windows) through java script
     - vhttps://stackoverflow.com/questions/52806389/running-python-script-on-cmdwindows-through-java-script
     - https://stackoverflow.com/questions/1880198/how-to-execute-shell-command-in-javascript
 
-- JS calling python function    
+JS calling python function    
 
     - https://stackoverflow.com/questions/42601478/flask-calling-python-function-on-button-onclick-event  
 
@@ -252,18 +267,10 @@ SUBPROCESS
 
     - https://www.digitalocean.com/community/tutorials/how-to-add-authentication-to-your-app-with-flask-login
  
-1.- fill all excercises info  😎✔✔
-    - test colab posts input process
-    - EMAIL pythonanywhere console  😎✔✔
-
-2.- search in list-dict
-3.- drag & drop
-
-PROJECTS 
-1.- life game
-2.- simple version of enigma
+*****************************************************
 
 DB FOR USERS (admin, colab), ARTICLES AND EXCERCISES
+
 - mysql vs sqlite
 - login  (z index effect)
     - https://www.geeksforgeeks.org/login-and-registration-project-using-flask-and-mysql/
@@ -283,7 +290,6 @@ DB FOR USERS (admin, colab), ARTICLES AND EXCERCISES
     - download to specified dir ???
         - https://itnext.io/how-to-download-files-with-javascript-d5a69b749896    
 
-
 - drag and drop zip files 
     - https://www.easydevguide.com/posts/drag_drop_upload
     - https://gist.github.com/peace098beat/db8ef7161508e6500ebe
@@ -295,7 +301,6 @@ DB FOR USERS (admin, colab), ARTICLES AND EXCERCISES
 
 - ExecPythonScript() :  how to pass file parameter to .bat
 
-
 - body in list... how to accept line jump in text
     - https://stackoverflow.com/questions/59718855/how-to-insert-a-new-line-every-entry-in-a-dictionary
 
@@ -305,7 +310,7 @@ DO IT !!!
 
 - Finish passing variable information from JS to Python  ✔✔
     - download option with correct py script    
-    Variables from Flask to JS 
+        Variables from Flask to JS 
         - https://stackoverflow.com/questions/37259740/passing-variables-from-flask-to-javascript
 
     cómo pasar variables de python a JavaScript
@@ -325,10 +330,6 @@ DO IT !!!
             ( import os, os.system('cls'), os.system('cmd /c ' + sys.argv[1]) )
 
 - favicon, ...  -->  icons8 free page ✔
-- continue work in "About routes" ✔
-- excercises data, templates and style ✔
-- scroll bar style ✔
-- download zip ✔
 
 - EXCERCISE files ( os )  ✔
     - VIEW FOR SCRIPTS to be UPLOAD_FOLDER
@@ -337,7 +338,6 @@ DO IT !!!
         - https://datatofish.com/batch-file-from-python/
         - https://datatofish.com/batch-python-script/
         - https://discuss.python.org/t/how-to-run-batch-file-by-using-python-code/17128/2
-
 
 - Open console with python statement  ✔
     - https://datatofish.com/command-prompt-python/
@@ -374,7 +374,6 @@ DO IT !!!
     - https://pypi.org/project/colorama/
     - https://devblogs.microsoft.com/scripting/hey-scripting-guy-weekend-scripter-using-windows-powershell-2-0-to-display-color-coded-output-in-a-table/
 
-
 LINKS
 
 --- https://stackoverflow.com/questions/52835681/how-can-i-run-a-python-script-from-within-flask
@@ -384,15 +383,14 @@ LINKS
 --- body in list... how to accept line jump in text
     - https://stackoverflow.com/questions/59718855/how-to-insert-a-new-line-every-entry-in-a-dictionary
 
-
-- Python Shell Commands 
+--- Python Shell Commands 
     - https://www.the-analytics.club/python-shell-commands
 
-- Running python script on cmd(Windows) through java script
+--- Running python script on cmd(Windows) through java script
     - vhttps://stackoverflow.com/questions/52806389/running-python-script-on-cmdwindows-through-java-script
     - https://stackoverflow.com/questions/1880198/how-to-execute-shell-command-in-javascript
 
-- JS calling python function    
+--- JS calling python function    
     py-script
         - https://www.jhanley.com/blog/pyscript-javascript-callbacks/
         - https://docs.pyscript.net/latest/guides/passing-objects.html
@@ -435,19 +433,19 @@ LINKS
 
             <button type="button" onclick="ExecPythonCommand('move_forward()')">i'm a button</button>
 
-simple posts blog 
+--- simple posts blog 
     - https://dev.to/geektechpub/flask-blog-tutorial-1-getting-started-10cd
 
-images --> https://www.youtube.com/watch?v=XTiM6HU0x9k
+--- images --> https://www.youtube.com/watch?v=XTiM6HU0x9k
            https://gist.github.com/lakshyasri/5e59ca8a0c6e1eb413dfa1c6c88603dd
 
-url_for
+--- url_for
     - https://flask.palletsprojects.com/en/2.2.x/api/#flask.url_for      
 
-MySql
+--- MySql
     - https://www.geeksforgeeks.org/profile-application-using-python-flask-and-mysql/
 
-Web
+--- Web
     - https://github.com/tutsplus/create-a-web-app-from-scratch-using-python-flask-and-mysql
 
 
