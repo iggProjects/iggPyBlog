@@ -33,6 +33,8 @@ STILL TO DO !!!
 
 Actual web
 
+    check equal matrices in life game excercises
+
     Check what's happens in pythonAW when calling console
         - https://stackoverflow.com/questions/4856583/how-do-i-pipe-a-subprocess-call-to-a-text-file
         - https://www.annasyme.com/docs/python-subprocess.html
