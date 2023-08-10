@@ -15,7 +15,7 @@ Actual web
 
     - Finish info filling (excercises, lifegame and enigma game) 
 
-    - Read course material and "highlight special elements"
+    - Read course material and "highlight special elements". Improve suggestions
 
     - check equal matrices in life game excercises
 
