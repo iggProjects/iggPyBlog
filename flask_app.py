@@ -27,6 +27,7 @@ Links
 
     EXCEPTION TYPES
     - https://docs.python.org/3/library/exceptions.html
+    - https://www.tutorialspoint.com/How-to-print-the-Python-Exception-Error-Hierarchy
 
     - https://flask.palletsprojects.com/en/2.3.x/errorhandling/
     - https://stackoverflow.com/questions/25919517/python-flask-redirect-with-error
