@@ -12,9 +12,36 @@ from flask_sqlalchemy import *
 import os
 import platform
 
+# handling data and time var's
 import datetime
+
+
+"""
+Links
+    - https://docs.python.org/3/library/logging.html#logging-levels
+    - https://docs.python.org/3/library/logging.html#logging.Formatter
+    - https://docs.python.org/3/library/logging.html#logrecord-attributes
+    - https://flask.palletsprojects.com/en/2.3.x/errorhandling/
+    - https://stackoverflow.com/questions/25919517/python-flask-redirect-with-error
+    - https://www.digitalocean.com/community/tutorials/how-to-handle-errors-in-a-flask-application
+    - https://flask.palletsprojects.com/en/2.3.x/errorhandling/
+    - https://www.youtube.com/watch?v=r3Xmcdlx-Us
+    - args & kwargs --> https://www.geeksforgeeks.org/args-kwargs-python/
+
+        More params to FORMAT
+            FORMAT = '%(asctime)s %(clientip)-15s %(user)-8s %(message)s'
+            logging.basicConfig(format=FORMAT)
+            d = {'clientip': '192.168.0.1', 'user': 'fbloggs'}
+            logging.warning('Protocol problem: %s', 'connection reset', extra=d)
+
+""" 
+# error handling
+import traceback
 import logging
-logging.basicConfig(filename='server_messages.log', encoding='utf-8', level=logging.DEBUG, format="%(asctime)-15s %(levelname)-8s %(message)s")
+logging.basicConfig(filename='server_messages.log', 
+                    encoding='utf-8', level=logging.DEBUG, format="%(asctime)-15s %(levelname)-8s %(funcName)s %(message)s")
+logging.captureWarnings(True)
+
 
 # COLOR CONTANTS
 NO_COLOR = "\033[00m"
@@ -56,6 +83,25 @@ Excercises = Excercises()
 LG_scripts = LG_scripts()
 Enigma_scripts = Enigma_scripts()
 
+
+# function to write in "my_messages.log"
+def write_log_file(msg):
+     
+    # creating/opening a file
+    f = open("my_messages.log", "a") 
+
+    # writing in the file
+    current_time = datetime.datetime.now() 
+    current_time.strftime('%Y-%m-%d %H:%M:%S.%f')[:-3]
+    # file.write('Printed string %s recorded at %s.\n' % (scr, datetime.datetime.now()))
+
+    msg = 'IGG ' + msg + '\n'   # check +
+    f.write('%s | %s\n' % (current_time.strftime('%Y-%m-%d %H:%M:%S.%f')[:-3],msg))      
+    # f.write(str(msg))      
+    # closing the file
+    f.close()
+
+
 @app.route('/')
 #@app.route('/home')
 def home():
@@ -80,40 +126,19 @@ def display_article():
             article = Articles[i]    
     return render_template('article.html', article = article)
 
-def write_log_file(msg):
-     
-    """
-    Links
-        - https://stackoverflow.com/questions/25919517/python-flask-redirect-with-error
-        - https://www.digitalocean.com/community/tutorials/how-to-handle-errors-in-a-flask-application
-        - https://flask.palletsprojects.com/en/2.3.x/errorhandling/
-    """ 
-    # creating/opening a file
-    f = open("server_messages.log", "a") 
-
-    # writing in the file
-    current_time = datetime.datetime.now() 
-    current_time.strftime('%Y-%m-%d %H:%M:%S.%f')[:-3]
-    # file.write('Printed string %s recorded at %s.\n' % (scr, datetime.datetime.now()))
-
-    #msg = ' | ' + msg + '\n'
-    f.write('%s | %s.\n' % (current_time.strftime('%Y-%m-%d %H:%M:%S.%f')[:-3],msg))      
-    # f.write(str(msg))      
-    # closing the file
-    f.close()
-
 @app.route('/excercises')
 def excercises():
     try:         
-        write_log_file("---> entering excercises")
-        return render_template('excercises.html', excercises = Excercises)
+        write_log_file("=> entering excercises")
+        return render_template('excercses.html', excercises = Excercises)
     except Exception as Argument:        
         logging.error(Argument)
         logging.warning(Argument)
-        logging.info(Argument)
+        #logging.info(Argument)
         logging.debug(Argument)
         logging.critical(Argument)
-        write_log_file(Argument)
+        logging.exception(" | logging exception: ")
+        #write_log_file(logging.exception(" || logging exception: "))
 
 """
 import logging
