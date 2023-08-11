@@ -15,12 +15,19 @@ import platform
 # handling data and time var's
 import datetime
 
+# import
+from MyFunc import write_log_file
 
 """
 Links
+    LOGGING
     - https://docs.python.org/3/library/logging.html#logging-levels
     - https://docs.python.org/3/library/logging.html#logging.Formatter
     - https://docs.python.org/3/library/logging.html#logrecord-attributes
+
+    EXCEPTION TYPES
+    - https://docs.python.org/3/library/exceptions.html
+
     - https://flask.palletsprojects.com/en/2.3.x/errorhandling/
     - https://stackoverflow.com/questions/25919517/python-flask-redirect-with-error
     - https://www.digitalocean.com/community/tutorials/how-to-handle-errors-in-a-flask-application
@@ -83,23 +90,20 @@ Excercises = Excercises()
 LG_scripts = LG_scripts()
 Enigma_scripts = Enigma_scripts()
 
-
+"""
 # function to write in "my_messages.log"
-def write_log_file(msg):
-     
-    # creating/opening a file
-    f = open("my_messages.log", "a") 
+def write_log_file(logFile,msg):
+    try:  
+        # creating/opening a file
+        f = open(logFile, "a") 
+        # writing in the file        
+        f.write('%s | %s\n' % (datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S.%f')[:-3],msg))      
+        # closing the file
+        f.close()
+    except Exception as Argument:        
+        logging.exception(" | exception from 'write_log_file()': ")
 
-    # writing in the file
-    current_time = datetime.datetime.now() 
-    current_time.strftime('%Y-%m-%d %H:%M:%S.%f')[:-3]
-    # file.write('Printed string %s recorded at %s.\n' % (scr, datetime.datetime.now()))
-
-    msg = 'IGG ' + msg + '\n'   # check +
-    f.write('%s | %s\n' % (current_time.strftime('%Y-%m-%d %H:%M:%S.%f')[:-3],msg))      
-    # f.write(str(msg))      
-    # closing the file
-    f.close()
+"""
 
 
 @app.route('/')
@@ -129,16 +133,17 @@ def display_article():
 @app.route('/excercises')
 def excercises():
     try:         
-        write_log_file("=> entering excercises")
-        return render_template('excercses.html', excercises = Excercises)
-    except Exception as Argument:        
+        write_log_file("my_messages.log","IN 'func excercises()'")
+        return render_template('xcercises.html', excercises = Excercises)
+    except Exception as Argument:   
+        """     
         logging.error(Argument)
         logging.warning(Argument)
-        #logging.info(Argument)
-        logging.debug(Argument)
-        logging.critical(Argument)
-        logging.exception(" | logging exception: ")
-        #write_log_file(logging.exception(" || logging exception: "))
+        logging.info(Argument)
+        logging.debug(Argument) 
+        logging.critical(Argument)               
+        """
+        logging.exception("exception => "  + str(Argument))
 
 """
 import logging

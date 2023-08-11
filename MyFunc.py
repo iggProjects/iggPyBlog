@@ -256,23 +256,31 @@ def relatedClasses(clas):
     print(f"{NO_COLOR}----- end analysis -----\n")    
 
 
+# Print Exception Hierrachy
+def classtree(cls, indent=0):
+    print('.' * indent, cls.__name__)
+    for subcls in cls.__subclasses__():
+        classtree(subcls, indent + 3)
+
 #
 #  LOG FILES FUNCTIONS
 #
 
-# writing comments in log file
-def write_comments_log():
-   # in process 
-   print("here write_comments log file")
+# function to write in "my_messages.log"
+def write_log_file(logFile,msg):
+    import logging
+    import datetime
+    try:  
+        # creating/opening a file
+        f = open(logFile, "a") 
+        # writing in the file        
+        f.write('%s | %s\n' % (datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S.%f')[:-3],msg))      
+        # closing the file
+        f.close()
+    except Exception as Argument:        
+        logging.exception(" | exception from 'write_log_file()': ")
 
-   
-# redirect errors msg to 'own' errors log file
-def write_comments_log():
-   # in process
-   print("here my errors log file")
 
-
-    
 #
 #  OS FUNCTIONS
 #

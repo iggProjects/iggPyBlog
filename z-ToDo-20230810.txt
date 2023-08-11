@@ -4,6 +4,7 @@ COURSE MATERIAL ARTICLE
  LOGS: WARNIGNS, ERRORS, MESSAGES
 
 EXCERCISES
+  - new excercise for prototype: Exception Hierarchy  
   - SEE EXCEL
   - input example
 
