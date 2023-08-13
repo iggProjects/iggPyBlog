@@ -5,9 +5,10 @@ THIS IS MY STANDAR SCRIPT TO CREATE NEWS SCRIPTS
 """
 # IMPORT SECTION
 
+# modules
 from os import  system
 
-# My Own
+# My functions
 from MyFunc import *
 from MyColors import *
 

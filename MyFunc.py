@@ -30,13 +30,6 @@ from MyColors import *
 #
 # COLORS CONSTANTS
 #
-"""
-# FOREGORUND CONSTANTS AS TEXT
-FG_WH_TXT = "\033[00m"
-FR_GREEN = "\033[92m"
-FR_RED   = "\033[91m"
-NO_COLOR = "\033[00m"
-"""
 
 #
 # TIME FUNCTIONS

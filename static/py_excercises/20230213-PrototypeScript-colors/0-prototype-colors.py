@@ -6,8 +6,8 @@ THIS SCRIPT IS FOR PRINTING WITH COLORS
 
 
 # IMPORT SECTION
-# modules
 
+# modules
 from os import  system
 
 # My functions
@@ -39,7 +39,7 @@ if __name__ == "__main__":
             color_str = color
             msg=" ==> TESTING COLOR FUNCTION"
             #print("FR_RED value: " + colors_str[0])
-            print("\tPrint with ascii " + colrs_str[i] + f":\t{color}{msg}{NO_COLOR}") 
+            print("\tPrint with ascii " + colors_str[i] + f":\t{color}{msg}{NO_COLOR}") 
             i+=1   
 
         msg="print with default color\t\t ==> TESTING COLOR FUNCTION"
