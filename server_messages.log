@@ -1202,3 +1202,320 @@ jinja2.exceptions.TemplateNotFound: xcercises.html
 2023-08-11 19:09:04,047 INFO     _log  * Restarting with stat
 2023-08-11 19:09:04,459 WARNING  _log  * Debugger is active!
 2023-08-11 19:09:04,462 INFO     _log  * Debugger PIN: 441-910-585
+2023-08-13 21:56:58,185 INFO     _log [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-08-13 21:56:58,185 INFO     _log [33mPress CTRL+C to quit[0m
+2023-08-13 21:56:58,193 INFO     _log  * Restarting with stat
+2023-08-13 21:56:58,985 WARNING  _log  * Debugger is active!
+2023-08-13 21:56:58,993 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-13 21:57:36,527 INFO     _log 127.0.0.1 - - [13/Aug/2023 21:57:36] "GET / HTTP/1.1" 200 -
+2023-08-13 21:57:36,682 INFO     _log 127.0.0.1 - - [13/Aug/2023 21:57:36] "GET /static/img/ame-01.jpg HTTP/1.1" 200 -
+2023-08-13 21:57:36,902 INFO     _log 127.0.0.1 - - [13/Aug/2023 21:57:36] "GET /static/img/icons8-bulb-64.png HTTP/1.1" 200 -
+2023-08-13 22:02:30,934 ERROR    excercises exception => xcercises.html
+Traceback (most recent call last):
+  File "C:\ML_Project\NazarethCourse2023\iggPyBlog\flask_app.py", line 138, in excercises
+    return render_template('xcercises.html', excercises = Excercises)
+  File "C:\ML_Project\NazarethCourse2023\iggPyBlog\igg_venv\lib\site-packages\flask\templating.py", line 146, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "C:\ML_Project\NazarethCourse2023\iggPyBlog\igg_venv\lib\site-packages\jinja2\environment.py", line 1081, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "C:\ML_Project\NazarethCourse2023\iggPyBlog\igg_venv\lib\site-packages\jinja2\environment.py", line 1010, in get_template
+    return self._load_template(name, globals)
+  File "C:\ML_Project\NazarethCourse2023\iggPyBlog\igg_venv\lib\site-packages\jinja2\environment.py", line 969, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "C:\ML_Project\NazarethCourse2023\iggPyBlog\igg_venv\lib\site-packages\jinja2\loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "C:\ML_Project\NazarethCourse2023\iggPyBlog\igg_venv\lib\site-packages\flask\templating.py", line 62, in get_source
+    return self._get_source_fast(environment, template)
+  File "C:\ML_Project\NazarethCourse2023\iggPyBlog\igg_venv\lib\site-packages\flask\templating.py", line 98, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: xcercises.html
+2023-08-13 22:02:30,949 INFO     _log 127.0.0.1 - - [13/Aug/2023 22:02:30] "[35m[1mGET /excercises HTTP/1.1[0m" 500 -
+2023-08-13 22:02:30,991 INFO     _log 127.0.0.1 - - [13/Aug/2023 22:02:30] "GET /excercises?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2023-08-13 22:02:31,235 INFO     _log 127.0.0.1 - - [13/Aug/2023 22:02:31] "GET /excercises?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2023-08-13 22:02:31,597 INFO     _log 127.0.0.1 - - [13/Aug/2023 22:02:31] "GET /excercises?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2023-08-13 22:02:31,855 INFO     _log 127.0.0.1 - - [13/Aug/2023 22:02:31] "[36mGET /excercises?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-08-13 22:03:45,517 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\flask_app.py', reloading
+2023-08-13 22:03:45,621 INFO     _log  * Restarting with stat
+2023-08-13 22:03:46,456 WARNING  _log  * Debugger is active!
+2023-08-13 22:03:46,464 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-13 22:03:50,443 INFO     _log 127.0.0.1 - - [13/Aug/2023 22:03:50] "GET /excercises HTTP/1.1" 200 -
+2023-08-13 22:03:50,504 INFO     _log 127.0.0.1 - - [13/Aug/2023 22:03:50] "GET /static/img/Lorea.jpg HTTP/1.1" 200 -
+2023-08-13 22:03:52,826 INFO     _log 127.0.0.1 - - [13/Aug/2023 22:03:52] "GET /excercise/?id=1 HTTP/1.1" 200 -
+2023-08-13 22:03:53,110 INFO     _log 127.0.0.1 - - [13/Aug/2023 22:03:53] "GET /static/img/icons8-script-68.png HTTP/1.1" 200 -
+2023-08-13 22:03:53,160 INFO     _log 127.0.0.1 - - [13/Aug/2023 22:03:53] "GET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1" 200 -
+2023-08-13 22:03:53,160 INFO     _log 127.0.0.1 - - [13/Aug/2023 22:03:53] "GET /static/img/icons8-consola-100.png HTTP/1.1" 200 -
+2023-08-13 22:03:53,181 INFO     _log 127.0.0.1 - - [13/Aug/2023 22:03:53] "GET /static/img/icons8-html-filetype-50.png HTTP/1.1" 200 -
+2023-08-13 22:04:10,575 INFO     _log 127.0.0.1 - - [13/Aug/2023 22:04:10] "GET /pythonScript/?py_path=static/py_excercises/20230213-PrototypeScript-colors/0-prototype-colors.py HTTP/1.1" 200 -
+2023-08-13 22:05:18,362 INFO     _log 127.0.0.1 - - [13/Aug/2023 22:05:18] "GET /excercise/?id=1 HTTP/1.1" 200 -
+2023-08-13 22:05:18,374 INFO     _log 127.0.0.1 - - [13/Aug/2023 22:05:18] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-08-13 22:05:18,609 INFO     _log 127.0.0.1 - - [13/Aug/2023 22:05:18] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-08-13 22:05:18,692 INFO     _log 127.0.0.1 - - [13/Aug/2023 22:05:18] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-08-13 22:05:18,692 INFO     _log 127.0.0.1 - - [13/Aug/2023 22:05:18] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-08-13 22:05:19,021 INFO     _log 127.0.0.1 - - [13/Aug/2023 22:05:19] "[36mGET /static/img/icons8-bulb-64.png HTTP/1.1[0m" 304 -
+2023-08-13 22:05:24,646 INFO     _log 127.0.0.1 - - [13/Aug/2023 22:05:24] "GET /pythonScript/?py_path=static/py_excercises/20230213-PrototypeScript-colors/0-prototype-colors.py HTTP/1.1" 200 -
+2023-08-13 22:09:56,393 INFO     _log 127.0.0.1 - - [13/Aug/2023 22:09:56] "GET /excercise/?id=1 HTTP/1.1" 200 -
+2023-08-13 22:09:56,695 INFO     _log 127.0.0.1 - - [13/Aug/2023 22:09:56] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-08-13 22:09:56,714 INFO     _log 127.0.0.1 - - [13/Aug/2023 22:09:56] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-08-13 22:09:56,732 INFO     _log 127.0.0.1 - - [13/Aug/2023 22:09:56] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-08-13 22:09:56,732 INFO     _log 127.0.0.1 - - [13/Aug/2023 22:09:56] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-08-13 22:09:57,060 INFO     _log 127.0.0.1 - - [13/Aug/2023 22:09:57] "[36mGET /static/img/icons8-bulb-64.png HTTP/1.1[0m" 304 -
+2023-08-13 22:10:20,894 INFO     _log 127.0.0.1 - - [13/Aug/2023 22:10:20] "GET /pythonScript/?py_path=static/py_excercises/20230213-PrototypeScript-colors/0-prototype-colors.py HTTP/1.1" 200 -
+2023-08-13 22:11:56,476 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\flask_app.py', reloading
+2023-08-13 22:11:56,614 INFO     _log  * Restarting with stat
+2023-08-13 22:11:57,367 WARNING  _log  * Debugger is active!
+2023-08-13 22:11:57,367 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-13 22:12:02,459 INFO     _log 127.0.0.1 - - [13/Aug/2023 22:12:02] "GET /excercise/?id=1 HTTP/1.1" 200 -
+2023-08-13 22:12:02,518 INFO     _log 127.0.0.1 - - [13/Aug/2023 22:12:02] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-08-13 22:12:02,679 INFO     _log 127.0.0.1 - - [13/Aug/2023 22:12:02] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-08-13 22:12:02,792 INFO     _log 127.0.0.1 - - [13/Aug/2023 22:12:02] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-08-13 22:12:02,800 INFO     _log 127.0.0.1 - - [13/Aug/2023 22:12:02] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-08-13 22:12:03,111 INFO     _log 127.0.0.1 - - [13/Aug/2023 22:12:03] "[36mGET /static/img/icons8-bulb-64.png HTTP/1.1[0m" 304 -
+2023-08-13 22:12:09,530 INFO     _log 127.0.0.1 - - [13/Aug/2023 22:12:09] "GET /pythonScript/?py_path=static/py_excercises/20230213-PrototypeScript-colors/0-prototype-colors.py HTTP/1.1" 200 -
+2023-08-13 22:14:00,957 INFO     _log 127.0.0.1 - - [13/Aug/2023 22:14:00] "GET /excercise/?id=1 HTTP/1.1" 200 -
+2023-08-13 22:14:00,966 INFO     _log 127.0.0.1 - - [13/Aug/2023 22:14:00] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-08-13 22:14:01,218 INFO     _log 127.0.0.1 - - [13/Aug/2023 22:14:01] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-08-13 22:14:01,295 INFO     _log 127.0.0.1 - - [13/Aug/2023 22:14:01] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-08-13 22:14:01,297 INFO     _log 127.0.0.1 - - [13/Aug/2023 22:14:01] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-08-13 22:14:01,619 INFO     _log 127.0.0.1 - - [13/Aug/2023 22:14:01] "[36mGET /static/img/icons8-bulb-64.png HTTP/1.1[0m" 304 -
+2023-08-13 22:14:06,674 INFO     _log 127.0.0.1 - - [13/Aug/2023 22:14:06] "GET /pythonScript/?py_path=static/py_excercises/20230213-PrototypeScript-colors/0-prototype-colors.py HTTP/1.1" 200 -
+2023-08-13 22:15:16,242 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\flask_app.py', reloading
+2023-08-13 22:15:16,344 INFO     _log  * Restarting with stat
+2023-08-13 22:15:17,262 WARNING  _log  * Debugger is active!
+2023-08-13 22:15:17,262 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-13 22:15:22,475 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\flask_app.py', reloading
+2023-08-13 22:15:22,555 INFO     _log  * Restarting with stat
+2023-08-13 22:15:23,366 WARNING  _log  * Debugger is active!
+2023-08-13 22:15:23,374 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-13 22:15:27,578 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\flask_app.py', reloading
+2023-08-13 22:15:27,668 INFO     _log  * Restarting with stat
+2023-08-13 22:15:28,498 WARNING  _log  * Debugger is active!
+2023-08-13 22:15:28,506 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-13 22:15:30,601 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\flask_app.py', reloading
+2023-08-13 22:15:30,704 INFO     _log  * Restarting with stat
+2023-08-13 22:15:31,527 WARNING  _log  * Debugger is active!
+2023-08-13 22:15:31,536 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-13 22:15:34,593 INFO     _log 127.0.0.1 - - [13/Aug/2023 22:15:34] "GET /excercise/?id=1 HTTP/1.1" 200 -
+2023-08-13 22:15:34,660 INFO     _log 127.0.0.1 - - [13/Aug/2023 22:15:34] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-08-13 22:15:34,844 INFO     _log 127.0.0.1 - - [13/Aug/2023 22:15:34] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-08-13 22:15:34,932 INFO     _log 127.0.0.1 - - [13/Aug/2023 22:15:34] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-08-13 22:15:34,932 INFO     _log 127.0.0.1 - - [13/Aug/2023 22:15:34] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-08-13 22:15:35,268 INFO     _log 127.0.0.1 - - [13/Aug/2023 22:15:35] "[36mGET /static/img/icons8-bulb-64.png HTTP/1.1[0m" 304 -
+2023-08-13 22:15:42,403 INFO     _log 127.0.0.1 - - [13/Aug/2023 22:15:42] "GET /pythonScript/?py_path=static/py_excercises/20230213-PrototypeScript-colors/0-prototype-colors.py HTTP/1.1" 200 -
+2023-08-13 22:16:02,548 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\flask_app.py', reloading
+2023-08-13 22:16:02,653 INFO     _log  * Restarting with stat
+2023-08-13 22:16:03,318 WARNING  _log  * Debugger is active!
+2023-08-13 22:16:03,329 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-13 22:17:24,091 INFO     _log 127.0.0.1 - - [13/Aug/2023 22:17:24] "GET /excercise/?id=1 HTTP/1.1" 200 -
+2023-08-13 22:17:24,168 INFO     _log 127.0.0.1 - - [13/Aug/2023 22:17:24] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-08-13 22:17:24,338 INFO     _log 127.0.0.1 - - [13/Aug/2023 22:17:24] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-08-13 22:17:24,436 INFO     _log 127.0.0.1 - - [13/Aug/2023 22:17:24] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-08-13 22:17:24,436 INFO     _log 127.0.0.1 - - [13/Aug/2023 22:17:24] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-08-13 22:17:24,758 INFO     _log 127.0.0.1 - - [13/Aug/2023 22:17:24] "[36mGET /static/img/icons8-bulb-64.png HTTP/1.1[0m" 304 -
+2023-08-13 22:17:46,255 INFO     <module> name 'colrs_str' is not defined
+2023-08-13 22:17:46,255 ERROR    <module>  | exception from '0-prototype-colors.py()': 
+Traceback (most recent call last):
+  File "C:\ML_Project\NazarethCourse2023\iggPyBlog\static\py_excercises\20230213-PrototypeScript-colors\0-prototype-colors.py", line 53, in <module>
+    print("\tPrint with ascii " + colrs_str[i] + f":\t{color}{msg}{NO_COLOR}")
+NameError: name 'colrs_str' is not defined
+2023-08-13 22:17:46,280 INFO     _log 127.0.0.1 - - [13/Aug/2023 22:17:46] "GET /pythonScript/?py_path=static/py_excercises/20230213-PrototypeScript-colors/0-prototype-colors.py HTTP/1.1" 200 -
+2023-08-13 22:19:30,293 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\MyFunc.py', reloading
+2023-08-13 22:19:30,372 INFO     _log  * Restarting with stat
+2023-08-13 22:19:31,078 WARNING  _log  * Debugger is active!
+2023-08-13 22:19:31,086 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-13 22:19:44,628 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\MyFunc.py', reloading
+2023-08-13 22:19:44,723 INFO     _log  * Restarting with stat
+2023-08-13 22:19:52,590 INFO     _log [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-08-13 22:19:52,590 INFO     _log [33mPress CTRL+C to quit[0m
+2023-08-13 22:19:52,590 INFO     _log  * Restarting with stat
+2023-08-13 22:19:53,270 WARNING  _log  * Debugger is active!
+2023-08-13 22:19:53,278 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-13 22:20:15,127 INFO     _log 127.0.0.1 - - [13/Aug/2023 22:20:15] "GET /excercise/?id=1 HTTP/1.1" 200 -
+2023-08-13 22:20:15,197 INFO     _log 127.0.0.1 - - [13/Aug/2023 22:20:15] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-08-13 22:20:15,358 INFO     _log 127.0.0.1 - - [13/Aug/2023 22:20:15] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-08-13 22:20:15,459 INFO     _log 127.0.0.1 - - [13/Aug/2023 22:20:15] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-08-13 22:20:15,467 INFO     _log 127.0.0.1 - - [13/Aug/2023 22:20:15] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-08-13 22:20:15,777 INFO     _log 127.0.0.1 - - [13/Aug/2023 22:20:15] "[36mGET /static/img/icons8-bulb-64.png HTTP/1.1[0m" 304 -
+2023-08-13 22:20:23,435 INFO     <module> name 'colrs_str' is not defined
+2023-08-13 22:20:23,435 ERROR    <module>  | exception from '0-prototype-colors.py()': 
+Traceback (most recent call last):
+  File "C:\ML_Project\NazarethCourse2023\iggPyBlog\static\py_excercises\20230213-PrototypeScript-colors\0-prototype-colors.py", line 53, in <module>
+    print("\tPrint with ascii " + colrs_str[i] + f":\t{color}{msg}{NO_COLOR}")
+NameError: name 'colrs_str' is not defined
+2023-08-13 22:20:23,446 INFO     _log 127.0.0.1 - - [13/Aug/2023 22:20:23] "GET /pythonScript/?py_path=static/py_excercises/20230213-PrototypeScript-colors/0-prototype-colors.py HTTP/1.1" 200 -
+2023-08-13 22:22:16,694 INFO     _log 127.0.0.1 - - [13/Aug/2023 22:22:16] "GET /excercise/?id=1 HTTP/1.1" 200 -
+2023-08-13 22:22:16,715 INFO     _log 127.0.0.1 - - [13/Aug/2023 22:22:16] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-08-13 22:22:16,953 INFO     _log 127.0.0.1 - - [13/Aug/2023 22:22:16] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-08-13 22:22:17,036 INFO     _log 127.0.0.1 - - [13/Aug/2023 22:22:17] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-08-13 22:22:17,043 INFO     _log 127.0.0.1 - - [13/Aug/2023 22:22:17] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-08-13 22:22:17,360 INFO     _log 127.0.0.1 - - [13/Aug/2023 22:22:17] "[36mGET /static/img/icons8-bulb-64.png HTTP/1.1[0m" 304 -
+2023-08-13 22:22:23,660 INFO     <module> name 'write_log_file' is not defined
+2023-08-13 22:22:23,660 ERROR    <module>  | exception from '0-prototype-colors.py()': 
+Traceback (most recent call last):
+  File "C:\ML_Project\NazarethCourse2023\iggPyBlog\static\py_excercises\20230213-PrototypeScript-colors\0-prototype-colors.py", line 41, in <module>
+    write_log_file("my_messages.log","IN 'func 0-prototype-colors.py()'")
+NameError: name 'write_log_file' is not defined
+2023-08-13 22:22:23,682 INFO     _log 127.0.0.1 - - [13/Aug/2023 22:22:23] "GET /pythonScript/?py_path=static/py_excercises/20230213-PrototypeScript-colors/0-prototype-colors.py HTTP/1.1" 200 -
+2023-08-13 22:25:38,622 INFO     _log 127.0.0.1 - - [13/Aug/2023 22:25:38] "GET /excercise/?id=1 HTTP/1.1" 200 -
+2023-08-13 22:25:38,642 INFO     _log 127.0.0.1 - - [13/Aug/2023 22:25:38] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-08-13 22:25:38,877 INFO     _log 127.0.0.1 - - [13/Aug/2023 22:25:38] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-08-13 22:25:38,958 INFO     _log 127.0.0.1 - - [13/Aug/2023 22:25:38] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-08-13 22:25:38,966 INFO     _log 127.0.0.1 - - [13/Aug/2023 22:25:38] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-08-13 22:25:39,279 INFO     _log 127.0.0.1 - - [13/Aug/2023 22:25:39] "[36mGET /static/img/icons8-bulb-64.png HTTP/1.1[0m" 304 -
+2023-08-13 22:25:45,325 INFO     <module> name 'colrs_str' is not defined
+2023-08-13 22:25:45,325 ERROR    <module>  | exception from '0-prototype-colors.py()': 
+Traceback (most recent call last):
+  File "C:\ML_Project\NazarethCourse2023\iggPyBlog\static\py_excercises\20230213-PrototypeScript-colors\0-prototype-colors.py", line 56, in <module>
+    print("\tPrint with ascii " + colrs_str[i] + f":\t{color}{msg}{NO_COLOR}")
+NameError: name 'colrs_str' is not defined
+2023-08-13 22:25:45,338 INFO     _log 127.0.0.1 - - [13/Aug/2023 22:25:45] "GET /pythonScript/?py_path=static/py_excercises/20230213-PrototypeScript-colors/0-prototype-colors.py HTTP/1.1" 200 -
+2023-08-13 22:28:59,764 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\MyFunc.py', reloading
+2023-08-13 22:28:59,902 INFO     _log  * Restarting with stat
+2023-08-13 22:29:00,697 WARNING  _log  * Debugger is active!
+2023-08-13 22:29:00,697 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-13 22:29:01,790 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\MyFunc.py', reloading
+2023-08-13 22:29:01,884 INFO     _log  * Restarting with stat
+2023-08-13 22:29:02,548 WARNING  _log  * Debugger is active!
+2023-08-13 22:29:02,548 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-13 22:29:05,726 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\MyFunc.py', reloading
+2023-08-13 22:29:05,832 INFO     _log  * Restarting with stat
+2023-08-13 22:29:06,545 WARNING  _log  * Debugger is active!
+2023-08-13 22:29:06,545 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-13 22:29:08,646 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\MyFunc.py', reloading
+2023-08-13 22:29:08,742 INFO     _log  * Restarting with stat
+2023-08-13 22:29:09,456 WARNING  _log  * Debugger is active!
+2023-08-13 22:29:09,464 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-13 22:29:20,883 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\MyFunc.py', reloading
+2023-08-13 22:29:20,984 INFO     _log  * Restarting with stat
+2023-08-13 22:29:21,768 WARNING  _log  * Debugger is active!
+2023-08-13 22:29:21,768 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-13 22:29:22,877 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\MyFunc.py', reloading
+2023-08-13 22:29:22,995 INFO     _log  * Restarting with stat
+2023-08-13 22:29:52,752 INFO     _log [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-08-13 22:29:52,752 INFO     _log [33mPress CTRL+C to quit[0m
+2023-08-13 22:29:52,752 INFO     _log  * Restarting with stat
+2023-08-13 22:29:53,412 WARNING  _log  * Debugger is active!
+2023-08-13 22:29:53,412 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-13 22:29:57,710 INFO     _log 127.0.0.1 - - [13/Aug/2023 22:29:57] "GET /excercise/?id=1 HTTP/1.1" 200 -
+2023-08-13 22:29:57,784 INFO     _log 127.0.0.1 - - [13/Aug/2023 22:29:57] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-08-13 22:29:57,943 INFO     _log 127.0.0.1 - - [13/Aug/2023 22:29:57] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-08-13 22:29:58,051 INFO     _log 127.0.0.1 - - [13/Aug/2023 22:29:58] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-08-13 22:29:58,051 INFO     _log 127.0.0.1 - - [13/Aug/2023 22:29:58] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-08-13 22:29:58,372 INFO     _log 127.0.0.1 - - [13/Aug/2023 22:29:58] "[36mGET /static/img/icons8-bulb-64.png HTTP/1.1[0m" 304 -
+2023-08-13 22:30:04,952 INFO     <module> name 'colrs_str' is not defined
+2023-08-13 22:30:04,952 ERROR    <module>  | exception from '0-prototype-colors.py()': 
+Traceback (most recent call last):
+  File "C:\ML_Project\NazarethCourse2023\iggPyBlog\static\py_excercises\20230213-PrototypeScript-colors\0-prototype-colors.py", line 56, in <module>
+    print("\tPrint with ascii " + colrs_str[i] + f":\t{color}{msg}{NO_COLOR}")
+NameError: name 'colrs_str' is not defined
+2023-08-13 22:30:04,964 INFO     _log 127.0.0.1 - - [13/Aug/2023 22:30:04] "GET /pythonScript/?py_path=static/py_excercises/20230213-PrototypeScript-colors/0-prototype-colors.py HTTP/1.1" 200 -
+2023-08-13 22:32:10,953 INFO     _log 127.0.0.1 - - [13/Aug/2023 22:32:10] "GET /excercise/?id=1 HTTP/1.1" 200 -
+2023-08-13 22:32:11,261 INFO     _log 127.0.0.1 - - [13/Aug/2023 22:32:11] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-08-13 22:32:11,296 INFO     _log 127.0.0.1 - - [13/Aug/2023 22:32:11] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-08-13 22:32:11,304 INFO     _log 127.0.0.1 - - [13/Aug/2023 22:32:11] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-08-13 22:32:11,304 INFO     _log 127.0.0.1 - - [13/Aug/2023 22:32:11] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-08-13 22:32:11,627 INFO     _log 127.0.0.1 - - [13/Aug/2023 22:32:11] "[36mGET /static/img/icons8-bulb-64.png HTTP/1.1[0m" 304 -
+2023-08-13 22:32:19,277 INFO     <module> name 'colrs_str' is not defined
+2023-08-13 22:32:19,277 ERROR    <module>  | exception from '0-prototype-colors.py()': 
+Traceback (most recent call last):
+  File "C:\ML_Project\NazarethCourse2023\iggPyBlog\static\py_excercises\20230213-PrototypeScript-colors\0-prototype-colors.py", line 56, in <module>
+    print("\tPrint with ascii " + colrs_str[i] + f":\t{color}{msg}{NO_COLOR}")
+NameError: name 'colrs_str' is not defined
+2023-08-13 22:32:19,289 INFO     _log 127.0.0.1 - - [13/Aug/2023 22:32:19] "GET /pythonScript/?py_path=static/py_excercises/20230213-PrototypeScript-colors/0-prototype-colors.py HTTP/1.1" 200 -
+2023-08-13 22:34:56,329 INFO     _log 127.0.0.1 - - [13/Aug/2023 22:34:56] "GET /excercise/?id=1 HTTP/1.1" 200 -
+2023-08-13 22:34:56,350 INFO     _log 127.0.0.1 - - [13/Aug/2023 22:34:56] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-08-13 22:34:56,578 INFO     _log 127.0.0.1 - - [13/Aug/2023 22:34:56] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-08-13 22:34:56,667 INFO     _log 127.0.0.1 - - [13/Aug/2023 22:34:56] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-08-13 22:34:56,675 INFO     _log 127.0.0.1 - - [13/Aug/2023 22:34:56] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-08-13 22:34:56,988 INFO     _log 127.0.0.1 - - [13/Aug/2023 22:34:56] "[36mGET /static/img/icons8-bulb-64.png HTTP/1.1[0m" 304 -
+2023-08-13 22:35:03,275 INFO     <module> name 'colrs_str' is not defined
+2023-08-13 22:35:03,275 ERROR    <module>  | exception from '0-prototype-colors.py()': 
+Traceback (most recent call last):
+  File "C:\ML_Project\NazarethCourse2023\iggPyBlog\static\py_excercises\20230213-PrototypeScript-colors\0-prototype-colors.py", line 50, in <module>
+    print("\tPrint with ascii " + colrs_str[i] + f":\t{color}{msg}{NO_COLOR}")
+NameError: name 'colrs_str' is not defined
+2023-08-13 22:35:03,297 INFO     _log 127.0.0.1 - - [13/Aug/2023 22:35:03] "GET /pythonScript/?py_path=static/py_excercises/20230213-PrototypeScript-colors/0-prototype-colors.py HTTP/1.1" 200 -
+2023-08-13 22:37:36,964 INFO     _log 127.0.0.1 - - [13/Aug/2023 22:37:36] "GET /excercise/?id=1 HTTP/1.1" 200 -
+2023-08-13 22:37:36,981 INFO     _log 127.0.0.1 - - [13/Aug/2023 22:37:36] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-08-13 22:37:37,205 INFO     _log 127.0.0.1 - - [13/Aug/2023 22:37:37] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-08-13 22:37:37,293 INFO     _log 127.0.0.1 - - [13/Aug/2023 22:37:37] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-08-13 22:37:37,293 INFO     _log 127.0.0.1 - - [13/Aug/2023 22:37:37] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-08-13 22:37:37,610 INFO     _log 127.0.0.1 - - [13/Aug/2023 22:37:37] "[36mGET /static/img/icons8-bulb-64.png HTTP/1.1[0m" 304 -
+2023-08-13 22:37:44,738 INFO     <module> name 'colrs_str' is not defined
+2023-08-13 22:37:44,738 ERROR    <module>  | exception from '0-prototype-colors.py()': 
+Traceback (most recent call last):
+  File "C:\ML_Project\NazarethCourse2023\iggPyBlog\static\py_excercises\20230213-PrototypeScript-colors\0-prototype-colors.py", line 50, in <module>
+    print("\tPrint with ascii " + colrs_str[i] + f":\t{color}{msg}{NO_COLOR}")
+NameError: name 'colrs_str' is not defined
+2023-08-13 22:37:44,747 INFO     _log 127.0.0.1 - - [13/Aug/2023 22:37:44] "GET /pythonScript/?py_path=static/py_excercises/20230213-PrototypeScript-colors/0-prototype-colors.py HTTP/1.1" 200 -
+2023-08-13 22:39:08,959 ERROR    <module>  | exception from '0-prototype-colors.py()': 
+Traceback (most recent call last):
+  File "C:\ML_Project\NazarethCourse2023\iggPyBlog\static\py_excercises\20230213-PrototypeScript-colors\0-prototype-colors.py", line 50, in <module>
+    print("\tPrint with ascii " + colrs_str[i] + f":\t{color}{msg}{NO_COLOR}")
+NameError: name 'colrs_str' is not defined
+2023-08-13 22:39:08,972 INFO     _log 127.0.0.1 - - [13/Aug/2023 22:39:08] "GET /pythonScript/?py_path=static/py_excercises/20230213-PrototypeScript-colors/0-prototype-colors.py HTTP/1.1" 200 -
+2023-08-13 22:41:39,360 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\flask_app.py', reloading
+2023-08-13 22:41:39,478 INFO     _log  * Restarting with stat
+2023-08-13 22:41:40,234 WARNING  _log  * Debugger is active!
+2023-08-13 22:41:40,242 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-13 22:41:47,550 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\flask_app.py', reloading
+2023-08-13 22:41:47,660 INFO     _log  * Restarting with stat
+2023-08-13 22:43:21,035 INFO     _log [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-08-13 22:43:21,035 INFO     _log [33mPress CTRL+C to quit[0m
+2023-08-13 22:43:21,035 INFO     _log  * Restarting with stat
+2023-08-13 22:43:21,654 WARNING  _log  * Debugger is active!
+2023-08-13 22:43:21,654 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-13 22:44:07,155 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\MyFunc.py', reloading
+2023-08-13 22:44:07,267 INFO     _log  * Restarting with stat
+2023-08-13 22:44:07,961 WARNING  _log  * Debugger is active!
+2023-08-13 22:44:07,969 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-13 22:44:09,049 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\MyFunc.py', reloading
+2023-08-13 22:44:09,164 INFO     _log  * Restarting with stat
+2023-08-13 22:44:09,841 WARNING  _log  * Debugger is active!
+2023-08-13 22:44:09,841 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-13 22:44:15,026 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\MyFunc.py', reloading
+2023-08-13 22:44:15,133 INFO     _log  * Restarting with stat
+2023-08-13 22:44:15,858 WARNING  _log  * Debugger is active!
+2023-08-13 22:44:15,866 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-13 22:44:25,219 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\MyFunc.py', reloading
+2023-08-13 22:44:25,331 INFO     _log  * Restarting with stat
+2023-08-13 22:44:26,075 WARNING  _log  * Debugger is active!
+2023-08-13 22:44:26,075 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-13 22:44:27,137 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\MyFunc.py', reloading
+2023-08-13 22:44:27,223 INFO     _log  * Restarting with stat
+2023-08-13 22:44:27,999 WARNING  _log  * Debugger is active!
+2023-08-13 22:44:27,999 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-13 22:49:29,710 INFO     _log 127.0.0.1 - - [13/Aug/2023 22:49:29] "GET /excercises HTTP/1.1" 200 -
+2023-08-13 22:49:30,039 INFO     _log 127.0.0.1 - - [13/Aug/2023 22:49:30] "[36mGET /static/img/Lorea.jpg HTTP/1.1[0m" 304 -
+2023-08-13 22:49:36,676 INFO     _log 127.0.0.1 - - [13/Aug/2023 22:49:36] "GET /excercise/?id=8 HTTP/1.1" 200 -
+2023-08-13 22:49:36,978 INFO     _log 127.0.0.1 - - [13/Aug/2023 22:49:36] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-08-13 22:49:37,012 INFO     _log 127.0.0.1 - - [13/Aug/2023 22:49:37] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-08-13 22:49:37,023 INFO     _log 127.0.0.1 - - [13/Aug/2023 22:49:37] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-08-13 22:49:37,024 INFO     _log 127.0.0.1 - - [13/Aug/2023 22:49:37] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-08-13 22:49:47,090 INFO     _log 127.0.0.1 - - [13/Aug/2023 22:49:47] "GET /pythonScript/?py_path=static/py_excercises/20230213-PrototypeScript/0-prototype.py HTTP/1.1" 200 -
+2023-08-13 22:51:26,344 INFO     _log 127.0.0.1 - - [13/Aug/2023 22:51:26] "GET /excercise/?id=8 HTTP/1.1" 200 -
+2023-08-13 22:51:26,361 INFO     _log 127.0.0.1 - - [13/Aug/2023 22:51:26] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-08-13 22:51:26,605 INFO     _log 127.0.0.1 - - [13/Aug/2023 22:51:26] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-08-13 22:51:26,669 INFO     _log 127.0.0.1 - - [13/Aug/2023 22:51:26] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-08-13 22:51:26,669 INFO     _log 127.0.0.1 - - [13/Aug/2023 22:51:26] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-08-13 22:51:26,993 INFO     _log 127.0.0.1 - - [13/Aug/2023 22:51:26] "[36mGET /static/img/icons8-bulb-64.png HTTP/1.1[0m" 304 -
+2023-08-13 22:51:33,674 ERROR    <module>  | exception from '0-prototype.py()': 
+Traceback (most recent call last):
+  File "C:\ML_Project\NazarethCourse2023\iggPyBlog\static\py_excercises\20230213-PrototypeScript\0-prototype.py", line 22, in <module>
+    write_log_file("my_messages.log","IN 'func 0-prototype.py()'")
+NameError: name 'write_log_file' is not defined
+2023-08-13 22:51:33,690 INFO     _log 127.0.0.1 - - [13/Aug/2023 22:51:33] "GET /pythonScript/?py_path=static/py_excercises/20230213-PrototypeScript/0-prototype.py HTTP/1.1" 200 -
+2023-08-13 22:52:57,148 INFO     _log 127.0.0.1 - - [13/Aug/2023 22:52:57] "GET /excercise/?id=8 HTTP/1.1" 200 -
+2023-08-13 22:52:57,166 INFO     _log 127.0.0.1 - - [13/Aug/2023 22:52:57] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-08-13 22:52:57,409 INFO     _log 127.0.0.1 - - [13/Aug/2023 22:52:57] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-08-13 22:52:57,472 INFO     _log 127.0.0.1 - - [13/Aug/2023 22:52:57] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-08-13 22:52:57,480 INFO     _log 127.0.0.1 - - [13/Aug/2023 22:52:57] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-08-13 22:52:57,800 INFO     _log 127.0.0.1 - - [13/Aug/2023 22:52:57] "[36mGET /static/img/icons8-bulb-64.png HTTP/1.1[0m" 304 -
+2023-08-13 22:53:06,591 INFO     _log 127.0.0.1 - - [13/Aug/2023 22:53:06] "GET /pythonScript/?py_path=static/py_excercises/20230213-PrototypeScript/0-prototype.py HTTP/1.1" 200 -
+2023-08-13 22:55:32,880 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\flask_app.py', reloading
+2023-08-13 22:55:32,975 INFO     _log  * Restarting with stat
+2023-08-13 22:55:33,774 WARNING  _log  * Debugger is active!
+2023-08-13 22:55:33,782 INFO     _log  * Debugger PIN: 109-950-851

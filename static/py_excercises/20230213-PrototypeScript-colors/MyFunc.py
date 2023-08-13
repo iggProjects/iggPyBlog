@@ -15,6 +15,16 @@
 #
 # IMPORT LIBRERIES OR YOUR OWN FUNCTIONS 
 #
+
+import datetime
+
+# error handling
+import logging
+logging.basicConfig(filename='server_messages.log', 
+                encoding='utf-8', level=logging.DEBUG, format="%(asctime)-15s %(levelname)-8s %(funcName)s %(message)s")
+logging.captureWarnings(True)
+
+# My Own
 from MyColors import *
 
 #
@@ -284,3 +294,16 @@ def classtree(cls, indent=0):
     print('.' * indent, cls.__name__)
     for subcls in cls.__subclasses__():
         classtree(subcls, indent + 3)
+
+
+# function to write in "my_messages.log"
+def write_log_file(logFile,msg):
+    try:  
+        # creating/opening a file
+        f = open(logFile, "a") 
+        # writing in the file        
+        f.write('%s | %s\n' % (datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S.%f')[:-3],msg))      
+        # closing the file
+        f.close()
+    except Exception as Argument:        
+        logging.exception(" | exception from 'write_log_file()': ")

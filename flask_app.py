@@ -17,6 +17,7 @@ import datetime
 
 # import
 from MyFunc import write_log_file
+from MyColors import *
 
 """
 Links
@@ -49,16 +50,18 @@ import logging
 logging.basicConfig(filename='server_messages.log', 
                     encoding='utf-8', level=logging.DEBUG, format="%(asctime)-15s %(levelname)-8s %(funcName)s %(message)s")
 logging.captureWarnings(True)
+#logging.captureWarnings(False)
 
 
 # COLOR CONTANTS
+"""
 NO_COLOR = "\033[00m"
 FR_RED   = "\033[91m"
 FR_GREEN = "\033[92m"
 FR_YELL  = "\033[93m"
 FR_BLUE  = "\033[94m"
 FR_MAG   = "\033[95m"
-
+"""
 
 app = Flask(__name__)
 app.secret_key = 'HI TARZAN'
@@ -135,7 +138,7 @@ def display_article():
 def excercises():
     try:         
         write_log_file("my_messages.log","IN 'func excercises()'")
-        return render_template('xcercises.html', excercises = Excercises)
+        return render_template('excercises.html', excercises = Excercises)
     except Exception as Argument:   
         """     
         logging.error(Argument)

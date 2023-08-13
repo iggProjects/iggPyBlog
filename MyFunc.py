@@ -15,6 +15,16 @@
 #
 # IMPORT LIBRERIES OR YOUR OWN FUNCTIONS 
 #
+
+import datetime
+
+# error handling
+import logging
+logging.basicConfig(filename='server_messages.log', 
+                encoding='utf-8', level=logging.DEBUG, format="%(asctime)-15s %(levelname)-8s %(funcName)s %(message)s")
+logging.captureWarnings(True)
+
+# My own
 from MyColors import *
 
 #
@@ -268,8 +278,6 @@ def classtree(cls, indent=0):
 
 # function to write in "my_messages.log"
 def write_log_file(logFile,msg):
-    import logging
-    import datetime
     try:  
         # creating/opening a file
         f = open(logFile, "a") 

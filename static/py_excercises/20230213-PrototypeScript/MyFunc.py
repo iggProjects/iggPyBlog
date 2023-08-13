@@ -15,18 +15,17 @@
 #
 # IMPORT LIBRERIES OR YOUR OWN FUNCTIONS 
 #
-from MyColors import *
 
-#
-# COLORS CONSTANTS
-#
-"""
-# FOREGORUND CONSTANTS AS TEXT
-FG_WH_TXT = "\033[00m"
-FR_GREEN = "\033[92m"
-FR_RED   = "\033[91m"
-NO_COLOR = "\033[00m"
-"""
+import datetime
+
+# error handling
+import logging
+logging.basicConfig(filename='server_messages.log', 
+                encoding='utf-8', level=logging.DEBUG, format="%(asctime)-15s %(levelname)-8s %(funcName)s %(message)s")
+logging.captureWarnings(True)
+
+# My Own
+from MyColors import *
 
 #
 # TIME FUNCTIONS
@@ -261,15 +260,17 @@ def relatedClasses(clas):
 #  LOG FILES FUNCTIONS
 #
 
-# writing comments in log file
-def write_comments_log():
-   print("here write_comments log file")
-
-   
-# redirect errors msg to 'own' errors log file
-def write_errors_log():
-   print("here my errors log file")
-
+# function to write in "my_messages.log"
+def write_log_file(logFile,msg):
+    try:  
+        # creating/opening a file
+        f = open(logFile, "a") 
+        # writing in the file        
+        f.write('%s | %s\n' % (datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S.%f')[:-3],msg))      
+        # closing the file
+        f.close()
+    except Exception as Argument:        
+        logging.exception(" | exception from 'write_log_file()': ")
 
     
 #
