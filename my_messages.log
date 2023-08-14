@@ -1,57 +1,56 @@
-2023-08-11 12:46:52.955 | IGG => entering excercises
-.
-2023-08-11 12:47:14.491 | IGG => entering excercises
-
-2023-08-11 12:50:41.677 | IGG => entering excercises
-
-2023-08-11 12:54:26.073 | IGG => entering excercises
-
-2023-08-11 12:59:58.534 | IGG => entering excercises
-
-2023-08-11 13:01:59.315 | IGG => entering excercises
-
-2023-08-11 14:06:54.901 | IGG => entering excercises
-
-2023-08-11 14:11:18.337 | IGG => entering excercises
-
-2023-08-11 17:26:17.521 | IGG => entering excercises
-
-2023-08-11 17:31:07.473 | IGG => entering excercises
-
-2023-08-11 17:37:38.946 | IN 'func excercises()'
-
-2023-08-11 17:42:23.899 | IN 'func excercises()'
-
-2023-08-11 17:48:28.685 | IN 'func excercises()'
-
-2023-08-11 17:49:15.812 | IN 'func excercises()'
-
-2023-08-11 17:50:50.757 | IN 'func excercises()'
-
-2023-08-11 17:51:30.473 | IN 'func excercises()'
-
-2023-08-11 17:51:30.473 | IN 'func excercises()'
-
-2023-08-11 17:52:18.971 | IN 'func excercises()'
-2023-08-11 17:52:18.971 | IN 'func excercises()'
-2023-08-11 17:53:36.704 | IN 'func excercises()'
-2023-08-11 17:54:28.953 | IN 'func excercises()'
-2023-08-11 17:56:41.453 | IN 'func excercises()'
-2023-08-11 17:58:19.644 | IN 'func excercises()'
-2023-08-11 17:59:05.187 | IN 'func excercises()'
-2023-08-11 18:01:06.271 | IN 'func excercises()'
-2023-08-11 18:02:05.946 | IN 'func excercises()'
-2023-08-11 18:03:28.238 | IN 'func excercises()'
-2023-08-11 18:32:17.379 | IN 'func excercises()'
-2023-08-11 18:32:35.788 | IN 'func excercises()'
-2023-08-11 18:48:16.214 | IN 'func excercises()'
-2023-08-11 19:04:53.837 | IN 'func excercises()'
-2023-08-11 19:06:16.455 | IN 'func excercises()'
-2023-08-13 22:58:05.626 | IN 'func 0-prototype.py()'
-2023-08-13 22:58:15.737 | IN 'func excercises()'
-2023-08-13 23:02:43.025 | IN 'func excercises()'
-2023-08-13 23:02:53.992 | IN 'func 0-prototype-colors.py()'
-2023-08-13 23:05:01.973 | IN 'func 0-prototype-colors.py()'
-2023-08-13 23:07:06.991 | IN 'func excercises()'
-2023-08-13 23:07:20.967 | IN 'func 0-prototype.py()'
-2023-08-13 23:08:13.641 | IN 'func 0-prototype.py()'
+2023-08-14 10:59:37.253 | IN 'func 0-prototype-colors1.py()'
+2023-08-14 11:02:34.788 | IN 'func 0-prototype-colors1.py()'
+2023-08-14 11:02:34.797 | ERROR IN 'func 0-prototype-colors1.py()'. SEE server_messages.log
+2023-08-14 11:06:09.936 | IN 'func 0-prototype-colors1.py()'
+2023-08-14 11:06:09.936 | ERROR IN 'func 0-prototype-colors1.py()'. SEE server_messages.log
+2023-08-14 11:09:03.836 | IN 'func 0-prototype-colors1.py()'
+2023-08-14 11:09:03.836 | ERROR IN 'func 0-prototype-colors1.py()'. SEE server_messages.log
+2023-08-14 11:10:13.519 | IN 'func 0-prototype-colors1.py()'
+2023-08-14 11:10:13.523 | ERROR IN 'func 0-prototype-colors1.py()'. SEE server_messages.log
+2023-08-14 11:12:36.856 | IN 'func 0-prototype-colors1.py()'
+2023-08-14 11:12:36.856 | ERROR IN 'func 0-prototype-colors1.py()'. SEE server_messages.log
+2023-08-14 11:13:34.154 | IN 'func 0-prototype-colors1.py()'
+2023-08-14 11:13:34.154 | ERROR IN 'func 0-prototype-colors1.py()'. SEE server_messages.log
+2023-08-14 11:14:03.652 | IN 'func 0-prototype-colors1.py()'
+2023-08-14 11:14:03.653 | ERROR IN 'func 0-prototype-colors1.py()'. SEE server_messages.log
+2023-08-14 11:15:19.652 | IN 'func 0-prototype-colors1.py()'
+2023-08-14 11:15:19.655 | ERROR IN 'func 0-prototype-colors1.py()'. SEE server_messages.log
+2023-08-14 11:17:16.254 | IN 'func 0-prototype-colors1.py()'
+2023-08-14 11:17:16.254 | ERROR IN 'func 0-prototype-colors1.py()'. SEE server_messages.log
+2023-08-14 11:18:37.736 | IN 'func 0-prototype-colors1.py()'
+2023-08-14 11:18:37.743 | ERROR IN 'func 0-prototype-colors1.py()'. SEE server_messages.log
+2023-08-14 11:19:21.604 | IN 'func 0-prototype-colors1.py()'
+2023-08-14 11:19:21.616 | ERROR IN 'func 0-prototype-colors1.py()'. SEE server_messages.log
+2023-08-14 11:19:58.363 | IN 'func 0-prototype-colors1.py()'
+2023-08-14 11:19:58.368 | ERROR IN 'func 0-prototype-colors1.py()'. SEE server_messages.log
+2023-08-14 11:21:58.504 | IN 'func 0-prototype-colors1.py()'
+2023-08-14 11:21:58.504 | ERROR IN 'func 0-prototype-colors1.py()'. SEE server_messages.log
+2023-08-14 11:22:27.651 | IN 'func excercises()'
+2023-08-14 11:24:31.473 | IN 'func excercises()'
+2023-08-14 11:24:38.117 | IN 'func 0-prototype-colors1.py()'
+2023-08-14 11:24:38.117 | ERROR IN 'func 0-prototype-colors1.py()'. SEE server_messages.log
+2023-08-14 11:25:37.788 | IN 'func 0-prototype-colors1.py()'
+2023-08-14 11:25:37.788 | ERROR IN 'func 0-prototype-colors1.py()'. SEE server_messages.log
+2023-08-14 11:30:49.821 | IN 'func 0-prototype-colors1.py()'
+2023-08-14 11:30:49.826 | ERROR IN 'func 0-prototype-colors1.py()'. SEE server_messages.log
+2023-08-14 11:31:43.704 | IN 'func 0-prototype-colors1.py()'
+2023-08-14 11:31:43.713 | ERROR IN 'func 0-prototype-colors1.py()'. SEE server_messages.log
+2023-08-14 11:33:38.064 | IN 'func 0-prototype-colors1.py()'
+2023-08-14 11:33:38.064 | ERROR IN 'func 0-prototype-colors1.py()'. SEE server_messages.log
+2023-08-14 11:34:43.221 | IN 'func 0-prototype-colors1.py()'
+2023-08-14 11:34:43.225 | ERROR IN 'func 0-prototype-colors1.py()'. SEE server_messages.log
+2023-08-14 11:36:10.121 | IN 'func 0-prototype-colors1.py()'
+2023-08-14 11:36:10.127 | ERROR IN 'func 0-prototype-colors1.py()'. SEE server_messages.log
+2023-08-14 11:36:42.054 | IN 'func 0-prototype-colors1.py()'
+2023-08-14 11:36:42.065 | ERROR IN 'func 0-prototype-colors1.py()'. SEE server_messages.log
+2023-08-14 11:40:43.838 | IN 'func 0-prototype-colors1.py()'
+2023-08-14 11:40:43.841 | ERROR IN 'func 0-prototype-colors1.py()'. SEE server_messages.log
+2023-08-14 11:41:30.688 | IN 'func 0-prototype-colors1.py()'
+2023-08-14 11:41:30.691 | ERROR IN 'func 0-prototype-colors1.py()'. SEE server_messages.log
+2023-08-14 11:42:31.503 | IN 'func 0-prototype-colors1.py()'
+2023-08-14 11:42:31.519 | ERROR IN 'func 0-prototype-colors1.py()'. SEE server_messages.log
+2023-08-14 11:44:14.502 | IN 'func excercises()'
+2023-08-14 11:44:22.688 | IN 'func 0-prototype-colors1.py()'
+2023-08-14 11:44:22.694 | ERROR IN 'func 0-prototype-colors1.py()'. SEE server_messages.log
+2023-08-14 11:44:59.638 | IN 'func 0-prototype-colors1.py()'
+2023-08-14 11:44:59.641 | ERROR IN 'func 0-prototype-colors1.py()'. SEE server_messages.log

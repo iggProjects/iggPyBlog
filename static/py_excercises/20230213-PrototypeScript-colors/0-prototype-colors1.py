@@ -9,13 +9,6 @@ from MyColors import *
 from os import  system
 
 # CONSTANTS
-# Colors
-NO_COLOR = "\033[00m"
-FR_RED   = "\033[91m"
-FR_GREEN = "\033[92m"
-FR_YELL  = "\033[93m"
-FR_BLUE  = "\033[94m"
-FR_MAG   = "\033[95m"
 
 #
 # ---------- MAIN ----------
@@ -23,31 +16,45 @@ FR_MAG   = "\033[95m"
 
 if __name__ == "__main__":
 
-    print(f"{FR_GREEN}---------- main ----------{NO_COLOR}")
+    try:
 
-    print(f"---------- using CONTANTS for colors ----------")
+        write_log_file("my_messages.log","IN 'func 0-prototype-colors1.py()'")
+        print("print empty line")
 
-    colors= [FR_RED,FR_GREEN,FR_YELL,FR_BLUE,FR_MAG]
-    colors_str=['\\033[91m - Red','\\033[92m - Green','\\033[93m - Yellow','\\033[94m - Blue','\\033[95m - Magenta']
+        print(f"{FR_GREEN}---------- MAIN ----------{NO_COLOR}")
+
+        print(f"---------- using CONTANTS for colors ----------")
+
+        colors= [FR_RED,FR_GREEN,FR_YELL,FR_BLUE,FR_MAG]
+        colors_str=['\\033[91m - Red','\\033[92m - Green','\\033[93m - Yellow','\\033[94m - Blue','\\033[95m - Magenta']
+        
+        i=a
+        for color in colors:
+            color_str = color
+            msg=" ==> TESTING COLOR FUNCTION"
+            msg = msg.rjust(30)
+            #print("FR_RED value: " + colors_str[0])
+            print("\tPrint with ascii " + colors_str[i] + f":\t{color}{msg}") 
+            i+=1   
+
+        msg="print with default color:\t\t ==> TESTING COLOR FUNCTION"
+        print(f"\t{msg}")    
+
+        msg="\tprint with function pfRed(msg) --> TESTING COLOR FUNCTION"
+        print(frGREEN(f"---------- using function prRed(msg) ----------"))    
+        prRed(msg)   
+        
+        print(f"{FR_GREEN}---------- That's all for today ----------{NO_COLOR}")
+
+    except Exception as Argument:  
+        write_log_file("my_messages.log","ERROR IN 'func 0-prototype-colors1.py()'. SEE server_messages.log")
+        print("print empty line")
+        print(frRED(f"UPSSSS THERE IS AN ERROR IN 'func 0-prototype-colors1.py()'."))
+        print("print empty line")
+        print(frRED(f"SEE 'server_messages.log' file OR Contact Web Admin !"))
+        print("print empty line")
+        logging.exception(" | exception from '0-prototype-colors.py()': ")
     
-    i=0
-    for color in colors:
-        color_str = color
-        msg=" ==> TESTING COLOR FUNCTION"
-        msg = msg.rjust(30)
-        #print("FR_RED value: " + colors_str[0])
-        print("\tPrint with ascii " + colors_str[i] + f":\t{color}{msg}") 
-        i+=1   
-
-    msg="print with default color:\t\t ==> TESTING COLOR FUNCTION"
-    print(f"\t{msg}")    
-
-    msg="\tprint with function pfRed(msg) --> TESTING COLOR FUNCTION"
-    print(frGREEN(f"---------- using function prRed(msg) ----------"))    
-    prRed(msg)   
-    
-    print(f"{FR_GREEN}---------- That's all for today ----------{NO_COLOR}")
-
 else:
     # something wrong
     print(frRED("---- upsssssssss something is wrong ----"))
