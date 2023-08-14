@@ -13,6 +13,11 @@ STILL TO DO !!!
 
 Actual web
 
+    - Check .zip schemma for excercises, life game and enigma  (MyFunc and MyColors files can work in root path only)
+        - script to make zip in excercises --- zip_file_list(list, zipname)
+
+    - Check how to display a message in html page when an fatal error occur
+
     - Finish info filling (excercises, lifegame and enigma game) 
 
     - Read course material and "highlight special elements". Improve suggestions
@@ -25,8 +30,6 @@ Actual web
         - menu like smartphones
 
     - waiting bar
-
-    - script to make zip in excercises --- zip_file_list(list, zipname)
 
     - modal for img
         - modal for img  vs image zoom by click
