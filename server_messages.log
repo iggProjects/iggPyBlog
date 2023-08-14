@@ -409,3 +409,6 @@ Traceback (most recent call last):
 NameError: name 'a' is not defined
 2023-08-14 11:44:59,673 INFO     _log 127.0.0.1 - - [14/Aug/2023 11:44:59] "GET /result_script_exec/?py_path=static/py_excercises/20230213-PrototypeScript-colors/0-prototype-colors1.py HTTP/1.1" 200 -
 2023-08-14 11:45:00,081 INFO     _log 127.0.0.1 - - [14/Aug/2023 11:45:00] "GET /result_script_html HTTP/1.1" 200 -
+2023-08-14 11:45:02,922 INFO     _log 127.0.0.1 - - [14/Aug/2023 11:45:02] "[33mGET /excercise_data.py HTTP/1.1[0m" 404 -
+2023-08-14 11:45:32,705 INFO     _log 127.0.0.1 - - [14/Aug/2023 11:45:32] "GET / HTTP/1.1" 200 -
+2023-08-14 11:45:33,022 INFO     _log 127.0.0.1 - - [14/Aug/2023 11:45:33] "[36mGET /static/img/ame-01.jpg HTTP/1.1[0m" 304 -
