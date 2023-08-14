@@ -1,0 +1,185 @@
+AAAAA
+2023-08-14 17:53:08,573 WARNING  _log  * Debugger is active!
+2023-08-14 17:53:08,573 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-14 17:53:18,785 INFO     _log 127.0.0.1 - - [14/Aug/2023 17:53:18] "GET /excercise/?id=1 HTTP/1.1" 200 -
+2023-08-14 17:53:18,831 INFO     _log 127.0.0.1 - - [14/Aug/2023 17:53:18] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-08-14 17:53:19,111 INFO     _log 127.0.0.1 - - [14/Aug/2023 17:53:19] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-08-14 17:53:19,126 INFO     _log 127.0.0.1 - - [14/Aug/2023 17:53:19] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-08-14 17:53:19,126 INFO     _log 127.0.0.1 - - [14/Aug/2023 17:53:19] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-08-14 17:53:19,449 INFO     _log 127.0.0.1 - - [14/Aug/2023 17:53:19] "[36mGET /static/img/icons8-bulb-64.png HTTP/1.1[0m" 304 -
+2023-08-14 17:53:24,008 INFO     _log 127.0.0.1 - - [14/Aug/2023 17:53:24] "GET /result_script_exec/?py_path=static/py_excercises/20230213-PrototypeScript-colors/0-prototype-colors1.py HTTP/1.1" 200 -
+2023-08-14 17:53:24,386 INFO     _log 127.0.0.1 - - [14/Aug/2023 17:53:24] "GET /result_script_html HTTP/1.1" 200 -
+2023-08-14 17:53:30,817 INFO     _log 127.0.0.1 - - [14/Aug/2023 17:53:30] "GET /static/logFiles/server_messages.txt HTTP/1.1" 200 -
+2023-08-14 17:55:08,722 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\MyFunc.py', reloading
+2023-08-14 17:55:09,447 WARNING  _log  * Debugger is active!
+2023-08-14 17:55:09,455 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-14 17:55:16,736 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\MyFunc.py', reloading
+2023-08-14 17:55:17,558 WARNING  _log  * Debugger is active!
+2023-08-14 17:55:17,566 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-14 17:55:19,655 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\MyFunc.py', reloading
+2023-08-14 17:55:20,558 WARNING  _log  * Debugger is active!
+2023-08-14 17:55:20,566 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-14 17:55:24,728 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\MyFunc.py', reloading
+2023-08-14 17:55:25,575 WARNING  _log  * Debugger is active!
+2023-08-14 17:55:25,575 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-14 17:55:26,660 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\MyFunc.py', reloading
+2023-08-14 17:56:15,292 INFO     _log [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-08-14 17:56:15,292 INFO     _log [33mPress CTRL+C to quit[0m
+2023-08-14 17:56:15,292 INFO     _log  * Restarting with stat
+2023-08-14 17:56:16,021 WARNING  _log  * Debugger is active!
+2023-08-14 17:56:16,021 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-14 17:56:22,731 INFO     _log 127.0.0.1 - - [14/Aug/2023 17:56:22] "GET /excercise/?id=1 HTTP/1.1" 200 -
+2023-08-14 17:56:22,794 INFO     _log 127.0.0.1 - - [14/Aug/2023 17:56:22] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-08-14 17:56:23,062 INFO     _log 127.0.0.1 - - [14/Aug/2023 17:56:23] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-08-14 17:56:23,062 INFO     _log 127.0.0.1 - - [14/Aug/2023 17:56:23] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-08-14 17:56:23,062 INFO     _log 127.0.0.1 - - [14/Aug/2023 17:56:23] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-08-14 17:56:23,392 INFO     _log 127.0.0.1 - - [14/Aug/2023 17:56:23] "[36mGET /static/img/icons8-bulb-64.png HTTP/1.1[0m" 304 -
+2023-08-14 18:01:26,782 ERROR    write_log_file  | exception from 'write_log_file()': 
+Traceback (most recent call last):
+  File "C:\ML_Project\NazarethCourse2023\iggPyBlog\MyFunc.py", line 278, in write_log_file
+    f = open(logFile_path, "a")
+FileNotFoundError: [Errno 2] No such file or directory: '/static/logFiles/my_messages.log'
+2023-08-14 18:01:26,798 INFO     _log 127.0.0.1 - - [14/Aug/2023 18:01:26] "GET /excercises HTTP/1.1" 200 -
+2023-08-14 18:01:26,811 INFO     _log 127.0.0.1 - - [14/Aug/2023 18:01:26] "[36mGET /static/img/Lorea.jpg HTTP/1.1[0m" 304 -
+2023-08-14 18:01:27,174 INFO     _log 127.0.0.1 - - [14/Aug/2023 18:01:27] "[36mGET /static/img/icons8-bulb-64.png HTTP/1.1[0m" 304 -
+2023-08-14 18:01:28,415 INFO     _log 127.0.0.1 - - [14/Aug/2023 18:01:28] "GET /excercise/?id=1 HTTP/1.1" 200 -
+2023-08-14 18:01:28,718 INFO     _log 127.0.0.1 - - [14/Aug/2023 18:01:28] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-08-14 18:01:28,734 INFO     _log 127.0.0.1 - - [14/Aug/2023 18:01:28] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-08-14 18:01:28,734 INFO     _log 127.0.0.1 - - [14/Aug/2023 18:01:28] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-08-14 18:01:28,734 INFO     _log 127.0.0.1 - - [14/Aug/2023 18:01:28] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-08-14 18:01:34,164 ERROR    write_log_file  | exception from 'write_log_file()': 
+Traceback (most recent call last):
+  File "C:\ML_Project\NazarethCourse2023\iggPyBlog\static\py_excercises\20230213-PrototypeScript-colors\MyFunc.py", line 307, in write_log_file
+    f = open(logFile_path, "a")
+FileNotFoundError: [Errno 2] No such file or directory: '/static/logFiles/my_messages.txt'
+2023-08-14 18:01:34,196 INFO     _log 127.0.0.1 - - [14/Aug/2023 18:01:34] "GET /result_script_exec/?py_path=static/py_excercises/20230213-PrototypeScript-colors/0-prototype-colors1.py HTTP/1.1" 200 -
+2023-08-14 18:01:34,281 INFO     _log 127.0.0.1 - - [14/Aug/2023 18:01:34] "GET /result_script_html HTTP/1.1" 200 -
+2023-08-14 18:04:34,036 INFO     _log 127.0.0.1 - - [14/Aug/2023 18:04:34] "GET /excercise/?id=1 HTTP/1.1" 200 -
+2023-08-14 18:04:34,040 INFO     _log 127.0.0.1 - - [14/Aug/2023 18:04:34] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-08-14 18:04:34,353 INFO     _log 127.0.0.1 - - [14/Aug/2023 18:04:34] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-08-14 18:04:34,360 INFO     _log 127.0.0.1 - - [14/Aug/2023 18:04:34] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-08-14 18:04:34,360 INFO     _log 127.0.0.1 - - [14/Aug/2023 18:04:34] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-08-14 18:04:34,695 INFO     _log 127.0.0.1 - - [14/Aug/2023 18:04:34] "[36mGET /static/img/icons8-bulb-64.png HTTP/1.1[0m" 304 -
+2023-08-14 18:04:39,461 ERROR    write_log_file  | exception from 'write_log_file()': 
+Traceback (most recent call last):
+  File "C:\ML_Project\NazarethCourse2023\iggPyBlog\static\py_excercises\20230213-PrototypeScript-colors\MyFunc.py", line 307, in write_log_file
+    f = open(logFile_path, "a")
+FileNotFoundError: [Errno 2] No such file or directory: '/static/logFiles/my_messages.txt'
+2023-08-14 18:04:39,498 INFO     _log 127.0.0.1 - - [14/Aug/2023 18:04:39] "GET /result_script_exec/?py_path=static/py_excercises/20230213-PrototypeScript-colors/0-prototype-colors1.py HTTP/1.1" 200 -
+2023-08-14 18:04:39,832 INFO     _log 127.0.0.1 - - [14/Aug/2023 18:04:39] "GET /result_script_html HTTP/1.1" 200 -
+2023-08-14 18:07:41,806 INFO     _log 127.0.0.1 - - [14/Aug/2023 18:07:41] "GET / HTTP/1.1" 200 -
+2023-08-14 18:07:41,821 INFO     _log 127.0.0.1 - - [14/Aug/2023 18:07:41] "[36mGET /static/img/ame-01.jpg HTTP/1.1[0m" 304 -
+2023-08-14 18:07:44,303 ERROR    write_log_file  | exception from 'write_log_file()': 
+Traceback (most recent call last):
+  File "C:\ML_Project\NazarethCourse2023\iggPyBlog\MyFunc.py", line 278, in write_log_file
+    f = open(logFile_path, "a")
+FileNotFoundError: [Errno 2] No such file or directory: '/static/logFiles/my_messages.log'
+2023-08-14 18:07:44,304 INFO     _log 127.0.0.1 - - [14/Aug/2023 18:07:44] "GET /excercises HTTP/1.1" 200 -
+2023-08-14 18:07:44,611 INFO     _log 127.0.0.1 - - [14/Aug/2023 18:07:44] "[36mGET /static/img/Lorea.jpg HTTP/1.1[0m" 304 -
+2023-08-14 18:07:45,639 INFO     _log 127.0.0.1 - - [14/Aug/2023 18:07:45] "GET /excercise/?id=1 HTTP/1.1" 200 -
+2023-08-14 18:07:45,945 INFO     _log 127.0.0.1 - - [14/Aug/2023 18:07:45] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-08-14 18:07:45,963 INFO     _log 127.0.0.1 - - [14/Aug/2023 18:07:45] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-08-14 18:07:45,963 INFO     _log 127.0.0.1 - - [14/Aug/2023 18:07:45] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-08-14 18:07:45,963 INFO     _log 127.0.0.1 - - [14/Aug/2023 18:07:45] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-08-14 18:07:51,078 ERROR    write_log_file  | exception from 'write_log_file()': 
+Traceback (most recent call last):
+  File "C:\ML_Project\NazarethCourse2023\iggPyBlog\static\py_excercises\20230213-PrototypeScript-colors\MyFunc.py", line 307, in write_log_file
+    f = open(logFile_path, "a")
+FileNotFoundError: [Errno 2] No such file or directory: '/static/logFiles/my_messages.txt'
+2023-08-14 18:07:51,114 INFO     _log 127.0.0.1 - - [14/Aug/2023 18:07:51] "GET /result_script_exec/?py_path=static/py_excercises/20230213-PrototypeScript-colors/0-prototype-colors1.py HTTP/1.1" 200 -
+2023-08-14 18:07:51,221 INFO     _log 127.0.0.1 - - [14/Aug/2023 18:07:51] "GET /result_script_html HTTP/1.1" 200 -
+2023-08-14 18:11:20,842 INFO     _log 127.0.0.1 - - [14/Aug/2023 18:11:20] "GET /excercise/?id=1 HTTP/1.1" 200 -
+2023-08-14 18:11:20,847 INFO     _log 127.0.0.1 - - [14/Aug/2023 18:11:20] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-08-14 18:11:21,165 INFO     _log 127.0.0.1 - - [14/Aug/2023 18:11:21] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-08-14 18:11:21,165 INFO     _log 127.0.0.1 - - [14/Aug/2023 18:11:21] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-08-14 18:11:21,180 INFO     _log 127.0.0.1 - - [14/Aug/2023 18:11:21] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-08-14 18:11:21,494 INFO     _log 127.0.0.1 - - [14/Aug/2023 18:11:21] "[36mGET /static/img/icons8-bulb-64.png HTTP/1.1[0m" 304 -
+2023-08-14 18:11:25,892 ERROR    write_log_file  | exception from 'write_log_file()': 
+Traceback (most recent call last):
+  File "C:\ML_Project\NazarethCourse2023\iggPyBlog\static\py_excercises\20230213-PrototypeScript-colors\MyFunc.py", line 308, in write_log_file
+    f = open(logFile_path, "a")
+FileNotFoundError: [Errno 2] No such file or directory: '/static/logFiles/my_messages.txt'
+2023-08-14 18:11:25,931 INFO     _log 127.0.0.1 - - [14/Aug/2023 18:11:25] "GET /result_script_exec/?py_path=static/py_excercises/20230213-PrototypeScript-colors/0-prototype-colors1.py HTTP/1.1" 200 -
+2023-08-14 18:11:26,264 INFO     _log 127.0.0.1 - - [14/Aug/2023 18:11:26] "GET /result_script_html HTTP/1.1" 200 -
+2023-08-14 18:12:49,585 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\MyFunc.py', reloading
+2023-08-14 18:12:49,663 INFO     _log  * Restarting with stat
+2023-08-14 18:12:50,428 WARNING  _log  * Debugger is active!
+2023-08-14 18:12:50,428 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-14 18:12:55,348 INFO     _log 127.0.0.1 - - [14/Aug/2023 18:12:55] "GET /excercise/?id=1 HTTP/1.1" 200 -
+2023-08-14 18:12:55,408 INFO     _log 127.0.0.1 - - [14/Aug/2023 18:12:55] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-08-14 18:12:55,683 INFO     _log 127.0.0.1 - - [14/Aug/2023 18:12:55] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-08-14 18:12:55,683 INFO     _log 127.0.0.1 - - [14/Aug/2023 18:12:55] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-08-14 18:12:55,683 INFO     _log 127.0.0.1 - - [14/Aug/2023 18:12:55] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-08-14 18:12:56,005 INFO     _log 127.0.0.1 - - [14/Aug/2023 18:12:56] "[36mGET /static/img/icons8-bulb-64.png HTTP/1.1[0m" 304 -
+2023-08-14 18:12:59,936 ERROR    write_log_file  | exception from 'write_log_file()': 
+Traceback (most recent call last):
+  File "C:\ML_Project\NazarethCourse2023\iggPyBlog\static\py_excercises\20230213-PrototypeScript-colors\MyFunc.py", line 308, in write_log_file
+    f = open(logFile_path, "a")
+FileNotFoundError: [Errno 2] No such file or directory: '/static/logFiles/my_messages.txt'
+2023-08-14 18:12:59,967 INFO     _log 127.0.0.1 - - [14/Aug/2023 18:12:59] "GET /result_script_exec/?py_path=static/py_excercises/20230213-PrototypeScript-colors/0-prototype-colors1.py HTTP/1.1" 200 -
+2023-08-14 18:13:00,322 INFO     _log 127.0.0.1 - - [14/Aug/2023 18:13:00] "GET /result_script_html HTTP/1.1" 200 -
+2023-08-14 18:13:58,683 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\MyFunc.py', reloading
+2023-08-14 18:13:58,785 INFO     _log  * Restarting with stat
+2023-08-14 18:13:59,523 WARNING  _log  * Debugger is active!
+2023-08-14 18:13:59,531 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-14 18:14:11,881 INFO     _log 127.0.0.1 - - [14/Aug/2023 18:14:11] "GET /excercise/?id=1 HTTP/1.1" 200 -
+2023-08-14 18:14:11,938 INFO     _log 127.0.0.1 - - [14/Aug/2023 18:14:11] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-08-14 18:14:12,211 INFO     _log 127.0.0.1 - - [14/Aug/2023 18:14:12] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-08-14 18:14:12,211 INFO     _log 127.0.0.1 - - [14/Aug/2023 18:14:12] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-08-14 18:14:12,211 INFO     _log 127.0.0.1 - - [14/Aug/2023 18:14:12] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-08-14 18:14:12,543 INFO     _log 127.0.0.1 - - [14/Aug/2023 18:14:12] "[36mGET /static/img/icons8-bulb-64.png HTTP/1.1[0m" 304 -
+2023-08-14 18:14:16,734 INFO     _log 127.0.0.1 - - [14/Aug/2023 18:14:16] "GET /result_script_exec/?py_path=static/py_excercises/20230213-PrototypeScript-colors/0-prototype-colors1.py HTTP/1.1" 200 -
+2023-08-14 18:14:17,084 INFO     _log 127.0.0.1 - - [14/Aug/2023 18:14:17] "GET /result_script_html HTTP/1.1" 200 -
+2023-08-14 18:18:05,061 INFO     _log 127.0.0.1 - - [14/Aug/2023 18:18:05] "GET /static/logFiles/server_messages.txt HTTP/1.1" 200 -
+2023-08-14 18:19:25,445 INFO     _log 127.0.0.1 - - [14/Aug/2023 18:19:25] "GET /result_script_html HTTP/1.1" 200 -
+2023-08-14 18:19:25,501 INFO     _log 127.0.0.1 - - [14/Aug/2023 18:19:25] "[36mGET /static/img/icons8-bulb-64.png HTTP/1.1[0m" 304 -
+2023-08-14 18:19:53,273 INFO     _log 127.0.0.1 - - [14/Aug/2023 18:19:53] "GET /result_script_html HTTP/1.1" 200 -
+2023-08-14 18:19:53,534 INFO     _log 127.0.0.1 - - [14/Aug/2023 18:19:53] "[36mGET /static/img/icons8-bulb-64.png HTTP/1.1[0m" 304 -
+2023-08-14 18:20:12,101 INFO     _log 127.0.0.1 - - [14/Aug/2023 18:20:12] "GET /result_script_html HTTP/1.1" 200 -
+2023-08-14 18:20:12,144 INFO     _log 127.0.0.1 - - [14/Aug/2023 18:20:12] "[36mGET /static/img/icons8-bulb-64.png HTTP/1.1[0m" 304 -
+2023-08-14 18:21:14,933 INFO     _log 127.0.0.1 - - [14/Aug/2023 18:21:14] "GET /result_script_html HTTP/1.1" 200 -
+2023-08-14 18:21:14,972 INFO     _log 127.0.0.1 - - [14/Aug/2023 18:21:14] "[36mGET /static/img/icons8-bulb-64.png HTTP/1.1[0m" 304 -
+2023-08-14 18:22:02,486 INFO     _log 127.0.0.1 - - [14/Aug/2023 18:22:02] "GET /result_script_html HTTP/1.1" 200 -
+2023-08-14 18:22:02,715 INFO     _log 127.0.0.1 - - [14/Aug/2023 18:22:02] "[36mGET /static/img/icons8-bulb-64.png HTTP/1.1[0m" 304 -
+2023-08-14 18:22:11,678 INFO     _log 127.0.0.1 - - [14/Aug/2023 18:22:11] "GET /static/logFiles/server_messages.txt HTTP/1.1" 200 -
+2023-08-14 18:22:16,378 INFO     _log 127.0.0.1 - - [14/Aug/2023 18:22:16] "GET /static/logFiles/my_messages.txt HTTP/1.1" 200 -
+2023-08-14 18:22:40,919 INFO     _log 127.0.0.1 - - [14/Aug/2023 18:22:40] "GET /result_script_html HTTP/1.1" 200 -
+2023-08-14 18:22:41,184 INFO     _log 127.0.0.1 - - [14/Aug/2023 18:22:41] "[36mGET /static/img/icons8-bulb-64.png HTTP/1.1[0m" 304 -
+2023-08-14 18:22:50,543 INFO     _log 127.0.0.1 - - [14/Aug/2023 18:22:50] "[36mGET /static/logFiles/my_messages.txt HTTP/1.1[0m" 304 -
+2023-08-14 18:22:56,046 INFO     _log 127.0.0.1 - - [14/Aug/2023 18:22:56] "GET /static/logFiles/server_messages.txt HTTP/1.1" 200 -
+2023-08-14 18:23:17,044 INFO     _log 127.0.0.1 - - [14/Aug/2023 18:23:17] "GET /excercises HTTP/1.1" 200 -
+2023-08-14 18:23:17,346 INFO     _log 127.0.0.1 - - [14/Aug/2023 18:23:17] "[36mGET /static/img/Lorea.jpg HTTP/1.1[0m" 304 -
+2023-08-14 18:23:18,905 INFO     _log 127.0.0.1 - - [14/Aug/2023 18:23:18] "GET /excercise/?id=5 HTTP/1.1" 200 -
+2023-08-14 18:23:19,212 INFO     _log 127.0.0.1 - - [14/Aug/2023 18:23:19] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-08-14 18:23:19,233 INFO     _log 127.0.0.1 - - [14/Aug/2023 18:23:19] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-08-14 18:23:19,238 INFO     _log 127.0.0.1 - - [14/Aug/2023 18:23:19] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-08-14 18:23:19,238 INFO     _log 127.0.0.1 - - [14/Aug/2023 18:23:19] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-08-14 18:23:23,926 INFO     _log 127.0.0.1 - - [14/Aug/2023 18:23:23] "GET /result_script_exec/?py_path=static/py_excercises/20230213-PrototypeScript-ModuleMethods/0-prototype-mod-methods1.py HTTP/1.1" 200 -
+2023-08-14 18:23:24,011 INFO     _log 127.0.0.1 - - [14/Aug/2023 18:23:24] "GET /result_script_html HTTP/1.1" 200 -
+2023-08-14 18:23:27,273 INFO     _log 127.0.0.1 - - [14/Aug/2023 18:23:27] "GET /static/logFiles/server_messages.txt HTTP/1.1" 200 -
+2023-08-14 18:23:43,362 INFO     _log 127.0.0.1 - - [14/Aug/2023 18:23:43] "[36mGET /static/logFiles/my_messages.txt HTTP/1.1[0m" 304 -
+2023-08-14 18:23:57,111 INFO     _log 127.0.0.1 - - [14/Aug/2023 18:23:57] "GET /static/logFiles/server_messages.txt HTTP/1.1" 200 -
+2023-08-14 18:24:07,765 INFO     _log 127.0.0.1 - - [14/Aug/2023 18:24:07] "GET /static/logFiles/server_messages.txt HTTP/1.1" 200 -
+2023-08-14 18:24:52,749 INFO     _log 127.0.0.1 - - [14/Aug/2023 18:24:52] "GET /result_script_html HTTP/1.1" 200 -
+2023-08-14 18:24:52,977 INFO     _log 127.0.0.1 - - [14/Aug/2023 18:24:52] "[36mGET /static/img/icons8-bulb-64.png HTTP/1.1[0m" 304 -
+2023-08-14 18:25:13,455 INFO     _log 127.0.0.1 - - [14/Aug/2023 18:25:13] "GET /result_script_html HTTP/1.1" 200 -
+2023-08-14 18:25:13,692 INFO     _log 127.0.0.1 - - [14/Aug/2023 18:25:13] "[36mGET /static/img/icons8-bulb-64.png HTTP/1.1[0m" 304 -
+2023-08-14 18:26:27,942 INFO     _log 127.0.0.1 - - [14/Aug/2023 18:26:27] "GET /result_script_html HTTP/1.1" 200 -
+2023-08-14 18:26:27,970 INFO     _log 127.0.0.1 - - [14/Aug/2023 18:26:27] "[36mGET /static/img/icons8-bulb-64.png HTTP/1.1[0m" 304 -
+2023-08-14 18:26:35,889 INFO     _log 127.0.0.1 - - [14/Aug/2023 18:26:35] "GET /excercises HTTP/1.1" 200 -
+2023-08-14 18:26:36,203 INFO     _log 127.0.0.1 - - [14/Aug/2023 18:26:36] "[36mGET /static/img/Lorea.jpg HTTP/1.1[0m" 304 -
+2023-08-14 18:28:31,938 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\MyFunc.py', reloading
+2023-08-14 18:28:31,999 INFO     _log  * Restarting with stat
+2023-08-14 18:28:32,546 WARNING  _log  * Debugger is active!
+2023-08-14 18:28:32,549 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-14 18:28:54,809 INFO     _log 127.0.0.1 - - [14/Aug/2023 18:28:54] "GET /excercises HTTP/1.1" 200 -
+2023-08-14 18:28:54,851 INFO     _log 127.0.0.1 - - [14/Aug/2023 18:28:54] "[36mGET /static/img/Lorea.jpg HTTP/1.1[0m" 304 -
+2023-08-14 18:28:55,057 INFO     _log 127.0.0.1 - - [14/Aug/2023 18:28:55] "[36mGET /static/img/icons8-bulb-64.png HTTP/1.1[0m" 304 -
+2023-08-14 18:28:55,694 INFO     _log 127.0.0.1 - - [14/Aug/2023 18:28:55] "GET /excercise/?id=1 HTTP/1.1" 200 -
+2023-08-14 18:28:56,009 INFO     _log 127.0.0.1 - - [14/Aug/2023 18:28:56] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-08-14 18:28:56,011 INFO     _log 127.0.0.1 - - [14/Aug/2023 18:28:56] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-08-14 18:28:56,019 INFO     _log 127.0.0.1 - - [14/Aug/2023 18:28:56] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-08-14 18:28:56,020 INFO     _log 127.0.0.1 - - [14/Aug/2023 18:28:56] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-08-14 18:29:00,745 INFO     _log 127.0.0.1 - - [14/Aug/2023 18:29:00] "GET /result_script_exec/?py_path=static/py_excercises/20230213-PrototypeScript-colors/0-prototype-colors1.py HTTP/1.1" 200 -
+2023-08-14 18:29:00,908 INFO     _log 127.0.0.1 - - [14/Aug/2023 18:29:00] "GET /result_script_html HTTP/1.1" 200 -

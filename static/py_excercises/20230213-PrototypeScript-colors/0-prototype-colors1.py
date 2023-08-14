@@ -18,7 +18,7 @@ if __name__ == "__main__":
 
     try:
 
-        write_log_file("my_messages.log","IN 'func 0-prototype-colors1.py()'")
+        write_log_file("my_messages.txt","IN 'func 0-prototype-colors1.py()'")
         print("print empty line")
 
         print(f"{FR_GREEN}---------- MAIN ----------{NO_COLOR}")
@@ -28,7 +28,7 @@ if __name__ == "__main__":
         colors= [FR_RED,FR_GREEN,FR_YELL,FR_BLUE,FR_MAG]
         colors_str=['\\033[91m - Red','\\033[92m - Green','\\033[93m - Yellow','\\033[94m - Blue','\\033[95m - Magenta']
         
-        i=a
+        i=0
         for color in colors:
             color_str = color
             msg=" ==> TESTING COLOR FUNCTION"

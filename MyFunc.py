@@ -20,7 +20,8 @@ import datetime
 
 # error handling
 import logging
-logging.basicConfig(filename='server_messages.log', 
+log_file_path = "static/logFiles/server_messages.txt"
+logging.basicConfig(filename=log_file_path, 
                 encoding='utf-8', level=logging.DEBUG, format="%(asctime)-15s %(levelname)-8s %(funcName)s %(message)s")
 logging.captureWarnings(True)
 
@@ -272,8 +273,10 @@ def classtree(cls, indent=0):
 # function to write in "my_messages.log"
 def write_log_file(logFile,msg):
     try:  
+        logFile_path = "static/logFiles/" + logFile
         # creating/opening a file
-        f = open(logFile, "a") 
+        f = open(logFile_path, "a") 
+        #f = open(logFile, "a") 
         # writing in the file        
         f.write('%s | %s\n' % (datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S.%f')[:-3],msg))      
         # closing the file

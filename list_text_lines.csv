@@ -1,26 +1,12 @@
 transparent,---
-blue;,=== MAIN
-transparent,---
-black,base dir: C:\\ML_Project\\NazarethCourse2023
-transparent,---
-green;,Read and print 'static\\py_excercises\\20230301-DelRepeatedLinesAndSort\\z-fileRepeatedLines.txt'
-black,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;aaaaaaaaaaaaaaaaa
-black,
-black,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;bbbbbbbbbbbbbbbbb
-black,
-black,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;aaaaaaaaaaaaaaaaa
-black,
-black,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;bbbbbbbbbbbbbbbbb
-black,
-black,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ccccccccccccccccc
-black,
-transparent,---
-green;,Read file 'z-fileRepeatedLines.txt' with command &lt;uniqlines = set('z-fileRepeatedLines.txt').readlines&gt;
-black,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;uniqlines type is &lt;class 'set'&gt;
-black,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;uniqlines before: {'bbbbbbbbbbbbbbbbb'; 'aaaaaaaaaaaaaaaaa'; 'ccccccccccccccccc'}
-transparent,---
-green;,Sort 'uniqlines' with sorted(uniqlines)
-black,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;uniqlines after: ['aaaaaaaaaaaaaaaaa'; 'bbbbbbbbbbbbbbbbb'; 'ccccccccccccccccc']
-transparent,---
-green;,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Check sorted file 'z-fileWithOutRepetitionLines.txt'
-black,
+green,---------- MAIN ----------
+black,---------- using CONTANTS for colors ----------
+#800000,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Print with ascii \\033[91m - Red:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    ==&gt; TESTING COLOR FUNCTION
+green,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Print with ascii \\033[92m - Green:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    ==&gt; TESTING COLOR FUNCTION
+#cc5200,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Print with ascii \\033[93m - Yellow:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    ==&gt; TESTING COLOR FUNCTION
+blue,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Print with ascii \\033[94m - Blue:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    ==&gt; TESTING COLOR FUNCTION
+magenta,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Print with ascii \\033[95m - Magenta:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    ==&gt; TESTING COLOR FUNCTION
+black,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print with default color:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ==&gt; TESTING COLOR FUNCTION
+green,---------- using function prRed(msg) ---------- 
+#800000,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print with function pfRed(msg) ==&gt; TESTING COLOR FUNCTION
+green,---------- That's all for today ----------
