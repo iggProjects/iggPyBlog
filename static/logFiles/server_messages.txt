@@ -183,3 +183,5 @@ FileNotFoundError: [Errno 2] No such file or directory: '/static/logFiles/my_mes
 2023-08-14 18:28:56,020 INFO     _log 127.0.0.1 - - [14/Aug/2023 18:28:56] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
 2023-08-14 18:29:00,745 INFO     _log 127.0.0.1 - - [14/Aug/2023 18:29:00] "GET /result_script_exec/?py_path=static/py_excercises/20230213-PrototypeScript-colors/0-prototype-colors1.py HTTP/1.1" 200 -
 2023-08-14 18:29:00,908 INFO     _log 127.0.0.1 - - [14/Aug/2023 18:29:00] "GET /result_script_html HTTP/1.1" 200 -
+2023-08-14 18:29:03,358 INFO     _log 127.0.0.1 - - [14/Aug/2023 18:29:03] "GET /static/logFiles/my_messages.txt HTTP/1.1" 200 -
+2023-08-14 18:29:36,068 INFO     _log 127.0.0.1 - - [14/Aug/2023 18:29:36] "[36mGET /static/logFiles/my_messages.txt HTTP/1.1[0m" 304 -
