@@ -13,6 +13,10 @@ STILL TO DO !!!
 
 Actual web
 
+    - Finish checking if scripts contain write_log_file(my_messages.txt), the writing procedure to server_messages.txt 
+      & rendering to error_page if proceed
+        - include print file name 
+
     - Check .zip schemma for excercises, life game and enigma  (MyFunc and MyColors files can work in root path only)
         - script to make zip in excercises --- zip_file_list(list, zipname)
 

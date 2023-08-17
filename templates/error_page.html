@@ -1,0 +1,14 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+    <div class="jumbtron text-center">
+        <h1 style="text-align: center; margin-top: 50px; color:blue;">An error has occurred !</h1>
+        <img src="/static/img/sad-face-2692.png" style="margin-top:50px;margin-bottom:20px;border-radius: 10px;" alt="sad_face" width="120"/>        
+        <p class="lead" style="margin-top:30px;">SEE LOG FILES</p>
+        <div>
+            <button style="padding:5px;"><a href="/static/logFiles/server_messages.txt" target="_blank" title="server_messages file">access 'server_messages' file</a></button>
+            <button style="margin-left:20px; padding:5px;"><a  href="/static/logFiles/my_messages.txt" target="_blank" title="my comments file">access 'my_messages' file</a></button>   
+        </div>        
+    </div>
+{% endblock %}
+

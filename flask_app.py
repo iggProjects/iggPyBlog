@@ -137,7 +137,7 @@ def display_article():
 @app.route('/excercises')
 def excercises():
     try:         
-        write_log_file("my_messages.log","IN 'func excercises()'")
+        write_log_file("my_messages.txt","IN 'func excercises()'")
         return render_template('excercises.html', excercises = Excercises)
     except Exception as Argument:   
         """     
@@ -147,7 +147,10 @@ def excercises():
         logging.debug(Argument) 
         logging.critical(Argument)               
         """
+        write_log_file("my_messages.txt","FROM 'func excercises(), SEE server_messages.txt'")
         logging.exception("exception => "  + str(Argument))
+        return render_template('error_page.html')
+
 
 """
 import logging
