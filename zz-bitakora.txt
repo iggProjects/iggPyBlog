@@ -19,8 +19,10 @@ Actual web
 
     - Check .zip schemma for excercises, life game and enigma  (MyFunc and MyColors files can work in root path only)
         - script to make zip in excercises --- zip_file_list(list, zipname)
-
-    - Check how to display a message in html page when an fatal error occur
+        JS -> https://codepen.io/iksdatoo/pen/QqNPvM
+           -> https://www.viralpatel.net/create-zip-file-javascript/
+           -> https://stackoverflow.com/questions/17986432/how-to-zip-files-using-jszip-library
+           -> https://heltschl.org/_js/jszip/
 
     - Finish info filling (excercises, lifegame and enigma game) 
 
