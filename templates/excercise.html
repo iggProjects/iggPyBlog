@@ -16,7 +16,8 @@
                 </th>
                 <th style="width:9%">
                     <a href="{{excercise.zip_url}}" target="_blank" data-title=" Download py script (zip) ">
-                        <img class="myImg" onclick='ExecPythonScript()' src="{{ url_for('static', filename='img/icons8-descargar-de-la-nube-100.png') }}" alt="download-100" width="30"/>
+                        <img class="myImg" src="{{ url_for('static', filename='img/icons8-descargar-de-la-nube-100.png') }}" alt="download-100" width="30"/>
+                        <!-- <img class="myImg" onclick='ExecPythonScript("{{excercise.zip_url}}")' src="{{ url_for('static', filename='img/icons8-descargar-de-la-nube-100.png') }}" alt="download-100" width="30"/>  -->
                     </a>
                 </th> 
 
@@ -59,6 +60,9 @@
         }
 
         async function ExecPythonScript(py_path){
+            console.log('---> PATH-FILE ' + py_path);
+            //path_array = py_path.split('/');
+            //console.log('---> FOLDER ' + typeof(path_array[3]) + ' | ' + path_array[3]);
             if ( location.hostname == 'localhost' || location.hostname == '127.0.0.1') {
                 my_msg_window.render("Alert"," PLEASE CHECK FLASK CONSOLE !"); 
                 await delay(500);

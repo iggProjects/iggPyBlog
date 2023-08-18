@@ -23,6 +23,7 @@ Actual web
            -> https://www.viralpatel.net/create-zip-file-javascript/
            -> https://stackoverflow.com/questions/17986432/how-to-zip-files-using-jszip-library
            -> https://heltschl.org/_js/jszip/
+           -> https://stackoverflow.com/questions/31274329/get-list-of-filenames-in-folder-with-javascript
 
     - Finish info filling (excercises, lifegame and enigma game) 
 
