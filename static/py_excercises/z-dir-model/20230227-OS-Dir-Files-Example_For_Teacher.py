@@ -13,8 +13,8 @@ import platform
 
 from colorama import Fore, Back, Style
 
-from MyFunc_ForTeacher import *
-from Colors_ForTeacher import *
+from MyFunc import *
+from MyColors import *
 
 #
 # ---------- COURSE EXCERCISE ----------
