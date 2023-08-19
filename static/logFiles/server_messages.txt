@@ -615,3 +615,76 @@ jinja2.exceptions.TemplateNotFound: excercses.html
 2023-08-17 20:43:37,206 INFO     _log 127.0.0.1 - - [17/Aug/2023 20:43:37] "GET /excercises HTTP/1.1" 200 -
 2023-08-17 20:43:37,264 INFO     _log 127.0.0.1 - - [17/Aug/2023 20:43:37] "[36mGET /static/img/Lorea.jpg HTTP/1.1[0m" 304 -
 2023-08-17 20:43:37,446 INFO     _log 127.0.0.1 - - [17/Aug/2023 20:43:37] "[36mGET /static/img/icons8-bulb-64.png HTTP/1.1[0m" 304 -
+2023-08-19 13:39:26,702 INFO     _log [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-08-19 13:39:26,702 INFO     _log [33mPress CTRL+C to quit[0m
+2023-08-19 13:39:26,707 INFO     _log  * Restarting with stat
+2023-08-19 13:39:27,443 WARNING  _log  * Debugger is active!
+2023-08-19 13:39:27,450 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-19 13:40:30,201 INFO     _log 127.0.0.1 - - [19/Aug/2023 13:40:30] "GET / HTTP/1.1" 200 -
+2023-08-19 13:40:30,324 INFO     _log 127.0.0.1 - - [19/Aug/2023 13:40:30] "GET /static/img/ame-01.jpg HTTP/1.1" 200 -
+2023-08-19 13:40:30,537 INFO     _log 127.0.0.1 - - [19/Aug/2023 13:40:30] "GET /static/img/icons8-bulb-64.png HTTP/1.1" 200 -
+2023-08-19 13:40:33,697 INFO     _log 127.0.0.1 - - [19/Aug/2023 13:40:33] "GET /excercises HTTP/1.1" 200 -
+2023-08-19 13:40:33,994 INFO     _log 127.0.0.1 - - [19/Aug/2023 13:40:33] "GET /static/img/Lorea.jpg HTTP/1.1" 200 -
+2023-08-19 13:40:36,150 INFO     _log 127.0.0.1 - - [19/Aug/2023 13:40:36] "GET /excercise/?id=4 HTTP/1.1" 200 -
+2023-08-19 13:40:36,484 INFO     _log 127.0.0.1 - - [19/Aug/2023 13:40:36] "GET /static/img/icons8-script-68.png HTTP/1.1" 200 -
+2023-08-19 13:40:36,494 INFO     _log 127.0.0.1 - - [19/Aug/2023 13:40:36] "GET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1" 200 -
+2023-08-19 13:40:36,496 INFO     _log 127.0.0.1 - - [19/Aug/2023 13:40:36] "GET /static/img/icons8-consola-100.png HTTP/1.1" 200 -
+2023-08-19 13:40:36,509 INFO     _log 127.0.0.1 - - [19/Aug/2023 13:40:36] "GET /static/img/icons8-html-filetype-50.png HTTP/1.1" 200 -
+2023-08-19 13:40:40,185 INFO     _log 127.0.0.1 - - [19/Aug/2023 13:40:40] "GET /static/py_excercises/20230213-PrototypeScript-MatrixView/20230213-PrototypeScript-MatrixView.zip HTTP/1.1" 200 -
+2023-08-19 13:55:15,416 INFO     _log 127.0.0.1 - - [19/Aug/2023 13:55:15] "GET /project-EnigmaGame HTTP/1.1" 200 -
+2023-08-19 13:55:15,435 INFO     _log 127.0.0.1 - - [19/Aug/2023 13:55:15] "GET /static/img/enigma.jpg HTTP/1.1" 200 -
+2023-08-19 13:55:15,659 INFO     _log 127.0.0.1 - - [19/Aug/2023 13:55:15] "GET /static/img/icons8-video-50.png HTTP/1.1" 200 -
+2023-08-19 13:55:15,751 INFO     _log 127.0.0.1 - - [19/Aug/2023 13:55:15] "[36mGET /static/img/Lorea.jpg HTTP/1.1[0m" 304 -
+2023-08-19 13:55:17,701 INFO     _log 127.0.0.1 - - [19/Aug/2023 13:55:17] "GET /project-EnigmaGame_script/?id=1 HTTP/1.1" 200 -
+2023-08-19 13:55:17,987 INFO     _log 127.0.0.1 - - [19/Aug/2023 13:55:17] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-08-19 13:55:18,019 INFO     _log 127.0.0.1 - - [19/Aug/2023 13:55:18] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-08-19 13:55:18,034 INFO     _log 127.0.0.1 - - [19/Aug/2023 13:55:18] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-08-19 13:55:18,035 INFO     _log 127.0.0.1 - - [19/Aug/2023 13:55:18] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-08-19 13:55:19,570 INFO     _log 127.0.0.1 - - [19/Aug/2023 13:55:19] "GET /static/proj_enigmaGame_scripts/mpPool_Arith_Progres_Sum.zip HTTP/1.1" 200 -
+2023-08-19 14:03:14,534 INFO     _log 127.0.0.1 - - [19/Aug/2023 14:03:14] "GET /project-EnigmaGame_script/?id=1 HTTP/1.1" 200 -
+2023-08-19 14:03:14,550 INFO     _log 127.0.0.1 - - [19/Aug/2023 14:03:14] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-08-19 14:03:14,800 INFO     _log 127.0.0.1 - - [19/Aug/2023 14:03:14] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-08-19 14:03:14,867 INFO     _log 127.0.0.1 - - [19/Aug/2023 14:03:14] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-08-19 14:03:14,867 INFO     _log 127.0.0.1 - - [19/Aug/2023 14:03:14] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-08-19 14:03:15,200 INFO     _log 127.0.0.1 - - [19/Aug/2023 14:03:15] "[36mGET /static/img/icons8-bulb-64.png HTTP/1.1[0m" 304 -
+2023-08-19 14:03:39,927 INFO     _log 127.0.0.1 - - [19/Aug/2023 14:03:39] "GET /pythonScript/?py_path=static/proj_enigmaGame_scripts/mpPool_Arith_Progres_Sum.py HTTP/1.1" 200 -
+2023-08-19 14:04:12,405 INFO     _log 127.0.0.1 - - [19/Aug/2023 14:04:12] "GET /result_script_exec/?py_path=static/proj_enigmaGame_scripts/mpPool_Arith_Progres_Sum1.py HTTP/1.1" 200 -
+2023-08-19 14:04:12,517 INFO     _log 127.0.0.1 - - [19/Aug/2023 14:04:12] "GET /result_script_html HTTP/1.1" 200 -
+2023-08-19 14:04:31,424 INFO     _log 127.0.0.1 - - [19/Aug/2023 14:04:31] "GET /static/logFiles/server_messages.txt HTTP/1.1" 200 -
+2023-08-19 14:04:31,720 INFO     _log 127.0.0.1 - - [19/Aug/2023 14:04:31] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2023-08-19 14:04:50,886 INFO     _log 127.0.0.1 - - [19/Aug/2023 14:04:50] "GET /project-EnigmaGame_script/?id=2 HTTP/1.1" 200 -
+2023-08-19 14:04:50,905 INFO     _log 127.0.0.1 - - [19/Aug/2023 14:04:50] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-08-19 14:04:51,205 INFO     _log 127.0.0.1 - - [19/Aug/2023 14:04:51] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-08-19 14:04:51,224 INFO     _log 127.0.0.1 - - [19/Aug/2023 14:04:51] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-08-19 14:04:51,224 INFO     _log 127.0.0.1 - - [19/Aug/2023 14:04:51] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-08-19 14:04:58,467 INFO     _log 127.0.0.1 - - [19/Aug/2023 14:04:58] "GET /pythonScript/?py_path=static/proj_enigmaGame_scripts/z-writePermut_26_File.py HTTP/1.1" 200 -
+2023-08-19 14:07:05,231 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File.py', reloading
+2023-08-19 14:07:05,336 INFO     _log  * Restarting with stat
+2023-08-19 14:07:06,119 WARNING  _log  * Debugger is active!
+2023-08-19 14:07:06,127 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-19 14:07:13,399 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File.py', reloading
+2023-08-19 14:07:13,528 INFO     _log  * Restarting with stat
+2023-08-19 14:07:14,362 WARNING  _log  * Debugger is active!
+2023-08-19 14:07:14,370 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-19 14:07:22,817 INFO     _log 127.0.0.1 - - [19/Aug/2023 14:07:22] "GET /project-EnigmaGame_script/?id=2 HTTP/1.1" 200 -
+2023-08-19 14:07:22,916 INFO     _log 127.0.0.1 - - [19/Aug/2023 14:07:22] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-08-19 14:07:23,058 INFO     _log 127.0.0.1 - - [19/Aug/2023 14:07:23] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-08-19 14:07:23,150 INFO     _log 127.0.0.1 - - [19/Aug/2023 14:07:23] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-08-19 14:07:23,150 INFO     _log 127.0.0.1 - - [19/Aug/2023 14:07:23] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-08-19 14:07:23,485 INFO     _log 127.0.0.1 - - [19/Aug/2023 14:07:23] "[36mGET /static/img/icons8-bulb-64.png HTTP/1.1[0m" 304 -
+2023-08-19 14:07:40,113 INFO     _log 127.0.0.1 - - [19/Aug/2023 14:07:40] "GET /pythonScript/?py_path=static/proj_enigmaGame_scripts/z-writePermut_26_File.py HTTP/1.1" 200 -
+2023-08-19 14:08:22,733 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File.py', reloading
+2023-08-19 14:08:22,854 INFO     _log  * Restarting with stat
+2023-08-19 14:08:23,622 WARNING  _log  * Debugger is active!
+2023-08-19 14:08:23,622 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-19 14:08:25,731 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File.py', reloading
+2023-08-19 14:08:25,811 INFO     _log  * Restarting with stat
+2023-08-19 14:08:26,505 WARNING  _log  * Debugger is active!
+2023-08-19 14:08:26,505 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-19 14:08:42,117 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File_1.py', reloading
+2023-08-19 14:08:42,208 INFO     _log  * Restarting with stat
+2023-08-19 14:08:43,074 WARNING  _log  * Debugger is active!
+2023-08-19 14:08:43,074 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-19 14:08:47,252 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File_1.py', reloading
+2023-08-19 14:08:47,357 INFO     _log  * Restarting with stat

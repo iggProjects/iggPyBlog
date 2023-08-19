@@ -1,8 +1,6 @@
 #
 # IMPORT SECTION
 #
-from MyFunc import *
-from MyColors import *
 import os
 from os import system
 import string, random, time
@@ -10,6 +8,18 @@ from datetime import datetime
 
 # CONSTANTS
 NUM_ALPHAB = 50000
+
+# Colors
+NO_COLOR = "\033[00m"
+FR_RED   = "\033[91m"
+FR_GREEN = "\033[92m"
+FR_YELL  = "\033[93m"
+FR_BLUE  = "\033[94m"
+FR_MAG   = "\033[95m"
+
+# pause function
+def pause():  
+  userInput = input(f"{FR_RED}Press ENTER to continue, or CTRL-C to exit{NO_COLOR}\n")  
 
 # place thousands separator
 def place_comma(numb):
