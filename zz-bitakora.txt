@@ -21,9 +21,10 @@ Actual web
         - https://www.thoughtco.com/how-to-hide-links-using-css-3466933#:~:text=The%20first%20way%20is%20by,the%20background%20of%20the%20pag
         - https://www.w3.org/WAI/WCAG22/Techniques/css/C7
 
-    - Finish checking if scripts contain write_log_file(my_messages.txt), the writing procedure to server_messages.txt 
-      & rendering to error_page if proceed
-       - include file name in message
+    - LOG FILES & TRY SCHEMMA 
+        checking if scripts contain write_log_file(my_messages.txt), the writing procedure to server_messages.txt 
+        & rendering to error_page if proceed
+            - include file name in message
 
     - ZIP example script
         - Check .zip schemma for excercises, life game and enigma  (MyFunc and MyColors files can work in root path only)
