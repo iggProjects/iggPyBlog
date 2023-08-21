@@ -9,8 +9,9 @@
                 <th style="width:15%"><a href="{{ excercise.source_url }}" target="_blank"><span style="color:green">section</span><br><span style="color:rgb(163, 23, 2)">"{{ excercise.section }}"</span></a></th>
                 <th style="width:25%"><span style="color:green">title</span><br><span style="color:rgb(163, 23, 2)">"{{excercise.title}}"</span></a></th>                
                 <th style="width:25%"><span style="color:green">script name</span><br><span style="color:rgb(163, 23, 2)">"{{ excercise.fileDirPath.split('/')[3] }}"</span></th>
-                <th style="width:9%">
-                    <a href="{{excercise.code_url}}" target="_blank" data-title=" Script code ">
+                <th style="width:9%">                    
+                    <a href="{{excercise.code_url}}" target="_blank" data-title=" Script code "> 
+                        <!-- <a href="javascript:void(0)" onclick="location.href='{{excercise.code_url}}'" target="_blank" data-title=" Script code "></a> -->
                         <img class="myImg" onclick='' src="{{ url_for('static', filename='img/icons8-script-68.png') }}" alt="console-100" width="30"/>
                     </a>
                 </th>

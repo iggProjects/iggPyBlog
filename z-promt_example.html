@@ -27,32 +27,24 @@ function inputData(msg) {
   */
 
   if ( !answer ) {
-     // bye bye
+     alert("Bye bye ....")
   } else {
 
-    alert("typeof(answer): " + typeof(answer))
+    alert("typeof(answer): " + typeof(answer) + " | parseInt(answer): " + parseInt(answer))
     //alert("typeof(answer): " + typeof(answer) + " | typeof(parseInt(answer)): " + typeof(parseInt(answer)))
-    alert("parseInt(answer): " + parseInt(answer))  
+    // alert("parseInt(answer): " + parseInt(answer))  
 
     if ( isNaN(parseInt(answer)) ) {
-
-        inputData("Please remember that you have to enter a natural number between 1 and 3 !!!")    
-
+        inputData("Please remember that you have to enter a 'natural number' between 1 and 5 !!!")
     } else {
 
         ans = parseInt(answer)
     
-        if (ans === 1) {
-            alert("your answer was: " + ans)
-        }
-        else if (ans === 2) {
-            alert("your answer was: " + ans)
-        }
-        else if (ans === 3) {
-            alert("your answer was: " + ans)
+        if ( ans >= 1 && ans <= 5 ) {
+            alert("your answer was valid, with value: " + ans)
         }
         else {
-            alert("your answer was out of interval: " + ans)
+            alert("Invalid answer, because is out of interval: " + ans)
         }
     }
 }

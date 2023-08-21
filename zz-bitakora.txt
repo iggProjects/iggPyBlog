@@ -15,12 +15,6 @@ Actual web
 
     - MyFunc, MyColors standard
 
-    - hide href in a tag
-        - https://allinworld99.blogspot.com/2015/02/hide-url-hover-over-link-hide-link-from.html?m=1
-        - https://stackoverflow.com/questions/39384516/hide-a-href-link-with-javascript
-        - https://www.thoughtco.com/how-to-hide-links-using-css-3466933#:~:text=The%20first%20way%20is%20by,the%20background%20of%20the%20pag
-        - https://www.w3.org/WAI/WCAG22/Techniques/css/C7
-
     - LOG FILES & TRY SCHEMMA 
         checking if scripts contain write_log_file(my_messages.txt), the writing procedure to server_messages.txt 
         & rendering to error_page if proceed
@@ -38,6 +32,7 @@ Actual web
            -> https://www.tutorialspoint.com/How-to-create-a-zip-file-using-Python
 
     - Finish info filling (excercises, lifegame and enigma game) 
+        - input example
         - Excercises: include zip example
         - check equal matrices in life game excercises
         - simple version of enigma -> one rotation
@@ -60,6 +55,14 @@ Actual web
     - live search
 
     - drag & drop
+
+    DISCARDED
+        HIDE HREF IN A TAG
+            - https://allinworld99.blogspot.com/2015/02/hide-url-hover-over-link-hide-link-from.html?m=1
+            - https://stackoverflow.com/questions/39384516/hide-a-href-link-with-javascript
+            - https://www.thoughtco.com/how-to-hide-links-using-css-3466933#:~:text=The%20first%20way%20is%20by,the%20background%20of%20the%20pag
+            - https://www.w3.org/WAI/WCAG22/Techniques/css/C7
+
 
 ***********************************************
 
