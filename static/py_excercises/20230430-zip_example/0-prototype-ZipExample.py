@@ -1,7 +1,16 @@
 
 """  
     THIS SCRIPT IS ZIP FILES OF A DIRECTORY AND UPLOAD TO DOWNLOADS FOLDER OF PC
-    https://note.nkmk.me/en/python-os-basename-dirname-split-splitext/#:~:text=dirname()-,Use%20os.,name)%20from%20a%20path%20string.
+        - https://note.nkmk.me/en/python-os-basename-dirname-split-splitext/#:~:text=dirname()-,Use%20os.,name)%20from%20a%20path%20string.
+        - https://stackoverflow.com/questions/2042342/how-to-copy-a-file-from-a-network-share-to-local-disk-with-variables 
+        - https://www.tutorialspoint.com/How-to-create-a-zip-file-using-Python
+
+        DONWLOAD FOLDER
+        - https://stackoverflow.com/questions/35851281/python-finding-the-users-downloads-folder
+
+            from pathlib import Path
+            downloads_path = str(Path.home() / "Downloads")
+
 
 """
 
@@ -10,6 +19,7 @@ from zipfile import ZipFile
 import os
 from os import system
 from os.path import basename
+from pathlib import Path
 
 # My OWN
 from MyFunc import *
@@ -67,21 +77,35 @@ if __name__ == "__main__":
     zipFilesInDir(dirPath, dirNameZip, lambda name : 'py' in name)
 
     if os.path.exists(dirNameZip):
-        print(f"\t{FR_GREEN}{dirNameZip} succesfully created !{NO_COLOR}")
+        print(f"\t\t{FR_GREEN}{dirNameZip} succesfully created !{NO_COLOR}\n")
 
         # Copy file to folder in PC
         import shutil
 
+        # source file path
         src_path = dirPath + '\\' + dirNameZip
-        print(f"src_path:\n\t{src_path}")
-        # c:\Users\Amatxo\Downloads
-        dst_path = r"c:\Users\Amatxo\Downloads"
-        #src_path = r"E:\demos\files\report\profit.txt"
-        #dst_path = r"E:\demos\files\account\profit.txt"
-        shutil.copy(src_path, dst_path)
-        print('Copied')
+        print(f"\t\tsrc_path:\n\t\t{src_path}\n")
+
+        # Destiny file path
+        dst_path = "c:/iggPyBlog_ZipFiles"
+        downloads_path = str(Path.home() / "Downloads")
+        print(f"\t\t{FR_YELL}download path in client ---> {downloads_path}{NO_COLOR}\n\n")
+        #dst_path = r"c:\\Users\Amatxo\Downloads" 
+
+        if not os.path.exists(dst_path):
+            os.mkdir(dst_path)
+            print(f"\t\tDir {dst_path} created !!!")
+
+        if not os.path.exists(downloads_path):
+            os.mkdir(downloads_path)
+            print(f"\t\tDir {downloads_path} created !!!")
 
 
+
+        shutil.copy(src_path, dst_path)        
+        shutil.copy(src_path, downloads_path)        
+        print(f"\t\t{FR_GREEN}Copy Process{NO_COLOR}\n\t\t{dirNameZip} Copied in folder {dst_path}\n")
+    
 
     else:
         print(f"UPSSSSSS............")

@@ -720,3 +720,38 @@ jinja2.exceptions.TemplateNotFound: excercses.html
 2023-08-19 14:10:33,526 INFO     _log 127.0.0.1 - - [19/Aug/2023 14:10:33] "GET /pythonScript/?py_path=static/proj_enigmaGame_scripts/mpPoolManagerEnigmaRandom-Alphab26.py HTTP/1.1" 200 -
 2023-08-19 14:10:45,802 INFO     _log 127.0.0.1 - - [19/Aug/2023 14:10:45] "GET /result_script_exec/?py_path=static/proj_enigmaGame_scripts/mpPoolManagerEnigmaRandom-Alphab26-1.py HTTP/1.1" 200 -
 2023-08-19 14:10:46,178 INFO     _log 127.0.0.1 - - [19/Aug/2023 14:10:46] "GET /result_script_html HTTP/1.1" 200 -
+2023-08-19 17:35:52,076 INFO     _log [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-08-19 17:35:52,076 INFO     _log [33mPress CTRL+C to quit[0m
+2023-08-19 17:35:52,076 INFO     _log  * Restarting with stat
+2023-08-19 17:35:52,716 WARNING  _log  * Debugger is active!
+2023-08-19 17:35:52,716 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-19 17:36:10,247 INFO     _log 127.0.0.1 - - [19/Aug/2023 17:36:10] "GET / HTTP/1.1" 200 -
+2023-08-19 17:36:10,387 INFO     _log 127.0.0.1 - - [19/Aug/2023 17:36:10] "GET /static/img/ame-01.jpg HTTP/1.1" 200 -
+2023-08-19 17:36:10,497 INFO     _log 127.0.0.1 - - [19/Aug/2023 17:36:10] "GET /static/img/icons8-bulb-64.png HTTP/1.1" 200 -
+2023-08-19 17:51:03,491 INFO     _log [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-08-19 17:51:03,491 INFO     _log [33mPress CTRL+C to quit[0m
+2023-08-19 17:51:03,499 INFO     _log  * Restarting with stat
+2023-08-19 17:51:04,210 WARNING  _log  * Debugger is active!
+2023-08-19 17:51:04,210 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-19 19:18:54,365 INFO     _log 127.0.0.1 - - [19/Aug/2023 19:18:54] "GET /excercises HTTP/1.1" 200 -
+2023-08-19 19:18:54,626 INFO     _log 127.0.0.1 - - [19/Aug/2023 19:18:54] "GET /static/img/Lorea.jpg HTTP/1.1" 200 -
+2023-08-19 19:18:58,115 INFO     _log 127.0.0.1 - - [19/Aug/2023 19:18:58] "GET /excercise/?id=1 HTTP/1.1" 200 -
+2023-08-19 19:18:58,398 INFO     _log 127.0.0.1 - - [19/Aug/2023 19:18:58] "GET /static/img/icons8-script-68.png HTTP/1.1" 200 -
+2023-08-19 19:18:58,449 INFO     _log 127.0.0.1 - - [19/Aug/2023 19:18:58] "GET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1" 200 -
+2023-08-19 19:18:58,458 INFO     _log 127.0.0.1 - - [19/Aug/2023 19:18:58] "GET /static/img/icons8-html-filetype-50.png HTTP/1.1" 200 -
+2023-08-19 19:18:58,466 INFO     _log 127.0.0.1 - - [19/Aug/2023 19:18:58] "GET /static/img/icons8-consola-100.png HTTP/1.1" 200 -
+2023-08-19 19:19:00,657 INFO     _log 127.0.0.1 - - [19/Aug/2023 19:19:00] "GET /static/py_excercises/20230213-PrototypeScript-colors/20230213-PrototypeScript-colors.zip HTTP/1.1" 200 -
+2023-08-21 17:40:26,760 INFO     _log [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-08-21 17:40:26,760 INFO     _log [33mPress CTRL+C to quit[0m
+2023-08-21 17:40:26,760 INFO     _log  * Restarting with stat
+2023-08-21 17:40:27,344 WARNING  _log  * Debugger is active!
+2023-08-21 17:40:27,354 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-21 17:52:01,613 INFO     _log 127.0.0.1 - - [21/Aug/2023 17:52:01] "GET / HTTP/1.1" 200 -
+2023-08-21 17:52:01,738 INFO     _log 127.0.0.1 - - [21/Aug/2023 17:52:01] "GET /static/img/ame-01.jpg HTTP/1.1" 200 -
+2023-08-21 17:52:01,954 INFO     _log 127.0.0.1 - - [21/Aug/2023 17:52:01] "GET /static/img/icons8-bulb-64.png HTTP/1.1" 200 -
+2023-08-21 18:58:08,923 INFO     _log 127.0.0.1 - - [21/Aug/2023 18:58:08] "GET /excercises HTTP/1.1" 200 -
+2023-08-21 18:58:09,184 INFO     _log 127.0.0.1 - - [21/Aug/2023 18:58:09] "GET /static/img/Lorea.jpg HTTP/1.1" 200 -
+2023-08-21 18:58:09,511 INFO     _log 127.0.0.1 - - [21/Aug/2023 18:58:09] "GET /static/img/icons8-bulb-64.png HTTP/1.1" 200 -
