@@ -1,0 +1,57 @@
+<!--
+check if 'cancel' button was clicked
+     https://stackoverflow.com/questions/20009105/how-can-you-tell-when-user-clicked-cancel-from-a-javascript-prompt-with-a-defa
+     http://www.javascripter.net/faq/canceled.htm
+     https://www.codecademy.com/forum_questions/53ba8ab7548c35a5c7000ade#:~:text=To%20detect%20the%20Cancel%20button,from%20the%20prompt()%20function.&text=response%20will%20be%20null%20on,false%2C%20as%20does%2C%20null%20.
+-->
+
+
+{% extends 'layout.html' %}
+
+{% block body %}
+    <h1 style="text-align: center; margin-left:25px; margin-top: 3px; font-size:20px;  color:rgb(93, 92, 92)">Excercise {{ excercise.id }}, Author {{excercise.author}}, date {{excercise.date_created}}</h1>
+    <div class="jumbtron text-center">
+
+        <p style="text-align: center; margin-top:20px;"><span style="color:green"><b>script name</b></span><br><b><span style="color:rgb(163, 23, 2)">{{excercise.fileDirPath.split('/')[3]}}</span></b></p>
+   
+        <button style="padding:3px 6px" onclick="input_worker_data()">Input worker Info</button>
+        
+        <p id="demo"></p>
+    </div>
+        
+    <script>
+
+        let workers = []
+        let worker_name = ""
+        let worker_age = ""
+        let regExp = /[a-zA-Z]/g;    
+
+        function Y_N(){
+            let ans = prompt("Do you want to continue including workers? (Y,N):", 1);  
+            console.log("Answer -> " + ans)
+            if ( ans == 'Y') {
+                // save worker info
+
+            } else {
+
+            }    
+        }    
+            
+        function input_worker_data(msg) {
+            msg = "Please enter worker name";
+            let name = prompt(msg);  
+            if ( !name ) {
+                alert("Bye bye ....");
+            } else {
+                if(regExp.test(name)) {
+                    worker_name= name;
+                    console.log("---> the worker's name has been saved: " + name);
+                } else {
+                    input_worker_data("Please remember that you have to enter a name !!!");      
+                }
+            }
+        }
+    
+    </script>    
+{% endblock %}
+

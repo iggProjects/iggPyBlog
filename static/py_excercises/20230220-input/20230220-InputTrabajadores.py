@@ -54,7 +54,7 @@ def input_worker_data():
     # first try for worker name
     try:        
         #name_worker=str(input("\033[94mPlease enter your name: \033[00m"))               
-        worker_name = str(input(frGREEN("\tPlease enter your name: ")))     
+        worker_name = str(input(frGREEN("\tPlease enter worker name: ")))     
         # check characters
         if re.match("^[A-Za-zñáéíóúü]*$", worker_name):      
             print(frGREEN(f"\t\tname -> {worker_name}\n"))  # next version: redirect a log file for answer

@@ -33,7 +33,7 @@
                     {% if excercise.id != 10 %} <!-- does not requiere input info  -->
                         <span data-title=' Visualize the scrip execution in html format '><img class="myImg" onclick='html_script_exec("{{excercise.fileDirPath1}}")' src="{{ url_for('static', filename='img/icons8-html-filetype-50.png') }}" alt="console-100" width="35"/></a></span>
                     {% else %} <!-- requiere input info to fill array of workers -->
-                        <span data-title=' Visualize the scrip execution in html format '><img class="myImg" onclick='html_script_exec_form("{{excercise.fileDirPath1}}")' src="{{ url_for('static', filename='img/icons8-html-filetype-50.png') }}" alt="console-100" width="35"/></a></span>
+                        <span data-title=' Visualize the scrip execution in html format '><img class="myImg" onclick='html_script_exec_prompt("{{excercise.id}}")' src="{{ url_for('static', filename='img/icons8-html-filetype-50.png') }}" alt="console-100" width="35"/></a></span>
                     {% endif %}    
                 </th>
            <!-- <th style="width:9%"><a href="/result_script_exec/?py_path={{excercise.fileDirPath1}}" target="_blank"><img class="myImg" onclick='alert("\n=====  PLEASE WAIT A BIT  =====\n\nWHILE THE SCRIPT RUNS IN THE BACKGROUND !")' src="{{ url_for('static', filename='img/icons8-html-filetype-50.png') }}" title='Visualize the scrip execution in html format' alt="console-100" width="35"/></a></th> -->
@@ -111,11 +111,23 @@
             - 
         */
         // asynchronous function to call custom alert window
-        async function html_script_exec_form(py_path){
+        async function html_script_exec_prompt(id){
             // alert("\n=====  PLEASE WAIT A BIT  =====\n\nWHILE THE SCRIPT RUNS IN THE BACKGROUND !");
+            console.log("---> parameter id: "+ id)
             my_msg_window.render("ALERT","working in solution !");
-
-            //await delay(3000);
+            await delay(3000);            
+            document.getElementById ( 'msgBox' ).style.display = "none"; 
+            document.getElementById ( 'msgOverLay' ).style.display = "none";
+           
+            var request = new XMLHttpRequest()
+            request.open("GET", "/excercise_input_example/?id=" + id, true)    
+            request.onreadystatechange = function() {
+                if(request.readyState == XMLHttpRequest.DONE && request.status == 200) {
+                    window.location.href = '/excercise_input_example?id=' + id;
+                }
+            }
+            request.send()
+            //window.location.href = '/excercise_input_example/?excercise_id=' + id
             // go to result_script_exec.html 
             //myRequest(py_path);
         }

@@ -174,7 +174,17 @@ def display_excercise():
             excercise = Excercises[i]    
     return render_template('excercise.html', excercise = excercise)
 
+@app.route('/excercise_input_example/')
+def excercise_input_example():
+    excercise = 1
+    id = int(request.args['id'])    
+    for i in range(len(Excercises)):
+        if Excercises[i]['id'] == id:
+            excercise = Excercises[i]    
+    return render_template('excercise_input_example.html', excercise = excercise)
 
+
+# FOOD MENU 
 @app.route('/food-menu')
 def food_app():
 

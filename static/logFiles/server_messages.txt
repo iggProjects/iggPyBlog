@@ -1032,3 +1032,444 @@ jinja2.exceptions.TemplateNotFound: excercses.html
 2023-08-22 12:37:29,140 INFO     _log 127.0.0.1 - - [22/Aug/2023 12:37:29] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
 2023-08-22 12:37:33,686 INFO     _log 127.0.0.1 - - [22/Aug/2023 12:37:33] "GET /result_script_exec/?py_path=static/py_excercises/20230213-PrototypeScript-colors/0-prototype-colors1.py HTTP/1.1" 200 -
 2023-08-22 12:37:33,810 INFO     _log 127.0.0.1 - - [22/Aug/2023 12:37:33] "GET /result_script_html HTTP/1.1" 200 -
+2023-08-22 15:44:57,392 INFO     _log [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-08-22 15:44:57,392 INFO     _log [33mPress CTRL+C to quit[0m
+2023-08-22 15:44:57,392 INFO     _log  * Restarting with stat
+2023-08-22 15:44:57,932 WARNING  _log  * Debugger is active!
+2023-08-22 15:44:57,932 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-22 15:45:25,067 INFO     _log 127.0.0.1 - - [22/Aug/2023 15:45:25] "GET / HTTP/1.1" 200 -
+2023-08-22 15:45:25,114 INFO     _log 127.0.0.1 - - [22/Aug/2023 15:45:25] "GET /static/img/ame-01.jpg HTTP/1.1" 200 -
+2023-08-22 15:45:25,584 INFO     _log 127.0.0.1 - - [22/Aug/2023 15:45:25] "GET /static/img/icons8-bulb-64.png HTTP/1.1" 200 -
+2023-08-22 15:45:28,957 INFO     _log 127.0.0.1 - - [22/Aug/2023 15:45:28] "GET /excercises HTTP/1.1" 200 -
+2023-08-22 15:45:29,263 INFO     _log 127.0.0.1 - - [22/Aug/2023 15:45:29] "GET /static/img/Lorea.jpg HTTP/1.1" 200 -
+2023-08-22 15:45:30,663 INFO     _log 127.0.0.1 - - [22/Aug/2023 15:45:30] "GET /excercise/?id=1 HTTP/1.1" 200 -
+2023-08-22 15:45:30,944 INFO     _log 127.0.0.1 - - [22/Aug/2023 15:45:30] "GET /static/img/icons8-script-68.png HTTP/1.1" 200 -
+2023-08-22 15:45:30,997 INFO     _log 127.0.0.1 - - [22/Aug/2023 15:45:30] "GET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1" 200 -
+2023-08-22 15:45:30,997 INFO     _log 127.0.0.1 - - [22/Aug/2023 15:45:30] "GET /static/img/icons8-consola-100.png HTTP/1.1" 200 -
+2023-08-22 15:45:30,997 INFO     _log 127.0.0.1 - - [22/Aug/2023 15:45:30] "GET /static/img/icons8-html-filetype-50.png HTTP/1.1" 200 -
+2023-08-22 15:45:35,623 INFO     _log 127.0.0.1 - - [22/Aug/2023 15:45:35] "GET /result_script_exec/?py_path=static/py_excercises/20230213-PrototypeScript-colors/0-prototype-colors1.py HTTP/1.1" 200 -
+2023-08-22 15:45:35,774 INFO     _log 127.0.0.1 - - [22/Aug/2023 15:45:35] "GET /result_script_html HTTP/1.1" 200 -
+2023-08-22 15:45:39,736 INFO     _log 127.0.0.1 - - [22/Aug/2023 15:45:39] "GET /excercises HTTP/1.1" 200 -
+2023-08-22 15:45:40,037 INFO     _log 127.0.0.1 - - [22/Aug/2023 15:45:40] "[36mGET /static/img/Lorea.jpg HTTP/1.1[0m" 304 -
+2023-08-22 15:46:56,773 INFO     _log 127.0.0.1 - - [22/Aug/2023 15:46:56] "GET /excercise/?id=10 HTTP/1.1" 200 -
+2023-08-22 15:46:57,090 INFO     _log 127.0.0.1 - - [22/Aug/2023 15:46:57] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-08-22 15:46:57,097 INFO     _log 127.0.0.1 - - [22/Aug/2023 15:46:57] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-08-22 15:46:57,109 INFO     _log 127.0.0.1 - - [22/Aug/2023 15:46:57] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-08-22 15:46:57,109 INFO     _log 127.0.0.1 - - [22/Aug/2023 15:46:57] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-08-22 15:47:34,741 INFO     _log 127.0.0.1 - - [22/Aug/2023 15:47:34] "GET /excercises HTTP/1.1" 200 -
+2023-08-22 15:47:34,749 INFO     _log 127.0.0.1 - - [22/Aug/2023 15:47:34] "[36mGET /static/img/Lorea.jpg HTTP/1.1[0m" 304 -
+2023-08-22 15:47:35,098 INFO     _log 127.0.0.1 - - [22/Aug/2023 15:47:35] "[36mGET /static/img/icons8-bulb-64.png HTTP/1.1[0m" 304 -
+2023-08-22 15:47:40,697 INFO     _log 127.0.0.1 - - [22/Aug/2023 15:47:40] "GET /excercise/?id=10 HTTP/1.1" 200 -
+2023-08-22 15:47:40,949 INFO     _log 127.0.0.1 - - [22/Aug/2023 15:47:40] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-08-22 15:47:41,031 INFO     _log 127.0.0.1 - - [22/Aug/2023 15:47:41] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-08-22 15:47:41,039 INFO     _log 127.0.0.1 - - [22/Aug/2023 15:47:41] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-08-22 15:47:41,039 INFO     _log 127.0.0.1 - - [22/Aug/2023 15:47:41] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-08-22 15:48:25,847 INFO     _log 127.0.0.1 - - [22/Aug/2023 15:48:25] "GET /excercise/?id=10 HTTP/1.1" 200 -
+2023-08-22 15:48:25,871 INFO     _log 127.0.0.1 - - [22/Aug/2023 15:48:25] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-08-22 15:48:26,190 INFO     _log 127.0.0.1 - - [22/Aug/2023 15:48:26] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-08-22 15:48:26,190 INFO     _log 127.0.0.1 - - [22/Aug/2023 15:48:26] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-08-22 15:48:26,198 INFO     _log 127.0.0.1 - - [22/Aug/2023 15:48:26] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-08-22 15:49:18,437 INFO     _log 127.0.0.1 - - [22/Aug/2023 15:49:18] "GET /excercises HTTP/1.1" 200 -
+2023-08-22 15:49:18,447 INFO     _log 127.0.0.1 - - [22/Aug/2023 15:49:18] "[36mGET /static/img/Lorea.jpg HTTP/1.1[0m" 304 -
+2023-08-22 15:49:18,815 INFO     _log 127.0.0.1 - - [22/Aug/2023 15:49:18] "[36mGET /static/img/icons8-bulb-64.png HTTP/1.1[0m" 304 -
+2023-08-22 15:49:22,980 INFO     _log 127.0.0.1 - - [22/Aug/2023 15:49:22] "GET /excercise/?id=10 HTTP/1.1" 200 -
+2023-08-22 15:49:23,231 INFO     _log 127.0.0.1 - - [22/Aug/2023 15:49:23] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-08-22 15:49:23,315 INFO     _log 127.0.0.1 - - [22/Aug/2023 15:49:23] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-08-22 15:49:23,315 INFO     _log 127.0.0.1 - - [22/Aug/2023 15:49:23] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-08-22 15:49:23,315 INFO     _log 127.0.0.1 - - [22/Aug/2023 15:49:23] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-08-22 16:00:55,497 INFO     _log 127.0.0.1 - - [22/Aug/2023 16:00:55] "GET /articles HTTP/1.1" 200 -
+2023-08-22 16:00:55,814 INFO     _log 127.0.0.1 - - [22/Aug/2023 16:00:55] "GET /static/img/icons8-lectura-80.png HTTP/1.1" 200 -
+2023-08-22 16:00:55,839 INFO     _log 127.0.0.1 - - [22/Aug/2023 16:00:55] "GET /static/img/icons8-video-50.png HTTP/1.1" 200 -
+2023-08-22 16:01:01,981 INFO     _log 127.0.0.1 - - [22/Aug/2023 16:01:01] "GET /about HTTP/1.1" 200 -
+2023-08-22 16:01:02,272 INFO     _log 127.0.0.1 - - [22/Aug/2023 16:01:02] "GET /static/Nazaret/ProgramaPython.jpg HTTP/1.1" 200 -
+2023-08-22 16:02:20,100 INFO     _log 127.0.0.1 - - [22/Aug/2023 16:02:20] "GET /articles HTTP/1.1" 200 -
+2023-08-22 16:02:20,413 INFO     _log 127.0.0.1 - - [22/Aug/2023 16:02:20] "[36mGET /static/img/icons8-lectura-80.png HTTP/1.1[0m" 304 -
+2023-08-22 16:02:20,413 INFO     _log 127.0.0.1 - - [22/Aug/2023 16:02:20] "[36mGET /static/img/icons8-video-50.png HTTP/1.1[0m" 304 -
+2023-08-22 16:04:27,181 INFO     _log 127.0.0.1 - - [22/Aug/2023 16:04:27] "GET /excercises HTTP/1.1" 200 -
+2023-08-22 16:04:27,189 INFO     _log 127.0.0.1 - - [22/Aug/2023 16:04:27] "[36mGET /static/img/Lorea.jpg HTTP/1.1[0m" 304 -
+2023-08-22 16:04:31,870 INFO     _log 127.0.0.1 - - [22/Aug/2023 16:04:31] "GET /excercise/?id=10 HTTP/1.1" 200 -
+2023-08-22 16:04:32,184 INFO     _log 127.0.0.1 - - [22/Aug/2023 16:04:32] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-08-22 16:04:32,188 INFO     _log 127.0.0.1 - - [22/Aug/2023 16:04:32] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-08-22 16:04:32,201 INFO     _log 127.0.0.1 - - [22/Aug/2023 16:04:32] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-08-22 16:04:32,201 INFO     _log 127.0.0.1 - - [22/Aug/2023 16:04:32] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-08-22 16:05:09,050 INFO     _log 127.0.0.1 - - [22/Aug/2023 16:05:09] "GET /excercises HTTP/1.1" 200 -
+2023-08-22 16:05:09,357 INFO     _log 127.0.0.1 - - [22/Aug/2023 16:05:09] "[36mGET /static/img/Lorea.jpg HTTP/1.1[0m" 304 -
+2023-08-22 16:05:14,247 INFO     _log 127.0.0.1 - - [22/Aug/2023 16:05:14] "GET /excercise/?id=10 HTTP/1.1" 200 -
+2023-08-22 16:05:14,498 INFO     _log 127.0.0.1 - - [22/Aug/2023 16:05:14] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-08-22 16:05:14,580 INFO     _log 127.0.0.1 - - [22/Aug/2023 16:05:14] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-08-22 16:05:14,592 INFO     _log 127.0.0.1 - - [22/Aug/2023 16:05:14] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-08-22 16:05:14,592 INFO     _log 127.0.0.1 - - [22/Aug/2023 16:05:14] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-08-22 16:05:24,864 INFO     _log 127.0.0.1 - - [22/Aug/2023 16:05:24] "GET /about HTTP/1.1" 200 -
+2023-08-22 16:05:24,880 INFO     _log 127.0.0.1 - - [22/Aug/2023 16:05:24] "[36mGET /static/Nazaret/ProgramaPython.jpg HTTP/1.1[0m" 304 -
+2023-08-22 16:06:26,665 INFO     _log 127.0.0.1 - - [22/Aug/2023 16:06:26] "GET / HTTP/1.1" 200 -
+2023-08-22 16:06:26,680 INFO     _log 127.0.0.1 - - [22/Aug/2023 16:06:26] "[36mGET /static/img/ame-01.jpg HTTP/1.1[0m" 304 -
+2023-08-22 16:07:49,602 INFO     _log 127.0.0.1 - - [22/Aug/2023 16:07:49] "GET /excercises HTTP/1.1" 200 -
+2023-08-22 16:07:49,911 INFO     _log 127.0.0.1 - - [22/Aug/2023 16:07:49] "[36mGET /static/img/Lorea.jpg HTTP/1.1[0m" 304 -
+2023-08-22 16:07:51,846 INFO     _log 127.0.0.1 - - [22/Aug/2023 16:07:51] "GET /excercise/?id=1 HTTP/1.1" 200 -
+2023-08-22 16:07:52,114 INFO     _log 127.0.0.1 - - [22/Aug/2023 16:07:52] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-08-22 16:07:52,180 INFO     _log 127.0.0.1 - - [22/Aug/2023 16:07:52] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-08-22 16:07:52,191 INFO     _log 127.0.0.1 - - [22/Aug/2023 16:07:52] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-08-22 16:07:52,197 INFO     _log 127.0.0.1 - - [22/Aug/2023 16:07:52] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-08-22 16:11:45,213 INFO     _log 127.0.0.1 - - [22/Aug/2023 16:11:45] "GET /excercise/?id=1 HTTP/1.1" 200 -
+2023-08-22 16:11:45,225 INFO     _log 127.0.0.1 - - [22/Aug/2023 16:11:45] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-08-22 16:11:45,409 INFO     _log 127.0.0.1 - - [22/Aug/2023 16:11:45] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-08-22 16:11:45,548 INFO     _log 127.0.0.1 - - [22/Aug/2023 16:11:45] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-08-22 16:11:45,548 INFO     _log 127.0.0.1 - - [22/Aug/2023 16:11:45] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-08-22 16:11:45,883 INFO     _log 127.0.0.1 - - [22/Aug/2023 16:11:45] "[36mGET /static/img/icons8-bulb-64.png HTTP/1.1[0m" 304 -
+2023-08-22 16:11:50,285 INFO     _log 127.0.0.1 - - [22/Aug/2023 16:11:50] "GET /result_script_exec/?py_path=static/py_excercises/20230213-PrototypeScript-colors/0-prototype-colors1.py HTTP/1.1" 200 -
+2023-08-22 16:11:50,649 INFO     _log 127.0.0.1 - - [22/Aug/2023 16:11:50] "GET /result_script_html HTTP/1.1" 200 -
+2023-08-22 16:11:54,492 INFO     _log 127.0.0.1 - - [22/Aug/2023 16:11:54] "GET /excercises HTTP/1.1" 200 -
+2023-08-22 16:11:54,497 INFO     _log 127.0.0.1 - - [22/Aug/2023 16:11:54] "[36mGET /static/img/Lorea.jpg HTTP/1.1[0m" 304 -
+2023-08-22 16:11:59,261 INFO     _log 127.0.0.1 - - [22/Aug/2023 16:11:59] "GET /excercise/?id=10 HTTP/1.1" 200 -
+2023-08-22 16:11:59,564 INFO     _log 127.0.0.1 - - [22/Aug/2023 16:11:59] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-08-22 16:11:59,583 INFO     _log 127.0.0.1 - - [22/Aug/2023 16:11:59] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-08-22 16:11:59,589 INFO     _log 127.0.0.1 - - [22/Aug/2023 16:11:59] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-08-22 16:11:59,598 INFO     _log 127.0.0.1 - - [22/Aug/2023 16:11:59] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-08-22 16:12:04,298 INFO     _log 127.0.0.1 - - [22/Aug/2023 16:12:04] "[33mGET /excercise-input_example HTTP/1.1[0m" 404 -
+2023-08-22 16:12:04,364 INFO     _log 127.0.0.1 - - [22/Aug/2023 16:12:04] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2023-08-22 16:13:19,324 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\flask_app.py', reloading
+2023-08-22 16:13:19,446 INFO     _log  * Restarting with stat
+2023-08-22 16:13:20,323 WARNING  _log  * Debugger is active!
+2023-08-22 16:13:20,323 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-22 16:13:25,534 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\flask_app.py', reloading
+2023-08-22 16:13:25,639 INFO     _log  * Restarting with stat
+2023-08-22 16:15:35,105 INFO     _log [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-08-22 16:15:35,105 INFO     _log [33mPress CTRL+C to quit[0m
+2023-08-22 16:15:35,105 INFO     _log  * Restarting with stat
+2023-08-22 16:15:35,768 WARNING  _log  * Debugger is active!
+2023-08-22 16:15:35,768 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-22 16:15:36,398 INFO     _log 127.0.0.1 - - [22/Aug/2023 16:15:36] "GET /excercise/?id=10 HTTP/1.1" 200 -
+2023-08-22 16:15:36,485 INFO     _log 127.0.0.1 - - [22/Aug/2023 16:15:36] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-08-22 16:15:36,631 INFO     _log 127.0.0.1 - - [22/Aug/2023 16:15:36] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-08-22 16:15:36,765 INFO     _log 127.0.0.1 - - [22/Aug/2023 16:15:36] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-08-22 16:15:36,884 INFO     _log 127.0.0.1 - - [22/Aug/2023 16:15:36] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-08-22 16:15:37,211 INFO     _log 127.0.0.1 - - [22/Aug/2023 16:15:37] "[36mGET /static/img/icons8-bulb-64.png HTTP/1.1[0m" 304 -
+2023-08-22 16:15:39,930 INFO     _log 127.0.0.1 - - [22/Aug/2023 16:15:39] "GET /excercise/?id=10 HTTP/1.1" 200 -
+2023-08-22 16:15:40,245 INFO     _log 127.0.0.1 - - [22/Aug/2023 16:15:40] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-08-22 16:15:40,249 INFO     _log 127.0.0.1 - - [22/Aug/2023 16:15:40] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-08-22 16:15:40,269 INFO     _log 127.0.0.1 - - [22/Aug/2023 16:15:40] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-08-22 16:15:40,269 INFO     _log 127.0.0.1 - - [22/Aug/2023 16:15:40] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-08-22 16:15:40,592 INFO     _log 127.0.0.1 - - [22/Aug/2023 16:15:40] "[36mGET /static/img/icons8-bulb-64.png HTTP/1.1[0m" 304 -
+2023-08-22 16:15:44,961 INFO     _log 127.0.0.1 - - [22/Aug/2023 16:15:44] "[33mGET /excercise-input_example HTTP/1.1[0m" 404 -
+2023-08-22 16:16:00,014 INFO     _log 127.0.0.1 - - [22/Aug/2023 16:16:00] "GET /excercise/?id=10 HTTP/1.1" 200 -
+2023-08-22 16:16:00,033 INFO     _log 127.0.0.1 - - [22/Aug/2023 16:16:00] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-08-22 16:16:00,346 INFO     _log 127.0.0.1 - - [22/Aug/2023 16:16:00] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-08-22 16:16:00,346 INFO     _log 127.0.0.1 - - [22/Aug/2023 16:16:00] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-08-22 16:16:00,362 INFO     _log 127.0.0.1 - - [22/Aug/2023 16:16:00] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-08-22 16:16:00,676 INFO     _log 127.0.0.1 - - [22/Aug/2023 16:16:00] "[36mGET /static/img/icons8-bulb-64.png HTTP/1.1[0m" 304 -
+2023-08-22 16:16:04,836 INFO     _log 127.0.0.1 - - [22/Aug/2023 16:16:04] "[32mGET /excercise_input_example HTTP/1.1[0m" 308 -
+2023-08-22 16:16:05,147 INFO     _log 127.0.0.1 - - [22/Aug/2023 16:16:05] "GET /excercise_input_example/ HTTP/1.1" 200 -
+2023-08-22 16:16:49,872 INFO     _log 127.0.0.1 - - [22/Aug/2023 16:16:49] "GET /excercises HTTP/1.1" 200 -
+2023-08-22 16:16:50,181 INFO     _log 127.0.0.1 - - [22/Aug/2023 16:16:50] "[36mGET /static/img/Lorea.jpg HTTP/1.1[0m" 304 -
+2023-08-22 16:16:51,791 INFO     _log 127.0.0.1 - - [22/Aug/2023 16:16:51] "GET /excercise/?id=1 HTTP/1.1" 200 -
+2023-08-22 16:16:52,102 INFO     _log 127.0.0.1 - - [22/Aug/2023 16:16:52] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-08-22 16:16:52,110 INFO     _log 127.0.0.1 - - [22/Aug/2023 16:16:52] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-08-22 16:16:52,117 INFO     _log 127.0.0.1 - - [22/Aug/2023 16:16:52] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-08-22 16:16:52,117 INFO     _log 127.0.0.1 - - [22/Aug/2023 16:16:52] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-08-22 16:20:30,634 INFO     _log 127.0.0.1 - - [22/Aug/2023 16:20:30] "GET /excercise/?id=1 HTTP/1.1" 200 -
+2023-08-22 16:20:30,649 INFO     _log 127.0.0.1 - - [22/Aug/2023 16:20:30] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-08-22 16:20:30,837 INFO     _log 127.0.0.1 - - [22/Aug/2023 16:20:30] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-08-22 16:20:30,975 INFO     _log 127.0.0.1 - - [22/Aug/2023 16:20:30] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-08-22 16:20:30,986 INFO     _log 127.0.0.1 - - [22/Aug/2023 16:20:30] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-08-22 16:20:31,309 INFO     _log 127.0.0.1 - - [22/Aug/2023 16:20:31] "[36mGET /static/img/icons8-bulb-64.png HTTP/1.1[0m" 304 -
+2023-08-22 16:20:35,280 INFO     _log 127.0.0.1 - - [22/Aug/2023 16:20:35] "GET /result_script_exec/?py_path=static/py_excercises/20230213-PrototypeScript-colors/0-prototype-colors1.py HTTP/1.1" 200 -
+2023-08-22 16:20:35,632 INFO     _log 127.0.0.1 - - [22/Aug/2023 16:20:35] "GET /result_script_html HTTP/1.1" 200 -
+2023-08-22 16:20:38,435 INFO     _log 127.0.0.1 - - [22/Aug/2023 16:20:38] "GET /excercises HTTP/1.1" 200 -
+2023-08-22 16:20:38,447 INFO     _log 127.0.0.1 - - [22/Aug/2023 16:20:38] "[36mGET /static/img/Lorea.jpg HTTP/1.1[0m" 304 -
+2023-08-22 16:20:43,105 INFO     _log 127.0.0.1 - - [22/Aug/2023 16:20:43] "GET /excercise/?id=10 HTTP/1.1" 200 -
+2023-08-22 16:20:43,414 INFO     _log 127.0.0.1 - - [22/Aug/2023 16:20:43] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-08-22 16:20:43,439 INFO     _log 127.0.0.1 - - [22/Aug/2023 16:20:43] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-08-22 16:20:43,439 INFO     _log 127.0.0.1 - - [22/Aug/2023 16:20:43] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-08-22 16:20:43,447 INFO     _log 127.0.0.1 - - [22/Aug/2023 16:20:43] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-08-22 16:20:47,863 INFO     _log 127.0.0.1 - - [22/Aug/2023 16:20:47] "[35m[1mGET /excercise_input_example/ HTTP/1.1[0m" 500 -
+2023-08-22 16:20:47,914 INFO     _log 127.0.0.1 - - [22/Aug/2023 16:20:47] "GET /excercise_input_example/?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2023-08-22 16:20:48,080 INFO     _log 127.0.0.1 - - [22/Aug/2023 16:20:48] "GET /excercise_input_example/?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2023-08-22 16:20:48,464 INFO     _log 127.0.0.1 - - [22/Aug/2023 16:20:48] "GET /excercise_input_example/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2023-08-22 16:20:48,730 INFO     _log 127.0.0.1 - - [22/Aug/2023 16:20:48] "[36mGET /excercise_input_example/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-08-22 16:21:14,773 INFO     _log 127.0.0.1 - - [22/Aug/2023 16:21:14] "GET /excercise_input_example/ HTTP/1.1" 200 -
+2023-08-22 16:21:15,036 INFO     _log 127.0.0.1 - - [22/Aug/2023 16:21:15] "[36mGET /static/img/icons8-bulb-64.png HTTP/1.1[0m" 304 -
+2023-08-22 16:21:36,270 INFO     _log 127.0.0.1 - - [22/Aug/2023 16:21:36] "GET /excercise_input_example/ HTTP/1.1" 200 -
+2023-08-22 16:21:36,317 INFO     _log 127.0.0.1 - - [22/Aug/2023 16:21:36] "[36mGET /static/img/icons8-bulb-64.png HTTP/1.1[0m" 304 -
+2023-08-22 16:21:39,435 INFO     _log 127.0.0.1 - - [22/Aug/2023 16:21:39] "GET /excercises HTTP/1.1" 200 -
+2023-08-22 16:21:39,750 INFO     _log 127.0.0.1 - - [22/Aug/2023 16:21:39] "[36mGET /static/img/Lorea.jpg HTTP/1.1[0m" 304 -
+2023-08-22 16:21:41,395 INFO     _log 127.0.0.1 - - [22/Aug/2023 16:21:41] "GET /excercise/?id=1 HTTP/1.1" 200 -
+2023-08-22 16:21:41,698 INFO     _log 127.0.0.1 - - [22/Aug/2023 16:21:41] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-08-22 16:21:41,715 INFO     _log 127.0.0.1 - - [22/Aug/2023 16:21:41] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-08-22 16:21:41,731 INFO     _log 127.0.0.1 - - [22/Aug/2023 16:21:41] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-08-22 16:21:41,731 INFO     _log 127.0.0.1 - - [22/Aug/2023 16:21:41] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-08-22 16:25:34,010 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\flask_app.py', reloading
+2023-08-22 16:25:34,088 INFO     _log  * Restarting with stat
+2023-08-22 16:25:34,782 WARNING  _log  * Debugger is active!
+2023-08-22 16:25:34,790 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-22 16:25:42,080 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\flask_app.py', reloading
+2023-08-22 16:25:42,194 INFO     _log  * Restarting with stat
+2023-08-22 16:25:42,863 WARNING  _log  * Debugger is active!
+2023-08-22 16:25:42,871 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-22 16:25:47,069 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\flask_app.py', reloading
+2023-08-22 16:25:47,169 INFO     _log  * Restarting with stat
+2023-08-22 16:27:06,689 INFO     _log [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-08-22 16:27:06,689 INFO     _log [33mPress CTRL+C to quit[0m
+2023-08-22 16:27:06,689 INFO     _log  * Restarting with stat
+2023-08-22 16:27:07,410 WARNING  _log  * Debugger is active!
+2023-08-22 16:27:07,418 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-22 16:27:07,450 INFO     _log 127.0.0.1 - - [22/Aug/2023 16:27:07] "GET /excercises HTTP/1.1" 200 -
+2023-08-22 16:27:07,518 INFO     _log 127.0.0.1 - - [22/Aug/2023 16:27:07] "[36mGET /static/img/Lorea.jpg HTTP/1.1[0m" 304 -
+2023-08-22 16:27:07,614 INFO     _log 127.0.0.1 - - [22/Aug/2023 16:27:07] "[36mGET /static/img/icons8-bulb-64.png HTTP/1.1[0m" 304 -
+2023-08-22 16:27:11,565 INFO     _log 127.0.0.1 - - [22/Aug/2023 16:27:11] "GET /excercises HTTP/1.1" 200 -
+2023-08-22 16:27:11,883 INFO     _log 127.0.0.1 - - [22/Aug/2023 16:27:11] "[36mGET /static/img/Lorea.jpg HTTP/1.1[0m" 304 -
+2023-08-22 16:27:20,413 INFO     _log 127.0.0.1 - - [22/Aug/2023 16:27:20] "GET /excercise/?id=10 HTTP/1.1" 200 -
+2023-08-22 16:27:20,665 INFO     _log 127.0.0.1 - - [22/Aug/2023 16:27:20] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-08-22 16:27:20,748 INFO     _log 127.0.0.1 - - [22/Aug/2023 16:27:20] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-08-22 16:27:20,748 INFO     _log 127.0.0.1 - - [22/Aug/2023 16:27:20] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-08-22 16:27:20,748 INFO     _log 127.0.0.1 - - [22/Aug/2023 16:27:20] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-08-22 16:28:45,340 INFO     _log 127.0.0.1 - - [22/Aug/2023 16:28:45] "GET /excercise/?id=10 HTTP/1.1" 200 -
+2023-08-22 16:28:45,364 INFO     _log 127.0.0.1 - - [22/Aug/2023 16:28:45] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-08-22 16:28:45,513 INFO     _log 127.0.0.1 - - [22/Aug/2023 16:28:45] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-08-22 16:28:45,684 INFO     _log 127.0.0.1 - - [22/Aug/2023 16:28:45] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-08-22 16:28:45,693 INFO     _log 127.0.0.1 - - [22/Aug/2023 16:28:45] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-08-22 16:28:46,022 INFO     _log 127.0.0.1 - - [22/Aug/2023 16:28:46] "[36mGET /static/img/icons8-bulb-64.png HTTP/1.1[0m" 304 -
+2023-08-22 16:28:49,544 INFO     _log 127.0.0.1 - - [22/Aug/2023 16:28:49] "[35m[1mGET /excercise_input_example/ HTTP/1.1[0m" 500 -
+2023-08-22 16:28:49,798 INFO     _log 127.0.0.1 - - [22/Aug/2023 16:28:49] "[36mGET /excercise_input_example/?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2023-08-22 16:28:49,863 INFO     _log 127.0.0.1 - - [22/Aug/2023 16:28:49] "[36mGET /excercise_input_example/?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2023-08-22 16:28:50,231 INFO     _log 127.0.0.1 - - [22/Aug/2023 16:28:50] "[36mGET /excercise_input_example/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-08-22 16:28:50,482 INFO     _log 127.0.0.1 - - [22/Aug/2023 16:28:50] "[36mGET /excercise_input_example/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-08-22 16:31:50,449 INFO     _log 127.0.0.1 - - [22/Aug/2023 16:31:50] "GET /excercise/?id=10 HTTP/1.1" 200 -
+2023-08-22 16:31:50,465 INFO     _log 127.0.0.1 - - [22/Aug/2023 16:31:50] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-08-22 16:31:50,780 INFO     _log 127.0.0.1 - - [22/Aug/2023 16:31:50] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-08-22 16:31:50,780 INFO     _log 127.0.0.1 - - [22/Aug/2023 16:31:50] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-08-22 16:31:50,780 INFO     _log 127.0.0.1 - - [22/Aug/2023 16:31:50] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-08-22 16:31:51,114 INFO     _log 127.0.0.1 - - [22/Aug/2023 16:31:51] "[36mGET /static/img/icons8-bulb-64.png HTTP/1.1[0m" 304 -
+2023-08-22 16:32:46,930 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\flask_app.py', reloading
+2023-08-22 16:32:47,031 INFO     _log  * Restarting with stat
+2023-08-22 16:32:47,730 WARNING  _log  * Debugger is active!
+2023-08-22 16:32:47,738 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-22 16:32:52,923 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\flask_app.py', reloading
+2023-08-22 16:32:53,019 INFO     _log  * Restarting with stat
+2023-08-22 16:32:53,913 WARNING  _log  * Debugger is active!
+2023-08-22 16:32:53,913 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-22 16:33:02,297 INFO     _log 127.0.0.1 - - [22/Aug/2023 16:33:02] "GET /excercise/?id=10 HTTP/1.1" 200 -
+2023-08-22 16:33:02,413 INFO     _log 127.0.0.1 - - [22/Aug/2023 16:33:02] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-08-22 16:33:02,632 INFO     _log 127.0.0.1 - - [22/Aug/2023 16:33:02] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-08-22 16:33:02,639 INFO     _log 127.0.0.1 - - [22/Aug/2023 16:33:02] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-08-22 16:33:02,639 INFO     _log 127.0.0.1 - - [22/Aug/2023 16:33:02] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-08-22 16:38:53,947 INFO     _log 127.0.0.1 - - [22/Aug/2023 16:38:53] "GET /excercises HTTP/1.1" 200 -
+2023-08-22 16:38:53,960 INFO     _log 127.0.0.1 - - [22/Aug/2023 16:38:53] "[36mGET /static/img/Lorea.jpg HTTP/1.1[0m" 304 -
+2023-08-22 16:38:54,330 INFO     _log 127.0.0.1 - - [22/Aug/2023 16:38:54] "[36mGET /static/img/icons8-bulb-64.png HTTP/1.1[0m" 304 -
+2023-08-22 16:38:59,562 INFO     _log 127.0.0.1 - - [22/Aug/2023 16:38:59] "GET /excercise/?id=10 HTTP/1.1" 200 -
+2023-08-22 16:38:59,816 INFO     _log 127.0.0.1 - - [22/Aug/2023 16:38:59] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-08-22 16:38:59,897 INFO     _log 127.0.0.1 - - [22/Aug/2023 16:38:59] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-08-22 16:38:59,897 INFO     _log 127.0.0.1 - - [22/Aug/2023 16:38:59] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-08-22 16:38:59,897 INFO     _log 127.0.0.1 - - [22/Aug/2023 16:38:59] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-08-22 16:39:04,479 INFO     _log 127.0.0.1 - - [22/Aug/2023 16:39:04] "[35m[1mGET /excercise_input_example/ HTTP/1.1[0m" 500 -
+2023-08-22 16:39:04,488 INFO     _log 127.0.0.1 - - [22/Aug/2023 16:39:04] "[36mGET /excercise_input_example/?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2023-08-22 16:39:04,702 INFO     _log 127.0.0.1 - - [22/Aug/2023 16:39:04] "[36mGET /excercise_input_example/?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2023-08-22 16:39:05,031 INFO     _log 127.0.0.1 - - [22/Aug/2023 16:39:05] "[36mGET /excercise_input_example/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-08-22 16:41:01,349 INFO     _log 127.0.0.1 - - [22/Aug/2023 16:41:01] "GET /excercise/?id=10 HTTP/1.1" 200 -
+2023-08-22 16:41:01,364 INFO     _log 127.0.0.1 - - [22/Aug/2023 16:41:01] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-08-22 16:41:01,672 INFO     _log 127.0.0.1 - - [22/Aug/2023 16:41:01] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-08-22 16:41:01,672 INFO     _log 127.0.0.1 - - [22/Aug/2023 16:41:01] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-08-22 16:41:01,672 INFO     _log 127.0.0.1 - - [22/Aug/2023 16:41:01] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-08-22 16:41:01,995 INFO     _log 127.0.0.1 - - [22/Aug/2023 16:41:01] "[36mGET /static/img/icons8-bulb-64.png HTTP/1.1[0m" 304 -
+2023-08-22 16:41:06,351 INFO     _log 127.0.0.1 - - [22/Aug/2023 16:41:06] "GET /excercise_input_example/?excercise_id=10 HTTP/1.1" 200 -
+2023-08-22 16:42:18,546 INFO     _log 127.0.0.1 - - [22/Aug/2023 16:42:18] "GET /excercise_input_example/?excercise_id=10 HTTP/1.1" 200 -
+2023-08-22 16:42:18,592 INFO     _log 127.0.0.1 - - [22/Aug/2023 16:42:18] "[36mGET /static/img/icons8-bulb-64.png HTTP/1.1[0m" 304 -
+2023-08-22 16:42:32,404 INFO     _log 127.0.0.1 - - [22/Aug/2023 16:42:32] "GET /excercise_input_example/?excercise_id=10 HTTP/1.1" 200 -
+2023-08-22 16:42:32,671 INFO     _log 127.0.0.1 - - [22/Aug/2023 16:42:32] "[36mGET /static/img/icons8-bulb-64.png HTTP/1.1[0m" 304 -
+2023-08-22 16:43:24,969 INFO     _log 127.0.0.1 - - [22/Aug/2023 16:43:24] "GET /excercise_input_example/?excercise_id=10 HTTP/1.1" 200 -
+2023-08-22 16:43:25,012 INFO     _log 127.0.0.1 - - [22/Aug/2023 16:43:25] "[36mGET /static/img/icons8-bulb-64.png HTTP/1.1[0m" 304 -
+2023-08-22 16:43:30,762 INFO     _log 127.0.0.1 - - [22/Aug/2023 16:43:30] "GET /excercises HTTP/1.1" 200 -
+2023-08-22 16:43:31,080 INFO     _log 127.0.0.1 - - [22/Aug/2023 16:43:31] "[36mGET /static/img/Lorea.jpg HTTP/1.1[0m" 304 -
+2023-08-22 16:43:33,621 INFO     _log 127.0.0.1 - - [22/Aug/2023 16:43:33] "GET /excercise/?id=1 HTTP/1.1" 200 -
+2023-08-22 16:43:33,630 INFO     _log 127.0.0.1 - - [22/Aug/2023 16:43:33] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-08-22 16:43:33,958 INFO     _log 127.0.0.1 - - [22/Aug/2023 16:43:33] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-08-22 16:43:33,958 INFO     _log 127.0.0.1 - - [22/Aug/2023 16:43:33] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-08-22 16:43:33,964 INFO     _log 127.0.0.1 - - [22/Aug/2023 16:43:33] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-08-22 16:48:36,309 INFO     _log 127.0.0.1 - - [22/Aug/2023 16:48:36] "GET /articles HTTP/1.1" 200 -
+2023-08-22 16:48:36,327 INFO     _log 127.0.0.1 - - [22/Aug/2023 16:48:36] "[36mGET /static/img/icons8-lectura-80.png HTTP/1.1[0m" 304 -
+2023-08-22 16:48:36,554 INFO     _log 127.0.0.1 - - [22/Aug/2023 16:48:36] "[36mGET /static/img/icons8-video-50.png HTTP/1.1[0m" 304 -
+2023-08-22 16:48:36,871 INFO     _log 127.0.0.1 - - [22/Aug/2023 16:48:36] "[36mGET /static/img/icons8-bulb-64.png HTTP/1.1[0m" 304 -
+2023-08-22 16:48:39,048 INFO     _log 127.0.0.1 - - [22/Aug/2023 16:48:39] "GET /excercise_input_example/?excercise_id=10 HTTP/1.1" 200 -
+2023-08-22 16:48:39,353 INFO     _log 127.0.0.1 - - [22/Aug/2023 16:48:39] "[36mGET /static/img/icons8-bulb-64.png HTTP/1.1[0m" 304 -
+2023-08-22 17:17:02,600 INFO     _log 127.0.0.1 - - [22/Aug/2023 17:17:02] "GET /excercise_input_example/?excercise_id=10 HTTP/1.1" 200 -
+2023-08-22 17:17:02,646 INFO     _log 127.0.0.1 - - [22/Aug/2023 17:17:02] "[36mGET /static/img/icons8-bulb-64.png HTTP/1.1[0m" 304 -
+2023-08-22 17:17:28,168 INFO     _log 127.0.0.1 - - [22/Aug/2023 17:17:28] "GET /excercise_input_example/?excercise_id=10 HTTP/1.1" 200 -
+2023-08-22 17:17:28,443 INFO     _log 127.0.0.1 - - [22/Aug/2023 17:17:28] "[36mGET /static/img/icons8-bulb-64.png HTTP/1.1[0m" 304 -
+2023-08-22 17:17:46,936 INFO     _log 127.0.0.1 - - [22/Aug/2023 17:17:46] "GET /excercise_input_example/?excercise_id=10 HTTP/1.1" 200 -
+2023-08-22 17:17:46,980 INFO     _log 127.0.0.1 - - [22/Aug/2023 17:17:46] "[36mGET /static/img/icons8-bulb-64.png HTTP/1.1[0m" 304 -
+2023-08-22 17:18:10,062 INFO     _log 127.0.0.1 - - [22/Aug/2023 17:18:10] "GET /articles HTTP/1.1" 200 -
+2023-08-22 17:18:10,372 INFO     _log 127.0.0.1 - - [22/Aug/2023 17:18:10] "[36mGET /static/img/icons8-lectura-80.png HTTP/1.1[0m" 304 -
+2023-08-22 17:18:10,387 INFO     _log 127.0.0.1 - - [22/Aug/2023 17:18:10] "[36mGET /static/img/icons8-video-50.png HTTP/1.1[0m" 304 -
+2023-08-22 17:18:10,709 INFO     _log 127.0.0.1 - - [22/Aug/2023 17:18:10] "[36mGET /static/img/icons8-bulb-64.png HTTP/1.1[0m" 304 -
+2023-08-22 17:18:30,481 INFO     _log 127.0.0.1 - - [22/Aug/2023 17:18:30] "GET /excercises HTTP/1.1" 200 -
+2023-08-22 17:18:30,787 INFO     _log 127.0.0.1 - - [22/Aug/2023 17:18:30] "[36mGET /static/img/Lorea.jpg HTTP/1.1[0m" 304 -
+2023-08-22 17:18:34,216 INFO     _log 127.0.0.1 - - [22/Aug/2023 17:18:34] "GET /excercise/?id=10 HTTP/1.1" 200 -
+2023-08-22 17:18:34,537 INFO     _log 127.0.0.1 - - [22/Aug/2023 17:18:34] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-08-22 17:18:34,537 INFO     _log 127.0.0.1 - - [22/Aug/2023 17:18:34] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-08-22 17:18:34,544 INFO     _log 127.0.0.1 - - [22/Aug/2023 17:18:34] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-08-22 17:18:34,553 INFO     _log 127.0.0.1 - - [22/Aug/2023 17:18:34] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-08-22 17:18:39,420 INFO     _log 127.0.0.1 - - [22/Aug/2023 17:18:39] "GET /excercise_input_example/?excercise_id=10 HTTP/1.1" 200 -
+2023-08-22 17:20:11,169 INFO     _log [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-08-22 17:20:11,169 INFO     _log [33mPress CTRL+C to quit[0m
+2023-08-22 17:20:11,169 INFO     _log  * Restarting with stat
+2023-08-22 17:20:11,804 WARNING  _log  * Debugger is active!
+2023-08-22 17:20:11,804 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-22 17:20:16,323 INFO     _log 127.0.0.1 - - [22/Aug/2023 17:20:16] "GET /excercises HTTP/1.1" 200 -
+2023-08-22 17:20:16,648 INFO     _log 127.0.0.1 - - [22/Aug/2023 17:20:16] "[36mGET /static/img/Lorea.jpg HTTP/1.1[0m" 304 -
+2023-08-22 17:20:25,604 INFO     _log 127.0.0.1 - - [22/Aug/2023 17:20:25] "GET /excercise/?id=10 HTTP/1.1" 200 -
+2023-08-22 17:20:25,901 INFO     _log 127.0.0.1 - - [22/Aug/2023 17:20:25] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-08-22 17:20:25,938 INFO     _log 127.0.0.1 - - [22/Aug/2023 17:20:25] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-08-22 17:20:25,946 INFO     _log 127.0.0.1 - - [22/Aug/2023 17:20:25] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-08-22 17:20:25,952 INFO     _log 127.0.0.1 - - [22/Aug/2023 17:20:25] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-08-22 17:20:34,570 INFO     _log 127.0.0.1 - - [22/Aug/2023 17:20:34] "GET /excercise_input_example/?excercise_id=10 HTTP/1.1" 200 -
+2023-08-22 17:22:56,138 INFO     _log 127.0.0.1 - - [22/Aug/2023 17:22:56] "GET /excercise_input_example/?excercise_id=10 HTTP/1.1" 200 -
+2023-08-22 17:22:56,196 INFO     _log 127.0.0.1 - - [22/Aug/2023 17:22:56] "[36mGET /static/img/icons8-bulb-64.png HTTP/1.1[0m" 304 -
+2023-08-22 17:23:00,790 INFO     _log 127.0.0.1 - - [22/Aug/2023 17:23:00] "GET /excercises HTTP/1.1" 200 -
+2023-08-22 17:23:01,108 INFO     _log 127.0.0.1 - - [22/Aug/2023 17:23:01] "[36mGET /static/img/Lorea.jpg HTTP/1.1[0m" 304 -
+2023-08-22 17:23:05,169 INFO     _log 127.0.0.1 - - [22/Aug/2023 17:23:05] "GET /excercise/?id=10 HTTP/1.1" 200 -
+2023-08-22 17:23:05,425 INFO     _log 127.0.0.1 - - [22/Aug/2023 17:23:05] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-08-22 17:23:05,504 INFO     _log 127.0.0.1 - - [22/Aug/2023 17:23:05] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-08-22 17:23:05,504 INFO     _log 127.0.0.1 - - [22/Aug/2023 17:23:05] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-08-22 17:23:05,519 INFO     _log 127.0.0.1 - - [22/Aug/2023 17:23:05] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-08-22 17:23:10,441 INFO     _log 127.0.0.1 - - [22/Aug/2023 17:23:10] "GET /excercise_input_example/?excercise_id=10 HTTP/1.1" 200 -
+2023-08-22 17:23:21,335 INFO     _log 127.0.0.1 - - [22/Aug/2023 17:23:21] "GET /excercises HTTP/1.1" 200 -
+2023-08-22 17:23:21,340 INFO     _log 127.0.0.1 - - [22/Aug/2023 17:23:21] "[36mGET /static/img/Lorea.jpg HTTP/1.1[0m" 304 -
+2023-08-22 17:23:35,168 INFO     _log 127.0.0.1 - - [22/Aug/2023 17:23:35] "GET /excercise/?id=10 HTTP/1.1" 200 -
+2023-08-22 17:23:35,471 INFO     _log 127.0.0.1 - - [22/Aug/2023 17:23:35] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-08-22 17:23:35,503 INFO     _log 127.0.0.1 - - [22/Aug/2023 17:23:35] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-08-22 17:23:35,507 INFO     _log 127.0.0.1 - - [22/Aug/2023 17:23:35] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-08-22 17:23:35,507 INFO     _log 127.0.0.1 - - [22/Aug/2023 17:23:35] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-08-22 17:23:44,072 INFO     _log 127.0.0.1 - - [22/Aug/2023 17:23:44] "GET /excercise_input_example/?excercise_id=10 HTTP/1.1" 200 -
+2023-08-22 17:27:51,372 INFO     _log 127.0.0.1 - - [22/Aug/2023 17:27:51] "GET /excercises HTTP/1.1" 200 -
+2023-08-22 17:27:51,688 INFO     _log 127.0.0.1 - - [22/Aug/2023 17:27:51] "[36mGET /static/img/Lorea.jpg HTTP/1.1[0m" 304 -
+2023-08-22 17:27:55,835 INFO     _log 127.0.0.1 - - [22/Aug/2023 17:27:55] "GET /excercise/?id=10 HTTP/1.1" 200 -
+2023-08-22 17:27:56,005 INFO     _log 127.0.0.1 - - [22/Aug/2023 17:27:56] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-08-22 17:27:56,020 INFO     _log 127.0.0.1 - - [22/Aug/2023 17:27:56] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-08-22 17:27:56,154 INFO     _log 127.0.0.1 - - [22/Aug/2023 17:27:56] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-08-22 17:27:56,165 INFO     _log 127.0.0.1 - - [22/Aug/2023 17:27:56] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-08-22 17:28:00,304 INFO     _log 127.0.0.1 - - [22/Aug/2023 17:28:00] "GET /excercise_input_example/?excercise_id=10 HTTP/1.1" 200 -
+2023-08-22 17:28:00,654 INFO     _log 127.0.0.1 - - [22/Aug/2023 17:28:00] "[35m[1mGET /excercise_input_example/ HTTP/1.1[0m" 500 -
+2023-08-22 17:28:00,674 INFO     _log 127.0.0.1 - - [22/Aug/2023 17:28:00] "[36mGET /excercise_input_example/?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2023-08-22 17:28:00,890 INFO     _log 127.0.0.1 - - [22/Aug/2023 17:28:00] "[36mGET /excercise_input_example/?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2023-08-22 17:28:01,254 INFO     _log 127.0.0.1 - - [22/Aug/2023 17:28:01] "[36mGET /excercise_input_example/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-08-22 17:28:34,960 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\flask_app.py', reloading
+2023-08-22 17:28:35,068 INFO     _log  * Restarting with stat
+2023-08-22 17:28:35,951 WARNING  _log  * Debugger is active!
+2023-08-22 17:28:35,960 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-22 17:28:39,087 INFO     _log 127.0.0.1 - - [22/Aug/2023 17:28:39] "GET /excercise/?id=10 HTTP/1.1" 200 -
+2023-08-22 17:28:39,178 INFO     _log 127.0.0.1 - - [22/Aug/2023 17:28:39] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-08-22 17:28:39,417 INFO     _log 127.0.0.1 - - [22/Aug/2023 17:28:39] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-08-22 17:28:39,428 INFO     _log 127.0.0.1 - - [22/Aug/2023 17:28:39] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-08-22 17:28:39,428 INFO     _log 127.0.0.1 - - [22/Aug/2023 17:28:39] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-08-22 17:28:39,737 INFO     _log 127.0.0.1 - - [22/Aug/2023 17:28:39] "[36mGET /static/img/icons8-bulb-64.png HTTP/1.1[0m" 304 -
+2023-08-22 17:28:44,164 INFO     _log 127.0.0.1 - - [22/Aug/2023 17:28:44] "GET /excercise_input_example/?id=10 HTTP/1.1" 200 -
+2023-08-22 17:28:44,521 INFO     _log 127.0.0.1 - - [22/Aug/2023 17:28:44] "[35m[1mGET /excercise_input_example/ HTTP/1.1[0m" 500 -
+2023-08-22 17:28:44,538 INFO     _log 127.0.0.1 - - [22/Aug/2023 17:28:44] "[36mGET /excercise_input_example/?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2023-08-22 17:28:44,739 INFO     _log 127.0.0.1 - - [22/Aug/2023 17:28:44] "[36mGET /excercise_input_example/?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2023-08-22 17:28:45,071 INFO     _log 127.0.0.1 - - [22/Aug/2023 17:28:45] "[36mGET /excercise_input_example/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-08-22 17:30:44,296 INFO     _log 127.0.0.1 - - [22/Aug/2023 17:30:44] "GET /excercises HTTP/1.1" 200 -
+2023-08-22 17:30:44,323 INFO     _log 127.0.0.1 - - [22/Aug/2023 17:30:44] "[36mGET /static/img/Lorea.jpg HTTP/1.1[0m" 304 -
+2023-08-22 17:30:48,020 INFO     _log 127.0.0.1 - - [22/Aug/2023 17:30:48] "GET /excercise/?id=1 HTTP/1.1" 200 -
+2023-08-22 17:30:48,271 INFO     _log 127.0.0.1 - - [22/Aug/2023 17:30:48] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-08-22 17:30:48,338 INFO     _log 127.0.0.1 - - [22/Aug/2023 17:30:48] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-08-22 17:30:48,351 INFO     _log 127.0.0.1 - - [22/Aug/2023 17:30:48] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-08-22 17:30:48,355 INFO     _log 127.0.0.1 - - [22/Aug/2023 17:30:48] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-08-22 17:30:52,857 INFO     _log 127.0.0.1 - - [22/Aug/2023 17:30:52] "GET /result_script_exec/?py_path=static/py_excercises/20230213-PrototypeScript-colors/0-prototype-colors1.py HTTP/1.1" 200 -
+2023-08-22 17:30:52,939 INFO     _log 127.0.0.1 - - [22/Aug/2023 17:30:52] "GET /result_script_html HTTP/1.1" 200 -
+2023-08-22 17:30:56,316 INFO     _log 127.0.0.1 - - [22/Aug/2023 17:30:56] "GET /excercises HTTP/1.1" 200 -
+2023-08-22 17:30:56,622 INFO     _log 127.0.0.1 - - [22/Aug/2023 17:30:56] "[36mGET /static/img/Lorea.jpg HTTP/1.1[0m" 304 -
+2023-08-22 17:31:01,529 INFO     _log 127.0.0.1 - - [22/Aug/2023 17:31:01] "GET /excercise/?id=10 HTTP/1.1" 200 -
+2023-08-22 17:31:01,837 INFO     _log 127.0.0.1 - - [22/Aug/2023 17:31:01] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-08-22 17:31:01,849 INFO     _log 127.0.0.1 - - [22/Aug/2023 17:31:01] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-08-22 17:31:01,859 INFO     _log 127.0.0.1 - - [22/Aug/2023 17:31:01] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-08-22 17:31:01,863 INFO     _log 127.0.0.1 - - [22/Aug/2023 17:31:01] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-08-22 17:31:06,505 INFO     _log 127.0.0.1 - - [22/Aug/2023 17:31:06] "GET /excercise_input_example/?id=10 HTTP/1.1" 200 -
+2023-08-22 17:31:06,773 INFO     _log 127.0.0.1 - - [22/Aug/2023 17:31:06] "[32mGET /excercise_input_example?excercise_id=10 HTTP/1.1[0m" 308 -
+2023-08-22 17:31:06,854 INFO     _log 127.0.0.1 - - [22/Aug/2023 17:31:06] "[35m[1mGET /excercise_input_example/?excercise_id=10 HTTP/1.1[0m" 500 -
+2023-08-22 17:31:07,088 INFO     _log 127.0.0.1 - - [22/Aug/2023 17:31:07] "[36mGET /excercise_input_example/?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2023-08-22 17:31:07,187 INFO     _log 127.0.0.1 - - [22/Aug/2023 17:31:07] "[36mGET /excercise_input_example/?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2023-08-22 17:31:07,211 INFO     _log 127.0.0.1 - - [22/Aug/2023 17:31:07] "[36mGET /excercise_input_example/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-08-22 17:31:42,025 INFO     _log 127.0.0.1 - - [22/Aug/2023 17:31:42] "GET /excercises HTTP/1.1" 200 -
+2023-08-22 17:31:42,038 INFO     _log 127.0.0.1 - - [22/Aug/2023 17:31:42] "[36mGET /static/img/Lorea.jpg HTTP/1.1[0m" 304 -
+2023-08-22 17:31:45,487 INFO     _log 127.0.0.1 - - [22/Aug/2023 17:31:45] "GET /excercise/?id=10 HTTP/1.1" 200 -
+2023-08-22 17:31:45,726 INFO     _log 127.0.0.1 - - [22/Aug/2023 17:31:45] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-08-22 17:31:45,821 INFO     _log 127.0.0.1 - - [22/Aug/2023 17:31:45] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-08-22 17:31:45,832 INFO     _log 127.0.0.1 - - [22/Aug/2023 17:31:45] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-08-22 17:31:45,835 INFO     _log 127.0.0.1 - - [22/Aug/2023 17:31:45] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-08-22 17:31:50,757 INFO     _log 127.0.0.1 - - [22/Aug/2023 17:31:50] "GET /excercise_input_example/?id=10 HTTP/1.1" 200 -
+2023-08-22 17:31:51,024 INFO     _log 127.0.0.1 - - [22/Aug/2023 17:31:51] "[32mGET /excercise_input_example?id=10 HTTP/1.1[0m" 308 -
+2023-08-22 17:31:51,070 INFO     _log 127.0.0.1 - - [22/Aug/2023 17:31:51] "GET /excercise_input_example/?id=10 HTTP/1.1" 200 -
+2023-08-22 17:34:35,286 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\flask_app.py', reloading
+2023-08-22 17:34:35,383 INFO     _log  * Restarting with stat
+2023-08-22 17:34:36,166 WARNING  _log  * Debugger is active!
+2023-08-22 17:34:36,166 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-22 17:34:57,953 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\flask_app.py', reloading
+2023-08-22 17:34:58,058 INFO     _log  * Restarting with stat
+2023-08-22 17:34:58,843 WARNING  _log  * Debugger is active!
+2023-08-22 17:34:58,843 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-22 17:35:06,121 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\flask_app.py', reloading
+2023-08-22 17:35:06,233 INFO     _log  * Restarting with stat
+2023-08-22 17:35:06,983 WARNING  _log  * Debugger is active!
+2023-08-22 17:35:06,991 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-22 17:35:23,507 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\flask_app.py', reloading
+2023-08-22 17:35:23,645 INFO     _log  * Restarting with stat
+2023-08-22 17:35:24,340 WARNING  _log  * Debugger is active!
+2023-08-22 17:35:24,340 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-22 17:35:25,436 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\flask_app.py', reloading
+2023-08-22 17:35:25,550 INFO     _log  * Restarting with stat
+2023-08-22 17:35:26,362 WARNING  _log  * Debugger is active!
+2023-08-22 17:35:26,362 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-22 17:35:29,239 INFO     _log 127.0.0.1 - - [22/Aug/2023 17:35:29] "GET /excercises HTTP/1.1" 200 -
+2023-08-22 17:35:29,569 INFO     _log 127.0.0.1 - - [22/Aug/2023 17:35:29] "[36mGET /static/img/Lorea.jpg HTTP/1.1[0m" 304 -
+2023-08-22 17:35:31,452 INFO     _log 127.0.0.1 - - [22/Aug/2023 17:35:31] "GET /excercises HTTP/1.1" 200 -
+2023-08-22 17:35:31,470 INFO     _log 127.0.0.1 - - [22/Aug/2023 17:35:31] "[36mGET /static/img/Lorea.jpg HTTP/1.1[0m" 304 -
+2023-08-22 17:35:31,720 INFO     _log 127.0.0.1 - - [22/Aug/2023 17:35:31] "[36mGET /static/img/icons8-bulb-64.png HTTP/1.1[0m" 304 -
+2023-08-22 17:35:38,991 INFO     _log 127.0.0.1 - - [22/Aug/2023 17:35:38] "GET /excercise/?id=10 HTTP/1.1" 200 -
+2023-08-22 17:35:39,292 INFO     _log 127.0.0.1 - - [22/Aug/2023 17:35:39] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-08-22 17:35:39,321 INFO     _log 127.0.0.1 - - [22/Aug/2023 17:35:39] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-08-22 17:35:39,338 INFO     _log 127.0.0.1 - - [22/Aug/2023 17:35:39] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-08-22 17:35:39,340 INFO     _log 127.0.0.1 - - [22/Aug/2023 17:35:39] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-08-22 17:35:43,804 INFO     _log 127.0.0.1 - - [22/Aug/2023 17:35:43] "[33mGET /excercise_input_example/?id=10 HTTP/1.1[0m" 404 -
+2023-08-22 17:36:29,605 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\flask_app.py', reloading
+2023-08-22 17:36:29,722 INFO     _log  * Restarting with stat
+2023-08-22 17:36:30,445 WARNING  _log  * Debugger is active!
+2023-08-22 17:36:30,454 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-22 17:36:36,694 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\flask_app.py', reloading
+2023-08-22 17:36:36,833 INFO     _log  * Restarting with stat
+2023-08-22 17:36:37,610 WARNING  _log  * Debugger is active!
+2023-08-22 17:36:37,610 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-22 17:36:39,729 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\flask_app.py', reloading
+2023-08-22 17:36:39,840 INFO     _log  * Restarting with stat
+2023-08-22 17:36:40,646 WARNING  _log  * Debugger is active!
+2023-08-22 17:36:40,654 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-22 17:36:43,739 INFO     _log 127.0.0.1 - - [22/Aug/2023 17:36:43] "GET /excercise/?id=10 HTTP/1.1" 200 -
+2023-08-22 17:36:43,845 INFO     _log 127.0.0.1 - - [22/Aug/2023 17:36:43] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-08-22 17:36:43,966 INFO     _log 127.0.0.1 - - [22/Aug/2023 17:36:43] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-08-22 17:36:44,085 INFO     _log 127.0.0.1 - - [22/Aug/2023 17:36:44] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-08-22 17:36:44,085 INFO     _log 127.0.0.1 - - [22/Aug/2023 17:36:44] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-08-22 17:36:44,421 INFO     _log 127.0.0.1 - - [22/Aug/2023 17:36:44] "[36mGET /static/img/icons8-bulb-64.png HTTP/1.1[0m" 304 -
+2023-08-22 17:36:46,213 INFO     _log 127.0.0.1 - - [22/Aug/2023 17:36:46] "GET /excercises HTTP/1.1" 200 -
+2023-08-22 17:36:46,519 INFO     _log 127.0.0.1 - - [22/Aug/2023 17:36:46] "[36mGET /static/img/Lorea.jpg HTTP/1.1[0m" 304 -
+2023-08-22 17:36:51,095 INFO     _log 127.0.0.1 - - [22/Aug/2023 17:36:51] "GET /excercise/?id=10 HTTP/1.1" 200 -
+2023-08-22 17:36:51,403 INFO     _log 127.0.0.1 - - [22/Aug/2023 17:36:51] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-08-22 17:36:51,438 INFO     _log 127.0.0.1 - - [22/Aug/2023 17:36:51] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-08-22 17:36:51,444 INFO     _log 127.0.0.1 - - [22/Aug/2023 17:36:51] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-08-22 17:36:51,445 INFO     _log 127.0.0.1 - - [22/Aug/2023 17:36:51] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-08-22 17:36:55,875 INFO     _log 127.0.0.1 - - [22/Aug/2023 17:36:55] "[33mGET /excercise_input_example/?id=10 HTTP/1.1[0m" 404 -
+2023-08-22 17:37:03,585 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\flask_app.py', reloading
+2023-08-22 17:37:03,680 INFO     _log  * Restarting with stat
+2023-08-22 17:37:04,412 WARNING  _log  * Debugger is active!
+2023-08-22 17:37:04,412 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-22 17:37:06,520 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\flask_app.py', reloading
+2023-08-22 17:37:06,653 INFO     _log  * Restarting with stat
+2023-08-22 17:37:07,472 WARNING  _log  * Debugger is active!
+2023-08-22 17:37:07,480 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-22 17:37:10,602 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\flask_app.py', reloading
+2023-08-22 17:37:10,737 INFO     _log  * Restarting with stat
+2023-08-22 17:37:11,472 WARNING  _log  * Debugger is active!
+2023-08-22 17:37:11,480 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-22 17:37:16,703 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\flask_app.py', reloading
+2023-08-22 17:37:16,824 INFO     _log  * Restarting with stat
