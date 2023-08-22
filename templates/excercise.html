@@ -1,6 +1,6 @@
 {% extends 'layout.html' %}
 
-{%  block body %}    
+{% block body %}    
 
     <h1 style="text-align: center; margin-left:25px; margin-top: 3px; font-size:20px;  color:rgb(93, 92, 92)">Excercise {{ excercise.id }}, Author {{excercise.author}}, date {{excercise.date_created}}</h1>    
     <div class="disp-rows-cent"  style="width:100%; padding:5px; height:80vh; border:10px solid rgb(190, 209, 250)">
@@ -23,14 +23,18 @@
                 </th> 
 
         <!--    
-            LOOKiNG FOR function in js and in python that make it possible to call the window and then render the new web page.
+            LOOKiNG FOR function in js and python that make it possible to call the window and then render the new web page.
                 - WHEN working with <a> tag, all is done, but with the alert of JS 
                 - Doing with a customized window using JS, then the web page is doesn't display
                 - Working with SESSION variable in Python... Checking if the data pass to render-template process
         -->        
 
                 <th style="width:9%">
-                    <span data-title=' Visualize the scrip execution in html format '><img class="myImg" onclick='html_script_exec("{{excercise.fileDirPath1}}")' src="{{ url_for('static', filename='img/icons8-html-filetype-50.png') }}" alt="console-100" width="35"/></a></span>
+                    {% if excercise.id != 10 %} <!-- does not requiere input info  -->
+                        <span data-title=' Visualize the scrip execution in html format '><img class="myImg" onclick='html_script_exec("{{excercise.fileDirPath1}}")' src="{{ url_for('static', filename='img/icons8-html-filetype-50.png') }}" alt="console-100" width="35"/></a></span>
+                    {% else %} <!-- requiere input info to fill array of workers -->
+                        <span data-title=' Visualize the scrip execution in html format '><img class="myImg" onclick='html_script_exec_form("{{excercise.fileDirPath1}}")' src="{{ url_for('static', filename='img/icons8-html-filetype-50.png') }}" alt="console-100" width="35"/></a></span>
+                    {% endif %}    
                 </th>
            <!-- <th style="width:9%"><a href="/result_script_exec/?py_path={{excercise.fileDirPath1}}" target="_blank"><img class="myImg" onclick='alert("\n=====  PLEASE WAIT A BIT  =====\n\nWHILE THE SCRIPT RUNS IN THE BACKGROUND !")' src="{{ url_for('static', filename='img/icons8-html-filetype-50.png') }}" title='Visualize the scrip execution in html format' alt="console-100" width="35"/></a></th> -->
            <!-- <th style="width:9%"><a href="/result_script_exec/?py_path={{excercise.fileDirPath1}}" target="_blank"><img class="myImg" onclick='my_msg_window.render("ALERT","Please wait a bit while the script runs in the background !")' src="{{ url_for('static', filename='img/icons8-html-filetype-50.png') }}" title='Visualize the scrip execution in html format' alt="console-100" width="35"/></a></th>  -->
@@ -100,6 +104,22 @@
             myRequest(py_path);
         }
 
+        /* 
+            Call template with form tag to fill array until user stop, 
+            and then call the template "result_script_html" to deploy result  
+            - temporal variable workers
+            - 
+        */
+        // asynchronous function to call custom alert window
+        async function html_script_exec_form(py_path){
+            // alert("\n=====  PLEASE WAIT A BIT  =====\n\nWHILE THE SCRIPT RUNS IN THE BACKGROUND !");
+            my_msg_window.render("ALERT","working in solution !");
+
+            //await delay(3000);
+            // go to result_script_exec.html 
+            //myRequest(py_path);
+        }
+
         // function onvoking window.location.href for /result_script_html 
         function myRequest(py_file) {
             console.log("==== from myRequest: py_file => " + py_file)
@@ -116,6 +136,8 @@
             // request.open("GET", "/result_script_data/?py_path=" + py_path, true)           
             request.send()  
         }
+
+
 
     </script>
 

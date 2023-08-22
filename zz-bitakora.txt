@@ -15,6 +15,9 @@ Actual web
 
     - MyFunc, MyColors standard
 
+    - input excercise as form page 
+        - https://stackoverflow.com/questions/67189491/flask-python-website-save-user-input-and-add-it-to-the-list#:~:text=from%20flask%20import%20%2A%20app%20%3D%20Flask%20%28__name__%29,request.form%20%5B%27ques%27%5D%7D%29%20return%20render_template%20%28%27def.html%27%2C%20questions%3Dquestions%29%20app.run%20%28debug%3DTrue%29
+
     - LOG FILES & TRY SCHEMMA 
         checking if scripts contain write_log_file(my_messages.txt), the writing procedure to server_messages.txt 
         & rendering to error_page if proceed

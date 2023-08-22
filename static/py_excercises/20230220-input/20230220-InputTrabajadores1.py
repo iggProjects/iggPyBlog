@@ -8,13 +8,6 @@ from math import ceil
 from os import  system
 
 # CONSTANTS
-# Colors
-NO_COLOR = "\033[00m"
-FR_RED   = "\033[91m"
-FR_GREEN = "\033[92m"
-FR_YELL  = "\033[93m"
-FR_BLUE  = "\033[94m"
-FR_MAG   = "\033[95m"
 
 # Y,N answer function
 def Y_N():
@@ -70,32 +63,37 @@ def input_worker_data():
 # MAIN
 if __name__ == "__main__":
 
-    system('cls')
-    print(f"\n{FR_BLUE}=== MAIN ==={NO_COLOR}\n")
-    print(f"{FR_GREEN}=== INPUT WORKERS TABLE\n")
-    #pause()    
-    
+    #system('cls')
+    print("print empty line")
+    print(f"{FR_BLUE}=== MAIN ==={NO_COLOR}")
+    print("print empty line")
+    print(f"{FR_GREEN}=== INPUT WORKERS TABLE{NO_COLOR}")
+    print("print empty line")
+        
     # global variables
     moreData=True
     workers = []
     worker = {"name":'',"age":''}
 
     # loop until stop is "Y"
+    """
     while moreData:    
         input_worker_data()     
-
+    """
     print(f"\n\t{FR_YELL}Session terminated by user{NO_COLOR}\n")        
     print(f"\tVar Workers type: {type(workers)} | Values: {workers}\n")
+    print("print empty line")
     for i in range(len(workers)):
         print(f"\tworker {i}: - {workers[i]}, type: {type(workers[i])}")        
         for key,value in workers[i].items():
             print(f"\t\t{key}: {value}")
-    print()        
+    print("print empty line")
+    print(f"\n{FR_GREEN}---------- That's all for today ----------{NO_COLOR}\n")     
 
     # ------------------------------------------------
     #        OPTIONAL: SHOW VARS CHARACTERISTICS 
     #------------------------------------------------ 
-
+    """
     yesss=True
     _msg = "\tDo you want to see attributes for a specific VAR ? (Y,N): "   
     while yesss:        
@@ -120,8 +118,9 @@ if __name__ == "__main__":
 
     else:
         print(f"\n{FR_GREEN}---------- That's all for today ----------{NO_COLOR}\n")
+    """
 
 else:
     # something wrong
     print(f"\n{FR_RED}---- upsssssssss something is wrong 😢😢  ---{NO_COLOR}\n")
-    pause()
+    
