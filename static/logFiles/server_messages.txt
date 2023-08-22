@@ -1473,3 +1473,45 @@ jinja2.exceptions.TemplateNotFound: excercses.html
 2023-08-22 17:37:11,480 INFO     _log  * Debugger PIN: 109-950-851
 2023-08-22 17:37:16,703 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\flask_app.py', reloading
 2023-08-22 17:37:16,824 INFO     _log  * Restarting with stat
+2023-08-22 17:37:17,710 WARNING  _log  * Debugger is active!
+2023-08-22 17:37:17,713 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-22 17:37:21,436 INFO     _log 127.0.0.1 - - [22/Aug/2023 17:37:21] "GET /excercises HTTP/1.1" 200 -
+2023-08-22 17:37:21,769 INFO     _log 127.0.0.1 - - [22/Aug/2023 17:37:21] "[36mGET /static/img/Lorea.jpg HTTP/1.1[0m" 304 -
+2023-08-22 17:37:26,675 INFO     _log 127.0.0.1 - - [22/Aug/2023 17:37:26] "GET /excercise/?id=10 HTTP/1.1" 200 -
+2023-08-22 17:37:26,970 INFO     _log 127.0.0.1 - - [22/Aug/2023 17:37:26] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-08-22 17:37:27,022 INFO     _log 127.0.0.1 - - [22/Aug/2023 17:37:27] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-08-22 17:37:27,022 INFO     _log 127.0.0.1 - - [22/Aug/2023 17:37:27] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-08-22 17:37:27,037 INFO     _log 127.0.0.1 - - [22/Aug/2023 17:37:27] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-08-22 17:37:31,291 INFO     _log 127.0.0.1 - - [22/Aug/2023 17:37:31] "GET /excercise_input_example/?id=10 HTTP/1.1" 200 -
+2023-08-22 17:37:31,556 INFO     _log 127.0.0.1 - - [22/Aug/2023 17:37:31] "GET /excercise_input_example/?id=10 HTTP/1.1" 200 -
+2023-08-22 17:38:07,626 INFO     _log 127.0.0.1 - - [22/Aug/2023 17:38:07] "GET /excercises HTTP/1.1" 200 -
+2023-08-22 17:38:07,954 INFO     _log 127.0.0.1 - - [22/Aug/2023 17:38:07] "[36mGET /static/img/Lorea.jpg HTTP/1.1[0m" 304 -
+2023-08-22 17:38:12,088 INFO     _log 127.0.0.1 - - [22/Aug/2023 17:38:12] "GET /excercise/?id=10 HTTP/1.1" 200 -
+2023-08-22 17:38:12,406 INFO     _log 127.0.0.1 - - [22/Aug/2023 17:38:12] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-08-22 17:38:12,411 INFO     _log 127.0.0.1 - - [22/Aug/2023 17:38:12] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-08-22 17:38:12,425 INFO     _log 127.0.0.1 - - [22/Aug/2023 17:38:12] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-08-22 17:38:12,426 INFO     _log 127.0.0.1 - - [22/Aug/2023 17:38:12] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-08-22 17:38:16,941 INFO     _log 127.0.0.1 - - [22/Aug/2023 17:38:16] "GET /excercise_input_example/?id=10 HTTP/1.1" 200 -
+2023-08-22 17:38:17,191 INFO     _log 127.0.0.1 - - [22/Aug/2023 17:38:17] "GET /excercise_input_example/?id=10 HTTP/1.1" 200 -
+2023-08-22 17:53:36,720 INFO     _log 127.0.0.1 - - [22/Aug/2023 17:53:36] "GET /excercise_input_example/?id=10 HTTP/1.1" 200 -
+2023-08-22 17:53:36,776 INFO     _log 127.0.0.1 - - [22/Aug/2023 17:53:36] "[36mGET /static/img/icons8-bulb-64.png HTTP/1.1[0m" 304 -
+2023-08-22 18:09:39,979 INFO     _log 127.0.0.1 - - [22/Aug/2023 18:09:39] "GET /excercises HTTP/1.1" 200 -
+2023-08-22 18:09:40,288 INFO     _log 127.0.0.1 - - [22/Aug/2023 18:09:40] "[36mGET /static/img/Lorea.jpg HTTP/1.1[0m" 304 -
+2023-08-22 18:09:46,168 INFO     _log 127.0.0.1 - - [22/Aug/2023 18:09:46] "GET /excercise/?id=10 HTTP/1.1" 200 -
+2023-08-22 18:09:46,482 INFO     _log 127.0.0.1 - - [22/Aug/2023 18:09:46] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-08-22 18:09:46,489 INFO     _log 127.0.0.1 - - [22/Aug/2023 18:09:46] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-08-22 18:09:46,495 INFO     _log 127.0.0.1 - - [22/Aug/2023 18:09:46] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-08-22 18:09:46,495 INFO     _log 127.0.0.1 - - [22/Aug/2023 18:09:46] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-08-22 18:09:51,550 INFO     _log 127.0.0.1 - - [22/Aug/2023 18:09:51] "GET /excercise_input_example/?id=10 HTTP/1.1" 200 -
+2023-08-22 18:09:51,812 INFO     _log 127.0.0.1 - - [22/Aug/2023 18:09:51] "GET /excercise_input_example/?id=10 HTTP/1.1" 200 -
+2023-08-22 18:12:44,272 INFO     _log 127.0.0.1 - - [22/Aug/2023 18:12:44] "GET /project-EnigmaGame HTTP/1.1" 200 -
+2023-08-22 18:12:44,302 INFO     _log 127.0.0.1 - - [22/Aug/2023 18:12:44] "GET /static/img/enigma.jpg HTTP/1.1" 200 -
+2023-08-22 18:12:44,505 INFO     _log 127.0.0.1 - - [22/Aug/2023 18:12:44] "[36mGET /static/img/icons8-video-50.png HTTP/1.1[0m" 304 -
+2023-08-22 18:12:44,615 INFO     _log 127.0.0.1 - - [22/Aug/2023 18:12:44] "[36mGET /static/img/Lorea.jpg HTTP/1.1[0m" 304 -
+2023-08-22 18:12:46,152 INFO     _log 127.0.0.1 - - [22/Aug/2023 18:12:46] "GET /project-EnigmaGame_script/?id=1 HTTP/1.1" 200 -
+2023-08-22 18:12:46,421 INFO     _log 127.0.0.1 - - [22/Aug/2023 18:12:46] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-08-22 18:12:46,487 INFO     _log 127.0.0.1 - - [22/Aug/2023 18:12:46] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-08-22 18:12:46,487 INFO     _log 127.0.0.1 - - [22/Aug/2023 18:12:46] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-08-22 18:12:46,498 INFO     _log 127.0.0.1 - - [22/Aug/2023 18:12:46] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-08-22 18:13:07,080 INFO     _log 127.0.0.1 - - [22/Aug/2023 18:13:07] "GET /result_script_exec/?py_path=static/proj_enigmaGame_scripts/mpPool_Arith_Progres_Sum1.py HTTP/1.1" 200 -
+2023-08-22 18:13:07,220 INFO     _log 127.0.0.1 - - [22/Aug/2023 18:13:07] "GET /result_script_html HTTP/1.1" 200 -
