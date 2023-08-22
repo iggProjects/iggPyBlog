@@ -21,36 +21,60 @@ check if 'cancel' button was clicked
         
     <script>
 
-        let workers = []
-        let worker_name = ""
-        let worker_age = ""
-        let regExp = /[a-zA-Z]/g;    
-
         function Y_N(){
-            let ans = prompt("Do you want to continue including workers? (Y,N):", 1);  
+            let ans = prompt("Do you want to continue including workers? (Y,N):");  
             console.log("Answer -> " + ans)
             if ( ans == 'Y') {
                 // save worker info
-
+                input_worker_data()
             } else {
-
+                moreData = false;
             }    
-        }    
+        }   
+        
+        function input_worker_age() {
+            alert("upsssss function not defined yet...")
+            Y_N();
+        }
+
+        function input_worker_name() {
             
-        function input_worker_data(msg) {
-            msg = "Please enter worker name";
-            let name = prompt(msg);  
+            let name = prompt("Please enter worker name: ");  
+
+            // name input
+
             if ( !name ) {
-                alert("Bye bye ....");
+                console.log("Bye bye ....");
             } else {
                 if(regExp.test(name)) {
                     worker_name= name;
                     console.log("---> the worker's name has been saved: " + name);
+                    input_worker_age();
                 } else {
-                    input_worker_data("Please remember that you have to enter a name !!!");      
+                    input_worker_data("Please remember that you have to enter a name !");      
                 }
             }
         }
+
+        
+        function input_worker_data() {   
+            while (moreData) {         
+                input_worker_name("Please enter worker name: ")
+            }
+        }
+
+
+        let moreData = true;
+        let workers = []
+        let worker_name = ""
+        let worker_age = ""
+        let regExp = /[a-zA-Z]/g;    
+        //let regExp = /[a-zA-Zñáéíóúü]/g;    
+
+
+
+
+
     
     </script>    
 {% endblock %}
