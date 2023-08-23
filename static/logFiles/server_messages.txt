@@ -3469,3 +3469,118 @@ jinja2.exceptions.TemplateNotFound: excercses.html
 2023-08-23 19:18:14,261 WARNING  _log  * Debugger is active!
 2023-08-23 19:18:14,269 INFO     _log  * Debugger PIN: 109-950-851
 2023-08-23 19:18:14,269 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-23 19:21:55,411 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\flask_app.py', reloading
+2023-08-23 19:21:55,411 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\flask_app.py', reloading
+2023-08-23 19:21:55,539 INFO     _log  * Restarting with stat
+2023-08-23 19:21:55,539 INFO     _log  * Restarting with stat
+2023-08-23 19:21:56,282 WARNING  _log  * Debugger is active!
+2023-08-23 19:21:56,290 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-23 19:21:56,298 WARNING  _log  * Debugger is active!
+2023-08-23 19:21:56,306 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-23 19:22:08,764 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\flask_app.py', reloading
+2023-08-23 19:22:08,778 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\flask_app.py', reloading
+2023-08-23 19:22:08,885 INFO     _log  * Restarting with stat
+2023-08-23 19:22:09,557 WARNING  _log  * Debugger is active!
+2023-08-23 19:22:09,565 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-23 19:22:09,565 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-23 19:22:14,805 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\flask_app.py', reloading
+2023-08-23 19:22:14,805 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\flask_app.py', reloading
+2023-08-23 19:22:14,910 INFO     _log  * Restarting with stat
+2023-08-23 19:22:14,939 INFO     _log  * Restarting with stat
+2023-08-23 19:22:15,877 WARNING  _log  * Debugger is active!
+2023-08-23 19:22:15,885 WARNING  _log  * Debugger is active!
+2023-08-23 19:22:15,885 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-23 19:22:15,893 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-23 19:22:18,047 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\flask_app.py', reloading
+2023-08-23 19:22:18,047 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\flask_app.py', reloading
+2023-08-23 19:22:18,168 INFO     _log  * Restarting with stat
+2023-08-23 19:22:19,144 WARNING  _log  * Debugger is active!
+2023-08-23 19:22:19,155 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-23 19:22:19,163 WARNING  _log  * Debugger is active!
+2023-08-23 19:22:19,163 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-23 19:22:20,240 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\flask_app.py', reloading
+2023-08-23 19:22:20,249 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\flask_app.py', reloading
+2023-08-23 19:22:20,369 INFO     _log  * Restarting with stat
+2023-08-23 19:22:20,369 INFO     _log  * Restarting with stat
+2023-08-23 19:22:21,113 WARNING  _log  * Debugger is active!
+2023-08-23 19:22:21,113 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-23 19:22:21,129 WARNING  _log  * Debugger is active!
+2023-08-23 19:22:21,129 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-23 19:22:22,192 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\flask_app.py', reloading
+2023-08-23 19:22:22,207 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\flask_app.py', reloading
+2023-08-23 19:22:22,288 INFO     _log  * Restarting with stat
+2023-08-23 19:22:22,304 INFO     _log  * Restarting with stat
+2023-08-23 19:22:22,972 WARNING  _log  * Debugger is active!
+2023-08-23 19:22:22,972 WARNING  _log  * Debugger is active!
+2023-08-23 19:22:22,977 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-23 19:22:26,134 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\flask_app.py', reloading
+2023-08-23 19:22:26,134 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\flask_app.py', reloading
+2023-08-23 19:22:26,251 INFO     _log  * Restarting with stat
+2023-08-23 19:22:26,251 INFO     _log  * Restarting with stat
+2023-08-23 19:22:26,976 WARNING  _log  * Debugger is active!
+2023-08-23 19:22:26,976 WARNING  _log  * Debugger is active!
+2023-08-23 19:22:26,984 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-23 19:22:26,984 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-23 19:22:28,065 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\flask_app.py', reloading
+2023-08-23 19:22:28,073 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\flask_app.py', reloading
+2023-08-23 19:22:28,172 INFO     _log  * Restarting with stat
+2023-08-23 19:22:28,196 INFO     _log  * Restarting with stat
+2023-08-23 19:22:28,953 WARNING  _log  * Debugger is active!
+2023-08-23 19:22:28,953 WARNING  _log  * Debugger is active!
+2023-08-23 19:22:28,953 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-23 19:22:28,953 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-23 19:22:32,112 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\flask_app.py', reloading
+2023-08-23 19:22:32,112 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\flask_app.py', reloading
+2023-08-23 19:22:32,250 INFO     _log  * Restarting with stat
+2023-08-23 19:22:32,268 INFO     _log  * Restarting with stat
+2023-08-23 19:22:33,151 WARNING  _log  * Debugger is active!
+2023-08-23 19:22:33,151 WARNING  _log  * Debugger is active!
+2023-08-23 19:22:33,159 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-23 19:22:33,159 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-23 19:33:34,093 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\flask_app.py', reloading
+2023-08-23 19:33:34,187 INFO     _log  * Restarting with stat
+2023-08-23 19:33:34,336 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\flask_app.py', reloading
+2023-08-23 19:33:34,437 INFO     _log  * Restarting with stat
+2023-08-23 19:33:35,166 WARNING  _log  * Debugger is active!
+2023-08-23 19:33:35,171 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-23 19:33:35,171 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-23 19:33:38,313 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\flask_app.py', reloading
+2023-08-23 19:33:38,330 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\flask_app.py', reloading
+2023-08-23 19:33:38,449 INFO     _log  * Restarting with stat
+2023-08-23 19:33:38,449 INFO     _log  * Restarting with stat
+2023-08-23 19:33:39,402 WARNING  _log  * Debugger is active!
+2023-08-23 19:33:39,410 WARNING  _log  * Debugger is active!
+2023-08-23 19:33:39,410 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-23 19:33:39,410 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-23 19:34:37,659 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\flask_app.py', reloading
+2023-08-23 19:34:37,659 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\flask_app.py', reloading
+2023-08-23 19:34:37,772 INFO     _log  * Restarting with stat
+2023-08-23 19:34:37,774 INFO     _log  * Restarting with stat
+2023-08-23 19:34:38,549 WARNING  _log  * Debugger is active!
+2023-08-23 19:34:38,549 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-23 19:34:38,557 WARNING  _log  * Debugger is active!
+2023-08-23 19:34:38,557 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-23 19:34:39,648 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\flask_app.py', reloading
+2023-08-23 19:34:39,657 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\flask_app.py', reloading
+2023-08-23 19:34:39,775 INFO     _log  * Restarting with stat
+2023-08-23 19:34:39,775 INFO     _log  * Restarting with stat
+2023-08-23 19:34:40,474 WARNING  _log  * Debugger is active!
+2023-08-23 19:34:40,474 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-23 19:34:40,496 WARNING  _log  * Debugger is active!
+2023-08-23 19:34:40,496 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-23 19:34:44,635 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\flask_app.py', reloading
+2023-08-23 19:34:44,647 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\flask_app.py', reloading
+2023-08-23 19:34:44,772 INFO     _log  * Restarting with stat
+2023-08-23 19:34:44,785 INFO     _log  * Restarting with stat
+2023-08-23 19:34:45,515 WARNING  _log  * Debugger is active!
+2023-08-23 19:34:45,523 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-23 19:34:45,523 WARNING  _log  * Debugger is active!
+2023-08-23 19:34:45,531 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-23 19:34:46,593 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\flask_app.py', reloading
+2023-08-23 19:34:46,615 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\flask_app.py', reloading
+2023-08-23 19:34:46,686 INFO     _log  * Restarting with stat
+2023-08-23 19:34:46,709 INFO     _log  * Restarting with stat
+2023-08-23 19:34:47,442 WARNING  _log  * Debugger is active!
+2023-08-23 19:34:47,442 WARNING  _log  * Debugger is active!
+2023-08-23 19:34:47,450 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-23 19:34:47,450 INFO     _log  * Debugger PIN: 109-950-851

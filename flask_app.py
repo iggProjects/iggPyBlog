@@ -553,6 +553,11 @@ def result_script_exec():
     return render_template('result_script_exec.html',list_lines=list_color_text, list_JS_lines=list_JS_lines, py_name=py_name)
 
 
+# subprocess with a dict as parameter
+#   - https://stackoverflow.com/questions/48395685/launch-a-python-script-from-another-script-with-parameters-in-subprocess-argume
+#   - https://www.askpython.com/python-modules/python-subprocess-module
+#   - https://earthly.dev/blog/python-subprocess/
+
 
 @app.route('/result_script_exec1/')
 def result_script_exec1():
