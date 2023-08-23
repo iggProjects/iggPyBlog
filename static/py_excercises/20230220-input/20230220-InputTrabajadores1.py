@@ -8,7 +8,7 @@ from math import ceil
 from os import  system
 
 # CONSTANTS
-
+"""
 # Y,N answer function
 def Y_N():
     global moreData    
@@ -59,6 +59,7 @@ def input_worker_data():
         # print('Please enter your name')
         frGREEN("\tPlease enter your name: ")
         input_worker_data()
+    """
 
 # MAIN
 if __name__ == "__main__":
@@ -75,10 +76,9 @@ if __name__ == "__main__":
     workers = []
     worker = {"name":'',"age":''}
 
-    # loop until stop is "Y"
     """
-    while moreData:    
-        input_worker_data()     
+      code with worker data
+
     """
     print(f"\n\t{FR_YELL}Session terminated by user{NO_COLOR}\n")        
     print(f"\tVar Workers type: {type(workers)} | Values: {workers}\n")
