@@ -88,7 +88,7 @@ check if 'cancel' button was clicked
             
             // https://www.geeksforgeeks.org/pass-javascript-variables-to-python-in-flask/
             var request = new XMLHttpRequest()
-            request.open("GET", "/result_script_exec/?py_path=" + py_path, true)            
+            request.open("GET", "/result_script_exec1/?py_path=" + py_path + "&name=Peter", true)            
             request.onreadystatechange = function() {
                 if(request.readyState == XMLHttpRequest.DONE && request.status == 200) {
                     window.location.href = '/result_script_html';

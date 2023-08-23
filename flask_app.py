@@ -553,6 +553,192 @@ def result_script_exec():
     return render_template('result_script_exec.html',list_lines=list_color_text, list_JS_lines=list_JS_lines, py_name=py_name)
 
 
+
+@app.route('/result_script_exec1/')
+def result_script_exec1():
+    print(f"{FR_YELL}\n====== in result_script_exec1() for html ======{NO_COLOR}\n")
+    from os import system
+   
+    import subprocess, json
+    from flask import Markup   
+
+    session['py_name'] = ""
+    session['list_lines'] = []
+    session['list_JS_lines'] = []
+
+    # read path to script
+    py_script_path = request.args['py_path']
+    name = request.args['name']
+    print(f"py_path --> {py_script_path} | name {name}")
+    py_list = py_script_path.split('/')
+    py_name = py_list[len(py_list)-1]
+    print(f"py_list: {py_list}")
+    print(f"script name: {py_name}")
+    
+    # call subprocess to excecute py_script_path 
+    #if opSys == "Windows":        
+    #    text = subprocess.run(["cmd", "/c", "python.exe", py_script_path],capture_output=True)    
+    #elif opSys == "Linux":
+    #    text = subprocess.run(["/usr/bin/bash", "-c", f"python {py_script_path}"],capture_output=True)
+    #else:
+    #    print(f"Please check how to pass list of parameters for operating system: {opSys}")
+     
+    # call subprocess to excecute py_script_path
+    if opSys == "Windows":
+        text = subprocess.run(["cmd", "/c", "python.exe", py_script_path],capture_output=True)
+    elif opSys == "Linux":
+        # put mysite/ in path for "pythonanywhere"
+        text = subprocess.run(["/usr/bin/bash", "-c", f"python mysite/{py_script_path}"],capture_output=True)
+    else:
+        print(f"Please check how to pass list of parameters for operating system: {opSys}")
+
+    #print(f" ===> 'text'   type: {type(text)}")
+    #print(f" ===> 'text' attrib: {dir(text)}")
+    #print(f" ===> 'text'   data: {text}")    
+
+    # see order in list_b_lines
+    list_b_lines = text.stdout.splitlines()
+    # print(f" ===> 'list_b_lines' type: {type(list_b_lines)}")
+    # print(f" ===> 'list_b_lines' attrib: {dir(list_b_lines)}")
+    # print(f" ===> 'list_b_lines' data: {list_b_lines}")
+
+    for line in list_b_lines:
+        print(f"==> line: {line}")
+
+    list_color_text = []
+    list_JS_lines = []
+    #lines_colors = []
+
+    for line in list_b_lines:
+        #new_line = "<p>" + str(line) + "</p>"
+        new_line = str(line)
+        color = "black"
+        if new_line == 'b\'\\x0c\\x1b[92m\'' or new_line == 'b\' \\x1b[00m\'' or new_line == 'b\'\\x1b[92m\'' or new_line == '\\x0c': 
+            pass
+        elif 'print empty line' in new_line:
+            new_line = "---"
+            color = "transparent"
+            list = [color,new_line]
+            list_color_text.append(list) 
+
+            #print("=====> print empty line") 
+        else: 
+            #print(f"0,1 --> {new_line[0:2]}")
+            if "b'" in new_line[0:2]  or "b\"" in new_line[0:2]:
+                #print(f"0,1 ==> {new_line[0:2]}")
+                new_line= new_line[2:]
+
+            new_line = new_line.replace('-->','==>')
+            new_line = new_line.replace('<','&lt;')
+            #new_line = new_line.replace('<','<&nbsp;&nbsp;')
+            new_line = new_line.replace('>','&gt;')
+            #new_line = new_line.replace('>','&nbsp;>')
+            new_line = new_line.replace('^','&nbsp;')
+            new_line = new_line.replace(new_line[len(new_line)-1],'')
+            #new_line = new_line.replace('\\n','')
+            new_line = new_line.replace('\\n','<br>')
+            new_line = new_line.replace('\\x1b[00m','')
+            new_line = new_line.replace('\\t','&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;')            
+            
+            if '\\x1b[91m' in new_line:      # red
+                new_line = new_line.replace('\\x1b[91m','')
+                color = "#800000"
+
+            if '\\x1b[92m' in new_line:    # green
+                new_line = new_line.replace('\\x1b[92m','')
+                color= "green" 
+
+            if '\\x1b[93m' in new_line:    # orange - (FR_YELL)
+                new_line = new_line.replace('\\x1b[93m','')
+                color= "#cc5200"    
+
+            if '\\x1b[94m' in new_line:    # blue                
+                new_line = new_line.replace('\\x1b[94m','')
+                color= "blue"
+
+            if '\\x1b[95m' in new_line:    # magenta
+                new_line = new_line.replace('\\x1b[95m','')
+                color= "magenta"
+
+
+            # Replace ',' by ';' in temp_line1[1] field for html printing effects
+            new_line = new_line.replace(',',';')
+
+            #print(f"line to print: {new_line}")
+            js_line = new_line
+            
+            if '0' or '1' or '9' in js_line[0]:                
+                list_JS_lines.append(js_line.replace(' ',''))
+            else:
+                pass
+
+            new_line=Markup(new_line)
+            list = [color,new_line]
+            list_color_text.append(list) 
+            
+            print(f"new_line formatted => {list}")
+    
+    # print(f"list_JS_lines type: {type(list_JS_lines)} | first line: {list_JS_lines[2]}")
+    
+    # print(f"{FR_YELL}====== exit result_script_exec() in html ======{NO_COLOR}\n")
+    
+    # write list as text file
+    # first case, output with matrix of (0,1,9) form from 'list_JS_lines' 
+    # delete if exists    
+    if os.path.exists("list_JS_lines.txt"):
+        os.remove("list_JS_lines.txt")
+        print(f"{FR_GREEN}........ old list_JS_lines.txt deleted")    
+    
+    with open('list_JS_lines.txt', 'w') as f:
+        for line in list_JS_lines:
+            f.write(f"{line}\n")
+    
+    # second case, output with lines of text from 'list_color_text' 
+    # delete if exists  
+    if os.path.exists("list_text_lines.txt"):
+        os.remove("list_text_lines.txt")
+        print(f"{FR_GREEN}........ old list_text_lines.txt deleted")    
+
+    # https://www.geeksforgeeks.org/python-save-list-to-csv/
+    import csv
+
+    # delete if exists  
+    if os.path.exists("list_text_lines.csv"):
+        os.remove("list_text_lines.csv")
+        print(f"{FR_GREEN}........ old list_text_lines.csv deleted")    
+
+    # data rows of csv file --> list_color_text
+    with open('list_text_lines.csv', 'w') as f:
+        
+        # using csv.writer method from CSV package
+        write = csv.writer(f,delimiter=",")
+        write.writerows(list_color_text)
+
+    
+    #with open('list_text_lines.txt', 'w') as f:
+    #    for line in list_color_text:
+    #        f.write(f"{line}\n")
+    
+
+    #with open('list_text_lines.txt', "w") as f:
+    #    json.dump(list_color_text, f)
+           
+    
+    # session variable to call render_template
+    session['matrix_file_name'] = 'list_JS_lines.txt'
+    session['textLines_file_name'] = 'list_text_lines.csv'
+
+    session['py_name'] = py_name
+    session['list_lines'] = list_color_text
+    session['list_JS_lines'] = list_JS_lines    
+    
+    print(f"{FR_YELL}====== exit result_script_exec() in html ======{NO_COLOR}\n")
+    print(f"{FR_YELL}====== go to result_script_exec.html ======{NO_COLOR}\n")
+
+    # return redirect(url_for('result_script_html'))
+    return render_template('result_script_exec.html',list_lines=list_color_text, list_JS_lines=list_JS_lines, py_name=py_name)
+
+
 @app.route('/result_script_html')
 def result_script_html():
 

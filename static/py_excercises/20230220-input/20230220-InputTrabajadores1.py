@@ -9,6 +9,9 @@ from os import  system
 
 # CONSTANTS
 """
+This part of the script, linked to the worker data input, has been handled in this example via JS on the client.
+SEE "excercise_input_example.html"
+
 # Y,N answer function
 def Y_N():
     global moreData    
