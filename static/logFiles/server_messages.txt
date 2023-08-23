@@ -3296,3 +3296,172 @@ jinja2.exceptions.TemplateNotFound: excercses.html
 2023-08-23 19:11:02,362 WARNING  _log  * Debugger is active!
 2023-08-23 19:11:02,370 INFO     _log  * Debugger PIN: 109-950-851
 2023-08-23 19:11:02,370 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-23 19:14:39,145 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\z-pass-arguments-example-dict.py', reloading
+2023-08-23 19:14:39,145 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\z-pass-arguments-example-dict.py', reloading
+2023-08-23 19:14:39,265 INFO     _log  * Restarting with stat
+2023-08-23 19:14:39,265 INFO     _log  * Restarting with stat
+2023-08-23 19:14:39,943 WARNING  _log  * Debugger is active!
+2023-08-23 19:14:39,943 WARNING  _log  * Debugger is active!
+2023-08-23 19:14:39,951 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-23 19:14:39,951 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-23 19:14:59,759 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\z-pass-arguments-example.py', reloading
+2023-08-23 19:14:59,759 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\z-pass-arguments-example.py', reloading
+2023-08-23 19:14:59,865 INFO     _log  * Restarting with stat
+2023-08-23 19:14:59,865 INFO     _log  * Restarting with stat
+2023-08-23 19:15:00,586 WARNING  _log  * Debugger is active!
+2023-08-23 19:15:00,586 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-23 19:15:00,594 WARNING  _log  * Debugger is active!
+2023-08-23 19:15:00,602 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-23 19:15:26,643 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\z-pass-arguments-example-dict.py', reloading
+2023-08-23 19:15:26,659 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\z-pass-arguments-example-dict.py', reloading
+2023-08-23 19:15:26,831 INFO     _log  * Restarting with stat
+2023-08-23 19:15:27,703 WARNING  _log  * Debugger is active!
+2023-08-23 19:15:27,710 WARNING  _log  * Debugger is active!
+2023-08-23 19:15:27,710 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-23 19:15:27,710 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-23 19:15:30,869 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\z-pass-arguments-example-dict.py', reloading
+2023-08-23 19:15:30,869 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\z-pass-arguments-example-dict.py', reloading
+2023-08-23 19:15:30,994 INFO     _log  * Restarting with stat
+2023-08-23 19:15:30,994 INFO     _log  * Restarting with stat
+2023-08-23 19:15:31,811 WARNING  _log  * Debugger is active!
+2023-08-23 19:15:31,818 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-23 19:15:31,843 WARNING  _log  * Debugger is active!
+2023-08-23 19:15:31,843 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-23 19:15:32,894 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\z-pass-arguments-example-dict.py', reloading
+2023-08-23 19:15:32,927 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\z-pass-arguments-example-dict.py', reloading
+2023-08-23 19:15:33,028 INFO     _log  * Restarting with stat
+2023-08-23 19:15:33,055 INFO     _log  * Restarting with stat
+2023-08-23 19:15:33,845 WARNING  _log  * Debugger is active!
+2023-08-23 19:15:33,853 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-23 19:15:33,861 WARNING  _log  * Debugger is active!
+2023-08-23 19:15:33,861 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-23 19:15:34,927 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\z-pass-arguments-example-dict.py', reloading
+2023-08-23 19:15:34,943 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\z-pass-arguments-example-dict.py', reloading
+2023-08-23 19:15:35,029 INFO     _log  * Restarting with stat
+2023-08-23 19:15:35,047 INFO     _log  * Restarting with stat
+2023-08-23 19:15:35,680 WARNING  _log  * Debugger is active!
+2023-08-23 19:15:35,680 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-23 19:15:35,714 WARNING  _log  * Debugger is active!
+2023-08-23 19:15:35,714 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-23 19:15:36,838 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\z-pass-arguments-example-dict.py', reloading
+2023-08-23 19:15:36,935 INFO     _log  * Restarting with stat
+2023-08-23 19:15:37,780 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\z-pass-arguments-example-dict.py', reloading
+2023-08-23 19:15:37,837 WARNING  _log  * Debugger is active!
+2023-08-23 19:15:37,844 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-23 19:15:37,893 INFO     _log  * Restarting with stat
+2023-08-23 19:15:38,823 WARNING  _log  * Debugger is active!
+2023-08-23 19:15:38,831 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-23 19:15:38,939 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\z-pass-arguments-example-dict.py', reloading
+2023-08-23 19:15:39,045 INFO     _log  * Restarting with stat
+2023-08-23 19:15:40,128 WARNING  _log  * Debugger is active!
+2023-08-23 19:15:40,128 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-23 19:16:08,004 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\z-pass-arguments-example-dict.py', reloading
+2023-08-23 19:16:08,142 INFO     _log  * Restarting with stat
+2023-08-23 19:16:08,178 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\z-pass-arguments-example-dict.py', reloading
+2023-08-23 19:16:08,297 INFO     _log  * Restarting with stat
+2023-08-23 19:16:09,261 WARNING  _log  * Debugger is active!
+2023-08-23 19:16:09,261 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-23 19:16:09,373 WARNING  _log  * Debugger is active!
+2023-08-23 19:16:09,377 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-23 19:16:25,927 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\z-pass-arguments-example-dict.py', reloading
+2023-08-23 19:16:25,962 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\z-pass-arguments-example-dict.py', reloading
+2023-08-23 19:16:26,047 INFO     _log  * Restarting with stat
+2023-08-23 19:16:26,077 INFO     _log  * Restarting with stat
+2023-08-23 19:16:26,851 WARNING  _log  * Debugger is active!
+2023-08-23 19:16:26,867 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-23 19:16:26,891 WARNING  _log  * Debugger is active!
+2023-08-23 19:16:26,899 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-23 19:16:52,128 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\z-pass-arguments-example-dict.py', reloading
+2023-08-23 19:16:52,128 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\z-pass-arguments-example-dict.py', reloading
+2023-08-23 19:16:52,250 INFO     _log  * Restarting with stat
+2023-08-23 19:16:52,269 INFO     _log  * Restarting with stat
+2023-08-23 19:16:52,878 WARNING  _log  * Debugger is active!
+2023-08-23 19:16:52,886 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-23 19:16:52,910 WARNING  _log  * Debugger is active!
+2023-08-23 19:16:52,918 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-23 19:16:53,963 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\z-pass-arguments-example-dict.py', reloading
+2023-08-23 19:16:53,987 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\z-pass-arguments-example-dict.py', reloading
+2023-08-23 19:16:54,098 INFO     _log  * Restarting with stat
+2023-08-23 19:16:54,104 INFO     _log  * Restarting with stat
+2023-08-23 19:16:54,919 WARNING  _log  * Debugger is active!
+2023-08-23 19:16:54,919 WARNING  _log  * Debugger is active!
+2023-08-23 19:16:54,927 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-23 19:16:54,927 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-23 19:16:57,047 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\z-pass-arguments-example-dict.py', reloading
+2023-08-23 19:16:57,055 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\z-pass-arguments-example-dict.py', reloading
+2023-08-23 19:16:57,140 INFO     _log  * Restarting with stat
+2023-08-23 19:16:57,164 INFO     _log  * Restarting with stat
+2023-08-23 19:16:57,869 WARNING  _log  * Debugger is active!
+2023-08-23 19:16:57,877 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-23 19:16:57,926 WARNING  _log  * Debugger is active!
+2023-08-23 19:16:57,934 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-23 19:16:59,029 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\z-pass-arguments-example-dict.py', reloading
+2023-08-23 19:16:59,133 INFO     _log  * Restarting with stat
+2023-08-23 19:16:59,979 WARNING  _log  * Debugger is active!
+2023-08-23 19:16:59,987 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-23 19:17:00,020 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\z-pass-arguments-example-dict.py', reloading
+2023-08-23 19:17:00,088 INFO     _log  * Restarting with stat
+2023-08-23 19:17:00,854 WARNING  _log  * Debugger is active!
+2023-08-23 19:17:00,858 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-23 19:17:01,061 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\z-pass-arguments-example-dict.py', reloading
+2023-08-23 19:17:01,140 INFO     _log  * Restarting with stat
+2023-08-23 19:17:01,876 WARNING  _log  * Debugger is active!
+2023-08-23 19:17:01,876 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-23 19:17:08,147 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\z-pass-arguments-example-dict.py', reloading
+2023-08-23 19:17:08,147 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\z-pass-arguments-example-dict.py', reloading
+2023-08-23 19:17:08,249 INFO     _log  * Restarting with stat
+2023-08-23 19:17:08,991 WARNING  _log  * Debugger is active!
+2023-08-23 19:17:08,991 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-23 19:17:08,991 WARNING  _log  * Debugger is active!
+2023-08-23 19:17:08,999 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-23 19:17:12,171 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\z-pass-arguments-example-dict.py', reloading
+2023-08-23 19:17:12,171 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\z-pass-arguments-example-dict.py', reloading
+2023-08-23 19:17:12,269 INFO     _log  * Restarting with stat
+2023-08-23 19:17:12,284 INFO     _log  * Restarting with stat
+2023-08-23 19:17:12,890 WARNING  _log  * Debugger is active!
+2023-08-23 19:17:12,898 WARNING  _log  * Debugger is active!
+2023-08-23 19:17:12,898 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-23 19:17:12,898 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-23 19:17:15,025 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\z-pass-arguments-example-dict.py', reloading
+2023-08-23 19:17:15,028 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\z-pass-arguments-example-dict.py', reloading
+2023-08-23 19:17:15,140 INFO     _log  * Restarting with stat
+2023-08-23 19:17:16,241 WARNING  _log  * Debugger is active!
+2023-08-23 19:17:16,241 WARNING  _log  * Debugger is active!
+2023-08-23 19:17:16,241 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-23 19:17:16,241 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-23 19:17:31,024 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\z-pass-arguments-example-dict.py', reloading
+2023-08-23 19:17:31,028 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\z-pass-arguments-example-dict.py', reloading
+2023-08-23 19:17:31,122 INFO     _log  * Restarting with stat
+2023-08-23 19:17:31,122 INFO     _log  * Restarting with stat
+2023-08-23 19:17:31,798 WARNING  _log  * Debugger is active!
+2023-08-23 19:17:31,806 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-23 19:17:31,806 WARNING  _log  * Debugger is active!
+2023-08-23 19:17:31,806 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-23 19:17:33,909 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\z-pass-arguments-example-dict.py', reloading
+2023-08-23 19:17:33,927 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\z-pass-arguments-example-dict.py', reloading
+2023-08-23 19:17:34,037 INFO     _log  * Restarting with stat
+2023-08-23 19:17:34,037 INFO     _log  * Restarting with stat
+2023-08-23 19:17:34,744 WARNING  _log  * Debugger is active!
+2023-08-23 19:17:34,744 WARNING  _log  * Debugger is active!
+2023-08-23 19:17:34,749 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-23 19:17:34,749 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-23 19:18:08,647 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\z-pass-arguments-example-dict.py', reloading
+2023-08-23 19:18:08,655 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\z-pass-arguments-example-dict.py', reloading
+2023-08-23 19:18:08,751 INFO     _log  * Restarting with stat
+2023-08-23 19:18:08,751 INFO     _log  * Restarting with stat
+2023-08-23 19:18:09,432 WARNING  _log  * Debugger is active!
+2023-08-23 19:18:09,432 WARNING  _log  * Debugger is active!
+2023-08-23 19:18:09,440 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-23 19:18:09,440 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-23 19:18:11,564 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\z-pass-arguments-example-dict.py', reloading
+2023-08-23 19:18:11,572 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\z-pass-arguments-example-dict.py', reloading
+2023-08-23 19:18:11,680 INFO     _log  * Restarting with stat
+2023-08-23 19:18:11,680 INFO     _log  * Restarting with stat
+2023-08-23 19:18:12,335 WARNING  _log  * Debugger is active!
+2023-08-23 19:18:12,335 WARNING  _log  * Debugger is active!
+2023-08-23 19:18:12,343 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-23 19:18:12,343 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-23 19:18:13,421 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\z-pass-arguments-example-dict.py', reloading
+2023-08-23 19:18:13,424 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\z-pass-arguments-example-dict.py', reloading
+2023-08-23 19:18:13,556 INFO     _log  * Restarting with stat
+2023-08-23 19:18:13,556 INFO     _log  * Restarting with stat

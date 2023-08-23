@@ -2,6 +2,7 @@ import sys
 
 """
 First and second argument are type string, and third argument represent a list of string separated by ','
+https://stackoverflow.com/questions/17544307/how-do-i-run-python-script-using-arguments-in-windows-command-line
 """
 
 def hello(a,b):
