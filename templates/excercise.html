@@ -104,6 +104,23 @@
             myRequest(py_path);
         }
 
+        // function invoking window.location.href for /result_script_html 
+        function myRequest(py_file) {
+            console.log("==== from myRequest: py_file => " + py_file)
+            document.getElementById ( 'msgBox' ).style.display = "none"; 
+            document.getElementById ( 'msgOverLay' ).style.display = "none";
+            
+            var request = new XMLHttpRequest()
+            request.open("GET", "/result_script_exec/?py_path=" + py_file, true)            
+            request.onreadystatechange = function() {
+                if(request.readyState == XMLHttpRequest.DONE && request.status == 200) {
+                    window.location.href = '/result_script_html';
+                }
+            }                                    
+            // request.open("GET", "/result_script_data/?py_path=" + py_path, true)           
+            request.send()  
+        }
+
         /* 
             Call template with form tag to fill array until user stop, 
             and then call the template "result_script_html" to deploy result  
@@ -129,22 +146,6 @@
             request.send()
         }
 
-        // function invoking window.location.href for /result_script_html 
-        function myRequest(py_file) {
-            console.log("==== from myRequest: py_file => " + py_file)
-            document.getElementById ( 'msgBox' ).style.display = "none"; 
-            document.getElementById ( 'msgOverLay' ).style.display = "none";
-            
-            var request = new XMLHttpRequest()
-            request.open("GET", "/result_script_exec/?py_path=" + py_file, true)            
-            request.onreadystatechange = function() {
-                if(request.readyState == XMLHttpRequest.DONE && request.status == 200) {
-                    window.location.href = '/result_script_html';
-                }
-            }                                    
-            // request.open("GET", "/result_script_data/?py_path=" + py_path, true)           
-            request.send()  
-        }
 
 
 

@@ -23,6 +23,7 @@ check if 'cancel' button was clicked
 
         let moreData = true;
         let py_temp_path = ""
+        let worker = []
         let workers = [];
         let worker_name = "";
         let worker_age = "";
@@ -42,13 +43,15 @@ check if 'cancel' button was clicked
         
         function input_worker_age(msg) {
             //alert("upsssss function not defined yet...")
-            let age = prompt(msg);  
+            let worker_age = prompt(msg);  
             
-            if ( isNaN(parseInt(age)) || ( parseInt(age) < 0 ) || ( parseInt(age) > 115 ) ) {
+            if ( isNaN(parseInt(worker_age)) || ( parseInt(worker_age) < 0 ) || ( parseInt(worker_age) > 115 ) ) {
                 input_worker_age("Please remember age must be in (0,115) interval")
             } else {                
-                console.log("---> the worker's age has been saved: " + parseInt(age))
-                workers.push(age)
+                console.log("---> the worker's age has been saved: " + parseInt(worker_age))
+                worker.push(worker_name,worker_age)
+                workers.push(worker)
+                worker = []
                 console.log("---> worker array: " + workers)
                 Y_N();
             }
@@ -68,7 +71,7 @@ check if 'cancel' button was clicked
                     console.log("---> the worker's name has been saved: " + name);
                     input_worker_age("Please enter worker age: ");
                 } else {
-                    input_worker_data(py_path,"Please remember that you have to enter a name !");      
+                    input_worker_data(py_temp_path);      
                 }
             }
         }
@@ -84,11 +87,15 @@ check if 'cancel' button was clicked
                 input_worker_name(msg);
             }
 
-            console.log("---> final worker array: " + workers);
+            console.log("---> final worker array: " + workers + " | length: " + workers.length );
             
             // https://www.geeksforgeeks.org/pass-javascript-variables-to-python-in-flask/
+            // 
+            
+            workers_json = JSON.stringify(workers)
             var request = new XMLHttpRequest()
-            request.open("GET", "/result_script_exec1/?py_path=" + py_path + "&name=Peter", true)            
+            //request.open("GET", "/result_script_exec1/?py_path=" + py_path + "&workers=IGG", true)
+            request.open("GET", "/result_script_exec1/?py_path=" + py_path + "&workers=" + workers_json, true)
             request.onreadystatechange = function() {
                 if(request.readyState == XMLHttpRequest.DONE && request.status == 200) {
                     window.location.href = '/result_script_html';

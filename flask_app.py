@@ -567,14 +567,27 @@ def result_script_exec1():
     import subprocess, json
     from flask import Markup   
 
+    #session['name'] = ""
+
     session['py_name'] = ""
     session['list_lines'] = []
     session['list_JS_lines'] = []
 
     # read path to script
     py_script_path = request.args['py_path']
-    name = request.args['name']
-    print(f"py_path --> {py_script_path} | name {name}")
+    print(f"py_path --> {py_script_path}")
+
+    #workers = request.args.get("workers")
+    workers = request.args['workers']    
+    print(f"worker name value --> {workers}")
+    workers_list = json.loads(workers)
+    print(f"worker length: {len(workers_list)}")
+    for k in workers_list:
+        print(f"{k} -> {k[0]}, {k[1]} ")
+
+    #for k in len(workers_list):
+    #    print(f"key: {k}, value: {workers_list[k]}")
+    
     py_list = py_script_path.split('/')
     py_name = py_list[len(py_list)-1]
     print(f"py_list: {py_list}")
@@ -735,22 +748,28 @@ def result_script_exec1():
 
     session['py_name'] = py_name
     session['list_lines'] = list_color_text
-    session['list_JS_lines'] = list_JS_lines    
+    session['list_JS_lines'] = list_JS_lines 
+
+    session['workers'] = workers
+    print(f"{FR_BLUE}worker name value --> {workers}")
     
-    print(f"{FR_YELL}====== exit result_script_exec() in html ======{NO_COLOR}\n")
+    print(f"{FR_YELL}====== exit result_script_exec1() in html ======{NO_COLOR}\n")
     print(f"{FR_YELL}====== go to result_script_exec.html ======{NO_COLOR}\n")
 
     # return redirect(url_for('result_script_html'))
-    return render_template('result_script_exec.html',list_lines=list_color_text, list_JS_lines=list_JS_lines, py_name=py_name)
+    return render_template('result_script_html.html',list_lines=list_color_text, list_JS_lines=list_JS_lines, py_name=py_name, workers=workers)
+    #return render_template('result_script_exec.html',list_lines=list_color_text, list_JS_lines=list_JS_lines, py_name=py_name, name=name)
 
 
 @app.route('/result_script_html')
 def result_script_html():
 
     import json
+
     print("----------------------------------------------")
     py_name = session['py_name']
     print(f"py_name: {py_name}")
+    workers = session['workers']
 
     print("----------------------------------------------")
     # read file of matrix lines
@@ -803,7 +822,7 @@ def result_script_html():
     #print(f"===== list_matrix_lines length:{NO_COLOR} {len(list_matrix_lines)}")
     #print("----------------------------------------------")
     #return render_template('result_script_html.html', list_lines=list_lines, list_JS_lines=list_matrix_lines, py_name=py_name)
-    return render_template('result_script_html.html', list_lines=list_color_text_lines, list_JS_lines=list_matrix_lines, py_name=py_name)
+    return render_template('result_script_html.html', list_lines=list_color_text_lines, list_JS_lines=list_matrix_lines, py_name=py_name, workers=workers)
 
 #
 # MAIN

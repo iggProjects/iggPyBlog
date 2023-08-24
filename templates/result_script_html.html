@@ -2,6 +2,7 @@
 
 {% block body %}
 
+    <p style="text-align: center;margin: 15px;">JSON ARRAY "{{ workers }}"</p>
     <h1 style= "margin:auto; text-align: center; font-size:22px;">
         PY CLIENT SUBPROCESS FOR&nbsp;&nbsp;&nbsp;==> "{{py_name}}"        
     </h1>
@@ -67,6 +68,10 @@
             return span_line;
         }
 
+       
+        // read workers array
+        var workers = {{ workers | tojson }}
+        console.log("===> workers: " + workers)
 
         // read server data JS as array
         var lines = {{ list_JS_lines | tojson }};
