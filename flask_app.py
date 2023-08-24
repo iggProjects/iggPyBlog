@@ -358,6 +358,9 @@ def result_script_exec():
     from flask import Markup   
 
     session['py_name'] = ""
+
+    session['workers'] = ""
+
     session['list_lines'] = []
     session['list_JS_lines'] = []
 
@@ -570,6 +573,9 @@ def result_script_exec1():
     #session['name'] = ""
 
     session['py_name'] = ""
+
+    session['workers'] = ""
+    
     session['list_lines'] = []
     session['list_JS_lines'] = []
 
@@ -579,9 +585,9 @@ def result_script_exec1():
 
     #workers = request.args.get("workers")
     workers = request.args['workers']    
-    print(f"worker name value --> {workers}")
+    print(f"workers --> {workers}")
     workers_list = json.loads(workers)
-    print(f"worker length: {len(workers_list)}")
+    print(f"workers list var type: {type(workers_list)} | worker length: {len(workers_list)}")
     for k in workers_list:
         print(f"{k} -> {k[0]}, {k[1]} ")
 
@@ -769,6 +775,7 @@ def result_script_html():
     print("----------------------------------------------")
     py_name = session['py_name']
     print(f"py_name: {py_name}")
+
     workers = session['workers']
 
     print("----------------------------------------------")

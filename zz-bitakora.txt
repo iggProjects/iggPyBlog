@@ -46,6 +46,7 @@ Actual web
         - menu like smartphones
 
     - waiting bar
+        - 
 
     - modal for img
         - modal for img  vs image zoom by click
@@ -162,7 +163,8 @@ CHAT WITH SOCKET
     - https://www.youtube.com/watch?v=AMp6hlA8xKA
     - https://github.com/PrettyPrinted/youtube_video_code/tree/master/2023/03/30/Creating%20a%20Chat%20App%20With%20Flask-SocketIO
 
-PROGRESS BAR
+PROGRESS - WAITING BAR
+    - https://bytes.com/topic/python/answers/718832-making-progress-bar-work-subprocess
     - https://stackoverflow.com/questions/24251898/flask-app-update-progress-bar-while-function-runs
     - http://www.trianglesis.org.ua/python-3-showing-progressbar-while-subprocess-popen
     - https://theautomatic.net/2020/10/12/how-to-create-a-progress-bar-in-python/
@@ -171,6 +173,14 @@ PROGRESS BAR
 Check what's happens in pythonAW when calling console
     - https://stackoverflow.com/questions/4856583/how-do-i-pipe-a-subprocess-call-to-a-text-file
     - https://www.annasyme.com/docs/python-subprocess.html
+
+PASS ARGUMENTS TO SUBPROCESS
+    - https://docs.python.org/3/library/subprocess.html
+    - https://python101.pythonlibrary.org/chapter19_subprocess.html
+    - https://stackoverflow.com/questions/4795190/passing-variables-to-a-subprocess-call
+    - https://www.datacamp.com/tutorial/python-subprocess
+    - https://www.dataquest.io/blog/python-subprocess/
+
 
 SUBPROCESS.RUN
     Gracias por el mensaje. Parece que ha escrito una llamada a subprocess.run que usa la 
