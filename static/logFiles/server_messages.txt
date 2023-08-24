@@ -4592,3 +4592,9 @@ jinja2.exceptions.TemplateNotFound: excercses.html
 2023-08-24 20:48:15,464 INFO     _log  * Debugger PIN: 109-950-851
 2023-08-24 20:48:17,581 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\flask_app.py', reloading
 2023-08-24 20:48:17,686 INFO     _log  * Restarting with stat
+2023-08-24 20:48:18,494 WARNING  _log  * Debugger is active!
+2023-08-24 20:48:18,502 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-24 20:48:26,160 INFO     _log 127.0.0.1 - - [24/Aug/2023 20:48:26] "GET /excercise_input_example/?id=10 HTTP/1.1" 200 -
+2023-08-24 20:48:26,239 INFO     _log 127.0.0.1 - - [24/Aug/2023 20:48:26] "[36mGET /static/img/icons8-bulb-64.png HTTP/1.1[0m" 304 -
+2023-08-24 20:48:36,622 INFO     _log 127.0.0.1 - - [24/Aug/2023 20:48:36] "GET /result_script_exec1/?py_path=static/py_excercises/20230220-input/20230220-InputTrabajadores1.py&workers=[[%22AA%22,%2211%22],[%22BB%22,%2222%22]] HTTP/1.1" 200 -
+2023-08-24 20:48:36,693 INFO     _log 127.0.0.1 - - [24/Aug/2023 20:48:36] "GET /result_script_html HTTP/1.1" 200 -
