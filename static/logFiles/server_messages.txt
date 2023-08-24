@@ -4282,3 +4282,25 @@ jinja2.exceptions.TemplateNotFound: excercses.html
 2023-08-24 13:12:49,002 INFO     _log 127.0.0.1 - - [24/Aug/2023 13:12:49] "GET /result_script_exec1/?py_path=static/py_excercises/20230220-input/20230220-InputTrabajadores1.py&workers=[[%22P%22,%2222%22],[%22G%22,%2223%22]] HTTP/1.1" 200 -
 2023-08-24 13:14:03,153 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\flask_app.py', reloading
 2023-08-24 13:14:03,255 INFO     _log  * Restarting with stat
+2023-08-24 13:14:18,221 INFO     _log [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-08-24 13:14:18,221 INFO     _log [33mPress CTRL+C to quit[0m
+2023-08-24 13:14:18,221 INFO     _log  * Restarting with stat
+2023-08-24 13:14:18,970 WARNING  _log  * Debugger is active!
+2023-08-24 13:14:18,970 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-24 13:14:22,956 INFO     _log 127.0.0.1 - - [24/Aug/2023 13:14:22] "GET /excercise_input_example/?id=10 HTTP/1.1" 200 -
+2023-08-24 13:14:23,086 INFO     _log 127.0.0.1 - - [24/Aug/2023 13:14:23] "[36mGET /static/img/icons8-bulb-64.png HTTP/1.1[0m" 304 -
+2023-08-24 13:14:44,363 INFO     _log 127.0.0.1 - - [24/Aug/2023 13:14:44] "GET /result_script_exec1/?py_path=static/py_excercises/20230220-input/20230220-InputTrabajadores1.py&workers=[[%22P%22,%2222%22],[%22m%22,%2222%22]] HTTP/1.1" 200 -
+2023-08-24 13:14:44,717 INFO     _log 127.0.0.1 - - [24/Aug/2023 13:14:44] "GET /result_script_html HTTP/1.1" 200 -
+2023-08-24 13:14:44,925 INFO     _log 127.0.0.1 - - [24/Aug/2023 13:14:44] "GET /result_script_exec1/?py_path=static/py_excercises/20230220-input/20230220-InputTrabajadores1.py&workers=[[%22P%22,%2222%22],[%22m%22,%2222%22]] HTTP/1.1" 200 -
+2023-08-24 13:22:23,853 INFO     _log 127.0.0.1 - - [24/Aug/2023 13:22:23] "GET /excercise_input_example/?id=10 HTTP/1.1" 200 -
+2023-08-24 13:22:23,910 INFO     _log 127.0.0.1 - - [24/Aug/2023 13:22:23] "[36mGET /static/img/icons8-bulb-64.png HTTP/1.1[0m" 304 -
+2023-08-24 13:23:02,572 INFO     _log 127.0.0.1 - - [24/Aug/2023 13:23:02] "GET /result_script_exec1/?py_path=static/py_excercises/20230220-input/20230220-InputTrabajadores1.py&workers=[[%22P%22,%2222%22],[%22B%22,%2222%22],[%22E%22,%2233%22]] HTTP/1.1" 200 -
+2023-08-24 13:23:02,688 INFO     _log 127.0.0.1 - - [24/Aug/2023 13:23:02] "GET /result_script_html HTTP/1.1" 200 -
+2023-08-24 13:25:02,496 INFO     _log 127.0.0.1 - - [24/Aug/2023 13:25:02] "GET /excercise_input_example/?id=10 HTTP/1.1" 200 -
+2023-08-24 13:25:02,558 INFO     _log 127.0.0.1 - - [24/Aug/2023 13:25:02] "[36mGET /static/img/icons8-bulb-64.png HTTP/1.1[0m" 304 -
+2023-08-24 13:30:17,288 INFO     _log 127.0.0.1 - - [24/Aug/2023 13:30:17] "GET /result_script_exec1/?py_path=static/py_excercises/20230220-input/20230220-InputTrabajadores1.py&workers=[[%22A%22,%2222%22],[%22A%22,%2222%22],[%22A%22,%2222%22]] HTTP/1.1" 200 -
+2023-08-24 13:30:17,380 INFO     _log 127.0.0.1 - - [24/Aug/2023 13:30:17] "GET /result_script_html HTTP/1.1" 200 -
+2023-08-24 13:30:49,670 INFO     _log 127.0.0.1 - - [24/Aug/2023 13:30:49] "GET /result_script_exec1/?py_path=static/py_excercises/20230220-input/20230220-InputTrabajadores1.py&workers=[[%22AB%22,%2222%22],[%22CV%22,%2222%22],[%22WS%22,%2233%22]] HTTP/1.1" 200 -
+2023-08-24 13:30:49,845 INFO     _log 127.0.0.1 - - [24/Aug/2023 13:30:49] "GET /result_script_exec1/?py_path=static/py_excercises/20230220-input/20230220-InputTrabajadores1.py&workers=[[%22AB%22,%2222%22],[%22CV%22,%2222%22],[%22WS%22,%2233%22]] HTTP/1.1" 200 -
+2023-08-24 13:30:50,025 INFO     _log 127.0.0.1 - - [24/Aug/2023 13:30:50] "GET /result_script_html HTTP/1.1" 200 -
