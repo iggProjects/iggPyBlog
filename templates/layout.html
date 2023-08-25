@@ -135,6 +135,57 @@
             cursor: default;
         }
 
+        /*  spinner loader effects  */
+        #div_loader {
+            width: 100%; height:100%; display:none; position: fixed; top: 0px; left: 0px; 
+            background-color: black; opacity:0.2; z-index: 1; 
+        }
+
+        #loader {            
+            margin:auto;
+            margin-top: 10%;            
+            width: 120px;
+            height: 120px;
+            left:45%;
+            display: none;
+            position: fixed;
+            border: 5px solid #f3f3f3;
+            border-radius: 50%;
+            border-top: 16px solid #0d015e;
+            z-index: 10;
+            font-family: "Arial",  sans-serif;
+            -webkit-animation: spin 2s linear infinite; /* Safari */
+            animation: spin 2s linear infinite;
+        }
+
+        .loader {
+            display:none;
+            margin-top: 20px;        
+            border: 5px solid #f3f3f3;
+            border-radius: 50%;
+            border-top: 16px solid #3498db;
+            width: 60px;
+            height: 60px;
+            -webkit-animation: spin 2s linear infinite; /* Safari */
+            animation: spin 2s linear infinite;
+        }
+
+        /* Safari */
+        @-webkit-keyframes spin {
+            0% { -webkit-transform: rotate(0deg); }
+            100% { -webkit-transform: rotate(360deg); }
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        /* Chronometer */
+        #chrono { display: none; margin: auto;  margin-top:20px; left:46%; width: 100%; height: 100%; border: 2px solid red; color:black; z-index: 1;}
+        .clock {  float:left; text-align: center; font-size: 20px; font-family: Courier,sans-serif; color: #363431; }
+
+
 </style>
 
 </head>
@@ -150,6 +201,17 @@
             <div id = "msgBoxBody"></div>	
             <div id = "msgBoxFoot"></div>    
     </div>
+
+    <div id="div_loader"></div>
+    <div id="loader"></div>
+
+    <div id="chrono"></div>
+		<div class="clock" id="H">00</div>
+		<div class="clock" id="M">:00</div>
+		<div class="clock" id="S">:00</div>
+	<!-- <div class="clock" id="CS">:00</div> -->
+    
+    
     <div class="container" style="width:90%;">  
         {% block body%} 
         

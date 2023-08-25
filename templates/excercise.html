@@ -105,10 +105,15 @@
         }
 
         // function invoking window.location.href for /result_script_html 
-        function myRequest(py_file) {
+        async function myRequest(py_file) {
             console.log("==== from myRequest: py_file => " + py_file)
             document.getElementById ( 'msgBox' ).style.display = "none"; 
             document.getElementById ( 'msgOverLay' ).style.display = "none";
+
+            /* activate spinner loader */
+            document.getElementById("div_loader").style.display='block';
+            await delay(500);
+            document.getElementById("loader").style.display='block';
             
             var request = new XMLHttpRequest()
             request.open("GET", "/result_script_exec/?py_path=" + py_file, true)            
@@ -135,6 +140,12 @@
             await delay(3000);            
             document.getElementById ( 'msgBox' ).style.display = "none"; 
             document.getElementById ( 'msgOverLay' ).style.display = "none";
+
+            /* activate spinner loader */
+            document.getElementById("div_loader").style.display='block';
+            await delay(500);
+            document.getElementById("loader").style.display='block';
+            document.getElementById("chrono").style.display='block';
            
             var request = new XMLHttpRequest()
             request.open("GET", "/excercise_input_example/?id=" + id, true)    

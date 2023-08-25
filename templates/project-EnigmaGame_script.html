@@ -113,6 +113,12 @@
             document.getElementById ( 'msgBox' ).style.display = "none"; 
             await delay(2000);
             document.getElementById ( 'msgOverLay' ).style.display = "none";
+
+            /* activate spinner loader */
+            document.getElementById("div_loader").style.display='block';
+            await delay(500);
+            document.getElementById("loader").style.display='block';
+
             
             var request = new XMLHttpRequest()
             request.open("GET", "/result_script_exec/?py_path=" + py_file, true)            
