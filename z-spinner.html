@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/gif" href="/static/gif/icons8-spinning-circle.gif" >
+<!--  
+    <link id="my_favicon" rel="icon" type="image/x-icon" href="/static/img/icons8-bulb-64.png">
+    https://css-tricks.com/the-making-of-an-animated-favicon/
+    https://www.geeksforgeeks.org/how-to-use-animation-on-favicon-image/
+    https://stackoverflow.com/questions/1837261/how-to-animate-a-favicon
+    https://www.hongkiat.com/blog/animated-favicon-loader-javascript/
+        - https://github.com/hongkiat/favicon-canvas-loader
+    https://usefulangle.com/post/45/animate-favicon-gif-javascript
+    
+-->
+<style>
+
+    div { text-align: center; margin:auto;}    
+    h2 { text-align: center; margin-top:150px;}   
+
+    .loader {
+    margin-top: 20px;        
+    border: 5px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #3498db;
+    width: 60px;
+    height: 60px;
+    -webkit-animation: spin 2s linear infinite; /* Safari */
+    animation: spin 2s linear infinite;
+    }
+
+    /* Safari */
+    @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+    }
+
+    @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+    }
+
+    button {margin-top: 20px;}
+
+</style>
+
+<script>
+    /*!
+    * Dynamically changing favicons with JavaScript
+    * Works in all A-grade browsers except Safari and Internet Explorer
+    * Demo: http://mathiasbynens.be/demo/dynamic-favicons
+    */
+
+    // HTML5™, baby! http://mathiasbynens.be/notes/document-head
+    document.head = document.head || document.getElementsByTagName('head')[0];
+
+    function changeFavicon(src) {
+        var link = document.createElement('link'), oldLink = document.getElementById('my_favicon');
+        link.id = 'my_favicon';
+        link.rel = 'shortcut icon';
+        link.href = src;
+        if (oldLink) {
+            document.head.removeChild(oldLink);
+        }
+            document.head.appendChild(link);
+    }
+
+    /*
+    var btn = document.getElementsByTagName('button')[0];
+    btn.onclick = function() {
+        changeFavicon('http://www.google.com/favicon.ico');
+    };
+    */
+</script>
+
+</head>
+<body>
+
+<h2>Please wait a little bit... Executing data process</h2>
+
+
+<div class="loader"></div>
+
+<div><button onclick="changeFavicon('http://www.google.com/favicon.ico')">Change Favicon to Google</button></div>
+
+</body>
+</html>

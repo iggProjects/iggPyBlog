@@ -4598,3 +4598,14 @@ jinja2.exceptions.TemplateNotFound: excercses.html
 2023-08-24 20:48:26,239 INFO     _log 127.0.0.1 - - [24/Aug/2023 20:48:26] "[36mGET /static/img/icons8-bulb-64.png HTTP/1.1[0m" 304 -
 2023-08-24 20:48:36,622 INFO     _log 127.0.0.1 - - [24/Aug/2023 20:48:36] "GET /result_script_exec1/?py_path=static/py_excercises/20230220-input/20230220-InputTrabajadores1.py&workers=[[%22AA%22,%2211%22],[%22BB%22,%2222%22]] HTTP/1.1" 200 -
 2023-08-24 20:48:36,693 INFO     _log 127.0.0.1 - - [24/Aug/2023 20:48:36] "GET /result_script_html HTTP/1.1" 200 -
+2023-08-25 17:38:12,134 INFO     _log [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-08-25 17:38:12,134 INFO     _log [33mPress CTRL+C to quit[0m
+2023-08-25 17:38:12,136 INFO     _log  * Restarting with stat
+2023-08-25 17:38:12,769 WARNING  _log  * Debugger is active!
+2023-08-25 17:38:12,787 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-25 17:38:54,052 INFO     _log 127.0.0.1 - - [25/Aug/2023 17:38:54] "GET / HTTP/1.1" 200 -
+2023-08-25 17:38:54,218 INFO     _log 127.0.0.1 - - [25/Aug/2023 17:38:54] "GET /static/img/ame-01.jpg HTTP/1.1" 200 -
+2023-08-25 17:38:54,389 INFO     _log 127.0.0.1 - - [25/Aug/2023 17:38:54] "GET /static/img/icons8-bulb-64.png HTTP/1.1" 200 -
+2023-08-25 17:38:57,603 INFO     _log 127.0.0.1 - - [25/Aug/2023 17:38:57] "GET /excercises HTTP/1.1" 200 -
+2023-08-25 17:38:57,813 INFO     _log 127.0.0.1 - - [25/Aug/2023 17:38:57] "GET /static/img/Lorea.jpg HTTP/1.1" 200 -
