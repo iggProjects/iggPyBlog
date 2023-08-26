@@ -6512,3 +6512,26 @@ jinja2.exceptions.TemplateNotFound: excercses.html
 2023-08-26 22:59:17,027 INFO     _log  * Restarting with stat
 2023-08-26 22:59:17,773 WARNING  _log  * Debugger is active!
 2023-08-26 22:59:17,774 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-26 23:20:32,670 INFO     _log 127.0.0.1 - - [26/Aug/2023 23:20:32] "GET /project-EnigmaGame HTTP/1.1" 200 -
+2023-08-26 23:20:32,913 INFO     _log 127.0.0.1 - - [26/Aug/2023 23:20:32] "[36mGET /static/img/enigma.jpg HTTP/1.1[0m" 304 -
+2023-08-26 23:20:32,952 INFO     _log 127.0.0.1 - - [26/Aug/2023 23:20:32] "[36mGET /static/img/icons8-video-50.png HTTP/1.1[0m" 304 -
+2023-08-26 23:20:33,006 INFO     _log 127.0.0.1 - - [26/Aug/2023 23:20:33] "[36mGET /static/img/Lorea.jpg HTTP/1.1[0m" 304 -
+2023-08-26 23:20:34,585 INFO     _log 127.0.0.1 - - [26/Aug/2023 23:20:34] "GET /project-EnigmaGame_script/?id=3 HTTP/1.1" 200 -
+2023-08-26 23:20:34,877 INFO     _log 127.0.0.1 - - [26/Aug/2023 23:20:34] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-08-26 23:20:34,928 INFO     _log 127.0.0.1 - - [26/Aug/2023 23:20:34] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-08-26 23:20:34,935 INFO     _log 127.0.0.1 - - [26/Aug/2023 23:20:34] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-08-26 23:20:34,935 INFO     _log 127.0.0.1 - - [26/Aug/2023 23:20:34] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-08-26 23:20:45,610 INFO     _log 127.0.0.1 - - [26/Aug/2023 23:20:45] "GET /result_script_exec/?py_path=static/proj_enigmaGame_scripts/mpPoolManagerEnigmaRandom-Alphab26-1.py HTTP/1.1" 200 -
+2023-08-26 23:20:45,704 INFO     _log 127.0.0.1 - - [26/Aug/2023 23:20:45] "GET /result_script_html HTTP/1.1" 200 -
+2023-08-26 23:23:01,368 INFO     _log 127.0.0.1 - - [26/Aug/2023 23:23:01] "GET /project-LifeGame HTTP/1.1" 200 -
+2023-08-26 23:23:01,612 INFO     _log 127.0.0.1 - - [26/Aug/2023 23:23:01] "[36mGET /static/img/LifeGame.jpg HTTP/1.1[0m" 304 -
+2023-08-26 23:23:01,623 INFO     _log 127.0.0.1 - - [26/Aug/2023 23:23:01] "[36mGET /static/img/icons8-video-50.png HTTP/1.1[0m" 304 -
+2023-08-26 23:23:03,502 INFO     _log 127.0.0.1 - - [26/Aug/2023 23:23:03] "GET /project-LifeGame_script/?id=4 HTTP/1.1" 200 -
+2023-08-26 23:23:03,802 INFO     _log 127.0.0.1 - - [26/Aug/2023 23:23:03] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-08-26 23:23:03,853 INFO     _log 127.0.0.1 - - [26/Aug/2023 23:23:03] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-08-26 23:23:03,853 INFO     _log 127.0.0.1 - - [26/Aug/2023 23:23:03] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-08-26 23:23:03,853 INFO     _log 127.0.0.1 - - [26/Aug/2023 23:23:03] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-08-26 23:23:08,618 INFO     _log 127.0.0.1 - - [26/Aug/2023 23:23:08] "GET /result_script_exec/?py_path=static/proj_lifeGame_scripts/04_LG-iterations-funciones1.py HTTP/1.1" 200 -
+2023-08-26 23:23:08,753 INFO     _log 127.0.0.1 - - [26/Aug/2023 23:23:08] "GET /result_script_html HTTP/1.1" 200 -
+2023-08-26 23:23:17,956 INFO     _log 127.0.0.1 - - [26/Aug/2023 23:23:17] "GET /static/logFiles/my_messages.txt HTTP/1.1" 200 -
+2023-08-26 23:23:18,245 INFO     _log 127.0.0.1 - - [26/Aug/2023 23:23:18] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
