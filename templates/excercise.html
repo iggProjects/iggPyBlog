@@ -115,6 +115,9 @@
             await delay(500);
             document.getElementById("loader").style.display='block';
             
+            /* activate chrono */
+            document.getElementById("clock").style.display='flex';
+            
             var request = new XMLHttpRequest()
             request.open("GET", "/result_script_exec/?py_path=" + py_file, true)            
             request.onreadystatechange = function() {
@@ -137,16 +140,10 @@
             // alert("\n=====  PLEASE WAIT A BIT  =====\n\nWHILE THE SCRIPT RUNS IN THE BACKGROUND !");
             console.log("---> parameter id: "+ id)
             my_msg_window.render("ALERT","working in solution !");
-            await delay(3000);            
+                        
             document.getElementById ( 'msgBox' ).style.display = "none"; 
             document.getElementById ( 'msgOverLay' ).style.display = "none";
-
-            /* activate spinner loader */
-            document.getElementById("div_loader").style.display='block';
-            await delay(500);
-            document.getElementById("loader").style.display='block';
-            document.getElementById("chrono").style.display='block';
-           
+                        
             var request = new XMLHttpRequest()
             request.open("GET", "/excercise_input_example/?id=" + id, true)    
             request.onreadystatechange = function() {

@@ -77,7 +77,11 @@
 
         /* Custom Alert*/
 
-        #msgOverLay { display: none; position: fixed; top: 0px; left: 0px; background-color: #00F; opacity: .3; width: 100%;  z-index: 1; }
+        #msgOverLay { 
+            width: 100%; height:100%; display: none; 
+            position: fixed; top: 0px; left: 0px; 
+            background-color: #00F; opacity: 0.3; z-index: 1; 
+        }
         #msgBox { 
             margin:auto;
             margin-top: 6%;
@@ -86,7 +90,7 @@
             height: auto;
             display: none;
             position: fixed;
-            background-color: white;                        
+            background-color: rgb(1, 228, 249);                        
             border-radius: 10px;
             box-shadow: 0 0 0 .8em #990000;
             left:35%;
@@ -137,10 +141,11 @@
 
         /*  spinner loader effects  */
         #div_loader {
-            width: 100%; height:100%; display:none; position: fixed; top: 0px; left: 0px; 
-            background-color: black; opacity:0.2; z-index: 1; 
+            display:none; width: 100%; height:100%; position: fixed; top: 0px; left: 0px; 
+            background-color: black; opacity:0.5; z-index: 1; 
         }
-
+        
+        
         #loader {            
             margin:auto;
             margin-top: 10%;            
@@ -157,7 +162,8 @@
             -webkit-animation: spin 2s linear infinite; /* Safari */
             animation: spin 2s linear infinite;
         }
-
+        
+/*
         .loader {
             display:none;
             margin-top: 20px;        
@@ -166,10 +172,10 @@
             border-top: 16px solid #3498db;
             width: 60px;
             height: 60px;
-            -webkit-animation: spin 2s linear infinite; /* Safari */
+            -webkit-animation: spin 2s linear infinite; // Safari 
             animation: spin 2s linear infinite;
         }
-
+*/
         /* Safari */
         @-webkit-keyframes spin {
             0% { -webkit-transform: rotate(0deg); }
@@ -182,8 +188,12 @@
         }
 
         /* Chronometer */
-        #chrono { display: none; margin: auto;  margin-top:20px; left:46%; width: 100%; height: 100%; border: 2px solid red; color:black; z-index: 1;}
-        .clock {  float:left; text-align: center; font-size: 20px; font-family: Courier,sans-serif; color: #363431; }
+        #chrono { 
+            display: none; position: absolute; top: 0; left: 0; width:100%; height:100%; margin: auto; margin-top:30px;
+            background-color: #4efd51; opacity:0.3; color:black; z-index: 1;
+        }
+        #clock { display: none; position: absolute; top: 55%; left: 45%; width: 110px; margin:auto; text-align: center; background-color:#990000; padding: 4px; z-index: 10; }
+        .clock { display:block; font-size: 20px; font-family: Courier,sans-serif; color: white; }
 
 
 </style>
@@ -197,19 +207,22 @@
 
     <div id = "msgOverLay"></div>
     <div id = "msgBox">    
-            <div id = "msgBoxHead"></div>
-            <div id = "msgBoxBody"></div>	
-            <div id = "msgBoxFoot"></div>    
+        <div id = "msgBoxHead"></div>
+        <div id = "msgBoxBody"></div>	
+        <div id = "msgBoxFoot"></div>    
     </div>
 
     <div id="div_loader"></div>
     <div id="loader"></div>
 
-    <div id="chrono"></div>
+    <!-- <div id="chrono"></div> -->
+    <div id="clock" class="disp-rows-cent">
 		<div class="clock" id="H">00</div>
-		<div class="clock" id="M">:00</div>
-		<div class="clock" id="S">:00</div>
+		<div class="clock" id="M">00</div>
+		<div class="clock" id="S">00</div>
 	<!-- <div class="clock" id="CS">:00</div> -->
+    </div>
+    
     
     
     <div class="container" style="width:90%;">  

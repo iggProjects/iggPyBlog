@@ -94,6 +94,7 @@ check if 'cancel' button was clicked
             // 
             
             workers_json = JSON.stringify(workers)
+
             var request = new XMLHttpRequest()
             //request.open("GET", "/result_script_exec1/?py_path=" + py_path + "&workers=IGG", true)
             request.open("GET", "/result_script_exec1/?py_path=" + py_path + "&workers=" + workers_json, true)
