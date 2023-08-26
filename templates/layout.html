@@ -142,10 +142,8 @@
         /*  spinner loader effects  */
         #div_loader {
             display:none; width: 100%; height:100%; position: fixed; top: 0px; left: 0px; 
-            background-color: black; opacity:0.5; z-index: 1; 
-        }
-        
-        
+            background-color: rgb(70, 161, 63); opacity:0.5; z-index: 1; 
+        }                
         #loader {            
             margin:auto;
             margin-top: 10%;            
@@ -162,37 +160,18 @@
             -webkit-animation: spin 2s linear infinite; /* Safari */
             animation: spin 2s linear infinite;
         }
-        
-/*
-        .loader {
-            display:none;
-            margin-top: 20px;        
-            border: 5px solid #f3f3f3;
-            border-radius: 50%;
-            border-top: 16px solid #3498db;
-            width: 60px;
-            height: 60px;
-            -webkit-animation: spin 2s linear infinite; // Safari 
-            animation: spin 2s linear infinite;
-        }
-*/
         /* Safari */
         @-webkit-keyframes spin {
             0% { -webkit-transform: rotate(0deg); }
             100% { -webkit-transform: rotate(360deg); }
         }
-
         @keyframes spin {
             0% { transform: rotate(0deg); }
             100% { transform: rotate(360deg); }
         }
 
         /* Chronometer */
-        #chrono { 
-            display: none; position: absolute; top: 0; left: 0; width:100%; height:100%; margin: auto; margin-top:30px;
-            background-color: #4efd51; opacity:0.3; color:black; z-index: 1;
-        }
-        #clock { display: none; position: absolute; top: 55%; left: 45%; width: 110px; margin:auto; text-align: center; background-color:#990000; padding: 4px; z-index: 10; }
+        #clock { display: none; position: absolute; top: 55%; left: 44%; width: 150px; margin:auto; text-align: center; background-color:#990000; padding: 4px; z-index: 10; }
         .clock { display:block; font-size: 20px; font-family: Courier,sans-serif; color: white; }
 
 
@@ -218,9 +197,9 @@
     <!-- <div id="chrono"></div> -->
     <div id="clock" class="disp-rows-cent">
 		<div class="clock" id="H">00</div>
-		<div class="clock" id="M">00</div>
-		<div class="clock" id="S">00</div>
-	<!-- <div class="clock" id="CS">:00</div> -->
+		<div class="clock" id="M">:00</div>
+		<div class="clock" id="S">:00</div>
+	    <div class="clock" id="Hnd">:00</div>
     </div>
     
     

@@ -58,6 +58,48 @@
 
     <script>
 
+        /* Chronometer */
+        var hundredths = 0;
+        var seconds = 0;
+        var minutes = 0;
+        var hours = 0;
+        var Hundredths = document.getElementById("Hnd")
+        var Seconds = document.getElementById("S")
+        var Minutes = document.getElementById("M")
+        var Hours = document.getElementById("H")
+        
+        function chronometer () {
+            if (hundredths < 99) {
+                hundredths++;
+                if (hundredths < 10) { hundredths = "0" + hundredths }
+                Hundredths.innerHTML = ":" + hundredths;
+            }
+            if (hundredths == 99) {
+                hundredths = -1;
+            }
+            if (hundredths == 0) {
+                seconds ++;
+                if (seconds < 10) { seconds = "0"+seconds }
+                Seconds.innerHTML = ":" + seconds;
+            }
+            if (seconds == 59) {
+                seconds = -1;
+            }
+            if ( (hundredths == 0)&&(seconds == 0) ) {
+                minutes++;
+                if (minutes < 10) { minutes = "0"+minutes }
+                Minutes.innerHTML = ":" + minutes;
+            }
+            if (minutes == 59) {
+                minutes = -1;
+            }
+            if ( (hundredths == 0)&&(seconds == 0)&&(minutes == 0) ) {
+                horas ++;
+                if (horas < 10) { horas = "0" + horas }
+                Hours.innerHTML = hours;
+            }
+        }
+
         function delay(milliseconds){
             return new Promise(resolve => {
                 setTimeout(resolve, milliseconds);
@@ -99,7 +141,7 @@
         async function html_script_exec(py_path){
             // alert("\n=====  PLEASE WAIT A BIT  =====\n\nWHILE THE SCRIPT RUNS IN THE BACKGROUND !");
             my_msg_window.render("ALERT","Please WAIT a BIT while the script runs in the background !");
-            await delay(3000);
+            await delay(2000);
             // go to result_script_exec.html 
             myRequest(py_path);
         }
@@ -107,14 +149,15 @@
         // function invoking window.location.href for /result_script_html 
         async function myRequest(py_file) {
             console.log("==== from myRequest: py_file => " + py_file)
-            document.getElementById ( 'msgBox' ).style.display = "none"; 
-            document.getElementById ( 'msgOverLay' ).style.display = "none";
+            /* inactivate msg layer */
+            document.getElementById ("msgBox").style.display = "none"; 
+            await delay(100);
+            document.getElementById ("msgOverLay").style.display = "none";
 
-            /* activate spinner loader */
-            document.getElementById("div_loader").style.display='block';
-            await delay(500);
-            document.getElementById("loader").style.display='block';
-            
+            /* activate spinner loader anf chorno layer */
+            document.getElementById("div_loader").style.display='block';            
+            /* activate spinner */
+            document.getElementById("loader").style.display='block';            
             /* activate chrono */
             document.getElementById("clock").style.display='flex';
             

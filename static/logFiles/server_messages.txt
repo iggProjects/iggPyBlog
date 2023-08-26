@@ -6099,3 +6099,416 @@ jinja2.exceptions.TemplateNotFound: excercses.html
 2023-08-26 13:59:28,541 INFO     _log 127.0.0.1 - - [26/Aug/2023 13:59:28] "GET /excercise_input_example/?id=10 HTTP/1.1" 200 -
 2023-08-26 13:59:35,598 INFO     _log 127.0.0.1 - - [26/Aug/2023 13:59:35] "GET /result_script_exec1/?py_path=static/py_excercises/20230220-input/20230220-InputTrabajadores1.py&workers=[[%22aa%22,%2211%22]] HTTP/1.1" 200 -
 2023-08-26 13:59:35,642 INFO     _log 127.0.0.1 - - [26/Aug/2023 13:59:35] "GET /result_script_html HTTP/1.1" 200 -
+2023-08-26 21:56:40,501 INFO     _log [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-08-26 21:56:40,501 INFO     _log [33mPress CTRL+C to quit[0m
+2023-08-26 21:56:40,509 INFO     _log  * Restarting with stat
+2023-08-26 21:56:41,316 WARNING  _log  * Debugger is active!
+2023-08-26 21:56:41,324 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-26 21:58:47,870 INFO     _log 127.0.0.1 - - [26/Aug/2023 21:58:47] "GET / HTTP/1.1" 200 -
+2023-08-26 21:58:48,021 INFO     _log 127.0.0.1 - - [26/Aug/2023 21:58:48] "GET /static/img/ame-01.jpg HTTP/1.1" 200 -
+2023-08-26 21:58:48,167 INFO     _log 127.0.0.1 - - [26/Aug/2023 21:58:48] "GET /static/img/icons8-bulb-64.png HTTP/1.1" 200 -
+2023-08-26 21:58:52,812 INFO     _log 127.0.0.1 - - [26/Aug/2023 21:58:52] "GET /excercises HTTP/1.1" 200 -
+2023-08-26 21:58:53,027 INFO     _log 127.0.0.1 - - [26/Aug/2023 21:58:53] "GET /static/img/Lorea.jpg HTTP/1.1" 200 -
+2023-08-26 21:58:54,311 INFO     _log 127.0.0.1 - - [26/Aug/2023 21:58:54] "GET /excercise/?id=1 HTTP/1.1" 200 -
+2023-08-26 21:58:54,596 INFO     _log 127.0.0.1 - - [26/Aug/2023 21:58:54] "GET /static/img/icons8-script-68.png HTTP/1.1" 200 -
+2023-08-26 21:58:54,646 INFO     _log 127.0.0.1 - - [26/Aug/2023 21:58:54] "GET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1" 200 -
+2023-08-26 21:58:54,646 INFO     _log 127.0.0.1 - - [26/Aug/2023 21:58:54] "GET /static/img/icons8-html-filetype-50.png HTTP/1.1" 200 -
+2023-08-26 21:58:54,657 INFO     _log 127.0.0.1 - - [26/Aug/2023 21:58:54] "GET /static/img/icons8-consola-100.png HTTP/1.1" 200 -
+2023-08-26 21:59:00,270 INFO     _log 127.0.0.1 - - [26/Aug/2023 21:59:00] "GET /result_script_exec/?py_path=static/py_excercises/20230213-PrototypeScript-colors/0-prototype-colors1.py HTTP/1.1" 200 -
+2023-08-26 21:59:00,336 INFO     _log 127.0.0.1 - - [26/Aug/2023 21:59:00] "GET /result_script_html HTTP/1.1" 200 -
+2023-08-26 21:59:05,579 INFO     _log 127.0.0.1 - - [26/Aug/2023 21:59:05] "GET /result_script_html HTTP/1.1" 200 -
+2023-08-26 21:59:05,878 INFO     _log 127.0.0.1 - - [26/Aug/2023 21:59:05] "[36mGET /static/img/icons8-bulb-64.png HTTP/1.1[0m" 304 -
+2023-08-26 21:59:07,778 INFO     _log 127.0.0.1 - - [26/Aug/2023 21:59:07] "GET /excercises HTTP/1.1" 200 -
+2023-08-26 21:59:08,015 INFO     _log 127.0.0.1 - - [26/Aug/2023 21:59:08] "[36mGET /static/img/Lorea.jpg HTTP/1.1[0m" 304 -
+2023-08-26 21:59:09,605 INFO     _log 127.0.0.1 - - [26/Aug/2023 21:59:09] "GET /excercise/?id=1 HTTP/1.1" 200 -
+2023-08-26 21:59:09,929 INFO     _log 127.0.0.1 - - [26/Aug/2023 21:59:09] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-08-26 21:59:09,940 INFO     _log 127.0.0.1 - - [26/Aug/2023 21:59:09] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-08-26 21:59:09,947 INFO     _log 127.0.0.1 - - [26/Aug/2023 21:59:09] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-08-26 21:59:09,947 INFO     _log 127.0.0.1 - - [26/Aug/2023 21:59:09] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-08-26 21:59:15,445 INFO     _log 127.0.0.1 - - [26/Aug/2023 21:59:15] "GET /result_script_exec/?py_path=static/py_excercises/20230213-PrototypeScript-colors/0-prototype-colors1.py HTTP/1.1" 200 -
+2023-08-26 21:59:15,533 INFO     _log 127.0.0.1 - - [26/Aug/2023 21:59:15] "GET /result_script_html HTTP/1.1" 200 -
+2023-08-26 21:59:40,197 INFO     _log 127.0.0.1 - - [26/Aug/2023 21:59:40] "GET /result_script_exec/?py_path=static/py_excercises/20230213-PrototypeScript-colors/0-prototype-colors1.py HTTP/1.1" 200 -
+2023-08-26 21:59:40,233 INFO     _log 127.0.0.1 - - [26/Aug/2023 21:59:40] "GET /result_script_html HTTP/1.1" 200 -
+2023-08-26 21:59:50,826 INFO     _log 127.0.0.1 - - [26/Aug/2023 21:59:50] "GET /result_script_exec/?py_path=static/py_excercises/20230213-PrototypeScript-colors/0-prototype-colors1.py HTTP/1.1" 200 -
+2023-08-26 21:59:50,864 INFO     _log 127.0.0.1 - - [26/Aug/2023 21:59:50] "GET /result_script_html HTTP/1.1" 200 -
+2023-08-26 22:00:04,325 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:00:04] "GET /excercises HTTP/1.1" 200 -
+2023-08-26 22:00:04,626 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:00:04] "[36mGET /static/img/Lorea.jpg HTTP/1.1[0m" 304 -
+2023-08-26 22:00:07,086 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:00:07] "GET /excercise/?id=1 HTTP/1.1" 200 -
+2023-08-26 22:00:07,256 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:00:07] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-08-26 22:00:07,278 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:00:07] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-08-26 22:00:07,419 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:00:07] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-08-26 22:00:07,427 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:00:07] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-08-26 22:00:12,095 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:00:12] "GET /result_script_exec/?py_path=static/py_excercises/20230213-PrototypeScript-colors/0-prototype-colors1.py HTTP/1.1" 200 -
+2023-08-26 22:00:12,431 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:00:12] "GET /result_script_html HTTP/1.1" 200 -
+2023-08-26 22:00:25,544 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:00:25] "GET /excercises HTTP/1.1" 200 -
+2023-08-26 22:00:25,561 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:00:25] "[36mGET /static/img/Lorea.jpg HTTP/1.1[0m" 304 -
+2023-08-26 22:00:27,201 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:00:27] "GET /excercise/?id=1 HTTP/1.1" 200 -
+2023-08-26 22:00:27,357 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:00:27] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-08-26 22:00:27,378 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:00:27] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-08-26 22:00:27,533 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:00:27] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-08-26 22:00:27,533 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:00:27] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-08-26 22:00:32,830 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:00:32] "GET /result_script_exec/?py_path=static/py_excercises/20230213-PrototypeScript-colors/0-prototype-colors1.py HTTP/1.1" 200 -
+2023-08-26 22:00:33,164 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:00:33] "GET /result_script_html HTTP/1.1" 200 -
+2023-08-26 22:00:52,556 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:00:52] "GET /result_script_exec/?py_path=static/py_excercises/20230213-PrototypeScript-colors/0-prototype-colors1.py HTTP/1.1" 200 -
+2023-08-26 22:00:52,600 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:00:52] "GET /result_script_html HTTP/1.1" 200 -
+2023-08-26 22:03:13,193 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:03:13] "GET /excercises HTTP/1.1" 200 -
+2023-08-26 22:03:13,379 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:03:13] "[36mGET /static/img/Lorea.jpg HTTP/1.1[0m" 304 -
+2023-08-26 22:03:14,825 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:03:14] "GET /excercise/?id=1 HTTP/1.1" 200 -
+2023-08-26 22:03:15,067 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:03:15] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-08-26 22:03:15,150 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:03:15] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-08-26 22:03:15,150 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:03:15] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-08-26 22:03:15,153 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:03:15] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-08-26 22:03:19,938 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:03:19] "GET /result_script_exec/?py_path=static/py_excercises/20230213-PrototypeScript-colors/0-prototype-colors1.py HTTP/1.1" 200 -
+2023-08-26 22:03:20,045 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:03:20] "GET /result_script_html HTTP/1.1" 200 -
+2023-08-26 22:04:18,309 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:04:18] "GET /excercises HTTP/1.1" 200 -
+2023-08-26 22:04:18,570 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:04:18] "[36mGET /static/img/Lorea.jpg HTTP/1.1[0m" 304 -
+2023-08-26 22:04:19,957 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:04:19] "GET /excercise/?id=1 HTTP/1.1" 200 -
+2023-08-26 22:04:20,192 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:04:20] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-08-26 22:04:20,219 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:04:20] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-08-26 22:04:20,286 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:04:20] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-08-26 22:04:20,294 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:04:20] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-08-26 22:04:24,778 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:04:24] "GET /result_script_exec/?py_path=static/py_excercises/20230213-PrototypeScript-colors/0-prototype-colors1.py HTTP/1.1" 200 -
+2023-08-26 22:04:25,129 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:04:25] "GET /result_script_html HTTP/1.1" 200 -
+2023-08-26 22:11:10,706 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:11:10] "GET /project-LifeGame HTTP/1.1" 200 -
+2023-08-26 22:11:10,902 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:11:10] "GET /static/img/LifeGame.jpg HTTP/1.1" 200 -
+2023-08-26 22:11:10,913 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:11:10] "GET /static/img/icons8-video-50.png HTTP/1.1" 200 -
+2023-08-26 22:11:13,524 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:11:13] "GET /project-LifeGame_script/?id=1 HTTP/1.1" 200 -
+2023-08-26 22:11:13,783 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:11:13] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-08-26 22:11:13,851 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:11:13] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-08-26 22:11:13,851 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:11:13] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-08-26 22:11:13,864 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:11:13] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-08-26 22:12:10,109 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:12:10] "GET /project-LifeGame HTTP/1.1" 200 -
+2023-08-26 22:12:10,127 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:12:10] "[36mGET /static/img/LifeGame.jpg HTTP/1.1[0m" 304 -
+2023-08-26 22:12:10,436 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:12:10] "[36mGET /static/img/icons8-video-50.png HTTP/1.1[0m" 304 -
+2023-08-26 22:12:10,764 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:12:10] "[36mGET /static/img/icons8-bulb-64.png HTTP/1.1[0m" 304 -
+2023-08-26 22:12:11,376 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:12:11] "GET /project-LifeGame_script/?id=1 HTTP/1.1" 200 -
+2023-08-26 22:12:11,633 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:12:11] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-08-26 22:12:11,709 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:12:11] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-08-26 22:12:11,709 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:12:11] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-08-26 22:12:11,720 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:12:11] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-08-26 22:12:18,158 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:12:18] "GET /result_script_exec/?py_path=static/proj_lifeGame_scripts/01_LG-ExploracionMatrices1.py HTTP/1.1" 200 -
+2023-08-26 22:12:58,068 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:12:58] "GET /project-LifeGame HTTP/1.1" 200 -
+2023-08-26 22:12:58,078 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:12:58] "[36mGET /static/img/LifeGame.jpg HTTP/1.1[0m" 304 -
+2023-08-26 22:12:58,394 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:12:58] "[36mGET /static/img/icons8-video-50.png HTTP/1.1[0m" 304 -
+2023-08-26 22:12:58,719 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:12:58] "[36mGET /static/img/icons8-bulb-64.png HTTP/1.1[0m" 304 -
+2023-08-26 22:12:59,537 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:12:59] "GET /project-LifeGame HTTP/1.1" 200 -
+2023-08-26 22:12:59,846 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:12:59] "[36mGET /static/img/LifeGame.jpg HTTP/1.1[0m" 304 -
+2023-08-26 22:12:59,869 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:12:59] "[36mGET /static/img/icons8-video-50.png HTTP/1.1[0m" 304 -
+2023-08-26 22:13:01,244 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:13:01] "GET /project-LifeGame_script/?id=1 HTTP/1.1" 200 -
+2023-08-26 22:13:01,411 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:13:01] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-08-26 22:13:01,447 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:13:01] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-08-26 22:13:01,589 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:13:01] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-08-26 22:13:01,589 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:13:01] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-08-26 22:13:06,820 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:13:06] "GET /result_script_exec/?py_path=static/proj_lifeGame_scripts/01_LG-ExploracionMatrices1.py HTTP/1.1" 200 -
+2023-08-26 22:13:07,266 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:13:07] "GET /result_script_html HTTP/1.1" 200 -
+2023-08-26 22:27:24,602 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:27:24] "GET /result_script_html HTTP/1.1" 200 -
+2023-08-26 22:27:24,653 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:27:24] "[36mGET /static/img/icons8-bulb-64.png HTTP/1.1[0m" 304 -
+2023-08-26 22:27:26,812 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:27:26] "GET /project-LifeGame HTTP/1.1" 200 -
+2023-08-26 22:27:27,133 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:27:27] "[36mGET /static/img/LifeGame.jpg HTTP/1.1[0m" 304 -
+2023-08-26 22:27:27,138 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:27:27] "[36mGET /static/img/icons8-video-50.png HTTP/1.1[0m" 304 -
+2023-08-26 22:27:28,827 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:27:28] "GET /project-LifeGame_script/?id=1 HTTP/1.1" 200 -
+2023-08-26 22:27:28,994 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:27:28] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-08-26 22:27:29,019 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:27:29] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-08-26 22:27:29,144 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:27:29] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-08-26 22:27:29,153 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:27:29] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-08-26 22:29:17,071 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:29:17] "GET /project-LifeGame HTTP/1.1" 200 -
+2023-08-26 22:29:17,249 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:29:17] "[36mGET /static/img/LifeGame.jpg HTTP/1.1[0m" 304 -
+2023-08-26 22:29:17,278 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:29:17] "[36mGET /static/img/icons8-video-50.png HTTP/1.1[0m" 304 -
+2023-08-26 22:29:18,494 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:29:18] "GET /project-LifeGame_script/?id=1 HTTP/1.1" 200 -
+2023-08-26 22:29:18,779 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:29:18] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-08-26 22:29:18,826 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:29:18] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-08-26 22:29:18,826 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:29:18] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-08-26 22:29:18,826 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:29:18] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-08-26 22:29:24,015 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:29:24] "GET /result_script_exec/?py_path=static/proj_lifeGame_scripts/01_LG-ExploracionMatrices1.py HTTP/1.1" 200 -
+2023-08-26 22:29:24,116 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:29:24] "GET /result_script_html HTTP/1.1" 200 -
+2023-08-26 22:29:31,103 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:29:31] "GET /excercises HTTP/1.1" 200 -
+2023-08-26 22:29:31,404 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:29:31] "[36mGET /static/img/Lorea.jpg HTTP/1.1[0m" 304 -
+2023-08-26 22:29:32,894 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:29:32] "GET /excercise/?id=1 HTTP/1.1" 200 -
+2023-08-26 22:29:33,111 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:29:33] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-08-26 22:29:33,134 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:29:33] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-08-26 22:29:33,229 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:29:33] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-08-26 22:29:33,241 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:29:33] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-08-26 22:29:38,249 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:29:38] "GET /result_script_exec/?py_path=static/py_excercises/20230213-PrototypeScript-colors/0-prototype-colors1.py HTTP/1.1" 200 -
+2023-08-26 22:29:38,598 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:29:38] "GET /result_script_html HTTP/1.1" 200 -
+2023-08-26 22:32:00,420 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:32:00] "GET /project-EnigmaGame HTTP/1.1" 200 -
+2023-08-26 22:32:00,594 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:32:00] "GET /static/img/enigma.jpg HTTP/1.1" 200 -
+2023-08-26 22:32:00,612 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:32:00] "[36mGET /static/img/icons8-video-50.png HTTP/1.1[0m" 304 -
+2023-08-26 22:32:00,757 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:32:00] "[36mGET /static/img/Lorea.jpg HTTP/1.1[0m" 304 -
+2023-08-26 22:32:02,225 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:32:02] "GET /project-EnigmaGame_script/?id=1 HTTP/1.1" 200 -
+2023-08-26 22:32:02,496 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:32:02] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-08-26 22:32:02,561 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:32:02] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-08-26 22:32:02,569 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:32:02] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-08-26 22:32:02,572 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:32:02] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-08-26 22:32:29,971 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:32:29] "GET /result_script_exec/?py_path=static/proj_enigmaGame_scripts/mpPool_Arith_Progres_Sum1.py HTTP/1.1" 200 -
+2023-08-26 22:33:03,592 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:33:03] "GET /project-LifeGame HTTP/1.1" 200 -
+2023-08-26 22:33:03,907 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:33:03] "[36mGET /static/img/LifeGame.jpg HTTP/1.1[0m" 304 -
+2023-08-26 22:33:03,914 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:33:03] "[36mGET /static/img/icons8-video-50.png HTTP/1.1[0m" 304 -
+2023-08-26 22:33:04,844 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:33:04] "GET /project-LifeGame_script/?id=1 HTTP/1.1" 200 -
+2023-08-26 22:33:05,011 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:33:05] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-08-26 22:33:05,044 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:33:05] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-08-26 22:33:05,178 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:33:05] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-08-26 22:33:05,185 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:33:05] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-08-26 22:33:10,095 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:33:10] "GET /result_script_exec/?py_path=static/proj_lifeGame_scripts/01_LG-ExploracionMatrices1.py HTTP/1.1" 200 -
+2023-08-26 22:33:10,531 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:33:10] "GET /result_script_html HTTP/1.1" 200 -
+2023-08-26 22:34:20,614 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:34:20] "GET /result_script_html HTTP/1.1" 200 -
+2023-08-26 22:34:20,685 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:34:20] "[36mGET /static/img/icons8-bulb-64.png HTTP/1.1[0m" 304 -
+2023-08-26 22:34:21,376 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:34:21] "GET /project-EnigmaGame HTTP/1.1" 200 -
+2023-08-26 22:34:21,694 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:34:21] "[36mGET /static/img/enigma.jpg HTTP/1.1[0m" 304 -
+2023-08-26 22:34:21,701 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:34:21] "[36mGET /static/img/icons8-video-50.png HTTP/1.1[0m" 304 -
+2023-08-26 22:34:21,701 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:34:21] "[36mGET /static/img/Lorea.jpg HTTP/1.1[0m" 304 -
+2023-08-26 22:34:23,277 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:34:23] "GET /project-EnigmaGame_script/?id=1 HTTP/1.1" 200 -
+2023-08-26 22:34:23,418 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:34:23] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-08-26 22:34:23,461 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:34:23] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-08-26 22:34:23,612 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:34:23] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-08-26 22:34:23,612 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:34:23] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-08-26 22:35:02,677 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:35:02] "GET /result_script_exec/?py_path=static/proj_enigmaGame_scripts/mpPool_Arith_Progres_Sum1.py HTTP/1.1" 200 -
+2023-08-26 22:35:03,093 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:35:03] "GET /result_script_html HTTP/1.1" 200 -
+2023-08-26 22:35:38,404 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:35:38] "GET /excercises HTTP/1.1" 200 -
+2023-08-26 22:35:38,427 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:35:38] "[36mGET /static/img/Lorea.jpg HTTP/1.1[0m" 304 -
+2023-08-26 22:35:39,911 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:35:39] "GET /excercise/?id=1 HTTP/1.1" 200 -
+2023-08-26 22:35:40,078 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:35:40] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-08-26 22:35:40,111 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:35:40] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-08-26 22:35:40,240 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:35:40] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-08-26 22:35:40,252 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:35:40] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-08-26 22:35:45,679 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:35:45] "GET /result_script_exec/?py_path=static/py_excercises/20230213-PrototypeScript-colors/0-prototype-colors1.py HTTP/1.1" 200 -
+2023-08-26 22:35:46,017 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:35:46] "GET /result_script_html HTTP/1.1" 200 -
+2023-08-26 22:35:56,211 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:35:56] "GET /project-LifeGame HTTP/1.1" 200 -
+2023-08-26 22:35:56,231 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:35:56] "[36mGET /static/img/LifeGame.jpg HTTP/1.1[0m" 304 -
+2023-08-26 22:35:56,544 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:35:56] "[36mGET /static/img/icons8-video-50.png HTTP/1.1[0m" 304 -
+2023-08-26 22:35:57,678 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:35:57] "GET /project-LifeGame_script/?id=1 HTTP/1.1" 200 -
+2023-08-26 22:35:57,919 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:35:57] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-08-26 22:35:57,944 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:35:57] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-08-26 22:35:58,009 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:35:58] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-08-26 22:35:58,017 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:35:58] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-08-26 22:36:03,056 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:36:03] "GET /result_script_exec/?py_path=static/proj_lifeGame_scripts/01_LG-ExploracionMatrices1.py HTTP/1.1" 200 -
+2023-08-26 22:36:03,498 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:36:03] "GET /result_script_html HTTP/1.1" 200 -
+2023-08-26 22:36:39,086 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:36:39] "GET /project-EnigmaGame HTTP/1.1" 200 -
+2023-08-26 22:36:39,094 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:36:39] "[36mGET /static/img/enigma.jpg HTTP/1.1[0m" 304 -
+2023-08-26 22:36:39,409 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:36:39] "[36mGET /static/img/icons8-video-50.png HTTP/1.1[0m" 304 -
+2023-08-26 22:36:39,409 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:36:39] "[36mGET /static/img/Lorea.jpg HTTP/1.1[0m" 304 -
+2023-08-26 22:36:40,840 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:36:40] "GET /project-EnigmaGame_script/?id=1 HTTP/1.1" 200 -
+2023-08-26 22:36:41,087 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:36:41] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-08-26 22:36:41,097 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:36:41] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-08-26 22:36:41,177 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:36:41] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-08-26 22:36:41,177 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:36:41] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-08-26 22:37:29,306 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:37:29] "GET /result_script_exec/?py_path=static/proj_enigmaGame_scripts/mpPool_Arith_Progres_Sum1.py HTTP/1.1" 200 -
+2023-08-26 22:37:29,805 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:37:29] "GET /result_script_html HTTP/1.1" 200 -
+2023-08-26 22:38:06,394 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:38:06] "GET /excercises HTTP/1.1" 200 -
+2023-08-26 22:38:06,410 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:38:06] "[36mGET /static/img/Lorea.jpg HTTP/1.1[0m" 304 -
+2023-08-26 22:38:08,410 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:38:08] "GET /excercise/?id=1 HTTP/1.1" 200 -
+2023-08-26 22:38:08,561 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:38:08] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-08-26 22:38:08,594 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:38:08] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-08-26 22:38:08,737 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:38:08] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-08-26 22:38:08,746 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:38:08] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-08-26 22:38:13,745 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:38:13] "GET /result_script_exec/?py_path=static/py_excercises/20230213-PrototypeScript-colors/0-prototype-colors1.py HTTP/1.1" 200 -
+2023-08-26 22:38:14,081 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:38:14] "GET /result_script_html HTTP/1.1" 200 -
+2023-08-26 22:38:34,069 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:38:34] "GET /excercises HTTP/1.1" 200 -
+2023-08-26 22:38:34,077 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:38:34] "[36mGET /static/img/Lorea.jpg HTTP/1.1[0m" 304 -
+2023-08-26 22:38:35,479 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:38:35] "GET /excercise/?id=1 HTTP/1.1" 200 -
+2023-08-26 22:38:35,712 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:38:35] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-08-26 22:38:35,736 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:38:35] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-08-26 22:38:35,811 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:38:35] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-08-26 22:38:35,813 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:38:35] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-08-26 22:38:40,453 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:38:40] "GET /result_script_exec/?py_path=static/py_excercises/20230213-PrototypeScript-colors/0-prototype-colors1.py HTTP/1.1" 200 -
+2023-08-26 22:38:40,796 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:38:40] "GET /result_script_html HTTP/1.1" 200 -
+2023-08-26 22:38:55,483 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:38:55] "GET /excercise/?id=1 HTTP/1.1" 200 -
+2023-08-26 22:38:55,495 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:38:55] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-08-26 22:38:55,827 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:38:55] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-08-26 22:38:55,829 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:38:55] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-08-26 22:38:55,835 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:38:55] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-08-26 22:38:56,160 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:38:56] "[36mGET /static/img/icons8-bulb-64.png HTTP/1.1[0m" 304 -
+2023-08-26 22:39:00,354 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:39:00] "GET /result_script_exec/?py_path=static/py_excercises/20230213-PrototypeScript-colors/0-prototype-colors1.py HTTP/1.1" 200 -
+2023-08-26 22:39:00,700 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:39:00] "GET /result_script_html HTTP/1.1" 200 -
+2023-08-26 22:39:15,439 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:39:15] "GET /excercise/?id=1 HTTP/1.1" 200 -
+2023-08-26 22:39:15,455 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:39:15] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-08-26 22:39:15,778 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:39:15] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-08-26 22:39:15,778 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:39:15] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-08-26 22:39:15,783 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:39:15] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-08-26 22:39:16,094 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:39:16] "[36mGET /static/img/icons8-bulb-64.png HTTP/1.1[0m" 304 -
+2023-08-26 22:39:20,412 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:39:20] "GET /result_script_exec/?py_path=static/py_excercises/20230213-PrototypeScript-colors/0-prototype-colors1.py HTTP/1.1" 200 -
+2023-08-26 22:39:20,767 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:39:20] "GET /result_script_html HTTP/1.1" 200 -
+2023-08-26 22:39:24,418 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:39:24] "GET /project-EnigmaGame HTTP/1.1" 200 -
+2023-08-26 22:39:24,427 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:39:24] "[36mGET /static/img/enigma.jpg HTTP/1.1[0m" 304 -
+2023-08-26 22:39:24,750 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:39:24] "[36mGET /static/img/icons8-video-50.png HTTP/1.1[0m" 304 -
+2023-08-26 22:39:24,750 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:39:24] "[36mGET /static/img/Lorea.jpg HTTP/1.1[0m" 304 -
+2023-08-26 22:39:25,796 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:39:25] "GET /project-EnigmaGame_script/?id=1 HTTP/1.1" 200 -
+2023-08-26 22:39:26,031 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:39:26] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-08-26 22:39:26,038 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:39:26] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-08-26 22:39:26,114 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:39:26] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-08-26 22:39:26,129 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:39:26] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-08-26 22:40:02,266 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:40:02] "GET /result_script_exec/?py_path=static/proj_enigmaGame_scripts/mpPool_Arith_Progres_Sum1.py HTTP/1.1" 200 -
+2023-08-26 22:40:34,894 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:40:34] "GET /project-EnigmaGame HTTP/1.1" 200 -
+2023-08-26 22:40:35,200 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:40:35] "[36mGET /static/img/enigma.jpg HTTP/1.1[0m" 304 -
+2023-08-26 22:40:35,236 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:40:35] "[36mGET /static/img/icons8-video-50.png HTTP/1.1[0m" 304 -
+2023-08-26 22:40:35,239 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:40:35] "[36mGET /static/img/Lorea.jpg HTTP/1.1[0m" 304 -
+2023-08-26 22:40:35,553 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:40:35] "[36mGET /static/img/icons8-bulb-64.png HTTP/1.1[0m" 304 -
+2023-08-26 22:40:36,536 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:40:36] "GET /project-EnigmaGame_script/?id=1 HTTP/1.1" 200 -
+2023-08-26 22:40:36,836 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:40:36] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-08-26 22:40:36,870 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:40:36] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-08-26 22:40:36,873 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:40:36] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-08-26 22:40:36,876 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:40:36] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-08-26 22:41:03,649 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:41:03] "GET /result_script_exec/?py_path=static/proj_enigmaGame_scripts/mpPool_Arith_Progres_Sum1.py HTTP/1.1" 200 -
+2023-08-26 22:41:39,584 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:41:39] "GET /project-EnigmaGame_script/?id=1 HTTP/1.1" 200 -
+2023-08-26 22:41:39,890 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:41:39] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-08-26 22:41:39,913 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:41:39] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-08-26 22:41:39,924 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:41:39] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-08-26 22:41:39,927 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:41:39] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-08-26 22:42:06,171 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:42:06] "GET /result_script_exec/?py_path=static/proj_enigmaGame_scripts/mpPool_Arith_Progres_Sum1.py HTTP/1.1" 200 -
+2023-08-26 22:42:46,122 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:42:46] "GET /project-LifeGame HTTP/1.1" 200 -
+2023-08-26 22:42:46,428 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:42:46] "[36mGET /static/img/LifeGame.jpg HTTP/1.1[0m" 304 -
+2023-08-26 22:42:46,445 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:42:46] "[36mGET /static/img/icons8-video-50.png HTTP/1.1[0m" 304 -
+2023-08-26 22:42:48,337 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:42:48] "GET /project-LifeGame_script/?id=1 HTTP/1.1" 200 -
+2023-08-26 22:42:48,508 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:42:48] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-08-26 22:42:48,545 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:42:48] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-08-26 22:42:48,681 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:42:48] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-08-26 22:42:48,691 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:42:48] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-08-26 22:42:52,614 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:42:52] "GET /result_script_exec/?py_path=static/proj_lifeGame_scripts/01_LG-ExploracionMatrices1.py HTTP/1.1" 200 -
+2023-08-26 22:42:53,037 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:42:53] "GET /result_script_html HTTP/1.1" 200 -
+2023-08-26 22:44:35,124 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:44:35] "GET /project-LifeGame_script/?id=1 HTTP/1.1" 200 -
+2023-08-26 22:44:35,144 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:44:35] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-08-26 22:44:35,463 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:44:35] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-08-26 22:44:35,463 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:44:35] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-08-26 22:44:35,478 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:44:35] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-08-26 22:44:35,794 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:44:35] "[36mGET /static/img/icons8-bulb-64.png HTTP/1.1[0m" 304 -
+2023-08-26 22:44:39,428 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:44:39] "GET /result_script_exec/?py_path=static/proj_lifeGame_scripts/01_LG-ExploracionMatrices1.py HTTP/1.1" 200 -
+2023-08-26 22:44:39,861 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:44:39] "GET /result_script_html HTTP/1.1" 200 -
+2023-08-26 22:45:07,044 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:45:07] "GET /project-EnigmaGame HTTP/1.1" 200 -
+2023-08-26 22:45:07,062 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:45:07] "[36mGET /static/img/enigma.jpg HTTP/1.1[0m" 304 -
+2023-08-26 22:45:07,384 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:45:07] "[36mGET /static/img/icons8-video-50.png HTTP/1.1[0m" 304 -
+2023-08-26 22:45:07,384 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:45:07] "[36mGET /static/img/Lorea.jpg HTTP/1.1[0m" 304 -
+2023-08-26 22:45:11,852 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:45:11] "GET /project-EnigmaGame_script/?id=3 HTTP/1.1" 200 -
+2023-08-26 22:45:11,994 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:45:11] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-08-26 22:45:12,028 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:45:12] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-08-26 22:45:12,195 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:45:12] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-08-26 22:45:12,201 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:45:12] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-08-26 22:45:17,708 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:45:17] "GET /result_script_exec/?py_path=static/proj_enigmaGame_scripts/mpPoolManagerEnigmaRandom-Alphab26-1.py HTTP/1.1" 200 -
+2023-08-26 22:45:18,097 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:45:18] "GET /result_script_html HTTP/1.1" 200 -
+2023-08-26 22:45:30,000 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:45:30] "GET /excercises HTTP/1.1" 200 -
+2023-08-26 22:45:30,013 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:45:30] "[36mGET /static/img/Lorea.jpg HTTP/1.1[0m" 304 -
+2023-08-26 22:45:34,679 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:45:34] "GET /excercise/?id=9 HTTP/1.1" 200 -
+2023-08-26 22:45:34,841 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:45:34] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-08-26 22:45:34,861 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:45:34] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-08-26 22:45:35,012 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:45:35] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-08-26 22:45:35,017 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:45:35] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-08-26 22:45:38,677 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:45:38] "GET /result_script_exec/?py_path=static/py_excercises/20230215-random-func/20230215-random-choice-experiment1.py HTTP/1.1" 200 -
+2023-08-26 22:45:39,114 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:45:39] "GET /result_script_html HTTP/1.1" 200 -
+2023-08-26 22:45:57,867 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:45:57] "GET /project-EnigmaGame HTTP/1.1" 200 -
+2023-08-26 22:45:57,877 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:45:57] "[36mGET /static/img/enigma.jpg HTTP/1.1[0m" 304 -
+2023-08-26 22:45:58,208 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:45:58] "[36mGET /static/img/icons8-video-50.png HTTP/1.1[0m" 304 -
+2023-08-26 22:45:58,211 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:45:58] "[36mGET /static/img/Lorea.jpg HTTP/1.1[0m" 304 -
+2023-08-26 22:46:04,593 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:46:04] "GET /project-EnigmaGame_script/?id=3 HTTP/1.1" 200 -
+2023-08-26 22:46:04,811 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:46:04] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-08-26 22:46:04,846 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:46:04] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-08-26 22:46:04,929 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:46:04] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-08-26 22:46:04,929 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:46:04] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-08-26 22:48:01,342 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File_1.py', reloading
+2023-08-26 22:48:01,486 INFO     _log  * Restarting with stat
+2023-08-26 22:48:02,311 WARNING  _log  * Debugger is active!
+2023-08-26 22:48:02,311 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-26 22:48:12,739 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File.py', reloading
+2023-08-26 22:48:12,845 INFO     _log  * Restarting with stat
+2023-08-26 22:48:13,963 WARNING  _log  * Debugger is active!
+2023-08-26 22:48:13,971 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-26 22:48:16,589 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:48:16] "GET /project-EnigmaGame HTTP/1.1" 200 -
+2023-08-26 22:48:16,843 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:48:16] "[36mGET /static/img/enigma.jpg HTTP/1.1[0m" 304 -
+2023-08-26 22:48:16,880 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:48:16] "[36mGET /static/img/icons8-video-50.png HTTP/1.1[0m" 304 -
+2023-08-26 22:48:16,919 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:48:16] "[36mGET /static/img/Lorea.jpg HTTP/1.1[0m" 304 -
+2023-08-26 22:48:18,294 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:48:18] "GET /project-EnigmaGame_script/?id=2 HTTP/1.1" 200 -
+2023-08-26 22:48:18,582 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:48:18] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-08-26 22:48:18,611 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:48:18] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-08-26 22:48:18,619 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:48:18] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-08-26 22:48:18,619 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:48:18] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-08-26 22:49:54,659 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:49:54] "GET /result_script_exec/?py_path=static/proj_enigmaGame_scripts/z-writePermut_26_File_1.py HTTP/1.1" 200 -
+2023-08-26 22:49:55,006 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:49:55] "GET /result_script_html HTTP/1.1" 200 -
+2023-08-26 22:51:25,410 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:51:25] "GET /project-EnigmaGame HTTP/1.1" 200 -
+2023-08-26 22:51:25,627 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:51:25] "[36mGET /static/img/enigma.jpg HTTP/1.1[0m" 304 -
+2023-08-26 22:51:25,651 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:51:25] "[36mGET /static/img/icons8-video-50.png HTTP/1.1[0m" 304 -
+2023-08-26 22:51:25,744 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:51:25] "[36mGET /static/img/Lorea.jpg HTTP/1.1[0m" 304 -
+2023-08-26 22:51:27,298 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:51:27] "GET /project-EnigmaGame_script/?id=3 HTTP/1.1" 200 -
+2023-08-26 22:51:27,605 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:51:27] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-08-26 22:51:27,613 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:51:27] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-08-26 22:51:27,619 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:51:27] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-08-26 22:51:27,628 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:51:27] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-08-26 22:51:38,712 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:51:38] "GET /result_script_exec/?py_path=static/proj_enigmaGame_scripts/mpPoolManagerEnigmaRandom-Alphab26-1.py HTTP/1.1" 200 -
+2023-08-26 22:51:38,782 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:51:38] "GET /result_script_html HTTP/1.1" 200 -
+2023-08-26 22:53:14,263 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:53:14] "GET /project-EnigmaGame HTTP/1.1" 200 -
+2023-08-26 22:53:14,471 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:53:14] "[36mGET /static/img/enigma.jpg HTTP/1.1[0m" 304 -
+2023-08-26 22:53:14,511 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:53:14] "[36mGET /static/img/icons8-video-50.png HTTP/1.1[0m" 304 -
+2023-08-26 22:53:14,592 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:53:14] "[36mGET /static/img/Lorea.jpg HTTP/1.1[0m" 304 -
+2023-08-26 22:53:20,497 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:53:20] "GET /project-EnigmaGame_script/?id=1 HTTP/1.1" 200 -
+2023-08-26 22:53:20,812 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:53:20] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-08-26 22:53:20,821 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:53:20] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-08-26 22:53:20,831 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:53:20] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-08-26 22:53:20,831 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:53:20] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-08-26 22:54:06,796 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:54:06] "GET /result_script_exec/?py_path=static/proj_enigmaGame_scripts/mpPool_Arith_Progres_Sum1.py HTTP/1.1" 200 -
+2023-08-26 22:54:06,947 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:54:06] "GET /result_script_html HTTP/1.1" 200 -
+2023-08-26 22:54:22,862 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:54:22] "GET /project-EnigmaGame HTTP/1.1" 200 -
+2023-08-26 22:54:23,161 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:54:23] "[36mGET /static/img/enigma.jpg HTTP/1.1[0m" 304 -
+2023-08-26 22:54:23,194 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:54:23] "[36mGET /static/img/icons8-video-50.png HTTP/1.1[0m" 304 -
+2023-08-26 22:54:23,194 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:54:23] "[36mGET /static/img/Lorea.jpg HTTP/1.1[0m" 304 -
+2023-08-26 22:54:25,323 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:54:25] "GET /project-EnigmaGame_script/?id=2 HTTP/1.1" 200 -
+2023-08-26 22:54:25,564 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:54:25] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-08-26 22:54:25,587 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:54:25] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-08-26 22:54:25,645 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:54:25] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-08-26 22:54:25,653 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:54:25] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-08-26 22:54:37,145 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:54:37] "GET /project-EnigmaGame HTTP/1.1" 200 -
+2023-08-26 22:54:37,446 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:54:37] "[36mGET /static/img/enigma.jpg HTTP/1.1[0m" 304 -
+2023-08-26 22:54:37,486 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:54:37] "[36mGET /static/img/icons8-video-50.png HTTP/1.1[0m" 304 -
+2023-08-26 22:54:37,486 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:54:37] "[36mGET /static/img/Lorea.jpg HTTP/1.1[0m" 304 -
+2023-08-26 22:54:39,827 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:54:39] "GET /project-EnigmaGame_script/?id=3 HTTP/1.1" 200 -
+2023-08-26 22:54:40,046 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:54:40] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-08-26 22:54:40,083 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:54:40] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-08-26 22:54:40,163 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:54:40] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-08-26 22:54:40,163 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:54:40] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-08-26 22:55:02,659 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:55:02] "GET /project-EnigmaGame HTTP/1.1" 200 -
+2023-08-26 22:55:02,962 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:55:02] "[36mGET /static/img/enigma.jpg HTTP/1.1[0m" 304 -
+2023-08-26 22:55:02,980 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:55:02] "[36mGET /static/img/icons8-video-50.png HTTP/1.1[0m" 304 -
+2023-08-26 22:55:02,988 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:55:02] "[36mGET /static/img/Lorea.jpg HTTP/1.1[0m" 304 -
+2023-08-26 22:55:05,043 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:55:05] "GET /project-EnigmaGame_script/?id=2 HTTP/1.1" 200 -
+2023-08-26 22:55:05,261 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:55:05] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-08-26 22:55:05,303 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:55:05] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-08-26 22:55:05,379 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:55:05] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-08-26 22:55:05,379 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:55:05] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-08-26 22:55:32,342 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\EnigmaGame_data.py', reloading
+2023-08-26 22:55:32,448 INFO     _log  * Restarting with stat
+2023-08-26 22:55:33,180 WARNING  _log  * Debugger is active!
+2023-08-26 22:55:33,191 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-26 22:55:38,409 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\EnigmaGame_data.py', reloading
+2023-08-26 22:55:38,493 INFO     _log  * Restarting with stat
+2023-08-26 22:55:39,169 WARNING  _log  * Debugger is active!
+2023-08-26 22:55:39,169 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-26 22:55:40,235 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\EnigmaGame_data.py', reloading
+2023-08-26 22:55:40,352 INFO     _log  * Restarting with stat
+2023-08-26 22:55:41,126 WARNING  _log  * Debugger is active!
+2023-08-26 22:55:41,134 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-26 22:55:47,403 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\EnigmaGame_data.py', reloading
+2023-08-26 22:55:47,502 INFO     _log  * Restarting with stat
+2023-08-26 22:55:48,468 WARNING  _log  * Debugger is active!
+2023-08-26 22:55:48,468 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-26 22:55:52,091 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:55:52] "GET /project-EnigmaGame_script/?id=2 HTTP/1.1" 200 -
+2023-08-26 22:55:52,175 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:55:52] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-08-26 22:55:52,349 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:55:52] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-08-26 22:55:52,442 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:55:52] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-08-26 22:55:52,442 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:55:52] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-08-26 22:55:52,770 INFO     _log 127.0.0.1 - - [26/Aug/2023 22:55:52] "[36mGET /static/img/icons8-bulb-64.png HTTP/1.1[0m" 304 -
+2023-08-26 22:57:29,544 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\EnigmaGame_data.py', reloading
+2023-08-26 22:57:29,634 INFO     _log  * Restarting with stat
+2023-08-26 22:57:30,523 WARNING  _log  * Debugger is active!
+2023-08-26 22:57:30,523 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-26 22:57:33,659 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\EnigmaGame_data.py', reloading
+2023-08-26 22:57:33,788 INFO     _log  * Restarting with stat
+2023-08-26 22:57:34,654 WARNING  _log  * Debugger is active!
+2023-08-26 22:57:34,662 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-26 22:59:06,729 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\EnigmaGame_data.py', reloading
+2023-08-26 22:59:06,808 INFO     _log  * Restarting with stat
+2023-08-26 22:59:07,700 WARNING  _log  * Debugger is active!
+2023-08-26 22:59:07,700 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-26 22:59:10,827 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\EnigmaGame_data.py', reloading
+2023-08-26 22:59:10,945 INFO     _log  * Restarting with stat
+2023-08-26 22:59:11,683 WARNING  _log  * Debugger is active!
+2023-08-26 22:59:11,683 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-26 22:59:16,923 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\EnigmaGame_data.py', reloading
+2023-08-26 22:59:17,027 INFO     _log  * Restarting with stat
+2023-08-26 22:59:17,773 WARNING  _log  * Debugger is active!
+2023-08-26 22:59:17,774 INFO     _log  * Debugger PIN: 109-950-851

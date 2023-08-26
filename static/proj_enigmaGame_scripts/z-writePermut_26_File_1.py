@@ -7,7 +7,7 @@ import string, random, time
 from datetime import datetime
 
 # CONSTANTS
-NUM_ALPHAB = 50000
+NUM_ALPHAB = 200000
 
 # Colors
 NO_COLOR = "\033[00m"
