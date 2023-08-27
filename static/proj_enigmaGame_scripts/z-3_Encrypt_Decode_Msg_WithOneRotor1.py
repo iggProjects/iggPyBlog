@@ -23,7 +23,7 @@ if __name__ == "__main__":
     #'abcdefghijklmnopqrstuvwxyz'
     #alphab = list(string.ascii_lowercase)
 
-    alphab = list('xyzabcdefghijklmnopqrstuvw')    
+    alphab = list('vwxyzabcdefghijklmnopqrstu')    
     print(f"{FR_YELL}ALPHABET: {FR_GREEN}{' '.join(alphab)}{NO_COLOR}")
     
     print()
@@ -38,7 +38,7 @@ if __name__ == "__main__":
     # message to encrypt
     print() 
     #msg = "murcielago" 
-    msg = "murcielago murcielago murcielago" 
+    msg = "murcielago murcielago murcielago murcielago" 
     print()
     print(f"msg: {msg} | length: {len(msg)}")
 
