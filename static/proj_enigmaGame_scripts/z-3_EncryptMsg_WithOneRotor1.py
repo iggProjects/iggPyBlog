@@ -37,11 +37,11 @@ if __name__ == "__main__":
     print(len(msg))
 
     encrypted_msg = ""
-    counter = 1
+    counter = 0
     for ch in msg:
         print(f"ch {counter}: {ch}")
         if counter % 26 != 0:
-            encrypted_msg = encrypted_msg + ch
+            encrypted_msg = encrypted_msg + alphab_list[0][counter % 26]
         else:
             encrypted_msg = encrypted_msg + '-'    
         counter=counter+1
