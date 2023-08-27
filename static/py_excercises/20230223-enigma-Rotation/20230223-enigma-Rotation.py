@@ -3,20 +3,15 @@ THIS SCRIPT IS FOR..................
 
 """
 # IMPORT SECTION
-from MyFunc import *
-from MyColors import *
 import string
 import random
 from os import  system
 
+# My Own
+from MyFunc import *
+from MyColors import *
+
 # CONSTANTS
-# Colors
-NO_COLOR = "\033[00m"
-FR_RED   = "\033[91m"
-FR_GREEN = "\033[92m"
-FR_YELL  = "\033[93m"
-FR_BLUE  = "\033[94m"
-FR_MAG   = "\033[95m"
 
 
 # Yes-No function
