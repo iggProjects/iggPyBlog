@@ -8175,3 +8175,82 @@ jinja2.exceptions.TemplateNotFound: excercses.html
 2023-08-27 20:47:42,167 INFO     _log  * Restarting with stat
 2023-08-27 20:47:42,989 WARNING  _log  * Debugger is active!
 2023-08-27 20:47:42,997 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-29 18:59:46,408 INFO     _log [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-08-29 18:59:46,408 INFO     _log [33mPress CTRL+C to quit[0m
+2023-08-29 18:59:46,408 INFO     _log  * Restarting with stat
+2023-08-29 18:59:47,044 WARNING  _log  * Debugger is active!
+2023-08-29 18:59:47,060 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-29 18:59:59,371 INFO     _log 127.0.0.1 - - [29/Aug/2023 18:59:59] "GET / HTTP/1.1" 200 -
+2023-08-29 18:59:59,487 INFO     _log 127.0.0.1 - - [29/Aug/2023 18:59:59] "GET /static/img/ame-01.jpg HTTP/1.1" 200 -
+2023-08-29 18:59:59,706 INFO     _log 127.0.0.1 - - [29/Aug/2023 18:59:59] "GET /static/img/icons8-bulb-64.png HTTP/1.1" 200 -
+2023-08-29 19:00:04,985 INFO     _log 127.0.0.1 - - [29/Aug/2023 19:00:04] "GET /project-LifeGame HTTP/1.1" 200 -
+2023-08-29 19:00:05,197 INFO     _log 127.0.0.1 - - [29/Aug/2023 19:00:05] "GET /static/img/LifeGame.jpg HTTP/1.1" 200 -
+2023-08-29 19:00:05,237 INFO     _log 127.0.0.1 - - [29/Aug/2023 19:00:05] "GET /static/img/icons8-video-50.png HTTP/1.1" 200 -
+2023-08-29 19:00:09,003 INFO     _log 127.0.0.1 - - [29/Aug/2023 19:00:09] "GET /project-LifeGame_script/?id=4 HTTP/1.1" 200 -
+2023-08-29 19:00:09,287 INFO     _log 127.0.0.1 - - [29/Aug/2023 19:00:09] "GET /static/img/icons8-script-68.png HTTP/1.1" 200 -
+2023-08-29 19:00:09,338 INFO     _log 127.0.0.1 - - [29/Aug/2023 19:00:09] "GET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1" 200 -
+2023-08-29 19:00:09,338 INFO     _log 127.0.0.1 - - [29/Aug/2023 19:00:09] "GET /static/img/icons8-consola-100.png HTTP/1.1" 200 -
+2023-08-29 19:00:09,354 INFO     _log 127.0.0.1 - - [29/Aug/2023 19:00:09] "GET /static/img/icons8-html-filetype-50.png HTTP/1.1" 200 -
+2023-08-29 19:00:47,363 INFO     _log 127.0.0.1 - - [29/Aug/2023 19:00:47] "GET /pythonScript/?py_path=static/proj_lifeGame_scripts/04_LG-iterations-funciones.py HTTP/1.1" 200 -
+2023-08-29 19:01:31,830 INFO     _log 127.0.0.1 - - [29/Aug/2023 19:01:31] "GET /result_script_exec/?py_path=static/proj_lifeGame_scripts/04_LG-iterations-funciones1.py HTTP/1.1" 200 -
+2023-08-29 19:01:32,020 INFO     _log 127.0.0.1 - - [29/Aug/2023 19:01:32] "GET /result_script_html HTTP/1.1" 200 -
+2023-08-29 19:02:54,854 INFO     _log 127.0.0.1 - - [29/Aug/2023 19:02:54] "GET /result_script_html HTTP/1.1" 200 -
+2023-08-29 19:02:54,913 INFO     _log 127.0.0.1 - - [29/Aug/2023 19:02:54] "[36mGET /static/img/icons8-bulb-64.png HTTP/1.1[0m" 304 -
+2023-08-29 19:03:08,872 INFO     _log 127.0.0.1 - - [29/Aug/2023 19:03:08] "GET /result_script_html HTTP/1.1" 200 -
+2023-08-29 19:03:09,088 INFO     _log 127.0.0.1 - - [29/Aug/2023 19:03:09] "[36mGET /static/img/icons8-bulb-64.png HTTP/1.1[0m" 304 -
+2023-08-29 19:03:35,568 INFO     _log 127.0.0.1 - - [29/Aug/2023 19:03:35] "GET /result_script_exec/?py_path=static/proj_lifeGame_scripts/04_LG-iterations-funciones1.py HTTP/1.1" 200 -
+2023-08-29 19:03:35,705 INFO     _log 127.0.0.1 - - [29/Aug/2023 19:03:35] "GET /result_script_html HTTP/1.1" 200 -
+2023-08-29 19:04:19,906 INFO     _log 127.0.0.1 - - [29/Aug/2023 19:04:19] "GET /project-EnigmaGame HTTP/1.1" 200 -
+2023-08-29 19:04:20,198 INFO     _log 127.0.0.1 - - [29/Aug/2023 19:04:20] "GET /static/img/enigma.jpg HTTP/1.1" 200 -
+2023-08-29 19:04:20,239 INFO     _log 127.0.0.1 - - [29/Aug/2023 19:04:20] "[36mGET /static/img/icons8-video-50.png HTTP/1.1[0m" 304 -
+2023-08-29 19:04:20,253 INFO     _log 127.0.0.1 - - [29/Aug/2023 19:04:20] "GET /static/img/Lorea.jpg HTTP/1.1" 200 -
+2023-08-29 19:04:24,520 INFO     _log 127.0.0.1 - - [29/Aug/2023 19:04:24] "GET /project-LifeGame HTTP/1.1" 200 -
+2023-08-29 19:04:24,753 INFO     _log 127.0.0.1 - - [29/Aug/2023 19:04:24] "[36mGET /static/img/LifeGame.jpg HTTP/1.1[0m" 304 -
+2023-08-29 19:04:24,788 INFO     _log 127.0.0.1 - - [29/Aug/2023 19:04:24] "[36mGET /static/img/icons8-video-50.png HTTP/1.1[0m" 304 -
+2023-08-29 19:04:39,187 INFO     _log 127.0.0.1 - - [29/Aug/2023 19:04:39] "GET /excercises HTTP/1.1" 200 -
+2023-08-29 19:04:39,472 INFO     _log 127.0.0.1 - - [29/Aug/2023 19:04:39] "[36mGET /static/img/Lorea.jpg HTTP/1.1[0m" 304 -
+2023-08-29 19:04:45,536 INFO     _log 127.0.0.1 - - [29/Aug/2023 19:04:45] "GET /excercise/?id=9 HTTP/1.1" 200 -
+2023-08-29 19:04:45,710 INFO     _log 127.0.0.1 - - [29/Aug/2023 19:04:45] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-08-29 19:04:45,737 INFO     _log 127.0.0.1 - - [29/Aug/2023 19:04:45] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-08-29 19:04:45,874 INFO     _log 127.0.0.1 - - [29/Aug/2023 19:04:45] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-08-29 19:04:45,874 INFO     _log 127.0.0.1 - - [29/Aug/2023 19:04:45] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-08-29 19:06:01,663 INFO     _log 127.0.0.1 - - [29/Aug/2023 19:06:01] "GET /result_script_exec/?py_path=static/py_excercises/20230215-random-func/20230215-random-choice-experiment1.py HTTP/1.1" 200 -
+2023-08-29 19:06:01,798 INFO     _log 127.0.0.1 - - [29/Aug/2023 19:06:01] "GET /result_script_html HTTP/1.1" 200 -
+2023-08-29 19:09:09,676 INFO     _log 127.0.0.1 - - [29/Aug/2023 19:09:09] "GET /pythonScript/?py_path=static/py_excercises/20230215-random-func/20230215-random_choice_experiment.py HTTP/1.1" 200 -
+2023-08-29 19:09:48,736 INFO     _log 127.0.0.1 - - [29/Aug/2023 19:09:48] "GET /project-EnigmaGame HTTP/1.1" 200 -
+2023-08-29 19:09:48,969 INFO     _log 127.0.0.1 - - [29/Aug/2023 19:09:48] "[36mGET /static/img/enigma.jpg HTTP/1.1[0m" 304 -
+2023-08-29 19:09:48,982 INFO     _log 127.0.0.1 - - [29/Aug/2023 19:09:48] "[36mGET /static/img/icons8-video-50.png HTTP/1.1[0m" 304 -
+2023-08-29 19:09:49,053 INFO     _log 127.0.0.1 - - [29/Aug/2023 19:09:49] "[36mGET /static/img/Lorea.jpg HTTP/1.1[0m" 304 -
+2023-08-29 19:10:50,720 INFO     _log 127.0.0.1 - - [29/Aug/2023 19:10:50] "GET /project-EnigmaGame_script/?id=1 HTTP/1.1" 200 -
+2023-08-29 19:10:50,887 INFO     _log 127.0.0.1 - - [29/Aug/2023 19:10:50] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-08-29 19:10:50,905 INFO     _log 127.0.0.1 - - [29/Aug/2023 19:10:50] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-08-29 19:10:51,055 INFO     _log 127.0.0.1 - - [29/Aug/2023 19:10:51] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-08-29 19:10:51,055 INFO     _log 127.0.0.1 - - [29/Aug/2023 19:10:51] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-08-29 19:11:50,235 INFO     _log 127.0.0.1 - - [29/Aug/2023 19:11:50] "GET /result_script_exec/?py_path=static/proj_enigmaGame_scripts/mpPool_Arith_Progres_Sum1.py HTTP/1.1" 200 -
+2023-08-29 19:11:50,722 INFO     _log 127.0.0.1 - - [29/Aug/2023 19:11:50] "GET /result_script_html HTTP/1.1" 200 -
+2023-08-29 19:13:30,665 INFO     _log 127.0.0.1 - - [29/Aug/2023 19:13:30] "GET /pythonScript/?py_path=static/proj_enigmaGame_scripts/mpPool_Arith_Progres_Sum.py HTTP/1.1" 200 -
+2023-08-29 19:13:50,987 INFO     _log 127.0.0.1 - - [29/Aug/2023 19:13:50] "GET /excercises HTTP/1.1" 200 -
+2023-08-29 19:13:51,298 INFO     _log 127.0.0.1 - - [29/Aug/2023 19:13:51] "[36mGET /static/img/Lorea.jpg HTTP/1.1[0m" 304 -
+2023-08-29 19:14:19,987 INFO     _log 127.0.0.1 - - [29/Aug/2023 19:14:19] "GET /excercise/?id=7 HTTP/1.1" 200 -
+2023-08-29 19:14:20,222 INFO     _log 127.0.0.1 - - [29/Aug/2023 19:14:20] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-08-29 19:14:20,231 INFO     _log 127.0.0.1 - - [29/Aug/2023 19:14:20] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-08-29 19:14:20,320 INFO     _log 127.0.0.1 - - [29/Aug/2023 19:14:20] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-08-29 19:14:20,331 INFO     _log 127.0.0.1 - - [29/Aug/2023 19:14:20] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-08-29 19:14:30,511 INFO     _log 127.0.0.1 - - [29/Aug/2023 19:14:30] "GET /static/py_excercises/20230213-PrototypeScript-RelatedClasses/0-prototype-related-classes.py HTTP/1.1" 200 -
+2023-08-29 19:14:30,815 INFO     _log 127.0.0.1 - - [29/Aug/2023 19:14:30] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2023-08-29 19:14:45,645 INFO     _log 127.0.0.1 - - [29/Aug/2023 19:14:45] "GET /static/py_excercises/20230213-PrototypeScript-RelatedClasses/20230213-PrototypeScript-RelatedClasses.zip HTTP/1.1" 200 -
+2023-08-29 19:16:36,011 INFO     _log 127.0.0.1 - - [29/Aug/2023 19:16:36] "GET /excercises HTTP/1.1" 200 -
+2023-08-29 19:16:36,020 INFO     _log 127.0.0.1 - - [29/Aug/2023 19:16:36] "[36mGET /static/img/Lorea.jpg HTTP/1.1[0m" 304 -
+2023-08-29 19:16:59,853 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-3_Encrypt_Decode_Msg_WithOneRotor1.py', reloading
+2023-08-29 19:17:00,000 INFO     _log  * Restarting with stat
+2023-08-29 19:17:00,810 WARNING  _log  * Debugger is active!
+2023-08-29 19:17:00,818 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-29 19:17:00,869 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-3_Encrypt_Decode_Msg_WithOneRotor1.py', reloading
+2023-08-29 19:17:00,958 INFO     _log  * Restarting with stat
+2023-08-29 19:17:01,582 WARNING  _log  * Debugger is active!
+2023-08-29 19:17:01,582 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-29 19:17:30,692 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-3_Encrypt_Decode_Msg_WithOneRotor1.py', reloading
+2023-08-29 19:17:30,794 INFO     _log  * Restarting with stat
+2023-08-29 19:17:31,793 WARNING  _log  * Debugger is active!
+2023-08-29 19:17:31,793 INFO     _log  * Debugger PIN: 109-950-851

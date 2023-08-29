@@ -21,9 +21,9 @@ if __name__ == "__main__":
     # create list of alphabet
     string.ascii_lowercase 
     'abcdefghijklmnopqrstuvwxyz'
-    alphab = list(string.ascii_lowercase)
+    alphab_orig = list(string.ascii_lowercase)
     #alphab = list('uvwxyzabcdefghijklmnopqrst')  # orig alphab rotated
-    #alphab = list('yzxuqrbapsfwjdtgiomhvelckn')  # a permutation of the alphab that is not a rotation
+    alphab = list('yzxuqrbapsfwjdtgiomhvelckn')  # a permutation of the alphab that is not a rotation
     
         
     print(f"{FR_YELL}ALPHABET: {FR_GREEN}{' '.join(alphab)}{NO_COLOR}")
@@ -43,18 +43,22 @@ if __name__ == "__main__":
     msg = "murcielago murcielago murcielago murcielago murcielago murcielago murcielago" 
     print()
     print(f"msg: {msg} | length: {len(msg)}")
+    print()
 
     encrypted_msg = ""
     counter = 0
+    print(f"Original Alphabet:")
+    print(f"{' '.join(alphab_orig)} | length: {len(alphab_orig)}")
+    print()
     for ch in msg:
         if ch != ' ':
             counter_2f = "{:2}".format(counter)
-            print(f"ch {counter_2f}: {ch} ==> alphab.index: {alphab.index(ch)}")    
+            print(f"ch {counter_2f}: {ch} ==> alphab_orig.index: {alphab_orig.index(ch)}")    
 
         if ch == ' ':
             encrypted_msg = encrypted_msg + ' ' 
         else:
-            encrypted_msg = encrypted_msg + alphab_list[counter % 26][alphab.index(ch)]
+            encrypted_msg = encrypted_msg + alphab_list[counter % 26][alphab_orig.index(ch)]
             counter=counter+1
 
     print(f"{FR_GREEN}Chars counter value:{NO_COLOR} {counter} | counter % 6: {counter % 26}")          
@@ -74,11 +78,11 @@ if __name__ == "__main__":
         if ch != ' ':
             counter_2f = "{:2}".format(counter)
             index_2f = "{:2}".format(alphab_list[counter % 26].index(ch))
-            print(f"ch {counter_2f}: {ch} index: {index_2f} | {' '.join(alphab_list[counter % 26])} | alphab letter: {alphab[alphab_list[counter % 26].index(ch)]}")
+            print(f"ch {counter_2f}: {ch} index: {index_2f} | {' '.join(alphab_list[counter % 26])} | alphab letter: {alphab_orig[alphab_list[counter % 26].index(ch)]}")
         if ch == ' ':
             decoded_msg = decoded_msg + ' '
         else:
-            decoded_msg = decoded_msg + alphab[alphab_list[counter % 26].index(ch)]
+            decoded_msg = decoded_msg + alphab_orig[alphab_list[counter % 26].index(ch)]
             counter=counter+1
 
     print()  

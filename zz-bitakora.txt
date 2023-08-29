@@ -15,7 +15,7 @@ Actual web
 
     - MyFunc, MyColors standard
 
-    - input excercise as form page 
+    - input excercise as form page vs JS prompt
         - https://stackoverflow.com/questions/67189491/flask-python-website-save-user-input-and-add-it-to-the-list#:~:text=from%20flask%20import%20%2A%20app%20%3D%20Flask%20%28__name__%29,request.form%20%5B%27ques%27%5D%7D%29%20return%20render_template%20%28%27def.html%27%2C%20questions%3Dquestions%29%20app.run%20%28debug%3DTrue%29
 
     - LOG FILES & TRY SCHEMMA 
@@ -38,14 +38,14 @@ Actual web
         - input example
         - Excercises: include zip example
         - check equal matrices in life game excercises
-        - simple version of enigma -> one rotation
+        - simple version of enigma -> one rotation ↣ check alphab 0 = orig alphab       
 
     - Read course material and "highlight special elements". Improve suggestions
 
     - CSS file and responsive
         - menu like smartphones
 
-    - waiting bar
+    - waiting bar  ✔✔😎
         - 
 
     - modal for img
