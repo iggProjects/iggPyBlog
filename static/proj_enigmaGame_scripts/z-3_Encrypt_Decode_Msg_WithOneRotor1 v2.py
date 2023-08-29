@@ -38,9 +38,9 @@ if __name__ == "__main__":
         print(f"alphab index: {jump_2f} | alphab: {' '.join(alphab_list[jump])}")
 
     # message to encrypt
-    print() 
-    #msg = "murcielago" 
-    msg = "murcielago murcielago murcielago murcielago murcielago murcielago murcielago" 
+    print()    
+    #msg = "murcielago murcielago murcielago murcielago murcielago murcielago murcielago" 
+    msg = "el murcielago no come murcielagos" 
     print()
     print(f"msg: {msg} | length: {len(msg)}")
     print()
