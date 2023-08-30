@@ -47,6 +47,25 @@ def Enigma_scripts():
             'date_created': '10-04-2023',
             'source_url': '',
             'section': 'Multiprocessing',
+            'title': 'Encrypt and decode a message, using an alphabet and a position rotor',
+            'fileDirPath': 'static/proj_enigmaGame_scripts/z-3_Encrypt_Decode_Msg_WithOneRotor.py',  
+            'fileDirPath1': 'static/proj_enigmaGame_scripts/z-3_Encrypt_Decode_Msg_WithOneRotor-1.py',  
+            
+            'homework': '',
+
+            'body': '',          
+
+            'code_url': '/static/proj_enigmaGame_scripts/z-3_Encrypt_Decode_Msg_WithOneRotor.py',  
+            'zip_url' : '',  
+            'img': '/img/icons8-consola-100.png'    
+        },       
+  
+        {
+            'id': 4,             
+            'author': 'Igg',
+            'date_created': '10-04-2023',
+            'source_url': '',
+            'section': 'Multiprocessing',
             'title': 'Use of two or more CPUs within your PC',
             'fileDirPath': 'static/proj_enigmaGame_scripts/mpPoolManagerEnigmaRandom-Alphab26.py',  
             'fileDirPath1': 'static/proj_enigmaGame_scripts/mpPoolManagerEnigmaRandom-Alphab26-1.py',  
@@ -58,8 +77,7 @@ def Enigma_scripts():
             'code_url': '/static/proj_enigmaGame_scripts/mpPoolManagerEnigmaRandom-Alphab26.py',  
             'zip_url' : '/static/proj_enigmaGame_scripts/mpPoolManagerEnigmaRandom.zip',  
             'img': '/img/icons8-consola-100.png'    
-        },       
-  
+        }   
         
 
     ]

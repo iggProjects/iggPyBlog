@@ -8254,3 +8254,810 @@ jinja2.exceptions.TemplateNotFound: excercses.html
 2023-08-29 19:17:30,794 INFO     _log  * Restarting with stat
 2023-08-29 19:17:31,793 WARNING  _log  * Debugger is active!
 2023-08-29 19:17:31,793 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-30 18:06:25,143 INFO     _log [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-08-30 18:06:25,143 INFO     _log [33mPress CTRL+C to quit[0m
+2023-08-30 18:06:25,143 INFO     _log  * Restarting with stat
+2023-08-30 18:06:25,818 WARNING  _log  * Debugger is active!
+2023-08-30 18:06:25,833 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-30 18:06:38,260 INFO     _log 127.0.0.1 - - [30/Aug/2023 18:06:38] "GET / HTTP/1.1" 200 -
+2023-08-30 18:06:38,416 INFO     _log 127.0.0.1 - - [30/Aug/2023 18:06:38] "GET /static/img/ame-01.jpg HTTP/1.1" 200 -
+2023-08-30 18:06:38,480 INFO     _log 127.0.0.1 - - [30/Aug/2023 18:06:38] "GET /static/img/icons8-bulb-64.png HTTP/1.1" 200 -
+2023-08-30 18:08:41,582 INFO     _log 127.0.0.1 - - [30/Aug/2023 18:08:41] "GET /project-EnigmaGame HTTP/1.1" 200 -
+2023-08-30 18:08:41,790 INFO     _log 127.0.0.1 - - [30/Aug/2023 18:08:41] "GET /static/img/enigma.jpg HTTP/1.1" 200 -
+2023-08-30 18:08:41,832 INFO     _log 127.0.0.1 - - [30/Aug/2023 18:08:41] "GET /static/img/icons8-video-50.png HTTP/1.1" 200 -
+2023-08-30 18:08:41,899 INFO     _log 127.0.0.1 - - [30/Aug/2023 18:08:41] "GET /static/img/Lorea.jpg HTTP/1.1" 200 -
+2023-08-30 18:11:21,100 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\EnigmaGame_data.py', reloading
+2023-08-30 18:11:21,207 INFO     _log  * Restarting with stat
+2023-08-30 18:11:22,089 WARNING  _log  * Debugger is active!
+2023-08-30 18:11:22,089 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-30 18:11:24,194 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\EnigmaGame_data.py', reloading
+2023-08-30 18:11:24,310 INFO     _log  * Restarting with stat
+2023-08-30 18:11:25,164 WARNING  _log  * Debugger is active!
+2023-08-30 18:11:25,164 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-30 18:11:30,368 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\EnigmaGame_data.py', reloading
+2023-08-30 18:11:30,471 INFO     _log  * Restarting with stat
+2023-08-30 18:11:31,140 WARNING  _log  * Debugger is active!
+2023-08-30 18:11:31,140 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-30 18:11:34,944 INFO     _log 127.0.0.1 - - [30/Aug/2023 18:11:34] "GET /project-EnigmaGame HTTP/1.1" 200 -
+2023-08-30 18:11:35,020 INFO     _log 127.0.0.1 - - [30/Aug/2023 18:11:35] "[36mGET /static/img/enigma.jpg HTTP/1.1[0m" 304 -
+2023-08-30 18:11:35,175 INFO     _log 127.0.0.1 - - [30/Aug/2023 18:11:35] "[36mGET /static/img/icons8-video-50.png HTTP/1.1[0m" 304 -
+2023-08-30 18:11:35,281 INFO     _log 127.0.0.1 - - [30/Aug/2023 18:11:35] "[36mGET /static/img/Lorea.jpg HTTP/1.1[0m" 304 -
+2023-08-30 18:11:35,614 INFO     _log 127.0.0.1 - - [30/Aug/2023 18:11:35] "[36mGET /static/img/icons8-bulb-64.png HTTP/1.1[0m" 304 -
+2023-08-30 18:12:23,147 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\EnigmaGame_data.py', reloading
+2023-08-30 18:12:23,265 INFO     _log  * Restarting with stat
+2023-08-30 18:12:24,078 WARNING  _log  * Debugger is active!
+2023-08-30 18:12:24,085 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-30 18:12:32,430 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\EnigmaGame_data.py', reloading
+2023-08-30 18:12:32,554 INFO     _log  * Restarting with stat
+2023-08-30 18:12:33,652 WARNING  _log  * Debugger is active!
+2023-08-30 18:12:33,652 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-30 18:14:17,264 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\EnigmaGame_data.py', reloading
+2023-08-30 18:14:17,375 INFO     _log  * Restarting with stat
+2023-08-30 18:14:18,239 WARNING  _log  * Debugger is active!
+2023-08-30 18:14:18,247 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-30 18:14:59,807 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-3_Encrypt_Decode_Msg_WithOneRotor1.py', reloading
+2023-08-30 18:14:59,981 INFO     _log  * Restarting with stat
+2023-08-30 18:15:00,912 WARNING  _log  * Debugger is active!
+2023-08-30 18:15:00,920 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-30 18:20:26,064 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\EnigmaGame_data.py', reloading
+2023-08-30 18:20:26,156 INFO     _log  * Restarting with stat
+2023-08-30 18:20:26,989 WARNING  _log  * Debugger is active!
+2023-08-30 18:20:26,997 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-30 18:20:33,293 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\EnigmaGame_data.py', reloading
+2023-08-30 18:20:33,386 INFO     _log  * Restarting with stat
+2023-08-30 18:20:34,195 WARNING  _log  * Debugger is active!
+2023-08-30 18:20:34,195 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-30 18:20:35,286 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\EnigmaGame_data.py', reloading
+2023-08-30 18:20:35,387 INFO     _log  * Restarting with stat
+2023-08-30 18:20:36,163 WARNING  _log  * Debugger is active!
+2023-08-30 18:20:36,163 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-30 18:21:09,399 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-3_Encrypt_Decode_Msg_WithOneRotor.py', reloading
+2023-08-30 18:21:09,511 INFO     _log  * Restarting with stat
+2023-08-30 18:21:10,269 WARNING  _log  * Debugger is active!
+2023-08-30 18:21:10,288 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-30 18:21:29,018 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\EnigmaGame_data.py', reloading
+2023-08-30 18:21:29,098 INFO     _log  * Restarting with stat
+2023-08-30 18:21:30,024 WARNING  _log  * Debugger is active!
+2023-08-30 18:21:30,032 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-30 18:21:33,807 INFO     _log 127.0.0.1 - - [30/Aug/2023 18:21:33] "GET /project-EnigmaGame HTTP/1.1" 200 -
+2023-08-30 18:21:33,874 INFO     _log 127.0.0.1 - - [30/Aug/2023 18:21:33] "[36mGET /static/img/enigma.jpg HTTP/1.1[0m" 304 -
+2023-08-30 18:21:34,025 INFO     _log 127.0.0.1 - - [30/Aug/2023 18:21:34] "[36mGET /static/img/icons8-video-50.png HTTP/1.1[0m" 304 -
+2023-08-30 18:21:34,150 INFO     _log 127.0.0.1 - - [30/Aug/2023 18:21:34] "[36mGET /static/img/Lorea.jpg HTTP/1.1[0m" 304 -
+2023-08-30 18:21:34,473 INFO     _log 127.0.0.1 - - [30/Aug/2023 18:21:34] "[36mGET /static/img/icons8-bulb-64.png HTTP/1.1[0m" 304 -
+2023-08-30 18:26:29,749 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\EnigmaGame_data.py', reloading
+2023-08-30 18:26:29,864 INFO     _log  * Restarting with stat
+2023-08-30 18:26:30,681 WARNING  _log  * Debugger is active!
+2023-08-30 18:26:30,689 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-30 18:26:42,133 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\EnigmaGame_data.py', reloading
+2023-08-30 18:26:42,255 INFO     _log  * Restarting with stat
+2023-08-30 18:26:43,285 WARNING  _log  * Debugger is active!
+2023-08-30 18:26:43,285 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-30 18:26:51,666 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\EnigmaGame_data.py', reloading
+2023-08-30 18:26:51,765 INFO     _log  * Restarting with stat
+2023-08-30 18:26:52,540 WARNING  _log  * Debugger is active!
+2023-08-30 18:26:52,548 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-30 18:27:07,131 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\EnigmaGame_data.py', reloading
+2023-08-30 18:27:07,261 INFO     _log  * Restarting with stat
+2023-08-30 18:27:08,150 WARNING  _log  * Debugger is active!
+2023-08-30 18:27:08,158 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-30 18:27:11,014 INFO     _log 127.0.0.1 - - [30/Aug/2023 18:27:11] "GET /project-EnigmaGame HTTP/1.1" 200 -
+2023-08-30 18:27:11,086 INFO     _log 127.0.0.1 - - [30/Aug/2023 18:27:11] "[36mGET /static/img/enigma.jpg HTTP/1.1[0m" 304 -
+2023-08-30 18:27:11,261 INFO     _log 127.0.0.1 - - [30/Aug/2023 18:27:11] "[36mGET /static/img/icons8-video-50.png HTTP/1.1[0m" 304 -
+2023-08-30 18:27:11,344 INFO     _log 127.0.0.1 - - [30/Aug/2023 18:27:11] "[36mGET /static/img/Lorea.jpg HTTP/1.1[0m" 304 -
+2023-08-30 18:27:11,669 INFO     _log 127.0.0.1 - - [30/Aug/2023 18:27:11] "[36mGET /static/img/icons8-bulb-64.png HTTP/1.1[0m" 304 -
+2023-08-30 18:27:13,211 INFO     _log 127.0.0.1 - - [30/Aug/2023 18:27:13] "GET /project-EnigmaGame_script/?id=3 HTTP/1.1" 200 -
+2023-08-30 18:27:13,494 INFO     _log 127.0.0.1 - - [30/Aug/2023 18:27:13] "GET /static/img/icons8-script-68.png HTTP/1.1" 200 -
+2023-08-30 18:27:13,544 INFO     _log 127.0.0.1 - - [30/Aug/2023 18:27:13] "GET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1" 200 -
+2023-08-30 18:27:13,544 INFO     _log 127.0.0.1 - - [30/Aug/2023 18:27:13] "GET /static/img/icons8-consola-100.png HTTP/1.1" 200 -
+2023-08-30 18:27:13,560 INFO     _log 127.0.0.1 - - [30/Aug/2023 18:27:13] "GET /static/img/icons8-html-filetype-50.png HTTP/1.1" 200 -
+2023-08-30 18:27:15,469 INFO     _log 127.0.0.1 - - [30/Aug/2023 18:27:15] "[33mGET /static/proj_enigmaGame_scripts/static/proj_enigmaGame_scripts/z-3_Encrypt_Decode_Msg_WithOneRotor-1.py HTTP/1.1[0m" 404 -
+2023-08-30 18:27:15,708 INFO     _log 127.0.0.1 - - [30/Aug/2023 18:27:15] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2023-08-30 18:27:39,440 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\EnigmaGame_data.py', reloading
+2023-08-30 18:27:39,565 INFO     _log  * Restarting with stat
+2023-08-30 18:27:40,408 WARNING  _log  * Debugger is active!
+2023-08-30 18:27:40,416 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-30 18:27:59,968 INFO     _log 127.0.0.1 - - [30/Aug/2023 18:27:59] "GET /project-EnigmaGame_script/?id=3 HTTP/1.1" 200 -
+2023-08-30 18:28:00,032 INFO     _log 127.0.0.1 - - [30/Aug/2023 18:28:00] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-08-30 18:28:00,206 INFO     _log 127.0.0.1 - - [30/Aug/2023 18:28:00] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-08-30 18:28:00,293 INFO     _log 127.0.0.1 - - [30/Aug/2023 18:28:00] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-08-30 18:28:00,293 INFO     _log 127.0.0.1 - - [30/Aug/2023 18:28:00] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-08-30 18:28:00,615 INFO     _log 127.0.0.1 - - [30/Aug/2023 18:28:00] "[36mGET /static/img/icons8-bulb-64.png HTTP/1.1[0m" 304 -
+2023-08-30 18:28:04,052 INFO     _log 127.0.0.1 - - [30/Aug/2023 18:28:04] "[33mGET /static/proj_enigmaGame_scripts/static/proj_enigmaGame_scripts/z-3_Encrypt_Decode_Msg_WithOneRotor.py HTTP/1.1[0m" 404 -
+2023-08-30 18:28:22,403 INFO     _log 127.0.0.1 - - [30/Aug/2023 18:28:22] "GET /result_script_exec/?py_path=static/proj_enigmaGame_scripts/z-3_Encrypt_Decode_Msg_WithOneRotor-1.py HTTP/1.1" 200 -
+2023-08-30 18:28:22,894 INFO     _log 127.0.0.1 - - [30/Aug/2023 18:28:22] "GET /result_script_html HTTP/1.1" 200 -
+2023-08-30 18:29:00,505 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\EnigmaGame_data.py', reloading
+2023-08-30 18:29:00,607 INFO     _log  * Restarting with stat
+2023-08-30 18:29:01,459 WARNING  _log  * Debugger is active!
+2023-08-30 18:29:01,467 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-30 18:29:04,636 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\EnigmaGame_data.py', reloading
+2023-08-30 18:29:04,739 INFO     _log  * Restarting with stat
+2023-08-30 18:29:05,464 WARNING  _log  * Debugger is active!
+2023-08-30 18:29:05,472 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-30 18:29:29,400 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\EnigmaGame_data.py', reloading
+2023-08-30 18:29:29,510 INFO     _log  * Restarting with stat
+2023-08-30 18:29:30,454 WARNING  _log  * Debugger is active!
+2023-08-30 18:29:30,462 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-30 18:29:35,593 INFO     _log 127.0.0.1 - - [30/Aug/2023 18:29:35] "GET /project-EnigmaGame_script/?id=3 HTTP/1.1" 200 -
+2023-08-30 18:29:35,644 INFO     _log 127.0.0.1 - - [30/Aug/2023 18:29:35] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-08-30 18:29:35,911 INFO     _log 127.0.0.1 - - [30/Aug/2023 18:29:35] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-08-30 18:29:35,919 INFO     _log 127.0.0.1 - - [30/Aug/2023 18:29:35] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-08-30 18:29:35,927 INFO     _log 127.0.0.1 - - [30/Aug/2023 18:29:35] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-08-30 18:29:36,244 INFO     _log 127.0.0.1 - - [30/Aug/2023 18:29:36] "[36mGET /static/img/icons8-bulb-64.png HTTP/1.1[0m" 304 -
+2023-08-30 18:29:40,128 INFO     _log 127.0.0.1 - - [30/Aug/2023 18:29:40] "[33mGET /static/proj_enigmaGame_scripts/static/proj_enigmaGame_scripts/z-3_Encrypt_Decode_Msg_WithOneRotor.py HTTP/1.1[0m" 404 -
+2023-08-30 18:30:10,038 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\EnigmaGame_data.py', reloading
+2023-08-30 18:30:10,140 INFO     _log  * Restarting with stat
+2023-08-30 18:30:10,944 WARNING  _log  * Debugger is active!
+2023-08-30 18:30:10,950 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-30 18:30:17,210 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\EnigmaGame_data.py', reloading
+2023-08-30 18:30:17,323 INFO     _log  * Restarting with stat
+2023-08-30 18:30:18,213 WARNING  _log  * Debugger is active!
+2023-08-30 18:30:18,213 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-30 18:30:24,010 INFO     _log 127.0.0.1 - - [30/Aug/2023 18:30:24] "GET /project-EnigmaGame_script/?id=3 HTTP/1.1" 200 -
+2023-08-30 18:30:24,107 INFO     _log 127.0.0.1 - - [30/Aug/2023 18:30:24] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-08-30 18:30:24,268 INFO     _log 127.0.0.1 - - [30/Aug/2023 18:30:24] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-08-30 18:30:24,361 INFO     _log 127.0.0.1 - - [30/Aug/2023 18:30:24] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-08-30 18:30:24,361 INFO     _log 127.0.0.1 - - [30/Aug/2023 18:30:24] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-08-30 18:30:24,694 INFO     _log 127.0.0.1 - - [30/Aug/2023 18:30:24] "[36mGET /static/img/icons8-bulb-64.png HTTP/1.1[0m" 304 -
+2023-08-30 18:30:27,687 INFO     _log 127.0.0.1 - - [30/Aug/2023 18:30:27] "GET /result_script_exec/?py_path=static/proj_enigmaGame_scripts/z-3_Encrypt_Decode_Msg_WithOneRotor-1.py HTTP/1.1" 200 -
+2023-08-30 18:30:28,086 INFO     _log 127.0.0.1 - - [30/Aug/2023 18:30:28] "GET /result_script_html HTTP/1.1" 200 -
+2023-08-30 18:30:52,482 INFO     _log 127.0.0.1 - - [30/Aug/2023 18:30:52] "GET /static/proj_enigmaGame_scripts/z-3_Encrypt_Decode_Msg_WithOneRotor.py HTTP/1.1" 200 -
+2023-08-30 18:31:27,511 INFO     _log 127.0.0.1 - - [30/Aug/2023 18:31:27] "[33mGET /static/proj_enigmaGame_scripts/ HTTP/1.1[0m" 404 -
+2023-08-30 18:31:40,862 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\EnigmaGame_data.py', reloading
+2023-08-30 18:31:40,978 INFO     _log  * Restarting with stat
+2023-08-30 18:31:41,814 WARNING  _log  * Debugger is active!
+2023-08-30 18:31:41,822 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-30 18:31:51,201 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\EnigmaGame_data.py', reloading
+2023-08-30 18:31:51,298 INFO     _log  * Restarting with stat
+2023-08-30 18:31:52,195 WARNING  _log  * Debugger is active!
+2023-08-30 18:31:52,195 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-30 18:35:36,370 INFO     _log 127.0.0.1 - - [30/Aug/2023 18:35:36] "GET /pythonScript/?py_path=static/proj_enigmaGame_scripts/z-3_Encrypt_Decode_Msg_WithOneRotor.py HTTP/1.1" 200 -
+2023-08-30 18:36:33,005 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-3_Encrypt_Decode_Msg_WithOneRotor-1.py', reloading
+2023-08-30 18:36:33,101 INFO     _log  * Restarting with stat
+2023-08-30 18:36:33,901 WARNING  _log  * Debugger is active!
+2023-08-30 18:36:33,901 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-30 18:36:36,893 INFO     _log 127.0.0.1 - - [30/Aug/2023 18:36:36] "GET /project-EnigmaGame_script/?id=3 HTTP/1.1" 200 -
+2023-08-30 18:36:36,950 INFO     _log 127.0.0.1 - - [30/Aug/2023 18:36:36] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-08-30 18:36:37,130 INFO     _log 127.0.0.1 - - [30/Aug/2023 18:36:37] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-08-30 18:36:37,228 INFO     _log 127.0.0.1 - - [30/Aug/2023 18:36:37] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-08-30 18:36:37,228 INFO     _log 127.0.0.1 - - [30/Aug/2023 18:36:37] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-08-30 18:36:37,559 INFO     _log 127.0.0.1 - - [30/Aug/2023 18:36:37] "[36mGET /static/img/icons8-bulb-64.png HTTP/1.1[0m" 304 -
+2023-08-30 18:36:41,469 INFO     _log 127.0.0.1 - - [30/Aug/2023 18:36:41] "GET /result_script_exec/?py_path=static/proj_enigmaGame_scripts/z-3_Encrypt_Decode_Msg_WithOneRotor-1.py HTTP/1.1" 200 -
+2023-08-30 18:36:41,902 INFO     _log 127.0.0.1 - - [30/Aug/2023 18:36:41] "GET /result_script_html HTTP/1.1" 200 -
+2023-08-30 18:38:33,668 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-3_Encrypt_Decode_Msg_WithOneRotor-1.py', reloading
+2023-08-30 18:38:33,769 INFO     _log  * Restarting with stat
+2023-08-30 18:38:34,532 WARNING  _log  * Debugger is active!
+2023-08-30 18:38:34,532 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-30 18:38:54,278 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-3_Encrypt_Decode_Msg_WithOneRotor-1.py', reloading
+2023-08-30 18:38:54,395 INFO     _log  * Restarting with stat
+2023-08-30 18:38:55,044 WARNING  _log  * Debugger is active!
+2023-08-30 18:38:55,052 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-30 18:38:58,200 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-3_Encrypt_Decode_Msg_WithOneRotor-1.py', reloading
+2023-08-30 18:38:58,355 INFO     _log  * Restarting with stat
+2023-08-30 18:38:59,302 WARNING  _log  * Debugger is active!
+2023-08-30 18:38:59,302 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-30 18:39:01,560 INFO     _log 127.0.0.1 - - [30/Aug/2023 18:39:01] "GET /project-EnigmaGame_script/?id=3 HTTP/1.1" 200 -
+2023-08-30 18:39:01,627 INFO     _log 127.0.0.1 - - [30/Aug/2023 18:39:01] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-08-30 18:39:01,892 INFO     _log 127.0.0.1 - - [30/Aug/2023 18:39:01] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-08-30 18:39:01,907 INFO     _log 127.0.0.1 - - [30/Aug/2023 18:39:01] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-08-30 18:39:01,907 INFO     _log 127.0.0.1 - - [30/Aug/2023 18:39:01] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-08-30 18:39:02,226 INFO     _log 127.0.0.1 - - [30/Aug/2023 18:39:02] "[36mGET /static/img/icons8-bulb-64.png HTTP/1.1[0m" 304 -
+2023-08-30 18:39:06,027 INFO     _log 127.0.0.1 - - [30/Aug/2023 18:39:06] "GET /result_script_exec/?py_path=static/proj_enigmaGame_scripts/z-3_Encrypt_Decode_Msg_WithOneRotor-1.py HTTP/1.1" 200 -
+2023-08-30 18:39:06,428 INFO     _log 127.0.0.1 - - [30/Aug/2023 18:39:06] "GET /result_script_html HTTP/1.1" 200 -
+2023-08-30 18:39:44,164 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-3_Encrypt_Decode_Msg_WithOneRotor-1.py', reloading
+2023-08-30 18:39:44,261 INFO     _log  * Restarting with stat
+2023-08-30 18:39:45,249 WARNING  _log  * Debugger is active!
+2023-08-30 18:39:45,249 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-30 18:39:55,643 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-3_Encrypt_Decode_Msg_WithOneRotor-1.py', reloading
+2023-08-30 18:39:55,708 INFO     _log  * Restarting with stat
+2023-08-30 18:39:56,685 WARNING  _log  * Debugger is active!
+2023-08-30 18:39:56,685 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-30 18:40:01,391 INFO     _log 127.0.0.1 - - [30/Aug/2023 18:40:01] "GET /project-EnigmaGame_script/?id=3 HTTP/1.1" 200 -
+2023-08-30 18:40:01,460 INFO     _log 127.0.0.1 - - [30/Aug/2023 18:40:01] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-08-30 18:40:01,728 INFO     _log 127.0.0.1 - - [30/Aug/2023 18:40:01] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-08-30 18:40:01,728 INFO     _log 127.0.0.1 - - [30/Aug/2023 18:40:01] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-08-30 18:40:01,744 INFO     _log 127.0.0.1 - - [30/Aug/2023 18:40:01] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-08-30 18:40:02,069 INFO     _log 127.0.0.1 - - [30/Aug/2023 18:40:02] "[36mGET /static/img/icons8-bulb-64.png HTTP/1.1[0m" 304 -
+2023-08-30 18:40:05,190 INFO     _log 127.0.0.1 - - [30/Aug/2023 18:40:05] "GET /result_script_exec/?py_path=static/proj_enigmaGame_scripts/z-3_Encrypt_Decode_Msg_WithOneRotor-1.py HTTP/1.1" 200 -
+2023-08-30 18:40:05,602 INFO     _log 127.0.0.1 - - [30/Aug/2023 18:40:05] "GET /result_script_html HTTP/1.1" 200 -
+2023-08-30 18:43:08,509 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-3_Encrypt_Decode_Msg_WithOneRotor-1.py', reloading
+2023-08-30 18:43:08,594 INFO     _log  * Restarting with stat
+2023-08-30 18:43:09,313 WARNING  _log  * Debugger is active!
+2023-08-30 18:43:09,313 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-30 18:43:11,427 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-3_Encrypt_Decode_Msg_WithOneRotor-1.py', reloading
+2023-08-30 18:43:11,559 INFO     _log  * Restarting with stat
+2023-08-30 18:43:12,584 WARNING  _log  * Debugger is active!
+2023-08-30 18:43:12,586 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-30 18:43:17,635 INFO     _log 127.0.0.1 - - [30/Aug/2023 18:43:17] "GET /project-EnigmaGame_script/?id=3 HTTP/1.1" 200 -
+2023-08-30 18:43:17,689 INFO     _log 127.0.0.1 - - [30/Aug/2023 18:43:17] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-08-30 18:43:17,964 INFO     _log 127.0.0.1 - - [30/Aug/2023 18:43:17] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-08-30 18:43:17,964 INFO     _log 127.0.0.1 - - [30/Aug/2023 18:43:17] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-08-30 18:43:17,978 INFO     _log 127.0.0.1 - - [30/Aug/2023 18:43:17] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-08-30 18:43:18,302 INFO     _log 127.0.0.1 - - [30/Aug/2023 18:43:18] "[36mGET /static/img/icons8-bulb-64.png HTTP/1.1[0m" 304 -
+2023-08-30 18:43:21,645 INFO     _log 127.0.0.1 - - [30/Aug/2023 18:43:21] "GET /result_script_exec/?py_path=static/proj_enigmaGame_scripts/z-3_Encrypt_Decode_Msg_WithOneRotor-1.py HTTP/1.1" 200 -
+2023-08-30 18:43:22,081 INFO     _log 127.0.0.1 - - [30/Aug/2023 18:43:22] "GET /result_script_html HTTP/1.1" 200 -
+2023-08-30 18:43:56,469 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-3_Encrypt_Decode_Msg_WithOneRotor-1.py', reloading
+2023-08-30 18:43:56,570 INFO     _log  * Restarting with stat
+2023-08-30 18:43:57,404 WARNING  _log  * Debugger is active!
+2023-08-30 18:43:57,412 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-30 18:44:29,738 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-3_Encrypt_Decode_Msg_WithOneRotor-1.py', reloading
+2023-08-30 18:44:29,830 INFO     _log  * Restarting with stat
+2023-08-30 18:44:30,735 WARNING  _log  * Debugger is active!
+2023-08-30 18:44:30,744 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-30 18:44:34,114 INFO     _log 127.0.0.1 - - [30/Aug/2023 18:44:34] "GET /project-EnigmaGame_script/?id=3 HTTP/1.1" 200 -
+2023-08-30 18:44:34,178 INFO     _log 127.0.0.1 - - [30/Aug/2023 18:44:34] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-08-30 18:44:34,443 INFO     _log 127.0.0.1 - - [30/Aug/2023 18:44:34] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-08-30 18:44:34,457 INFO     _log 127.0.0.1 - - [30/Aug/2023 18:44:34] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-08-30 18:44:34,457 INFO     _log 127.0.0.1 - - [30/Aug/2023 18:44:34] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-08-30 18:44:34,781 INFO     _log 127.0.0.1 - - [30/Aug/2023 18:44:34] "[36mGET /static/img/icons8-bulb-64.png HTTP/1.1[0m" 304 -
+2023-08-30 18:44:38,211 INFO     _log 127.0.0.1 - - [30/Aug/2023 18:44:38] "GET /result_script_exec/?py_path=static/proj_enigmaGame_scripts/z-3_Encrypt_Decode_Msg_WithOneRotor-1.py HTTP/1.1" 200 -
+2023-08-30 18:44:38,661 INFO     _log 127.0.0.1 - - [30/Aug/2023 18:44:38] "GET /result_script_html HTTP/1.1" 200 -
+2023-08-30 18:46:01,055 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-3_Encrypt_Decode_Msg_WithOneRotor-1.py', reloading
+2023-08-30 18:46:01,194 INFO     _log  * Restarting with stat
+2023-08-30 18:46:01,971 WARNING  _log  * Debugger is active!
+2023-08-30 18:46:01,971 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-30 18:46:04,090 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-3_Encrypt_Decode_Msg_WithOneRotor-1.py', reloading
+2023-08-30 18:46:04,194 INFO     _log  * Restarting with stat
+2023-08-30 18:46:05,064 WARNING  _log  * Debugger is active!
+2023-08-30 18:46:05,072 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-30 18:46:14,414 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-3_Encrypt_Decode_Msg_WithOneRotor-1.py', reloading
+2023-08-30 18:46:14,521 INFO     _log  * Restarting with stat
+2023-08-30 18:46:15,401 WARNING  _log  * Debugger is active!
+2023-08-30 18:46:15,409 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-30 18:46:24,745 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-3_Encrypt_Decode_Msg_WithOneRotor-1.py', reloading
+2023-08-30 18:46:24,846 INFO     _log  * Restarting with stat
+2023-08-30 18:46:25,711 WARNING  _log  * Debugger is active!
+2023-08-30 18:46:25,717 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-30 18:46:26,805 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-3_Encrypt_Decode_Msg_WithOneRotor-1.py', reloading
+2023-08-30 18:46:26,920 INFO     _log  * Restarting with stat
+2023-08-30 18:46:27,573 WARNING  _log  * Debugger is active!
+2023-08-30 18:46:27,577 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-30 18:46:28,641 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-3_Encrypt_Decode_Msg_WithOneRotor-1.py', reloading
+2023-08-30 18:46:28,742 INFO     _log  * Restarting with stat
+2023-08-30 18:46:29,501 WARNING  _log  * Debugger is active!
+2023-08-30 18:46:29,501 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-30 18:47:53,934 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-3_Encrypt_Decode_Msg_WithOneRotor-1.py', reloading
+2023-08-30 18:47:54,067 INFO     _log  * Restarting with stat
+2023-08-30 18:47:54,919 WARNING  _log  * Debugger is active!
+2023-08-30 18:47:54,919 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-30 18:48:01,175 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-3_Encrypt_Decode_Msg_WithOneRotor-1.py', reloading
+2023-08-30 18:48:01,285 INFO     _log  * Restarting with stat
+2023-08-30 18:48:02,151 WARNING  _log  * Debugger is active!
+2023-08-30 18:48:02,159 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-30 18:48:05,332 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-3_Encrypt_Decode_Msg_WithOneRotor-1.py', reloading
+2023-08-30 18:48:05,464 INFO     _log  * Restarting with stat
+2023-08-30 18:48:06,343 WARNING  _log  * Debugger is active!
+2023-08-30 18:48:06,351 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-30 18:48:09,499 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-3_Encrypt_Decode_Msg_WithOneRotor-1.py', reloading
+2023-08-30 18:48:09,634 INFO     _log  * Restarting with stat
+2023-08-30 18:48:10,347 WARNING  _log  * Debugger is active!
+2023-08-30 18:48:10,355 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-30 18:48:12,478 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-3_Encrypt_Decode_Msg_WithOneRotor-1.py', reloading
+2023-08-30 18:48:12,586 INFO     _log  * Restarting with stat
+2023-08-30 18:48:13,493 WARNING  _log  * Debugger is active!
+2023-08-30 18:48:13,493 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-30 18:48:15,622 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-3_Encrypt_Decode_Msg_WithOneRotor-1.py', reloading
+2023-08-30 18:48:15,760 INFO     _log  * Restarting with stat
+2023-08-30 18:48:16,521 WARNING  _log  * Debugger is active!
+2023-08-30 18:48:16,529 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-30 18:48:24,867 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-3_Encrypt_Decode_Msg_WithOneRotor-1.py', reloading
+2023-08-30 18:48:24,991 INFO     _log  * Restarting with stat
+2023-08-30 18:48:25,813 WARNING  _log  * Debugger is active!
+2023-08-30 18:48:25,821 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-30 18:48:32,089 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-3_Encrypt_Decode_Msg_WithOneRotor-1.py', reloading
+2023-08-30 18:48:32,254 INFO     _log  * Restarting with stat
+2023-08-30 18:48:33,087 WARNING  _log  * Debugger is active!
+2023-08-30 18:48:33,087 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-30 18:48:38,325 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-3_Encrypt_Decode_Msg_WithOneRotor-1.py', reloading
+2023-08-30 18:48:38,418 INFO     _log  * Restarting with stat
+2023-08-30 18:48:39,121 WARNING  _log  * Debugger is active!
+2023-08-30 18:48:39,121 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-30 18:48:41,232 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-3_Encrypt_Decode_Msg_WithOneRotor-1.py', reloading
+2023-08-30 18:48:41,335 INFO     _log  * Restarting with stat
+2023-08-30 18:48:42,043 WARNING  _log  * Debugger is active!
+2023-08-30 18:48:42,043 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-30 18:48:46,230 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-3_Encrypt_Decode_Msg_WithOneRotor-1.py', reloading
+2023-08-30 18:48:46,307 INFO     _log  * Restarting with stat
+2023-08-30 18:48:47,000 WARNING  _log  * Debugger is active!
+2023-08-30 18:48:47,000 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-30 18:48:52,173 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-3_Encrypt_Decode_Msg_WithOneRotor-1.py', reloading
+2023-08-30 18:48:52,277 INFO     _log  * Restarting with stat
+2023-08-30 18:48:52,911 WARNING  _log  * Debugger is active!
+2023-08-30 18:48:52,911 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-30 18:48:52,963 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-3_Encrypt_Decode_Msg_WithOneRotor-1.py', reloading
+2023-08-30 18:48:53,060 INFO     _log  * Restarting with stat
+2023-08-30 18:48:53,738 WARNING  _log  * Debugger is active!
+2023-08-30 18:48:53,738 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-30 18:48:57,893 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-3_Encrypt_Decode_Msg_WithOneRotor-1.py', reloading
+2023-08-30 18:48:57,982 INFO     _log  * Restarting with stat
+2023-08-30 18:48:58,718 WARNING  _log  * Debugger is active!
+2023-08-30 18:48:58,718 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-30 18:49:03,974 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-3_Encrypt_Decode_Msg_WithOneRotor-1.py', reloading
+2023-08-30 18:49:04,083 INFO     _log  * Restarting with stat
+2023-08-30 18:49:04,854 WARNING  _log  * Debugger is active!
+2023-08-30 18:49:04,862 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-30 18:49:06,959 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-3_Encrypt_Decode_Msg_WithOneRotor-1.py', reloading
+2023-08-30 18:49:07,062 INFO     _log  * Restarting with stat
+2023-08-30 18:49:07,870 WARNING  _log  * Debugger is active!
+2023-08-30 18:49:07,878 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-30 18:49:10,012 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-3_Encrypt_Decode_Msg_WithOneRotor-1.py', reloading
+2023-08-30 18:49:10,105 INFO     _log  * Restarting with stat
+2023-08-30 18:49:10,851 WARNING  _log  * Debugger is active!
+2023-08-30 18:49:10,859 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-30 18:49:28,482 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-3_Encrypt_Decode_Msg_WithOneRotor-1.py', reloading
+2023-08-30 18:49:28,594 INFO     _log  * Restarting with stat
+2023-08-30 18:49:29,340 WARNING  _log  * Debugger is active!
+2023-08-30 18:49:29,340 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-30 18:49:38,660 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-3_Encrypt_Decode_Msg_WithOneRotor-1.py', reloading
+2023-08-30 18:49:38,767 INFO     _log  * Restarting with stat
+2023-08-30 18:49:39,522 WARNING  _log  * Debugger is active!
+2023-08-30 18:49:39,522 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-30 18:49:40,594 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-3_Encrypt_Decode_Msg_WithOneRotor-1.py', reloading
+2023-08-30 18:49:40,693 INFO     _log  * Restarting with stat
+2023-08-30 18:49:41,357 WARNING  _log  * Debugger is active!
+2023-08-30 18:49:41,365 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-30 18:49:54,876 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-3_Encrypt_Decode_Msg_WithOneRotor-1.py', reloading
+2023-08-30 18:49:54,963 INFO     _log  * Restarting with stat
+2023-08-30 18:49:55,728 WARNING  _log  * Debugger is active!
+2023-08-30 18:49:55,728 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-30 18:49:58,875 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-3_Encrypt_Decode_Msg_WithOneRotor-1.py', reloading
+2023-08-30 18:49:58,982 INFO     _log  * Restarting with stat
+2023-08-30 18:49:59,752 WARNING  _log  * Debugger is active!
+2023-08-30 18:49:59,752 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-30 18:50:00,822 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-3_Encrypt_Decode_Msg_WithOneRotor-1.py', reloading
+2023-08-30 18:50:00,939 INFO     _log  * Restarting with stat
+2023-08-30 18:50:01,757 WARNING  _log  * Debugger is active!
+2023-08-30 18:50:01,765 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-30 18:50:35,985 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-3_Encrypt_Decode_Msg_WithOneRotor-1.py', reloading
+2023-08-30 18:50:36,063 INFO     _log  * Restarting with stat
+2023-08-30 18:50:36,836 WARNING  _log  * Debugger is active!
+2023-08-30 18:50:36,843 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-30 18:50:37,923 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-3_Encrypt_Decode_Msg_WithOneRotor-1.py', reloading
+2023-08-30 18:50:38,026 INFO     _log  * Restarting with stat
+2023-08-30 18:50:38,785 WARNING  _log  * Debugger is active!
+2023-08-30 18:50:38,793 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-30 18:50:41,927 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-3_Encrypt_Decode_Msg_WithOneRotor-1.py', reloading
+2023-08-30 18:50:42,029 INFO     _log  * Restarting with stat
+2023-08-30 18:50:42,866 WARNING  _log  * Debugger is active!
+2023-08-30 18:50:42,874 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-30 18:50:43,967 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-3_Encrypt_Decode_Msg_WithOneRotor-1.py', reloading
+2023-08-30 18:50:44,060 INFO     _log  * Restarting with stat
+2023-08-30 18:50:44,839 WARNING  _log  * Debugger is active!
+2023-08-30 18:50:44,839 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-30 18:50:45,915 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-3_Encrypt_Decode_Msg_WithOneRotor-1.py', reloading
+2023-08-30 18:50:46,033 INFO     _log  * Restarting with stat
+2023-08-30 18:50:46,835 WARNING  _log  * Debugger is active!
+2023-08-30 18:50:46,835 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-30 18:50:48,971 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-3_Encrypt_Decode_Msg_WithOneRotor-1.py', reloading
+2023-08-30 18:50:49,074 INFO     _log  * Restarting with stat
+2023-08-30 18:50:49,758 WARNING  _log  * Debugger is active!
+2023-08-30 18:50:49,758 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-30 18:50:50,817 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-3_Encrypt_Decode_Msg_WithOneRotor-1.py', reloading
+2023-08-30 18:50:50,947 INFO     _log  * Restarting with stat
+2023-08-30 18:50:51,652 WARNING  _log  * Debugger is active!
+2023-08-30 18:50:51,660 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-30 18:50:59,988 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-3_Encrypt_Decode_Msg_WithOneRotor-1.py', reloading
+2023-08-30 18:51:00,136 INFO     _log  * Restarting with stat
+2023-08-30 18:51:00,885 WARNING  _log  * Debugger is active!
+2023-08-30 18:51:00,885 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-30 18:51:06,537 INFO     _log 127.0.0.1 - - [30/Aug/2023 18:51:06] "GET /project-EnigmaGame_script/?id=3 HTTP/1.1" 200 -
+2023-08-30 18:51:06,604 INFO     _log 127.0.0.1 - - [30/Aug/2023 18:51:06] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-08-30 18:51:06,873 INFO     _log 127.0.0.1 - - [30/Aug/2023 18:51:06] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-08-30 18:51:06,889 INFO     _log 127.0.0.1 - - [30/Aug/2023 18:51:06] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-08-30 18:51:06,889 INFO     _log 127.0.0.1 - - [30/Aug/2023 18:51:06] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-08-30 18:51:07,200 INFO     _log 127.0.0.1 - - [30/Aug/2023 18:51:07] "[36mGET /static/img/icons8-bulb-64.png HTTP/1.1[0m" 304 -
+2023-08-30 18:51:10,791 INFO     _log 127.0.0.1 - - [30/Aug/2023 18:51:10] "GET /result_script_exec/?py_path=static/proj_enigmaGame_scripts/z-3_Encrypt_Decode_Msg_WithOneRotor-1.py HTTP/1.1" 200 -
+2023-08-30 18:51:11,220 INFO     _log 127.0.0.1 - - [30/Aug/2023 18:51:11] "GET /result_script_html HTTP/1.1" 200 -
+2023-08-30 18:51:40,602 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-3_Encrypt_Decode_Msg_WithOneRotor-1.py', reloading
+2023-08-30 18:51:40,691 INFO     _log  * Restarting with stat
+2023-08-30 18:51:41,455 WARNING  _log  * Debugger is active!
+2023-08-30 18:51:41,463 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-30 18:51:45,682 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-3_Encrypt_Decode_Msg_WithOneRotor-1.py', reloading
+2023-08-30 18:51:45,766 INFO     _log  * Restarting with stat
+2023-08-30 18:51:46,453 WARNING  _log  * Debugger is active!
+2023-08-30 18:51:46,453 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-30 18:51:51,673 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-3_Encrypt_Decode_Msg_WithOneRotor-1.py', reloading
+2023-08-30 18:51:51,813 INFO     _log  * Restarting with stat
+2023-08-30 18:51:52,471 WARNING  _log  * Debugger is active!
+2023-08-30 18:51:52,471 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-30 18:51:53,534 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-3_Encrypt_Decode_Msg_WithOneRotor-1.py', reloading
+2023-08-30 18:51:53,660 INFO     _log  * Restarting with stat
+2023-08-30 18:51:54,388 WARNING  _log  * Debugger is active!
+2023-08-30 18:51:54,388 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-30 18:51:56,496 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-3_Encrypt_Decode_Msg_WithOneRotor-1.py', reloading
+2023-08-30 18:51:56,627 INFO     _log  * Restarting with stat
+2023-08-30 18:51:57,371 WARNING  _log  * Debugger is active!
+2023-08-30 18:51:57,371 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-30 18:52:04,658 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-3_Encrypt_Decode_Msg_WithOneRotor-1.py', reloading
+2023-08-30 18:52:04,761 INFO     _log  * Restarting with stat
+2023-08-30 18:52:05,570 WARNING  _log  * Debugger is active!
+2023-08-30 18:52:05,570 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-30 18:52:07,671 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-3_Encrypt_Decode_Msg_WithOneRotor-1.py', reloading
+2023-08-30 18:52:07,799 INFO     _log  * Restarting with stat
+2023-08-30 18:52:08,516 WARNING  _log  * Debugger is active!
+2023-08-30 18:52:08,516 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-30 18:52:21,008 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-3_Encrypt_Decode_Msg_WithOneRotor-1.py', reloading
+2023-08-30 18:52:21,138 INFO     _log  * Restarting with stat
+2023-08-30 18:52:22,038 WARNING  _log  * Debugger is active!
+2023-08-30 18:52:22,038 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-30 18:52:25,088 INFO     _log 127.0.0.1 - - [30/Aug/2023 18:52:25] "GET /project-EnigmaGame_script/?id=3 HTTP/1.1" 200 -
+2023-08-30 18:52:25,149 INFO     _log 127.0.0.1 - - [30/Aug/2023 18:52:25] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-08-30 18:52:25,411 INFO     _log 127.0.0.1 - - [30/Aug/2023 18:52:25] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-08-30 18:52:25,427 INFO     _log 127.0.0.1 - - [30/Aug/2023 18:52:25] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-08-30 18:52:25,427 INFO     _log 127.0.0.1 - - [30/Aug/2023 18:52:25] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-08-30 18:52:25,743 INFO     _log 127.0.0.1 - - [30/Aug/2023 18:52:25] "[36mGET /static/img/icons8-bulb-64.png HTTP/1.1[0m" 304 -
+2023-08-30 18:52:29,169 INFO     _log 127.0.0.1 - - [30/Aug/2023 18:52:29] "GET /result_script_exec/?py_path=static/proj_enigmaGame_scripts/z-3_Encrypt_Decode_Msg_WithOneRotor-1.py HTTP/1.1" 200 -
+2023-08-30 18:52:29,602 INFO     _log 127.0.0.1 - - [30/Aug/2023 18:52:29] "GET /result_script_html HTTP/1.1" 200 -
+2023-08-30 18:53:06,860 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-3_Encrypt_Decode_Msg_WithOneRotor-1.py', reloading
+2023-08-30 18:53:06,966 INFO     _log  * Restarting with stat
+2023-08-30 18:53:07,778 WARNING  _log  * Debugger is active!
+2023-08-30 18:53:07,778 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-30 18:53:11,913 INFO     _log 127.0.0.1 - - [30/Aug/2023 18:53:11] "GET /project-EnigmaGame_script/?id=3 HTTP/1.1" 200 -
+2023-08-30 18:53:12,000 INFO     _log 127.0.0.1 - - [30/Aug/2023 18:53:12] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-08-30 18:53:12,260 INFO     _log 127.0.0.1 - - [30/Aug/2023 18:53:12] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-08-30 18:53:12,260 INFO     _log 127.0.0.1 - - [30/Aug/2023 18:53:12] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-08-30 18:53:12,260 INFO     _log 127.0.0.1 - - [30/Aug/2023 18:53:12] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-08-30 18:53:12,575 INFO     _log 127.0.0.1 - - [30/Aug/2023 18:53:12] "[36mGET /static/img/icons8-bulb-64.png HTTP/1.1[0m" 304 -
+2023-08-30 18:53:16,063 INFO     _log 127.0.0.1 - - [30/Aug/2023 18:53:16] "GET /result_script_exec/?py_path=static/proj_enigmaGame_scripts/z-3_Encrypt_Decode_Msg_WithOneRotor-1.py HTTP/1.1" 200 -
+2023-08-30 18:53:16,503 INFO     _log 127.0.0.1 - - [30/Aug/2023 18:53:16] "GET /result_script_html HTTP/1.1" 200 -
+2023-08-30 18:54:26,860 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-3_Encrypt_Decode_Msg_WithOneRotor-1.py', reloading
+2023-08-30 18:54:26,981 INFO     _log  * Restarting with stat
+2023-08-30 18:54:27,774 WARNING  _log  * Debugger is active!
+2023-08-30 18:54:27,782 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-30 18:54:30,936 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-3_Encrypt_Decode_Msg_WithOneRotor-1.py', reloading
+2023-08-30 18:54:31,043 INFO     _log  * Restarting with stat
+2023-08-30 18:54:31,768 WARNING  _log  * Debugger is active!
+2023-08-30 18:54:31,768 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-30 18:54:34,908 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-3_Encrypt_Decode_Msg_WithOneRotor-1.py', reloading
+2023-08-30 18:54:35,001 INFO     _log  * Restarting with stat
+2023-08-30 18:54:35,827 WARNING  _log  * Debugger is active!
+2023-08-30 18:54:35,827 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-30 18:54:40,050 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-3_Encrypt_Decode_Msg_WithOneRotor-1.py', reloading
+2023-08-30 18:54:40,179 INFO     _log  * Restarting with stat
+2023-08-30 18:54:41,059 WARNING  _log  * Debugger is active!
+2023-08-30 18:54:41,059 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-30 18:54:45,334 INFO     _log 127.0.0.1 - - [30/Aug/2023 18:54:45] "GET /project-EnigmaGame_script/?id=3 HTTP/1.1" 200 -
+2023-08-30 18:54:45,409 INFO     _log 127.0.0.1 - - [30/Aug/2023 18:54:45] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-08-30 18:54:45,663 INFO     _log 127.0.0.1 - - [30/Aug/2023 18:54:45] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-08-30 18:54:45,679 INFO     _log 127.0.0.1 - - [30/Aug/2023 18:54:45] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-08-30 18:54:45,679 INFO     _log 127.0.0.1 - - [30/Aug/2023 18:54:45] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-08-30 18:54:45,997 INFO     _log 127.0.0.1 - - [30/Aug/2023 18:54:45] "[36mGET /static/img/icons8-bulb-64.png HTTP/1.1[0m" 304 -
+2023-08-30 18:54:50,294 INFO     _log 127.0.0.1 - - [30/Aug/2023 18:54:50] "GET /result_script_exec/?py_path=static/proj_enigmaGame_scripts/z-3_Encrypt_Decode_Msg_WithOneRotor-1.py HTTP/1.1" 200 -
+2023-08-30 18:54:50,703 INFO     _log 127.0.0.1 - - [30/Aug/2023 18:54:50] "GET /result_script_html HTTP/1.1" 200 -
+2023-08-30 18:56:56,421 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-3_Encrypt_Decode_Msg_WithOneRotor-1.py', reloading
+2023-08-30 18:56:56,537 INFO     _log  * Restarting with stat
+2023-08-30 18:56:57,220 WARNING  _log  * Debugger is active!
+2023-08-30 18:56:57,228 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-30 18:57:04,510 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-3_Encrypt_Decode_Msg_WithOneRotor-1.py', reloading
+2023-08-30 18:57:04,614 INFO     _log  * Restarting with stat
+2023-08-30 18:57:05,340 WARNING  _log  * Debugger is active!
+2023-08-30 18:57:05,340 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-30 18:57:09,523 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-3_Encrypt_Decode_Msg_WithOneRotor-1.py', reloading
+2023-08-30 18:57:09,627 INFO     _log  * Restarting with stat
+2023-08-30 18:57:10,407 WARNING  _log  * Debugger is active!
+2023-08-30 18:57:10,407 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-30 18:57:16,988 INFO     _log 127.0.0.1 - - [30/Aug/2023 18:57:16] "GET /result_script_exec/?py_path=static/proj_enigmaGame_scripts/z-3_Encrypt_Decode_Msg_WithOneRotor-1.py HTTP/1.1" 200 -
+2023-08-30 18:57:17,106 INFO     _log 127.0.0.1 - - [30/Aug/2023 18:57:17] "GET /result_script_html HTTP/1.1" 200 -
+2023-08-30 18:58:56,354 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-3_Encrypt_Decode_Msg_WithOneRotor-1.py', reloading
+2023-08-30 18:58:56,452 INFO     _log  * Restarting with stat
+2023-08-30 18:58:57,228 WARNING  _log  * Debugger is active!
+2023-08-30 18:58:57,236 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-30 18:59:00,337 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-3_Encrypt_Decode_Msg_WithOneRotor-1.py', reloading
+2023-08-30 18:59:00,407 INFO     _log  * Restarting with stat
+2023-08-30 18:59:01,093 WARNING  _log  * Debugger is active!
+2023-08-30 18:59:01,093 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-30 18:59:09,429 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-3_Encrypt_Decode_Msg_WithOneRotor-1.py', reloading
+2023-08-30 18:59:09,560 INFO     _log  * Restarting with stat
+2023-08-30 18:59:10,407 WARNING  _log  * Debugger is active!
+2023-08-30 18:59:10,407 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-30 18:59:18,032 INFO     _log 127.0.0.1 - - [30/Aug/2023 18:59:18] "GET /result_script_exec/?py_path=static/proj_enigmaGame_scripts/z-3_Encrypt_Decode_Msg_WithOneRotor-1.py HTTP/1.1" 200 -
+2023-08-30 18:59:18,145 INFO     _log 127.0.0.1 - - [30/Aug/2023 18:59:18] "GET /result_script_html HTTP/1.1" 200 -
+2023-08-30 18:59:35,500 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-3_Encrypt_Decode_Msg_WithOneRotor-1.py', reloading
+2023-08-30 18:59:35,581 INFO     _log  * Restarting with stat
+2023-08-30 18:59:36,260 WARNING  _log  * Debugger is active!
+2023-08-30 18:59:36,260 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-30 18:59:38,380 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-3_Encrypt_Decode_Msg_WithOneRotor-1.py', reloading
+2023-08-30 18:59:38,494 INFO     _log  * Restarting with stat
+2023-08-30 18:59:39,343 WARNING  _log  * Debugger is active!
+2023-08-30 18:59:39,343 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-30 18:59:40,415 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-3_Encrypt_Decode_Msg_WithOneRotor-1.py', reloading
+2023-08-30 18:59:40,530 INFO     _log  * Restarting with stat
+2023-08-30 18:59:41,347 WARNING  _log  * Debugger is active!
+2023-08-30 18:59:41,347 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-30 18:59:43,446 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-3_Encrypt_Decode_Msg_WithOneRotor-1.py', reloading
+2023-08-30 18:59:43,553 INFO     _log  * Restarting with stat
+2023-08-30 18:59:44,293 WARNING  _log  * Debugger is active!
+2023-08-30 18:59:44,302 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-30 18:59:45,376 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-3_Encrypt_Decode_Msg_WithOneRotor-1.py', reloading
+2023-08-30 18:59:45,468 INFO     _log  * Restarting with stat
+2023-08-30 18:59:46,227 WARNING  _log  * Debugger is active!
+2023-08-30 18:59:46,227 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-30 18:59:48,346 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-3_Encrypt_Decode_Msg_WithOneRotor-1.py', reloading
+2023-08-30 18:59:48,443 INFO     _log  * Restarting with stat
+2023-08-30 18:59:49,294 WARNING  _log  * Debugger is active!
+2023-08-30 18:59:49,302 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-30 18:59:50,367 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-3_Encrypt_Decode_Msg_WithOneRotor-1.py', reloading
+2023-08-30 18:59:50,485 INFO     _log  * Restarting with stat
+2023-08-30 18:59:51,313 WARNING  _log  * Debugger is active!
+2023-08-30 18:59:51,321 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-30 19:00:12,177 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-3_Encrypt_Decode_Msg_WithOneRotor-1.py', reloading
+2023-08-30 19:00:12,270 INFO     _log  * Restarting with stat
+2023-08-30 19:00:12,976 WARNING  _log  * Debugger is active!
+2023-08-30 19:00:12,984 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-30 19:00:14,055 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-3_Encrypt_Decode_Msg_WithOneRotor-1.py', reloading
+2023-08-30 19:00:14,170 INFO     _log  * Restarting with stat
+2023-08-30 19:00:14,920 WARNING  _log  * Debugger is active!
+2023-08-30 19:00:14,920 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-30 19:00:16,011 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-3_Encrypt_Decode_Msg_WithOneRotor-1.py', reloading
+2023-08-30 19:00:16,126 INFO     _log  * Restarting with stat
+2023-08-30 19:00:16,875 WARNING  _log  * Debugger is active!
+2023-08-30 19:00:16,883 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-30 19:00:20,043 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-3_Encrypt_Decode_Msg_WithOneRotor-1.py', reloading
+2023-08-30 19:00:20,150 INFO     _log  * Restarting with stat
+2023-08-30 19:00:20,808 WARNING  _log  * Debugger is active!
+2023-08-30 19:00:20,816 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-30 19:00:28,903 INFO     _log 127.0.0.1 - - [30/Aug/2023 19:00:28] "GET /result_script_exec/?py_path=static/proj_enigmaGame_scripts/z-3_Encrypt_Decode_Msg_WithOneRotor-1.py HTTP/1.1" 200 -
+2023-08-30 19:00:29,015 INFO     _log 127.0.0.1 - - [30/Aug/2023 19:00:29] "GET /result_script_html HTTP/1.1" 200 -
+2023-08-30 19:03:38,848 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-3_Encrypt_Decode_Msg_WithOneRotor-1.py', reloading
+2023-08-30 19:03:38,943 INFO     _log  * Restarting with stat
+2023-08-30 19:03:39,661 WARNING  _log  * Debugger is active!
+2023-08-30 19:03:39,661 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-30 19:03:42,811 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-3_Encrypt_Decode_Msg_WithOneRotor-1.py', reloading
+2023-08-30 19:03:42,934 INFO     _log  * Restarting with stat
+2023-08-30 19:03:43,667 WARNING  _log  * Debugger is active!
+2023-08-30 19:03:43,675 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-30 19:03:46,796 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-3_Encrypt_Decode_Msg_WithOneRotor-1.py', reloading
+2023-08-30 19:03:46,917 INFO     _log  * Restarting with stat
+2023-08-30 19:03:47,726 WARNING  _log  * Debugger is active!
+2023-08-30 19:03:47,734 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-30 19:03:49,873 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-3_Encrypt_Decode_Msg_WithOneRotor-1.py', reloading
+2023-08-30 19:03:49,976 INFO     _log  * Restarting with stat
+2023-08-30 19:03:50,776 WARNING  _log  * Debugger is active!
+2023-08-30 19:03:50,784 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-30 19:03:57,055 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-3_Encrypt_Decode_Msg_WithOneRotor-1.py', reloading
+2023-08-30 19:03:57,160 INFO     _log  * Restarting with stat
+2023-08-30 19:03:57,949 WARNING  _log  * Debugger is active!
+2023-08-30 19:03:57,949 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-30 19:04:04,158 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-3_Encrypt_Decode_Msg_WithOneRotor-1.py', reloading
+2023-08-30 19:04:04,236 INFO     _log  * Restarting with stat
+2023-08-30 19:04:04,963 WARNING  _log  * Debugger is active!
+2023-08-30 19:04:04,963 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-30 19:04:10,210 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-3_Encrypt_Decode_Msg_WithOneRotor-1.py', reloading
+2023-08-30 19:04:10,296 INFO     _log  * Restarting with stat
+2023-08-30 19:04:10,993 WARNING  _log  * Debugger is active!
+2023-08-30 19:04:11,001 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-30 19:04:14,117 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-3_Encrypt_Decode_Msg_WithOneRotor-1.py', reloading
+2023-08-30 19:04:14,198 INFO     _log  * Restarting with stat
+2023-08-30 19:04:14,901 WARNING  _log  * Debugger is active!
+2023-08-30 19:04:14,909 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-30 19:04:19,094 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-3_Encrypt_Decode_Msg_WithOneRotor-1.py', reloading
+2023-08-30 19:04:19,200 INFO     _log  * Restarting with stat
+2023-08-30 19:04:19,996 WARNING  _log  * Debugger is active!
+2023-08-30 19:04:19,996 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-30 19:04:21,056 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-3_Encrypt_Decode_Msg_WithOneRotor-1.py', reloading
+2023-08-30 19:04:21,175 INFO     _log  * Restarting with stat
+2023-08-30 19:04:21,839 WARNING  _log  * Debugger is active!
+2023-08-30 19:04:21,839 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-30 19:04:22,926 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-3_Encrypt_Decode_Msg_WithOneRotor-1.py', reloading
+2023-08-30 19:04:23,044 INFO     _log  * Restarting with stat
+2023-08-30 19:04:23,850 WARNING  _log  * Debugger is active!
+2023-08-30 19:04:23,850 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-30 19:04:26,004 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-3_Encrypt_Decode_Msg_WithOneRotor-1.py', reloading
+2023-08-30 19:04:26,109 INFO     _log  * Restarting with stat
+2023-08-30 19:04:26,787 WARNING  _log  * Debugger is active!
+2023-08-30 19:04:26,795 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-30 19:04:28,884 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-3_Encrypt_Decode_Msg_WithOneRotor-1.py', reloading
+2023-08-30 19:04:28,983 INFO     _log  * Restarting with stat
+2023-08-30 19:04:29,693 WARNING  _log  * Debugger is active!
+2023-08-30 19:04:29,701 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-30 19:04:30,766 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-3_Encrypt_Decode_Msg_WithOneRotor-1.py', reloading
+2023-08-30 19:04:30,878 INFO     _log  * Restarting with stat
+2023-08-30 19:04:31,593 WARNING  _log  * Debugger is active!
+2023-08-30 19:04:31,593 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-30 19:04:36,794 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-3_Encrypt_Decode_Msg_WithOneRotor-1.py', reloading
+2023-08-30 19:04:36,892 INFO     _log  * Restarting with stat
+2023-08-30 19:04:37,635 WARNING  _log  * Debugger is active!
+2023-08-30 19:04:37,635 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-30 19:04:40,768 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-3_Encrypt_Decode_Msg_WithOneRotor-1.py', reloading
+2023-08-30 19:04:40,878 INFO     _log  * Restarting with stat
+2023-08-30 19:04:41,508 WARNING  _log  * Debugger is active!
+2023-08-30 19:04:41,516 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-30 19:04:45,711 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-3_Encrypt_Decode_Msg_WithOneRotor-1.py', reloading
+2023-08-30 19:04:45,876 INFO     _log  * Restarting with stat
+2023-08-30 19:04:46,581 WARNING  _log  * Debugger is active!
+2023-08-30 19:04:46,581 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-30 19:04:48,713 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-3_Encrypt_Decode_Msg_WithOneRotor-1.py', reloading
+2023-08-30 19:04:48,866 INFO     _log  * Restarting with stat
+2023-08-30 19:04:49,554 WARNING  _log  * Debugger is active!
+2023-08-30 19:04:49,562 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-30 19:04:52,732 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-3_Encrypt_Decode_Msg_WithOneRotor-1.py', reloading
+2023-08-30 19:04:52,860 INFO     _log  * Restarting with stat
+2023-08-30 19:04:53,552 WARNING  _log  * Debugger is active!
+2023-08-30 19:04:53,559 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-30 19:04:54,631 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-3_Encrypt_Decode_Msg_WithOneRotor-1.py', reloading
+2023-08-30 19:04:54,715 INFO     _log  * Restarting with stat
+2023-08-30 19:04:55,572 WARNING  _log  * Debugger is active!
+2023-08-30 19:04:55,580 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-30 19:04:59,501 INFO     _log 127.0.0.1 - - [30/Aug/2023 19:04:59] "GET /project-EnigmaGame_script/?id=3 HTTP/1.1" 200 -
+2023-08-30 19:04:59,564 INFO     _log 127.0.0.1 - - [30/Aug/2023 19:04:59] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-08-30 19:04:59,841 INFO     _log 127.0.0.1 - - [30/Aug/2023 19:04:59] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-08-30 19:04:59,841 INFO     _log 127.0.0.1 - - [30/Aug/2023 19:04:59] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-08-30 19:04:59,841 INFO     _log 127.0.0.1 - - [30/Aug/2023 19:04:59] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-08-30 19:05:00,172 INFO     _log 127.0.0.1 - - [30/Aug/2023 19:05:00] "[36mGET /static/img/icons8-bulb-64.png HTTP/1.1[0m" 304 -
+2023-08-30 19:05:04,003 INFO     _log 127.0.0.1 - - [30/Aug/2023 19:05:04] "GET /result_script_exec/?py_path=static/proj_enigmaGame_scripts/z-3_Encrypt_Decode_Msg_WithOneRotor-1.py HTTP/1.1" 200 -
+2023-08-30 19:05:04,438 INFO     _log 127.0.0.1 - - [30/Aug/2023 19:05:04] "GET /result_script_html HTTP/1.1" 200 -
+2023-08-30 19:05:44,707 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-3_Encrypt_Decode_Msg_WithOneRotor-1.py', reloading
+2023-08-30 19:05:44,814 INFO     _log  * Restarting with stat
+2023-08-30 19:05:45,474 WARNING  _log  * Debugger is active!
+2023-08-30 19:05:45,478 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-30 19:05:46,560 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-3_Encrypt_Decode_Msg_WithOneRotor-1.py', reloading
+2023-08-30 19:05:46,638 INFO     _log  * Restarting with stat
+2023-08-30 19:05:47,333 WARNING  _log  * Debugger is active!
+2023-08-30 19:05:47,341 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-30 19:06:03,858 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-3_Encrypt_Decode_Msg_WithOneRotor-1.py', reloading
+2023-08-30 19:06:03,969 INFO     _log  * Restarting with stat
+2023-08-30 19:06:04,677 WARNING  _log  * Debugger is active!
+2023-08-30 19:06:04,685 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-30 19:06:07,832 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-3_Encrypt_Decode_Msg_WithOneRotor-1.py', reloading
+2023-08-30 19:06:07,918 INFO     _log  * Restarting with stat
+2023-08-30 19:06:08,611 WARNING  _log  * Debugger is active!
+2023-08-30 19:06:08,619 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-30 19:06:09,699 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-3_Encrypt_Decode_Msg_WithOneRotor-1.py', reloading
+2023-08-30 19:06:09,810 INFO     _log  * Restarting with stat
+2023-08-30 19:06:10,535 WARNING  _log  * Debugger is active!
+2023-08-30 19:06:10,543 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-30 19:06:11,613 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-3_Encrypt_Decode_Msg_WithOneRotor-1.py', reloading
+2023-08-30 19:06:11,762 INFO     _log  * Restarting with stat
+2023-08-30 19:06:12,587 WARNING  _log  * Debugger is active!
+2023-08-30 19:06:12,587 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-30 19:06:19,112 INFO     _log 127.0.0.1 - - [30/Aug/2023 19:06:19] "GET /result_script_exec/?py_path=static/proj_enigmaGame_scripts/z-3_Encrypt_Decode_Msg_WithOneRotor-1.py HTTP/1.1" 200 -
+2023-08-30 19:06:19,235 INFO     _log 127.0.0.1 - - [30/Aug/2023 19:06:19] "GET /result_script_html HTTP/1.1" 200 -
+2023-08-30 19:06:31,402 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-3_Encrypt_Decode_Msg_WithOneRotor-1.py', reloading
+2023-08-30 19:06:31,501 INFO     _log  * Restarting with stat
+2023-08-30 19:06:32,321 WARNING  _log  * Debugger is active!
+2023-08-30 19:06:32,321 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-30 19:06:36,508 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-3_Encrypt_Decode_Msg_WithOneRotor-1.py', reloading
+2023-08-30 19:06:36,603 INFO     _log  * Restarting with stat
+2023-08-30 19:06:37,371 WARNING  _log  * Debugger is active!
+2023-08-30 19:06:37,379 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-30 19:07:51,438 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-3_Encrypt_Decode_Msg_WithOneRotor-1.py', reloading
+2023-08-30 19:07:51,543 INFO     _log  * Restarting with stat
+2023-08-30 19:07:52,268 WARNING  _log  * Debugger is active!
+2023-08-30 19:07:52,268 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-30 19:07:53,336 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-3_Encrypt_Decode_Msg_WithOneRotor-1.py', reloading
+2023-08-30 19:07:53,459 INFO     _log  * Restarting with stat
+2023-08-30 19:07:54,134 WARNING  _log  * Debugger is active!
+2023-08-30 19:07:54,134 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-30 19:07:56,234 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-3_Encrypt_Decode_Msg_WithOneRotor-1.py', reloading
+2023-08-30 19:07:56,337 INFO     _log  * Restarting with stat
+2023-08-30 19:07:57,085 WARNING  _log  * Debugger is active!
+2023-08-30 19:07:57,085 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-30 19:08:01,318 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-3_Encrypt_Decode_Msg_WithOneRotor-1.py', reloading
+2023-08-30 19:08:01,452 INFO     _log  * Restarting with stat
+2023-08-30 19:08:02,131 WARNING  _log  * Debugger is active!
+2023-08-30 19:08:02,131 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-30 19:08:29,110 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-3_Encrypt_Decode_Msg_WithOneRotor-1.py', reloading
+2023-08-30 19:08:29,229 INFO     _log  * Restarting with stat
+2023-08-30 19:08:30,031 WARNING  _log  * Debugger is active!
+2023-08-30 19:08:30,039 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-30 19:08:34,256 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-3_Encrypt_Decode_Msg_WithOneRotor-1.py', reloading
+2023-08-30 19:08:34,372 INFO     _log  * Restarting with stat
+2023-08-30 19:08:35,142 WARNING  _log  * Debugger is active!
+2023-08-30 19:08:35,150 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-30 19:08:59,001 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-3_Encrypt_Decode_Msg_WithOneRotor-1.py', reloading
+2023-08-30 19:08:59,109 INFO     _log  * Restarting with stat
+2023-08-30 19:08:59,972 WARNING  _log  * Debugger is active!
+2023-08-30 19:08:59,980 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-30 19:09:03,579 INFO     _log 127.0.0.1 - - [30/Aug/2023 19:09:03] "GET /project-EnigmaGame_script/?id=3 HTTP/1.1" 200 -
+2023-08-30 19:09:03,643 INFO     _log 127.0.0.1 - - [30/Aug/2023 19:09:03] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-08-30 19:09:03,914 INFO     _log 127.0.0.1 - - [30/Aug/2023 19:09:03] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-08-30 19:09:03,930 INFO     _log 127.0.0.1 - - [30/Aug/2023 19:09:03] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-08-30 19:09:03,930 INFO     _log 127.0.0.1 - - [30/Aug/2023 19:09:03] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-08-30 19:09:04,256 INFO     _log 127.0.0.1 - - [30/Aug/2023 19:09:04] "[36mGET /static/img/icons8-bulb-64.png HTTP/1.1[0m" 304 -
+2023-08-30 19:09:07,955 INFO     _log 127.0.0.1 - - [30/Aug/2023 19:09:07] "GET /result_script_exec/?py_path=static/proj_enigmaGame_scripts/z-3_Encrypt_Decode_Msg_WithOneRotor-1.py HTTP/1.1" 200 -
+2023-08-30 19:09:08,386 INFO     _log 127.0.0.1 - - [30/Aug/2023 19:09:08] "GET /result_script_html HTTP/1.1" 200 -
+2023-08-30 19:09:56,302 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-3_Encrypt_Decode_Msg_WithOneRotor-1.py', reloading
+2023-08-30 19:09:56,404 INFO     _log  * Restarting with stat
+2023-08-30 19:09:57,042 WARNING  _log  * Debugger is active!
+2023-08-30 19:09:57,050 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-30 19:09:58,137 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-3_Encrypt_Decode_Msg_WithOneRotor-1.py', reloading
+2023-08-30 19:09:58,251 INFO     _log  * Restarting with stat
+2023-08-30 19:09:59,089 WARNING  _log  * Debugger is active!
+2023-08-30 19:09:59,089 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-30 19:10:00,159 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-3_Encrypt_Decode_Msg_WithOneRotor-1.py', reloading
+2023-08-30 19:10:00,247 INFO     _log  * Restarting with stat
+2023-08-30 19:10:01,036 WARNING  _log  * Debugger is active!
+2023-08-30 19:10:01,036 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-30 19:14:41,978 INFO     _log 127.0.0.1 - - [30/Aug/2023 19:14:41] "GET /result_script_exec/?py_path=static/proj_enigmaGame_scripts/z-3_Encrypt_Decode_Msg_WithOneRotor-1.py HTTP/1.1" 200 -
+2023-08-30 19:14:42,085 INFO     _log 127.0.0.1 - - [30/Aug/2023 19:14:42] "GET /result_script_html HTTP/1.1" 200 -
+2023-08-30 19:15:26,641 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-3_Encrypt_Decode_Msg_WithOneRotor.py', reloading
+2023-08-30 19:15:26,766 INFO     _log  * Restarting with stat
+2023-08-30 19:15:27,685 WARNING  _log  * Debugger is active!
+2023-08-30 19:15:27,685 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-30 19:15:42,207 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-3_Encrypt_Decode_Msg_WithOneRotor.py', reloading
+2023-08-30 19:15:42,316 INFO     _log  * Restarting with stat
+2023-08-30 19:15:43,089 WARNING  _log  * Debugger is active!
+2023-08-30 19:15:43,089 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-30 19:15:54,070 INFO     _log 127.0.0.1 - - [30/Aug/2023 19:15:54] "GET /pythonScript/?py_path=static/proj_enigmaGame_scripts/z-3_Encrypt_Decode_Msg_WithOneRotor.py HTTP/1.1" 200 -
+2023-08-30 19:17:49,197 INFO     _log 127.0.0.1 - - [30/Aug/2023 19:17:49] "GET /result_script_exec/?py_path=static/proj_enigmaGame_scripts/z-3_Encrypt_Decode_Msg_WithOneRotor-1.py HTTP/1.1" 200 -
+2023-08-30 19:17:49,280 INFO     _log 127.0.0.1 - - [30/Aug/2023 19:17:49] "GET /result_script_html HTTP/1.1" 200 -
+2023-08-30 19:21:12,527 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-3_Encrypt_Decode_Msg_WithOneRotor.py', reloading
+2023-08-30 19:21:12,644 INFO     _log  * Restarting with stat
+2023-08-30 19:21:13,556 WARNING  _log  * Debugger is active!
+2023-08-30 19:21:13,564 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-30 19:21:14,634 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-3_Encrypt_Decode_Msg_WithOneRotor.py', reloading
+2023-08-30 19:21:14,769 INFO     _log  * Restarting with stat
+2023-08-30 19:21:15,469 WARNING  _log  * Debugger is active!
+2023-08-30 19:21:15,469 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-30 19:21:50,743 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-3_Encrypt_Decode_Msg_WithOneRotor.py', reloading
+2023-08-30 19:21:50,862 INFO     _log  * Restarting with stat
+2023-08-30 19:21:51,858 WARNING  _log  * Debugger is active!
+2023-08-30 19:21:51,866 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-30 19:21:56,059 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-3_Encrypt_Decode_Msg_WithOneRotor-1.py', reloading
+2023-08-30 19:21:56,176 INFO     _log  * Restarting with stat
+2023-08-30 19:21:57,061 WARNING  _log  * Debugger is active!
+2023-08-30 19:21:57,069 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-30 19:22:04,085 INFO     _log 127.0.0.1 - - [30/Aug/2023 19:22:04] "GET /result_script_exec/?py_path=static/proj_enigmaGame_scripts/z-3_Encrypt_Decode_Msg_WithOneRotor-1.py HTTP/1.1" 200 -
+2023-08-30 19:22:04,195 INFO     _log 127.0.0.1 - - [30/Aug/2023 19:22:04] "GET /result_script_html HTTP/1.1" 200 -
+2023-08-30 19:22:18,261 INFO     _log 127.0.0.1 - - [30/Aug/2023 19:22:18] "GET /static/logFiles/server_messages.txt HTTP/1.1" 200 -
+2023-08-30 19:22:27,354 INFO     _log 127.0.0.1 - - [30/Aug/2023 19:22:27] "GET /static/proj_enigmaGame_scripts/z-3_Encrypt_Decode_Msg_WithOneRotor.py HTTP/1.1" 200 -
+2023-08-30 19:23:24,081 INFO     _log 127.0.0.1 - - [30/Aug/2023 19:23:24] "GET /pythonScript/?py_path=static/proj_enigmaGame_scripts/z-3_Encrypt_Decode_Msg_WithOneRotor.py HTTP/1.1" 200 -
+2023-08-30 19:25:06,080 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-3_Encrypt_Decode_Msg_WithOneRotor.py', reloading
+2023-08-30 19:25:06,211 INFO     _log  * Restarting with stat
+2023-08-30 19:25:07,192 WARNING  _log  * Debugger is active!
+2023-08-30 19:25:07,192 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-30 19:25:09,318 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-3_Encrypt_Decode_Msg_WithOneRotor.py', reloading
+2023-08-30 19:25:09,425 INFO     _log  * Restarting with stat
+2023-08-30 19:25:10,083 WARNING  _log  * Debugger is active!
+2023-08-30 19:25:10,083 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-30 19:25:12,194 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-3_Encrypt_Decode_Msg_WithOneRotor.py', reloading
+2023-08-30 19:25:12,308 INFO     _log  * Restarting with stat
+2023-08-30 19:25:13,294 WARNING  _log  * Debugger is active!
+2023-08-30 19:25:13,303 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-30 19:25:17,641 INFO     _log 127.0.0.1 - - [30/Aug/2023 19:25:17] "GET /project-EnigmaGame_script/?id=3 HTTP/1.1" 200 -
+2023-08-30 19:25:17,711 INFO     _log 127.0.0.1 - - [30/Aug/2023 19:25:17] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-08-30 19:25:17,976 INFO     _log 127.0.0.1 - - [30/Aug/2023 19:25:17] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-08-30 19:25:17,989 INFO     _log 127.0.0.1 - - [30/Aug/2023 19:25:17] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-08-30 19:25:17,989 INFO     _log 127.0.0.1 - - [30/Aug/2023 19:25:17] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-08-30 19:25:24,382 INFO     _log 127.0.0.1 - - [30/Aug/2023 19:25:24] "GET /pythonScript/?py_path=static/proj_enigmaGame_scripts/z-3_Encrypt_Decode_Msg_WithOneRotor.py HTTP/1.1" 200 -
+2023-08-30 19:25:41,436 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-3_Encrypt_Decode_Msg_WithOneRotor.py', reloading
+2023-08-30 19:25:41,550 INFO     _log  * Restarting with stat
+2023-08-30 19:25:42,389 WARNING  _log  * Debugger is active!
+2023-08-30 19:25:42,397 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-30 19:25:45,566 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-3_Encrypt_Decode_Msg_WithOneRotor.py', reloading
+2023-08-30 19:25:45,688 INFO     _log  * Restarting with stat
+2023-08-30 19:25:46,480 WARNING  _log  * Debugger is active!
+2023-08-30 19:25:46,480 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-30 19:25:47,571 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-3_Encrypt_Decode_Msg_WithOneRotor.py', reloading
+2023-08-30 19:25:47,703 INFO     _log  * Restarting with stat
+2023-08-30 19:25:48,562 WARNING  _log  * Debugger is active!
+2023-08-30 19:25:48,562 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-30 19:26:04,114 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-3_Encrypt_Decode_Msg_WithOneRotor.py', reloading
+2023-08-30 19:26:04,201 INFO     _log  * Restarting with stat
+2023-08-30 19:26:04,980 WARNING  _log  * Debugger is active!
+2023-08-30 19:26:04,980 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-30 19:26:06,089 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-3_Encrypt_Decode_Msg_WithOneRotor.py', reloading
+2023-08-30 19:26:06,227 INFO     _log  * Restarting with stat
+2023-08-30 19:26:07,092 WARNING  _log  * Debugger is active!
+2023-08-30 19:26:07,092 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-30 19:26:08,184 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-3_Encrypt_Decode_Msg_WithOneRotor.py', reloading
+2023-08-30 19:26:08,299 INFO     _log  * Restarting with stat
+2023-08-30 19:26:09,203 WARNING  _log  * Debugger is active!
+2023-08-30 19:26:09,203 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-30 19:26:12,374 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-3_Encrypt_Decode_Msg_WithOneRotor.py', reloading
+2023-08-30 19:26:12,495 INFO     _log  * Restarting with stat
+2023-08-30 19:26:13,551 WARNING  _log  * Debugger is active!
+2023-08-30 19:26:13,551 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-30 19:26:16,123 INFO     _log 127.0.0.1 - - [30/Aug/2023 19:26:16] "GET /project-EnigmaGame_script/?id=3 HTTP/1.1" 200 -
+2023-08-30 19:26:16,197 INFO     _log 127.0.0.1 - - [30/Aug/2023 19:26:16] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-08-30 19:26:16,350 INFO     _log 127.0.0.1 - - [30/Aug/2023 19:26:16] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-08-30 19:26:16,464 INFO     _log 127.0.0.1 - - [30/Aug/2023 19:26:16] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-08-30 19:26:16,464 INFO     _log 127.0.0.1 - - [30/Aug/2023 19:26:16] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-08-30 19:26:16,808 INFO     _log 127.0.0.1 - - [30/Aug/2023 19:26:16] "[36mGET /static/img/icons8-bulb-64.png HTTP/1.1[0m" 304 -
+2023-08-30 19:26:22,101 INFO     _log 127.0.0.1 - - [30/Aug/2023 19:26:22] "GET /pythonScript/?py_path=static/proj_enigmaGame_scripts/z-3_Encrypt_Decode_Msg_WithOneRotor.py HTTP/1.1" 200 -
+2023-08-30 19:26:49,805 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-3_Encrypt_Decode_Msg_WithOneRotor.py', reloading
+2023-08-30 19:26:49,899 INFO     _log  * Restarting with stat
+2023-08-30 19:26:50,672 WARNING  _log  * Debugger is active!
+2023-08-30 19:26:50,678 INFO     _log  * Debugger PIN: 109-950-851
+2023-08-30 19:26:59,010 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-3_Encrypt_Decode_Msg_WithOneRotor.py', reloading
+2023-08-30 19:26:59,155 INFO     _log  * Restarting with stat
