@@ -15,19 +15,20 @@ import string
 NO_COLOR = "\033[00m"
 FR_MAG   = "\033[91m"
 FR_GREEN = "\033[92m"
-FR_MAG  = "\033[93m"
+FR_MAG   = "\033[93m"
 FR_BLUE  = "\033[94m"
 FR_MAG   = "\033[95m"
 
-# my text
+# my message
 ALPHAB_STR = 'abcdefghijklmnopqrstuvwxyz'
 ORIG_ALPHAB = list(string.ascii_lowercase)      # in list mode
 ALPHAB = list(string.ascii_lowercase)
 
-ALPHAB_TO_ENCRYPT = 'ejnkzcmtslbrdhgfwvxqoaiyup'
+ALPHAB_TO_ENCRYPT = 'yzxuqrbapsfwjdtgiomhvelckn'
+alphab = list(ALPHAB_TO_ENCRYPT)
 #ALPHAB_TO_ENCRYPT = 'mcspifrhajkbdguoqletnvwxyz'
-MY_TEXT = 'El murcielago esta hambriento'
-ENCRYPTED_TEXT =  'zr dovnszremg zxqe tedjvszhqg'
+MY_MSG = 'el murcielago no come murcielagos'
+ENCRYPTED_MSG =  'qf fodcxcuolu zz tnld vzcajadzbdi'
 #ENCRYPTED_TEXT = 'ib dnlsaibmru ietm hmdclaigtu'
 
 # FUNCIONS SECTION
@@ -36,35 +37,54 @@ ENCRYPTED_TEXT =  'zr dovnszremg zxqe tedjvszhqg'
 def pause():  
   userInput = input(f"{FR_MAG}Press ENTER to continue, or CTRL-C to exit")  
 
+def alphab_jump(alph,k):
+    # jump value -k to rotate list    
+    return alph[-k:] + alph[:-k]
+
 def decipher(alphab1, event):
 
     if event.is_set():
         return
-    else:  
-                
-        decoded_text = '' 
-        for ch in ENCRYPTED_TEXT:
-            # find 'ch' in new_alphab 
-            if ch in alphab1:
-                ind = alphab1.index(ch) 
-                decoded_text += ALPHAB[ind]
-            elif ch == ' ':
-                decoded_text += ch
-            else:      
-                pass 
+    else: 
+        
+        # list of all derived alphabets with rotation by 1 to right position
+        alphab_list = []  
+        for jump in range(27):
+            alphab_list.append(alphab_jump(alphab1,jump))
 
-        if MY_TEXT.casefold() == decoded_text:
-            print("print empty line")
+        # Process with alphab_list (rotor effect)
+        counter = 0
+        decoded_msg = ""
+        for ch in ENCRYPTED_MSG:
+            if ch == ' ':
+                decoded_msg = decoded_msg + ' '
+            else:
+                if counter < 10:
+                    counter_2f = '0'+ str(counter)
+                else:
+                    counter_2f = counter    
+                if alphab_list[counter % 26].index(ch) < 10:
+                    index_2f = '0' + str(alphab_list[counter % 26].index(ch))  
+                else:
+                    index_2f = "{:2}".format(alphab_list[counter % 26].index(ch))  
+
+                #print(f"ch {counter_2f}: {ch} index: {index_2f} | {' '.join(alphab_list[counter % 26])} | orig alphab: {ORIG_ALPHAB[alphab_list[counter % 26].index(ch)]}")
+                decoded_msg = decoded_msg + ORIG_ALPHAB[alphab_list[counter % 26].index(ch)]
+                counter=counter+1
+           
+        if MY_MSG.casefold() == decoded_msg:
+            print()
             print(f"\t\t{FR_MAG}------ BINGO ------ BINGO ------ BINGO ------ BINGO ------ BINGO ------ BINGO -------")
             print(f'\t\t{FR_GREEN}Parent Process \'{os.getppid()}\' | Child Process \'{os.getpid()}\' --> THE SOLUTION WAS FOUND !') 
             #print(f"{FR_GREEN}\tPID process child: {os.getpid} ")
-            print(f"\t\t{FR_GREEN}Decoded text is correct: {decoded_text}")
-            print(f"\t\t{FR_GREEN}Encrypted text: {ENCRYPTED_TEXT}")
+            print(f"\t\t{FR_GREEN}Decoded message is correct: {decoded_msg}")
+            print(f"\t\t{FR_GREEN}Encrypted message: {ENCRYPTED_MSG}")
             print(f'\t\t{FR_GREEN}Correct Alphabet Decoder: {(" ".join(alphab1))}', flush=True)
-            print("print empty line")
+            print()
             print(f"\t{FR_GREEN}=== STOP PROCESS STARTED")
-            print("print empty line")
+            print()
             event.set()
+
 
 # protect the entry point
 if __name__ == '__main__':
@@ -73,9 +93,9 @@ if __name__ == '__main__':
     # time
     inicio = time.time()
 
-    print("print empty line")
+    print()
     print(f'{FR_GREEN}=== \'MULTIPROCESSING\' started with pid: {os.getpid()}')
-    print("print empty line")
+    print()
 
     print(f'\t{FR_MAG}Reading file of sub alphab strings started at: \'{datetime.now()}\'')
     
@@ -91,16 +111,16 @@ if __name__ == '__main__':
     print(f"\t\tFirst messy_alphabets[0] => {messy_alphabets[0]}")
     print(f"\t\tLast messy_alphabets[{len(messy_alphabets)-1}] => {messy_alphabets[len(messy_alphabets)-1]}")    
     print(f'\t{FR_MAG}Reading file of sub alphab strings finished at: \'{datetime.now()}\'')  
-    print("print empty line")
+    print()
 
     print(f"{FR_GREEN}\tOriginal Alphabet:\t\t{(' '.join(ORIG_ALPHAB))}")
-    print(f"{FR_GREEN}\tOriginal text:\t\t{MY_TEXT}")
-    print(f"{FR_GREEN}\tEncrypted text:\t\t{ENCRYPTED_TEXT}")
+    print(f"{FR_GREEN}\tOriginal message:\t\t{MY_MSG}")
+    print(f"{FR_GREEN}\tEncrypted message:\t\t{ENCRYPTED_MSG}")
     print(f"{FR_GREEN}\tMax Number of CPU's: {cpu_count()}")
-    print("print empty line")
+    print()
     
     print(f'{FR_BLUE}\tCHECKING \'{m_alp}\' ALPHABETS BEGAN AT \'{datetime.now()}\'')    
-    print("print empty line")
+    print()
     
     # create the manager
     with Manager() as manager:
@@ -122,12 +142,12 @@ if __name__ == '__main__':
             
             result.wait()
             # wait for all tasks to stop    
-            print("print empty line")        
+            print()        
             print(f'{FR_MAG}=== ALL TASKS STOPED ===')
-            print("print empty line")
+            print()
 
             # elapsed time
             elapsed_time = "{:.2f}".format(time.time()-inicio)
             print(f"{FR_BLUE}================  Elapsed time: {elapsed_time} seconds =================")
-            print("print empty line")
+            print()
 

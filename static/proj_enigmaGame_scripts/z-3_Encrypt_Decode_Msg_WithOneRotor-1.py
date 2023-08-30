@@ -83,23 +83,21 @@ if __name__ == "__main__":
     counter = 0
     decoded_msg = ""
     for ch in encrypted_msg:
-        if ch != ' ':
+        if ch == ' ':
+            decoded_msg = decoded_msg + ' '
+        else:
+
             if counter < 10:
                 counter_2f = '0'+ str(counter)
             else:
-                counter_2f = counter    
+                counter_2f = counter
+
             if alphab_list[counter % 26].index(ch) < 10:
                 index_2f = '0' + str(alphab_list[counter % 26].index(ch))  
             else:
                 index_2f = "{:2}".format(alphab_list[counter % 26].index(ch))              
-            """
-            counter_2f = "{:2}".format(counter)
-            index_2f = "{:2}".format(alphab_list[counter % 26].index(ch))       
-            """
+            
             print(f"ch {counter_2f}: {ch} index: {index_2f} | {' '.join(alphab_list[counter % 26])} | orig alphab: {alphab_orig[alphab_list[counter % 26].index(ch)]}")
-        if ch == ' ':
-            decoded_msg = decoded_msg + ' '
-        else:
             decoded_msg = decoded_msg + alphab_orig[alphab_list[counter % 26].index(ch)]
             counter=counter+1
 
