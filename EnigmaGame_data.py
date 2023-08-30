@@ -8,8 +8,8 @@ def Enigma_scripts():
             'author': 'Igg',
             'date_created': '27-03-2023',
             'source_url': '',
-            'section': 'Multiprocessing',
-            'title': 'Use of two or more CPUs within your PC',
+            'section': 'Multiprocessing and Sums',
+            'title': 'Calculate the individual sum of thousands of arithmetic progressions.',
             'fileDirPath': 'static/proj_enigmaGame_scripts/mpPool_Arith_Progres_Sum.py',  
             'fileDirPath1': 'static/proj_enigmaGame_scripts/mpPool_Arith_Progres_Sum1.py',  
             
@@ -27,8 +27,8 @@ def Enigma_scripts():
             'author': 'Igg',
             'date_created': '27-03-2023',
             'source_url': '',
-            'section': 'Multiprocessing',
-            'title': 'Generate permutations of alphab of 26 chars',
+            'section': 'Permutations of the alphabet',
+            'title': 'Generate a file with millions of permutations of the alphabet.',
             'fileDirPath': 'static/proj_enigmaGame_scripts/z-writePermut_26_File.py',  
             'fileDirPath1': 'static/proj_enigmaGame_scripts/z-writePermut_26_File_1.py',  
             
@@ -46,8 +46,8 @@ def Enigma_scripts():
             'author': 'Igg',
             'date_created': '10-04-2023',
             'source_url': '',
-            'section': 'Multiprocessing',
-            'title': 'Encrypt and decode a message, using an alphabet and a position rotor',
+            'section': 'Encrypt-Decode',
+            'title': 'Encrypt and decode a message, using an messy alphabet with one rotor function',
             'fileDirPath': 'static/proj_enigmaGame_scripts/z-3_Encrypt_Decode_Msg_WithOneRotor.py',  
             'fileDirPath1': 'static/proj_enigmaGame_scripts/z-3_Encrypt_Decode_Msg_WithOneRotor-1.py',  
             
@@ -65,20 +65,38 @@ def Enigma_scripts():
             'author': 'Igg',
             'date_created': '10-04-2023',
             'source_url': '',
-            'section': 'Multiprocessing',
-            'title': 'Use of two or more CPUs within your PC',
+            'section': 'Multiprocessing & Messages',
+            'title': 'Decipher a message that was encoded using a permutation of the alphabet',
             'fileDirPath': 'static/proj_enigmaGame_scripts/mpPoolManagerEnigmaRandom-Alphab26.py',  
             'fileDirPath1': 'static/proj_enigmaGame_scripts/mpPoolManagerEnigmaRandom-Alphab26-1.py',  
             
-            'homework': 'Encode a message with a "messy alphabet", and try to decode it reading millions permutations of the alphabet, each with the property that the permutated alphabet letter doesn\'t coincide with its position in the normal alphabet. In this case, for time reasons, we used a file of two hundred thousand of permutations.\n\nIf you download the code of the previous exercise and this one, you can create a file of several million permutations of the alphabet, and then do the work of decoding it. In the case of creating a file of two million permutations, since I was not working with multiprocessing with my laptop (Intel I7), the process took around 22 minutes.',
+            'homework': 'Given a encrypted message, try to decode it reading millions permutations of the alphabet, each with the property that the permutated alphabet letter doesn\'t coincide with its position in the normal alphabet. In this case, for time reasons, we used a file of two hundred thousand of permutations.\n\nIf you download the code of the second exercise and this one, you can create a file of several million permutations of the alphabet, and then do the work of decoding it. In the case of creating a file of two million permutations, since I was not working with multiprocessing with my laptop (Intel I7), the process took around 22 minutes.',
 
             'body': 'With "Multiprocessing" we can use two or more CPUs units within a single computer system. It is the best approach to get the full potential from our hardware by utilizing full number of CPU cores available in our computer system.\n\n\'Manager class\' of multiprocessing module provides a way to coordinate shared information between all its users. A manager object controls a server process, which manages shared objects and allows other processes to manipulate them. In other words, managers provide a way to create data that can be shared between different processes.\n\nIf you touch the button to see the code, you will realize that it is relatively very simple. But you have to go through several tutorials to get to it. In the tab "My Approach" you will find some interesting links on the subject.\n\nFor now, you can execute in console button, or download the .zip (download button) and execute .bat file in your local "downloads folder".\nTIP: create a folder called "py_files" inside "downloads", and move the .zip to that folder. Extract the files and run the .bat (with double click).\nNOTE: you must have python in the "path" of your pc, which you can check in "environment variables"',          
 
             'code_url': '/static/proj_enigmaGame_scripts/mpPoolManagerEnigmaRandom-Alphab26.py',  
             'zip_url' : '/static/proj_enigmaGame_scripts/mpPoolManagerEnigmaRandom.zip',  
             'img': '/img/icons8-consola-100.png'    
-        }   
+        },   
         
+        {
+            'id': 5,             
+            'author': 'Igg',
+            'date_created': '27-08-2023',
+            'source_url': '',
+            'section': 'Multiprocessing & Messages',
+            'title': 'Decipher a message that was encoded using a messy alphabet with one rotor.',
+            'fileDirPath': 'static/proj_enigmaGame_scripts/mpPoolManagerEnigmaRandom-Alphab26.py',  
+            'fileDirPath1': 'static/proj_enigmaGame_scripts/mpPoolManagerEnigmaRandom-Alphab26-1.py',  
+            
+            'homework': 'Given a encrypted message that was generated with a sort of simple version of the enigma machine with a single rotor, try to decode it reading millions permutations of the alphabet. Each messy alphabet has the property that the position of the letter doesn\'t coincide with its position in the normal alphabet. The rotor function rotate the messy alhpabet one position each time one letter of the message is processed. In this case, for time reasons, we used a file of two hundred thousand of permutations.\n\nIf you download the code of the second exercise and this one, you can create a file of several million permutations of the alphabet, and then do the work of decoding it. In the case of creating a file of two million permutations, since I was not working with multiprocessing with my laptop (Intel I7), the process took around 22 minutes.',
+
+            'body': 'With "Multiprocessing" we can use two or more CPUs units within a single computer system. It is the best approach to get the full potential from our hardware by utilizing full number of CPU cores available in our computer system.\n\n\'Manager class\' of multiprocessing module provides a way to coordinate shared information between all its users. A manager object controls a server process, which manages shared objects and allows other processes to manipulate them. In other words, managers provide a way to create data that can be shared between different processes.\n\nIf you touch the button to see the code, you will realize that it is relatively very simple. But you have to go through several tutorials to get to it. In the tab "My Approach" you will find some interesting links on the subject.\n\nFor now, you can execute in console button, or download the .zip (download button) and execute .bat file in your local "downloads folder".\nTIP: create a folder called "py_files" inside "downloads", and move the .zip to that folder. Extract the files and run the .bat (with double click).\nNOTE: you must have python in the "path" of your pc, which you can check in "environment variables"',          
+
+            'code_url': '/static/proj_enigmaGame_scripts/mpPoolManagerEnigmaRandom-Alphab26.py',  
+            'zip_url' : '/static/proj_enigmaGame_scripts/mpPoolManagerEnigmaRandom.zip',  
+            'img': '/img/icons8-consola-100.png'    
+        }
 
     ]
 
