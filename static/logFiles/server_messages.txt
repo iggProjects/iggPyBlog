@@ -9061,3 +9061,5 @@ jinja2.exceptions.TemplateNotFound: excercses.html
 2023-08-30 19:26:50,678 INFO     _log  * Debugger PIN: 109-950-851
 2023-08-30 19:26:59,010 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-3_Encrypt_Decode_Msg_WithOneRotor.py', reloading
 2023-08-30 19:26:59,155 INFO     _log  * Restarting with stat
+2023-08-30 19:26:59,995 WARNING  _log  * Debugger is active!
+2023-08-30 19:27:00,004 INFO     _log  * Debugger PIN: 109-950-851
