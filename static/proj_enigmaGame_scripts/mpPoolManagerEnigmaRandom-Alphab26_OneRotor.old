@@ -13,9 +13,9 @@ import string
 # CONSTANTS
 # Colors
 NO_COLOR = "\033[00m"
-FR_MAG   = "\033[91m"
+FR_RED   = "\033[91m"
 FR_GREEN = "\033[92m"
-FR_MAG   = "\033[93m"
+FR_YELL  = "\033[93m"
 FR_BLUE  = "\033[94m"
 FR_MAG   = "\033[95m"
 
@@ -25,12 +25,13 @@ ORIG_ALPHAB = list(string.ascii_lowercase)      # in list mode
 ALPHAB = list(string.ascii_lowercase)
 
 ALPHAB_TO_ENCRYPT = 'yzxuqrbapsfwjdtgiomhvelckn'
-alphab = list('yzxuqrbapsfwjdtgiomhvelckn')
-#alphab = list(ALPHAB_TO_ENCRYPT)
+alphab = list(ALPHAB_TO_ENCRYPT)
 #ALPHAB_TO_ENCRYPT = 'mcspifrhajkbdguoqletnvwxyz'
+
 MY_MSG = 'el murcielago no come murcielagos'
-ENCRYPTED_MSG = 'qf fodcxcuolu zz tnld vzcajadzbdi'
-                
+ENCRYPTED_MSG =  'qf fodcxcuolu zz tnld vzcajadzbdi'
+#ENCRYPTED_TEXT = 'ib dnlsaibmru ietm hmdclaigtu'
+
 # FUNCIONS SECTION
 
 # pause function
@@ -43,23 +44,19 @@ def alphab_jump(alph,k):
 
 def decipher(alphab1, event):
 
+
     if event.is_set():
         return
+    
     else: 
+        print(f"decipher: alphab1-> {alphab1}")
+
         
         # list of all derived alphabets with rotation by 1 to right position
         alphab_list = []  
         for jump in range(27):
-            alphab_temp = alphab1[-jump:] + alphab1[:-jump]
-            alphab_list.append(alphab_temp)
-            #alphab_list.append(alphab_jump(alphab1,jump))
-            """
-            jump_2f = "{:2}".format(jump)            
-            if jump != 26:
-                print(f"permuted alphab rotation: +{jump_2f} | alphab: {' '.join(alphab_list[jump])}")
-            else:
-                print(f"permuted alphab rotation: +{jump_2f} | alphab: {' '.join(alphab_list[jump])}{FR_BLUE} <== INITIAL PERM ALPHAB{NO_COLOR}")
-            """
+            alphab_list.append(alphab_jump(alphab1,jump))
+
         # Process with alphab_list (rotor effect)
         counter = 0
         decoded_msg = ""
@@ -68,23 +65,11 @@ def decipher(alphab1, event):
                 decoded_msg = decoded_msg + ' '
             else:
 
-                """
-                if counter < 10:
-                    counter_2f = '0'+ str(counter)
-                else:
-                    counter_2f = counter    
-                if alphab_list[counter % 26].index(ch) < 10:
-                    index_2f = '0' + str(alphab_list[counter % 26].index(ch))  
-                else:
-                    index_2f = "{:2}".format(alphab_list[counter % 26].index(ch))                                  
-                print(f"ch {counter_2f}: {ch} index: {index_2f} | {' '.join(alphab_list[counter % 26])} | orig alphab: {ORIG_ALPHAB[alphab_list[counter % 26].index(ch)]}")
-                """
-
-                decoded_msg = decoded_msg + ORIG_ALPHAB[alphab_list[counter % 26].index(ch)]
-                #decoded_msg = decoded_msg + alphab_orig[alphab_list[counter % 26].index(ch)]
+                #print(f"ch {counter_2f}: {ch} index: {index_2f} | {' '.join(alphab_list[counter % 26])} | orig alphab: {ORIG_ALPHAB[alphab_list[counter % 26].index(ch)]}")
+                decoded_msg = decoded_msg + ALPHAB[alphab_list[counter % 26].index(ch)]
                 counter=counter+1
-                
-        print(f"\t\t\t====> decoded message: {decoded_msg} | alphab: {alphab1}")   
+
+        alphab_list = []  
 
         if MY_MSG.casefold() == decoded_msg:
             print()
@@ -99,6 +84,7 @@ def decipher(alphab1, event):
             print()
             event.set()
 
+
 # protect the entry point
 if __name__ == '__main__':
     # clean screen
@@ -110,7 +96,7 @@ if __name__ == '__main__':
     print(f'{FR_GREEN}=== \'MULTIPROCESSING\' started with pid: {os.getpid()}')
     print()
 
-    print(f'\t{FR_MAG}Reading file of sub alphab strings started at: \'{datetime.now()}\'')
+    print(f'\t{FR_MAG}Reading file of sub alphab strings started at: \'{datetime.now()}\'{NO_COLOR}')
     
     messy_alphabets = []
     #messy_alphabets.append(ALPHAB_15_TO_ENCRYPT)  
@@ -121,18 +107,18 @@ if __name__ == '__main__':
     messy_alphabets.append(ALPHAB_TO_ENCRYPT)
     m_alp = '{:,}'.format(len(messy_alphabets)).replace(',','.')    
 
-    print(f"\t\tFirst messy_alphabets[0] => {messy_alphabets[0]}")
-    print(f"\t\tLast messy_alphabets[{len(messy_alphabets)-1}] => {messy_alphabets[len(messy_alphabets)-1]}")    
-    print(f'\t{FR_MAG}Reading file of sub alphab strings finished at: \'{datetime.now()}\'')  
+    print(f"\t\tFirst messy_alphabets[0] => {messy_alphabets[0]}")    
+    print(f'\t{FR_MAG}Reading file of sub alphab strings finished at: \'{datetime.now()}\'{NO_COLOR}') 
+    print(f"\t\tLast messy_alphabets[{len(messy_alphabets)-1}] => {messy_alphabets[len(messy_alphabets)-1]}")     
     print()
 
-    print(f"{FR_GREEN}\tOriginal Alphabet:\t\t{(' '.join(ORIG_ALPHAB))}")
-    print(f"{FR_GREEN}\tOriginal message:\t\t{MY_MSG}")
-    print(f"{FR_GREEN}\tEncrypted message:\t\t{ENCRYPTED_MSG}")
-    print(f"{FR_GREEN}\tMax Number of CPU's: {cpu_count()}")
+    print(f"{FR_GREEN}\tOriginal Alphabet:\t{(' '.join(ORIG_ALPHAB))}")
+    print(f"{FR_GREEN}\tOriginal message:\t{MY_MSG}")
+    print(f"{FR_GREEN}\tEncrypted message:\t{ENCRYPTED_MSG}")
+    print(f"{FR_GREEN}\tMax Number of CPU's:\t{cpu_count()}")
     print()
     
-    print(f'{FR_BLUE}\tCHECKING \'{m_alp}\' ALPHABETS BEGAN AT \'{datetime.now()}\'')    
+    print(f'{FR_YELL}\tCHECKING \'{m_alp}\' ALPHABETS BEGAN AT \'{datetime.now()}\'{NO_COLOR}')    
     print()
     
     # create the manager
@@ -140,7 +126,8 @@ if __name__ == '__main__':
         # create the shared event
         event = manager.Event()
         
-        print(f'{FR_MAG}\t\tFrom Main - With Manager() as manager:\t\tevent -> {event}', flush=True)
+        print(f'{FR_GREEN}\t\tFrom Main - With Manager() as manager:', flush=True)
+        print(f'{FR_MAG}\t\t\tevent -> {event}', flush=True)
 
         # create and configure the process pool
         # Note: if you do not put a valid number of CPU's, Pool() assume the maximum of PC 
@@ -148,7 +135,8 @@ if __name__ == '__main__':
 
             # prepare arguments 
             alphabets = [(messy_alphabets[i],event) for i in range(len(messy_alphabets))]
-            print(f'{FR_MAG}\t\tFrom Main - With Pool({cpu_count()}) as pool:\t\t\tpool -> {pool}', flush=True)
+            print(f'{FR_GREEN}\t\tFrom Main - With Pool({cpu_count()}) as pool:', flush=True)
+            print(f'{FR_MAG}\t\t\tpool -> {pool}{NO_COLOR}', flush=True)
 
             # issue tasks asynchronously
             result = pool.starmap_async(decipher, alphabets)            

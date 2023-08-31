@@ -42,9 +42,12 @@ def pause():
 
 def decipher(alphab1, event):
 
+    #print(f"decipher: alphab1-> {alphab1}")
+
     if event.is_set():
         return
     else:  
+        print(f"decipher: alphab1-> {alphab1}")
                 
         decoded_text = '' 
         for ch in ENCRYPTED_TEXT:
