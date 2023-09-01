@@ -85,10 +85,11 @@ if __name__ == "__main__":
         if ch == ' ':
             decoded_msg = decoded_msg + ' '
         else:
+            ind = alphab_list[counter % 26].index(ch)
             counter_2f = "{:2}".format(counter)
-            index_2f = "{:2}".format(alphab_list[counter % 26].index(ch))    
-            print(f"ch {counter_2f}: {ch} index: {index_2f} | {' '.join(alphab_list[counter % 26])} | orig alphab: {alphab_orig[alphab_list[counter % 26].index(ch)]}")
-            decoded_msg = decoded_msg + alphab_orig[alphab_list[counter % 26].index(ch)]
+            index_2f = "{:2}".format(ind)    
+            print(f"ch {counter_2f}: {ch} index: {index_2f} | {' '.join(alphab_list[counter % 26])} | orig alphab: {alphab_orig[ind]}")
+            decoded_msg = decoded_msg + alphab_orig[ind]
             counter=counter+1
 
     print()  

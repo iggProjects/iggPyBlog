@@ -49,7 +49,14 @@ def decipher(alphab1, event):
     if event.is_set():
         return
     else:
-        alphab1_list = list(alphab1)  
+
+        #print(f"\t\tdecipher: alphab1-> {alphab1}")
+        alphab_list = []  
+        jump=0
+        for jump in range(27):
+            alphab_list.append(alphab1[-jump:] + alphab1[:-jump])
+
+        #print(f"\t\tdecipher: alphab1-> {alphab1} | alphab_list length: {len(alphab_list)}")
         
         decoded_text = '' 
         counter=0        
@@ -57,18 +64,25 @@ def decipher(alphab1, event):
             if ch == ' ':
                 decoded_text = decoded_text + ch
             else:
-                ind = (alphab1_list.index(ch) + counter) % 26
+                ind = alphab_list[counter % 26].index(ch)			
+                #counter_2f = "{:2}".format(counter)
+                #index_2f = "{:2}".format(ind)    
+                #print(f"ch {counter_2f}: {ch} index: {index_2f} | {' '.join(alphab_list[counter % 26])} | orig alphab: {alphab_orig[alphab_list[counter % 26].index(ch)]}")
                 decoded_text = decoded_text + ALPHAB[ind]
                 counter=counter+1
 
+        print(f"\t\t\talphab: {alphab1}, decode text: {decoded_text}")
+        print()
+        alphab_list = []
+
         if MY_TEXT.casefold() == decoded_text:
             print(f"\t{FR_YELL}------ BINGO ------ BINGO ------ BINGO ------ BINGO ------ BINGO ------ BINGO -------")
-            print()
             print(f'\t{FR_GREEN}Parent Process "{os.getppid()}" | Child Process "{os.getpid()}" --> THE SOLUTION WAS FOUND !{NO_COLOR}') 
-            print()
-            print(f"\t\t{FR_RED}{ENCRYPTED_TEXT} ==> {decoded_text} {NO_COLOR}")            
-            print(f'\t\t{FR_GREEN}Correct Alphabet Decoder: {NO_COLOR}{(" ".join(alphab1))}', flush=True)            
-            print()            
+            #print(f"{FR_GREEN}\tPID process child: {os.getpid} {NO_COLOR}")
+            print(f"\t\t{FR_GREEN}Decoded text is correct: {NO_COLOR}{decoded_text}")
+            print(f"\t\t{FR_GREEN}Encrypted text: {NO_COLOR}{ENCRYPTED_TEXT}")
+            print(f'\t\t{FR_GREEN}Correct Alphabet Decoder: {NO_COLOR}{(",".join(alphab1))}', flush=True)
+            print(f"\t{FR_YELL}-------------------------------------------------------------------------------------")
             print(f"\t\033[2;33;41m-------- STOP PROCESS STARTED --------{NO_COLOR}")
             print()
             event.set()
@@ -92,11 +106,13 @@ if __name__ == '__main__':
 
     print(f'{FR_YELL}\t--- reading file of sub alphab str started at "{datetime.now()}" ---{NO_COLOR}')
 
-    messy_alphabets = []    
+    messy_alphabets = []
+    #messy_alphabets.append(ALPHAB_TO_ENCRYPT)  
     messy_lines = set(open('z-permutFileSorted.txt').readlines())
     for messy_str in messy_lines:
         messy_alphabets.append(messy_str)
-    messy_alphabets.append(ALPHAB_TO_ENCRYPT)
+    messy_alphabets[2] = ALPHAB_TO_ENCRYPT    
+    #messy_alphabets.append(ALPHAB_TO_ENCRYPT)
     m_alp = '{:,}'.format(len(messy_alphabets)).replace(',','.')    
 
     print(f"\t\tFirst messy_alphabets[0] ===> {messy_alphabets[0]}")
@@ -133,11 +149,12 @@ if __name__ == '__main__':
             print()           
             print(f'\t{FR_MAG}=== ALL TASKS STOPED ==={NO_COLOR}')
             print()
-
+            """
             # case not solution found
             if not event.is_set():
                 print(f"{FR_RED}\t===================> SOLUTION NOT FOUND ! <==================={NO_COLOR}")
                 print()
+            """
 
             # elapsed time
             elapsed_time = "{:.2f}".format(time.time()-inicio)
