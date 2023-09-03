@@ -1,0 +1,68 @@
+
+
+github - eu.pythonanywhere
+
+    - https://www.youtube.com/watch?v=4sTZN15J33A
+
+    - https://help.pythonanywhere.com/pages/UploadingAndDownloadingFiles/
+
+STEPS
+
+VIDEO 
+
+- open console in PAW min 1:48  do [ls -la] (normally there is only README.txt)
+- generate ssh-key pair min 2:15 (public & private)
+    - command ssh-keygen 
+    - change to ./ssh folder [ls -la] & cd .ssh
+        - there are 2 files id_rsa & id_rsa.pub
+    - copy content of id_rsa.pub: [cat id_rsa.pub] & copy content     
+        - [ssh-rsa .........] 
+
+- go GITHUB min 3.50
+    - look in settings for SSH and GPG keys
+    - add SSH key for PAW and confirm GH
+    - look in repository for clone address in "code" button in that repository
+      (SSH tab) 
+
+- go PAW 
+    - GO home dir [cd ..]
+    - execute in my case [clone git@github.com:iggProjects/iggPyBlog.git]
+      answer yes and waite seconds
+    - [ls] and confirm files where transferred 
+    - cd to your app dir and rename with "mysite" for free accounts
+    - GO WEB tab    
+        - click Add a "new web app button" min 6.30  see .jpg
+        - check name
+        - select flask
+        - select python version
+        - fill url   min 7.36
+        - next button 
+        - web tab -> reload -> open web  min 7.56
+
+
+UPDATE REPOSITORY min 8.30
+
+
+URL's in PAW
+    - consoles: https://eu.pythonanywhere.com/user/iggWebNz/consoles/373990/
+    - files:    https://eu.pythonanywhere.com/user/iggWebNz/files/home/iggWebNz
+    - web:      https://eu.pythonanywhere.com/user/iggWebNz/webapps/#tab_id_iggwebnz_eu_pythonanywhere_com
+
+    - mysite    /home/iggWebNz/mysite
+    
+    - my url:   https://iggwebnz.eu.pythonanywhere.com/
+
+    - flask_app.py url: 
+                https://eu.pythonanywhere.com/user/iggWebNz/files/home/iggWebNz/mysite/flask_app.py?edit
+
+
+=============================================
+
+CASE 1: UPDATE PAW REPOSITORY
+
+
+
+CASE 2: REMOVE REPOSITORY AND CLONE AGAIN
+
+
+

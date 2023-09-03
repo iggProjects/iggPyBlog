@@ -2,6 +2,8 @@ BITAKORA  iggwebnz.eu.pythonanywhere.com
 
 igg.git.h@g @gittu.....@  
 
+iggProjects @i..P...@
+
 https://eu.pythonanywhere.com/login/  | igg.git.h@ | @n.20..N.@
     - bash console: https://eu.pythonanywhere.com/user/iggWebNz/consoles/373990/
 
