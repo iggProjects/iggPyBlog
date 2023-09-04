@@ -13,6 +13,21 @@ nazareth user: jo.gainzarain@aulanz.net  | nz2223Nz
 
 STILL TO DO !!!
 
+PAW & local details
+- write_log_file function 
+    - check file path in both cases
+
+- PAW vs local --- file paths
+    - check what is happens in PAW when working in excercises and enigma project
+    - look at root path "https://eu.pythonanywhere.com/user/iggWebNz/files/home/iggWebNz"
+    - It seems that you have to include "mysite" when creating paths
+
+- server buttons for local and PAW
+
+- console button case APW: msg must include see server file
+
+
+
 Actual web
 
     - MyFunc, MyColors standard
