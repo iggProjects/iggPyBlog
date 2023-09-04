@@ -16,7 +16,7 @@ import platform
 import datetime
 
 # import
-from MyFunc import write_log_file
+#from MyFunc import write_log_file
 from MyColors import *
 
 """
@@ -94,7 +94,7 @@ Excercises = Excercises()
 LG_scripts = LG_scripts()
 Enigma_scripts = Enigma_scripts()
 
-"""
+
 # function to write in "my_messages.log"
 def write_log_file(logFile,msg):
     try:  
@@ -106,6 +106,21 @@ def write_log_file(logFile,msg):
         f.close()
     except Exception as Argument:        
         logging.exception(" | exception from 'write_log_file()': ")
+
+"""
+def write_log_file(logFile,msg):
+    try:  
+        logFile_path = "static/logFiles/" + logFile
+        # creating/opening a file
+        f = open(logFile_path, "a") 
+        #f = open(logFile, "a") 
+        # writing in the file        
+        f.write('%s | %s\n' % (datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S.%f')[:-3],msg))      
+        # closing the file
+        f.close()
+    except Exception as Argument:        
+        logging.exception(" | exception from 'write_log_file()': ")
+
 
 """
 
@@ -150,20 +165,6 @@ def excercises():
         write_log_file("my_messages.txt","FROM 'func excercises(), SEE server_messages.txt'")
         logging.exception("exception => "  + str(Argument))
         return render_template('error_page.html')
-
-
-"""
-import logging
- 
-try:
-    printf("GeeksforGeeks")
-except Exception as Argument:
-    logging.exception("Error occurred while printing GeeksforGeeks")
-
-line = ' '.join([str(a) for a in args])    
-    
-"""
-
 
 @app.route('/excercise/')
 def display_excercise():

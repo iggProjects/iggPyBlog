@@ -1,0 +1,33 @@
+2023-09-04 12:03:32,869 WARNING  _log  * Debugger is active!
+2023-09-04 12:03:32,873 INFO     _log  * Debugger PIN: 109-950-851
+2023-09-04 12:04:43,976 INFO     _log 127.0.0.1 - - [04/Sep/2023 12:04:43] "GET /excercises HTTP/1.1" 200 -
+2023-09-04 12:04:44,211 INFO     _log 127.0.0.1 - - [04/Sep/2023 12:04:44] "[36mGET /static/img/Lorea.jpg HTTP/1.1[0m" 304 -
+2023-09-04 12:04:45,571 INFO     _log 127.0.0.1 - - [04/Sep/2023 12:04:45] "GET /excercise/?id=1 HTTP/1.1" 200 -
+2023-09-04 12:04:45,874 INFO     _log 127.0.0.1 - - [04/Sep/2023 12:04:45] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-09-04 12:04:45,880 INFO     _log 127.0.0.1 - - [04/Sep/2023 12:04:45] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-09-04 12:04:45,885 INFO     _log 127.0.0.1 - - [04/Sep/2023 12:04:45] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-09-04 12:04:45,886 INFO     _log 127.0.0.1 - - [04/Sep/2023 12:04:45] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-09-04 12:04:49,445 INFO     _log 127.0.0.1 - - [04/Sep/2023 12:04:49] "GET /result_script_exec/?py_path=static/py_excercises/20230213-PrototypeScript-colors/0-prototype-colors1.py HTTP/1.1" 200 -
+2023-09-04 12:04:49,609 INFO     _log 127.0.0.1 - - [04/Sep/2023 12:04:49] "GET /result_script_html HTTP/1.1" 200 -
+2023-09-04 12:06:32,467 INFO     _log 127.0.0.1 - - [04/Sep/2023 12:06:32] "GET /excercises HTTP/1.1" 200 -
+2023-09-04 12:06:32,701 INFO     _log 127.0.0.1 - - [04/Sep/2023 12:06:32] "[36mGET /static/img/Lorea.jpg HTTP/1.1[0m" 304 -
+2023-09-04 12:06:45,439 INFO     _log 127.0.0.1 - - [04/Sep/2023 12:06:45] "GET /excercise/?id=1 HTTP/1.1" 200 -
+2023-09-04 12:06:45,751 INFO     _log 127.0.0.1 - - [04/Sep/2023 12:06:45] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-09-04 12:06:45,759 INFO     _log 127.0.0.1 - - [04/Sep/2023 12:06:45] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-09-04 12:06:45,760 INFO     _log 127.0.0.1 - - [04/Sep/2023 12:06:45] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-09-04 12:06:45,762 INFO     _log 127.0.0.1 - - [04/Sep/2023 12:06:45] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-09-04 12:06:50,555 INFO     _log 127.0.0.1 - - [04/Sep/2023 12:06:50] "GET /result_script_exec/?py_path=static/py_excercises/20230213-PrototypeScript-colors/0-prototype-colors1.py HTTP/1.1" 200 -
+2023-09-04 12:06:50,714 INFO     _log 127.0.0.1 - - [04/Sep/2023 12:06:50] "GET /result_script_html HTTP/1.1" 200 -
+2023-09-04 12:08:10,612 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\flask_app.py', reloading
+2023-09-04 12:08:11,158 WARNING  _log  * Debugger is active!
+2023-09-04 12:08:11,160 INFO     _log  * Debugger PIN: 109-950-851
+2023-09-04 12:09:04,045 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\flask_app.py', reloading
+2023-09-04 12:09:04,582 WARNING  _log  * Debugger is active!
+2023-09-04 12:09:04,586 INFO     _log  * Debugger PIN: 109-950-851
+2023-09-04 12:09:07,655 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\flask_app.py', reloading
+2023-09-04 12:09:08,207 WARNING  _log  * Debugger is active!
+2023-09-04 12:09:08,209 INFO     _log  * Debugger PIN: 109-950-851
+2023-09-04 12:09:32,591 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\flask_app.py', reloading
+2023-09-04 12:09:33,093 WARNING  _log  * Debugger is active!
+2023-09-04 12:09:33,095 INFO     _log  * Debugger PIN: 109-950-851
+2023-09-04 12:11:18,026 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\flask_app.py', reloading

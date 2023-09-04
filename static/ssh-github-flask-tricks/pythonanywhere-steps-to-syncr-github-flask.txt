@@ -1,4 +1,4 @@
-
+https://eu.pythonanywhere.com/login/  | igg.git.h@ | @n.20..N.@
 
 github - eu.pythonanywhere
 
@@ -53,8 +53,10 @@ URL's in PAW
     - my url:   https://iggwebnz.eu.pythonanywhere.com/
 
     - flask_app.py url: 
-                https://eu.pythonanywhere.com/user/iggWebNz/files/home/iggWebNz/mysite/flask_app.py?edit
-
+        https://eu.pythonanywhere.com/user/iggWebNz/files/home/iggWebNz/mysite/flask_app.py?edit
+                
+    - server_messages
+        https://eu.pythonanywhere.com/user/iggWebNz/files/home/iggWebNz/mysite/static/logFiles/server_messages.txt?edit
 
 =============================================
 
