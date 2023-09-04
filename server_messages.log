@@ -85,3 +85,16 @@
 2023-09-04 13:08:43,977 INFO     _log 127.0.0.1 - - [04/Sep/2023 13:08:43] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
 2023-09-04 13:08:49,632 INFO     _log 127.0.0.1 - - [04/Sep/2023 13:08:49] "GET /pythonScript/?py_path=static/py_excercises/20230213-PrototypeScript-MatrixView/0-prototype-matrix-view.py HTTP/1.1" 200 -
 2023-09-04 13:12:05,754 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File_1.py', reloading
+2023-09-04 13:12:06,324 WARNING  _log  * Debugger is active!
+2023-09-04 13:12:06,326 INFO     _log  * Debugger PIN: 109-950-851
+2023-09-04 13:16:16,189 INFO     _log 127.0.0.1 - - [04/Sep/2023 13:16:16] "GET /project-EnigmaGame HTTP/1.1" 200 -
+2023-09-04 13:16:16,429 INFO     _log 127.0.0.1 - - [04/Sep/2023 13:16:16] "[36mGET /static/img/enigma.jpg HTTP/1.1[0m" 304 -
+2023-09-04 13:16:16,432 INFO     _log 127.0.0.1 - - [04/Sep/2023 13:16:16] "[36mGET /static/img/icons8-video-50.png HTTP/1.1[0m" 304 -
+2023-09-04 13:16:16,505 INFO     _log 127.0.0.1 - - [04/Sep/2023 13:16:16] "[36mGET /static/img/Lorea.jpg HTTP/1.1[0m" 304 -
+2023-09-04 13:16:18,563 INFO     _log 127.0.0.1 - - [04/Sep/2023 13:16:18] "GET /project-EnigmaGame_script/?id=2 HTTP/1.1" 200 -
+2023-09-04 13:16:18,868 INFO     _log 127.0.0.1 - - [04/Sep/2023 13:16:18] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-09-04 13:16:18,886 INFO     _log 127.0.0.1 - - [04/Sep/2023 13:16:18] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-09-04 13:16:18,887 INFO     _log 127.0.0.1 - - [04/Sep/2023 13:16:18] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-09-04 13:16:18,888 INFO     _log 127.0.0.1 - - [04/Sep/2023 13:16:18] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-09-04 13:16:22,840 INFO     _log 127.0.0.1 - - [04/Sep/2023 13:16:22] "GET /result_script_exec/?py_path=static/proj_enigmaGame_scripts/z-writePermut_26_File_1.py HTTP/1.1" 200 -
+2023-09-04 13:16:22,908 INFO     _log 127.0.0.1 - - [04/Sep/2023 13:16:22] "GET /result_script_html HTTP/1.1" 200 -
