@@ -630,3 +630,19 @@
 2023-09-06 21:34:35,322 INFO     _log 127.0.0.1 - - [06/Sep/2023 21:34:35] "GET /result_script_html HTTP/1.1" 200 -
 2023-09-06 21:54:55,367 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\flask_app.py', reloading
 2023-09-06 21:54:55,460 INFO     _log  * Restarting with stat
+2023-09-06 22:00:56,979 INFO     _log [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-09-06 22:00:56,979 INFO     _log [33mPress CTRL+C to quit[0m
+2023-09-06 22:00:56,979 INFO     _log  * Restarting with stat
+2023-09-06 22:00:57,816 WARNING  _log  * Debugger is active!
+2023-09-06 22:00:57,816 INFO     _log  * Debugger PIN: 109-950-851
+2023-09-06 22:01:00,826 INFO     _log 127.0.0.1 - - [06/Sep/2023 22:01:00] "GET /excercises HTTP/1.1" 200 -
+2023-09-06 22:01:01,103 INFO     _log 127.0.0.1 - - [06/Sep/2023 22:01:01] "[36mGET /static/img/Lorea.jpg HTTP/1.1[0m" 304 -
+2023-09-06 22:01:01,195 INFO     _log 127.0.0.1 - - [06/Sep/2023 22:01:01] "[36mGET /static/img/icons8-bulb-64.png HTTP/1.1[0m" 304 -
+2023-09-06 22:01:02,535 INFO     _log 127.0.0.1 - - [06/Sep/2023 22:01:02] "GET /excercise/?id=1 HTTP/1.1" 200 -
+2023-09-06 22:01:02,890 INFO     _log 127.0.0.1 - - [06/Sep/2023 22:01:02] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-09-06 22:01:02,896 INFO     _log 127.0.0.1 - - [06/Sep/2023 22:01:02] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-09-06 22:01:02,904 INFO     _log 127.0.0.1 - - [06/Sep/2023 22:01:02] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-09-06 22:01:02,904 INFO     _log 127.0.0.1 - - [06/Sep/2023 22:01:02] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-09-06 22:01:06,569 INFO     _log 127.0.0.1 - - [06/Sep/2023 22:01:06] "GET /result_script_exec/?py_path=static/py_excercises/20230213-PrototypeScript-colors/0-prototype-colors1.py HTTP/1.1" 200 -
+2023-09-06 22:01:06,952 INFO     _log 127.0.0.1 - - [06/Sep/2023 22:01:06] "GET /result_script_html HTTP/1.1" 200 -
