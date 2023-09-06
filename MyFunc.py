@@ -16,6 +16,10 @@
 # IMPORT LIBRERIES OR YOUR OWN FUNCTIONS 
 #
 
+import os
+basedir = os.path.abspath(os.path.dirname(__file__))
+
+
 import datetime
 
 # error handling
@@ -273,7 +277,7 @@ def classtree(cls, indent=0):
 # function to write in "my_messages.log"
 def write_log_file(logFile,msg):
     try:  
-        logFile_path = "static/logFiles/" + logFile
+        logFile_path = basedir + "/static/logFiles/" + logFile
         # creating/opening a file
         f = open(logFile_path, "a") 
         #f = open(logFile, "a") 

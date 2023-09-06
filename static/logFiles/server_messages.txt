@@ -3,3 +3,89 @@
 2023-09-04 12:09:07,718 INFO     _log  * Restarting with stat
 2023-09-04 12:09:32,649 INFO     _log  * Restarting with stat
 2023-09-04 12:11:18,101 INFO     _log  * Restarting with stat
+2023-09-04 12:48:37,270 INFO     _log  * Restarting with stat
+2023-09-04 12:48:39,898 INFO     _log  * Restarting with stat
+2023-09-04 13:12:05,817 INFO     _log  * Restarting with stat
+2023-09-06 19:55:22,450 ERROR    write_log_file  | exception from 'write_log_file()': 
+Traceback (most recent call last):
+  File "C:\ML_Project\NazarethCourse2023\iggPyBlog\static\py_excercises\20230213-PrototypeScript-colors\MyFunc.py", line 309, in write_log_file
+    f = open(logFile_path, "a")
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\py_excercises\\20230213-PrototypeScript-colors/static/logFiles/my_messages.txt'
+2023-09-06 20:14:04,352 ERROR    write_log_file  | exception from 'write_log_file()': 
+Traceback (most recent call last):
+  File "C:\ML_Project\NazarethCourse2023\iggPyBlog\static\py_excercises\20230213-PrototypeScript-colors\MyFunc.py", line 309, in write_log_file
+    f = open(logFile_path, "a")
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\py_excercises\\20230213-PrototypeScript-colors/static/logFiles/my_messages.txt'
+2023-09-06 20:15:47,350 ERROR    write_log_file  | exception from 'write_log_file()': 
+Traceback (most recent call last):
+  File "C:\ML_Project\NazarethCourse2023\iggPyBlog\static\py_excercises\20230213-PrototypeScript-colors\MyFunc.py", line 307, in write_log_file
+    logFile_path = basedir + "/static/logFiles/" + logFile
+NameError: name 'basedir' is not defined
+2023-09-06 20:16:43,167 ERROR    write_log_file  | exception from 'write_log_file()': 
+Traceback (most recent call last):
+  File "C:\ML_Project\NazarethCourse2023\iggPyBlog\static\py_excercises\20230213-PrototypeScript-colors\MyFunc.py", line 310, in write_log_file
+    f = open(logFile_path, "a")
+FileNotFoundError: [Errno 2] No such file or directory: '/static/logFiles/my_messages.txt'
+2023-09-06 20:35:07,418 ERROR    <module>  | exception from '0-prototype-colors.py()': 
+Traceback (most recent call last):
+  File "C:\ML_Project\NazarethCourse2023\iggPyBlog\static\py_excercises\20230213-PrototypeScript-colors\0-prototype-colors.py", line 27, in <module>
+    write_log_file("my_messages.log","IN 'func 0-prototype-colors.py()'")
+  File "C:\ML_Project\NazarethCourse2023\iggPyBlog\static\py_excercises\20230213-PrototypeScript-colors\MyFunc.py", line 307, in write_log_file
+    from config import ROOT_DIR
+ModuleNotFoundError: No module named 'config'
+2023-09-06 20:36:46,265 ERROR    <module>  | exception from '0-prototype-colors.py()': 
+Traceback (most recent call last):
+  File "C:\ML_Project\NazarethCourse2023\iggPyBlog\static\py_excercises\20230213-PrototypeScript-colors\0-prototype-colors.py", line 27, in <module>
+    write_log_file("my_messages.log","IN 'func 0-prototype-colors.py()'")
+  File "C:\ML_Project\NazarethCourse2023\iggPyBlog\static\py_excercises\20230213-PrototypeScript-colors\MyFunc.py", line 307, in write_log_file
+    from config import ROOT_DIR
+ModuleNotFoundError: No module named 'config'
+2023-09-06 20:37:00,266 ERROR    <module>  | exception from '0-prototype-colors.py()': 
+Traceback (most recent call last):
+  File "C:\ML_Project\NazarethCourse2023\iggPyBlog\static\py_excercises\20230213-PrototypeScript-colors\0-prototype-colors.py", line 27, in <module>
+    write_log_file("my_messages.log","IN 'func 0-prototype-colors.py()'")
+  File "C:\ML_Project\NazarethCourse2023\iggPyBlog\static\py_excercises\20230213-PrototypeScript-colors\MyFunc.py", line 307, in write_log_file
+    from config import ROOT_DIR
+ModuleNotFoundError: No module named 'config'
+2023-09-06 20:37:32,032 ERROR    <module>  | exception from '0-prototype-colors.py()': 
+Traceback (most recent call last):
+  File "C:\ML_Project\NazarethCourse2023\iggPyBlog\static\py_excercises\20230213-PrototypeScript-colors\0-prototype-colors.py", line 27, in <module>
+    write_log_file("my_messages.log","IN 'func 0-prototype-colors.py()'")
+  File "C:\ML_Project\NazarethCourse2023\iggPyBlog\static\py_excercises\20230213-PrototypeScript-colors\MyFunc.py", line 307, in write_log_file
+    from config import ROOT_DIR
+ModuleNotFoundError: No module named 'config'
+2023-09-06 20:39:13,350 ERROR    write_log_file  | exception from 'write_log_file()': 
+Traceback (most recent call last):
+  File "C:\ML_Project\NazarethCourse2023\iggPyBlog\static\py_excercises\20230213-PrototypeScript-colors\MyFunc.py", line 313, in write_log_file
+    f = open(logFile_path, "a")
+FileNotFoundError: [Errno 2] No such file or directory: '/static/logFiles/my_messages.txt'
+2023-09-06 20:40:18,300 ERROR    write_log_file  | exception from 'write_log_file()': 
+Traceback (most recent call last):
+  File "C:\ML_Project\NazarethCourse2023\iggPyBlog\static\py_excercises\20230213-PrototypeScript-colors\MyFunc.py", line 313, in write_log_file
+    f = open(logFile_path, "a")
+FileNotFoundError: [Errno 2] No such file or directory: '/static/logFiles/my_messages.txt'
+2023-09-06 20:42:25,516 ERROR    write_log_file  | exception from 'write_log_file()': 
+Traceback (most recent call last):
+  File "C:\ML_Project\NazarethCourse2023\iggPyBlog\static\py_excercises\20230213-PrototypeScript-colors\MyFunc.py", line 313, in write_log_file
+    f = open(logFile_path, "a")
+FileNotFoundError: [Errno 2] No such file or directory: '/static/logFiles/my_messages.txt'
+2023-09-06 20:54:59,146 ERROR    <module>  | exception from '0-prototype-colors.py()': 
+Traceback (most recent call last):
+  File "C:\ML_Project\NazarethCourse2023\iggPyBlog\static\py_excercises\20230213-PrototypeScript-colors\0-prototype-colors.py", line 27, in <module>
+    write_log_file("my_messages.log","IN 'func 0-prototype-colors.py()'")
+NameError: name 'write_log_file' is not defined
+2023-09-06 20:57:09,654 ERROR    write_log_file  | exception from 'write_log_file()': 
+Traceback (most recent call last):
+  File "C:\ML_Project\NazarethCourse2023\iggPyBlog\static\py_excercises\20230213-PrototypeScript-colors\MyFunc.py", line 313, in write_log_file
+    f = open(logFile_path, "a")
+FileNotFoundError: [Errno 2] No such file or directory: '/static/logFiles/my_messages.log'
+2023-09-06 20:59:17,849 ERROR    write_log_file  | exception from 'write_log_file()': 
+Traceback (most recent call last):
+  File "C:\ML_Project\NazarethCourse2023\iggPyBlog\static\py_excercises\20230213-PrototypeScript-colors\MyFunc.py", line 313, in write_log_file
+    f = open(logFile_path, "a")
+FileNotFoundError: [Errno 2] No such file or directory: '/static/logFiles/my_messages.log'
+2023-09-06 21:01:33,616 ERROR    write_log_file  | exception from 'write_log_file()': 
+Traceback (most recent call last):
+  File "C:\ML_Project\NazarethCourse2023\iggPyBlog\static\py_excercises\20230213-PrototypeScript-colors\MyFunc.py", line 313, in write_log_file
+    f = open(logFile_path, "a")
+FileNotFoundError: [Errno 2] No such file or directory: '/static/logFiles/my_messages.log'

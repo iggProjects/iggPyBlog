@@ -15,8 +15,7 @@ import platform
 # handling data and time var's
 import datetime
 
-# import
-#from MyFunc import write_log_file
+# from MyFunc import write_log_file
 from MyColors import *
 
 """
@@ -96,6 +95,7 @@ Enigma_scripts = Enigma_scripts()
 
 
 # function to write in "my_messages.log"
+"""
 def write_log_file(logFile,msg):
     try:  
         # creating/opening a file
@@ -106,11 +106,11 @@ def write_log_file(logFile,msg):
         f.close()
     except Exception as Argument:        
         logging.exception(" | exception from 'write_log_file()': ")
-
 """
+
 def write_log_file(logFile,msg):
     try:  
-        logFile_path = "static/logFiles/" + logFile
+        logFile_path = basedir + "/static/logFiles/" + logFile
         # creating/opening a file
         f = open(logFile_path, "a") 
         #f = open(logFile, "a") 
@@ -120,9 +120,6 @@ def write_log_file(logFile,msg):
         f.close()
     except Exception as Argument:        
         logging.exception(" | exception from 'write_log_file()': ")
-
-
-"""
 
 
 @app.route('/')
@@ -151,9 +148,11 @@ def display_article():
 
 @app.route('/excercises')
 def excercises():
+
     try:         
         write_log_file("my_messages.txt","IN 'func excercises()'")
         return render_template('excercises.html', excercises = Excercises)
+
     except Exception as Argument:   
         """     
         logging.error(Argument)

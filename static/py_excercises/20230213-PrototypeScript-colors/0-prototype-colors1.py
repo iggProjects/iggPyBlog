@@ -4,9 +4,12 @@ THIS SCRIPT IS FOR PRINTING WITH COLORS
 
 """
 # IMPORT SECTION
+
+#from flask_app import write_log_file
 from MyFunc import *
 from MyColors import *
 from os import  system
+
 
 # CONSTANTS
 

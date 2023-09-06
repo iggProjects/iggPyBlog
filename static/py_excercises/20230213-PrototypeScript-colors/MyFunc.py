@@ -18,6 +18,8 @@
 
 import datetime
 import os
+# basedir = os.path.abspath(os.path.dirname(__file__))
+
 log_file_path = "static/logFiles/server_messages.txt"
 #log_file_path = "server_messages.log"
 
@@ -301,8 +303,14 @@ def classtree(cls, indent=0):
 
 # function to write in "my_messages.log"
 def write_log_file(logFile,msg):
+        
+    import os
+    ROOT_DIR = os.path.abspath(os.curdir)
+    print(f"root path: {ROOT_DIR}")
+    
     try:  
-        logFile_path = "static/logFiles/" + logFile        
+        
+        logFile_path = ROOT_DIR + "/static/logFiles/" + logFile        
         # creating/opening a file
         f = open(logFile_path, "a") 
         # f = open(logFile, "a") 
