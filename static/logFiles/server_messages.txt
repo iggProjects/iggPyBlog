@@ -205,3 +205,4 @@ NameError: name 'MyFunc' is not defined
 2023-09-08 20:11:01,556 INFO     _log 127.0.0.1 - - [08/Sep/2023 20:11:01] "GET /result_script_exec/?py_path=static/py_excercises/20230213-PrototypeScript-colors/0-prototype-colors1.py HTTP/1.1" 200 -
 2023-09-08 20:11:01,914 INFO     _log 127.0.0.1 - - [08/Sep/2023 20:11:01] "GET /result_script_html HTTP/1.1" 200 -
 2023-09-08 20:11:13,138 INFO     _log 127.0.0.1 - - [08/Sep/2023 20:11:13] "GET /static/logFiles/server_messages.txt HTTP/1.1" 200 -
+2023-09-08 20:11:22,806 INFO     _log 127.0.0.1 - - [08/Sep/2023 20:11:22] "GET /static/logFiles/my_messages.txt HTTP/1.1" 200 -
