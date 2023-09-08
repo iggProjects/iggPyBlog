@@ -6,6 +6,7 @@ THIS SCRIPT IS FOR PRINTING WITH COLORS
 
 
 # IMPORT SECTION
+import logging
 
 # modules
 from os import  system

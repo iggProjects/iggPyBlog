@@ -19,9 +19,6 @@
 import os
 basedir = os.path.abspath(os.path.dirname(__file__))
 
-
-import datetime
-
 # error handling
 import logging
 log_file_path = "static/logFiles/server_messages.txt"
@@ -29,8 +26,34 @@ logging.basicConfig(filename=log_file_path,
                 encoding='utf-8', level=logging.DEBUG, format="%(asctime)-15s %(levelname)-8s %(funcName)s %(message)s")
 logging.captureWarnings(True)
 
+import datetime
+
 # My own
 from MyColors import *
+
+# function to write in "my_messages.log"
+def write_log_file(logFile,msg):
+
+    """    
+    # error handling
+    import logging
+    log_file_path = "static/logFiles/server_messages.txt"
+    logging.basicConfig(filename=log_file_path, 
+                    encoding='utf-8', level=logging.DEBUG, format="%(asctime)-15s %(levelname)-8s %(funcName)s %(message)s")
+    logging.captureWarnings(True)
+    """
+    try:  
+        # file path
+        logFile_path = basedir + "/static/logFiles/" + logFile
+        # creating/opening a file
+        f = open(logFile_path, "a") 
+        #f = open(logFile, "a") 
+        # writing in the file        
+        f.write('%s | %s\n' % (datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S.%f')[:-3],msg))      
+        # closing the file
+        f.close()
+    except Exception as Argument:        
+        logging.exception(" | exception from 'write_log_file()': ")
 
 #
 # COLORS CONSTANTS
@@ -273,20 +296,6 @@ def classtree(cls, indent=0):
 #
 #  LOG FILES FUNCTIONS
 #
-
-# function to write in "my_messages.log"
-def write_log_file(logFile,msg):
-    try:  
-        logFile_path = basedir + "/static/logFiles/" + logFile
-        # creating/opening a file
-        f = open(logFile_path, "a") 
-        #f = open(logFile, "a") 
-        # writing in the file        
-        f.write('%s | %s\n' % (datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S.%f')[:-3],msg))      
-        # closing the file
-        f.close()
-    except Exception as Argument:        
-        logging.exception(" | exception from 'write_log_file()': ")
 
 
 #

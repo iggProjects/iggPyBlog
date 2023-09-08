@@ -15,8 +15,9 @@ import platform
 # handling data and time var's
 import datetime
 
-# from MyFunc import write_log_file
 from MyColors import *
+import MyFunc
+
 
 """
 Links
@@ -106,7 +107,7 @@ def write_log_file(logFile,msg):
         f.close()
     except Exception as Argument:        
         logging.exception(" | exception from 'write_log_file()': ")
-"""
+
 
 def write_log_file(logFile,msg):
     try:  
@@ -120,7 +121,7 @@ def write_log_file(logFile,msg):
         f.close()
     except Exception as Argument:        
         logging.exception(" | exception from 'write_log_file()': ")
-
+"""
 
 @app.route('/')
 #@app.route('/home')
@@ -150,7 +151,7 @@ def display_article():
 def excercises():
 
     try:         
-        write_log_file("my_messages.txt","IN 'func excercises()'")
+        MyFunc.write_log_file("my_messages.txt","IN 'func excercises()'")
         return render_template('excercises.html', excercises = Excercises)
 
     except Exception as Argument:   
@@ -161,7 +162,7 @@ def excercises():
         logging.debug(Argument) 
         logging.critical(Argument)               
         """
-        write_log_file("my_messages.txt","FROM 'func excercises(), SEE server_messages.txt'")
+        MyFunc.write_log_file("my_messages.txt","FROM 'func excercises(), SEE server_messages.txt'")
         logging.exception("exception => "  + str(Argument))
         return render_template('error_page.html')
 

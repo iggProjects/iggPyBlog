@@ -4,12 +4,16 @@ THIS SCRIPT IS FOR PRINTING WITH COLORS
 
 """
 # IMPORT SECTION
+import logging
 
-#from flask_app import write_log_file
-from MyFunc import *
-from MyColors import *
+import os
 from os import  system
+import sys
 
+# My Own Funct in root path
+ROOT_DIR = os.path.abspath(os.curdir)
+sys.path.insert(1, ROOT_DIR)
+from MyFunc import *
 
 # CONSTANTS
 
