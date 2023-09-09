@@ -5,3 +5,5 @@
 2023-09-09 11:50:23.067 | IN 'func 0-prototype-colors1.py()'
 2023-09-09 13:38:24.955 | IN 'func excercises()'
 2023-09-09 13:38:30.835 | IN 'func 0-prototype-colors1.py()'
+2023-09-09 18:03:09.582 | IN 'func excercises()'
+2023-09-09 18:03:15.669 | IN 'func 0-prototype-colors1.py()'
