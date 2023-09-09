@@ -11,12 +11,13 @@ from EnigmaGame_data import Enigma_scripts
 from flask_sqlalchemy import *
 import os
 import platform
+import sys
 
 # handling data and time var's
 import datetime
 
-from MyColors import *
-import MyFunc
+#from MyColors import *
+from MyFunc import *
 
 
 """
@@ -44,6 +45,7 @@ Links
             logging.warning('Protocol problem: %s', 'connection reset', extra=d)
 
 """ 
+
 # error handling
 import traceback
 import logging
@@ -151,7 +153,7 @@ def display_article():
 def excercises():
 
     try:         
-        MyFunc.write_log_file("my_messages.txt","IN 'func excercises()'")
+        write_log_file("my_messages.txt","IN 'func excercises()'")
         return render_template('excercises.html', excercises = Excercises)
 
     except Exception as Argument:   
@@ -162,7 +164,7 @@ def excercises():
         logging.debug(Argument) 
         logging.critical(Argument)               
         """
-        MyFunc.write_log_file("my_messages.txt","FROM 'func excercises(), SEE server_messages.txt'")
+        write_log_file("my_messages.txt","FROM 'func excercises(), SEE server_messages.txt'")
         logging.exception("exception => "  + str(Argument))
         return render_template('error_page.html')
 

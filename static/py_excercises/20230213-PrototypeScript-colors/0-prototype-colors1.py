@@ -10,9 +10,13 @@ import os
 from os import  system
 import sys
 
+
 # My Own Funct in root path
 ROOT_DIR = os.path.abspath(os.curdir)
 sys.path.insert(1, ROOT_DIR)
+for path in sys.path:
+    print(f"sys.path: {path}")
+
 from MyFunc import *
 
 # CONSTANTS
