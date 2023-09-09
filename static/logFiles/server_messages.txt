@@ -115,3 +115,36 @@
 2023-09-09 18:13:24,197 INFO     _log  * Restarting with stat
 2023-09-09 18:13:24,903 WARNING  _log  * Debugger is active!
 2023-09-09 18:13:24,903 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-09 19:47:40,448 INFO     _log [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-09-09 19:47:40,448 INFO     _log [33mPress CTRL+C to quit[0m
+2023-09-09 19:47:40,448 INFO     _log  * Restarting with stat
+2023-09-09 19:47:40,899 WARNING  _log  * Debugger is active!
+2023-09-09 19:47:40,899 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-09 19:47:52,065 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\MyFunc.py', reloading
+2023-09-09 19:47:52,116 INFO     _log  * Restarting with stat
+2023-09-09 19:47:52,648 WARNING  _log  * Debugger is active!
+2023-09-09 19:47:52,651 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-09 19:47:55,768 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\MyFunc.py', reloading
+2023-09-09 19:47:55,831 INFO     _log  * Restarting with stat
+2023-09-09 19:47:56,333 WARNING  _log  * Debugger is active!
+2023-09-09 19:47:56,336 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-09 19:47:59,436 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\MyFunc.py', reloading
+2023-09-09 19:47:59,521 INFO     _log  * Restarting with stat
+2023-09-09 19:48:07,418 INFO     _log [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-09-09 19:48:07,418 INFO     _log [33mPress CTRL+C to quit[0m
+2023-09-09 19:48:07,418 INFO     _log  * Restarting with stat
+2023-09-09 19:48:07,901 WARNING  _log  * Debugger is active!
+2023-09-09 19:48:07,901 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-09 19:48:16,685 INFO     _log 127.0.0.1 - - [09/Sep/2023 19:48:16] "GET / HTTP/1.1" 200 -
+2023-09-09 19:48:16,742 INFO     _log 127.0.0.1 - - [09/Sep/2023 19:48:16] "[36mGET /static/img/ame-01.jpg HTTP/1.1[0m" 304 -
+2023-09-09 19:48:18,213 INFO     _log 127.0.0.1 - - [09/Sep/2023 19:48:18] "GET /excercises HTTP/1.1" 200 -
+2023-09-09 19:48:18,522 INFO     _log 127.0.0.1 - - [09/Sep/2023 19:48:18] "[36mGET /static/img/Lorea.jpg HTTP/1.1[0m" 304 -
+2023-09-09 19:48:20,285 INFO     _log 127.0.0.1 - - [09/Sep/2023 19:48:20] "GET /excercise/?id=1 HTTP/1.1" 200 -
+2023-09-09 19:48:20,485 INFO     _log 127.0.0.1 - - [09/Sep/2023 19:48:20] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-09-09 19:48:20,530 INFO     _log 127.0.0.1 - - [09/Sep/2023 19:48:20] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-09-09 19:48:20,610 INFO     _log 127.0.0.1 - - [09/Sep/2023 19:48:20] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-09-09 19:48:20,614 INFO     _log 127.0.0.1 - - [09/Sep/2023 19:48:20] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-09-09 19:48:24,148 INFO     _log 127.0.0.1 - - [09/Sep/2023 19:48:24] "GET /result_script_exec/?py_path=static/py_excercises/20230213-PrototypeScript-colors/0-prototype-colors1.py HTTP/1.1" 200 -
+2023-09-09 19:48:24,510 INFO     _log 127.0.0.1 - - [09/Sep/2023 19:48:24] "GET /result_script_html HTTP/1.1" 200 -
