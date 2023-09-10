@@ -1,25 +1,4 @@
-# 
-
-from flask import Flask, render_template, url_for, redirect, request, session
-# LoginManager
-
-from article_data import Articles
-from excercise_data import Excercises
-from LifeGame_data import LG_scripts
-from EnigmaGame_data import Enigma_scripts
-
-from flask_sqlalchemy import *
-import os
-import platform
-import sys
-
-# handling data and time var's
-import datetime
-
-#from MyColors import *
-from MyFunc import *
-
-
+ 
 """
 Links
     LOGGING
@@ -46,6 +25,20 @@ Links
 
 """ 
 
+from config import *
+
+"""
+from flask import Flask, render_template, url_for, redirect, request, session
+# LoginManager
+
+from flask_sqlalchemy import *
+import os
+import platform
+import sys
+
+# handling data and time var's
+import datetime
+
 # error handling
 import traceback
 import logging
@@ -54,29 +47,36 @@ logging.basicConfig(filename='server_messages.log',
 logging.captureWarnings(True)
 #logging.captureWarnings(False)
 
-
-# COLOR CONTANTS
-"""
-NO_COLOR = "\033[00m"
-FR_RED   = "\033[91m"
-FR_GREEN = "\033[92m"
-FR_YELL  = "\033[93m"
-FR_BLUE  = "\033[94m"
-FR_MAG   = "\033[95m"
-"""
-
-app = Flask(__name__)
-app.secret_key = 'HI TARZAN'
-
 basedir = os.path.abspath(os.path.dirname(__file__))
 print(f"{FR_GREEN}............ basedir ===> {os.path.abspath(os.path.dirname(__file__))}{NO_COLOR}")
 
 opSys = platform.system()
 print(f"{FR_YELL}............ OS ===> {opSys}{NO_COLOR}")
 
+# My own
+from MyFunc import *
+
+app = Flask(__name__)
+app.secret_key = 'HI TARZAN'
+
 app.config['SQLALCHEMY_DATABASE_URI'] ='sqlite:///' + os.path.join(basedir, 'foods.db')
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
+
+with app.app_context():
+    db.create_all()
+
+#app.config['UPLOAD_FOLDER'] = 'img' 
+
+from article_data import Articles
+from excercise_data import Excercises
+from LifeGame_data import LG_scripts
+from EnigmaGame_data import Enigma_scripts
+
+Articles = Articles()
+Excercises = Excercises()
+LG_scripts = LG_scripts()
+Enigma_scripts = Enigma_scripts()
 
 class Plato(db.Model):
     id         = db.Column(db.Integer, primary_key=True)
@@ -85,44 +85,7 @@ class Plato(db.Model):
     precio     = db.Column(db.Float, nullable=False)
     disp       = db.Column(db.Integer, nullable=False, default=1)    
 
-with app.app_context():
-    db.create_all()
 
-
-#app.config['UPLOAD_FOLDER'] = 'img' 
-
-Articles = Articles()
-Excercises = Excercises()
-LG_scripts = LG_scripts()
-Enigma_scripts = Enigma_scripts()
-
-
-# function to write in "my_messages.log"
-"""
-def write_log_file(logFile,msg):
-    try:  
-        # creating/opening a file
-        f = open(logFile, "a") 
-        # writing in the file        
-        f.write('%s | %s\n' % (datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S.%f')[:-3],msg))      
-        # closing the file
-        f.close()
-    except Exception as Argument:        
-        logging.exception(" | exception from 'write_log_file()': ")
-
-
-def write_log_file(logFile,msg):
-    try:  
-        logFile_path = basedir + "/static/logFiles/" + logFile
-        # creating/opening a file
-        f = open(logFile_path, "a") 
-        #f = open(logFile, "a") 
-        # writing in the file        
-        f.write('%s | %s\n' % (datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S.%f')[:-3],msg))      
-        # closing the file
-        f.close()
-    except Exception as Argument:        
-        logging.exception(" | exception from 'write_log_file()': ")
 """
 
 @app.route('/')

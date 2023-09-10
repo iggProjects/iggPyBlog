@@ -13,9 +13,11 @@ nazareth user: jo.gainzarain@aulanz.net  | nz2223Nz
 
 STILL TO DO !!!
 
-PAW & local details
+PAW & local PATHS
 - write_log_file function 
     - check file path in both cases
+- z-permutFileSorted.txt
+- list_JS_lines.txt, list_text_lines.csv ....    
 
 - PAW vs local --- file paths
     - check what is happens in PAW when working in excercises and enigma project
