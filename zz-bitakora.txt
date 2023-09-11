@@ -17,6 +17,11 @@ STILL TO DO !!!
 PAW & local PATHS
     
 - z-permutFileSorted.txt
+    - in z-writePermut_15_File (17,26)
+        find with: open('z-permutFileSorted.txt', 'w').writelines(uniqlines)
+
+    - in series "mpPoolManagerEnigmaRandom?????.py" 
+        find with: open('z-permutFileSorted.txt').readlines()
 
 - list_JS_lines.txt, list_text_lines.csv ....   ✔✔ 😎  
 
@@ -28,11 +33,13 @@ PAW & local PATHS
     - look at root path "https://eu.pythonanywhere.com/user/iggWebNz/files/home/iggWebNz"
     - It seems that you have to include "mysite" when creating paths
 
-- server buttons for local and PAW
+- INCLUDE in all excercises, EnigmaGame and life Game  
+    # My Own Funct in root path
+    ROOT_DIR = os.path.abspath(os.curdir)
+    sys.path.insert(1, ROOT_DIR)
+    from MyFunc import *
 
-- console button case APW: msg must include see server file
-
-
+**********************************************************
 
 Actual web
 
