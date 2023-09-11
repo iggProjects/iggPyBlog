@@ -285,3 +285,16 @@ jinja2.exceptions.TemplateNotFound: excrcises.html
 2023-09-11 20:59:11,853 INFO     _log 127.0.0.1 - - [11/Sep/2023 20:59:11] "GET /result_script_html HTTP/1.1" 200 -
 2023-09-11 20:59:22,622 INFO     _log 127.0.0.1 - - [11/Sep/2023 20:59:22] "GET /static/logFiles/my_messages.txt HTTP/1.1" 200 -
 2023-09-11 20:59:32,809 INFO     _log 127.0.0.1 - - [11/Sep/2023 20:59:32] "GET /static/logFiles/server_messages.log HTTP/1.1" 200 -
+2023-09-11 20:59:57,822 INFO     _log 127.0.0.1 - - [11/Sep/2023 20:59:57] "GET / HTTP/1.1" 200 -
+2023-09-11 20:59:58,135 INFO     _log 127.0.0.1 - - [11/Sep/2023 20:59:58] "[36mGET /static/img/ame-01.jpg HTTP/1.1[0m" 304 -
+2023-09-11 21:00:00,214 INFO     _log 127.0.0.1 - - [11/Sep/2023 21:00:00] "GET /course HTTP/1.1" 200 -
+2023-09-11 21:00:00,474 INFO     _log 127.0.0.1 - - [11/Sep/2023 21:00:00] "[36mGET /static/img/Turing-01.jpg HTTP/1.1[0m" 304 -
+2023-09-11 21:00:00,474 INFO     _log 127.0.0.1 - - [11/Sep/2023 21:00:00] "[36mGET /static/img/LanbideLogo.jpg HTTP/1.1[0m" 304 -
+2023-09-11 21:00:00,551 INFO     _log 127.0.0.1 - - [11/Sep/2023 21:00:00] "[36mGET /static/Nazaret/Nazaret-1.jpg HTTP/1.1[0m" 304 -
+2023-09-11 21:01:08,101 INFO     _log 127.0.0.1 - - [11/Sep/2023 21:01:08] "GET / HTTP/1.1" 200 -
+2023-09-11 21:01:08,331 INFO     _log 127.0.0.1 - - [11/Sep/2023 21:01:08] "[36mGET /static/img/ame-01.jpg HTTP/1.1[0m" 304 -
+2023-09-11 21:01:17,367 INFO     _log 127.0.0.1 - - [11/Sep/2023 21:01:17] "GET /articles HTTP/1.1" 200 -
+2023-09-11 21:01:17,662 INFO     _log 127.0.0.1 - - [11/Sep/2023 21:01:17] "GET /static/img/icons8-lectura-80.png HTTP/1.1" 200 -
+2023-09-11 21:01:17,694 INFO     _log 127.0.0.1 - - [11/Sep/2023 21:01:17] "GET /static/img/icons8-video-50.png HTTP/1.1" 200 -
+2023-09-11 21:01:20,416 INFO     _log 127.0.0.1 - - [11/Sep/2023 21:01:20] "GET /about HTTP/1.1" 200 -
+2023-09-11 21:01:20,654 INFO     _log 127.0.0.1 - - [11/Sep/2023 21:01:20] "[36mGET /static/Nazaret/ProgramaPython.jpg HTTP/1.1[0m" 304 -
