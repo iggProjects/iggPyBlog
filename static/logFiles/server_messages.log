@@ -1,0 +1,51 @@
+2023-09-11 12:46:17,211 WARNING  _log  * Debugger is active!
+2023-09-11 12:46:17,223 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-11 12:46:23,810 INFO     _log 127.0.0.1 - - [11/Sep/2023 12:46:23] "GET / HTTP/1.1" 200 -
+2023-09-11 12:46:23,911 INFO     _log 127.0.0.1 - - [11/Sep/2023 12:46:23] "[36mGET /static/img/ame-01.jpg HTTP/1.1[0m" 304 -
+2023-09-11 12:46:25,055 ERROR    excercises exception => excrcises.html
+Traceback (most recent call last):
+  File "C:\ML_Project\NazarethCourse2023\iggPyBlog\flask_app.py", line 41, in excercises
+    return render_template('excrcises.html', excercises = Excercises)
+  File "C:\ML_Project\NazarethCourse2023\iggPyBlog\igg_venv\lib\site-packages\flask\templating.py", line 146, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "C:\ML_Project\NazarethCourse2023\iggPyBlog\igg_venv\lib\site-packages\jinja2\environment.py", line 1081, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "C:\ML_Project\NazarethCourse2023\iggPyBlog\igg_venv\lib\site-packages\jinja2\environment.py", line 1010, in get_template
+    return self._load_template(name, globals)
+  File "C:\ML_Project\NazarethCourse2023\iggPyBlog\igg_venv\lib\site-packages\jinja2\environment.py", line 969, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "C:\ML_Project\NazarethCourse2023\iggPyBlog\igg_venv\lib\site-packages\jinja2\loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "C:\ML_Project\NazarethCourse2023\iggPyBlog\igg_venv\lib\site-packages\flask\templating.py", line 62, in get_source
+    return self._get_source_fast(environment, template)
+  File "C:\ML_Project\NazarethCourse2023\iggPyBlog\igg_venv\lib\site-packages\flask\templating.py", line 98, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: excrcises.html
+2023-09-11 12:46:25,059 INFO     _log 127.0.0.1 - - [11/Sep/2023 12:46:25] "GET /excercises HTTP/1.1" 200 -
+2023-09-11 12:46:25,360 INFO     _log 127.0.0.1 - - [11/Sep/2023 12:46:25] "[36mGET /static/img/sad-face-2692.png HTTP/1.1[0m" 304 -
+2023-09-11 12:46:27,124 INFO     _log 127.0.0.1 - - [11/Sep/2023 12:46:27] "GET /static/logFiles/server_messages.log HTTP/1.1" 200 -
+2023-09-11 12:46:46,620 INFO     _log 127.0.0.1 - - [11/Sep/2023 12:46:46] "GET /static/logFiles/my_messages.txt HTTP/1.1" 200 -
+2023-09-11 12:47:45,941 ERROR    excercises exception => excrcises.html
+Traceback (most recent call last):
+  File "C:\ML_Project\NazarethCourse2023\iggPyBlog\flask_app.py", line 41, in excercises
+    return render_template('excrcises.html', excercises = Excercises)
+  File "C:\ML_Project\NazarethCourse2023\iggPyBlog\igg_venv\lib\site-packages\flask\templating.py", line 146, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "C:\ML_Project\NazarethCourse2023\iggPyBlog\igg_venv\lib\site-packages\jinja2\environment.py", line 1081, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "C:\ML_Project\NazarethCourse2023\iggPyBlog\igg_venv\lib\site-packages\jinja2\environment.py", line 1010, in get_template
+    return self._load_template(name, globals)
+  File "C:\ML_Project\NazarethCourse2023\iggPyBlog\igg_venv\lib\site-packages\jinja2\environment.py", line 969, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "C:\ML_Project\NazarethCourse2023\iggPyBlog\igg_venv\lib\site-packages\jinja2\loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "C:\ML_Project\NazarethCourse2023\iggPyBlog\igg_venv\lib\site-packages\flask\templating.py", line 62, in get_source
+    return self._get_source_fast(environment, template)
+  File "C:\ML_Project\NazarethCourse2023\iggPyBlog\igg_venv\lib\site-packages\flask\templating.py", line 98, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: excrcises.html
+2023-09-11 12:47:45,958 INFO     _log 127.0.0.1 - - [11/Sep/2023 12:47:45] "GET /excercises HTTP/1.1" 200 -
+2023-09-11 12:47:46,253 INFO     _log 127.0.0.1 - - [11/Sep/2023 12:47:46] "[36mGET /static/img/sad-face-2692.png HTTP/1.1[0m" 304 -
+2023-09-11 12:47:46,573 INFO     _log 127.0.0.1 - - [11/Sep/2023 12:47:46] "[36mGET /static/img/icons8-bulb-64.png HTTP/1.1[0m" 304 -
+2023-09-11 12:47:51,432 INFO     _log 127.0.0.1 - - [11/Sep/2023 12:47:51] "GET /static/logFiles/server_messages.log HTTP/1.1" 200 -
+2023-09-11 12:47:56,160 INFO     _log 127.0.0.1 - - [11/Sep/2023 12:47:56] "GET /static/logFiles/my_messages.txt HTTP/1.1" 200 -

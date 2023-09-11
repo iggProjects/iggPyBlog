@@ -263,3 +263,167 @@
 2023-09-11 12:26:09,551 INFO     _log  * Restarting with stat
 2023-09-11 12:26:10,160 WARNING  _log  * Debugger is active!
 2023-09-11 12:26:10,173 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-11 12:28:57,335 INFO     _log 127.0.0.1 - - [11/Sep/2023 12:28:57] "GET / HTTP/1.1" 200 -
+2023-09-11 12:28:57,632 INFO     _log 127.0.0.1 - - [11/Sep/2023 12:28:57] "[36mGET /static/img/ame-01.jpg HTTP/1.1[0m" 304 -
+2023-09-11 12:28:58,644 INFO     _log 127.0.0.1 - - [11/Sep/2023 12:28:58] "GET /excercises HTTP/1.1" 200 -
+2023-09-11 12:28:58,934 INFO     _log 127.0.0.1 - - [11/Sep/2023 12:28:58] "[36mGET /static/img/Lorea.jpg HTTP/1.1[0m" 304 -
+2023-09-11 12:29:00,056 INFO     _log 127.0.0.1 - - [11/Sep/2023 12:29:00] "GET /excercise/?id=1 HTTP/1.1" 200 -
+2023-09-11 12:29:00,263 INFO     _log 127.0.0.1 - - [11/Sep/2023 12:29:00] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-09-11 12:29:00,315 INFO     _log 127.0.0.1 - - [11/Sep/2023 12:29:00] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-09-11 12:29:00,390 INFO     _log 127.0.0.1 - - [11/Sep/2023 12:29:00] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-09-11 12:29:00,390 INFO     _log 127.0.0.1 - - [11/Sep/2023 12:29:00] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-09-11 12:29:04,116 INFO     _log 127.0.0.1 - - [11/Sep/2023 12:29:04] "GET /result_script_exec/?py_path=static/py_excercises/20230213-PrototypeScript-colors/0-prototype-colors1.py HTTP/1.1" 200 -
+2023-09-11 12:29:04,475 INFO     _log 127.0.0.1 - - [11/Sep/2023 12:29:04] "GET /result_script_html HTTP/1.1" 200 -
+2023-09-11 12:33:39,677 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\flask_app.py', reloading
+2023-09-11 12:33:39,800 INFO     _log  * Restarting with stat
+2023-09-11 12:33:40,590 WARNING  _log  * Debugger is active!
+2023-09-11 12:33:40,590 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-11 12:33:43,723 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\flask_app.py', reloading
+2023-09-11 12:33:43,828 INFO     _log  * Restarting with stat
+2023-09-11 12:33:44,470 WARNING  _log  * Debugger is active!
+2023-09-11 12:33:44,470 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-11 12:38:29,335 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\flask_app.py', reloading
+2023-09-11 12:38:29,429 INFO     _log  * Restarting with stat
+2023-09-11 12:38:30,174 WARNING  _log  * Debugger is active!
+2023-09-11 12:38:30,174 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-11 12:38:36,408 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\flask_app.py', reloading
+2023-09-11 12:38:36,497 INFO     _log  * Restarting with stat
+2023-09-11 12:38:37,092 WARNING  _log  * Debugger is active!
+2023-09-11 12:38:37,092 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-11 12:38:38,160 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\flask_app.py', reloading
+2023-09-11 12:38:38,270 INFO     _log  * Restarting with stat
+2023-09-11 12:38:38,924 WARNING  _log  * Debugger is active!
+2023-09-11 12:38:38,924 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-11 12:38:46,166 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\flask_app.py', reloading
+2023-09-11 12:38:46,251 INFO     _log  * Restarting with stat
+2023-09-11 12:38:46,909 WARNING  _log  * Debugger is active!
+2023-09-11 12:38:46,909 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-11 12:38:53,124 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\flask_app.py', reloading
+2023-09-11 12:38:53,232 INFO     _log  * Restarting with stat
+2023-09-11 12:38:53,895 WARNING  _log  * Debugger is active!
+2023-09-11 12:38:53,895 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-11 12:38:56,004 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\flask_app.py', reloading
+2023-09-11 12:38:56,103 INFO     _log  * Restarting with stat
+2023-09-11 12:38:56,762 WARNING  _log  * Debugger is active!
+2023-09-11 12:38:56,762 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-11 12:39:31,056 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\flask_app.py', reloading
+2023-09-11 12:39:31,139 INFO     _log  * Restarting with stat
+2023-09-11 12:39:31,862 WARNING  _log  * Debugger is active!
+2023-09-11 12:39:31,862 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-11 12:39:39,135 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\flask_app.py', reloading
+2023-09-11 12:39:39,231 INFO     _log  * Restarting with stat
+2023-09-11 12:39:40,008 WARNING  _log  * Debugger is active!
+2023-09-11 12:39:40,008 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-11 12:39:41,088 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\flask_app.py', reloading
+2023-09-11 12:39:41,222 INFO     _log  * Restarting with stat
+2023-09-11 12:39:41,863 WARNING  _log  * Debugger is active!
+2023-09-11 12:39:41,874 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-11 12:39:48,124 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\flask_app.py', reloading
+2023-09-11 12:39:48,224 INFO     _log  * Restarting with stat
+2023-09-11 12:39:48,963 WARNING  _log  * Debugger is active!
+2023-09-11 12:39:48,972 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-11 12:39:51,065 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\flask_app.py', reloading
+2023-09-11 12:39:51,201 INFO     _log  * Restarting with stat
+2023-09-11 12:39:51,956 WARNING  _log  * Debugger is active!
+2023-09-11 12:39:51,956 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-11 12:40:18,928 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\flask_app.py', reloading
+2023-09-11 12:40:19,028 INFO     _log  * Restarting with stat
+2023-09-11 12:40:19,673 WARNING  _log  * Debugger is active!
+2023-09-11 12:40:19,673 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-11 12:40:21,779 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\flask_app.py', reloading
+2023-09-11 12:40:21,906 INFO     _log  * Restarting with stat
+2023-09-11 12:40:22,675 WARNING  _log  * Debugger is active!
+2023-09-11 12:40:22,691 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-11 12:40:23,757 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\flask_app.py', reloading
+2023-09-11 12:40:23,875 INFO     _log  * Restarting with stat
+2023-09-11 12:40:24,533 WARNING  _log  * Debugger is active!
+2023-09-11 12:40:24,533 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-11 12:40:26,373 INFO     _log [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-09-11 12:40:26,373 INFO     _log [33mPress CTRL+C to quit[0m
+2023-09-11 12:40:26,373 INFO     _log  * Restarting with stat
+2023-09-11 12:40:27,025 WARNING  _log  * Debugger is active!
+2023-09-11 12:40:27,025 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-11 12:40:40,231 INFO     _log 127.0.0.1 - - [11/Sep/2023 12:40:40] "GET / HTTP/1.1" 200 -
+2023-09-11 12:40:40,355 INFO     _log 127.0.0.1 - - [11/Sep/2023 12:40:40] "[36mGET /static/img/ame-01.jpg HTTP/1.1[0m" 304 -
+2023-09-11 12:40:46,794 INFO     _log 127.0.0.1 - - [11/Sep/2023 12:40:46] "GET /food-menu HTTP/1.1" 200 -
+2023-09-11 12:40:47,077 INFO     _log 127.0.0.1 - - [11/Sep/2023 12:40:47] "[36mGET /static/img/urrutia.jpg HTTP/1.1[0m" 304 -
+2023-09-11 12:40:48,453 INFO     _log 127.0.0.1 - - [11/Sep/2023 12:40:48] "GET /foods_login HTTP/1.1" 200 -
+2023-09-11 12:40:53,649 INFO     _log 127.0.0.1 - - [11/Sep/2023 12:40:53] "[32mPOST /foods_login HTTP/1.1[0m" 302 -
+2023-09-11 12:40:53,658 INFO     _log 127.0.0.1 - - [11/Sep/2023 12:40:53] "GET /foods_home_admin HTTP/1.1" 200 -
+2023-09-11 12:40:53,994 INFO     _log 127.0.0.1 - - [11/Sep/2023 12:40:53] "[36mGET /static/img/urrutia.jpg HTTP/1.1[0m" 304 -
+2023-09-11 12:40:55,240 INFO     _log 127.0.0.1 - - [11/Sep/2023 12:40:55] "GET / HTTP/1.1" 200 -
+2023-09-11 12:40:55,555 INFO     _log 127.0.0.1 - - [11/Sep/2023 12:40:55] "[36mGET /static/img/ame-01.jpg HTTP/1.1[0m" 304 -
+2023-09-11 12:40:58,456 INFO     _log 127.0.0.1 - - [11/Sep/2023 12:40:58] "GET /excercises HTTP/1.1" 200 -
+2023-09-11 12:40:58,714 INFO     _log 127.0.0.1 - - [11/Sep/2023 12:40:58] "[36mGET /static/img/Lorea.jpg HTTP/1.1[0m" 304 -
+2023-09-11 12:41:00,207 INFO     _log 127.0.0.1 - - [11/Sep/2023 12:41:00] "GET /excercise/?id=1 HTTP/1.1" 200 -
+2023-09-11 12:41:00,490 INFO     _log 127.0.0.1 - - [11/Sep/2023 12:41:00] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-09-11 12:41:00,538 INFO     _log 127.0.0.1 - - [11/Sep/2023 12:41:00] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-09-11 12:41:00,553 INFO     _log 127.0.0.1 - - [11/Sep/2023 12:41:00] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-09-11 12:41:00,556 INFO     _log 127.0.0.1 - - [11/Sep/2023 12:41:00] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-09-11 12:41:04,908 INFO     _log 127.0.0.1 - - [11/Sep/2023 12:41:04] "GET /result_script_exec/?py_path=static/py_excercises/20230213-PrototypeScript-colors/0-prototype-colors1.py HTTP/1.1" 200 -
+2023-09-11 12:41:04,990 INFO     _log 127.0.0.1 - - [11/Sep/2023 12:41:04] "GET /result_script_html HTTP/1.1" 200 -
+2023-09-11 12:41:10,902 INFO     _log 127.0.0.1 - - [11/Sep/2023 12:41:10] "GET /static/logFiles/my_messages.txt HTTP/1.1" 200 -
+2023-09-11 12:41:20,277 INFO     _log 127.0.0.1 - - [11/Sep/2023 12:41:20] "GET /static/logFiles/server_messages.txt HTTP/1.1" 200 -
+2023-09-11 12:43:23,000 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\flask_app.py', reloading
+2023-09-11 12:43:23,100 INFO     _log  * Restarting with stat
+2023-09-11 12:43:23,857 WARNING  _log  * Debugger is active!
+2023-09-11 12:43:23,874 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-11 12:43:25,976 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\flask_app.py', reloading
+2023-09-11 12:43:26,082 INFO     _log  * Restarting with stat
+2023-09-11 12:43:26,798 WARNING  _log  * Debugger is active!
+2023-09-11 12:43:26,805 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-11 12:43:34,102 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\flask_app.py', reloading
+2023-09-11 12:43:34,197 INFO     _log  * Restarting with stat
+2023-09-11 12:43:34,922 WARNING  _log  * Debugger is active!
+2023-09-11 12:43:34,930 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-11 12:43:38,376 INFO     _log 127.0.0.1 - - [11/Sep/2023 12:43:38] "GET /result_script_html HTTP/1.1" 200 -
+2023-09-11 12:43:38,539 INFO     _log 127.0.0.1 - - [11/Sep/2023 12:43:38] "[36mGET /static/img/icons8-bulb-64.png HTTP/1.1[0m" 304 -
+2023-09-11 12:43:39,919 ERROR    excercises exception => excrcises.html
+Traceback (most recent call last):
+  File "C:\ML_Project\NazarethCourse2023\iggPyBlog\flask_app.py", line 41, in excercises
+    return render_template('excrcises.html', excercises = Excercises)
+  File "C:\ML_Project\NazarethCourse2023\iggPyBlog\igg_venv\lib\site-packages\flask\templating.py", line 146, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "C:\ML_Project\NazarethCourse2023\iggPyBlog\igg_venv\lib\site-packages\jinja2\environment.py", line 1081, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "C:\ML_Project\NazarethCourse2023\iggPyBlog\igg_venv\lib\site-packages\jinja2\environment.py", line 1010, in get_template
+    return self._load_template(name, globals)
+  File "C:\ML_Project\NazarethCourse2023\iggPyBlog\igg_venv\lib\site-packages\jinja2\environment.py", line 969, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "C:\ML_Project\NazarethCourse2023\iggPyBlog\igg_venv\lib\site-packages\jinja2\loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "C:\ML_Project\NazarethCourse2023\iggPyBlog\igg_venv\lib\site-packages\flask\templating.py", line 62, in get_source
+    return self._get_source_fast(environment, template)
+  File "C:\ML_Project\NazarethCourse2023\iggPyBlog\igg_venv\lib\site-packages\flask\templating.py", line 98, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: excrcises.html
+2023-09-11 12:43:39,938 INFO     _log 127.0.0.1 - - [11/Sep/2023 12:43:39] "GET /excercises HTTP/1.1" 200 -
+2023-09-11 12:43:40,240 INFO     _log 127.0.0.1 - - [11/Sep/2023 12:43:40] "GET /static/img/sad-face-2692.png HTTP/1.1" 200 -
+2023-09-11 12:43:44,337 INFO     _log 127.0.0.1 - - [11/Sep/2023 12:43:44] "[36mGET /static/logFiles/server_messages.txt HTTP/1.1[0m" 304 -
+2023-09-11 12:43:53,613 INFO     _log 127.0.0.1 - - [11/Sep/2023 12:43:53] "GET /static/logFiles/my_messages.txt HTTP/1.1" 200 -
+2023-09-11 12:44:51,259 ERROR    excercises exception => excrcises.html
+Traceback (most recent call last):
+  File "C:\ML_Project\NazarethCourse2023\iggPyBlog\flask_app.py", line 41, in excercises
+    return render_template('excrcises.html', excercises = Excercises)
+  File "C:\ML_Project\NazarethCourse2023\iggPyBlog\igg_venv\lib\site-packages\flask\templating.py", line 146, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "C:\ML_Project\NazarethCourse2023\iggPyBlog\igg_venv\lib\site-packages\jinja2\environment.py", line 1081, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "C:\ML_Project\NazarethCourse2023\iggPyBlog\igg_venv\lib\site-packages\jinja2\environment.py", line 1010, in get_template
+    return self._load_template(name, globals)
+  File "C:\ML_Project\NazarethCourse2023\iggPyBlog\igg_venv\lib\site-packages\jinja2\environment.py", line 969, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "C:\ML_Project\NazarethCourse2023\iggPyBlog\igg_venv\lib\site-packages\jinja2\loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "C:\ML_Project\NazarethCourse2023\iggPyBlog\igg_venv\lib\site-packages\flask\templating.py", line 62, in get_source
+    return self._get_source_fast(environment, template)
+  File "C:\ML_Project\NazarethCourse2023\iggPyBlog\igg_venv\lib\site-packages\flask\templating.py", line 98, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: excrcises.html
+2023-09-11 12:44:51,276 INFO     _log 127.0.0.1 - - [11/Sep/2023 12:44:51] "GET /excercises HTTP/1.1" 200 -
+2023-09-11 12:44:51,291 INFO     _log 127.0.0.1 - - [11/Sep/2023 12:44:51] "[36mGET /static/img/sad-face-2692.png HTTP/1.1[0m" 304 -
+2023-09-11 12:44:53,179 INFO     _log 127.0.0.1 - - [11/Sep/2023 12:44:53] "[33mGET /static/logFiles/server_messages.log HTTP/1.1[0m" 404 -
+2023-09-11 12:45:04,738 INFO     _log 127.0.0.1 - - [11/Sep/2023 12:45:04] "GET /static/logFiles/my_messages.txt HTTP/1.1" 200 -
+2023-09-11 12:46:16,361 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\config.py', reloading
+2023-09-11 12:46:16,438 INFO     _log  * Restarting with stat
