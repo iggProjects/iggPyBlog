@@ -15,12 +15,15 @@ nazareth user: jo.gainzarain@aulanz.net  | nz2223Nz
 STILL TO DO !!!
 
 PAW & local PATHS
-- write_log_file function 
-    - check file path in both cases
+    
 - z-permutFileSorted.txt
-- list_JS_lines.txt, list_text_lines.csv ....    
 
-- PAW vs local --- file paths
+- list_JS_lines.txt, list_text_lines.csv ....   ✔✔ 😎  
+
+- write_log_file function ✔✔ 😎
+    - check file path in both cases
+
+- PAW vs local --- file paths   ✔✔ 😎 
     - check what is happens in PAW when working in excercises and enigma project
     - look at root path "https://eu.pythonanywhere.com/user/iggWebNz/files/home/iggWebNz"
     - It seems that you have to include "mysite" when creating paths

@@ -38,7 +38,7 @@ def excercises():
 
     try:         
         write_log_file("my_messages.txt","IN 'func excercises()'")
-        return render_template('excrcises.html', excercises = Excercises)
+        return render_template('excercises.html', excercises = Excercises)
 
     except Exception as Argument:   
         """     
@@ -287,7 +287,8 @@ def result_script_exec():
         os.remove("list_JS_lines.txt")
         print(f"{FR_GREEN}........ old list_JS_lines.txt deleted")    
     
-    with open('list_JS_lines.txt', 'w') as f:
+    with open(basedir + '/static/temp/list_JS_lines.txt', 'w') as f:
+    #with open('list_JS_lines.txt', 'w') as f:
         for line in list_JS_lines:
             f.write(f"{line}\n")
     
@@ -306,7 +307,8 @@ def result_script_exec():
         print(f"{FR_GREEN}........ old list_text_lines.csv deleted")    
 
     # data rows of csv file --> list_color_text
-    with open('list_text_lines.csv', 'w') as f:
+    with open(basedir + '/static/temp/list_text_lines.csv', 'w') as f:
+    #with open('list_text_lines.csv', 'w') as f:
         
         # using csv.writer method from CSV package
         write = csv.writer(f,delimiter=",")
@@ -495,7 +497,7 @@ def result_script_exec1():
         os.remove("list_JS_lines.txt")
         print(f"{FR_GREEN}........ old list_JS_lines.txt deleted")    
     
-    with open('list_JS_lines.txt', 'w') as f:
+    with open(basedir + '/static/temp/list_JS_lines.txt', 'w') as f:
         for line in list_JS_lines:
             f.write(f"{line}\n")
     
@@ -514,7 +516,7 @@ def result_script_exec1():
         print(f"{FR_GREEN}........ old list_text_lines.csv deleted")    
 
     # data rows of csv file --> list_color_text
-    with open('list_text_lines.csv', 'w') as f:
+    with open(basedir + '/static/temp/list_text_lines.csv', 'w') as f:
         
         # using csv.writer method from CSV package
         write = csv.writer(f,delimiter=",")
@@ -562,7 +564,7 @@ def result_script_html():
 
     print("----------------------------------------------")
     # read file of matrix lines
-    matrix_file_name = session['matrix_file_name'] 
+    matrix_file_name = basedir + "/static/temp/" + session['matrix_file_name'] 
     list_matrix_lines = []
     with open(matrix_file_name) as f:
         list_matrix_lines = f.readlines()        
@@ -571,7 +573,7 @@ def result_script_html():
         print(f"{FR_GREEN}...... {line}")    
     """
     # read file of text lines
-    textLines_file_name = session['textLines_file_name'] 
+    textLines_file_name = basedir + "/static/temp/" + session['textLines_file_name'] 
     list_text_lines = []
     with open(textLines_file_name) as f:
         list_text_lines = f.readlines()
