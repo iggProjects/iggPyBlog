@@ -257,3 +257,12 @@ jinja2.exceptions.TemplateNotFound: excrcises.html
 2023-09-11 20:40:07,858 INFO     _log 127.0.0.1 - - [11/Sep/2023 20:40:07] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
 2023-09-11 20:40:11,306 INFO     _log 127.0.0.1 - - [11/Sep/2023 20:40:11] "GET /result_script_exec/?py_path=static/py_excercises/20230213-PrototypeScript-colors/0-prototype-colors1.py HTTP/1.1" 200 -
 2023-09-11 20:40:11,655 INFO     _log 127.0.0.1 - - [11/Sep/2023 20:40:11] "GET /result_script_html HTTP/1.1" 200 -
+2023-09-11 20:55:35,921 INFO     _log 127.0.0.1 - - [11/Sep/2023 20:55:35] "GET /excercises HTTP/1.1" 200 -
+2023-09-11 20:55:36,135 INFO     _log 127.0.0.1 - - [11/Sep/2023 20:55:36] "[36mGET /static/img/Lorea.jpg HTTP/1.1[0m" 304 -
+2023-09-11 20:55:37,513 INFO     _log 127.0.0.1 - - [11/Sep/2023 20:55:37] "GET /excercise/?id=1 HTTP/1.1" 200 -
+2023-09-11 20:55:37,821 INFO     _log 127.0.0.1 - - [11/Sep/2023 20:55:37] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-09-11 20:55:37,842 INFO     _log 127.0.0.1 - - [11/Sep/2023 20:55:37] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-09-11 20:55:37,842 INFO     _log 127.0.0.1 - - [11/Sep/2023 20:55:37] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-09-11 20:55:37,854 INFO     _log 127.0.0.1 - - [11/Sep/2023 20:55:37] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-09-11 20:55:41,603 INFO     _log 127.0.0.1 - - [11/Sep/2023 20:55:41] "GET /result_script_exec/?py_path=static/py_excercises/20230213-PrototypeScript-colors/0-prototype-colors1.py HTTP/1.1" 200 -
+2023-09-11 20:55:41,682 INFO     _log 127.0.0.1 - - [11/Sep/2023 20:55:41] "GET /result_script_html HTTP/1.1" 200 -
