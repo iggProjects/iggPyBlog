@@ -1,31 +1,12 @@
- 
-"""
-Links
-    LOGGING
-    - https://docs.python.org/3/library/logging.html#logging-levels
-    - https://docs.python.org/3/library/logging.html#logging.Formatter
-    - https://docs.python.org/3/library/logging.html#logrecord-attributes
+# CONFIGURATION ENVIRONMENT AND VARIABLES
 
-    EXCEPTION TYPES
-    - https://docs.python.org/3/library/exceptions.html
-    - https://www.tutorialspoint.com/How-to-print-the-Python-Exception-Error-Hierarchy
-
-    - https://flask.palletsprojects.com/en/2.3.x/errorhandling/
-    - https://stackoverflow.com/questions/25919517/python-flask-redirect-with-error
-    - https://www.digitalocean.com/community/tutorials/how-to-handle-errors-in-a-flask-application
-    - https://flask.palletsprojects.com/en/2.3.x/errorhandling/
-    - https://www.youtube.com/watch?v=r3Xmcdlx-Us
-    - args & kwargs --> https://www.geeksforgeeks.org/args-kwargs-python/
-
-        More params to FORMAT
-            FORMAT = '%(asctime)s %(clientip)-15s %(user)-8s %(message)s'
-            logging.basicConfig(format=FORMAT)
-            d = {'clientip': '192.168.0.1', 'user': 'fbloggs'}
-            logging.warning('Protocol problem: %s', 'connection reset', extra=d)
-
-""" 
-
+# APP and principal modules 
 from config import *
+# DB 
+from config_DB import *
+# DATA of excercises, articles, projects
+from config_DATA import *
+
 
 """
 from flask import Flask, render_template, url_for, redirect, request, session
@@ -52,9 +33,6 @@ print(f"{FR_GREEN}............ basedir ===> {os.path.abspath(os.path.dirname(__f
 
 opSys = platform.system()
 print(f"{FR_YELL}............ OS ===> {opSys}{NO_COLOR}")
-
-# My own
-from MyFunc import *
 
 app = Flask(__name__)
 app.secret_key = 'HI TARZAN'

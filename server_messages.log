@@ -469,3 +469,19 @@
 2023-09-10 21:27:04,280 INFO     _log  * Debugger PIN: 551-034-170
 2023-09-10 21:47:54,039 INFO     _log 127.0.0.1 - - [10/Sep/2023 21:47:54] "GET /static/logFiles/my_messages.txt HTTP/1.1" 200 -
 2023-09-10 21:47:54,266 INFO     _log 127.0.0.1 - - [10/Sep/2023 21:47:54] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2023-09-11 11:54:36,778 INFO     _log [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-09-11 11:54:36,778 INFO     _log [33mPress CTRL+C to quit[0m
+2023-09-11 11:54:36,779 INFO     _log  * Restarting with stat
+2023-09-11 11:54:37,354 WARNING  _log  * Debugger is active!
+2023-09-11 11:54:37,369 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-11 12:02:25,878 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\config.py', reloading
+2023-09-11 12:02:26,007 INFO     _log  * Restarting with stat
+2023-09-11 12:02:27,272 WARNING  _log  * Debugger is active!
+2023-09-11 12:02:27,275 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-11 12:03:03,796 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\config.py', reloading
+2023-09-11 12:03:03,914 INFO     _log  * Restarting with stat
+2023-09-11 12:03:04,686 WARNING  _log  * Debugger is active!
+2023-09-11 12:03:04,694 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-11 12:03:31,712 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\config.py', reloading
+2023-09-11 12:03:31,816 INFO     _log  * Restarting with stat
