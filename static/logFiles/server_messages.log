@@ -266,3 +266,22 @@ jinja2.exceptions.TemplateNotFound: excrcises.html
 2023-09-11 20:55:37,854 INFO     _log 127.0.0.1 - - [11/Sep/2023 20:55:37] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
 2023-09-11 20:55:41,603 INFO     _log 127.0.0.1 - - [11/Sep/2023 20:55:41] "GET /result_script_exec/?py_path=static/py_excercises/20230213-PrototypeScript-colors/0-prototype-colors1.py HTTP/1.1" 200 -
 2023-09-11 20:55:41,682 INFO     _log 127.0.0.1 - - [11/Sep/2023 20:55:41] "GET /result_script_html HTTP/1.1" 200 -
+2023-09-11 20:58:56,458 INFO     _log [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-09-11 20:58:56,458 INFO     _log [33mPress CTRL+C to quit[0m
+2023-09-11 20:58:56,458 INFO     _log  * Restarting with stat
+2023-09-11 20:58:57,152 WARNING  _log  * Debugger is active!
+2023-09-11 20:58:57,160 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-11 20:59:03,035 INFO     _log 127.0.0.1 - - [11/Sep/2023 20:59:03] "GET / HTTP/1.1" 200 -
+2023-09-11 20:59:03,149 INFO     _log 127.0.0.1 - - [11/Sep/2023 20:59:03] "[36mGET /static/img/ame-01.jpg HTTP/1.1[0m" 304 -
+2023-09-11 20:59:04,986 INFO     _log 127.0.0.1 - - [11/Sep/2023 20:59:04] "GET /excercises HTTP/1.1" 200 -
+2023-09-11 20:59:05,287 INFO     _log 127.0.0.1 - - [11/Sep/2023 20:59:05] "[36mGET /static/img/Lorea.jpg HTTP/1.1[0m" 304 -
+2023-09-11 20:59:06,816 INFO     _log 127.0.0.1 - - [11/Sep/2023 20:59:06] "GET /excercise/?id=1 HTTP/1.1" 200 -
+2023-09-11 20:59:07,014 INFO     _log 127.0.0.1 - - [11/Sep/2023 20:59:07] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-09-11 20:59:07,051 INFO     _log 127.0.0.1 - - [11/Sep/2023 20:59:07] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-09-11 20:59:07,160 INFO     _log 127.0.0.1 - - [11/Sep/2023 20:59:07] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-09-11 20:59:07,160 INFO     _log 127.0.0.1 - - [11/Sep/2023 20:59:07] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-09-11 20:59:11,511 INFO     _log 127.0.0.1 - - [11/Sep/2023 20:59:11] "GET /result_script_exec/?py_path=static/py_excercises/20230213-PrototypeScript-colors/0-prototype-colors1.py HTTP/1.1" 200 -
+2023-09-11 20:59:11,853 INFO     _log 127.0.0.1 - - [11/Sep/2023 20:59:11] "GET /result_script_html HTTP/1.1" 200 -
+2023-09-11 20:59:22,622 INFO     _log 127.0.0.1 - - [11/Sep/2023 20:59:22] "GET /static/logFiles/my_messages.txt HTTP/1.1" 200 -
+2023-09-11 20:59:32,809 INFO     _log 127.0.0.1 - - [11/Sep/2023 20:59:32] "GET /static/logFiles/server_messages.log HTTP/1.1" 200 -
