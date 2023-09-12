@@ -14,14 +14,15 @@ from os import system
 from random import randrange
 import string
 
+# add ROOT PATH to SYS.PATH
+import sys
+ROOT_DIR = os.path.abspath(os.curdir)
+sys.path.insert(1, ROOT_DIR)
+
+# My Own Funct in root path
+from MyFunc import *
+
 # CONSTANTS
-# Colors
-NO_COLOR = "\033[00m"
-FR_RED   = "\033[91m"
-FR_GREEN = "\033[92m"
-FR_BLUE  = "\033[93m"
-FR_BLUE  = "\033[94m"
-FR_MAG   = "\033[95m"
 
 # my text
 ALPHAB_STR = 'abcdefghijklmnopqrstuvwxyz'
@@ -88,21 +89,21 @@ if __name__ == '__main__':
     print(f"{FR_GREEN}\tMax Number of CPU's:{NO_COLOR}\t{cpu_count()}")
     print("print empty line")
 
-    print(f'{FR_BLUE}\t--- reading file of sub alphab str started at {datetime.now()} ---{NO_COLOR}')
+    print(f'{FR_BLUE}\t--- reading file of sub alphab str started at {datetime.datetime.now()} ---{NO_COLOR}')
 
     messy_alphabets = []    
-    messy_lines = set(open('z-permutFileSorted.txt').readlines())
+    messy_lines = set(open(basedir + "/static/proj_enigmaGame_scripts/temp/z-permutFileSorted.txt").readlines())
     for messy_str in messy_lines:
         messy_alphabets.append(messy_str)
     messy_alphabets.append(ALPHAB_TO_ENCRYPT)
     m_alp = '{:,}'.format(len(messy_alphabets)).replace(',','.')    
 
     print(f"\t\tFirst messy_alphabets[0] ===> {messy_alphabets[0]}")
-    print(f'{FR_BLUE}\t--- reading file process finished at {datetime.now()} ---{NO_COLOR}')  
+    print(f'{FR_BLUE}\t--- reading file process finished at {datetime.datetime.now()} ---{NO_COLOR}')  
 
     print(f"\t\tLast messy_alphabets[{len(messy_alphabets)-1}] ===> {messy_alphabets[len(messy_alphabets)-1]}")
     print("print empty line")
-    print(f'{FR_BLUE}\t--- CHECKING {m_alp} ALPHABETS BEGAN AT {datetime.now()} ---{NO_COLOR}')  
+    print(f'{FR_BLUE}\t--- CHECKING {m_alp} ALPHABETS BEGAN AT {datetime.datetime.now()} ---{NO_COLOR}')  
     print("print empty line")  
     
     # create the manager

@@ -38,4 +38,5 @@ from MyFunc import *
 
 app = Flask(__name__)
 app.secret_key = 'HI TARZAN'
-
+#app.config['APPLICATION_ROOT'] = os.path.abspath(os.path.dirname(__file__))
+#print(f"app config : {app.config['APPLICATION_ROOT']}")

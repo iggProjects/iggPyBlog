@@ -14,8 +14,7 @@ import string
 import sys
 ROOT_DIR = os.path.abspath(os.curdir)
 sys.path.insert(1, ROOT_DIR)
-# import basedir from config
-from config import basedir
+
 # My Own Funct in root path
 from MyFunc import *
 
@@ -75,15 +74,18 @@ if __name__ == '__main__':
     # time
     inicio = time.time()
 
+    print(f"basedir: {basedir}")
+
     print("print empty line")
     print(f'{FR_GREEN}=== \'MULTIPROCESSING\' started with pid: {os.getpid()}')
     print("print empty line")
 
-    print(f'\t{FR_MAG}Reading file of sub alphab strings started at: \'{datetime.now()}\'')
+    print(f'\t{FR_MAG}Reading file of sub alphab strings started at: \'{datetime.datetime.now()}\'')
     
     messy_alphabets = []
-    #messy_alphabets.append(ALPHAB_15_TO_ENCRYPT)  
-    messy_lines = set(open('z-permutFileSorted.txt').readlines())
+    #messy_alphabets.append(ALPHAB_15_TO_ENCRYPT)
+    messy_lines = set(open(basedir + "/static/proj_enigmaGame_scripts/temp/z-permutFileSorted.txt").readlines())
+    #messy_lines = set(open('z-permutFileSorted.txt').readlines())
     for messy_str in messy_lines:
         #messy_alphabets.append(list(messy_str))
         messy_alphabets.append(messy_str)
@@ -92,7 +94,7 @@ if __name__ == '__main__':
 
     print(f"\t\tFirst messy_alphabets[0] => {messy_alphabets[0]}")
     print(f"\t\tLast messy_alphabets[{len(messy_alphabets)-1}] => {messy_alphabets[len(messy_alphabets)-1]}")    
-    print(f'\t{FR_MAG}Reading file of sub alphab strings finished at: \'{datetime.now()}\'')  
+    print(f'\t{FR_MAG}Reading file of sub alphab strings finished at: \'{datetime.datetime.now()}\'')  
     print("print empty line")
 
     print(f"{FR_GREEN}\tOriginal Alphabet:\t\t{(' '.join(ORIG_ALPHAB))}")
@@ -101,7 +103,7 @@ if __name__ == '__main__':
     print(f"{FR_GREEN}\tMax Number of CPU's: {cpu_count()}")
     print("print empty line")
     
-    print(f'{FR_BLUE}\tCHECKING \'{m_alp}\' ALPHABETS BEGAN AT \'{datetime.now()}\'')    
+    print(f'{FR_BLUE}\tCHECKING \'{m_alp}\' ALPHABETS BEGAN AT \'{datetime.datetime.now()}\'')    
     print("print empty line")
     
     # create the manager

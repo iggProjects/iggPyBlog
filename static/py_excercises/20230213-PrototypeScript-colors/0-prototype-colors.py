@@ -7,13 +7,18 @@ THIS SCRIPT IS FOR PRINTING WITH COLORS
 
 # IMPORT SECTION
 import logging
+import sys
 
 # modules
+import os
 from os import  system
 
-# My functions
+# My Own Funct in root path
+ROOT_DIR = os.path.abspath(os.curdir)
+sys.path.insert(1, ROOT_DIR)
+
+# My Own Funct
 from MyFunc import *
-from MyColors import *
 
 # CONSTANTS
 

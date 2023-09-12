@@ -2,6 +2,11 @@ tweaks to flask parametrization
 
 ************************************************
 
+config
+  - https://hackersandslackers.com/configure-flask-applications/
+  - https://flask.palletsprojects.com/en/2.3.x/config/
+
+
 """  
 IN FLASK APP
 Links

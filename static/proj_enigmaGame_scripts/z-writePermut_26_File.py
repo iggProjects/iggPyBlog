@@ -11,8 +11,7 @@ import datetime
 import sys
 ROOT_DIR = os.path.abspath(os.curdir)
 sys.path.insert(1, ROOT_DIR)
-# import basedir from config
-from config import basedir
+
 # My Own Funct in root path
 from MyFunc import *
 

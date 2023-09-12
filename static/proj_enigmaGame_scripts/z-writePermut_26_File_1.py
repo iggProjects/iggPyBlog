@@ -6,18 +6,17 @@ from os import system
 import string, random, time
 from datetime import datetime
 
-# ADD ROOT PATH TO SYS.PATH
 import sys
+
+# add ROOT PATH to SYS.PATH
 ROOT_DIR = os.path.abspath(os.curdir)
 sys.path.insert(1, ROOT_DIR)
 
-# import basedir from config
-from config import basedir
 # My Own Funct in root path
 from MyFunc import *
 
 # CONSTANTS
-NUM_ALPHAB = 500
+NUM_ALPHAB = 1000
 
 # pause function
 def pause():  
