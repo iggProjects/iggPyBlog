@@ -15,8 +15,10 @@ nazareth user: jo.gainzarain@aulanz.net  | nz2223Nz
 STILL TO DO !!!
 
 PAW & local PATHS
+
+- config: base dir with array value for server key directory
     
-- z-permutFileSorted.txt
+- z-permutFileSorted.txt  ✔✔  😎
     - in z-writePermut_15_File (17,26)
         find with: open('z-permutFileSorted.txt', 'w').writelines(uniqlines)
 

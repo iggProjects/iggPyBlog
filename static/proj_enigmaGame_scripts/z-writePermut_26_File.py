@@ -4,18 +4,20 @@
 import os
 from os import system
 import string, random, time
-from datetime import datetime
+#from datetime import datetime
+import datetime
+
+# ADD ROOT PATH TO SYS.PATH
+import sys
+ROOT_DIR = os.path.abspath(os.curdir)
+sys.path.insert(1, ROOT_DIR)
+# import basedir from config
+from config import basedir
+# My Own Funct in root path
+from MyFunc import *
 
 # CONSTANTS
 NUM_ALPHAB = 200000
-
-# Colors
-NO_COLOR = "\033[00m"
-FR_RED   = "\033[91m"
-FR_GREEN = "\033[92m"
-FR_YELL  = "\033[93m"
-FR_BLUE  = "\033[94m"
-FR_MAG   = "\033[95m"
 
 # pause function
 def pause():  
@@ -33,11 +35,13 @@ def place_comma(numb):
 
 if __name__ == "__main__":
 
+    # at {datetime.now()}
     # time
     inicio = time.time()
     system('cls')
+    
     print(f"\n{FR_GREEN}=== MAIN ==={NO_COLOR}\n")
-    print(f"\n{FR_GREEN}=== process generating permutations of 'abcdefghijklmnopqrstuvwxyz' start at {NO_COLOR}{datetime.now()} {FR_GREEN}{NO_COLOR}\n")
+    print(f"{FR_GREEN}=== process generating permutations of \'abcdefghijklmnopqrstuvwxyz\' start at {datetime.datetime.now()}\n")
 
     alphab_26 = 'abcdefghijklmnopqrstuvwxyz'
     alphab_26_list = list(alphab_26)
@@ -46,12 +50,12 @@ if __name__ == "__main__":
     num_chars_equal = 0
 
     # delete if exists  
-    if os.path.exists("z-permutFile.txt"):
-        os.remove("z-permutFile.txt")
+    if os.path.exists(basedir + "/static/proj_enigmaGame_scripts/temp/z-permutFile.txt"):
+        os.remove(basedir + "/static/proj_enigmaGame_scripts/temp/z-permutFile.txt")
         print(f"\told z-permutFile.txt deleted")    
 
-    if os.path.exists("z-permutFileSorted.txt"):
-        os.remove("z-permutFileSorted.txt")
+    if os.path.exists(basedir + "/static/proj_enigmaGame_scripts/temp/z-permutFileSorted.txt"):
+        os.remove(basedir + "/static/proj_enigmaGame_scripts/temp/z-permutFileSorted.txt")
         print(f"\told z-permutFileSorted.txt deleted")    
 
 
@@ -70,7 +74,8 @@ if __name__ == "__main__":
         if num_chars_equal == 0:
             alp = ''.join(alp)
             alp = alp + '\n'
-            permutFile = open("z-permutFile.txt", "a")
+            permutFile = open(basedir + "/static/proj_enigmaGame_scripts/temp/z-permutFile.txt", "a")
+            #permutFile = open("z-permutFile.txt", "a")
             permutFile.write(alp)
             permutFile.close()
             numb_alphab += 1
@@ -80,14 +85,16 @@ if __name__ == "__main__":
         num_chars_equal = 0              
     
     # delete duplicated lines and sort
-    uniqlines = set(open('z-permutFile.txt').readlines())
+    uniqlines = set(open(basedir + "/static/proj_enigmaGame_scripts/temp/z-permutFile.txt").readlines())
+    #uniqlines = set(open('z-permutFile.txt').readlines())
     uniqlines = sorted(uniqlines)
     #print(f"uniqlines type is {type(uniqlines)}")
-    open('z-permutFileSorted.txt', 'w').writelines(uniqlines)
+    open(basedir + "/static/proj_enigmaGame_scripts/temp/z-permutFileSorted.txt", 'w').writelines(uniqlines)
+    #open('z-permutFileSorted.txt', 'w').writelines(uniqlines)
 
     # delete z-permutFile.txt
-    if os.path.exists("z-permutFile.txt"):
-        os.remove("z-permutFile.txt")
+    if os.path.exists(basedir + "/static/proj_enigmaGame_scripts/temp/z-permutFile.txt"):
+        os.remove(basedir + "/static/proj_enigmaGame_scripts/temp/z-permutFile.txt")
         print(f"\t== z-permutFile.txt deleted\n")   
 
     # time  
@@ -99,7 +106,7 @@ if __name__ == "__main__":
 
     print(f"\n{FR_GREEN}\tNumber of new alphabets in z-permutFileSorted.txt:{NO_COLOR} {place_comma(numb_alphab)}\n")
     print(f"\n{FR_GREEN}\tTotal alphabets discarded by conflict in character position:{NO_COLOR} {place_comma(alphab_with_char_conflict)}\n")
-    print(f"\n{FR_GREEN}=== process generating alphabets stoped at {NO_COLOR}{datetime.now()}\n")
+    print(f"\n{FR_GREEN}=== process generating alphabets stoped at {datetime.datetime.now()}{NO_COLOR}\n")
     print(f"\n{FR_GREEN}===  Elapsed time in seconds:{NO_COLOR} {str(elapsed_time).replace('.',',')}\n")
     
     print(f"\n{FR_GREEN}===  Total Alphabets per Seconds:{NO_COLOR} {alphab_per_seconds_format}\n\n")

@@ -298,3 +298,848 @@ jinja2.exceptions.TemplateNotFound: excrcises.html
 2023-09-11 21:01:17,694 INFO     _log 127.0.0.1 - - [11/Sep/2023 21:01:17] "GET /static/img/icons8-video-50.png HTTP/1.1" 200 -
 2023-09-11 21:01:20,416 INFO     _log 127.0.0.1 - - [11/Sep/2023 21:01:20] "GET /about HTTP/1.1" 200 -
 2023-09-11 21:01:20,654 INFO     _log 127.0.0.1 - - [11/Sep/2023 21:01:20] "[36mGET /static/Nazaret/ProgramaPython.jpg HTTP/1.1[0m" 304 -
+2023-09-12 09:19:41,080 INFO     _log [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-09-12 09:19:41,096 INFO     _log [33mPress CTRL+C to quit[0m
+2023-09-12 09:19:41,097 INFO     _log  * Restarting with stat
+2023-09-12 09:19:41,713 WARNING  _log  * Debugger is active!
+2023-09-12 09:19:41,730 INFO     _log  * Debugger PIN: 604-187-379
+2023-09-12 09:19:51,908 INFO     _log [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-09-12 09:19:51,908 INFO     _log [33mPress CTRL+C to quit[0m
+2023-09-12 09:19:51,908 INFO     _log  * Restarting with stat
+2023-09-12 09:19:52,563 WARNING  _log  * Debugger is active!
+2023-09-12 09:19:52,563 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 09:20:02,847 INFO     _log 127.0.0.1 - - [12/Sep/2023 09:20:02] "GET / HTTP/1.1" 200 -
+2023-09-12 09:20:02,983 INFO     _log 127.0.0.1 - - [12/Sep/2023 09:20:02] "GET /static/img/ame-01.jpg HTTP/1.1" 200 -
+2023-09-12 09:20:03,160 INFO     _log 127.0.0.1 - - [12/Sep/2023 09:20:03] "GET /static/img/icons8-bulb-64.png HTTP/1.1" 200 -
+2023-09-12 09:20:06,142 INFO     _log 127.0.0.1 - - [12/Sep/2023 09:20:06] "GET /project-EnigmaGame HTTP/1.1" 200 -
+2023-09-12 09:20:06,375 INFO     _log 127.0.0.1 - - [12/Sep/2023 09:20:06] "GET /static/img/enigma.jpg HTTP/1.1" 200 -
+2023-09-12 09:20:06,398 INFO     _log 127.0.0.1 - - [12/Sep/2023 09:20:06] "GET /static/img/icons8-video-50.png HTTP/1.1" 200 -
+2023-09-12 09:20:06,477 INFO     _log 127.0.0.1 - - [12/Sep/2023 09:20:06] "GET /static/img/Lorea.jpg HTTP/1.1" 200 -
+2023-09-12 09:22:17,802 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File.py', reloading
+2023-09-12 09:22:17,902 INFO     _log  * Restarting with stat
+2023-09-12 09:22:18,595 WARNING  _log  * Debugger is active!
+2023-09-12 09:22:18,603 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 09:22:19,693 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File.py', reloading
+2023-09-12 09:22:19,764 INFO     _log  * Restarting with stat
+2023-09-12 09:22:20,445 WARNING  _log  * Debugger is active!
+2023-09-12 09:22:20,453 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 09:22:25,704 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File.py', reloading
+2023-09-12 09:22:25,771 INFO     _log  * Restarting with stat
+2023-09-12 09:22:26,433 WARNING  _log  * Debugger is active!
+2023-09-12 09:22:26,441 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 09:22:35,806 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File.py', reloading
+2023-09-12 09:22:35,945 INFO     _log  * Restarting with stat
+2023-09-12 09:22:36,612 WARNING  _log  * Debugger is active!
+2023-09-12 09:22:36,612 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 09:22:38,720 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File.py', reloading
+2023-09-12 09:22:38,815 INFO     _log  * Restarting with stat
+2023-09-12 09:22:39,614 WARNING  _log  * Debugger is active!
+2023-09-12 09:22:39,614 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 09:22:40,709 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File.py', reloading
+2023-09-12 09:22:40,803 INFO     _log  * Restarting with stat
+2023-09-12 09:22:41,386 WARNING  _log  * Debugger is active!
+2023-09-12 09:22:41,389 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 09:22:46,622 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File.py', reloading
+2023-09-12 09:22:46,708 INFO     _log  * Restarting with stat
+2023-09-12 09:22:47,369 WARNING  _log  * Debugger is active!
+2023-09-12 09:22:47,369 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 09:22:50,524 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File.py', reloading
+2023-09-12 09:22:50,634 INFO     _log  * Restarting with stat
+2023-09-12 09:22:51,295 WARNING  _log  * Debugger is active!
+2023-09-12 09:22:51,301 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 09:23:34,897 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File.py', reloading
+2023-09-12 09:23:34,979 INFO     _log  * Restarting with stat
+2023-09-12 09:23:35,620 WARNING  _log  * Debugger is active!
+2023-09-12 09:23:35,623 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 09:23:36,692 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File.py', reloading
+2023-09-12 09:23:36,837 INFO     _log  * Restarting with stat
+2023-09-12 09:23:37,662 WARNING  _log  * Debugger is active!
+2023-09-12 09:23:37,662 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 09:23:38,735 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File.py', reloading
+2023-09-12 09:23:38,854 INFO     _log  * Restarting with stat
+2023-09-12 09:23:39,512 WARNING  _log  * Debugger is active!
+2023-09-12 09:23:39,520 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 09:23:40,595 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File.py', reloading
+2023-09-12 09:23:40,689 INFO     _log  * Restarting with stat
+2023-09-12 09:23:41,351 WARNING  _log  * Debugger is active!
+2023-09-12 09:23:41,365 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 09:23:49,696 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File.py', reloading
+2023-09-12 09:23:49,800 INFO     _log  * Restarting with stat
+2023-09-12 09:23:50,444 WARNING  _log  * Debugger is active!
+2023-09-12 09:23:50,444 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 09:23:52,537 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File.py', reloading
+2023-09-12 09:23:52,624 INFO     _log  * Restarting with stat
+2023-09-12 09:23:53,320 WARNING  _log  * Debugger is active!
+2023-09-12 09:23:53,329 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 09:23:54,392 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File.py', reloading
+2023-09-12 09:23:54,500 INFO     _log  * Restarting with stat
+2023-09-12 09:23:55,249 WARNING  _log  * Debugger is active!
+2023-09-12 09:23:55,262 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 09:23:56,367 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File.py', reloading
+2023-09-12 09:23:56,510 INFO     _log  * Restarting with stat
+2023-09-12 09:23:57,170 WARNING  _log  * Debugger is active!
+2023-09-12 09:23:57,170 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 09:23:58,247 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File.py', reloading
+2023-09-12 09:23:58,358 INFO     _log  * Restarting with stat
+2023-09-12 09:23:59,119 WARNING  _log  * Debugger is active!
+2023-09-12 09:23:59,119 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 09:24:12,631 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File.py', reloading
+2023-09-12 09:24:12,734 INFO     _log  * Restarting with stat
+2023-09-12 09:24:13,408 WARNING  _log  * Debugger is active!
+2023-09-12 09:24:13,413 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 09:24:14,503 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File.py', reloading
+2023-09-12 09:24:14,636 INFO     _log  * Restarting with stat
+2023-09-12 09:24:15,381 WARNING  _log  * Debugger is active!
+2023-09-12 09:24:15,381 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 09:24:28,894 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File.py', reloading
+2023-09-12 09:24:28,985 INFO     _log  * Restarting with stat
+2023-09-12 09:24:29,730 WARNING  _log  * Debugger is active!
+2023-09-12 09:24:29,730 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 09:24:47,433 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File.py', reloading
+2023-09-12 09:24:47,542 INFO     _log  * Restarting with stat
+2023-09-12 09:24:48,198 WARNING  _log  * Debugger is active!
+2023-09-12 09:24:48,198 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 09:24:49,278 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File.py', reloading
+2023-09-12 09:24:49,390 INFO     _log  * Restarting with stat
+2023-09-12 09:24:50,062 WARNING  _log  * Debugger is active!
+2023-09-12 09:24:50,069 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 09:24:59,413 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File.py', reloading
+2023-09-12 09:24:59,524 INFO     _log  * Restarting with stat
+2023-09-12 09:25:00,247 WARNING  _log  * Debugger is active!
+2023-09-12 09:25:00,247 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 09:25:02,395 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File.py', reloading
+2023-09-12 09:25:02,508 INFO     _log  * Restarting with stat
+2023-09-12 09:25:03,248 WARNING  _log  * Debugger is active!
+2023-09-12 09:25:03,248 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 09:25:05,362 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File.py', reloading
+2023-09-12 09:25:05,418 INFO     _log  * Restarting with stat
+2023-09-12 09:25:06,013 WARNING  _log  * Debugger is active!
+2023-09-12 09:25:06,016 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 09:25:16,695 INFO     _log 127.0.0.1 - - [12/Sep/2023 09:25:16] "GET /project-EnigmaGame HTTP/1.1" 200 -
+2023-09-12 09:25:16,767 INFO     _log 127.0.0.1 - - [12/Sep/2023 09:25:16] "[36mGET /static/img/enigma.jpg HTTP/1.1[0m" 304 -
+2023-09-12 09:25:16,947 INFO     _log 127.0.0.1 - - [12/Sep/2023 09:25:16] "[36mGET /static/img/icons8-video-50.png HTTP/1.1[0m" 304 -
+2023-09-12 09:25:17,036 INFO     _log 127.0.0.1 - - [12/Sep/2023 09:25:17] "[36mGET /static/img/Lorea.jpg HTTP/1.1[0m" 304 -
+2023-09-12 09:25:17,364 INFO     _log 127.0.0.1 - - [12/Sep/2023 09:25:17] "[36mGET /static/img/icons8-bulb-64.png HTTP/1.1[0m" 304 -
+2023-09-12 09:25:28,355 INFO     _log 127.0.0.1 - - [12/Sep/2023 09:25:28] "GET /project-EnigmaGame_script/?id=2 HTTP/1.1" 200 -
+2023-09-12 09:25:28,650 INFO     _log 127.0.0.1 - - [12/Sep/2023 09:25:28] "GET /static/img/icons8-script-68.png HTTP/1.1" 200 -
+2023-09-12 09:25:28,684 INFO     _log 127.0.0.1 - - [12/Sep/2023 09:25:28] "GET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1" 200 -
+2023-09-12 09:25:28,694 INFO     _log 127.0.0.1 - - [12/Sep/2023 09:25:28] "GET /static/img/icons8-html-filetype-50.png HTTP/1.1" 200 -
+2023-09-12 09:25:28,696 INFO     _log 127.0.0.1 - - [12/Sep/2023 09:25:28] "GET /static/img/icons8-consola-100.png HTTP/1.1" 200 -
+2023-09-12 09:25:34,112 INFO     _log 127.0.0.1 - - [12/Sep/2023 09:25:34] "GET /pythonScript/?py_path=static/proj_enigmaGame_scripts/z-writePermut_26_File.py HTTP/1.1" 200 -
+2023-09-12 09:27:00,180 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File.py', reloading
+2023-09-12 09:27:00,268 INFO     _log  * Restarting with stat
+2023-09-12 09:27:00,952 WARNING  _log  * Debugger is active!
+2023-09-12 09:27:00,952 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 09:27:07,198 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File.py', reloading
+2023-09-12 09:27:07,341 INFO     _log  * Restarting with stat
+2023-09-12 09:27:07,995 WARNING  _log  * Debugger is active!
+2023-09-12 09:27:07,999 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 09:27:16,336 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File.py', reloading
+2023-09-12 09:27:16,449 INFO     _log  * Restarting with stat
+2023-09-12 09:27:17,132 WARNING  _log  * Debugger is active!
+2023-09-12 09:27:17,145 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 09:27:19,259 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File.py', reloading
+2023-09-12 09:27:19,384 INFO     _log  * Restarting with stat
+2023-09-12 09:27:20,061 WARNING  _log  * Debugger is active!
+2023-09-12 09:27:20,061 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 09:27:41,832 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File.py', reloading
+2023-09-12 09:27:41,934 INFO     _log  * Restarting with stat
+2023-09-12 09:27:42,648 WARNING  _log  * Debugger is active!
+2023-09-12 09:27:42,648 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 09:27:48,913 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File.py', reloading
+2023-09-12 09:27:49,017 INFO     _log  * Restarting with stat
+2023-09-12 09:27:49,681 WARNING  _log  * Debugger is active!
+2023-09-12 09:27:49,681 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 09:27:50,778 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File.py', reloading
+2023-09-12 09:27:50,877 INFO     _log  * Restarting with stat
+2023-09-12 09:27:51,532 WARNING  _log  * Debugger is active!
+2023-09-12 09:27:51,532 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 09:27:52,612 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File.py', reloading
+2023-09-12 09:27:52,724 INFO     _log  * Restarting with stat
+2023-09-12 09:27:53,465 WARNING  _log  * Debugger is active!
+2023-09-12 09:27:53,465 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 09:27:54,531 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File.py', reloading
+2023-09-12 09:27:54,634 INFO     _log  * Restarting with stat
+2023-09-12 09:27:55,315 WARNING  _log  * Debugger is active!
+2023-09-12 09:27:55,315 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 09:27:57,447 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File.py', reloading
+2023-09-12 09:27:57,533 INFO     _log  * Restarting with stat
+2023-09-12 09:27:58,211 WARNING  _log  * Debugger is active!
+2023-09-12 09:27:58,217 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 09:28:01,360 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File.py', reloading
+2023-09-12 09:28:01,471 INFO     _log  * Restarting with stat
+2023-09-12 09:28:02,132 WARNING  _log  * Debugger is active!
+2023-09-12 09:28:02,132 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 09:28:03,195 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File.py', reloading
+2023-09-12 09:28:03,308 INFO     _log  * Restarting with stat
+2023-09-12 09:28:04,015 WARNING  _log  * Debugger is active!
+2023-09-12 09:28:04,015 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 09:28:06,141 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File.py', reloading
+2023-09-12 09:28:06,220 INFO     _log  * Restarting with stat
+2023-09-12 09:28:06,903 WARNING  _log  * Debugger is active!
+2023-09-12 09:28:06,912 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 09:28:09,007 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File.py', reloading
+2023-09-12 09:28:09,156 INFO     _log  * Restarting with stat
+2023-09-12 09:28:09,779 WARNING  _log  * Debugger is active!
+2023-09-12 09:28:09,784 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 09:28:10,841 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File.py', reloading
+2023-09-12 09:28:10,954 INFO     _log  * Restarting with stat
+2023-09-12 09:28:11,678 WARNING  _log  * Debugger is active!
+2023-09-12 09:28:11,682 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 09:28:12,746 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File.py', reloading
+2023-09-12 09:28:12,862 INFO     _log  * Restarting with stat
+2023-09-12 09:28:13,546 WARNING  _log  * Debugger is active!
+2023-09-12 09:28:13,546 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 09:28:16,693 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File.py', reloading
+2023-09-12 09:28:16,827 INFO     _log  * Restarting with stat
+2023-09-12 09:28:17,488 WARNING  _log  * Debugger is active!
+2023-09-12 09:28:17,492 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 09:28:20,645 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File.py', reloading
+2023-09-12 09:28:20,771 INFO     _log  * Restarting with stat
+2023-09-12 09:28:21,448 WARNING  _log  * Debugger is active!
+2023-09-12 09:28:21,448 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 09:28:23,551 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File.py', reloading
+2023-09-12 09:28:23,653 INFO     _log  * Restarting with stat
+2023-09-12 09:28:24,216 WARNING  _log  * Debugger is active!
+2023-09-12 09:28:24,216 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 09:28:28,424 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File.py', reloading
+2023-09-12 09:28:28,541 INFO     _log  * Restarting with stat
+2023-09-12 09:28:29,317 WARNING  _log  * Debugger is active!
+2023-09-12 09:28:29,317 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 09:28:33,815 INFO     _log 127.0.0.1 - - [12/Sep/2023 09:28:33] "GET /project-EnigmaGame HTTP/1.1" 200 -
+2023-09-12 09:28:33,881 INFO     _log 127.0.0.1 - - [12/Sep/2023 09:28:33] "[36mGET /static/img/enigma.jpg HTTP/1.1[0m" 304 -
+2023-09-12 09:28:34,153 INFO     _log 127.0.0.1 - - [12/Sep/2023 09:28:34] "[36mGET /static/img/icons8-video-50.png HTTP/1.1[0m" 304 -
+2023-09-12 09:28:34,153 INFO     _log 127.0.0.1 - - [12/Sep/2023 09:28:34] "[36mGET /static/img/Lorea.jpg HTTP/1.1[0m" 304 -
+2023-09-12 09:28:34,477 INFO     _log 127.0.0.1 - - [12/Sep/2023 09:28:34] "[36mGET /static/img/icons8-bulb-64.png HTTP/1.1[0m" 304 -
+2023-09-12 09:28:36,180 INFO     _log 127.0.0.1 - - [12/Sep/2023 09:28:36] "GET /project-EnigmaGame_script/?id=2 HTTP/1.1" 200 -
+2023-09-12 09:28:36,483 INFO     _log 127.0.0.1 - - [12/Sep/2023 09:28:36] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-09-12 09:28:36,499 INFO     _log 127.0.0.1 - - [12/Sep/2023 09:28:36] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-09-12 09:28:36,505 INFO     _log 127.0.0.1 - - [12/Sep/2023 09:28:36] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-09-12 09:28:36,505 INFO     _log 127.0.0.1 - - [12/Sep/2023 09:28:36] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-09-12 09:28:42,425 INFO     _log 127.0.0.1 - - [12/Sep/2023 09:28:42] "GET /pythonScript/?py_path=static/proj_enigmaGame_scripts/z-writePermut_26_File.py HTTP/1.1" 200 -
+2023-09-12 09:30:01,515 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File.py', reloading
+2023-09-12 09:30:01,599 INFO     _log  * Restarting with stat
+2023-09-12 09:30:02,214 WARNING  _log  * Debugger is active!
+2023-09-12 09:30:02,214 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 09:30:06,430 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File.py', reloading
+2023-09-12 09:30:06,521 INFO     _log  * Restarting with stat
+2023-09-12 09:30:07,215 WARNING  _log  * Debugger is active!
+2023-09-12 09:30:07,215 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 09:30:08,295 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File.py', reloading
+2023-09-12 09:30:08,402 INFO     _log  * Restarting with stat
+2023-09-12 09:30:09,080 WARNING  _log  * Debugger is active!
+2023-09-12 09:30:09,080 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 09:30:10,180 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File.py', reloading
+2023-09-12 09:30:10,295 INFO     _log  * Restarting with stat
+2023-09-12 09:30:10,984 WARNING  _log  * Debugger is active!
+2023-09-12 09:30:10,984 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 09:30:12,060 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File.py', reloading
+2023-09-12 09:30:12,199 INFO     _log  * Restarting with stat
+2023-09-12 09:30:12,997 WARNING  _log  * Debugger is active!
+2023-09-12 09:30:12,997 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 09:30:16,136 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File.py', reloading
+2023-09-12 09:30:16,267 INFO     _log  * Restarting with stat
+2023-09-12 09:30:16,932 WARNING  _log  * Debugger is active!
+2023-09-12 09:30:16,945 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 09:30:23,179 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File.py', reloading
+2023-09-12 09:30:23,274 INFO     _log  * Restarting with stat
+2023-09-12 09:30:23,982 WARNING  _log  * Debugger is active!
+2023-09-12 09:30:23,982 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 09:31:15,660 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File.py', reloading
+2023-09-12 09:31:15,762 INFO     _log  * Restarting with stat
+2023-09-12 09:31:16,389 WARNING  _log  * Debugger is active!
+2023-09-12 09:31:16,389 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 09:31:23,681 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File.py', reloading
+2023-09-12 09:31:23,806 INFO     _log  * Restarting with stat
+2023-09-12 09:31:24,548 WARNING  _log  * Debugger is active!
+2023-09-12 09:31:24,548 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 09:31:34,981 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File.py', reloading
+2023-09-12 09:31:35,125 INFO     _log  * Restarting with stat
+2023-09-12 09:31:35,825 WARNING  _log  * Debugger is active!
+2023-09-12 09:31:35,833 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 09:31:48,265 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File.py', reloading
+2023-09-12 09:31:48,370 INFO     _log  * Restarting with stat
+2023-09-12 09:31:49,145 WARNING  _log  * Debugger is active!
+2023-09-12 09:31:49,160 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 09:32:27,428 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File.py', reloading
+2023-09-12 09:32:27,514 INFO     _log  * Restarting with stat
+2023-09-12 09:32:28,269 WARNING  _log  * Debugger is active!
+2023-09-12 09:32:28,277 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 09:32:30,380 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File.py', reloading
+2023-09-12 09:32:30,518 INFO     _log  * Restarting with stat
+2023-09-12 09:32:31,091 WARNING  _log  * Debugger is active!
+2023-09-12 09:32:31,091 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 09:32:37,328 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File.py', reloading
+2023-09-12 09:32:37,431 INFO     _log  * Restarting with stat
+2023-09-12 09:32:38,131 WARNING  _log  * Debugger is active!
+2023-09-12 09:32:38,131 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 09:32:39,199 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File.py', reloading
+2023-09-12 09:32:39,303 INFO     _log  * Restarting with stat
+2023-09-12 09:32:40,164 WARNING  _log  * Debugger is active!
+2023-09-12 09:32:40,178 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 09:33:40,280 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File.py', reloading
+2023-09-12 09:33:40,384 INFO     _log  * Restarting with stat
+2023-09-12 09:33:41,045 WARNING  _log  * Debugger is active!
+2023-09-12 09:33:41,062 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 09:34:06,982 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File.py', reloading
+2023-09-12 09:34:07,067 INFO     _log  * Restarting with stat
+2023-09-12 09:34:07,797 WARNING  _log  * Debugger is active!
+2023-09-12 09:34:07,797 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 09:35:03,363 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File.py', reloading
+2023-09-12 09:35:03,467 INFO     _log  * Restarting with stat
+2023-09-12 09:35:04,188 WARNING  _log  * Debugger is active!
+2023-09-12 09:35:04,195 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 09:35:47,681 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File.py', reloading
+2023-09-12 09:35:47,807 INFO     _log  * Restarting with stat
+2023-09-12 09:35:48,576 WARNING  _log  * Debugger is active!
+2023-09-12 09:35:48,578 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 10:09:50,629 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File.py', reloading
+2023-09-12 10:09:50,724 INFO     _log  * Restarting with stat
+2023-09-12 10:09:51,527 WARNING  _log  * Debugger is active!
+2023-09-12 10:09:51,535 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 10:10:13,343 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File.py', reloading
+2023-09-12 10:10:13,442 INFO     _log  * Restarting with stat
+2023-09-12 10:10:14,308 WARNING  _log  * Debugger is active!
+2023-09-12 10:10:14,324 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 10:10:15,391 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File.py', reloading
+2023-09-12 10:10:15,493 INFO     _log  * Restarting with stat
+2023-09-12 10:10:16,316 WARNING  _log  * Debugger is active!
+2023-09-12 10:10:16,324 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 10:10:16,362 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File.py', reloading
+2023-09-12 10:10:16,465 INFO     _log  * Restarting with stat
+2023-09-12 10:10:17,243 WARNING  _log  * Debugger is active!
+2023-09-12 10:10:17,243 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 10:10:18,310 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File.py', reloading
+2023-09-12 10:10:18,414 INFO     _log  * Restarting with stat
+2023-09-12 10:10:19,107 WARNING  _log  * Debugger is active!
+2023-09-12 10:10:19,107 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 10:10:40,942 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File.py', reloading
+2023-09-12 10:10:41,030 INFO     _log  * Restarting with stat
+2023-09-12 10:10:41,748 WARNING  _log  * Debugger is active!
+2023-09-12 10:10:41,748 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 10:10:44,878 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File.py', reloading
+2023-09-12 10:10:44,971 INFO     _log  * Restarting with stat
+2023-09-12 10:10:45,590 WARNING  _log  * Debugger is active!
+2023-09-12 10:10:45,598 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 10:10:47,695 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File.py', reloading
+2023-09-12 10:10:47,843 INFO     _log  * Restarting with stat
+2023-09-12 10:10:48,557 WARNING  _log  * Debugger is active!
+2023-09-12 10:10:48,557 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 10:10:49,623 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File.py', reloading
+2023-09-12 10:10:49,760 INFO     _log  * Restarting with stat
+2023-09-12 10:10:50,457 WARNING  _log  * Debugger is active!
+2023-09-12 10:10:50,457 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 10:10:51,523 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File.py', reloading
+2023-09-12 10:10:51,615 INFO     _log  * Restarting with stat
+2023-09-12 10:10:52,416 WARNING  _log  * Debugger is active!
+2023-09-12 10:10:52,424 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 10:10:53,516 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File.py', reloading
+2023-09-12 10:10:53,624 INFO     _log  * Restarting with stat
+2023-09-12 10:10:54,474 WARNING  _log  * Debugger is active!
+2023-09-12 10:10:54,477 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 10:11:03,805 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File.py', reloading
+2023-09-12 10:11:03,894 INFO     _log  * Restarting with stat
+2023-09-12 10:11:04,517 WARNING  _log  * Debugger is active!
+2023-09-12 10:11:04,521 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 10:11:24,010 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File.py', reloading
+2023-09-12 10:11:24,132 INFO     _log  * Restarting with stat
+2023-09-12 10:11:24,728 WARNING  _log  * Debugger is active!
+2023-09-12 10:11:24,728 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 10:11:25,810 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File.py', reloading
+2023-09-12 10:11:25,896 INFO     _log  * Restarting with stat
+2023-09-12 10:11:26,496 WARNING  _log  * Debugger is active!
+2023-09-12 10:11:26,500 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 10:11:27,564 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File.py', reloading
+2023-09-12 10:11:27,656 INFO     _log  * Restarting with stat
+2023-09-12 10:11:28,255 WARNING  _log  * Debugger is active!
+2023-09-12 10:11:28,259 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 10:11:29,326 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File.py', reloading
+2023-09-12 10:11:29,448 INFO     _log  * Restarting with stat
+2023-09-12 10:11:30,009 WARNING  _log  * Debugger is active!
+2023-09-12 10:11:30,009 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 10:11:31,085 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File.py', reloading
+2023-09-12 10:11:31,199 INFO     _log  * Restarting with stat
+2023-09-12 10:11:31,775 WARNING  _log  * Debugger is active!
+2023-09-12 10:11:31,779 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 10:11:50,357 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File.py', reloading
+2023-09-12 10:11:50,484 INFO     _log  * Restarting with stat
+2023-09-12 10:11:51,258 WARNING  _log  * Debugger is active!
+2023-09-12 10:11:51,258 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 10:11:54,407 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File.py', reloading
+2023-09-12 10:11:54,508 INFO     _log  * Restarting with stat
+2023-09-12 10:11:55,428 WARNING  _log  * Debugger is active!
+2023-09-12 10:11:55,441 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 10:12:26,538 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File.py', reloading
+2023-09-12 10:12:26,618 INFO     _log  * Restarting with stat
+2023-09-12 10:12:27,358 WARNING  _log  * Debugger is active!
+2023-09-12 10:12:27,360 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 10:12:28,432 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File.py', reloading
+2023-09-12 10:12:28,517 INFO     _log  * Restarting with stat
+2023-09-12 10:12:29,524 WARNING  _log  * Debugger is active!
+2023-09-12 10:12:29,533 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 10:14:51,507 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File.py', reloading
+2023-09-12 10:14:51,630 INFO     _log  * Restarting with stat
+2023-09-12 10:14:52,346 WARNING  _log  * Debugger is active!
+2023-09-12 10:14:52,346 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 10:14:56,538 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File.py', reloading
+2023-09-12 10:14:56,651 INFO     _log  * Restarting with stat
+2023-09-12 10:14:57,267 WARNING  _log  * Debugger is active!
+2023-09-12 10:14:57,267 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 10:15:08,686 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File.py', reloading
+2023-09-12 10:15:08,789 INFO     _log  * Restarting with stat
+2023-09-12 10:15:09,454 WARNING  _log  * Debugger is active!
+2023-09-12 10:15:09,454 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 10:16:45,609 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File.py', reloading
+2023-09-12 10:16:45,715 INFO     _log  * Restarting with stat
+2023-09-12 10:16:46,471 WARNING  _log  * Debugger is active!
+2023-09-12 10:16:46,482 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 10:16:49,638 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File.py', reloading
+2023-09-12 10:16:49,727 INFO     _log  * Restarting with stat
+2023-09-12 10:16:50,440 WARNING  _log  * Debugger is active!
+2023-09-12 10:16:50,440 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 10:17:08,070 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File.py', reloading
+2023-09-12 10:17:08,173 INFO     _log  * Restarting with stat
+2023-09-12 10:17:08,775 WARNING  _log  * Debugger is active!
+2023-09-12 10:17:08,775 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 10:19:08,492 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File.py', reloading
+2023-09-12 10:19:08,618 INFO     _log  * Restarting with stat
+2023-09-12 10:19:09,259 WARNING  _log  * Debugger is active!
+2023-09-12 10:19:09,259 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 10:19:10,325 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File.py', reloading
+2023-09-12 10:19:10,439 INFO     _log  * Restarting with stat
+2023-09-12 10:19:11,179 WARNING  _log  * Debugger is active!
+2023-09-12 10:19:11,179 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 10:19:15,353 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File.py', reloading
+2023-09-12 10:19:15,455 INFO     _log  * Restarting with stat
+2023-09-12 10:19:16,223 WARNING  _log  * Debugger is active!
+2023-09-12 10:19:16,223 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 10:19:18,312 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File.py', reloading
+2023-09-12 10:19:18,432 INFO     _log  * Restarting with stat
+2023-09-12 10:19:19,157 WARNING  _log  * Debugger is active!
+2023-09-12 10:19:19,165 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 10:20:07,470 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File.py', reloading
+2023-09-12 10:20:07,557 INFO     _log  * Restarting with stat
+2023-09-12 10:20:08,344 WARNING  _log  * Debugger is active!
+2023-09-12 10:20:08,344 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 10:27:45,844 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File.py', reloading
+2023-09-12 10:27:45,947 INFO     _log  * Restarting with stat
+2023-09-12 10:27:46,619 WARNING  _log  * Debugger is active!
+2023-09-12 10:27:46,623 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 10:27:47,673 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File.py', reloading
+2023-09-12 10:27:47,772 INFO     _log  * Restarting with stat
+2023-09-12 10:27:48,473 WARNING  _log  * Debugger is active!
+2023-09-12 10:27:48,481 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 10:27:52,674 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File.py', reloading
+2023-09-12 10:27:52,757 INFO     _log  * Restarting with stat
+2023-09-12 10:27:53,362 WARNING  _log  * Debugger is active!
+2023-09-12 10:27:53,362 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 10:27:54,417 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File.py', reloading
+2023-09-12 10:27:54,538 INFO     _log  * Restarting with stat
+2023-09-12 10:27:55,228 WARNING  _log  * Debugger is active!
+2023-09-12 10:27:55,228 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 10:27:57,334 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File.py', reloading
+2023-09-12 10:27:57,441 INFO     _log  * Restarting with stat
+2023-09-12 10:27:58,145 WARNING  _log  * Debugger is active!
+2023-09-12 10:27:58,145 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 10:29:18,462 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File.py', reloading
+2023-09-12 10:29:18,582 INFO     _log  * Restarting with stat
+2023-09-12 10:29:19,398 WARNING  _log  * Debugger is active!
+2023-09-12 10:29:19,399 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 10:29:20,479 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File.py', reloading
+2023-09-12 10:29:20,582 INFO     _log  * Restarting with stat
+2023-09-12 10:29:21,426 WARNING  _log  * Debugger is active!
+2023-09-12 10:29:21,426 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 10:29:32,919 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File.py', reloading
+2023-09-12 10:29:33,026 INFO     _log  * Restarting with stat
+2023-09-12 10:29:33,729 WARNING  _log  * Debugger is active!
+2023-09-12 10:29:33,729 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 10:30:03,653 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File.py', reloading
+2023-09-12 10:30:03,747 INFO     _log  * Restarting with stat
+2023-09-12 10:30:04,491 WARNING  _log  * Debugger is active!
+2023-09-12 10:30:04,491 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 10:30:08,694 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File.py', reloading
+2023-09-12 10:30:08,779 INFO     _log  * Restarting with stat
+2023-09-12 10:30:09,418 WARNING  _log  * Debugger is active!
+2023-09-12 10:30:09,426 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 10:30:10,486 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File.py', reloading
+2023-09-12 10:30:10,590 INFO     _log  * Restarting with stat
+2023-09-12 10:30:11,310 WARNING  _log  * Debugger is active!
+2023-09-12 10:30:11,310 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 10:30:22,657 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File.py', reloading
+2023-09-12 10:30:22,759 INFO     _log  * Restarting with stat
+2023-09-12 10:30:23,456 WARNING  _log  * Debugger is active!
+2023-09-12 10:30:23,466 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 10:30:25,563 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File.py', reloading
+2023-09-12 10:30:25,675 INFO     _log  * Restarting with stat
+2023-09-12 10:30:26,362 WARNING  _log  * Debugger is active!
+2023-09-12 10:30:26,367 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 10:30:27,462 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File.py', reloading
+2023-09-12 10:30:27,562 INFO     _log  * Restarting with stat
+2023-09-12 10:30:28,259 WARNING  _log  * Debugger is active!
+2023-09-12 10:30:28,260 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 10:30:29,328 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File.py', reloading
+2023-09-12 10:30:29,415 INFO     _log  * Restarting with stat
+2023-09-12 10:30:30,107 WARNING  _log  * Debugger is active!
+2023-09-12 10:30:30,109 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 10:30:40,441 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File.py', reloading
+2023-09-12 10:30:40,546 INFO     _log  * Restarting with stat
+2023-09-12 10:30:41,222 WARNING  _log  * Debugger is active!
+2023-09-12 10:30:41,227 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 10:30:46,411 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File.py', reloading
+2023-09-12 10:30:46,502 INFO     _log  * Restarting with stat
+2023-09-12 10:30:47,200 WARNING  _log  * Debugger is active!
+2023-09-12 10:30:47,203 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 10:31:09,878 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\mpPoolManagerEnigmaRandom-Alphab26-1.py', reloading
+2023-09-12 10:31:09,987 INFO     _log  * Restarting with stat
+2023-09-12 10:31:10,676 WARNING  _log  * Debugger is active!
+2023-09-12 10:31:10,676 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 10:31:13,838 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\mpPoolManagerEnigmaRandom-Alphab26-1.py', reloading
+2023-09-12 10:31:13,934 INFO     _log  * Restarting with stat
+2023-09-12 10:31:14,562 WARNING  _log  * Debugger is active!
+2023-09-12 10:31:14,562 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 10:31:18,747 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\mpPoolManagerEnigmaRandom-Alphab26-1.py', reloading
+2023-09-12 10:31:18,836 INFO     _log  * Restarting with stat
+2023-09-12 10:31:19,569 WARNING  _log  * Debugger is active!
+2023-09-12 10:31:19,577 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 10:31:25,823 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\mpPoolManagerEnigmaRandom-Alphab26-1.py', reloading
+2023-09-12 10:31:25,907 INFO     _log  * Restarting with stat
+2023-09-12 10:31:26,631 WARNING  _log  * Debugger is active!
+2023-09-12 10:31:26,631 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 10:31:41,143 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File_1.py', reloading
+2023-09-12 10:31:41,256 INFO     _log  * Restarting with stat
+2023-09-12 10:31:41,903 WARNING  _log  * Debugger is active!
+2023-09-12 10:31:41,903 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 10:31:43,991 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File_1.py', reloading
+2023-09-12 10:31:44,101 INFO     _log  * Restarting with stat
+2023-09-12 10:31:44,806 WARNING  _log  * Debugger is active!
+2023-09-12 10:31:44,814 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 10:31:45,881 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File_1.py', reloading
+2023-09-12 10:31:45,981 INFO     _log  * Restarting with stat
+2023-09-12 10:31:46,773 WARNING  _log  * Debugger is active!
+2023-09-12 10:31:46,781 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 10:31:49,920 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File_1.py', reloading
+2023-09-12 10:31:50,022 INFO     _log  * Restarting with stat
+2023-09-12 10:31:50,747 WARNING  _log  * Debugger is active!
+2023-09-12 10:31:50,755 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 10:32:14,560 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File_1.py', reloading
+2023-09-12 10:32:14,652 INFO     _log  * Restarting with stat
+2023-09-12 10:32:15,393 WARNING  _log  * Debugger is active!
+2023-09-12 10:32:15,406 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 10:32:33,017 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File.py', reloading
+2023-09-12 10:32:33,094 INFO     _log  * Restarting with stat
+2023-09-12 10:32:33,759 WARNING  _log  * Debugger is active!
+2023-09-12 10:32:33,764 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 10:32:40,048 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File_1.py', reloading
+2023-09-12 10:32:40,135 INFO     _log  * Restarting with stat
+2023-09-12 10:32:40,875 WARNING  _log  * Debugger is active!
+2023-09-12 10:32:40,875 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 10:33:20,348 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File_1.py', reloading
+2023-09-12 10:33:20,437 INFO     _log  * Restarting with stat
+2023-09-12 10:33:21,089 WARNING  _log  * Debugger is active!
+2023-09-12 10:33:21,089 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 10:33:33,542 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File_1.py', reloading
+2023-09-12 10:33:33,661 INFO     _log  * Restarting with stat
+2023-09-12 10:33:34,286 WARNING  _log  * Debugger is active!
+2023-09-12 10:33:34,294 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 10:34:06,532 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File.py', reloading
+2023-09-12 10:34:06,629 INFO     _log  * Restarting with stat
+2023-09-12 10:34:07,251 WARNING  _log  * Debugger is active!
+2023-09-12 10:34:07,251 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 10:34:08,330 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File.py', reloading
+2023-09-12 10:34:08,431 INFO     _log  * Restarting with stat
+2023-09-12 10:34:09,304 WARNING  _log  * Debugger is active!
+2023-09-12 10:34:09,313 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 10:34:34,226 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File_1.py', reloading
+2023-09-12 10:34:34,332 INFO     _log  * Restarting with stat
+2023-09-12 10:34:35,022 WARNING  _log  * Debugger is active!
+2023-09-12 10:34:35,025 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 10:34:50,608 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File.py', reloading
+2023-09-12 10:34:50,730 INFO     _log  * Restarting with stat
+2023-09-12 10:34:51,387 WARNING  _log  * Debugger is active!
+2023-09-12 10:34:51,387 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 10:36:40,614 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File_1.py', reloading
+2023-09-12 10:36:40,719 INFO     _log  * Restarting with stat
+2023-09-12 10:36:41,368 WARNING  _log  * Debugger is active!
+2023-09-12 10:36:41,368 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 10:37:18,712 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File_1.py', reloading
+2023-09-12 10:37:18,813 INFO     _log  * Restarting with stat
+2023-09-12 10:37:19,572 WARNING  _log  * Debugger is active!
+2023-09-12 10:37:19,572 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 10:37:22,699 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File_1.py', reloading
+2023-09-12 10:37:22,774 INFO     _log  * Restarting with stat
+2023-09-12 10:37:23,526 WARNING  _log  * Debugger is active!
+2023-09-12 10:37:23,539 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 10:38:02,930 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File_1.py', reloading
+2023-09-12 10:38:03,027 INFO     _log  * Restarting with stat
+2023-09-12 10:38:03,806 WARNING  _log  * Debugger is active!
+2023-09-12 10:38:03,814 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 10:38:06,981 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File_1.py', reloading
+2023-09-12 10:38:07,110 INFO     _log  * Restarting with stat
+2023-09-12 10:38:07,889 WARNING  _log  * Debugger is active!
+2023-09-12 10:38:07,892 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 10:39:21,605 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File_1.py', reloading
+2023-09-12 10:39:21,705 INFO     _log  * Restarting with stat
+2023-09-12 10:39:22,507 WARNING  _log  * Debugger is active!
+2023-09-12 10:39:22,515 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 10:39:25,627 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File_1.py', reloading
+2023-09-12 10:39:25,710 INFO     _log  * Restarting with stat
+2023-09-12 10:39:26,390 WARNING  _log  * Debugger is active!
+2023-09-12 10:39:26,390 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 10:40:58,764 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File_1.py', reloading
+2023-09-12 10:40:58,836 INFO     _log  * Restarting with stat
+2023-09-12 10:40:59,608 WARNING  _log  * Debugger is active!
+2023-09-12 10:40:59,623 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 10:41:10,014 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File_1.py', reloading
+2023-09-12 10:41:10,103 INFO     _log  * Restarting with stat
+2023-09-12 10:41:10,821 WARNING  _log  * Debugger is active!
+2023-09-12 10:41:10,821 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 10:41:15,013 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File_1.py', reloading
+2023-09-12 10:41:15,099 INFO     _log  * Restarting with stat
+2023-09-12 10:41:15,958 WARNING  _log  * Debugger is active!
+2023-09-12 10:41:15,958 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 10:41:40,821 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File_1.py', reloading
+2023-09-12 10:41:40,907 INFO     _log  * Restarting with stat
+2023-09-12 10:41:41,689 WARNING  _log  * Debugger is active!
+2023-09-12 10:41:41,697 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 10:41:44,872 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File_1.py', reloading
+2023-09-12 10:41:44,995 INFO     _log  * Restarting with stat
+2023-09-12 10:41:45,730 WARNING  _log  * Debugger is active!
+2023-09-12 10:41:45,730 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 10:41:46,797 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File_1.py', reloading
+2023-09-12 10:41:46,919 INFO     _log  * Restarting with stat
+2023-09-12 10:41:47,625 WARNING  _log  * Debugger is active!
+2023-09-12 10:41:47,639 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 10:44:53,971 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File_1.py', reloading
+2023-09-12 10:44:54,074 INFO     _log  * Restarting with stat
+2023-09-12 10:44:54,771 WARNING  _log  * Debugger is active!
+2023-09-12 10:44:54,771 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 10:44:56,877 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File_1.py', reloading
+2023-09-12 10:44:56,974 INFO     _log  * Restarting with stat
+2023-09-12 10:44:57,630 WARNING  _log  * Debugger is active!
+2023-09-12 10:44:57,630 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 10:44:59,772 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File_1.py', reloading
+2023-09-12 10:44:59,864 INFO     _log  * Restarting with stat
+2023-09-12 10:45:00,572 WARNING  _log  * Debugger is active!
+2023-09-12 10:45:00,572 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 10:45:01,655 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File_1.py', reloading
+2023-09-12 10:45:01,799 INFO     _log  * Restarting with stat
+2023-09-12 10:45:02,472 WARNING  _log  * Debugger is active!
+2023-09-12 10:45:02,472 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 10:45:03,535 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File_1.py', reloading
+2023-09-12 10:45:03,620 INFO     _log  * Restarting with stat
+2023-09-12 10:45:04,271 WARNING  _log  * Debugger is active!
+2023-09-12 10:45:04,271 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 10:45:14,691 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File_1.py', reloading
+2023-09-12 10:45:14,797 INFO     _log  * Restarting with stat
+2023-09-12 10:45:15,539 WARNING  _log  * Debugger is active!
+2023-09-12 10:45:15,547 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 10:45:19,729 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File_1.py', reloading
+2023-09-12 10:45:19,859 INFO     _log  * Restarting with stat
+2023-09-12 10:45:20,505 WARNING  _log  * Debugger is active!
+2023-09-12 10:45:20,505 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 10:45:39,265 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File_1.py', reloading
+2023-09-12 10:45:39,369 INFO     _log  * Restarting with stat
+2023-09-12 10:45:40,038 WARNING  _log  * Debugger is active!
+2023-09-12 10:45:40,038 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 10:46:27,805 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File_1.py', reloading
+2023-09-12 10:46:27,915 INFO     _log  * Restarting with stat
+2023-09-12 10:46:28,689 WARNING  _log  * Debugger is active!
+2023-09-12 10:46:28,697 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 10:46:55,617 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File_1.py', reloading
+2023-09-12 10:46:55,711 INFO     _log  * Restarting with stat
+2023-09-12 10:46:56,430 WARNING  _log  * Debugger is active!
+2023-09-12 10:46:56,430 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 10:47:08,918 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File_1.py', reloading
+2023-09-12 10:47:09,038 INFO     _log  * Restarting with stat
+2023-09-12 10:47:09,755 WARNING  _log  * Debugger is active!
+2023-09-12 10:47:09,755 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 10:47:39,809 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File_1.py', reloading
+2023-09-12 10:47:39,924 INFO     _log  * Restarting with stat
+2023-09-12 10:47:40,638 WARNING  _log  * Debugger is active!
+2023-09-12 10:47:40,638 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 10:47:42,755 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File_1.py', reloading
+2023-09-12 10:47:42,840 INFO     _log  * Restarting with stat
+2023-09-12 10:47:43,583 WARNING  _log  * Debugger is active!
+2023-09-12 10:47:43,588 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 10:47:50,823 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File_1.py', reloading
+2023-09-12 10:47:50,950 INFO     _log  * Restarting with stat
+2023-09-12 10:47:51,639 WARNING  _log  * Debugger is active!
+2023-09-12 10:47:51,639 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 10:47:54,777 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File_1.py', reloading
+2023-09-12 10:47:54,880 INFO     _log  * Restarting with stat
+2023-09-12 10:47:55,584 WARNING  _log  * Debugger is active!
+2023-09-12 10:47:55,592 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 10:47:57,700 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File_1.py', reloading
+2023-09-12 10:47:57,790 INFO     _log  * Restarting with stat
+2023-09-12 10:47:58,554 WARNING  _log  * Debugger is active!
+2023-09-12 10:47:58,554 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 10:48:10,010 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File_1.py', reloading
+2023-09-12 10:48:10,096 INFO     _log  * Restarting with stat
+2023-09-12 10:48:10,846 WARNING  _log  * Debugger is active!
+2023-09-12 10:48:10,854 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 10:48:17,103 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File_1.py', reloading
+2023-09-12 10:48:17,215 INFO     _log  * Restarting with stat
+2023-09-12 10:48:17,878 WARNING  _log  * Debugger is active!
+2023-09-12 10:48:17,886 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 10:48:20,995 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File_1.py', reloading
+2023-09-12 10:48:21,077 INFO     _log  * Restarting with stat
+2023-09-12 10:48:21,770 WARNING  _log  * Debugger is active!
+2023-09-12 10:48:21,770 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 10:48:23,863 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File_1.py', reloading
+2023-09-12 10:48:23,954 INFO     _log  * Restarting with stat
+2023-09-12 10:48:24,661 WARNING  _log  * Debugger is active!
+2023-09-12 10:48:24,674 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 10:48:27,812 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File_1.py', reloading
+2023-09-12 10:48:27,920 INFO     _log  * Restarting with stat
+2023-09-12 10:48:28,638 WARNING  _log  * Debugger is active!
+2023-09-12 10:48:28,638 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 10:48:39,072 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File_1.py', reloading
+2023-09-12 10:48:39,143 INFO     _log  * Restarting with stat
+2023-09-12 10:48:39,875 WARNING  _log  * Debugger is active!
+2023-09-12 10:48:39,875 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 10:49:00,623 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File_1.py', reloading
+2023-09-12 10:49:00,704 INFO     _log  * Restarting with stat
+2023-09-12 10:49:01,455 WARNING  _log  * Debugger is active!
+2023-09-12 10:49:01,455 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 10:49:03,573 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File_1.py', reloading
+2023-09-12 10:49:03,658 INFO     _log  * Restarting with stat
+2023-09-12 10:49:04,288 WARNING  _log  * Debugger is active!
+2023-09-12 10:49:04,288 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 10:49:07,426 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File_1.py', reloading
+2023-09-12 10:49:07,586 INFO     _log  * Restarting with stat
+2023-09-12 10:49:08,305 WARNING  _log  * Debugger is active!
+2023-09-12 10:49:08,305 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 10:50:27,073 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File_1.py', reloading
+2023-09-12 10:50:27,169 INFO     _log  * Restarting with stat
+2023-09-12 10:50:28,008 WARNING  _log  * Debugger is active!
+2023-09-12 10:50:28,016 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 10:50:30,129 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File_1.py', reloading
+2023-09-12 10:50:30,229 INFO     _log  * Restarting with stat
+2023-09-12 10:50:30,955 WARNING  _log  * Debugger is active!
+2023-09-12 10:50:30,963 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 10:50:55,905 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File_1.py', reloading
+2023-09-12 10:50:55,980 INFO     _log  * Restarting with stat
+2023-09-12 10:50:56,615 WARNING  _log  * Debugger is active!
+2023-09-12 10:50:56,615 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 10:51:07,055 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File_1.py', reloading
+2023-09-12 10:51:07,152 INFO     _log  * Restarting with stat
+2023-09-12 10:51:07,830 WARNING  _log  * Debugger is active!
+2023-09-12 10:51:07,830 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 10:51:13,047 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File_1.py', reloading
+2023-09-12 10:51:13,144 INFO     _log  * Restarting with stat
+2023-09-12 10:51:13,838 WARNING  _log  * Debugger is active!
+2023-09-12 10:51:13,838 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 10:51:25,279 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File_1.py', reloading
+2023-09-12 10:51:25,343 INFO     _log  * Restarting with stat
+2023-09-12 10:51:25,972 WARNING  _log  * Debugger is active!
+2023-09-12 10:51:25,975 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 10:51:44,664 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File_1.py', reloading
+2023-09-12 10:51:44,732 INFO     _log  * Restarting with stat
+2023-09-12 10:51:45,444 WARNING  _log  * Debugger is active!
+2023-09-12 10:51:45,444 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 10:51:47,546 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File_1.py', reloading
+2023-09-12 10:51:47,666 INFO     _log  * Restarting with stat
+2023-09-12 10:51:48,359 WARNING  _log  * Debugger is active!
+2023-09-12 10:51:48,359 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 10:52:19,488 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File.py', reloading
+2023-09-12 10:52:19,555 INFO     _log  * Restarting with stat
+2023-09-12 10:52:20,289 WARNING  _log  * Debugger is active!
+2023-09-12 10:52:20,289 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 10:52:24,463 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File.py', reloading
+2023-09-12 10:52:24,539 INFO     _log  * Restarting with stat
+2023-09-12 10:52:25,413 WARNING  _log  * Debugger is active!
+2023-09-12 10:52:25,421 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 10:52:38,951 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File.py', reloading
+2023-09-12 10:52:39,036 INFO     _log  * Restarting with stat
+2023-09-12 10:52:39,705 WARNING  _log  * Debugger is active!
+2023-09-12 10:52:39,713 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 10:52:43,885 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File.py', reloading
+2023-09-12 10:52:43,991 INFO     _log  * Restarting with stat
+2023-09-12 10:52:44,769 WARNING  _log  * Debugger is active!
+2023-09-12 10:52:44,777 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 10:53:02,419 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File.py', reloading
+2023-09-12 10:53:02,509 INFO     _log  * Restarting with stat
+2023-09-12 10:53:03,279 WARNING  _log  * Debugger is active!
+2023-09-12 10:53:03,287 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 10:53:06,449 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File.py', reloading
+2023-09-12 10:53:06,543 INFO     _log  * Restarting with stat
+2023-09-12 10:53:07,274 WARNING  _log  * Debugger is active!
+2023-09-12 10:53:07,274 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 10:55:06,705 INFO     _log 127.0.0.1 - - [12/Sep/2023 10:55:06] "GET /project-EnigmaGame HTTP/1.1" 200 -
+2023-09-12 10:55:06,997 INFO     _log 127.0.0.1 - - [12/Sep/2023 10:55:06] "[36mGET /static/img/enigma.jpg HTTP/1.1[0m" 304 -
+2023-09-12 10:55:06,997 INFO     _log 127.0.0.1 - - [12/Sep/2023 10:55:06] "[36mGET /static/img/icons8-video-50.png HTTP/1.1[0m" 304 -
+2023-09-12 10:55:07,028 INFO     _log 127.0.0.1 - - [12/Sep/2023 10:55:07] "[36mGET /static/img/Lorea.jpg HTTP/1.1[0m" 304 -
+2023-09-12 10:55:10,580 INFO     _log 127.0.0.1 - - [12/Sep/2023 10:55:10] "GET /project-EnigmaGame_script/?id=2 HTTP/1.1" 200 -
+2023-09-12 10:55:10,892 INFO     _log 127.0.0.1 - - [12/Sep/2023 10:55:10] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-09-12 10:55:10,908 INFO     _log 127.0.0.1 - - [12/Sep/2023 10:55:10] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-09-12 10:55:10,915 INFO     _log 127.0.0.1 - - [12/Sep/2023 10:55:10] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-09-12 10:55:10,915 INFO     _log 127.0.0.1 - - [12/Sep/2023 10:55:10] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-09-12 10:55:16,008 INFO     _log 127.0.0.1 - - [12/Sep/2023 10:55:16] "GET /result_script_exec/?py_path=static/proj_enigmaGame_scripts/z-writePermut_26_File_1.py HTTP/1.1" 200 -
+2023-09-12 10:55:16,055 INFO     _log 127.0.0.1 - - [12/Sep/2023 10:55:16] "GET /result_script_html HTTP/1.1" 200 -
+2023-09-12 10:55:38,312 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File_1.py', reloading
+2023-09-12 10:55:38,411 INFO     _log  * Restarting with stat
+2023-09-12 10:55:39,082 WARNING  _log  * Debugger is active!
+2023-09-12 10:55:39,090 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 10:55:41,238 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File_1.py', reloading
+2023-09-12 10:55:41,365 INFO     _log  * Restarting with stat
+2023-09-12 10:55:42,265 WARNING  _log  * Debugger is active!
+2023-09-12 10:55:42,271 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 10:57:49,553 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File_1.py', reloading
+2023-09-12 10:57:49,621 INFO     _log  * Restarting with stat
+2023-09-12 10:57:50,127 WARNING  _log  * Debugger is active!
+2023-09-12 10:57:50,129 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 10:57:53,203 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File_1.py', reloading
+2023-09-12 10:57:53,275 INFO     _log  * Restarting with stat
+2023-09-12 10:57:53,754 WARNING  _log  * Debugger is active!
+2023-09-12 10:57:53,756 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 10:58:08,999 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File_1.py', reloading
+2023-09-12 10:58:09,061 INFO     _log  * Restarting with stat
+2023-09-12 10:58:09,538 WARNING  _log  * Debugger is active!
+2023-09-12 10:58:09,538 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 10:58:18,819 INFO     _log 127.0.0.1 - - [12/Sep/2023 10:58:18] "GET /static/logFiles/server_messages.log HTTP/1.1" 200 -
+2023-09-12 10:58:21,332 INFO     _log 127.0.0.1 - - [12/Sep/2023 10:58:21] "GET /static/logFiles/my_messages.txt HTTP/1.1" 200 -
+2023-09-12 10:58:21,366 INFO     _log 127.0.0.1 - - [12/Sep/2023 10:58:21] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2023-09-12 10:59:05,537 INFO     _log 127.0.0.1 - - [12/Sep/2023 10:59:05] "GET /pythonScript/?py_path=static/proj_enigmaGame_scripts/z-writePermut_26_File.py HTTP/1.1" 200 -
+2023-09-12 11:01:18,235 INFO     _log 127.0.0.1 - - [12/Sep/2023 11:01:18] "GET /result_script_exec/?py_path=static/proj_enigmaGame_scripts/z-writePermut_26_File_1.py HTTP/1.1" 200 -
+2023-09-12 11:01:18,268 INFO     _log 127.0.0.1 - - [12/Sep/2023 11:01:18] "GET /result_script_html HTTP/1.1" 200 -
+2023-09-12 11:05:05,186 INFO     _log [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-09-12 11:05:05,186 INFO     _log [33mPress CTRL+C to quit[0m
+2023-09-12 11:05:05,188 INFO     _log  * Restarting with stat
+2023-09-12 11:05:05,610 WARNING  _log  * Debugger is active!
+2023-09-12 11:05:05,610 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 11:05:10,080 INFO     _log 127.0.0.1 - - [12/Sep/2023 11:05:10] "GET / HTTP/1.1" 200 -
+2023-09-12 11:05:10,118 INFO     _log 127.0.0.1 - - [12/Sep/2023 11:05:10] "[36mGET /static/img/ame-01.jpg HTTP/1.1[0m" 304 -
+2023-09-12 11:05:12,586 INFO     _log 127.0.0.1 - - [12/Sep/2023 11:05:12] "GET /project-EnigmaGame HTTP/1.1" 200 -
+2023-09-12 11:05:12,905 INFO     _log 127.0.0.1 - - [12/Sep/2023 11:05:12] "[36mGET /static/img/enigma.jpg HTTP/1.1[0m" 304 -
+2023-09-12 11:05:12,909 INFO     _log 127.0.0.1 - - [12/Sep/2023 11:05:12] "[36mGET /static/img/icons8-video-50.png HTTP/1.1[0m" 304 -
+2023-09-12 11:05:12,910 INFO     _log 127.0.0.1 - - [12/Sep/2023 11:05:12] "[36mGET /static/img/Lorea.jpg HTTP/1.1[0m" 304 -
+2023-09-12 11:05:15,171 INFO     _log 127.0.0.1 - - [12/Sep/2023 11:05:15] "GET /project-EnigmaGame_script/?id=2 HTTP/1.1" 200 -
+2023-09-12 11:05:15,391 INFO     _log 127.0.0.1 - - [12/Sep/2023 11:05:15] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-09-12 11:05:15,419 INFO     _log 127.0.0.1 - - [12/Sep/2023 11:05:15] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-09-12 11:05:15,499 INFO     _log 127.0.0.1 - - [12/Sep/2023 11:05:15] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-09-12 11:05:15,501 INFO     _log 127.0.0.1 - - [12/Sep/2023 11:05:15] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-09-12 11:05:19,753 INFO     _log 127.0.0.1 - - [12/Sep/2023 11:05:19] "GET /result_script_exec/?py_path=static/proj_enigmaGame_scripts/z-writePermut_26_File_1.py HTTP/1.1" 200 -
+2023-09-12 11:05:20,119 INFO     _log 127.0.0.1 - - [12/Sep/2023 11:05:20] "GET /result_script_html HTTP/1.1" 200 -
+2023-09-12 11:07:37,016 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File_1.py', reloading
+2023-09-12 11:07:37,098 INFO     _log  * Restarting with stat
+2023-09-12 11:07:37,572 WARNING  _log  * Debugger is active!
+2023-09-12 11:07:37,572 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 11:07:39,666 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\proj_enigmaGame_scripts\\z-writePermut_26_File_1.py', reloading
+2023-09-12 11:07:39,728 INFO     _log  * Restarting with stat
+2023-09-12 11:07:40,179 WARNING  _log  * Debugger is active!
+2023-09-12 11:07:40,181 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 11:07:59,553 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\config.py', reloading
+2023-09-12 11:07:59,640 INFO     _log  * Restarting with stat
+2023-09-12 11:08:00,108 WARNING  _log  * Debugger is active!
+2023-09-12 11:08:00,108 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-12 11:08:04,810 INFO     _log 127.0.0.1 - - [12/Sep/2023 11:08:04] "GET /project-EnigmaGame_script/?id=2 HTTP/1.1" 200 -
+2023-09-12 11:08:04,846 INFO     _log 127.0.0.1 - - [12/Sep/2023 11:08:04] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-09-12 11:08:05,134 INFO     _log 127.0.0.1 - - [12/Sep/2023 11:08:05] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-09-12 11:08:05,135 INFO     _log 127.0.0.1 - - [12/Sep/2023 11:08:05] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-09-12 11:08:05,136 INFO     _log 127.0.0.1 - - [12/Sep/2023 11:08:05] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-09-12 11:08:05,457 INFO     _log 127.0.0.1 - - [12/Sep/2023 11:08:05] "[36mGET /static/img/icons8-bulb-64.png HTTP/1.1[0m" 304 -
+2023-09-12 11:08:08,981 INFO     _log 127.0.0.1 - - [12/Sep/2023 11:08:08] "GET /result_script_exec/?py_path=static/proj_enigmaGame_scripts/z-writePermut_26_File_1.py HTTP/1.1" 200 -
+2023-09-12 11:08:09,334 INFO     _log 127.0.0.1 - - [12/Sep/2023 11:08:09] "GET /result_script_html HTTP/1.1" 200 -
