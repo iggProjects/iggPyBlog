@@ -2774,3 +2774,20 @@ jinja2.exceptions.TemplateNotFound: excrcises.html
 2023-09-14 21:35:18,751 INFO     _log  * Debugger PIN: 551-034-170
 2023-09-14 21:35:23,876 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\flask_app.py', reloading
 2023-09-14 21:35:23,949 INFO     _log  * Restarting with stat
+2023-09-14 21:35:35,432 INFO     _log [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-09-14 21:35:35,432 INFO     _log [33mPress CTRL+C to quit[0m
+2023-09-14 21:35:35,435 INFO     _log  * Restarting with stat
+2023-09-14 21:35:35,922 WARNING  _log  * Debugger is active!
+2023-09-14 21:35:35,925 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-14 21:35:43,779 INFO     _log 127.0.0.1 - - [14/Sep/2023 21:35:43] "GET / HTTP/1.1" 200 -
+2023-09-14 21:35:43,817 INFO     _log 127.0.0.1 - - [14/Sep/2023 21:35:43] "[36mGET /static/img/ame-01.jpg HTTP/1.1[0m" 304 -
+2023-09-14 21:35:50,047 INFO     _log 127.0.0.1 - - [14/Sep/2023 21:35:50] "GET /excercises HTTP/1.1" 200 -
+2023-09-14 21:35:50,361 INFO     _log 127.0.0.1 - - [14/Sep/2023 21:35:50] "[36mGET /static/img/Lorea.jpg HTTP/1.1[0m" 304 -
+2023-09-14 21:35:51,575 INFO     _log 127.0.0.1 - - [14/Sep/2023 21:35:51] "GET /excercise/?id=1 HTTP/1.1" 200 -
+2023-09-14 21:35:51,810 INFO     _log 127.0.0.1 - - [14/Sep/2023 21:35:51] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-09-14 21:35:51,825 INFO     _log 127.0.0.1 - - [14/Sep/2023 21:35:51] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-09-14 21:35:51,888 INFO     _log 127.0.0.1 - - [14/Sep/2023 21:35:51] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-09-14 21:35:51,891 INFO     _log 127.0.0.1 - - [14/Sep/2023 21:35:51] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-09-14 21:35:55,099 INFO     _log 127.0.0.1 - - [14/Sep/2023 21:35:55] "GET /result_script_exec/?py_path=static/py_excercises/20230213-PrototypeScript-colors/0-prototype-colors1.py HTTP/1.1" 200 -
+2023-09-14 21:35:55,452 INFO     _log 127.0.0.1 - - [14/Sep/2023 21:35:55] "GET /result_script_html HTTP/1.1" 200 -
