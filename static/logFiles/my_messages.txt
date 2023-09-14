@@ -99,3 +99,8 @@
 2023-09-12 21:15:32.284 | IN 'func excercises()'
 2023-09-12 21:15:38.184 | IN 'func 0-prototype-colors1.py()'
 2023-09-12 21:48:35.494 | IN 'func excercises()'
+2023-09-14 20:05:10.785 | IN 'func excercises()'
+2023-09-14 20:06:28.341 | IN 'func 0-prototype-colors1.py()'
+2023-09-14 20:07:24.593 | IN 'func 0-prototype-colors1.py()'
+2023-09-14 21:35:50.042 | IN 'func excercises()'
+2023-09-14 21:35:55.078 | IN 'func 0-prototype-colors1.py()'
