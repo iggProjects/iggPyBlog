@@ -397,7 +397,8 @@ def result_script_exec1():
         text = subprocess.run(["cmd", "/c", "python.exe", py_script_path],capture_output=True)
     elif opSys == "Linux":
         # put mysite/ in path for "pythonanywhere"
-        text = subprocess.run(["/usr/bin/bash", "-c", f"python mysite/{py_script_path}"],capture_output=True)
+        text = subprocess.run(["/usr/bin/bash", "-c", f"python {basedir}/{py_script_path}"],capture_output=True)
+        #text = subprocess.run(["/usr/bin/bash", "-c", f"python mysite/{py_script_path}"],capture_output=True)
     else:
         print(f"Please check how to pass list of parameters for operating system: {opSys}")
 
