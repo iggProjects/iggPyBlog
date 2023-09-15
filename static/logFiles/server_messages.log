@@ -3161,3 +3161,18 @@ jinja2.exceptions.TemplateNotFound: excrcises.html
 2023-09-15 13:08:56,752 INFO     _log 127.0.0.1 - - [15/Sep/2023 13:08:56] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
 2023-09-15 13:09:00,537 INFO     _log 127.0.0.1 - - [15/Sep/2023 13:09:00] "GET /result_script_exec/?py_path=static/py_excercises/20230213-PrototypeScript-colors/0-prototype-colors1.py HTTP/1.1" 200 -
 2023-09-15 13:09:00,584 INFO     _log 127.0.0.1 - - [15/Sep/2023 13:09:00] "GET /result_script_html HTTP/1.1" 200 -
+2023-09-15 13:18:12,567 INFO     _log [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-09-15 13:18:12,567 INFO     _log [33mPress CTRL+C to quit[0m
+2023-09-15 13:18:12,567 INFO     _log  * Restarting with stat
+2023-09-15 13:18:13,217 WARNING  _log  * Debugger is active!
+2023-09-15 13:18:13,217 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-15 13:20:11,112 INFO     _log 127.0.0.1 - - [15/Sep/2023 13:20:11] "GET /excercises HTTP/1.1" 200 -
+2023-09-15 13:20:11,399 INFO     _log 127.0.0.1 - - [15/Sep/2023 13:20:11] "[36mGET /static/img/Lorea.jpg HTTP/1.1[0m" 304 -
+2023-09-15 13:20:12,687 INFO     _log 127.0.0.1 - - [15/Sep/2023 13:20:12] "GET /excercise/?id=1 HTTP/1.1" 200 -
+2023-09-15 13:20:12,968 INFO     _log 127.0.0.1 - - [15/Sep/2023 13:20:12] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-09-15 13:20:13,004 INFO     _log 127.0.0.1 - - [15/Sep/2023 13:20:13] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-09-15 13:20:13,013 INFO     _log 127.0.0.1 - - [15/Sep/2023 13:20:13] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-09-15 13:20:13,013 INFO     _log 127.0.0.1 - - [15/Sep/2023 13:20:13] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-09-15 13:20:16,588 INFO     _log 127.0.0.1 - - [15/Sep/2023 13:20:16] "GET /result_script_exec/?py_path=static/py_excercises/20230213-PrototypeScript-colors/0-prototype-colors1.py HTTP/1.1" 200 -
+2023-09-15 13:20:16,667 INFO     _log 127.0.0.1 - - [15/Sep/2023 13:20:16] "GET /result_script_html HTTP/1.1" 200 -
