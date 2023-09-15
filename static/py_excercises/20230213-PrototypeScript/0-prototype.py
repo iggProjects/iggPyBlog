@@ -6,11 +6,15 @@ THIS IS MY STANDAR SCRIPT TO CREATE NEWS SCRIPTS
 # IMPORT SECTION
 
 # modules
+import os, sys
 from os import  system
 
-# My functions
+# Include root path in sys.path
+ROOT_DIR = os.path.abspath(os.curdir)
+sys.path.insert(1, ROOT_DIR)
+
+# Import My Own Funct in root path
 from MyFunc import *
-from MyColors import *
 
 #
 # ---------- MAIN ----------

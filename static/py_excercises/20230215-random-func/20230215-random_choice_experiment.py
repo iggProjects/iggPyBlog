@@ -3,25 +3,24 @@
 
     We will make a thousand executions of the random function in the interval 1 to 10 to verify the probability that a certain number will come out
 
+    EXECUTE ONLY IN LOCALHOST
+
 """
 #
 # IMPORT SECTION
 #
 import random
-
-from MyFunc import *
-from MyColors import *
+import os, sys
 from os import  system
 
-# CONSTANTS
-# Colors
-NO_COLOR = "\033[00m"
-FR_RED   = "\033[91m"
-FR_GREEN = "\033[92m"
-FR_YELL  = "\033[93m"
-FR_BLUE  = "\033[94m"
-FR_MAG   = "\033[95m"
+# Include root path in sys.path
+ROOT_DIR = os.path.abspath(os.curdir)
+sys.path.insert(1, ROOT_DIR)
 
+# Import My Own Funct in root path
+from MyFunc import *
+
+# CONSTANTS
 
 #
 # ---------- COURSE EXCERCISE ----------

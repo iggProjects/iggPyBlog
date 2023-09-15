@@ -5,64 +5,23 @@ import re
 from MyFunc import *
 from MyColors import *
 from math import ceil
+import os, sys
 from os import  system
 
+# include root path in sys.path
+ROOT_DIR = os.path.abspath(os.curdir)
+# check in what server is app
+if "iggWebNz" in ROOT_DIR:              # pythonanywhere  
+    ROOT_DIR = ROOT_DIR + "/mysite"
+else:                                   # working in localhost server
+    pass 
+sys.path.insert(1, ROOT_DIR)
+
+# import "My Own Funct" from root path
+from MyFunc import *
+
 # CONSTANTS
-"""
-This part of the script, linked to the worker data input, has been handled in this example via JS on the client.
-SEE "excercise_input_example.html"
 
-# Y,N answer function
-def Y_N():
-    global moreData    
-    ans=str(input("\n\tDo you want to continue including workers? (Y,N): "))
-    print(f"\t\tAnswer -> {ans}\n")  
-    if ans == 'N':                        
-        moreData=False
-    elif ans == 'Y':                                
-        input_worker_data()
-    else:
-        Y_N()
-
-# Asking worker age
-def input_worker_age():
-    global moreData,workers,worker    
-    try:
-        worker_age=int(input(frRED("\n\tPlease indicate \"age\" (integer between 18-65): ")))
-        if worker_age in range(18,65):
-            print(frRED(f"\t\tage -> {worker_age}")) # next version: redirect a log file for answer
-            # DB code or use var type dictionary to print data session
-            worker["age"] = worker_age
-            workers.append(worker)
-            # ask for continue (Y,N)
-            Y_N()
-        else:
-            frRED("\n\tPlease indicate \"age\" (integer between 18-65): ") 
-            input_worker_age()    
-    except ValueError:
-        frRED("\nPlease indicate \"age\" (integer between 18-65): ")
-        #print('please indicate age (integer between 18-65)')
-        input_worker_age()
-
-def input_worker_data():
-    global moreData, workers, worker
-    worker = {"name":'',"age":''}   
-    # first try for worker name
-    try:        
-        #name_worker=str(input("\033[94mPlease enter your name: \033[00m"))               
-        worker_name = str(input(frGREEN("\tPlease enter your name: ")))     
-        # check characters
-        if re.match("^[A-Za-zñáéíóúü]*$", worker_name):      
-            print(frGREEN(f"\t\tname -> {worker_name}"))  # next version: redirect a log file for answer
-            # code to update DB or create a list with data type dictionary            
-            worker["name"] = worker_name
-            # call age funtion
-            input_worker_age()            
-    except ValueError:
-        # print('Please enter your name')
-        frGREEN("\tPlease enter your name: ")
-        input_worker_data()
-    """
 
 # MAIN
 if __name__ == "__main__":

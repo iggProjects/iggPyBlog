@@ -2,22 +2,22 @@
 """  
 THIS SCRIPT IS FOR PRINTING WITH COLORS
 
+ONLY WORK IN LOCALHOST
+
 """
 
 
 # IMPORT SECTION
 import logging
 import sys
-
-# modules
 import os
 from os import  system
 
-# My Own Funct in root path
+# Include root path in sys.path
 ROOT_DIR = os.path.abspath(os.curdir)
 sys.path.insert(1, ROOT_DIR)
 
-# My Own Funct
+# Import My Own Funct in root path
 from MyFunc import *
 
 # CONSTANTS
@@ -43,8 +43,7 @@ if __name__ == "__main__":
         i=0
         for color in colors:
             color_str = color
-            msg=" ==> TESTING COLOR FUNCTION"
-            #print("FR_RED value: " + colors_str[0])
+            msg=" ==> TESTING COLOR FUNCTION"            
             print("\tPrint with ascii " + colors_str[i] + f":\t{color}{msg}{NO_COLOR}") 
             i+=1   
 

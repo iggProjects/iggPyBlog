@@ -14,6 +14,8 @@ nazareth user: jo.gainzarain@aulanz.net  | nz2223Nz
 
 STILL TO DO !!!
 
+- excercise inputTrabajadores1.py receive data and only need to print 
+
 PAW & local PATHS
 
 - config: base dir with array value for server key directory

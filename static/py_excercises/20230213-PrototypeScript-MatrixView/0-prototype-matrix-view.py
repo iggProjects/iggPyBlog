@@ -4,19 +4,17 @@ THIS SCRIPT IS FOR..................
 
 """
 # IMPORT SECTION
-from MyFunc import *
-from MyColors import *
+import os, sys
 from os import  system
 
+# Include root path in sys.path
+ROOT_DIR = os.path.abspath(os.curdir)
+sys.path.insert(1, ROOT_DIR)
+
+# Import My Own Funct in root path
+from MyFunc import *
 
 # CONSTANTS
-# Colors
-NO_COLOR = "\033[00m"
-FR_RED   = "\033[91m"
-FR_GREEN = "\033[92m"
-FR_YELL  = "\033[93m"
-FR_BLUE  = "\033[94m"
-FR_MAG   = "\033[95m"
 
 #
 # ---------- MAIN ----------

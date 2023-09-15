@@ -29,7 +29,7 @@ logging.captureWarnings(True)
 
 import datetime
 
-# My own funct
+# My own colors
 from MyColors import *
 
 # function to write in "my_messages.log"

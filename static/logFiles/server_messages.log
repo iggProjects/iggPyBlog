@@ -3176,3 +3176,486 @@ jinja2.exceptions.TemplateNotFound: excrcises.html
 2023-09-15 13:20:13,013 INFO     _log 127.0.0.1 - - [15/Sep/2023 13:20:13] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
 2023-09-15 13:20:16,588 INFO     _log 127.0.0.1 - - [15/Sep/2023 13:20:16] "GET /result_script_exec/?py_path=static/py_excercises/20230213-PrototypeScript-colors/0-prototype-colors1.py HTTP/1.1" 200 -
 2023-09-15 13:20:16,667 INFO     _log 127.0.0.1 - - [15/Sep/2023 13:20:16] "GET /result_script_html HTTP/1.1" 200 -
+2023-09-15 13:22:26,966 INFO     _log 127.0.0.1 - - [15/Sep/2023 13:22:26] "GET /excercises HTTP/1.1" 200 -
+2023-09-15 13:22:27,202 INFO     _log 127.0.0.1 - - [15/Sep/2023 13:22:27] "[36mGET /static/img/Lorea.jpg HTTP/1.1[0m" 304 -
+2023-09-15 13:22:30,232 INFO     _log 127.0.0.1 - - [15/Sep/2023 13:22:30] "GET / HTTP/1.1" 200 -
+2023-09-15 13:22:30,542 INFO     _log 127.0.0.1 - - [15/Sep/2023 13:22:30] "[36mGET /static/img/ame-01.jpg HTTP/1.1[0m" 304 -
+2023-09-15 13:22:32,319 INFO     _log 127.0.0.1 - - [15/Sep/2023 13:22:32] "GET /excercises HTTP/1.1" 200 -
+2023-09-15 13:22:32,551 INFO     _log 127.0.0.1 - - [15/Sep/2023 13:22:32] "[36mGET /static/img/Lorea.jpg HTTP/1.1[0m" 304 -
+2023-09-15 13:22:33,461 INFO     _log 127.0.0.1 - - [15/Sep/2023 13:22:33] "GET /excercise/?id=1 HTTP/1.1" 200 -
+2023-09-15 13:22:33,768 INFO     _log 127.0.0.1 - - [15/Sep/2023 13:22:33] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-09-15 13:22:33,768 INFO     _log 127.0.0.1 - - [15/Sep/2023 13:22:33] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-09-15 13:22:33,792 INFO     _log 127.0.0.1 - - [15/Sep/2023 13:22:33] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-09-15 13:22:33,792 INFO     _log 127.0.0.1 - - [15/Sep/2023 13:22:33] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-09-15 13:22:37,372 INFO     _log 127.0.0.1 - - [15/Sep/2023 13:22:37] "GET /result_script_exec/?py_path=static/py_excercises/20230213-PrototypeScript-colors/0-prototype-colors1.py HTTP/1.1" 200 -
+2023-09-15 13:22:37,486 INFO     _log 127.0.0.1 - - [15/Sep/2023 13:22:37] "GET /result_script_html HTTP/1.1" 200 -
+2023-09-15 18:34:22,256 INFO     _log [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-09-15 18:34:22,256 INFO     _log [33mPress CTRL+C to quit[0m
+2023-09-15 18:34:22,256 INFO     _log  * Restarting with stat
+2023-09-15 18:34:22,889 WARNING  _log  * Debugger is active!
+2023-09-15 18:34:22,904 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-15 18:34:32,020 INFO     _log 127.0.0.1 - - [15/Sep/2023 18:34:32] "GET / HTTP/1.1" 200 -
+2023-09-15 18:34:32,139 INFO     _log 127.0.0.1 - - [15/Sep/2023 18:34:32] "GET /static/img/ame-01.jpg HTTP/1.1" 200 -
+2023-09-15 18:34:32,201 INFO     _log 127.0.0.1 - - [15/Sep/2023 18:34:32] "GET /static/img/icons8-bulb-64.png HTTP/1.1" 200 -
+2023-09-15 18:34:33,815 INFO     _log 127.0.0.1 - - [15/Sep/2023 18:34:33] "GET /excercises HTTP/1.1" 200 -
+2023-09-15 18:34:34,015 INFO     _log 127.0.0.1 - - [15/Sep/2023 18:34:34] "GET /static/img/Lorea.jpg HTTP/1.1" 200 -
+2023-09-15 18:34:35,089 INFO     _log 127.0.0.1 - - [15/Sep/2023 18:34:35] "GET /excercise/?id=1 HTTP/1.1" 200 -
+2023-09-15 18:34:35,380 INFO     _log 127.0.0.1 - - [15/Sep/2023 18:34:35] "GET /static/img/icons8-script-68.png HTTP/1.1" 200 -
+2023-09-15 18:34:35,427 INFO     _log 127.0.0.1 - - [15/Sep/2023 18:34:35] "GET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1" 200 -
+2023-09-15 18:34:35,437 INFO     _log 127.0.0.1 - - [15/Sep/2023 18:34:35] "GET /static/img/icons8-consola-100.png HTTP/1.1" 200 -
+2023-09-15 18:34:35,453 INFO     _log 127.0.0.1 - - [15/Sep/2023 18:34:35] "GET /static/img/icons8-html-filetype-50.png HTTP/1.1" 200 -
+2023-09-15 18:34:39,090 INFO     _log 127.0.0.1 - - [15/Sep/2023 18:34:39] "GET /result_script_exec/?py_path=static/py_excercises/20230213-PrototypeScript-colors/0-prototype-colors1.py HTTP/1.1" 200 -
+2023-09-15 18:34:39,139 INFO     _log 127.0.0.1 - - [15/Sep/2023 18:34:39] "[35m[1mGET /result_script_html HTTP/1.1[0m" 500 -
+2023-09-15 18:34:39,451 INFO     _log 127.0.0.1 - - [15/Sep/2023 18:34:39] "GET /result_script_html?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2023-09-15 18:34:39,487 INFO     _log 127.0.0.1 - - [15/Sep/2023 18:34:39] "GET /result_script_html?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2023-09-15 18:34:39,812 INFO     _log 127.0.0.1 - - [15/Sep/2023 18:34:39] "GET /result_script_html?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2023-09-15 18:34:40,080 INFO     _log 127.0.0.1 - - [15/Sep/2023 18:34:40] "[36mGET /result_script_html?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-09-15 18:36:03,540 INFO     _log 127.0.0.1 - - [15/Sep/2023 18:36:03] "GET /excercises HTTP/1.1" 200 -
+2023-09-15 18:36:03,545 INFO     _log 127.0.0.1 - - [15/Sep/2023 18:36:03] "[36mGET /static/img/Lorea.jpg HTTP/1.1[0m" 304 -
+2023-09-15 18:36:05,326 INFO     _log 127.0.0.1 - - [15/Sep/2023 18:36:05] "GET /excercise/?id=1 HTTP/1.1" 200 -
+2023-09-15 18:36:05,557 INFO     _log 127.0.0.1 - - [15/Sep/2023 18:36:05] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-09-15 18:36:05,588 INFO     _log 127.0.0.1 - - [15/Sep/2023 18:36:05] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-09-15 18:36:05,651 INFO     _log 127.0.0.1 - - [15/Sep/2023 18:36:05] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-09-15 18:36:05,651 INFO     _log 127.0.0.1 - - [15/Sep/2023 18:36:05] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-09-15 18:36:08,855 INFO     _log 127.0.0.1 - - [15/Sep/2023 18:36:08] "GET /result_script_exec/?py_path=static/py_excercises/20230213-PrototypeScript-colors/0-prototype-colors1.py HTTP/1.1" 200 -
+2023-09-15 18:36:09,305 INFO     _log 127.0.0.1 - - [15/Sep/2023 18:36:09] "GET /result_script_html HTTP/1.1" 200 -
+2023-09-15 18:38:43,358 INFO     _log 127.0.0.1 - - [15/Sep/2023 18:38:43] "GET /excercises HTTP/1.1" 200 -
+2023-09-15 18:38:43,586 INFO     _log 127.0.0.1 - - [15/Sep/2023 18:38:43] "[36mGET /static/img/Lorea.jpg HTTP/1.1[0m" 304 -
+2023-09-15 18:38:44,791 INFO     _log 127.0.0.1 - - [15/Sep/2023 18:38:44] "GET /excercise/?id=1 HTTP/1.1" 200 -
+2023-09-15 18:38:45,097 INFO     _log 127.0.0.1 - - [15/Sep/2023 18:38:45] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-09-15 18:38:45,112 INFO     _log 127.0.0.1 - - [15/Sep/2023 18:38:45] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-09-15 18:38:45,126 INFO     _log 127.0.0.1 - - [15/Sep/2023 18:38:45] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-09-15 18:38:45,126 INFO     _log 127.0.0.1 - - [15/Sep/2023 18:38:45] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-09-15 18:38:49,351 INFO     _log 127.0.0.1 - - [15/Sep/2023 18:38:49] "GET /result_script_exec/?py_path=static/py_excercises/20230213-PrototypeScript-colors/0-prototype-colors1.py HTTP/1.1" 200 -
+2023-09-15 18:38:49,372 INFO     _log 127.0.0.1 - - [15/Sep/2023 18:38:49] "GET /result_script_html HTTP/1.1" 200 -
+2023-09-15 18:42:49,871 INFO     _log 127.0.0.1 - - [15/Sep/2023 18:42:49] "GET /pythonScript/?py_path=static/py_excercises/20230213-PrototypeScript-colors/0-prototype-colors.py HTTP/1.1" 200 -
+2023-09-15 18:44:15,803 INFO     _log 127.0.0.1 - - [15/Sep/2023 18:44:15] "GET /excercises HTTP/1.1" 200 -
+2023-09-15 18:44:16,039 INFO     _log 127.0.0.1 - - [15/Sep/2023 18:44:16] "[36mGET /static/img/Lorea.jpg HTTP/1.1[0m" 304 -
+2023-09-15 18:44:30,253 INFO     _log 127.0.0.1 - - [15/Sep/2023 18:44:30] "GET /excercise/?id=6 HTTP/1.1" 200 -
+2023-09-15 18:44:30,559 INFO     _log 127.0.0.1 - - [15/Sep/2023 18:44:30] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-09-15 18:44:30,576 INFO     _log 127.0.0.1 - - [15/Sep/2023 18:44:30] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-09-15 18:44:30,585 INFO     _log 127.0.0.1 - - [15/Sep/2023 18:44:30] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-09-15 18:44:30,585 INFO     _log 127.0.0.1 - - [15/Sep/2023 18:44:30] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-09-15 18:44:34,620 INFO     _log 127.0.0.1 - - [15/Sep/2023 18:44:34] "GET /result_script_exec/?py_path=static/py_excercises/20230213-PrototypeScript-HelpObj/0-prototype-help1.py HTTP/1.1" 200 -
+2023-09-15 18:44:34,736 INFO     _log 127.0.0.1 - - [15/Sep/2023 18:44:34] "GET /result_script_html HTTP/1.1" 200 -
+2023-09-15 18:46:53,448 INFO     _log 127.0.0.1 - - [15/Sep/2023 18:46:53] "GET /excercises HTTP/1.1" 200 -
+2023-09-15 18:46:53,667 INFO     _log 127.0.0.1 - - [15/Sep/2023 18:46:53] "[36mGET /static/img/Lorea.jpg HTTP/1.1[0m" 304 -
+2023-09-15 18:46:58,787 INFO     _log 127.0.0.1 - - [15/Sep/2023 18:46:58] "GET /excercise/?id=6 HTTP/1.1" 200 -
+2023-09-15 18:46:59,091 INFO     _log 127.0.0.1 - - [15/Sep/2023 18:46:59] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-09-15 18:46:59,108 INFO     _log 127.0.0.1 - - [15/Sep/2023 18:46:59] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-09-15 18:46:59,121 INFO     _log 127.0.0.1 - - [15/Sep/2023 18:46:59] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-09-15 18:46:59,121 INFO     _log 127.0.0.1 - - [15/Sep/2023 18:46:59] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-09-15 18:47:11,031 INFO     _log 127.0.0.1 - - [15/Sep/2023 18:47:11] "GET /pythonScript/?py_path=static/py_excercises/20230213-PrototypeScript-HelpObj/0-prototype-help.py HTTP/1.1" 200 -
+2023-09-15 18:48:36,878 INFO     _log 127.0.0.1 - - [15/Sep/2023 18:48:36] "GET /result_script_exec/?py_path=static/py_excercises/20230213-PrototypeScript-HelpObj/0-prototype-help1.py HTTP/1.1" 200 -
+2023-09-15 18:48:36,936 INFO     _log 127.0.0.1 - - [15/Sep/2023 18:48:36] "GET /result_script_html HTTP/1.1" 200 -
+2023-09-15 18:49:40,572 INFO     _log 127.0.0.1 - - [15/Sep/2023 18:49:40] "GET /excercise/?id=6 HTTP/1.1" 200 -
+2023-09-15 18:49:40,623 INFO     _log 127.0.0.1 - - [15/Sep/2023 18:49:40] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-09-15 18:49:40,915 INFO     _log 127.0.0.1 - - [15/Sep/2023 18:49:40] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-09-15 18:49:40,920 INFO     _log 127.0.0.1 - - [15/Sep/2023 18:49:40] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-09-15 18:49:40,940 INFO     _log 127.0.0.1 - - [15/Sep/2023 18:49:40] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-09-15 18:49:41,269 INFO     _log 127.0.0.1 - - [15/Sep/2023 18:49:41] "[36mGET /static/img/icons8-bulb-64.png HTTP/1.1[0m" 304 -
+2023-09-15 18:49:45,386 INFO     _log 127.0.0.1 - - [15/Sep/2023 18:49:45] "GET /result_script_exec/?py_path=static/py_excercises/20230213-PrototypeScript-HelpObj/0-prototype-help1.py HTTP/1.1" 200 -
+2023-09-15 18:49:45,808 INFO     _log 127.0.0.1 - - [15/Sep/2023 18:49:45] "GET /result_script_html HTTP/1.1" 200 -
+2023-09-15 18:52:22,862 INFO     _log 127.0.0.1 - - [15/Sep/2023 18:52:22] "GET /excercises HTTP/1.1" 200 -
+2023-09-15 18:52:23,089 INFO     _log 127.0.0.1 - - [15/Sep/2023 18:52:23] "[36mGET /static/img/Lorea.jpg HTTP/1.1[0m" 304 -
+2023-09-15 18:52:24,174 INFO     _log 127.0.0.1 - - [15/Sep/2023 18:52:24] "GET /excercise/?id=1 HTTP/1.1" 200 -
+2023-09-15 18:52:24,478 INFO     _log 127.0.0.1 - - [15/Sep/2023 18:52:24] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-09-15 18:52:24,493 INFO     _log 127.0.0.1 - - [15/Sep/2023 18:52:24] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-09-15 18:52:24,509 INFO     _log 127.0.0.1 - - [15/Sep/2023 18:52:24] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-09-15 18:52:24,509 INFO     _log 127.0.0.1 - - [15/Sep/2023 18:52:24] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-09-15 18:52:30,505 INFO     _log 127.0.0.1 - - [15/Sep/2023 18:52:30] "GET /pythonScript/?py_path=static/py_excercises/20230213-PrototypeScript-colors/0-prototype-colors.py HTTP/1.1" 200 -
+2023-09-15 18:52:39,753 INFO     _log 127.0.0.1 - - [15/Sep/2023 18:52:39] "GET /pythonScript/?py_path=static/py_excercises/20230213-PrototypeScript-colors/0-prototype-colors.py HTTP/1.1" 200 -
+2023-09-15 18:52:48,066 INFO     _log 127.0.0.1 - - [15/Sep/2023 18:52:48] "GET /excercises HTTP/1.1" 200 -
+2023-09-15 18:52:48,292 INFO     _log 127.0.0.1 - - [15/Sep/2023 18:52:48] "[36mGET /static/img/Lorea.jpg HTTP/1.1[0m" 304 -
+2023-09-15 18:52:52,148 INFO     _log 127.0.0.1 - - [15/Sep/2023 18:52:52] "GET /excercise/?id=6 HTTP/1.1" 200 -
+2023-09-15 18:52:52,462 INFO     _log 127.0.0.1 - - [15/Sep/2023 18:52:52] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-09-15 18:52:52,470 INFO     _log 127.0.0.1 - - [15/Sep/2023 18:52:52] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-09-15 18:52:52,487 INFO     _log 127.0.0.1 - - [15/Sep/2023 18:52:52] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-09-15 18:52:52,487 INFO     _log 127.0.0.1 - - [15/Sep/2023 18:52:52] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-09-15 18:53:03,101 INFO     _log 127.0.0.1 - - [15/Sep/2023 18:53:03] "GET /pythonScript/?py_path=static/py_excercises/20230213-PrototypeScript-HelpObj/0-prototype-help.py HTTP/1.1" 200 -
+2023-09-15 18:55:04,005 INFO     _log 127.0.0.1 - - [15/Sep/2023 18:55:04] "GET /excercises HTTP/1.1" 200 -
+2023-09-15 18:55:04,248 INFO     _log 127.0.0.1 - - [15/Sep/2023 18:55:04] "[36mGET /static/img/Lorea.jpg HTTP/1.1[0m" 304 -
+2023-09-15 18:55:11,087 INFO     _log 127.0.0.1 - - [15/Sep/2023 18:55:11] "GET /excercise/?id=8 HTTP/1.1" 200 -
+2023-09-15 18:55:11,392 INFO     _log 127.0.0.1 - - [15/Sep/2023 18:55:11] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-09-15 18:55:11,407 INFO     _log 127.0.0.1 - - [15/Sep/2023 18:55:11] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-09-15 18:55:11,417 INFO     _log 127.0.0.1 - - [15/Sep/2023 18:55:11] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-09-15 18:55:11,417 INFO     _log 127.0.0.1 - - [15/Sep/2023 18:55:11] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-09-15 18:55:15,702 INFO     _log 127.0.0.1 - - [15/Sep/2023 18:55:15] "GET /result_script_exec/?py_path=static/py_excercises/20230213-PrototypeScript/0-prototype1.py HTTP/1.1" 200 -
+2023-09-15 18:55:15,803 INFO     _log 127.0.0.1 - - [15/Sep/2023 18:55:15] "[35m[1mGET /result_script_html HTTP/1.1[0m" 500 -
+2023-09-15 18:55:16,065 INFO     _log 127.0.0.1 - - [15/Sep/2023 18:55:16] "[36mGET /result_script_html?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2023-09-15 18:55:16,168 INFO     _log 127.0.0.1 - - [15/Sep/2023 18:55:16] "[36mGET /result_script_html?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2023-09-15 18:55:16,192 INFO     _log 127.0.0.1 - - [15/Sep/2023 18:55:16] "[36mGET /result_script_html?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-09-15 18:55:16,523 INFO     _log 127.0.0.1 - - [15/Sep/2023 18:55:16] "[36mGET /result_script_html?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-09-15 18:55:26,671 INFO     _log 127.0.0.1 - - [15/Sep/2023 18:55:26] "GET /pythonScript/?py_path=static/py_excercises/20230213-PrototypeScript/0-prototype.py HTTP/1.1" 200 -
+2023-09-15 18:55:52,915 INFO     _log 127.0.0.1 - - [15/Sep/2023 18:55:52] "GET /pythonScript/?py_path=static/py_excercises/20230213-PrototypeScript/0-prototype.py HTTP/1.1" 200 -
+2023-09-15 18:56:52,422 INFO     _log 127.0.0.1 - - [15/Sep/2023 18:56:52] "GET /excercise/?id=8 HTTP/1.1" 200 -
+2023-09-15 18:56:52,429 INFO     _log 127.0.0.1 - - [15/Sep/2023 18:56:52] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-09-15 18:56:52,666 INFO     _log 127.0.0.1 - - [15/Sep/2023 18:56:52] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-09-15 18:56:52,747 INFO     _log 127.0.0.1 - - [15/Sep/2023 18:56:52] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-09-15 18:56:52,747 INFO     _log 127.0.0.1 - - [15/Sep/2023 18:56:52] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-09-15 18:56:53,065 INFO     _log 127.0.0.1 - - [15/Sep/2023 18:56:53] "[36mGET /static/img/icons8-bulb-64.png HTTP/1.1[0m" 304 -
+2023-09-15 18:56:57,118 INFO     _log 127.0.0.1 - - [15/Sep/2023 18:56:57] "GET /result_script_exec/?py_path=static/py_excercises/20230213-PrototypeScript/0-prototype1.py HTTP/1.1" 200 -
+2023-09-15 18:56:57,474 INFO     _log 127.0.0.1 - - [15/Sep/2023 18:56:57] "GET /result_script_html HTTP/1.1" 200 -
+2023-09-15 18:57:17,937 INFO     _log 127.0.0.1 - - [15/Sep/2023 18:57:17] "GET /pythonScript/?py_path=static/py_excercises/20230213-PrototypeScript/0-prototype.py HTTP/1.1" 200 -
+2023-09-15 18:59:59,279 INFO     _log 127.0.0.1 - - [15/Sep/2023 18:59:59] "GET /excercises HTTP/1.1" 200 -
+2023-09-15 18:59:59,494 INFO     _log 127.0.0.1 - - [15/Sep/2023 18:59:59] "[36mGET /static/img/Lorea.jpg HTTP/1.1[0m" 304 -
+2023-09-15 19:00:01,378 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:00:01] "GET /excercise/?id=4 HTTP/1.1" 200 -
+2023-09-15 19:00:01,682 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:00:01] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-09-15 19:00:01,707 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:00:01] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-09-15 19:00:01,707 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:00:01] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-09-15 19:00:01,707 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:00:01] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-09-15 19:00:05,370 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:00:05] "GET /result_script_exec/?py_path=static/py_excercises/20230213-PrototypeScript-MatrixView/0-prototype-matrix-view1.py HTTP/1.1" 200 -
+2023-09-15 19:00:05,469 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:00:05] "GET /result_script_html HTTP/1.1" 200 -
+2023-09-15 19:00:14,109 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:00:14] "GET /result_script_exec/?py_path=static/py_excercises/20230213-PrototypeScript-MatrixView/0-prototype-matrix-view1.py HTTP/1.1" 200 -
+2023-09-15 19:00:14,136 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:00:14] "GET /result_script_html HTTP/1.1" 200 -
+2023-09-15 19:00:23,271 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:00:23] "GET /pythonScript/?py_path=static/py_excercises/20230213-PrototypeScript-MatrixView/0-prototype-matrix-view.py HTTP/1.1" 200 -
+2023-09-15 19:00:27,442 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:00:27] "GET /excercises HTTP/1.1" 200 -
+2023-09-15 19:00:27,753 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:00:27] "[36mGET /static/img/Lorea.jpg HTTP/1.1[0m" 304 -
+2023-09-15 19:00:30,455 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:00:30] "GET /excercise/?id=6 HTTP/1.1" 200 -
+2023-09-15 19:00:30,675 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:00:30] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-09-15 19:00:30,709 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:00:30] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-09-15 19:00:30,787 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:00:30] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-09-15 19:00:30,798 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:00:30] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-09-15 19:00:34,735 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:00:34] "GET /result_script_exec/?py_path=static/py_excercises/20230213-PrototypeScript-HelpObj/0-prototype-help1.py HTTP/1.1" 200 -
+2023-09-15 19:00:35,178 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:00:35] "GET /result_script_html HTTP/1.1" 200 -
+2023-09-15 19:02:22,141 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:02:22] "GET /excercises HTTP/1.1" 200 -
+2023-09-15 19:02:22,377 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:02:22] "[36mGET /static/img/Lorea.jpg HTTP/1.1[0m" 304 -
+2023-09-15 19:02:27,039 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:02:27] "GET /excercise/?id=5 HTTP/1.1" 200 -
+2023-09-15 19:02:27,349 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:02:27] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-09-15 19:02:27,359 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:02:27] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-09-15 19:02:27,368 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:02:27] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-09-15 19:02:27,368 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:02:27] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-09-15 19:02:41,373 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:02:41] "GET /pythonScript/?py_path=static/py_excercises/20230213-PrototypeScript-ModuleMethods/0-prototype-mod-methods.py HTTP/1.1" 200 -
+2023-09-15 19:03:29,269 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:03:29] "GET /excercise/?id=5 HTTP/1.1" 200 -
+2023-09-15 19:03:29,568 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:03:29] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-09-15 19:03:29,599 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:03:29] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-09-15 19:03:29,599 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:03:29] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-09-15 19:03:29,614 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:03:29] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-09-15 19:03:29,933 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:03:29] "[36mGET /static/img/icons8-bulb-64.png HTTP/1.1[0m" 304 -
+2023-09-15 19:03:33,619 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:03:33] "GET /result_script_exec/?py_path=static/py_excercises/20230213-PrototypeScript-ModuleMethods/0-prototype-mod-methods1.py HTTP/1.1" 200 -
+2023-09-15 19:03:34,104 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:03:34] "GET /result_script_html HTTP/1.1" 200 -
+2023-09-15 19:06:19,869 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:06:19] "GET /pythonScript/?py_path=static/py_excercises/20230213-PrototypeScript-ModuleMethods/0-prototype-mod-methods.py HTTP/1.1" 200 -
+2023-09-15 19:07:11,175 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:07:11] "GET /result_script_exec/?py_path=static/py_excercises/20230213-PrototypeScript-ModuleMethods/0-prototype-mod-methods1.py HTTP/1.1" 200 -
+2023-09-15 19:07:11,654 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:07:11] "GET /result_script_html HTTP/1.1" 200 -
+2023-09-15 19:08:18,644 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\MyFunc.py', reloading
+2023-09-15 19:08:18,818 INFO     _log  * Restarting with stat
+2023-09-15 19:08:19,934 WARNING  _log  * Debugger is active!
+2023-09-15 19:08:19,934 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-15 19:08:25,190 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:08:25] "GET /result_script_exec/?py_path=static/py_excercises/20230213-PrototypeScript-ModuleMethods/0-prototype-mod-methods1.py HTTP/1.1" 200 -
+2023-09-15 19:08:25,386 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:08:25] "GET /result_script_html HTTP/1.1" 200 -
+2023-09-15 19:08:56,367 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\MyFunc.py', reloading
+2023-09-15 19:08:56,470 INFO     _log  * Restarting with stat
+2023-09-15 19:08:57,196 WARNING  _log  * Debugger is active!
+2023-09-15 19:08:57,200 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-15 19:09:34,533 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\MyFunc.py', reloading
+2023-09-15 19:09:34,629 INFO     _log  * Restarting with stat
+2023-09-15 19:09:35,320 WARNING  _log  * Debugger is active!
+2023-09-15 19:09:35,320 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-15 19:09:39,523 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\MyFunc.py', reloading
+2023-09-15 19:09:39,663 INFO     _log  * Restarting with stat
+2023-09-15 19:09:40,421 WARNING  _log  * Debugger is active!
+2023-09-15 19:09:40,421 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-15 19:09:44,286 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:09:44] "GET /excercise/?id=5 HTTP/1.1" 200 -
+2023-09-15 19:09:44,355 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:09:44] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-09-15 19:09:44,622 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:09:44] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-09-15 19:09:44,638 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:09:44] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-09-15 19:09:44,638 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:09:44] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-09-15 19:09:44,960 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:09:44] "[36mGET /static/img/icons8-bulb-64.png HTTP/1.1[0m" 304 -
+2023-09-15 19:09:49,973 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:09:49] "GET /result_script_exec/?py_path=static/py_excercises/20230213-PrototypeScript-ModuleMethods/0-prototype-mod-methods1.py HTTP/1.1" 200 -
+2023-09-15 19:09:50,456 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:09:50] "GET /result_script_html HTTP/1.1" 200 -
+2023-09-15 19:10:08,603 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\MyFunc.py', reloading
+2023-09-15 19:10:08,724 INFO     _log  * Restarting with stat
+2023-09-15 19:10:09,419 WARNING  _log  * Debugger is active!
+2023-09-15 19:10:09,419 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-15 19:10:14,641 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\MyFunc.py', reloading
+2023-09-15 19:10:14,755 INFO     _log  * Restarting with stat
+2023-09-15 19:10:15,503 WARNING  _log  * Debugger is active!
+2023-09-15 19:10:15,519 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-15 19:10:20,736 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\MyFunc.py', reloading
+2023-09-15 19:10:20,835 INFO     _log  * Restarting with stat
+2023-09-15 19:10:21,559 WARNING  _log  * Debugger is active!
+2023-09-15 19:10:21,567 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-15 19:11:14,737 INFO     _log [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-09-15 19:11:14,737 INFO     _log [33mPress CTRL+C to quit[0m
+2023-09-15 19:11:14,737 INFO     _log  * Restarting with stat
+2023-09-15 19:11:15,372 WARNING  _log  * Debugger is active!
+2023-09-15 19:11:15,384 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-15 19:11:20,349 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:11:20] "GET / HTTP/1.1" 200 -
+2023-09-15 19:11:20,408 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:11:20] "[36mGET /static/img/ame-01.jpg HTTP/1.1[0m" 304 -
+2023-09-15 19:11:22,420 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:11:22] "GET /excercises HTTP/1.1" 200 -
+2023-09-15 19:11:22,699 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:11:22] "[36mGET /static/img/Lorea.jpg HTTP/1.1[0m" 304 -
+2023-09-15 19:11:25,119 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:11:25] "GET /excercise/?id=5 HTTP/1.1" 200 -
+2023-09-15 19:11:25,318 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:11:25] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-09-15 19:11:25,358 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:11:25] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-09-15 19:11:25,451 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:11:25] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-09-15 19:11:25,467 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:11:25] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-09-15 19:11:29,100 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:11:29] "GET /result_script_exec/?py_path=static/py_excercises/20230213-PrototypeScript-ModuleMethods/0-prototype-mod-methods1.py HTTP/1.1" 200 -
+2023-09-15 19:11:29,471 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:11:29] "GET /result_script_html HTTP/1.1" 200 -
+2023-09-15 19:13:06,939 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:13:06] "GET /excercise/?id=5 HTTP/1.1" 200 -
+2023-09-15 19:13:06,955 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:13:06] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-09-15 19:13:07,260 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:13:07] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-09-15 19:13:07,260 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:13:07] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-09-15 19:13:07,260 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:13:07] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-09-15 19:13:07,585 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:13:07] "[36mGET /static/img/icons8-bulb-64.png HTTP/1.1[0m" 304 -
+2023-09-15 19:13:09,510 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:13:09] "GET /excercises HTTP/1.1" 200 -
+2023-09-15 19:13:09,820 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:13:09] "[36mGET /static/img/Lorea.jpg HTTP/1.1[0m" 304 -
+2023-09-15 19:13:11,881 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:13:11] "GET /excercise/?id=5 HTTP/1.1" 200 -
+2023-09-15 19:13:12,104 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:13:12] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-09-15 19:13:12,135 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:13:12] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-09-15 19:13:12,211 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:13:12] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-09-15 19:13:12,219 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:13:12] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-09-15 19:13:20,221 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:13:20] "GET /pythonScript/?py_path=static/py_excercises/20230213-PrototypeScript-ModuleMethods/0-prototype-mod-methods.py HTTP/1.1" 200 -
+2023-09-15 19:13:26,853 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:13:26] "GET /result_script_exec/?py_path=static/py_excercises/20230213-PrototypeScript-ModuleMethods/0-prototype-mod-methods1.py HTTP/1.1" 200 -
+2023-09-15 19:13:26,916 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:13:26] "GET /result_script_html HTTP/1.1" 200 -
+2023-09-15 19:13:58,341 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:13:58] "GET /excercises HTTP/1.1" 200 -
+2023-09-15 19:13:58,655 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:13:58] "[36mGET /static/img/Lorea.jpg HTTP/1.1[0m" 304 -
+2023-09-15 19:14:00,460 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:14:00] "GET /excercise/?id=5 HTTP/1.1" 200 -
+2023-09-15 19:14:00,703 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:14:00] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-09-15 19:14:00,728 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:14:00] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-09-15 19:14:00,790 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:14:00] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-09-15 19:14:00,800 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:14:00] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-09-15 19:14:06,604 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:14:06] "GET /result_script_exec/?py_path=static/py_excercises/20230213-PrototypeScript-ModuleMethods/0-prototype-mod-methods1.py HTTP/1.1" 200 -
+2023-09-15 19:14:07,069 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:14:07] "GET /result_script_html HTTP/1.1" 200 -
+2023-09-15 19:18:50,593 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:18:50] "GET /excercises HTTP/1.1" 200 -
+2023-09-15 19:18:50,602 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:18:50] "[36mGET /static/img/Lorea.jpg HTTP/1.1[0m" 304 -
+2023-09-15 19:18:52,152 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:18:52] "GET /excercise/?id=5 HTTP/1.1" 200 -
+2023-09-15 19:18:52,387 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:18:52] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-09-15 19:18:52,417 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:18:52] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-09-15 19:18:52,482 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:18:52] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-09-15 19:18:52,482 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:18:52] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-09-15 19:18:56,135 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:18:56] "GET /result_script_exec/?py_path=static/py_excercises/20230213-PrototypeScript-ModuleMethods/0-prototype-mod-methods1.py HTTP/1.1" 200 -
+2023-09-15 19:18:56,603 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:18:56] "GET /result_script_html HTTP/1.1" 200 -
+2023-09-15 19:20:23,320 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:20:23] "GET /excercises HTTP/1.1" 200 -
+2023-09-15 19:20:23,543 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:20:23] "[36mGET /static/img/Lorea.jpg HTTP/1.1[0m" 304 -
+2023-09-15 19:20:29,182 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:20:29] "GET /excercise/?id=3 HTTP/1.1" 200 -
+2023-09-15 19:20:29,487 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:20:29] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-09-15 19:20:29,502 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:20:29] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-09-15 19:20:29,518 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:20:29] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-09-15 19:20:29,518 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:20:29] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-09-15 19:20:38,209 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:20:38] "GET /pythonScript/?py_path=static/py_excercises/20230213-PrototypeScript-MostrarObject/0-prototype-mostrar-obj.py HTTP/1.1" 200 -
+2023-09-15 19:22:02,531 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:22:02] "GET /excercises HTTP/1.1" 200 -
+2023-09-15 19:22:02,767 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:22:02] "[36mGET /static/img/Lorea.jpg HTTP/1.1[0m" 304 -
+2023-09-15 19:22:18,280 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:22:18] "GET /excercise/?id=3 HTTP/1.1" 200 -
+2023-09-15 19:22:18,589 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:22:18] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-09-15 19:22:18,605 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:22:18] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-09-15 19:22:18,605 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:22:18] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-09-15 19:22:18,620 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:22:18] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-09-15 19:22:22,205 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:22:22] "GET /result_script_exec/?py_path=static/py_excercises/20230213-PrototypeScript-MostrarObject/0-prototype-mostrar-obj1.py HTTP/1.1" 200 -
+2023-09-15 19:22:22,304 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:22:22] "GET /result_script_html HTTP/1.1" 200 -
+2023-09-15 19:23:52,384 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:23:52] "GET /excercise/?id=3 HTTP/1.1" 200 -
+2023-09-15 19:23:52,390 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:23:52] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-09-15 19:23:52,721 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:23:52] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-09-15 19:23:52,721 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:23:52] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-09-15 19:23:52,727 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:23:52] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-09-15 19:23:53,054 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:23:53] "[36mGET /static/img/icons8-bulb-64.png HTTP/1.1[0m" 304 -
+2023-09-15 19:23:56,201 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:23:56] "GET /result_script_exec/?py_path=static/py_excercises/20230213-PrototypeScript-MostrarObject/0-prototype-mostrar-obj1.py HTTP/1.1" 200 -
+2023-09-15 19:23:56,589 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:23:56] "GET /result_script_html HTTP/1.1" 200 -
+2023-09-15 19:26:20,896 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:26:20] "GET /excercise/?id=3 HTTP/1.1" 200 -
+2023-09-15 19:26:20,912 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:26:20] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-09-15 19:26:21,218 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:26:21] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-09-15 19:26:21,233 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:26:21] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-09-15 19:26:21,233 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:26:21] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-09-15 19:26:21,554 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:26:21] "[36mGET /static/img/icons8-bulb-64.png HTTP/1.1[0m" 304 -
+2023-09-15 19:26:24,470 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:26:24] "GET /result_script_exec/?py_path=static/py_excercises/20230213-PrototypeScript-MostrarObject/0-prototype-mostrar-obj1.py HTTP/1.1" 200 -
+2023-09-15 19:26:24,855 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:26:24] "GET /result_script_html HTTP/1.1" 200 -
+2023-09-15 19:26:48,919 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:26:48] "GET /pythonScript/?py_path=static/py_excercises/20230213-PrototypeScript-MostrarObject/0-prototype-mostrar-obj.py HTTP/1.1" 200 -
+2023-09-15 19:27:20,084 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:27:20] "GET /excercises HTTP/1.1" 200 -
+2023-09-15 19:27:20,090 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:27:20] "[36mGET /static/img/Lorea.jpg HTTP/1.1[0m" 304 -
+2023-09-15 19:27:20,456 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:27:20] "[36mGET /static/img/icons8-bulb-64.png HTTP/1.1[0m" 304 -
+2023-09-15 19:27:24,105 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:27:24] "GET /excercise/?id=3 HTTP/1.1" 200 -
+2023-09-15 19:27:24,406 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:27:24] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-09-15 19:27:24,439 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:27:24] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-09-15 19:27:24,450 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:27:24] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-09-15 19:27:24,450 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:27:24] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-09-15 19:27:29,569 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:27:29] "GET /pythonScript/?py_path=static/py_excercises/20230213-PrototypeScript-MostrarObject/0-prototype-mostrar-obj.py HTTP/1.1" 200 -
+2023-09-15 19:29:03,822 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:29:03] "GET /excercise/?id=3 HTTP/1.1" 200 -
+2023-09-15 19:29:03,839 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:29:03] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-09-15 19:29:04,065 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:29:04] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-09-15 19:29:04,151 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:29:04] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-09-15 19:29:04,151 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:29:04] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-09-15 19:29:04,479 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:29:04] "[36mGET /static/img/icons8-bulb-64.png HTTP/1.1[0m" 304 -
+2023-09-15 19:29:08,903 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:29:08] "GET /pythonScript/?py_path=static/py_excercises/20230213-PrototypeScript-MostrarObject/0-prototype-mostrar-obj.py HTTP/1.1" 200 -
+2023-09-15 19:29:26,504 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:29:26] "GET /excercises HTTP/1.1" 200 -
+2023-09-15 19:29:26,718 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:29:26] "[36mGET /static/img/Lorea.jpg HTTP/1.1[0m" 304 -
+2023-09-15 19:29:28,450 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:29:28] "GET /excercise/?id=2 HTTP/1.1" 200 -
+2023-09-15 19:29:28,752 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:29:28] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-09-15 19:29:28,768 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:29:28] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-09-15 19:29:28,781 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:29:28] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-09-15 19:29:28,781 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:29:28] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-09-15 19:29:32,357 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:29:32] "GET /excercise/?id=1 HTTP/1.1" 200 -
+2023-09-15 19:29:32,375 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:29:32] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-09-15 19:29:32,687 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:29:32] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-09-15 19:29:32,687 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:29:32] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-09-15 19:29:32,698 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:29:32] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-09-15 19:29:38,199 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:29:38] "GET /pythonScript/?py_path=static/py_excercises/20230213-PrototypeScript-colors/0-prototype-colors.py HTTP/1.1" 200 -
+2023-09-15 19:29:50,655 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:29:50] "GET /pythonScript/?py_path=static/py_excercises/20230213-PrototypeScript-colors/0-prototype-colors.py HTTP/1.1" 200 -
+2023-09-15 19:31:05,677 INFO     _log [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-09-15 19:31:05,677 INFO     _log [33mPress CTRL+C to quit[0m
+2023-09-15 19:31:05,679 INFO     _log  * Restarting with stat
+2023-09-15 19:31:06,705 WARNING  _log  * Debugger is active!
+2023-09-15 19:31:06,705 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-15 19:31:11,517 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:31:11] "GET /excercise/?id=1 HTTP/1.1" 200 -
+2023-09-15 19:31:11,573 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:31:11] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-09-15 19:31:11,753 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:31:11] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-09-15 19:31:11,851 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:31:11] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-09-15 19:31:11,855 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:31:11] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-09-15 19:31:12,182 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:31:12] "[36mGET /static/img/icons8-bulb-64.png HTTP/1.1[0m" 304 -
+2023-09-15 19:31:13,707 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:31:13] "GET /excercises HTTP/1.1" 200 -
+2023-09-15 19:31:14,019 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:31:14] "[36mGET /static/img/Lorea.jpg HTTP/1.1[0m" 304 -
+2023-09-15 19:31:16,993 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:31:16] "GET /excercise/?id=3 HTTP/1.1" 200 -
+2023-09-15 19:31:17,221 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:31:17] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-09-15 19:31:17,253 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:31:17] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-09-15 19:31:17,316 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:31:17] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-09-15 19:31:17,327 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:31:17] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-09-15 19:31:22,262 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:31:22] "GET /pythonScript/?py_path=static/py_excercises/20230213-PrototypeScript-MostrarObject/0-prototype-mostrar-obj.py HTTP/1.1" 200 -
+2023-09-15 19:33:30,351 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:33:30] "GET /excercise/?id=3 HTTP/1.1" 200 -
+2023-09-15 19:33:30,368 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:33:30] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-09-15 19:33:30,595 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:33:30] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-09-15 19:33:30,688 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:33:30] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-09-15 19:33:30,688 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:33:30] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-09-15 19:33:31,017 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:33:31] "[36mGET /static/img/icons8-bulb-64.png HTTP/1.1[0m" 304 -
+2023-09-15 19:33:35,409 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:33:35] "GET /pythonScript/?py_path=static/py_excercises/20230213-PrototypeScript-MostrarObject/0-prototype-mostrar-obj.py HTTP/1.1" 200 -
+2023-09-15 19:34:01,005 INFO     _log [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-09-15 19:34:01,005 INFO     _log [33mPress CTRL+C to quit[0m
+2023-09-15 19:34:01,005 INFO     _log  * Restarting with stat
+2023-09-15 19:34:01,688 WARNING  _log  * Debugger is active!
+2023-09-15 19:34:01,688 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-15 19:34:04,033 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:34:04] "GET /excercises HTTP/1.1" 200 -
+2023-09-15 19:34:04,282 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:34:04] "[36mGET /static/img/Lorea.jpg HTTP/1.1[0m" 304 -
+2023-09-15 19:34:05,736 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:34:05] "GET /excercise/?id=3 HTTP/1.1" 200 -
+2023-09-15 19:34:06,035 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:34:06] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-09-15 19:34:06,070 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:34:06] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-09-15 19:34:06,070 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:34:06] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-09-15 19:34:06,070 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:34:06] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-09-15 19:34:11,458 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:34:11] "GET /pythonScript/?py_path=static/py_excercises/20230213-PrototypeScript-MostrarObject/0-prototype-mostrar-obj.py HTTP/1.1" 200 -
+2023-09-15 19:35:53,609 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:35:53] "GET /excercise/?id=3 HTTP/1.1" 200 -
+2023-09-15 19:35:53,621 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:35:53] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-09-15 19:35:53,871 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:35:53] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-09-15 19:35:53,934 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:35:53] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-09-15 19:35:53,934 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:35:53] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-09-15 19:35:54,265 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:35:54] "[36mGET /static/img/icons8-bulb-64.png HTTP/1.1[0m" 304 -
+2023-09-15 19:35:58,912 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:35:58] "GET /pythonScript/?py_path=static/py_excercises/20230213-PrototypeScript-MostrarObject/0-prototype-mostrar-obj.py HTTP/1.1" 200 -
+2023-09-15 19:37:14,582 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:37:14] "GET /result_script_exec/?py_path=static/py_excercises/20230213-PrototypeScript-MostrarObject/0-prototype-mostrar-obj1.py HTTP/1.1" 200 -
+2023-09-15 19:37:14,673 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:37:14] "GET /result_script_html HTTP/1.1" 200 -
+2023-09-15 19:38:48,031 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:38:48] "GET /excercises HTTP/1.1" 200 -
+2023-09-15 19:38:48,261 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:38:48] "[36mGET /static/img/Lorea.jpg HTTP/1.1[0m" 304 -
+2023-09-15 19:38:49,840 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:38:49] "GET /excercise/?id=3 HTTP/1.1" 200 -
+2023-09-15 19:38:50,152 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:38:50] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-09-15 19:38:50,152 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:38:50] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-09-15 19:38:50,174 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:38:50] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-09-15 19:38:50,174 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:38:50] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-09-15 19:38:55,219 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:38:55] "GET /pythonScript/?py_path=static/py_excercises/20230213-PrototypeScript-MostrarObject/0-prototype-mostrar-obj.py HTTP/1.1" 200 -
+2023-09-15 19:40:59,449 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:40:59] "GET /excercise/?id=3 HTTP/1.1" 200 -
+2023-09-15 19:40:59,464 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:40:59] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-09-15 19:40:59,716 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:40:59] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-09-15 19:40:59,778 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:40:59] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-09-15 19:40:59,778 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:40:59] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-09-15 19:41:00,111 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:41:00] "[36mGET /static/img/icons8-bulb-64.png HTTP/1.1[0m" 304 -
+2023-09-15 19:41:05,024 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:41:05] "GET /pythonScript/?py_path=static/py_excercises/20230213-PrototypeScript-MostrarObject/0-prototype-mostrar-obj.py HTTP/1.1" 200 -
+2023-09-15 19:41:51,980 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:41:51] "GET /excercise/?id=3 HTTP/1.1" 200 -
+2023-09-15 19:41:51,994 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:41:51] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-09-15 19:41:52,237 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:41:52] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-09-15 19:41:52,338 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:41:52] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-09-15 19:41:52,338 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:41:52] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-09-15 19:41:52,661 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:41:52] "[36mGET /static/img/icons8-bulb-64.png HTTP/1.1[0m" 304 -
+2023-09-15 19:41:56,884 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:41:56] "GET /pythonScript/?py_path=static/py_excercises/20230213-PrototypeScript-MostrarObject/0-prototype-mostrar-obj.py HTTP/1.1" 200 -
+2023-09-15 19:42:19,444 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:42:19] "GET /excercise/?id=3 HTTP/1.1" 200 -
+2023-09-15 19:42:19,455 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:42:19] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-09-15 19:42:19,706 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:42:19] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-09-15 19:42:19,781 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:42:19] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-09-15 19:42:19,781 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:42:19] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-09-15 19:42:20,104 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:42:20] "[36mGET /static/img/icons8-bulb-64.png HTTP/1.1[0m" 304 -
+2023-09-15 19:42:24,526 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:42:24] "GET /pythonScript/?py_path=static/py_excercises/20230213-PrototypeScript-MostrarObject/0-prototype-mostrar-obj.py HTTP/1.1" 200 -
+2023-09-15 19:44:02,216 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:44:02] "GET /excercises HTTP/1.1" 200 -
+2023-09-15 19:44:02,437 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:44:02] "[36mGET /static/img/Lorea.jpg HTTP/1.1[0m" 304 -
+2023-09-15 19:44:06,446 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:44:06] "GET /excercise/?id=1 HTTP/1.1" 200 -
+2023-09-15 19:44:06,749 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:44:06] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-09-15 19:44:06,767 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:44:06] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-09-15 19:44:06,774 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:44:06] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-09-15 19:44:06,774 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:44:06] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-09-15 19:44:13,713 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:44:13] "GET /pythonScript/?py_path=static/py_excercises/20230213-PrototypeScript-colors/0-prototype-colors.py HTTP/1.1" 200 -
+2023-09-15 19:47:30,342 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:47:30] "GET /excercises HTTP/1.1" 200 -
+2023-09-15 19:47:30,558 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:47:30] "[36mGET /static/img/Lorea.jpg HTTP/1.1[0m" 304 -
+2023-09-15 19:47:32,880 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:47:32] "GET /excercise/?id=3 HTTP/1.1" 200 -
+2023-09-15 19:47:33,183 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:47:33] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-09-15 19:47:33,199 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:47:33] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-09-15 19:47:33,215 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:47:33] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-09-15 19:47:33,219 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:47:33] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-09-15 19:47:38,173 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:47:38] "GET /pythonScript/?py_path=static/py_excercises/20230213-PrototypeScript-MostrarObject/0-prototype-mostrar-obj.py HTTP/1.1" 200 -
+2023-09-15 19:48:37,339 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:48:37] "GET /excercises HTTP/1.1" 200 -
+2023-09-15 19:48:37,638 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:48:37] "[36mGET /static/img/Lorea.jpg HTTP/1.1[0m" 304 -
+2023-09-15 19:48:38,900 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:48:38] "GET /excercise/?id=3 HTTP/1.1" 200 -
+2023-09-15 19:48:39,119 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:48:39] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-09-15 19:48:39,169 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:48:39] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-09-15 19:48:39,239 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:48:39] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-09-15 19:48:39,239 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:48:39] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-09-15 19:48:44,024 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:48:44] "GET /pythonScript/?py_path=static/py_excercises/20230213-PrototypeScript-MostrarObject/0-prototype-mostrar-obj.py HTTP/1.1" 200 -
+2023-09-15 19:50:30,830 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:50:30] "GET /excercise/?id=3 HTTP/1.1" 200 -
+2023-09-15 19:50:30,846 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:50:30] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-09-15 19:50:31,095 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:50:31] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-09-15 19:50:31,176 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:50:31] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-09-15 19:50:31,176 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:50:31] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-09-15 19:50:31,501 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:50:31] "[36mGET /static/img/icons8-bulb-64.png HTTP/1.1[0m" 304 -
+2023-09-15 19:50:37,783 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:50:37] "GET /pythonScript/?py_path=static/py_excercises/20230213-PrototypeScript-MostrarObject/0-prototype-mostrar-obj.py HTTP/1.1" 200 -
+2023-09-15 19:51:17,647 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:51:17] "GET /excercise/?id=3 HTTP/1.1" 200 -
+2023-09-15 19:51:17,665 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:51:17] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-09-15 19:51:17,898 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:51:17] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-09-15 19:51:17,982 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:51:17] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-09-15 19:51:17,982 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:51:17] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-09-15 19:51:18,314 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:51:18] "[36mGET /static/img/icons8-bulb-64.png HTTP/1.1[0m" 304 -
+2023-09-15 19:51:22,422 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:51:22] "GET /pythonScript/?py_path=static/py_excercises/20230213-PrototypeScript-MostrarObject/0-prototype-mostrar-obj.py HTTP/1.1" 200 -
+2023-09-15 19:52:06,843 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:52:06] "GET /excercise/?id=3 HTTP/1.1" 200 -
+2023-09-15 19:52:06,857 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:52:06] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-09-15 19:52:07,099 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:52:07] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-09-15 19:52:07,184 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:52:07] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-09-15 19:52:07,184 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:52:07] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-09-15 19:52:07,507 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:52:07] "[36mGET /static/img/icons8-bulb-64.png HTTP/1.1[0m" 304 -
+2023-09-15 19:52:12,032 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:52:12] "GET /pythonScript/?py_path=static/py_excercises/20230213-PrototypeScript-MostrarObject/0-prototype-mostrar-obj.py HTTP/1.1" 200 -
+2023-09-15 19:52:58,554 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:52:58] "GET / HTTP/1.1" 200 -
+2023-09-15 19:52:58,810 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:52:58] "GET /static/img/ame-01.jpg HTTP/1.1" 200 -
+2023-09-15 19:52:58,916 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:52:58] "GET /static/img/icons8-bulb-64.png HTTP/1.1" 200 -
+2023-09-15 19:53:00,543 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:53:00] "GET /excercises HTTP/1.1" 200 -
+2023-09-15 19:53:00,876 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:53:00] "GET /static/img/Lorea.jpg HTTP/1.1" 200 -
+2023-09-15 19:53:02,530 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:53:02] "GET /excercise/?id=3 HTTP/1.1" 200 -
+2023-09-15 19:53:02,899 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:53:02] "GET /static/img/icons8-script-68.png HTTP/1.1" 200 -
+2023-09-15 19:53:02,904 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:53:02] "GET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1" 200 -
+2023-09-15 19:53:02,907 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:53:02] "GET /static/img/icons8-html-filetype-50.png HTTP/1.1" 200 -
+2023-09-15 19:53:02,909 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:53:02] "GET /static/img/icons8-consola-100.png HTTP/1.1" 200 -
+2023-09-15 19:53:08,878 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:53:08] "GET /pythonScript/?py_path=static/py_excercises/20230213-PrototypeScript-MostrarObject/0-prototype-mostrar-obj.py HTTP/1.1" 200 -
+2023-09-15 19:53:55,808 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:53:55] "GET /excercise/?id=3 HTTP/1.1" 200 -
+2023-09-15 19:53:56,059 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:53:56] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-09-15 19:53:56,151 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:53:56] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-09-15 19:53:56,158 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:53:56] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-09-15 19:53:56,158 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:53:56] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-09-15 19:53:56,181 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:53:56] "[36mGET /static/img/icons8-bulb-64.png HTTP/1.1[0m" 304 -
+2023-09-15 19:54:01,252 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:54:01] "GET /pythonScript/?py_path=static/py_excercises/20230213-PrototypeScript-MostrarObject/0-prototype-mostrar-obj.py HTTP/1.1" 200 -
+2023-09-15 19:55:00,815 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:55:00] "GET /excercise/?id=3 HTTP/1.1" 200 -
+2023-09-15 19:55:01,139 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:55:01] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-09-15 19:55:01,139 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:55:01] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-09-15 19:55:01,147 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:55:01] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-09-15 19:55:01,155 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:55:01] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-09-15 19:55:01,409 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:55:01] "[36mGET /static/img/icons8-bulb-64.png HTTP/1.1[0m" 304 -
+2023-09-15 19:55:06,415 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:55:06] "GET /pythonScript/?py_path=static/py_excercises/20230213-PrototypeScript-MostrarObject/0-prototype-mostrar-obj.py HTTP/1.1" 200 -
+2023-09-15 19:55:16,268 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:55:16] "GET /result_script_exec/?py_path=static/py_excercises/20230213-PrototypeScript-MostrarObject/0-prototype-mostrar-obj1.py HTTP/1.1" 200 -
+2023-09-15 19:55:16,372 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:55:16] "GET /result_script_html HTTP/1.1" 200 -
+2023-09-15 19:55:42,598 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:55:42] "GET /result_script_html HTTP/1.1" 200 -
+2023-09-15 19:55:42,964 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:55:42] "[36mGET /static/img/icons8-bulb-64.png HTTP/1.1[0m" 304 -
+2023-09-15 19:55:44,956 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:55:44] "GET /excercises HTTP/1.1" 200 -
+2023-09-15 19:55:45,298 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:55:45] "[36mGET /static/img/Lorea.jpg HTTP/1.1[0m" 304 -
+2023-09-15 19:55:46,913 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:55:46] "GET /excercise/?id=3 HTTP/1.1" 200 -
+2023-09-15 19:55:47,264 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:55:47] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-09-15 19:55:47,269 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:55:47] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-09-15 19:55:47,277 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:55:47] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-09-15 19:55:47,277 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:55:47] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-09-15 19:55:51,849 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:55:51] "GET /pythonScript/?py_path=static/py_excercises/20230213-PrototypeScript-MostrarObject/0-prototype-mostrar-obj.py HTTP/1.1" 200 -
+2023-09-15 19:56:38,287 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:56:38] "GET /excercise/?id=3 HTTP/1.1" 200 -
+2023-09-15 19:56:38,541 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:56:38] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-09-15 19:56:38,626 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:56:38] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-09-15 19:56:38,626 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:56:38] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-09-15 19:56:38,634 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:56:38] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-09-15 19:56:38,656 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:56:38] "[36mGET /static/img/icons8-bulb-64.png HTTP/1.1[0m" 304 -
+2023-09-15 19:56:44,050 INFO     _log 127.0.0.1 - - [15/Sep/2023 19:56:44] "GET /pythonScript/?py_path=static/py_excercises/20230213-PrototypeScript-MostrarObject/0-prototype-mostrar-obj.py HTTP/1.1" 200 -

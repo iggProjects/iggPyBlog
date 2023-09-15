@@ -4,10 +4,22 @@ THIS SCRIPT IS FOR..................
 
 """
 # IMPORT SECTION
+import os, sys
 from os import  system
 
-# CONSTANTS
-# Colors
+# include root path in sys.path
+ROOT_DIR = os.path.abspath(os.curdir)
+# check in what server is app
+if "iggWebNz" in ROOT_DIR:              # pythonanywhere  
+    ROOT_DIR = ROOT_DIR + "/mysite"
+else:                                   # working in localhost server
+    pass 
+sys.path.insert(1, ROOT_DIR)
+
+# import "My Own Funct" from root path
+from MyFunc import *
+
+# CONSTANTS FOR COLORS
 NO_COLOR = "\033[00m"
 FR_RED   = "\033[91m"
 FR_GREEN = "\033[92m"
@@ -35,7 +47,7 @@ def matrix_view(obj_l_t,n_cols):
 def mostrar(obj):      
 
   if 'list' in str(type(obj)) or 'tuple' in str(type(obj)):
-    print(f"{FR_BLUE}Object elements view in matrix form (8 columns by row)")
+    print(f"{FR_BLUE}Object elements view in matrix form (4 columns by row)")
     matrix_view(obj,4)
 
   print("print empty line")
