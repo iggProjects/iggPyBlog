@@ -28,7 +28,7 @@ from MyFunc import *
 if __name__ == "__main__":
 
     print("print empty line")
-    print(f"=== MAIN ===")
+    print(f"{FR_BLUE}--------- MAIN ---------{NO_COLOR}")
     print("print empty line")
     print(f"{FR_GREEN}=== List of OS module methods{NO_COLOR}")
     print("print empty line")

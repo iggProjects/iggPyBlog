@@ -237,6 +237,10 @@ def result_script_exec():
                 new_line = new_line.replace('\\x1b[94m','')
                 color= "blue"
 
+            if '\\x1b[34m' in new_line:    # blue                
+                new_line = new_line.replace('\\x1b[34m','')
+                color= "blue"
+
             if '\\x1b[95m' in new_line:    # magenta
                 new_line = new_line.replace('\\x1b[95m','')
                 color= "magenta"
