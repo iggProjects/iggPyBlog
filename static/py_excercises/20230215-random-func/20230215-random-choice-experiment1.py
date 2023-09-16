@@ -53,7 +53,8 @@ if __name__ == "__main__":
             my_dice[str(face)] += 1        
 
         print("print empty line")   
-        print(f"\t{FR_GREEN}Experiment result with {iterations:,d} dice rolls:")
+        print(f"\t{FR_GREEN}Experiment result with {iterations} dice rolls:")
+        #print(f"\t{FR_GREEN}Experiment result with {iterations:,d} dice rolls:")
         for key in my_dice:
             #face_perc = "{:.4f}".format(100*(dice[key]/iterations))
             ideal_dice = int( ideal_perc * iterations )
@@ -67,7 +68,7 @@ if __name__ == "__main__":
             #print(f"{result}")
             print(f"\t\t{key}: my dice: {my_dice[key]} | ideal dice: {ideal_dice} | diff: {face_diff}  ({face_diff_perc}%) ")
         
-        # reset
+        # reset my_dice dict values
         my_dice = {'1':0,'2':0,'3':0,'4':0,'5':0,'6':0}   
 
     print("print empty line")

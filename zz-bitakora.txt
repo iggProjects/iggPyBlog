@@ -14,7 +14,11 @@ nazareth user: jo.gainzarain@aulanz.net  | nz2223Nz
 
 STILL TO DO !!!
 
-- excercise inputTrabajadores1.py receive data and only need to print 
+- excercises 
+    - # 10 inputTrabajadores1.py receive data and only need to print 
+    - # 11 teacher example --- adjust printing colors, check substitutions
+    - # 12 strings.... adjust printing colors, substitute input with delay
+    - #
 
 PAW & local PATHS
 

@@ -128,10 +128,10 @@ if __name__ == '__main__':
 
 	print(f"{FR_YELL}\t============ BALANCE ============{NO_COLOR}")
 	print("print empty line")	
-	print(f"\t{FR_YELL}{place_comma(N_PROGR)} Progressions{NO_COLOR}")
+	print(f"\t{FR_BLUE}{place_comma(N_PROGR)} Progressions{NO_COLOR}")
 	print(f"\tFor each Arith P:")
 	print(f"\t\tFirst Element: {ELEM_1}")
-	print(f"\t\tFirst 'd': {D_1}")
+	print(f"\t\t'd' has the value in 'd_list' array according to position in loop")
 	print(f"\t\tNumber of terms: {place_comma(N_TER)}")
 	print("print empty line")
 	print(f"\tFormula to create List of 'd': [(D_1 + 2*x) for x in range(0 .. N_PROGR)]")	

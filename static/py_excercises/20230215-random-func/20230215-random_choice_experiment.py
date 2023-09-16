@@ -48,7 +48,8 @@ if __name__ == "__main__":
             face = random.choice(face_list)
             my_dice[str(face)] += 1        
 
-        print(frGREEN(f"\n\tExperiment result with {iterations:,d} dice rolls:\n"))
+        print(frGREEN(f"\n\tExperiment result with {iterations} dice rolls:\n"))
+        #print(frGREEN(f"\n\tExperiment result with {iterations:,d} dice rolls:\n"))
         for key in my_dice:
             #face_perc = "{:.4f}".format(100*(dice[key]/iterations))
             ideal_dice = int( ideal_perc * iterations)
@@ -60,7 +61,7 @@ if __name__ == "__main__":
             face_diff_perc = str(face_diff_perc).rjust(8,' ')
             print(f"\t{key}: my dice: {my_dice[key]} | ideal dice: {ideal_dice} | diff: {face_diff} ({face_diff_perc}%) ")
         
-        # reset
+        # reset my_dice dict values
         my_dice = {'1':0,'2':0,'3':0,'4':0,'5':0,'6':0}   
 
         print()

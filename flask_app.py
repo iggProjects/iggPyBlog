@@ -224,46 +224,25 @@ def result_script_exec():
             if '\\x1b[91m' in new_line:      # red
                 new_line = new_line.replace('\\x1b[91m','')
                 color = "#800000"
-
-            if '\\x1b[92m' in new_line:    # green
-                new_line = new_line.replace('\\x1b[92m','')
-                color= "green" 
-
-            if '\\x1b[93m' in new_line:    # orange - (FR_YELL)
-                new_line = new_line.replace('\\x1b[93m','')
-                color= "#cc5200"    
-
-            if '\\x1b[94m' in new_line:    # blue                
-                new_line = new_line.replace('\\x1b[94m','')
-                color= "blue"
-
-            if '\\x1b[34m' in new_line:    # blue                
-                new_line = new_line.replace('\\x1b[34m','')
-                color= "blue"
-
-            if '\\x1b[95m' in new_line:    # magenta
-                new_line = new_line.replace('\\x1b[95m','')
-                color= "magenta"
-
-            """
-            if '\\x1b[91m' in new_line:      # red
-                new_line = new_line.replace('\\x1b[91m','')
-                color = "#800000"                
             elif '\\x1b[92m' in new_line:    # green
                 new_line = new_line.replace('\\x1b[92m','')
                 color= "green" 
             elif '\\x1b[93m' in new_line:    # orange - (FR_YELL)
                 new_line = new_line.replace('\\x1b[93m','')
-                color= "#cc5200"            
+                color= "#cc5200"    
+            elif '\\x1b[34m' in new_line:    # blue                
+                new_line = new_line.replace('\\x1b[34m','')
+                color= "blue"    
             elif '\\x1b[94m' in new_line:    # blue                
                 new_line = new_line.replace('\\x1b[94m','')
-                color= "blue"
+                color= "blue"                
             elif '\\x1b[95m' in new_line:    # magenta
                 new_line = new_line.replace('\\x1b[95m','')
                 color= "magenta"
             else:
-                pass
-            """
+                pass    
+
+
             # Replace ',' by ';' in temp_line1[1] field for html printing effects
             new_line = new_line.replace(',',';')
 
@@ -457,22 +436,23 @@ def result_script_exec1():
             if '\\x1b[91m' in new_line:      # red
                 new_line = new_line.replace('\\x1b[91m','')
                 color = "#800000"
-
-            if '\\x1b[92m' in new_line:    # green
+            elif '\\x1b[92m' in new_line:    # green
                 new_line = new_line.replace('\\x1b[92m','')
                 color= "green" 
-
-            if '\\x1b[93m' in new_line:    # orange - (FR_YELL)
+            elif '\\x1b[93m' in new_line:    # orange - (FR_YELL)
                 new_line = new_line.replace('\\x1b[93m','')
                 color= "#cc5200"    
-
-            if '\\x1b[94m' in new_line:    # blue                
+            elif '\\x1b[34m' in new_line:    # blue                
+                new_line = new_line.replace('\\x1b[34m','')
+                color= "blue"    
+            elif '\\x1b[94m' in new_line:    # blue                
                 new_line = new_line.replace('\\x1b[94m','')
-                color= "blue"
-
-            if '\\x1b[95m' in new_line:    # magenta
+                color= "blue"                
+            elif '\\x1b[95m' in new_line:    # magenta
                 new_line = new_line.replace('\\x1b[95m','')
                 color= "magenta"
+            else:
+                pass    
 
 
             # Replace ',' by ';' in temp_line1[1] field for html printing effects

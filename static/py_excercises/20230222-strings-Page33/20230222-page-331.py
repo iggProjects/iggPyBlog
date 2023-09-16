@@ -10,19 +10,23 @@
 #
 # IMPORT SECTION
 #
-from MyFunc import *
-from MyColors import *
+import os, sys
 from math import ceil
 from os import  system
 
+# include root path in sys.path
+ROOT_DIR = os.path.abspath(os.curdir)
+# check in what server is app
+if "iggWebNz" in ROOT_DIR:              # pythonanywhere  
+    ROOT_DIR = ROOT_DIR + "/mysite"
+else:                                   # working in localhost server
+    pass 
+sys.path.insert(1, ROOT_DIR)
+
+# import "My Own Funct" from root path
+from MyFunc import *
+
 # CONSTANTS
-# Colors
-NO_COLOR = "\033[00m"
-FR_RED   = "\033[91m"
-FR_GREEN = "\033[92m"
-FR_YELL  = "\033[93m"
-FR_BLUE  = "\033[94m"
-FR_MAG   = "\033[95m"
 
 #
 # ---------- COURSE EXCERCISE ----------
@@ -30,14 +34,15 @@ FR_MAG   = "\033[95m"
 
 if __name__ == "__main__":
 
-    system('cls')
+    #system('cls')
+    print("print empty line")
     print(f"{FR_GREEN}---------- main ----------{NO_COLOR}")
-    pause()    
+    print("print empty line")
+    #pause()    
 
     # first case 
     # function -> replace()
     texto = "Pitón es un lenguaje de programación. Pitón está usado para la automación, análisis de datos e incluso la creación de páginas webs. Pitón fue creado por Bill Gates en 1960. Pitón es difícil de usar."
-
     texto=texto.replace('Pitón','Python')
     texto=texto.replace('Bill Gates en 1960','Guido Van Rossum en 1989')
     texto=texto.replace('es difícil','es fácil')
@@ -75,9 +80,7 @@ if __name__ == "__main__":
     texto = texto.swapcase()
     print(f"{FR_YELL}Change letters with swapcase method{NO_COLOR}")
     print(texto + '')
-
-    
-
+   
 else:
     # something wrong
     print(f"{FR_RED}---- upsssssssss something is wrong ---{NO_COLOR}")

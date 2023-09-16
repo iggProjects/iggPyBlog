@@ -202,7 +202,7 @@ def Excercises():
             'section': 'String methods',
             'title': 'Teacher example',
             'fileDirPath': 'static/py_excercises/20230221-strings/20230221-strings.py',            
-            'fileDirPath1': '',            
+            'fileDirPath1': 'static/py_excercises/20230221-strings/20230221-strings1.py',            
             
             'homework': 'NEXT WEEK',
 
@@ -221,7 +221,7 @@ def Excercises():
             'section': 'String methods',
             'title': 'String task page 33',
             'fileDirPath': 'static/py_excercises/20230222-strings-Page33/20230222-page-33.py',            
-            'fileDirPath1': '',            
+            'fileDirPath1': 'static/py_excercises/20230222-strings-Page33/20230222-page-331.py',            
             
             'homework': 'NEXT WEEK',
 
