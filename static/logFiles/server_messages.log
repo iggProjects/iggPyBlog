@@ -5174,3 +5174,15 @@ jinja2.exceptions.TemplateNotFound: excrcises.html
 2023-09-16 18:37:38,442 INFO     _log 127.0.0.1 - - [16/Sep/2023 18:37:38] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
 2023-09-16 18:37:41,656 INFO     _log 127.0.0.1 - - [16/Sep/2023 18:37:41] "GET /result_script_exec/?py_path=static/py_excercises/20230213-PrototypeScript-ModuleMethods/0-prototype-mod-methods1.py HTTP/1.1" 200 -
 2023-09-16 18:37:42,044 INFO     _log 127.0.0.1 - - [16/Sep/2023 18:37:42] "GET /result_script_html HTTP/1.1" 200 -
+2023-09-16 18:43:05,452 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\MyFunc.py', reloading
+2023-09-16 18:43:05,517 INFO     _log  * Restarting with stat
+2023-09-16 18:43:05,923 WARNING  _log  * Debugger is active!
+2023-09-16 18:43:05,923 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-16 18:43:16,164 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\MyFunc.py', reloading
+2023-09-16 18:43:16,231 INFO     _log  * Restarting with stat
+2023-09-16 18:43:16,673 WARNING  _log  * Debugger is active!
+2023-09-16 18:43:16,673 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-16 18:43:26,870 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\MyFunc.py', reloading
+2023-09-16 18:43:26,933 INFO     _log  * Restarting with stat
+2023-09-16 18:43:27,387 WARNING  _log  * Debugger is active!
+2023-09-16 18:43:27,389 INFO     _log  * Debugger PIN: 551-034-170

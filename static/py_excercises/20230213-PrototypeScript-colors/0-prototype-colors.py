@@ -30,7 +30,7 @@ if __name__ == "__main__":
 
     try:    
 
-        write_log_file("my_messages.log","IN 'func 0-prototype-colors.py()'")
+        write_log_file("my_messages.txt","IN 'func 0-prototype-colors.py()'")
 
         system('cls')
         print(frGREEN("\n---------- main ----------\n"))

@@ -24,7 +24,7 @@ if __name__ == "__main__":
         
     try:    
 
-        write_log_file("my_messages.log","IN 'func 0-prototype.py()'")
+        write_log_file("my_messages.txt","IN 'func 0-prototype.py()'")
 
         system('cls')
         print(frGREEN("\n---------- MAIN ----------\n"))

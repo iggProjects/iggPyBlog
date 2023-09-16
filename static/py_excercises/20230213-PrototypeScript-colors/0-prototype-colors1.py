@@ -64,7 +64,7 @@ if __name__ == "__main__":
         print(f"{FR_GREEN}---------- That's all for today ----------{NO_COLOR}")
 
     except Exception as Argument:  
-        write_log_file("my_messages.log","ERROR IN 'func 0-prototype-colors1.py()'. SEE server_messages.log")
+        write_log_file("my_messages.txt","ERROR IN 'func 0-prototype-colors1.py()'. SEE server_messages.log")
         print("print empty line")
         print(frRED(f"UPSSSS THERE IS AN ERROR IN 'func 0-prototype-colors1.py()'."))
         print("print empty line")

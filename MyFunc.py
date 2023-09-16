@@ -32,7 +32,7 @@ import datetime
 # My own colors
 from MyColors import *
 
-# function to write in "my_messages.log"
+# function to write in logFile
 def write_log_file(logFile,msg):
 
     try:  
