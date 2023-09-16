@@ -5186,3 +5186,7 @@ jinja2.exceptions.TemplateNotFound: excrcises.html
 2023-09-16 18:43:26,933 INFO     _log  * Restarting with stat
 2023-09-16 18:43:27,387 WARNING  _log  * Debugger is active!
 2023-09-16 18:43:27,389 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-16 18:50:55,666 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\flask_app.py', reloading
+2023-09-16 18:50:55,739 INFO     _log  * Restarting with stat
+2023-09-16 18:50:56,154 WARNING  _log  * Debugger is active!
+2023-09-16 18:50:56,155 INFO     _log  * Debugger PIN: 551-034-170

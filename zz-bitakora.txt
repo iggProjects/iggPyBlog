@@ -14,6 +14,9 @@ nazareth user: jo.gainzarain@aulanz.net  | nz2223Nz
 
 STILL TO DO !!!
 
+- error_page 
+    - test call error_page in write_log_file 
+
 - excercises 
     - create "sleep()" to substitute pause() in html console version
     - # 10 inputTrabajadores1.py receive data and only need to print 
