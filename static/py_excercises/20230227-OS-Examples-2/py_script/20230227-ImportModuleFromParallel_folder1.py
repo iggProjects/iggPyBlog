@@ -76,7 +76,7 @@ if __name__ == "__main__":
     print("print empty line")
 
     print(f'{FR_GREEN}Updated sys.path in GREEN')
-    print(f'\t{FR_GREEN}NOTE that one new folder is included now:  MyFunctions')
+    print(f'\t{FR_RED}NOTE that one new folder is included now:  MyFunctions')
     for fold in new_path:
         print(f"\t{FR_GREEN}{fold}")
     print("print empty line")

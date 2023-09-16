@@ -68,17 +68,17 @@ if __name__ == "__main__":
 
     #Reemplazar Python por PYTHON
     texto = texto.replace('Python','\033[92mPYTHON\033[00m')
-    print(f"{FR_YELL}Substitute Python with PYTHON{NO_COLOR}")
+    print(f"{FR_MAG}Substitute Python with PYTHON{NO_COLOR}")
     print(texto + '')
 
     #Quitar los espacios
     texto = texto.strip()
-    print(f"{FR_YELL}Delete spaces{NO_COLOR}")
+    print(f"{FR_MAG}Delete spaces{NO_COLOR}")
     print(texto + '')
 
     #Cambiar la letra de todo el texto a "lO MÁS IMPORTANTE QUE NOS HA MANTENIDO EN pYTHON... "
     texto = texto.swapcase()
-    print(f"{FR_YELL}Change letters with swapcase method{NO_COLOR}")
+    print(f"{FR_MAG}Change letters with swapcase method{NO_COLOR}")
     print(texto + '')
    
 else:

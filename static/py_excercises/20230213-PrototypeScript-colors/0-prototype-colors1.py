@@ -19,6 +19,11 @@ else:                                   # working in localhost server
     pass 
 sys.path.insert(1, ROOT_DIR)
 
+#print(f"----------------------- os.curdir --> {type(os.curdir)} | value: {os.curdir}")
+#print(f"----------------------- os.path.abspath(os.curdir) --> {ROOT_DIR}")
+#print(f"----------------------- os.getcwd() --> {os.getcwd()}")
+
+
 # import "My Own Funct" from root path
 from MyFunc import *
 

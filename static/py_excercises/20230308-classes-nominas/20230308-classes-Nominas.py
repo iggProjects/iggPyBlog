@@ -7,21 +7,19 @@
 # IMPORT SECTION
 #
 
+import os, sys
+
 # cleaning shell with system('cls')
 from os import system 
 
-# my generic functions
+# Include root path in sys.path
+ROOT_DIR = os.path.abspath(os.curdir)
+sys.path.insert(1, ROOT_DIR)
+
+# Import My Own Funct in root path
 from MyFunc import *
-from MyColors import *
 
 # CONSTANTS
-# Colors
-NO_COLOR = "\033[00m"
-FR_RED   = "\033[91m"
-FR_GREEN = "\033[92m"
-FR_YELL  = "\033[93m"
-FR_BLUE  = "\033[94m"
-FR_MAG   = "\033[95m"
 
 # classes for this excercise
 from Classes_Nomina import *

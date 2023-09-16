@@ -1,6 +1,8 @@
 
 LOCALHOST
 
+import os, sys
+
 # Include root path in sys.path
 ROOT_DIR = os.path.abspath(os.curdir)
 sys.path.insert(1, ROOT_DIR)
@@ -8,8 +10,11 @@ sys.path.insert(1, ROOT_DIR)
 # Import My Own Funct in root path
 from MyFunc import *
 
+==========================================
 
 IN PAW
+
+import os, sys
 
 # include root path in sys.path
 ROOT_DIR = os.path.abspath(os.curdir)
@@ -23,4 +28,6 @@ sys.path.insert(1, ROOT_DIR)
 # import "My Own Funct" from root path
 from MyFunc import *
 
+==========================================
 
+print("print empty line")

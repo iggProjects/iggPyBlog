@@ -10,10 +10,17 @@
 #
 # IMPORT SECTION
 #
-from MyFunc import *
-from MyColors import *
+
+import os, sys
 from math import ceil
 from os import  system
+
+# Include root path in sys.path
+ROOT_DIR = os.path.abspath(os.curdir)
+sys.path.insert(1, ROOT_DIR)
+
+# Import My Own Funct in root path
+from MyFunc import *
 
 # CONSTANTS
 # Colors

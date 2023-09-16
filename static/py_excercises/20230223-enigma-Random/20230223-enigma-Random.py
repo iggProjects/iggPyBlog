@@ -3,23 +3,19 @@
 #
 
 # IMPORT SECTION
-import string
-import random
-
-from MyFunc import *
-from MyColors import *
+import os, sys, random, string
 from os import  system
 
-# CONSTANTS
-# Colors
-NO_COLOR = "\033[00m"
-FR_RED   = "\033[91m"
-FR_GREEN = "\033[92m"
-FR_YELL  = "\033[93m"
-FR_BLUE  = "\033[94m"
-FR_MAG   = "\033[95m"
+# Include root path in sys.path
+ROOT_DIR = os.path.abspath(os.curdir)
+sys.path.insert(1, ROOT_DIR)
 
-# FUNCIONS SECTION
+# Import My Own Funct in root path
+from MyFunc import *
+
+# CONSTANTS
+
+# FUNCTIONS SECTION
 
 # funtion to encrypt a text
 def encrypt(text,alphab1,alphab2):

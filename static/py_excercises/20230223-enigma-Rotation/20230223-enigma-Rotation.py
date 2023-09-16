@@ -3,13 +3,16 @@ THIS SCRIPT IS FOR..................
 
 """
 # IMPORT SECTION
-import string
-import random
+
+import os, sys, string, random
 from os import  system
 
-# My Own
+# Include root path in sys.path
+ROOT_DIR = os.path.abspath(os.curdir)
+sys.path.insert(1, ROOT_DIR)
+
+# Import My Own Funct in root path
 from MyFunc import *
-from MyColors import *
 
 # CONSTANTS
 
@@ -57,6 +60,7 @@ def decipher(text,alphab1,alphab2):
 if __name__ == "__main__":
 
     system('cls')
+    print()
     print(frGREEN("\n---------- main ----------\n"))
     pause()
 

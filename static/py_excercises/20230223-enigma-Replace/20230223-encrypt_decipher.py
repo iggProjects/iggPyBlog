@@ -3,11 +3,16 @@ THIS SCRIPT IS FOR..................
 
 """
 # IMPORT SECTION
+
+import os, sys
 from os import  system
 
-# My Own
+# Include root path in sys.path
+ROOT_DIR = os.path.abspath(os.curdir)
+sys.path.insert(1, ROOT_DIR)
+
+# Import My Own Funct in root path
 from MyFunc import *
-from MyColors import *
 
 # CONSTANTS
 

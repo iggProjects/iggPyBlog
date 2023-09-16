@@ -5,10 +5,22 @@ THIS SCRIPT IS FOR DELETE REPEATED LINES AND SORT RESULTING FILE
 #
 # IMPORT SECTION
 #
-from MyFunc import *
-from MyColors import *
-import math
+
+import os, sys, math
 from os import  system
+
+# include root path in sys.path
+ROOT_DIR = os.path.abspath(os.curdir)
+# check in what server is app
+if "iggWebNz" in ROOT_DIR:              # pythonanywhere  
+    ROOT_DIR = ROOT_DIR + "/mysite"
+else:                                   # working in localhost server
+    pass 
+sys.path.insert(1, ROOT_DIR)
+
+# import "My Own Funct" from root path
+from MyFunc import *
+
 
 # CONSTANTS
 # Colors
@@ -56,10 +68,10 @@ if __name__ == "__main__":
     print(f"{FR_GREEN}Sort 'uniqlines' with sorted(uniqlines)")
     uniqlines = sorted(uniqlines)
     uniqlines_aft = str(uniqlines).replace(',',';').replace('\\n','')
-    print(f"\tuniqlines after: {uniqlines_aft}")
+    print(f"\tList sorted and without repeated lines: {uniqlines_aft}")
     print("print empty line")
 
-    print(f"{FR_GREEN}\tCheck sorted file 'z-fileWithOutRepetitionLines.txt'")
+    print(f"{FR_BLUE}Creating sorted file without repeated lines 'z-fileWithOutRepetitionLines.txt'")
     open('static\py_excercises\\20230301-DelRepeatedLinesAndSort\z-fileWithOutRepetitionLines.txt', 'w').writelines(uniqlines)
     print(f"{NO_COLOR}")
 

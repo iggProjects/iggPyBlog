@@ -81,8 +81,11 @@ if __name__ == "__main__":
         prBlue(f"\t{fold}")
 
     prGreen('\nUpdated "sys.path"')
-    prGreen('\tNOTE that one new folder is included now:  "MyFunctions"')
-    
+    prPurple('\tNOTE that one new folder is included now:  "MyFunctions"')
+    print()
+
+    pause()
+        
     for fold in new_path:
         prGreen(f"\t{fold}")
 

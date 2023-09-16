@@ -5,11 +5,15 @@ THIS SCRIPT IS FOR..................
 #
 # IMPORT SECTION
 #
-from MyFunc import *
-from MyColors import *
-import math
-import os
+import os, sys, math
 from os import system
+
+# Include root path in sys.path
+ROOT_DIR = os.path.abspath(os.curdir)
+sys.path.insert(1, ROOT_DIR)
+
+# Import My Own Funct in root path
+from MyFunc import *
 
 # CONSTANTS
 
@@ -27,7 +31,7 @@ if __name__ == "__main__":
     #
 
     cwd = os.getcwd()
-    print(f"\ncwd: {cwd}\n")
+    print(f"\nos.cwd() --> {cwd}\n")
 
     # read file "agatha.txt"
     file_path = os.path.join(cwd,'static\py_excercises\\20230301-files_Read_write\z-agatha.txt')

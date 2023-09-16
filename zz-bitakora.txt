@@ -15,12 +15,16 @@ nazareth user: jo.gainzarain@aulanz.net  | nz2223Nz
 STILL TO DO !!!
 
 - excercises 
+    - create "sleep()" to substitute pause() in html console version
     - # 10 inputTrabajadores1.py receive data and only need to print 
     - # 11 teacher example --- adjust printing colors, check substitutions
     - # 12 strings.... adjust printing colors, substitute input with delay
-    - #
+    - # 17 decide if will be included....
+
 
 PAW & local PATHS
+
+- Probar os.cwd() in PAW for insert in sys.path if and only if os.cwd have "mysite"
 
 - config: base dir with array value for server key directory
 

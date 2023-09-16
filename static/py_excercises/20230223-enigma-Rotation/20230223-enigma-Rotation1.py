@@ -3,13 +3,20 @@ THIS SCRIPT IS FOR..................
 
 """
 # IMPORT SECTION
-import string
-import random
-from os import  system
+import os, sys, string, random
+from os import system
 
-# My Own
+# include root path in sys.path
+ROOT_DIR = os.path.abspath(os.curdir)
+# check in what server is app
+if "iggWebNz" in ROOT_DIR:              # pythonanywhere  
+    ROOT_DIR = ROOT_DIR + "/mysite"
+else:                                   # working in localhost server
+    pass 
+sys.path.insert(1, ROOT_DIR)
+
+# import "My Own Funct" from root path
 from MyFunc import *
-from MyColors import *
 
 # CONSTANTS
 
@@ -54,11 +61,12 @@ def decipher(text,alphab1,alphab2):
 # ---------- MAIN ----------
 #
 if __name__ == "__main__":
-
-    system('cls')
+    
+    print("print empty line")
     print(frGREEN("---------- main ----------"))
+    print("print empty line")
     pause()
-
+    
     # create list of alphabet
     string.ascii_lowercase
     'abcdefghijklmnopqrstuvwxyz'
@@ -70,7 +78,7 @@ if __name__ == "__main__":
     new_alphab = alphab[3:] + alphab[:3]
     
     print(f"{FR_GREEN}new alphabet list by rotation 3 places: {NO_COLOR}{new_alphab}")
-    pause()    
+        
 
     # my text
     my_text = 'abcdef ghijk hello world'
@@ -91,6 +99,7 @@ if __name__ == "__main__":
     # ------------------------------------------------
     #      IF YOU WANT, SHOW VARS CHARACTERISTICS 
     #------------------------------------------------- 
+    """
     yesss=True   
     while yesss:
         _msg = "Do you want to see attributes for a specific VAR ? (Y,N): "
@@ -111,9 +120,11 @@ if __name__ == "__main__":
         except NameError:
             print(f"\t{FR_RED}---- Var '{_what_var}' doesn't exits  ----")
             print(f"{FR_GREEN}--------------- That's all for today ---------------{NO_COLOR}")
+    
 
     else:
         print(f"{FR_GREEN}---------- That's all for today ----------{NO_COLOR}")
+    """    
 
 else:
     # something wrong
