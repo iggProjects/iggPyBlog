@@ -5064,3 +5064,103 @@ jinja2.exceptions.TemplateNotFound: excrcises.html
 2023-09-16 18:28:48,521 INFO     _log 127.0.0.1 - - [16/Sep/2023 18:28:48] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
 2023-09-16 18:28:52,241 INFO     _log 127.0.0.1 - - [16/Sep/2023 18:28:52] "GET /result_script_exec/?py_path=static/py_excercises/20230213-PrototypeScript-ModuleMethods/0-prototype-mod-methods1.py HTTP/1.1" 200 -
 2023-09-16 18:28:52,618 INFO     _log 127.0.0.1 - - [16/Sep/2023 18:28:52] "GET /result_script_html HTTP/1.1" 200 -
+2023-09-16 18:31:27,207 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\MyFunc.py', reloading
+2023-09-16 18:31:27,274 INFO     _log  * Restarting with stat
+2023-09-16 18:31:27,757 WARNING  _log  * Debugger is active!
+2023-09-16 18:31:27,757 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-16 18:31:28,815 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\MyFunc.py', reloading
+2023-09-16 18:31:28,894 INFO     _log  * Restarting with stat
+2023-09-16 18:31:29,323 WARNING  _log  * Debugger is active!
+2023-09-16 18:31:29,323 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-16 18:31:30,383 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\MyFunc.py', reloading
+2023-09-16 18:31:30,475 INFO     _log  * Restarting with stat
+2023-09-16 18:31:30,939 WARNING  _log  * Debugger is active!
+2023-09-16 18:31:30,939 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-16 18:31:42,184 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\MyFunc.py', reloading
+2023-09-16 18:31:42,242 INFO     _log  * Restarting with stat
+2023-09-16 18:31:42,741 WARNING  _log  * Debugger is active!
+2023-09-16 18:31:42,756 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-16 18:31:43,787 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\MyFunc.py', reloading
+2023-09-16 18:31:43,866 INFO     _log  * Restarting with stat
+2023-09-16 18:31:44,272 WARNING  _log  * Debugger is active!
+2023-09-16 18:31:44,272 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-16 18:31:45,317 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\MyFunc.py', reloading
+2023-09-16 18:31:45,364 INFO     _log  * Restarting with stat
+2023-09-16 18:31:45,793 WARNING  _log  * Debugger is active!
+2023-09-16 18:31:45,793 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-16 18:31:58,783 INFO     _log 127.0.0.1 - - [16/Sep/2023 18:31:58] "GET /excercise/?id=5 HTTP/1.1" 200 -
+2023-09-16 18:31:59,064 INFO     _log 127.0.0.1 - - [16/Sep/2023 18:31:59] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-09-16 18:31:59,115 INFO     _log 127.0.0.1 - - [16/Sep/2023 18:31:59] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-09-16 18:31:59,117 INFO     _log 127.0.0.1 - - [16/Sep/2023 18:31:59] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-09-16 18:31:59,118 INFO     _log 127.0.0.1 - - [16/Sep/2023 18:31:59] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-09-16 18:32:02,022 INFO     _log 127.0.0.1 - - [16/Sep/2023 18:32:02] "GET /excercise/?id=5 HTTP/1.1" 200 -
+2023-09-16 18:32:02,355 INFO     _log 127.0.0.1 - - [16/Sep/2023 18:32:02] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-09-16 18:32:02,357 INFO     _log 127.0.0.1 - - [16/Sep/2023 18:32:02] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-09-16 18:32:02,358 INFO     _log 127.0.0.1 - - [16/Sep/2023 18:32:02] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-09-16 18:32:02,359 INFO     _log 127.0.0.1 - - [16/Sep/2023 18:32:02] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-09-16 18:32:02,593 INFO     _log 127.0.0.1 - - [16/Sep/2023 18:32:02] "[36mGET /static/img/icons8-bulb-64.png HTTP/1.1[0m" 304 -
+2023-09-16 18:32:06,024 INFO     _log 127.0.0.1 - - [16/Sep/2023 18:32:06] "GET /result_script_exec/?py_path=static/py_excercises/20230213-PrototypeScript-ModuleMethods/0-prototype-mod-methods1.py HTTP/1.1" 200 -
+2023-09-16 18:32:06,408 INFO     _log 127.0.0.1 - - [16/Sep/2023 18:32:06] "GET /result_script_html HTTP/1.1" 200 -
+2023-09-16 18:32:32,717 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\MyFunc.py', reloading
+2023-09-16 18:32:32,768 INFO     _log  * Restarting with stat
+2023-09-16 18:32:33,173 WARNING  _log  * Debugger is active!
+2023-09-16 18:32:33,173 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-16 18:32:37,272 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\MyFunc.py', reloading
+2023-09-16 18:32:37,356 INFO     _log  * Restarting with stat
+2023-09-16 18:33:16,425 INFO     _log [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-09-16 18:33:16,425 INFO     _log [33mPress CTRL+C to quit[0m
+2023-09-16 18:33:16,425 INFO     _log  * Restarting with stat
+2023-09-16 18:33:16,805 WARNING  _log  * Debugger is active!
+2023-09-16 18:33:16,805 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-16 18:33:25,579 INFO     _log 127.0.0.1 - - [16/Sep/2023 18:33:25] "GET /excercises HTTP/1.1" 200 -
+2023-09-16 18:33:25,864 INFO     _log 127.0.0.1 - - [16/Sep/2023 18:33:25] "[36mGET /static/img/Lorea.jpg HTTP/1.1[0m" 304 -
+2023-09-16 18:33:25,895 INFO     _log 127.0.0.1 - - [16/Sep/2023 18:33:25] "[36mGET /static/img/icons8-bulb-64.png HTTP/1.1[0m" 304 -
+2023-09-16 18:33:28,323 INFO     _log 127.0.0.1 - - [16/Sep/2023 18:33:28] "GET /excercise/?id=5 HTTP/1.1" 200 -
+2023-09-16 18:33:28,642 INFO     _log 127.0.0.1 - - [16/Sep/2023 18:33:28] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-09-16 18:33:28,645 INFO     _log 127.0.0.1 - - [16/Sep/2023 18:33:28] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-09-16 18:33:28,647 INFO     _log 127.0.0.1 - - [16/Sep/2023 18:33:28] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-09-16 18:33:28,648 INFO     _log 127.0.0.1 - - [16/Sep/2023 18:33:28] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-09-16 18:33:32,177 INFO     _log 127.0.0.1 - - [16/Sep/2023 18:33:32] "GET /result_script_exec/?py_path=static/py_excercises/20230213-PrototypeScript-ModuleMethods/0-prototype-mod-methods1.py HTTP/1.1" 200 -
+2023-09-16 18:33:32,561 INFO     _log 127.0.0.1 - - [16/Sep/2023 18:33:32] "GET /result_script_html HTTP/1.1" 200 -
+2023-09-16 18:34:47,379 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\MyFunc.py', reloading
+2023-09-16 18:34:47,442 INFO     _log  * Restarting with stat
+2023-09-16 18:34:47,955 WARNING  _log  * Debugger is active!
+2023-09-16 18:34:47,955 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-16 18:35:07,037 INFO     _log 127.0.0.1 - - [16/Sep/2023 18:35:07] "GET /excercises HTTP/1.1" 200 -
+2023-09-16 18:35:07,292 INFO     _log 127.0.0.1 - - [16/Sep/2023 18:35:07] "[36mGET /static/img/Lorea.jpg HTTP/1.1[0m" 304 -
+2023-09-16 18:35:10,296 INFO     _log 127.0.0.1 - - [16/Sep/2023 18:35:10] "GET /excercise/?id=5 HTTP/1.1" 200 -
+2023-09-16 18:35:10,617 INFO     _log 127.0.0.1 - - [16/Sep/2023 18:35:10] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-09-16 18:35:10,618 INFO     _log 127.0.0.1 - - [16/Sep/2023 18:35:10] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-09-16 18:35:10,619 INFO     _log 127.0.0.1 - - [16/Sep/2023 18:35:10] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-09-16 18:35:10,620 INFO     _log 127.0.0.1 - - [16/Sep/2023 18:35:10] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-09-16 18:35:14,090 INFO     _log 127.0.0.1 - - [16/Sep/2023 18:35:14] "GET /result_script_exec/?py_path=static/py_excercises/20230213-PrototypeScript-ModuleMethods/0-prototype-mod-methods1.py HTTP/1.1" 200 -
+2023-09-16 18:35:14,476 INFO     _log 127.0.0.1 - - [16/Sep/2023 18:35:14] "GET /result_script_html HTTP/1.1" 200 -
+2023-09-16 18:35:26,705 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\MyFunc.py', reloading
+2023-09-16 18:35:26,755 INFO     _log  * Restarting with stat
+2023-09-16 18:35:27,235 WARNING  _log  * Debugger is active!
+2023-09-16 18:35:27,238 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-16 18:36:50,572 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\flask_app.py', reloading
+2023-09-16 18:36:50,620 INFO     _log  * Restarting with stat
+2023-09-16 18:36:51,024 WARNING  _log  * Debugger is active!
+2023-09-16 18:36:51,024 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-16 18:36:53,089 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\flask_app.py', reloading
+2023-09-16 18:36:53,158 INFO     _log  * Restarting with stat
+2023-09-16 18:36:53,588 WARNING  _log  * Debugger is active!
+2023-09-16 18:36:53,588 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-16 18:37:05,835 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\flask_app.py', reloading
+2023-09-16 18:37:05,895 INFO     _log  * Restarting with stat
+2023-09-16 18:37:06,305 WARNING  _log  * Debugger is active!
+2023-09-16 18:37:06,305 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-16 18:37:24,642 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\flask_app.py', reloading
+2023-09-16 18:37:24,713 INFO     _log  * Restarting with stat
+2023-09-16 18:37:25,105 WARNING  _log  * Debugger is active!
+2023-09-16 18:37:25,122 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-16 18:37:26,149 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\flask_app.py', reloading
+2023-09-16 18:37:26,208 INFO     _log  * Restarting with stat
+2023-09-16 18:37:26,611 WARNING  _log  * Debugger is active!
+2023-09-16 18:37:26,611 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-16 18:37:28,690 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\flask_app.py', reloading
+2023-09-16 18:37:28,755 INFO     _log  * Restarting with stat
+2023-09-16 18:37:29,155 WARNING  _log  * Debugger is active!
+2023-09-16 18:37:29,155 INFO     _log  * Debugger PIN: 551-034-170

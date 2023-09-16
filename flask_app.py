@@ -219,6 +219,7 @@ def result_script_exec():
             #new_line = new_line.replace('\\n','')
             new_line = new_line.replace('\\n','<br>')
             new_line = new_line.replace('\\x1b[00m','')
+            new_line = new_line.replace('\\xb4','')
             new_line = new_line.replace('\\t','&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;')            
             
             if '\\x1b[91m' in new_line:      # red
