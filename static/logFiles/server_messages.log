@@ -5374,3 +5374,25 @@ jinja2.exceptions.TemplateNotFound: excrcises.html
 2023-09-17 11:56:39,980 INFO     _log  * Debugger PIN: 139-969-208
 2023-09-17 11:56:51,416 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\excercise_data.py', reloading
 2023-09-17 11:56:51,510 INFO     _log  * Restarting with stat
+2023-09-17 11:56:52,372 WARNING  _log  * Debugger is active!
+2023-09-17 11:56:52,372 INFO     _log  * Debugger PIN: 139-969-208
+2023-09-17 11:56:54,729 INFO     _log 127.0.0.1 - - [17/Sep/2023 11:56:54] "GET /excercises HTTP/1.1" 200 -
+2023-09-17 11:56:54,850 INFO     _log 127.0.0.1 - - [17/Sep/2023 11:56:54] "[36mGET /static/img/Lorea.jpg HTTP/1.1[0m" 304 -
+2023-09-17 11:56:54,900 INFO     _log 127.0.0.1 - - [17/Sep/2023 11:56:54] "[36mGET /static/img/icons8-bulb-64.png HTTP/1.1[0m" 304 -
+2023-09-17 11:57:02,048 INFO     _log 127.0.0.1 - - [17/Sep/2023 11:57:02] "GET /excercise/?id=8 HTTP/1.1" 200 -
+2023-09-17 11:57:02,224 INFO     _log 127.0.0.1 - - [17/Sep/2023 11:57:02] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-09-17 11:57:02,231 INFO     _log 127.0.0.1 - - [17/Sep/2023 11:57:02] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-09-17 11:57:02,373 INFO     _log 127.0.0.1 - - [17/Sep/2023 11:57:02] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-09-17 11:57:02,385 INFO     _log 127.0.0.1 - - [17/Sep/2023 11:57:02] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-09-17 11:57:10,699 INFO     _log 127.0.0.1 - - [17/Sep/2023 11:57:10] "GET /static/py_excercises/20230218-PrototypeScript-Exception_Hierarchy/0-prototype-ExceptionHierarchy.py HTTP/1.1" 200 -
+2023-09-17 11:57:11,009 INFO     _log 127.0.0.1 - - [17/Sep/2023 11:57:11] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2023-09-17 11:57:27,825 INFO     _log 127.0.0.1 - - [17/Sep/2023 11:57:27] "GET /pythonScript/?py_path=static/py_excercises/20230218-PrototypeScript-Exception_Hierarchy/0-prototype-ExceptionHierarchy.py HTTP/1.1" 200 -
+2023-09-17 11:57:36,049 INFO     _log 127.0.0.1 - - [17/Sep/2023 11:57:36] "GET /result_script_exec/?py_path=static/py_excercises/20230218-PrototypeScript-Exception_Hierarchy/0-prototype-ExceptionHierarchy1.py HTTP/1.1" 200 -
+2023-09-17 11:57:36,516 INFO     _log 127.0.0.1 - - [17/Sep/2023 11:57:36] "GET /result_script_html HTTP/1.1" 200 -
+2023-09-17 12:01:15,169 INFO     _log 127.0.0.1 - - [17/Sep/2023 12:01:15] "GET /excercise/?id=8 HTTP/1.1" 200 -
+2023-09-17 12:01:15,177 INFO     _log 127.0.0.1 - - [17/Sep/2023 12:01:15] "[36mGET /static/img/icons8-script-68.png HTTP/1.1[0m" 304 -
+2023-09-17 12:01:15,506 INFO     _log 127.0.0.1 - - [17/Sep/2023 12:01:15] "[36mGET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1[0m" 304 -
+2023-09-17 12:01:15,512 INFO     _log 127.0.0.1 - - [17/Sep/2023 12:01:15] "[36mGET /static/img/icons8-html-filetype-50.png HTTP/1.1[0m" 304 -
+2023-09-17 12:01:15,518 INFO     _log 127.0.0.1 - - [17/Sep/2023 12:01:15] "[36mGET /static/img/icons8-consola-100.png HTTP/1.1[0m" 304 -
+2023-09-17 12:01:15,833 INFO     _log 127.0.0.1 - - [17/Sep/2023 12:01:15] "[36mGET /static/img/icons8-bulb-64.png HTTP/1.1[0m" 304 -
+2023-09-17 12:01:20,338 INFO     _log 127.0.0.1 - - [17/Sep/2023 12:01:20] "GET /pythonScript/?py_path=static/py_excercises/20230218-PrototypeScript-Exception_Hierarchy/0-prototype-ExceptionHierarchy.py HTTP/1.1" 200 -
