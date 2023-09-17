@@ -31,3 +31,22 @@ from MyFunc import *
 ==========================================
 
 print("print empty line")
+
+==========================================
+
+    try:         
+        write_log_file("my_messages.txt","IN 'func excercises()'")
+
+	CODE HERE	
+
+    except Exception as Argument:   
+        """     
+        logging.error(Argument)
+        logging.warning(Argument)
+        logging.info(Argument)
+        logging.debug(Argument) 
+        logging.critical(Argument)               
+        """
+        write_log_file("my_messages.txt","FROM 'func excercises(), SEE server_messages.log'")
+        logging.exception("exception => "  + str(Argument))
+        return render_template('error_page.html')

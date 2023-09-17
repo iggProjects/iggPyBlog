@@ -1,13 +1,17 @@
 # virtual env
 igg_venv/
 
+# log messages files 
+*messages*
+static/logFiles/*messages*
+
 # text permutations files
 z*permutFile*.*
 static/proj_enigmaGame_scripts/z*permutFile*.*
 
 # files with the background result
 list*.txt
-list*.csv 
+list*.csv
 
 # Build and Release Folders
 bin-debug/
