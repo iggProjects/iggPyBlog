@@ -14,8 +14,11 @@ nazareth user: jo.gainzarain@aulanz.net  | nz2223Nz
 
 STILL TO DO !!!
 
-- error_page 
-    - test call error_page in write_log_file 
+- error_page vs logFiles
+    - error_page in flask_app for render_template
+    - don't call error_page when rendering is good and error can be directed to log file
+
+- normalize all excercises: root path and TRY EXCEPTION (excercises, EnigmaGame, LifeGame)
 
 - excercises 
     - create "sleep()" to substitute pause() in html console version
@@ -27,15 +30,10 @@ STILL TO DO !!!
 
 PAW & local PATHS
 
-- Probar os.cwd() in PAW for insert in sys.path if and only if os.cwd have "mysite"
+- Probar os.cwd() in PAW for insert in sys.path if and only if os.cwd have "mysite" --> discarded  ✔✔  😎
 
-- config: base dir with array value for server key directory
+- config: base dir with array value for server key directory  ---- > to investigate
 
-- INCLUDE in all excercises, EnigmaGame and life Game  
-    # My Own Funct in root path
-    ROOT_DIR = os.path.abspath(os.curdir)
-    sys.path.insert(1, ROOT_DIR)
-    from MyFunc import *
 
 - INCLUDE IN ALL EXCERCISES TRY EXCEPTION ERROR_PAGE SCHEMMA     
 

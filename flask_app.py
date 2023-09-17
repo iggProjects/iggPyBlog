@@ -54,9 +54,10 @@ def excercises():
         logging.debug(Argument) 
         logging.critical(Argument)               
         """
-        write_log_file("my_messages.txt","ERROR FROM 'func excercises()', SEE 'server_messages.log'")
-        logging.exception("exception => "  + str(Argument))
-        return render_template('error_page.html')
+        write_log_file("my_messages.txt","ERROR FROM 'func excercises()', SEE 'server_messages.txt'")
+        logging.exception("error from function excercises() => "  + str(Argument))
+        error_msg = "error from function 'excercises()' => "  + str(Argument)
+        return render_template('error_page.html', error_msg = error_msg )
 
 @app.route('/excercise/')
 def display_excercise():
