@@ -1477,3 +1477,5 @@ jinja2.exceptions.TemplateNotFound: excrcises.html
 2023-09-17 14:09:34,855 INFO     _log 127.0.0.1 - - [17/Sep/2023 14:09:34] "[36mGET /static/img/Lorea.jpg HTTP/1.1[0m" 304 -
 2023-09-17 14:09:48,576 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\flask_app.py', reloading
 2023-09-17 14:09:48,678 INFO     _log  * Restarting with stat
+2023-09-17 14:09:49,323 WARNING  _log  * Debugger is active!
+2023-09-17 14:09:49,338 INFO     _log  * Debugger PIN: 139-969-208
