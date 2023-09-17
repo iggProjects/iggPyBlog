@@ -39,8 +39,10 @@ if __name__ == "__main__":
         print("print empty line")
 
         print(f"{FR_GREEN}---------- MAIN ----------{NO_COLOR}")
+        print("print empty line")
 
         print(f"---------- using CONTANTS for colors ----------")
+        print("print empty line")
 
         colors= [FR_RED,FR_GREEN,FR_YELL,FR_BLUE,FR_MAG]
         colors_str=['\\033[91m - Red','\\033[92m - Green','\\033[93m - Yellow','\\033[94m - Blue','\\033[95m - Magenta']
@@ -52,25 +54,28 @@ if __name__ == "__main__":
             msg = msg.rjust(30)
             #print("FR_RED value: " + colors_str[0])
             print("\tPrint with ascii " + colors_str[i] + f":\t{color}{msg}") 
-            i+=1   
-
+            i+=1  
         msg="print with default color:\t\t ==> TESTING COLOR FUNCTION"
-        print(f"\t{msg}")    
+        print(f"\t{msg}")   
+        print("print empty line")
 
+        print(frGREEN(f"---------- using function prRed(msg) ----------"))         
         msg="\tprint with function pfRed(msg) --> TESTING COLOR FUNCTION"
-        print(frGREEN(f"---------- using function prRed(msg) ----------"))    
+        print("print empty line")
         prRed(msg)   
+        print("print empty line")
         
         print(f"{FR_GREEN}---------- That's all for today ----------{NO_COLOR}")
 
     except Exception as Argument:  
-        write_log_file("my_messages.txt","ERROR IN 'func 0-prototype-colors1.py()'. SEE server_messages.log")
+        write_log_file("my_messages.txt","ERROR IN 'func 0-prototype-colors1.py()'. SEE server_messages.txt")
         print("print empty line")
-        print(frRED(f"UPSSSS THERE IS AN ERROR IN 'func 0-prototype-colors1.py()'."))
+        print(frRED("\t====================== ERROR FOUND IN 0-prototype-colors1.py() ======================"))
         print("print empty line")
-        print(frRED(f"SEE 'server_messages.log' file OR Contact Web Admin !"))
-        print("print empty line")
-        logging.exception(" | exception from '0-prototype-colors.py()': ")
+        print(f"{FR_BLUE}\t\t===> {Argument}{NO_COLOR}")
+        print("print empty line")        
+        print(frGREEN(f"\t\tSEE 'server_messages.txt' file OR Contact Web Admin !"))
+        logging.exception(f"{Argument} | exception from '0-prototype-colors.py()': ")
     
 else:
     # something wrong

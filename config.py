@@ -36,11 +36,14 @@ myMachine = platform.uname()
 
 #print(f"globals: {type(globals())}\n{globals()}")
 
+"""
 # log messages
-logging.basicConfig(filename=basedir + "/static/logFiles/server_messages.log", 
+#logging.basicConfig(filename=basedir + "/static/logFiles/server_messages.log", 
+logging.basicConfig(filename=basedir + "/static/logFiles/server_messages.txt", 
                     encoding='utf-8', level=logging.DEBUG, format="%(asctime)-15s %(levelname)-8s %(funcName)s %(message)s")
 logging.captureWarnings(True)
 #logging.captureWarnings(False)
+"""
 
 # My Own Funct
 from MyFunc import *

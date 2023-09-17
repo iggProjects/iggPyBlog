@@ -20,12 +20,7 @@ import os
 basedir = os.path.abspath(os.path.dirname(__file__))
 #print(f"====== basedir: {basedir}")
 
-# error handling
-import logging
-log_file_path = basedir + "/static/logFiles/server_messages.txt"
-logging.basicConfig(filename=log_file_path, 
-                encoding='utf-8', level=logging.DEBUG, format="%(asctime)-15s %(levelname)-8s %(funcName)s %(message)s")
-logging.captureWarnings(True)
+from config_logging import *
 
 import datetime
 
@@ -45,8 +40,8 @@ def write_log_file(logFile,msg):
         f.write('%s | %s\n' % (datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S.%f')[:-3],msg))      
         # closing the file
         f.close()
-    except Exception as Argument:        
-        logging.exception(" | exception from 'write_log_file()': ")
+    except Exception as Argument:
+        logging.exception(f"{Argument} | exception from 'write_log_file()' ")
 
 #
 # COLORS CONSTANTS
