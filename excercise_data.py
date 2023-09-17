@@ -143,6 +143,25 @@ def Excercises():
             'date_created': '13-02-2023',
             'source_url': '',
             'section': 'Prototype Script',
+            'title': 'Exception Hierarchy',
+            'fileDirPath': 'static/py_excercises/20230218-PrototypeScript-Exception_Hierarchy/0-prototype-ExceptionHierarchy.py',            
+            'fileDirPath1': 'static/py_excercises/20230218-PrototypeScript-Exception_Hierarchy/0-prototype-ExceptionHierarchy1.py',            
+            
+            'homework': ' TO DO ',
+
+            'body': ' TO DO ',          
+
+            'code_url':'../static/py_excercises/20230218-PrototypeScript-Exception_Hierarchy/0-prototype-ExceptionHierarchy.py',
+            'zip_url': '../static/py_excercises/20230218-PrototypeScript-Exception_Hierarchy/0-prototype-ExceptionHierarchy.zip',
+            'img': '/img/icons8-consola-100.png'    
+        },
+
+        {      
+            'id': 9, 
+            'author': 'Igg',
+            'date_created': '13-02-2023',
+            'source_url': '',
+            'section': 'Prototype Script',
             'title': 'MyFunc.py imported by 0-prototype.py',
             'fileDirPath': 'static/py_excercises/20230213-PrototypeScript/0-prototype.py',            
             'fileDirPath1': 'static/py_excercises/20230213-PrototypeScript/0-prototype1.py',            
@@ -157,7 +176,7 @@ def Excercises():
         },
 
         {      
-            'id': 9, 
+            'id': 10, 
             'author': 'Igg',
             'date_created': '15-02-2023',
             'source_url': '',
@@ -176,7 +195,7 @@ def Excercises():
         },
 
         {      
-            'id': 10, 
+            'id': 11, 
             'author': 'Igg',
             'date_created': '20-02-2023',
             'source_url': '',
@@ -195,7 +214,7 @@ def Excercises():
         },
 
         {      
-            'id': 11, 
+            'id': 12, 
             'author': 'Igg',
             'date_created': '21-02-2023',
             'source_url': '',
@@ -214,7 +233,7 @@ def Excercises():
         },
 
         {      
-            'id': 12, 
+            'id': 13, 
             'author': 'Igg',
             'date_created': '22-02-2023',
             'source_url': '',
@@ -233,7 +252,7 @@ def Excercises():
         },
 
         {      
-            'id': 13, 
+            'id': 14, 
             'author': 'Igg',
             'date_created': '23-02-2023',
             'source_url': '',
@@ -252,7 +271,7 @@ def Excercises():
         },
 
         {      
-            'id': 14, 
+            'id': 15, 
             'author': 'Igg',
             'date_created': '23-02-2023',
             'source_url': '',
@@ -271,7 +290,7 @@ def Excercises():
         },
 
         {      
-            'id': 15, 
+            'id': 16, 
             'author': 'Igg',
             'date_created': '27-02-2023',
             'source_url': '',
@@ -290,7 +309,7 @@ def Excercises():
         },
 
         {      
-            'id': 16, 
+            'id': 17, 
             'author': 'Igg',
             'date_created': '27-02-2023',
             'source_url': '',
@@ -309,7 +328,7 @@ def Excercises():
         },
 
         {      
-            'id': 17, 
+            'id': 18, 
             'author': 'Igg',
             'date_created': '27-02-2023',
             'source_url': '',
@@ -329,7 +348,7 @@ def Excercises():
         
 
         {      
-            'id': 18, 
+            'id': 19, 
             'author': 'Igg',
             'date_created': '01-03-2023',
             'source_url': '',
@@ -348,7 +367,7 @@ def Excercises():
         },
 
         {      
-            'id': 19, 
+            'id': 20, 
             'author': 'Igg',
             'date_created': '01-03-2023',
             'source_url': '',
@@ -367,7 +386,7 @@ def Excercises():
         },
 
         {      
-            'id': 20, 
+            'id': 21, 
             'author': 'Igg',
             'date_created': '08-03-2023',
             'source_url': 'OOP',

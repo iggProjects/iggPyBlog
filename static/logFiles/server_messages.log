@@ -5190,3 +5190,187 @@ jinja2.exceptions.TemplateNotFound: excrcises.html
 2023-09-16 18:50:55,739 INFO     _log  * Restarting with stat
 2023-09-16 18:50:56,154 WARNING  _log  * Debugger is active!
 2023-09-16 18:50:56,155 INFO     _log  * Debugger PIN: 551-034-170
+2023-09-17 11:34:36,521 INFO     _log [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-09-17 11:34:36,531 INFO     _log [33mPress CTRL+C to quit[0m
+2023-09-17 11:34:36,532 INFO     _log  * Restarting with stat
+2023-09-17 11:34:37,368 WARNING  _log  * Debugger is active!
+2023-09-17 11:34:37,385 INFO     _log  * Debugger PIN: 139-969-208
+2023-09-17 11:34:50,231 INFO     _log 127.0.0.1 - - [17/Sep/2023 11:34:50] "GET / HTTP/1.1" 200 -
+2023-09-17 11:34:50,382 INFO     _log 127.0.0.1 - - [17/Sep/2023 11:34:50] "GET /static/img/ame-01.jpg HTTP/1.1" 200 -
+2023-09-17 11:34:50,403 INFO     _log 127.0.0.1 - - [17/Sep/2023 11:34:50] "GET /static/img/icons8-bulb-64.png HTTP/1.1" 200 -
+2023-09-17 11:34:52,624 INFO     _log 127.0.0.1 - - [17/Sep/2023 11:34:52] "GET /excercises HTTP/1.1" 200 -
+2023-09-17 11:34:52,805 INFO     _log 127.0.0.1 - - [17/Sep/2023 11:34:52] "GET /static/img/Lorea.jpg HTTP/1.1" 200 -
+2023-09-17 11:37:43,982 INFO     _log 127.0.0.1 - - [17/Sep/2023 11:37:43] "GET /excercise/?id=20 HTTP/1.1" 200 -
+2023-09-17 11:37:44,265 INFO     _log 127.0.0.1 - - [17/Sep/2023 11:37:44] "GET /static/img/icons8-script-68.png HTTP/1.1" 200 -
+2023-09-17 11:37:44,305 INFO     _log 127.0.0.1 - - [17/Sep/2023 11:37:44] "GET /static/img/icons8-descargar-de-la-nube-100.png HTTP/1.1" 200 -
+2023-09-17 11:37:44,316 INFO     _log 127.0.0.1 - - [17/Sep/2023 11:37:44] "GET /static/img/icons8-consola-100.png HTTP/1.1" 200 -
+2023-09-17 11:37:44,331 INFO     _log 127.0.0.1 - - [17/Sep/2023 11:37:44] "GET /static/img/icons8-html-filetype-50.png HTTP/1.1" 200 -
+2023-09-17 11:46:55,743 INFO     _log 127.0.0.1 - - [17/Sep/2023 11:46:55] "GET /excercises HTTP/1.1" 200 -
+2023-09-17 11:46:55,994 INFO     _log 127.0.0.1 - - [17/Sep/2023 11:46:55] "[36mGET /static/img/Lorea.jpg HTTP/1.1[0m" 304 -
+2023-09-17 11:51:28,518 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\excercise_data.py', reloading
+2023-09-17 11:51:28,631 INFO     _log  * Restarting with stat
+2023-09-17 11:51:29,455 WARNING  _log  * Debugger is active!
+2023-09-17 11:51:29,465 INFO     _log  * Debugger PIN: 139-969-208
+2023-09-17 11:51:30,599 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\excercise_data.py', reloading
+2023-09-17 11:51:30,715 INFO     _log  * Restarting with stat
+2023-09-17 11:51:31,364 WARNING  _log  * Debugger is active!
+2023-09-17 11:51:31,364 INFO     _log  * Debugger PIN: 139-969-208
+2023-09-17 11:51:41,758 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\excercise_data.py', reloading
+2023-09-17 11:51:41,880 INFO     _log  * Restarting with stat
+2023-09-17 11:51:42,733 WARNING  _log  * Debugger is active!
+2023-09-17 11:51:42,733 INFO     _log  * Debugger PIN: 139-969-208
+2023-09-17 11:51:46,915 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\excercise_data.py', reloading
+2023-09-17 11:51:47,047 INFO     _log  * Restarting with stat
+2023-09-17 11:51:47,778 WARNING  _log  * Debugger is active!
+2023-09-17 11:51:47,786 INFO     _log  * Debugger PIN: 139-969-208
+2023-09-17 11:51:50,927 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\excercise_data.py', reloading
+2023-09-17 11:51:51,022 INFO     _log  * Restarting with stat
+2023-09-17 11:51:51,797 WARNING  _log  * Debugger is active!
+2023-09-17 11:51:51,797 INFO     _log  * Debugger PIN: 139-969-208
+2023-09-17 11:51:53,922 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\excercise_data.py', reloading
+2023-09-17 11:51:54,038 INFO     _log  * Restarting with stat
+2023-09-17 11:51:54,933 WARNING  _log  * Debugger is active!
+2023-09-17 11:51:54,933 INFO     _log  * Debugger PIN: 139-969-208
+2023-09-17 11:51:59,110 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\excercise_data.py', reloading
+2023-09-17 11:51:59,215 INFO     _log  * Restarting with stat
+2023-09-17 11:52:00,097 WARNING  _log  * Debugger is active!
+2023-09-17 11:52:00,113 INFO     _log  * Debugger PIN: 139-969-208
+2023-09-17 11:52:03,264 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\excercise_data.py', reloading
+2023-09-17 11:52:03,362 INFO     _log  * Restarting with stat
+2023-09-17 11:52:04,130 WARNING  _log  * Debugger is active!
+2023-09-17 11:52:04,138 INFO     _log  * Debugger PIN: 139-969-208
+2023-09-17 11:52:07,300 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\excercise_data.py', reloading
+2023-09-17 11:52:07,421 INFO     _log  * Restarting with stat
+2023-09-17 11:52:08,180 WARNING  _log  * Debugger is active!
+2023-09-17 11:52:08,188 INFO     _log  * Debugger PIN: 139-969-208
+2023-09-17 11:52:11,351 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\excercise_data.py', reloading
+2023-09-17 11:52:11,473 INFO     _log  * Restarting with stat
+2023-09-17 11:52:12,243 WARNING  _log  * Debugger is active!
+2023-09-17 11:52:12,243 INFO     _log  * Debugger PIN: 139-969-208
+2023-09-17 11:52:14,337 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\excercise_data.py', reloading
+2023-09-17 11:52:14,457 INFO     _log  * Restarting with stat
+2023-09-17 11:52:15,151 WARNING  _log  * Debugger is active!
+2023-09-17 11:52:15,151 INFO     _log  * Debugger PIN: 139-969-208
+2023-09-17 11:52:17,248 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\excercise_data.py', reloading
+2023-09-17 11:52:17,357 INFO     _log  * Restarting with stat
+2023-09-17 11:52:18,242 WARNING  _log  * Debugger is active!
+2023-09-17 11:52:18,242 INFO     _log  * Debugger PIN: 139-969-208
+2023-09-17 11:52:21,387 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\excercise_data.py', reloading
+2023-09-17 11:52:21,469 INFO     _log  * Restarting with stat
+2023-09-17 11:52:22,089 WARNING  _log  * Debugger is active!
+2023-09-17 11:52:22,089 INFO     _log  * Debugger PIN: 139-969-208
+2023-09-17 11:52:25,240 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\excercise_data.py', reloading
+2023-09-17 11:52:25,357 INFO     _log  * Restarting with stat
+2023-09-17 11:52:26,152 WARNING  _log  * Debugger is active!
+2023-09-17 11:52:26,163 INFO     _log  * Debugger PIN: 139-969-208
+2023-09-17 11:52:29,346 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\excercise_data.py', reloading
+2023-09-17 11:52:29,477 INFO     _log  * Restarting with stat
+2023-09-17 11:52:30,318 WARNING  _log  * Debugger is active!
+2023-09-17 11:52:30,324 INFO     _log  * Debugger PIN: 139-969-208
+2023-09-17 11:53:38,713 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\excercise_data.py', reloading
+2023-09-17 11:53:38,816 INFO     _log  * Restarting with stat
+2023-09-17 11:53:39,496 WARNING  _log  * Debugger is active!
+2023-09-17 11:53:39,504 INFO     _log  * Debugger PIN: 139-969-208
+2023-09-17 11:53:49,880 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\excercise_data.py', reloading
+2023-09-17 11:53:50,013 INFO     _log  * Restarting with stat
+2023-09-17 11:53:50,630 WARNING  _log  * Debugger is active!
+2023-09-17 11:53:50,630 INFO     _log  * Debugger PIN: 139-969-208
+2023-09-17 11:53:52,716 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\excercise_data.py', reloading
+2023-09-17 11:53:52,800 INFO     _log  * Restarting with stat
+2023-09-17 11:53:53,601 WARNING  _log  * Debugger is active!
+2023-09-17 11:53:53,616 INFO     _log  * Debugger PIN: 139-969-208
+2023-09-17 11:54:01,945 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\excercise_data.py', reloading
+2023-09-17 11:54:02,056 INFO     _log  * Restarting with stat
+2023-09-17 11:54:02,730 WARNING  _log  * Debugger is active!
+2023-09-17 11:54:02,746 INFO     _log  * Debugger PIN: 139-969-208
+2023-09-17 11:54:05,907 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\excercise_data.py', reloading
+2023-09-17 11:54:05,980 INFO     _log  * Restarting with stat
+2023-09-17 11:54:06,696 WARNING  _log  * Debugger is active!
+2023-09-17 11:54:06,696 INFO     _log  * Debugger PIN: 139-969-208
+2023-09-17 11:54:08,813 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\excercise_data.py', reloading
+2023-09-17 11:54:08,913 INFO     _log  * Restarting with stat
+2023-09-17 11:54:09,667 WARNING  _log  * Debugger is active!
+2023-09-17 11:54:09,680 INFO     _log  * Debugger PIN: 139-969-208
+2023-09-17 11:54:16,965 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\excercise_data.py', reloading
+2023-09-17 11:54:17,063 INFO     _log  * Restarting with stat
+2023-09-17 11:54:17,879 WARNING  _log  * Debugger is active!
+2023-09-17 11:54:17,879 INFO     _log  * Debugger PIN: 139-969-208
+2023-09-17 11:54:22,063 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\excercise_data.py', reloading
+2023-09-17 11:54:22,172 INFO     _log  * Restarting with stat
+2023-09-17 11:54:22,847 WARNING  _log  * Debugger is active!
+2023-09-17 11:54:22,847 INFO     _log  * Debugger PIN: 139-969-208
+2023-09-17 11:54:43,515 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\excercise_data.py', reloading
+2023-09-17 11:54:43,637 INFO     _log  * Restarting with stat
+2023-09-17 11:54:44,331 WARNING  _log  * Debugger is active!
+2023-09-17 11:54:44,331 INFO     _log  * Debugger PIN: 139-969-208
+2023-09-17 11:54:47,451 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\excercise_data.py', reloading
+2023-09-17 11:54:47,522 INFO     _log  * Restarting with stat
+2023-09-17 11:54:48,147 WARNING  _log  * Debugger is active!
+2023-09-17 11:54:48,147 INFO     _log  * Debugger PIN: 139-969-208
+2023-09-17 11:54:58,521 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\excercise_data.py', reloading
+2023-09-17 11:54:58,623 INFO     _log  * Restarting with stat
+2023-09-17 11:54:59,276 WARNING  _log  * Debugger is active!
+2023-09-17 11:54:59,276 INFO     _log  * Debugger PIN: 139-969-208
+2023-09-17 11:55:15,911 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\excercise_data.py', reloading
+2023-09-17 11:55:16,029 INFO     _log  * Restarting with stat
+2023-09-17 11:55:16,821 WARNING  _log  * Debugger is active!
+2023-09-17 11:55:16,821 INFO     _log  * Debugger PIN: 139-969-208
+2023-09-17 11:55:22,014 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\excercise_data.py', reloading
+2023-09-17 11:55:22,124 INFO     _log  * Restarting with stat
+2023-09-17 11:55:22,934 WARNING  _log  * Debugger is active!
+2023-09-17 11:55:22,950 INFO     _log  * Debugger PIN: 139-969-208
+2023-09-17 11:55:36,460 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\excercise_data.py', reloading
+2023-09-17 11:55:36,551 INFO     _log  * Restarting with stat
+2023-09-17 11:55:37,259 WARNING  _log  * Debugger is active!
+2023-09-17 11:55:37,259 INFO     _log  * Debugger PIN: 139-969-208
+2023-09-17 11:55:40,390 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\excercise_data.py', reloading
+2023-09-17 11:55:40,506 INFO     _log  * Restarting with stat
+2023-09-17 11:55:41,197 WARNING  _log  * Debugger is active!
+2023-09-17 11:55:41,197 INFO     _log  * Debugger PIN: 139-969-208
+2023-09-17 11:55:43,284 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\excercise_data.py', reloading
+2023-09-17 11:55:43,373 INFO     _log  * Restarting with stat
+2023-09-17 11:55:44,221 WARNING  _log  * Debugger is active!
+2023-09-17 11:55:44,221 INFO     _log  * Debugger PIN: 139-969-208
+2023-09-17 11:55:46,321 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\excercise_data.py', reloading
+2023-09-17 11:55:46,438 INFO     _log  * Restarting with stat
+2023-09-17 11:55:47,190 WARNING  _log  * Debugger is active!
+2023-09-17 11:55:47,190 INFO     _log  * Debugger PIN: 139-969-208
+2023-09-17 11:55:50,314 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\excercise_data.py', reloading
+2023-09-17 11:55:50,421 INFO     _log  * Restarting with stat
+2023-09-17 11:55:51,213 WARNING  _log  * Debugger is active!
+2023-09-17 11:55:51,213 INFO     _log  * Debugger PIN: 139-969-208
+2023-09-17 11:55:54,331 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\excercise_data.py', reloading
+2023-09-17 11:55:54,450 INFO     _log  * Restarting with stat
+2023-09-17 11:55:55,179 WARNING  _log  * Debugger is active!
+2023-09-17 11:55:55,179 INFO     _log  * Debugger PIN: 139-969-208
+2023-09-17 11:55:57,329 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\excercise_data.py', reloading
+2023-09-17 11:55:57,465 INFO     _log  * Restarting with stat
+2023-09-17 11:55:58,128 WARNING  _log  * Debugger is active!
+2023-09-17 11:55:58,130 INFO     _log  * Debugger PIN: 139-969-208
+2023-09-17 11:56:00,240 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\excercise_data.py', reloading
+2023-09-17 11:56:00,358 INFO     _log  * Restarting with stat
+2023-09-17 11:56:01,087 WARNING  _log  * Debugger is active!
+2023-09-17 11:56:01,087 INFO     _log  * Debugger PIN: 139-969-208
+2023-09-17 11:56:04,235 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\excercise_data.py', reloading
+2023-09-17 11:56:04,380 INFO     _log  * Restarting with stat
+2023-09-17 11:56:05,162 WARNING  _log  * Debugger is active!
+2023-09-17 11:56:05,162 INFO     _log  * Debugger PIN: 139-969-208
+2023-09-17 11:56:24,928 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\excercise_data.py', reloading
+2023-09-17 11:56:25,044 INFO     _log  * Restarting with stat
+2023-09-17 11:56:25,845 WARNING  _log  * Debugger is active!
+2023-09-17 11:56:25,845 INFO     _log  * Debugger PIN: 139-969-208
+2023-09-17 11:56:29,046 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\excercise_data.py', reloading
+2023-09-17 11:56:29,137 INFO     _log  * Restarting with stat
+2023-09-17 11:56:29,897 WARNING  _log  * Debugger is active!
+2023-09-17 11:56:29,897 INFO     _log  * Debugger PIN: 139-969-208
+2023-09-17 11:56:36,174 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\excercise_data.py', reloading
+2023-09-17 11:56:36,287 INFO     _log  * Restarting with stat
+2023-09-17 11:56:36,966 WARNING  _log  * Debugger is active!
+2023-09-17 11:56:36,969 INFO     _log  * Debugger PIN: 139-969-208
+2023-09-17 11:56:39,072 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\excercise_data.py', reloading
+2023-09-17 11:56:39,204 INFO     _log  * Restarting with stat
+2023-09-17 11:56:39,980 WARNING  _log  * Debugger is active!
+2023-09-17 11:56:39,980 INFO     _log  * Debugger PIN: 139-969-208
+2023-09-17 11:56:51,416 INFO     _log  * Detected change in 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\excercise_data.py', reloading
+2023-09-17 11:56:51,510 INFO     _log  * Restarting with stat

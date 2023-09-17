@@ -4,18 +4,19 @@ THIS SCRIPT IS FOR PRINTING WITH COLORS
 
 """
 # IMPORT SECTION
-from MyFunc import *
-from MyColors import *
+
+import os, sys
 from os import  system
 
+# Include root path in sys.path
+ROOT_DIR = os.path.abspath(os.curdir)
+sys.path.insert(1, ROOT_DIR)
+
+# Import My Own Funct in root path
+from MyFunc import *
+
+
 # CONSTANTS
-# Colors
-NO_COLOR = "\033[00m"
-FR_RED   = "\033[91m"
-FR_GREEN = "\033[92m"
-FR_YELL  = "\033[93m"
-FR_BLUE  = "\033[94m"
-FR_MAG   = "\033[95m"
 
 #
 # ---------- MAIN ----------
@@ -23,15 +24,19 @@ FR_MAG   = "\033[95m"
 
 if __name__ == "__main__":
 
+    import inspect
+    
     system('cls')
     print(frGREEN("\n---------- main ----------\n"))
 
     print(frGREEN("\n---------- Exception Hierarchy ----------\n"))
-    import inspect
+    
     print(frRED("The class hierarchy for built-in exceptions is:"))
+    print()
+
+    #
     inspect.getclasstree(inspect.getmro(Exception))
     classtree(Exception)
-
     
     print(f"\n{FR_GREEN}---------- That's all for today 👌 ----------{NO_COLOR}\n")
     

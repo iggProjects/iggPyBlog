@@ -225,3 +225,6 @@
 2023-09-16 18:33:25.569 | IN 'func excercises()'
 2023-09-16 18:35:07.017 | IN 'func excercises()'
 2023-09-16 18:37:36.564 | IN 'func excercises()'
+2023-09-17 11:34:52.600 | IN 'func excercises()'
+2023-09-17 11:46:55.743 | IN 'func excercises()'
+2023-09-17 11:56:54.647 | IN 'func excercises()'
