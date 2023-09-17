@@ -14,6 +14,8 @@ nazareth user: jo.gainzarain@aulanz.net  | nz2223Nz
 
 STILL TO DO !!!
 
+- update restrictions in .gitignore
+
 - error_page vs logFiles
     - error_page in flask_app for render_template
     - don't call error_page when rendering is good and error can be directed to log file
