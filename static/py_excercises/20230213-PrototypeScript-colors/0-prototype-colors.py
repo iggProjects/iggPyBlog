@@ -8,9 +8,7 @@ ONLY WORK IN LOCALHOST
 
 
 # IMPORT SECTION
-import logging
-import sys
-import os
+import os, sys, logging, traceback
 from os import  system
 
 # Include root path in sys.path
@@ -30,8 +28,6 @@ if __name__ == "__main__":
 
     try:    
 
-        write_log_file("my_messages.txt","IN 'func 0-prototype-colors.py()'")
-
         system('cls')
         print(frGREEN("\n---------- main ----------\n"))
 
@@ -47,6 +43,7 @@ if __name__ == "__main__":
             print("\tPrint with ascii " + colors_str[i] + f":\t{color}{msg}{NO_COLOR}") 
             i+=1   
 
+        print()
         msg="print with default color\t\t ==> TESTING COLOR FUNCTION"
         print(f"\t{msg}")    
 
@@ -61,7 +58,7 @@ if __name__ == "__main__":
         # ------------------------------------------------
         #           ASKING FOR SHOW VARS INFO 
         #------------------------------------------------- 
-        """
+        
         # with Y_N_2 function
         yesss=True   
         while yesss:
@@ -75,26 +72,55 @@ if __name__ == "__main__":
             try: 
                 _what_var
                 _my_Obj_name = eval(_what_var)
-                print(f"\n{FR_GREEN}---------- INFO FOR OBJECT '{_my_Obj_name}' ----------{NO_COLOR}\n")
+                _my_Obj_name = " ".join(_my_Obj_name.split())
+                # " ".join(s.split())
+                print(f"\n{FR_GREEN}---- INFO FOR OBJECT ==> {NO_COLOR}'{ _my_Obj_name }'\n")
                 # pause()
                 # my objects functions  
                 mostrar(_my_Obj_name)       
 
-            except NameError:
-                print(f"\n\t{FR_RED}---- Var '{_what_var}' doesn't exits 🙄🙄  ----")
+            #except Exception as Argument:
+            except Exception as Argument:
+                #print(f"\n\t{FR_RED}---- FROM 'WHAT VAR ?': {NameError}' 🙄🙄  ----")
+                print(f"\n\t{FR_RED}---- FROM 'WHAT VAR ?': {Argument}' | {Argument.__class__} 🙄🙄  ----")
                 print(f"\n{FR_GREEN}--------------- That's all for today 👌 ---------------{NO_COLOR}\n")
                 #_my_Obj_name = None 
 
         else:
             print(f"\n{FR_GREEN}---------- That's all for today 👌 ----------{NO_COLOR}\n")
-        """
+        
 
     except Exception as Argument: 
-        #logging.info(Argument)  
+        print(frRED(f"-------- upsssssssss: ERROR in '0-prototype-colors.py()' | {Argument}--------\n"))
         logging.exception(" | exception from '0-prototype-colors.py()': ")
+        """
+        print("traceback")
+        print(f"{traceback.format_exc()}")
+        print()
+
+        traceback_formatted = traceback.format_exc().replace('"','').replace(',','|')
+        traceback_lines = traceback_formatted.split('\n')
+        print(f"traceback_lines length: {len(traceback_lines)}")
+        print(f"{traceback_lines}")
+        print()
+
+        print("traceback_lines[1]")
+        print(f"{traceback_lines[1]}")    
+        print()
+
+        traceback_lines_2 = traceback_lines[1].split('|')
+        print("traceback_lines_2")
+        print(f"{traceback_lines_2}")
+        print()
+
+        #traceback_lines_2_2 = traceback_lines_2[2].split('|')
+        print("traceback_lines_2_2")        
+        print(traceback_lines_2[1])
+        """
+
 
 else:
-    # something wrong
+    # something wrong    
     print(frRED("\n---- upsssssssss something is wrong 😢😢  ----\n"))
     # pause()
 

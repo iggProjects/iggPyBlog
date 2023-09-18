@@ -94,7 +94,7 @@ def matrix_view(obj_l_t,n_cols):
       for j in range(n_cols):
         if i*n_cols+j<len(obj_l_t):
           line.append(obj_l_t[i*n_cols+j])
-      print(f"line: {i+1} --> {line}")
+      print(f"line: {str(i+1).rjust(3)} --> {line}")
       line=[]  
   else:
     print(frRED(f"\nWarning FROM matrix_view(): Object '{obj_l_t}' in not list neither tupla !\n" )) 
@@ -119,8 +119,8 @@ def library_methods(my_lib):
 def mostrar(obj):      
 
   if type(obj) in ['list','dict']:
-    print(f"Object elements view in matrix form (8 columns by row)\n")
-    matrix_view(obj,8)
+    print(f"Object elements view in matrix form (6 columns by row)\n")
+    matrix_view(obj,6)
 
   # obj type and mem dir
   print(f"Object type is {type(obj)} and mem dir is: {id(obj)}\n")
@@ -129,7 +129,7 @@ def mostrar(obj):
   attr_meth = [attr for attr in dir(obj)]
   # print attributes and methods in matrix form
   print(f"Object assigned attributes and methods are:\n")
-  matrix_view(attr_meth,8)
+  matrix_view(attr_meth,6)
   print()
   prBG("-----------------END MOSTRAR OBJECT TYPE AND ATTRIB-METHODS-----------------",17)    
   print()
