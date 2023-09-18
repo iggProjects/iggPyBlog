@@ -50,10 +50,10 @@ if __name__ == "__main__":
         msg="print with default color\t\t ==> TESTING COLOR FUNCTION"
         print(f"\t{msg}")    
 
-        msg="\tprint with function pfRed() --> TESTING COLOR FUNCTION"
         print(frGREEN("\n---------- using function prRed(msg) ----------\n"))
-        pause()
+        msg="\tprint with function pfRed() --> TESTING COLOR FUNCTION\n"        
         prRed(msg)   
+        pause()
 
         print(f"\n{FR_GREEN}---------- That's all for today 👌 ----------{NO_COLOR}\n")
         

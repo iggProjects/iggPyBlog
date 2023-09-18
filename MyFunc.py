@@ -53,7 +53,7 @@ def write_log_file(logFile,msg):
 
 # pause function
 def pause():  
-  userInput = input(f"{FR_RED}Press ENTER to continue, or CTRL-C to exit{NO_COLOR}\n")  
+  userInput = input(f"{FR_MAG}Press ENTER to continue, or CTRL-C to exit{NO_COLOR}\n")  
         
 #
 # DECISIONS FUNCTIONS

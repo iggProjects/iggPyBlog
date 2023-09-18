@@ -11,8 +11,18 @@ nazareth user: jo.gainzarain@aulanz.net  | nz2223Nz
 
 ************************************************
 
+UPLOAD PAW: 
+    - flask_app
+    - error_page.html, excercise.html
+    - excercise_data
+    - all excercises scripts
+
+************************************************
 
 STILL TO DO !!!
+
+- all .zip (): all scripts must be a copy of original, deleting root path reference, 
+    and must have MyFunc and MyColors inside dir
 
 - update restrictions in .gitignore
 
