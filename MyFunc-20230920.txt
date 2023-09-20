@@ -43,21 +43,51 @@ def write_log_file(logFile,msg):
     except Exception as Argument:
         logging.exception(f"{Argument} | exception from 'write_log_file()' ")
 
-def write_traceback_info(Argum,TraceList,script): 
-               
+def write_traceback_info(Argum,TraceList):
+        
         traceback_formatted = TraceList.format_exc().replace('"','').replace(',',' | ')
         traceback_lines = traceback_formatted.split('\n')
+
         print("print empty line")        
-        print(frRED(f"====================== ERROR FOUND IN <{script}> ======================"))
+        print(frRED("====================== ERROR FOUND ======================"))
         print("print empty line")
+
+        #print(f"{FR_BLUE}tracebak_lines{NO_COLOR}")
         for line in traceback_lines:
+            #print(f"{line}")            
             if ('File' or 'line') in line:
                 print(f"{line}")  
         print("print empty line")
         print(f"{FR_BLUE}===> {Argum} | {Argum.__class__} | {Argum.__doc__} <==={NO_COLOR}")
         print("print empty line")
+
+        #print(f"{FR_BLUE}===> {Argument} - {traceback_lines_2[1]} | {Argument.__class__} | {Argument.__doc__}{NO_COLOR}")
+
+        #print("traceback")
+        #print(f"{traceback.format_exc()}")
+        #print("print empty line")
+
+        #print(f"traceback_lines length: {len(traceback_lines)}")
+        #print(f"{traceback_lines}")
+        #print("print empty line")
+
+        #print("traceback_lines[1]")
+        #print(f"{traceback_lines[1]}")    
+        #print("print empty line")
+
+        #print("traceback_lines_2")
+        #print(f"{traceback_lines_2}")
+        #print("print empty line")
+
+        #traceback_lines_2_2 = traceback_lines_2[2].split('|')
+        #print("traceback_lines_2_2")        
+        
         print(frRED(f"\t\tSEE 'server_messages.txt' file OR Contact Web Admin !"))
         logging.exception(f"{Argum} | exception from '0-prototype-colors.py()': ")
+
+        #print(f"\ttraceback.format_exc() : {type(traceback.format_exc())}")
+        #print(f"{traceback.format_exc()}")
+
 
 
 #

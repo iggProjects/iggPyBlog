@@ -36,7 +36,7 @@ if __name__ == "__main__":
         colors= [FR_RED,FR_GREEN,FR_YELL,FR_BLUE,FR_MAG]
         colors_str=['\\033[91m - Red','\\033[92m - Green','\\033[93m - Yellow','\\033[94m - Blue','\\033[95m - Magenta']
         
-        i=0
+        i=1/0
         for color in colors:
             color_str = color
             msg=" ==> TESTING COLOR FUNCTION"            
@@ -93,7 +93,8 @@ if __name__ == "__main__":
     except Exception as Argument: 
         print(frRED(f"-------- upsssssssss: ERROR in '0-prototype-colors.py()' | {Argument}--------\n"))
         logging.exception(" | exception from '0-prototype-colors.py()': ")
-        """
+
+        
         print("traceback")
         print(f"{traceback.format_exc()}")
         print()
@@ -103,6 +104,10 @@ if __name__ == "__main__":
         print(f"traceback_lines length: {len(traceback_lines)}")
         print(f"{traceback_lines}")
         print()
+
+        for line in traceback_lines:
+            print(f"{line}")    
+
 
         print("traceback_lines[1]")
         print(f"{traceback_lines[1]}")    
@@ -116,7 +121,7 @@ if __name__ == "__main__":
         #traceback_lines_2_2 = traceback_lines_2[2].split('|')
         print("traceback_lines_2_2")        
         print(traceback_lines_2[1])
-        """
+        
 
 
 else:
