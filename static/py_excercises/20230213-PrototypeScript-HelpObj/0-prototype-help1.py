@@ -4,23 +4,20 @@ THIS SCRIPT EXECUTE HELP FUNCTION TO ANALYZE A CODE OBJECT
 
 """
 # IMPORT SECTION
-"""
-import os, sys
 
-# include root path in sys.path
-ROOT_DIR = os.path.abspath(os.curdir)
-# check in what server is app
-if "iggWebNz" in ROOT_DIR:              # pythonanywhere  
-    ROOT_DIR = ROOT_DIR + "/mysite"
-else:                                   # working in localhost server
-    pass 
-sys.path.insert(1, ROOT_DIR)
+try: 
+    import sys
+    from os.path import dirname, realpath
+    filepath = realpath(__file__)
+    file_dir = dirname(filepath)
+    parent_dir = dirname(file_dir)
+    grand_parent_dir = dirname(parent_dir)
+    grand_grand_dir = dirname(grand_parent_dir)  
+    sys.path.append(grand_grand_dir)  
+    from static.config_path_MyFunc import *
 
-# import "My Own Funct" from root path
-from MyFunc import *
-
-"""
-from config_path_MyFunc import *
+except Exception as ImportError:   
+    print(f"IMPORT ERROR ==> {ImportError}")    
 
 # CONSTANTS
 
