@@ -1,4 +1,4 @@
-import os, sys, traceback
+import os, sys
 
 # include root path in sys.path
 ROOT_DIR = os.path.abspath(os.curdir)
