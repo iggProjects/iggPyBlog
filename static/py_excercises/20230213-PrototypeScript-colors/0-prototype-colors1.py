@@ -1,35 +1,29 @@
 
 """  
-THIS SCRIPT IS FOR PRINTING WITH COLORS
+    THIS SCRIPT IS FOR PRINTING WITH COLORS
 
 """
 # IMPORT SECTION
 
-import logging
-import os, sys, traceback
-from os import  system
+# import config_path_MyFunc from /static 
 
+try: 
+    import sys
+    from os.path import dirname, realpath
+    filepath = realpath(__file__)
+    file_dir = dirname(filepath)
+    parent_dir = dirname(file_dir)
+    grand_parent_dir = dirname(parent_dir)
+    grand_grand_dir = dirname(grand_parent_dir)  
+    sys.path.append(grand_grand_dir)  
+    from static.config_path_MyFunc import *
 
-# include root path in sys.path
-ROOT_DIR = os.path.abspath(os.curdir)
-# check in what server is app
-if "iggWebNz" in ROOT_DIR:              # pythonanywhere  
-    ROOT_DIR = ROOT_DIR + "/mysite"
-else:                                   # working in localhost server
-    pass 
-sys.path.insert(1, ROOT_DIR)
+except Exception as ImportError:   
+    print(f"IMPORT ERROR ==> {ImportError}")    
 
 # get name of script
 my_script = __file__.split('\\')
 my_script_name = my_script[len(my_script)-1]
-
-
-#print(f"----------------------- os.curdir --> {type(os.curdir)} | value: {os.curdir}")
-#print(f"----------------------- os.path.abspath(os.curdir) --> {ROOT_DIR}")
-#print(f"----------------------- os.getcwd() --> {os.getcwd()}")
-
-# import "My Own Funct" from root path
-from MyFunc import *
 
 #
 # ---------- MAIN ----------

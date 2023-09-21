@@ -4,8 +4,8 @@ THIS SCRIPT EXECUTE HELP FUNCTION TO ANALYZE A CODE OBJECT
 
 """
 # IMPORT SECTION
+"""
 import os, sys
-from os import  system
 
 # include root path in sys.path
 ROOT_DIR = os.path.abspath(os.curdir)
@@ -19,6 +19,8 @@ sys.path.insert(1, ROOT_DIR)
 # import "My Own Funct" from root path
 from MyFunc import *
 
+"""
+from config_path_MyFunc import *
 
 # CONSTANTS
 
