@@ -9,11 +9,21 @@
 try: 
 
     import os, sys
-    from os.path import dirname, realpath 
-    # get parent up 3 from __file__ path   
+    from os.path import dirname, realpath  
+    
+    filepath = realpath(__file__)
+    file_dir = dirname(filepath)
+    up1_dir = dirname(file_dir)
+    up2_dir = dirname(up1_dir)
+    #up3_dir = dirname(up2_dir)  
     up3_dir = dirname(dirname(dirname(dirname(realpath(__file__)))))
+    print(f"file_dir: {file_dir}")
+    print(f"up1_dir: {up1_dir}")
+    print(f"up2_dir: {up2_dir}")
+    print(f"up3_dir: {up3_dir}")
     # insert "root path" path in sys.path
     sys.path.append(up3_dir)
+
     from static.MyFunc1 import *
     from static.MyColors1 import *
 
