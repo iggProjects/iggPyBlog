@@ -43,10 +43,12 @@ logging.basicConfig(filename=basedir + "/static/logFiles/server_messages.txt",
                     encoding='utf-8', level=logging.DEBUG, format="%(asctime)-15s %(levelname)-8s %(funcName)s %(message)s")
 logging.captureWarnings(True)
 #logging.captureWarnings(False)
-"""
 
 # My Own Funct
-from MyFunc import *
+from include.MyFunc1 import *
+from include.MyColors1 import *
+
+"""
 
 app = Flask(__name__)
 app.secret_key = 'HI TARZAN'

@@ -8,7 +8,9 @@ from config_logging import *
 from config_DB import *
 # DATA of excercises, articles, projects
 from config_DATA import *
-# 
+# My Own Funct
+from include.MyFunc1 import *
+from include.MyColors1 import *
 
 #
 # app routes and functions

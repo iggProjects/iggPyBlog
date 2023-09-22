@@ -6,6 +6,7 @@ THIS SCRIPT EXECUTE HELP FUNCTION TO ANALYZE A CODE OBJECT
 # IMPORT SECTION
 
 try: 
+
     import sys
     from os.path import dirname, realpath
     filepath = realpath(__file__)
@@ -14,13 +15,15 @@ try:
     grand_parent_dir = dirname(parent_dir)
     grand_grand_dir = dirname(grand_parent_dir)  
     sys.path.append(grand_grand_dir)  
-    from static.config_path_MyFunc import *
-
+    from static.MyFunc1 import *
+    #from static.config_path_MyFunc import *
 
 except Exception as ImportError:   
     print(f"IMPORT ERROR ==> {ImportError}")    
 
-# CONSTANTS
+# get name of script
+my_script = __file__.split('\\')
+my_script_name = my_script[len(my_script)-1]
 
 #
 # ---------- MAIN ----------

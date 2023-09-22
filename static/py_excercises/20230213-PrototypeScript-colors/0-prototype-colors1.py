@@ -4,18 +4,27 @@
 
 """
 # IMPORT SECTION
-
-# import config_path_MyFunc from /static 
+# My Own Functions from include dir
+ 
 try: 
-    import sys
-    from os.path import dirname, realpath
+
+    import os, sys
+    from os.path import dirname, realpath  
+    
     filepath = realpath(__file__)
     file_dir = dirname(filepath)
-    parent_dir = dirname(file_dir)
-    grand_parent_dir = dirname(parent_dir)
-    grand_grand_dir = dirname(grand_parent_dir)  
-    sys.path.append(grand_grand_dir)  
-    from static.config_path_MyFunc import *
+    up1_dir = dirname(file_dir)
+    up2_dir = dirname(up1_dir)
+    up3_dir = dirname(up2_dir)  
+    print(f"file_dir: {file_dir}")
+    print(f"up1_dir: {up1_dir}")
+    print(f"up2_dir: {up2_dir}")
+    print(f"up3_dir: {up3_dir}")
+    # insert "root path" path in sys.path
+    sys.path.append(up3_dir)
+
+    from static.MyFunc1 import *
+    from static.MyColors1 import *
 
 except Exception as ImportError:   
     print(f"IMPORT ERROR ==> {ImportError}")    
