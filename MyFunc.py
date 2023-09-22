@@ -48,7 +48,7 @@ def write_traceback_info(Argum,TraceList,script):
         traceback_formatted = TraceList.format_exc().replace('"','').replace(',',' | ')
         traceback_lines = traceback_formatted.split('\n')
         print("print empty line")        
-        print(frRED(f"====================== ERROR FOUND IN <{script}> ======================"))
+        print(frRED(f"====================== ERROR FOUND ======================"))
         print("print empty line")
         for line in traceback_lines:
             #if ('File' or 'line' or 'Module') in line:
@@ -56,9 +56,10 @@ def write_traceback_info(Argum,TraceList,script):
                 for field in line.split('|'):
                    if 'line' in field:
                       line_numb = field
-
-        print(f"\t{FR_RED}code in {line_numb} ==> {traceback_lines[len(traceback_lines)-3]}{NO_COLOR}")        
-        print(f"\t{FR_BLUE}{Argum} | {Argum.__class__} | {Argum.__doc__} <==={NO_COLOR}")
+        print(frRED(f"FILE: <{script}>"))
+        print("print empty line")
+        print(f"\t{FR_RED}code in {line_numb}: {traceback_lines[len(traceback_lines)-3]}{NO_COLOR}")        
+        print(f"\t{FR_BLUE}{Argum} | {Argum.__class__} | {Argum.__doc__}{NO_COLOR}")
         print(frRED(f"\tSEE 'server_messages.txt' file OR Contact Web Admin !"))
         logging.exception(f"{Argum} | exception from '0-prototype-colors.py()': ")
 

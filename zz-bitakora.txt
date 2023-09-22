@@ -24,6 +24,8 @@ STILL TO DO !!!
 - all .zip (): all scripts must be a copy of original, deleting root path reference, without
   write_log_file funct, and must have MyFunc and MyColors inside dir
 
+- ADD google link to look for error info... "in write_traceback_info"  
+
 - update restrictions in .gitignore
 
 - error_page vs logFiles
