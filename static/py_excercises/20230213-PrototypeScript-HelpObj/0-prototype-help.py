@@ -6,18 +6,30 @@ ONLY WORK IN LOCALHOST
 
 """
 
-# IMPORT SECTION
-import os, sys
-from os import  system
+# My Own Functions from include dir 
+try: 
 
-# Include root path in sys.path
-ROOT_DIR = os.path.abspath(os.curdir)
-sys.path.insert(1, ROOT_DIR)
+    import sys, traceback
+    from os.path import dirname, realpath
+    from os import system
+    # get parent up 2 from __file__ path: static   
+    up2_dir = dirname(dirname(dirname(realpath(__file__))))
+    # insert path in sys.path
+    sys.path.append(up2_dir)
 
-# Import My Own Funct in root path
-from MyFunc import *
+    # get parent up 3 from __file__ path: root path       
+    up3_dir = dirname(dirname(dirname(dirname(realpath(__file__)))))
+    # insert path in sys.path
+    sys.path.append(up3_dir)
+    from static.include.MyFunc import *
+    from static.include.MyColors import *
 
-# CONSTANTS
+except Exception as ImportError:   
+    print(f"IMPORT ERROR ==> {ImportError}")    
+
+# get name of script
+my_script = __file__.split('\\')
+my_script_name = my_script[len(my_script)-1]
 
 #
 # ---------- MAIN ----------

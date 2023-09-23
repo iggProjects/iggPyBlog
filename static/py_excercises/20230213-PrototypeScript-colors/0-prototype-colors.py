@@ -5,20 +5,32 @@ THIS SCRIPT IS FOR PRINTING WITH COLORS
 ONLY WORK IN LOCALHOST
 
 """
-
-
 # IMPORT SECTION
-import os, sys, logging, traceback
-from os import  system
 
-# Include root path in sys.path
-ROOT_DIR = os.path.abspath(os.curdir)
-sys.path.insert(1, ROOT_DIR)
+# My Own Functions from include dir 
+try: 
 
-# Import My Own Funct in root path
-from MyFunc import *
+    import sys, traceback
+    from os.path import dirname, realpath
+    from os import system
+    # get parent up 2 from __file__ path: static   
+    up2_dir = dirname(dirname(dirname(realpath(__file__))))
+    # insert path in sys.path
+    sys.path.append(up2_dir)
 
-# CONSTANTS
+    # get parent up 3 from __file__ path: root path       
+    up3_dir = dirname(dirname(dirname(dirname(realpath(__file__)))))
+    # insert path in sys.path
+    sys.path.append(up3_dir)
+    from static.include.MyFunc import *
+    from static.include.MyColors import *
+
+except Exception as ImportError:   
+    print(f"IMPORT ERROR ==> {ImportError}")    
+
+# get name of script
+my_script = __file__.split('\\')
+my_script_name = my_script[len(my_script)-1]
 
 #
 # ---------- MAIN ----------
@@ -36,7 +48,7 @@ if __name__ == "__main__":
         colors= [FR_RED,FR_GREEN,FR_YELL,FR_BLUE,FR_MAG]
         colors_str=['\\033[91m - Red','\\033[92m - Green','\\033[93m - Yellow','\\033[94m - Blue','\\033[95m - Magenta']
         
-        i=1/0
+        i=0
         for color in colors:
             color_str = color
             msg=" ==> TESTING COLOR FUNCTION"            

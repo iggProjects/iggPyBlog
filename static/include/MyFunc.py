@@ -16,28 +16,31 @@
 # IMPORT LIBRERIES OR YOUR OWN FUNCTIONS 
 #
 
-import os
-#basedir = os.path.abspath(os.path.dirname(__file__))
-#print(f"====== basedir: {basedir}")
+# UPDATE sys.path
+import sys
+from os.path import dirname
+# up to static parent path
+up2_dir = dirname(dirname(__file__))
+# insert path in sys.path        
+sys.path.append(up2_dir)
 
-#from config_logging import *
+# import logging configuration
+from config_logging import *
 
-import datetime
-
-# My own colors
+# import My own colors
+from static.include.MyColors import *
 
 # function to write in logFile
 def write_log_file(logFile,msg):
 
-    try:  
-        # file path
-        logFile_path = "/static/logFiles/" + logFile
+    try:
+        # path to log file
+        logFile_path = "static/logFiles/" + logFile
         # creating/opening a file
         f = open(logFile_path, "a") 
-        #f = open(logFile, "a") 
-        # writing in the file        
+        # write in file        
         f.write('%s | %s\n' % (datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S.%f')[:-3],msg))      
-        # closing the file
+        # close file
         f.close()
     except Exception as Argument:
        print(f"Error {Argument}")

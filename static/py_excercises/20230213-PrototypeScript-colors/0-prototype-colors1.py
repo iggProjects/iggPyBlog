@@ -4,18 +4,23 @@
 
 """
 # IMPORT SECTION
-# My Own Functions from include dir
- 
+
+# My Own Functions from include dir 
 try: 
 
-    import os, sys
-    from os.path import dirname, realpath 
-    # get parent up 3 from __file__ path   
+    import sys, traceback
+    from os.path import dirname, realpath
+    # get parent up 2 from __file__ path: 'static path'   
+    up2_dir = dirname(dirname(dirname(realpath(__file__))))
+    # insert path in sys.path
+    sys.path.append(up2_dir)
+
+    # get parent up 3 from __file__ path: 'static parent path'       
     up3_dir = dirname(dirname(dirname(dirname(realpath(__file__)))))
-    # insert "root path" path in sys.path
+    # insert path in sys.path
     sys.path.append(up3_dir)
-    from static.MyFunc1 import *
-    from static.MyColors1 import *
+    from static.include.MyFunc import *
+    from static.include.MyColors import *
 
 except Exception as ImportError:   
     print(f"IMPORT ERROR ==> {ImportError}")    

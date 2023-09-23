@@ -20,7 +20,7 @@ import traceback
 import logging
 
 # My Own Colors
-from MyColors import *
+from static.include.MyColors import *
 
 # base dir in server
 basedir = os.path.abspath(os.path.dirname(__file__))

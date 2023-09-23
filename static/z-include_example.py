@@ -13,7 +13,7 @@ my_script_name = my_script[len(my_script)-1]
 # from MyFunc import *
 
 try: 
-    from include import MyColors1
+    from include_out import MyColors1
 except Exception as ImportError:   
     print(f"IMPORT ERROR ==> {ImportError}")    
 #
