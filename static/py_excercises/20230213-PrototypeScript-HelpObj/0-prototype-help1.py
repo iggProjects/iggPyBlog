@@ -5,18 +5,22 @@ THIS SCRIPT EXECUTE HELP FUNCTION TO ANALYZE A CODE OBJECT
 """
 # IMPORT SECTION
 
+# My Own Functions from include dir 
 try: 
 
-    import sys
+    import sys, traceback
     from os.path import dirname, realpath
-    filepath = realpath(__file__)
-    file_dir = dirname(filepath)
-    parent_dir = dirname(file_dir)
-    grand_parent_dir = dirname(parent_dir)
-    grand_grand_dir = dirname(grand_parent_dir)  
-    sys.path.append(grand_grand_dir)  
-    from static.MyFunc1 import *
-    #from static.config_path_MyFunc import *
+    # get parent up 2 from __file__ path: 'static path'   
+    up2_dir = dirname(dirname(dirname(realpath(__file__))))
+    # insert path in sys.path
+    sys.path.append(up2_dir)
+
+    # get parent up 3 from __file__ path: 'static parent path'       
+    up3_dir = dirname(dirname(dirname(dirname(realpath(__file__)))))
+    # insert path in sys.path
+    sys.path.append(up3_dir)
+    from static.include.MyFunc import *
+    from static.include.MyColors import *
 
 except Exception as ImportError:   
     print(f"IMPORT ERROR ==> {ImportError}")    
