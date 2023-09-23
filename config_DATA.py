@@ -1,9 +1,9 @@
 """ basic configuration for DATA ARRAYS  """
 
-from article_data import Articles
-from excercise_data import Excercises
-from LifeGame_data import LG_scripts
-from EnigmaGame_data import Enigma_scripts
+from static.data_arrays.article_data import Articles
+from static.data_arrays.excercise_data import Excercises
+from static.data_arrays.LifeGame_data import LG_scripts
+from static.data_arrays.EnigmaGame_data import Enigma_scripts
 
 Articles = Articles()
 Excercises = Excercises()
