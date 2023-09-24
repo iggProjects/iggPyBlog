@@ -16,16 +16,8 @@
 # IMPORT LIBRERIES OR YOUR OWN FUNCTIONS 
 #
 
-# UPDATE sys.path
-import sys
-from os.path import dirname
-# up to static parent path
-up2_dir = dirname(dirname(__file__))
-# insert path in sys.path        
-sys.path.append(up2_dir)
-
 # import logging configuration
-from config_logging import *
+from static.include.config_logging import *
 
 # import My own colors
 from static.include.MyColors import *

@@ -5,10 +5,21 @@
 """
 
 from flask_sqlalchemy import *
-import os
-from config import app, basedir
+import os, sys
 
-app.config['SQLALCHEMY_DATABASE_URI'] ='sqlite:///' + os.path.join(basedir, 'foods.db')
+# insert "root path" path in sys.path
+from os.path import dirname, realpath
+# get parent up 1 from __file__ path: static   
+up2_dir = dirname(dirname(dirname(realpath(__file__))))
+sys.path.append(up2_dir)
+
+# import app
+from config import app
+#from config import app, basedir
+#db_dir = basedir + "/static/include/"
+#db_dir = basedir + "/static/include/"
+app.config['SQLALCHEMY_DATABASE_URI'] ='sqlite:///' + os.path.join(dirname(__file__), 'foods.db')
+#app.config['SQLALCHEMY_DATABASE_URI'] ='sqlite:///' + os.path.join(db_dir, 'foods.db')
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
 

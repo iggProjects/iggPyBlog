@@ -3,11 +3,12 @@
 # APP and principal modules 
 from config import *
 # Import log files config
-from config_logging import *
+from static.include.config_logging import *
 # import DB parameters 
-from config_DB import *
+from static.include.config_DB import *
 # DATA of excercises, articles, projects
-from config_DATA import *
+from static.include.config_DATA import *
+
 # My Own Funct
 from static.include.MyFunc import *
 from static.include.MyColors import *
@@ -21,11 +22,9 @@ from static.include.MyColors import *
 def home():
     return render_template('home.html')
 
-
 @app.route('/course')
 def course():
     return render_template('course.html')
-
 
 @app.route('/articles')
 def articles():
@@ -807,11 +806,6 @@ def foods_reg_delete(uid):
     db.session.commit()
     return redirect(url_for('foods_reg_matrix'))
     #return render_template('reg_matrix.html')
-
-
-
-
-
 
 #
 # MAIN

@@ -1,7 +1,8 @@
 import datetime
 import os, logging
 
-basedir = os.path.abspath(os.path.dirname(__file__))
+#basedir = os.path.abspath(os.path.dirname(__file__))
+from config import basedir
 
 # error handling 
 log_file_path = basedir + "/static/logFiles/server_messages.txt"
