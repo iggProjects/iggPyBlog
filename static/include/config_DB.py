@@ -2,11 +2,12 @@
 
     basic configuration for DB
 
+
 """
 
+import os
 from flask_sqlalchemy import *
-import os, sys
-from os.path import dirname, realpath
+from os.path import dirname
 
 # import app
 from config import app

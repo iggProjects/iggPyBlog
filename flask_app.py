@@ -2,7 +2,7 @@
 
 # APP and principal modules 
 from config import *
-# Import log files config
+# Import log files 
 from static.include.config_logging import *
 # import DB parameters 
 from static.include.config_DB import *
@@ -812,4 +812,5 @@ def foods_reg_delete(uid):
 #
 
 if __name__ == '__main__':
+    
     app.run(debug=True)

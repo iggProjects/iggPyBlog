@@ -16,9 +16,10 @@
 # IMPORT LIBRERIES OR YOUR OWN FUNCTIONS 
 #
 
+# to write in log files
+import datetime
 # import logging configuration
 from static.include.config_logging import *
-
 # import My own colors
 from static.include.MyColors import *
 
@@ -52,6 +53,23 @@ def write_traceback_info(Argum,TraceList,script):
         print(f"{FR_BLUE}===> {Argum} | {Argum.__class__} | {Argum.__doc__} <==={NO_COLOR}")
         print("print empty line")
         print(frRED(f"\t\tSEE 'server_messages.txt' file OR Contact Web Admin !"))
+        logging.exception(f"{Argum} | exception from '0-prototype-colors.py()': ")
+
+def write_traceback_info_1(Argum,TraceList,script): 
+               
+        traceback_formatted = TraceList.format_exc().replace('"','').replace(',',' | ')
+        traceback_lines = traceback_formatted.split('\n')
+        print()        
+        print(frRED(f"====================== ERROR FOUND IN <{script}> ======================"))
+        print()
+        for line in traceback_lines:
+            if ('File' or 'line') in line:
+                print(f"{line}")  
+        print()
+        print(f"{FR_BLUE}===> {Argum} | {Argum.__class__} | {Argum.__doc__} <==={NO_COLOR}")
+        print()
+        print(frRED(f"===> SEE 'server_messages.txt' file OR Contact Web Admin !"))
+        print()
         logging.exception(f"{Argum} | exception from '0-prototype-colors.py()': ")
 
 
