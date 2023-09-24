@@ -5,18 +5,22 @@
 """
 
 from flask import Flask, render_template, url_for, redirect, request, session
-
-from flask_sqlalchemy import *
 import os
 import platform
-import sys
+
+"""
+from flask_sqlalchemy import *
 
 # handling data and time var's
 import datetime
 
+import sys
+
 # error handling
 import traceback
 import logging
+
+"""
 
 # My Own Colors
 from static.include.MyColors import *
