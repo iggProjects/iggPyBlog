@@ -25,10 +25,6 @@ except Exception as ImportError:
     print("print empty line") 
     print(f"{FR_RED}IMPORT ERROR ==>{NO_COLOR} {ImportError} | {ImportError.__class__} | {ImportError.__doc__}")
 
-# get name of script
-my_script = __file__.split('\\')
-my_script_name = my_script[len(my_script)-1]
-
 #
 # ---------- MAIN ----------
 #
@@ -37,7 +33,10 @@ if __name__ == "__main__":
 
     try:
 
-        write_log_file("my_messages.txt","IN 'func 0-prototype-colors1.py()'")
+        # get name of script
+        my_script = __file__.split('\\')
+        my_script_name = my_script[len(my_script)-1]
+        write_log_file("my_messages.txt","IN '" + my_script_name + "'")
         print("print empty line")
 
         print(f"{FR_GREEN}---------- MAIN ----------{NO_COLOR}")

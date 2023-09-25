@@ -321,9 +321,9 @@ def desc_obj_method(obj,todo=True):
 # checking related classes in a composite class 
 def relatedClasses(clas):   
 
-    print(f"\n----- analysis of {FR_BLUE}\"classes related\"{NO_COLOR} with class \"{FR_GREEN}{clas}{NO_COLOR}\" -----\n")
+    print(f"----- analysis of related classes with class {clas} -----")
     for clas_rel in clas.__mro__:
-        print(f"{FR_GREEN}\trelated clas --> {clas_rel}\n")
+        print(f"{FR_GREEN}\trelated class --> {clas_rel}\n")
     print(f"{NO_COLOR}----- end analysis -----\n")    
 
 

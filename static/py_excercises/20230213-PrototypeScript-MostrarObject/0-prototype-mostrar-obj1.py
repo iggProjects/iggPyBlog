@@ -4,21 +4,27 @@ THIS SCRIPT IS FOR..................
 
 """
 # IMPORT SECTION
-import os, sys
-from os import  system
+try:   # Import My Own Functions from include dir 
+    import sys, traceback     
+    from os.path import dirname, realpath
+    # get parent up 2 from __file__ path: 'static path'   
+    up2_dir = dirname(dirname(dirname(realpath(__file__))))
+    # insert path in sys.path
+    sys.path.append(up2_dir)
+    # get parent up 3 from __file__ path: 'static parent path'       
+    up3_dir = dirname(dirname(dirname(dirname(realpath(__file__)))))
+    # insert path in sys.path
+    sys.path.append(up3_dir)
+    # import My Own Func
+    from static.include.MyFunc import *
+    from static.include.MyColors import *
+except Exception as ImportError:
+    FR_RED   = "\033[91m" 
+    NO_COLOR = "\033[00m"
+    print("print empty line") 
+    print(f"{FR_RED}IMPORT ERROR ==>{NO_COLOR} {ImportError} | {ImportError.__class__} | {ImportError.__doc__}")
 
-# include root path in sys.path
-ROOT_DIR = os.path.abspath(os.curdir)
-# check in what server is app
-if "iggWebNz" in ROOT_DIR:              # pythonanywhere  
-    ROOT_DIR = ROOT_DIR + "/mysite"
-else:                                   # working in localhost server
-    pass 
-sys.path.insert(1, ROOT_DIR)
-
-# import "My Own Funct" from root path
-from MyFunc import *
-
+"""
 # CONSTANTS FOR COLORS
 NO_COLOR = "\033[00m"
 FR_RED   = "\033[91m"
@@ -26,7 +32,7 @@ FR_GREEN = "\033[92m"
 FR_YELL  = "\033[93m"
 FR_BLUE  = "\033[94m"
 FR_MAG   = "\033[95m"
-
+"""
 # print 'lists-tuples' in matrix form
 def matrix_view(obj_l_t,n_cols):
   if 'list' in str(type(obj_l_t)) or 'tuple' in str(type(obj_l_t)):  # cambiar la pregunta
@@ -71,21 +77,26 @@ def mostrar(obj):
 
 if __name__ == "__main__":
 
-    #system('cls')
+    try:
+       	# get name of script
+        my_script = __file__.split('\\')
+        my_script_name = my_script[len(my_script)-1]
+        write_log_file("my_messages.txt","IN '" + my_script_name + "'")
+        print("print empty line")
+        print(f"{FR_GREEN}=== MAIN")
+        print("print empty line")
+        print(f"{FR_BLUE}=== Show Object Info")
+        print("print empty line")        
+        print(f"{FR_BLUE}Object: variable 'colors_str' = ['\\033[91m - Red' ; '\\033[92m - Green' ; '\\033[93m - Yellow' ; '\\033[94m - Blue' ; '\\033[95m - Magenta']")
+        colors_str=['\\033[91m - Red','\\033[92m - Green','\\033[93m - Yellow','\\033[94m - Blue','\\033[95m - Magenta']
+        print("print empty line")
+        mostrar(colors_str)            
+        print(f"{FR_GREEN}=== That's all for today")
 
-    print("print empty line")
-    print(f"{FR_GREEN}=== MAIN")
-    print("print empty line")
-    print(f"{FR_BLUE}=== Show Object Info")
-    print("print empty line")
-    
-    print(f"{FR_BLUE}Object: variable colors_str = ['\\033[91m - Red' ; '\\033[92m - Green' ; '\\033[93m - Yellow' ; '\\033[94m - Blue' ; '\\033[95m - Magenta']")
-
-    colors_str=['\\033[91m - Red','\\033[92m - Green','\\033[93m - Yellow','\\033[94m - Blue','\\033[95m - Magenta']
-    print("print empty line")
-    mostrar(colors_str)            
-
-    print(f"{FR_GREEN}=== That's all for today")
+    except Exception as Argument:
+        error_msg = "ERROR IN <" + my_script_name + ">. SEE server_messages.txt !"
+        write_log_file("my_messages.txt",error_msg)
+        write_traceback_info(Argument,traceback,my_script_name)        
 
     
 else:

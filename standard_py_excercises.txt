@@ -1,11 +1,5 @@
 
-"""  
-THIS SCRIPT EXECUTE HELP FUNCTION TO ANALYZE A CODE OBJECT
 
-"""
-# IMPORT SECTION
-
-# My Own Functions from include dir 
 try:   # Import My Own Functions from include dir 
     import sys, traceback     
     from os.path import dirname, realpath
@@ -26,11 +20,8 @@ except Exception as ImportError:
     print("print empty line") 
     print(f"{FR_RED}IMPORT ERROR ==>{NO_COLOR} {ImportError} | {ImportError.__class__} | {ImportError.__doc__}")
 
-#
-# ---------- MAIN ----------
-#
 
-if __name__ == "__main__":
+*******************************************************
 
     try:
         # get name of script
@@ -38,27 +29,10 @@ if __name__ == "__main__":
         my_script_name = my_script[len(my_script)-1]
         write_log_file("my_messages.txt","IN '" + my_script_name + "'")
 
-        print("print empty line")
-        print(frGREEN("=== MAIN ==="))
-        prBlue("=== help for object 'list'")
-        print("print empty line")
-
-        my_obj = [1,2,3,4,5]
-        print("my_obj = [1;2;3;4;5] ==> calling help_obj_method(my_obj) in MyFunc Module")
-        print("print empty line")
-        print("print empty line")
-        help_obj_method(my_obj)
-        print("print empty line") 
-        print("print empty line") 
-        print(f"{FR_BLUE}=== That's all for today ===")
-        print("print empty line")
 
     except Exception as Argument:
         error_msg = "ERROR IN <" + my_script_name + ">. SEE server_messages.txt !"
         write_log_file("my_messages.txt",error_msg)
         write_traceback_info(Argument,traceback,my_script_name)        
 
-else:
-    # something wrong
-    print(frRED("=== upsssssssss something is wrong ==="))
-    
+

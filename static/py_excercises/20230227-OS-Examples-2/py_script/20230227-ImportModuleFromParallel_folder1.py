@@ -25,8 +25,15 @@
 #
 #   Execute ImportModuleFromParallel_folder.py 
 #  
-import sys
-from os import system
+try:   # Import My Own Functions from include dir 
+    import sys, traceback     
+    from os.path import dirname, realpath
+except Exception as ImportError:
+    FR_RED   = "\033[91m" 
+    NO_COLOR = "\033[00m"
+    print("print empty line") 
+    print(f"{FR_RED}IMPORT ERROR ==>{NO_COLOR} {ImportError} | {ImportError.__class__} | {ImportError.__doc__}")
+
 
 #
 # ---------- COURSE EXCERCISE ----------
@@ -34,52 +41,65 @@ from os import system
 
 if __name__ == "__main__":
 
-    #system('cls')
-    print("print empty line")
-    print(f"=== MAIN ===")
-    #print(f"{FR_BLUE}=== MAIN ===")  -- NOTE: this command is not defined yet
-    print("print empty line")
+    try:
+        # get name of script
+        my_script = __file__.split('\\')
+        my_script_name = my_script[len(my_script)-1]
+        #write_log_file("my_messages.txt","IN '" + my_script_name + "'")
+        print("print empty line")
+        print(f"=== MAIN ===")
+        #print(f"{FR_BLUE}=== MAIN ===")  -- NOTE: this command is not defined yet
+        print("print empty line")
 
-    print(f"=== Using functions located in a parallel folder ===")
-    print("print empty line")
+        print(f"=== Using functions located in a parallel folder ===")
+        print("print empty line")
 
-    # printing folders in path without including de parallel folder with my functions --- default colors
-    init_path = sys.path
-    init_folders = []
-    for fold in init_path:
-        init_folders.append(fold)
-    
-    #print(f"type of var init_path:  {type(init_folders)} | values: {init_folders}")
-    print("---printing list of folders in path, without including colors of 'my functions', located in parallel folder")
-    for fold in init_folders:
-        print(f"\t{fold}")
-    print("print empty line")
+        # printing folders in path without including de parallel folder with my functions --- default colors
+        init_path = sys.path
+        init_folders = []
+        for fold in init_path:
+            init_folders.append(fold)
+        
+        #print(f"type of var init_path:  {type(init_folders)} | values: {init_folders}")
+        print("---printing list of folders in path, without including colors of 'my functions', located in parallel folder")
+        for fold in init_folders:
+            print(f"\t{fold}")
+        print("print empty line")
 
-    # Add the MyFunction folder to path 
-    # in my case ↓↓↓↓
-    sys.path.insert(1, 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\py_excercises\\20230227-OS-Examples-2\\MyFunctions')
-    # in your case, create a folder MyFunctions and copy path with double \\ like ↑↑↑↑
+        up2_dir = dirname(dirname(__file__))
+        print(f"up2_dir: {up2_dir}")
+        sys.path.append(up2_dir)
+        # Add the MyFunction folder to path 
+        # in my case ↓↓↓↓
+        # sys.path.append(up3_dir)
+        sys.path.insert(1, 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\py_excercises\\20230227-OS-Examples-2\\MyFunctions')
+        # in your case, create a folder MyFunctions and copy path with double \\ like ↑↑↑↑
 
-    # create a new list with sys.path updated
-    new_path = sys.path
+        # create a new list with sys.path updated
+        new_path = sys.path
 
-    # IMPORT MODULE FROM PARALLEL FOLDER MyFunctions
-    from MyColors import *
-    from MyFunc import *
+        # IMPORT MODULE FROM PARALLEL FOLDER MyFunctions
+        from MyColors import *
+        from MyFunc import *
 
-    #pause()                           # this function is in MyFunc
+        #pause()                           # this function is in MyFunc
 
-    print(f'{FR_BLUE}Original sys.path in BLUE')       # this function is in MyColors
-    #print(f"type of var init_path:  {type(init_folders)} | values: {init_folders}")
-    for fold in init_folders:
-        print(f"\t{FR_BLUE}{fold}")
-    print("print empty line")
+        print(f'{FR_BLUE}Original sys.path in BLUE')       # this function is in MyColors
+        #print(f"type of var init_path:  {type(init_folders)} | values: {init_folders}")
+        for fold in init_folders:
+            print(f"\t{FR_BLUE}{fold}")
+        print("print empty line")
 
-    print(f'{FR_GREEN}Updated sys.path in GREEN')
-    print(f'\t{FR_RED}NOTE that one new folder is included now:  MyFunctions')
-    for fold in new_path:
-        print(f"\t{FR_GREEN}{fold}")
-    print("print empty line")
+        print(f'{FR_GREEN}Updated sys.path in GREEN')
+        print(f'\t{FR_RED}NOTE that one new folder is included now:  MyFunctions')
+        for fold in new_path:
+            print(f"\t{FR_GREEN}{fold}")
+        print("print empty line")
 
-    print(f"{FR_BLUE}=== That's All ===\n")
-    print("print empty line")
+        print(f"{FR_BLUE}=== That's All ===\n")
+        print("print empty line")
+
+    except Exception as Argument:
+        error_msg = "ERROR IN <" + my_script_name + ">. SEE server_messages.txt !"
+        #write_log_file("my_messages.txt",error_msg)
+        #write_traceback_info(Argument,traceback,my_script_name)        

@@ -6,19 +6,25 @@ THIS SCRIPT IS FOR..................
 # IMPORT SECTION
 #
 
-import os, sys, platform
-
-# include root path in sys.path
-ROOT_DIR = os.path.abspath(os.curdir)
-# check in what server is app
-if "iggWebNz" in ROOT_DIR:              # pythonanywhere  
-    ROOT_DIR = ROOT_DIR + "/mysite"
-else:                                   # working in localhost server
-    pass 
-sys.path.insert(1, ROOT_DIR)
-
-# import "My Own Funct" from root path
-from MyFunc import *
+try:   # Import My Own Functions from include dir 
+    import os, sys, traceback, platform  
+    from os.path import dirname, realpath
+    # get parent up 2 from __file__ path: 'static path'   
+    up2_dir = dirname(dirname(dirname(realpath(__file__))))
+    # insert path in sys.path
+    sys.path.append(up2_dir)
+    # get parent up 3 from __file__ path: 'static parent path'       
+    up3_dir = dirname(dirname(dirname(dirname(realpath(__file__)))))
+    # insert path in sys.path
+    sys.path.append(up3_dir)
+    # import My Own Func
+    from static.include.MyFunc import *
+    from static.include.MyColors import *
+except Exception as ImportError:
+    FR_RED   = "\033[91m" 
+    NO_COLOR = "\033[00m"
+    print("print empty line") 
+    print(f"{FR_RED}IMPORT ERROR ==>{NO_COLOR} {ImportError} | {ImportError.__class__} | {ImportError.__doc__}")
 
 # CONSTANTS
 
@@ -28,50 +34,53 @@ from MyFunc import *
 
 if __name__ == "__main__":
 
-    #print(f"{Fore.RED}---------- main ----------{Style.RESET_ALL}")
-    print("print empty line")
-    print(f"{FR_GREEN}=== MAIN")
-    print("print empty line")
- 
-    # my code    
-    myPath = os.getcwd()
-    f = []
-    for (dirpath, dirnames, filenames) in os.walk(myPath):
-        f.extend(filenames)
-        break
-    print(f"{FR_GREEN}Path: {myPath}")
-    print("print empty line")
-    print(f"{FR_GREEN}FILES IN {myPath}: ")
-    print("print empty line")
-    matrix_view(f,3)
-    print("print empty line")
+    try:
+        # get name of script
+        my_script = __file__.split('\\')
+        my_script_name = my_script[len(my_script)-1]
+        write_log_file("my_messages.txt","IN '" + my_script_name + "'")
+        #print(f"{Fore.RED}---------- main ----------{Style.RESET_ALL}")
+        print("print empty line")
+        print(f"{FR_BLUE}=== MAIN")
+        print("print empty line")
+    
+        # my code    
+        myPath = os.getcwd()
+        f = []
+        for (dirpath, dirnames, filenames) in os.walk(myPath):
+            f.extend(filenames)
+            break
+        print(f"{FR_BLUE}Path: {myPath}")
+        print("print empty line")
+        print(f"{FR_BLUE}FILES IN {myPath}: ")
+        print("print empty line")
+        matrix_view(f,3)
+        print("print empty line")
 
-    parent = os.chdir('../')
-    parentPath = os.getcwd()
-    print(f"{FR_GREEN}parent path: {parentPath}")
-    f = []
-    d = []
-    for (dirpath, dirnames, filenames) in os.walk(parentPath):
-        f.extend(filenames)
-        d.extend(dirnames)
-        break
+        parent = os.chdir('../')
+        parentPath = os.getcwd()
+        print(f"{FR_GREEN}parent path: {parentPath}")
+        f = []
+        d = []
+        for (dirpath, dirnames, filenames) in os.walk(parentPath):
+            f.extend(filenames)
+            d.extend(dirnames)
+            break
 
-    print("print empty line")
-    print(f"{FR_GREEN}DIRS IN {parentPath}: ")
-    print("print empty line")
-    matrix_view(d,3)
-    print("print empty line")
-    print(f"{FR_GREEN}FILES IN {parentPath}: ")
-    print("print empty line")
-    matrix_view(f,3)
+        print("print empty line")
+        print(f"{FR_GREEN}DIRS IN {parentPath}: ")
+        print("print empty line")
+        matrix_view(d,3)
+        print("print empty line")
+        print(f"{FR_GREEN}FILES IN {parentPath}: ")
+        print("print empty line")
+        matrix_view(f,3)
+        print(f"----------------- That's All -----------------")
 
- 
-    print(f"----------------- That's All -----------------")
-
-    # Library methods info 
-    #library_methods(os)
-    #library_methods(platform)
-  
+    except Exception as Argument:
+        error_msg = "ERROR IN <" + my_script_name + ">. SEE server_messages.txt !"
+        write_log_file("my_messages.txt",error_msg)
+        write_traceback_info(Argument,traceback,my_script_name)        
 
 else:
     # something wrong
