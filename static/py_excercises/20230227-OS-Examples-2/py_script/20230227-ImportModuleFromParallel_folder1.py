@@ -25,6 +25,7 @@
 #
 #   Execute ImportModuleFromParallel_folder.py 
 #  
+
 try:   # Import My Own Functions from include dir 
     import sys, traceback     
     from os.path import dirname, realpath
@@ -65,10 +66,11 @@ if __name__ == "__main__":
         for fold in init_folders:
             print(f"\t{fold}")
         print("print empty line")
-
+        """
         up2_dir = dirname(dirname(__file__))
         print(f"up2_dir: {up2_dir}")
         sys.path.append(up2_dir)
+        """        
         # Add the MyFunction folder to path 
         # in my case ↓↓↓↓
         # sys.path.append(up3_dir)
@@ -81,8 +83,6 @@ if __name__ == "__main__":
         # IMPORT MODULE FROM PARALLEL FOLDER MyFunctions
         from MyColors import *
         from MyFunc import *
-
-        #pause()                           # this function is in MyFunc
 
         print(f'{FR_BLUE}Original sys.path in BLUE')       # this function is in MyColors
         #print(f"type of var init_path:  {type(init_folders)} | values: {init_folders}")
