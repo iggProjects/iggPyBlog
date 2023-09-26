@@ -15,17 +15,32 @@
 """
 
 # IMPORT SECTION
-from zipfile import ZipFile
-import os
-from os import system
-from os.path import basename, dirname
-from pathlib import Path
 
-# My OWN
+try:   # Import My Own Functions from include dir 
+    import os, sys, traceback     
+    from os.path import basename, dirname, realpath
+    from zipfile import ZipFile
+    from os import system
+    from pathlib import Path
+
+    # get parent up 2 from __file__ path: 'static path'   
+    up2_dir = dirname(dirname(dirname(realpath(__file__))))
+    # insert path in sys.path
+    sys.path.append(up2_dir)
+    # get parent up 3 from __file__ path: 'static parent path'       
+    up3_dir = dirname(dirname(dirname(dirname(realpath(__file__)))))
+    # insert path in sys.path
+    sys.path.append(up3_dir)
+    # import My Own Func
+    from static.include.MyFunc import *
+    from static.include.MyColors import *
+except Exception as ImportError:
+    FR_RED   = "\033[91m" 
+    NO_COLOR = "\033[00m"
+    print("print empty line") 
+    print(f"{FR_RED}IMPORT ERROR ==>{NO_COLOR} {ImportError} | {ImportError.__class__} | {ImportError.__doc__}")
 
 # CONSTANTS
-
-# Functions
 
 # Zip the files from given directory that matches the filter
 def zipFilesInDir(dirName, zipFileName, filter):
@@ -46,12 +61,12 @@ def zipFilesInDir(dirName, zipFileName, filter):
 
 if __name__ == "__main__":
 
-    system('cls')
     print("\n---------- MAIN ----------\n")
     
-    # Name of the Directory to be zipped
-    
-    dirPath = os.getcwd()
+    # Name of the Directory to be zipped    
+    dirPath = dirname(__file__)
+    print(f"dirPath: {dirPath}\nos.getcwd(): {os.getcwd()}")
+    #dirPath = os.getcwd()
     dirArray = dirPath.split('\\')
     dirName = dirArray[len(dirArray)-1]
     dirNameZip = dirName+'.zip'
@@ -76,29 +91,30 @@ if __name__ == "__main__":
         print(f"\t\tsrc_path:\n\t\t{src_path}\n")
 
         # Destiny file path
-        dst_path = "c:/iggPyBlog_ZipFiles"
+        # dst_path = "c:/iggPyBlog_ZipFiles"
         downloads_path = str(Path.home() / "Downloads")
         print(f"\t\tdownload path in client ---> {downloads_path}\n\n")
-        #dst_path = r"c:\\Users\Amatxo\Downloads" 
-
+        dst_path = r"c:\\Users\Amatxo\Downloads" 
+        """        
         if not os.path.exists(dst_path):
             os.mkdir(dst_path)
             print(f"\t\tDir {dst_path} created !!!")
-
+        """
         if not os.path.exists(downloads_path):
             os.mkdir(downloads_path)
             print(f"\t\tDir {downloads_path} created !!!")
 
-        shutil.copy(src_path, dst_path)        
+        #shutil.copy(src_path, dst_path)        
         shutil.copy(src_path, downloads_path)        
-        print(f"\t\tCopy Process\n\t\t{dirNameZip} Copied in folder {dst_path}\n")   
+        print(f"\t\tCopy Process\n\t\t{dirNameZip} Copied in folder {downloads_path}\n")   
+    
 
     else:
         print(f"UPSSSSSS............")
     
-    print(f"\n---------- That's all for today 👌 ----------\n")
+    print(f"\n{FR_GREEN}---------- That's all for today 👌 ----------{NO_COLOR}\n")
 
 else:
     # something wrong
-    print("\n---- upsssssssss something is wrong 😢😢  ----\n")
-    # 
+    print(frRED("\n---- upsssssssss something is wrong 😢😢  ----\n"))
+    # pause()

@@ -26,19 +26,19 @@ def Excercises():
         {      
             'id': 2, 
             'author': 'Igg',
-            'date_created': '13-02-2023',
+            'date_created': '30-04-2023',
             'require_input_prompt': 'n',
             'section': 'Prototype Script',
-            'title': 'Pause Function',
-            'fileDirPath': 'static/py_excercises/20230213-PrototypeScript-PauseFunc/0-prototype-pause.py',            
-            'fileDirPath1': 'static/py_excercises/20230213-PrototypeScript-PauseFunc/0-prototype-pause1.py',            
+            'title': 'Zip Function',
+            'fileDirPath': 'static/py_excercises/20230215-PrototypeScript-ZipFunc/0-prototype-ZipExample.py',            
+            'fileDirPath1': 'static/py_excercises/20230215-PrototypeScript-ZipFunc/0-prototype-ZipExample1.py',            
             
-            'homework': 'Use "pause() function" to ask what to do after.',
+            'homework': '',
 
-            'body': '\n\ndef pause():\n    userInput = input(f"{FR_RED}Press ENTER to continue, or CTRL-C to exit{NO_COLOR}\\n")',
+            'body': '',
 
-            'code_url':'../static/py_excercises/20230213-PrototypeScript-PauseFunc/0-prototype-pause.py',
-            'zip_url': '../static/py_excercises/20230213-PrototypeScript-PauseFunc/20230213-PrototypeScript-PauseFunc.zip',  
+            'code_url':'../static/py_excercises/20230215-PrototypeScript-ZipFunc/0-prototype-ZipExample.py',
+            'zip_url': '../static/py_excercises/20230215-PrototypeScript-ZipFunc/0-prototype-ZipExample.zip',  
             'img': '/img/icons8-consola-100.png'    
         },
  
