@@ -9,6 +9,10 @@ static/logFiles/*messages*
 z*permutFile*.*
 static/proj_enigmaGame_scripts/z*permutFile*.*
 
+# zip files
+*.zip
+static/py_excercises/20230215-PrototypeScript-ZipFunc/*.zip
+
 # files with the background result
 list*.txt
 list*.csv
