@@ -90,7 +90,7 @@ if __name__ == "__main__":
         #write_log_file("my_messages.txt","IN '" + my_script_name + "'")
         print("print empty line")
         print(f"=== MAIN ===")
-        #print(f"{FR_BLUE}=== MAIN ===")  -- NOTE: this command is not defined yet
+        #print(f"{FR_BLUE}=== MAIN ===")  # NOTE: try to print and note that you must have an error
         print("print empty line")
 
         print(f"=== Using functions located in a parallel folder ===")
@@ -102,7 +102,6 @@ if __name__ == "__main__":
         for fold in init_path:
             init_folders.append(fold)
         
-        #print(f"type of var init_path:  {type(init_folders)} | values: {init_folders}")
         print("---printing list of folders in path, without including colors of 'my functions', located in parallel folder")
         for fold in init_folders:
             print(f"\t{fold}")
@@ -119,17 +118,16 @@ if __name__ == "__main__":
         new_path = sys.path
 
         # IMPORT MODULE FROM PARALLEL FOLDER MyFunctions
-        from MyFunctions.MyColors import *
-        from MyFunctions.MyFunc import *
+        from MyFunctions.MyCol import *
+        from MyFunctions.MyFun import *
 
         print(f'{FR_BLUE}Original sys.path in BLUE')       # this function is in MyColors
-        #print(f"type of var init_path:  {type(init_folders)} | values: {init_folders}")
         for fold in init_folders:
             print(f"\t{FR_BLUE}{fold}")
         print("print empty line")
 
         print(f'{FR_GREEN}Updated sys.path in GREEN')
-        print(f'\t{FR_RED}NOTE that one new folder is included now:  MyFunctions')
+        print(f'\t{FR_RED}NOTE that two new folders are included now: <20230227-OS-Examples-2> & <MyFunctions>')
         for fold in new_path:
             print(f"\t{FR_GREEN}{fold}")
         print("print empty line")

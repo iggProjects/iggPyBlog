@@ -18,7 +18,7 @@
 
 import logging, datetime
 from os.path import dirname, realpath
-from MyColors import *
+from MyCol import *
 
 #
 # COLORS CONSTANTS
