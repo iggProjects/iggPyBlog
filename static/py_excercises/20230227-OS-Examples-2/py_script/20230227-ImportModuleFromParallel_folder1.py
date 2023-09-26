@@ -26,15 +26,56 @@
 #   Execute ImportModuleFromParallel_folder.py 
 #  
 
-try:   # Import My Own Functions from include dir 
-    import sys, traceback     
-    from os.path import dirname, realpath
-except Exception as ImportError:
-    FR_RED   = "\033[91m" 
-    NO_COLOR = "\033[00m"
-    print("print empty line") 
-    print(f"{FR_RED}IMPORT ERROR ==>{NO_COLOR} {ImportError} | {ImportError.__class__} | {ImportError.__doc__}")
+# IMPORT SECTION
+import sys, os, datetime, logging, traceback 
+from os.path import dirname
 
+# error handlng 
+
+static_path = dirname(dirname(dirname(dirname(__file__))))
+log_file_path = static_path + "/logFiles/server_messages.txt"
+logging.basicConfig(filename=log_file_path, 
+                encoding='utf-8', level=logging.DEBUG, format="%(asctime)-15s %(levelname)-8s %(funcName)s %(message)s")
+logging.captureWarnings(True)
+
+# function to write in logFile
+def write_log_file(logFile,msg):
+
+    try:
+        # path to log file
+        logFile_path = static_path + "/logFiles/" + logFile
+        # creating/opening a file
+        f = open(logFile_path, "a") 
+        # write in file        
+        f.write('%s | %s\n' % (datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S.%f')[:-3],msg))      
+        # close file
+        f.close()
+    except Exception as Argument:
+        print(f"Error {Argument}")
+        logging.exception(f"{Argument} | exception from 'write_log_file()' ")
+
+def write_traceback_info(Argum,TraceList,script): 
+               
+        traceback_formatted = TraceList.format_exc().replace('"','').replace(',',' | ')
+        traceback_lines = traceback_formatted.split('\n')
+        print("print empty line")        
+        print(f"====================== ERROR FOUND ======================")
+        print("print empty line")
+        for line in traceback_lines:
+            #if ('File' or 'line' or 'Module') in line:
+            if 'line' in line:
+                for field in line.split('|'):
+                   if 'line' in field:
+                      line_numb = field
+
+        print(f"FILE: <{script}>")
+        print("print empty line")
+        print(f"\tcode in{line_numb}:{traceback_lines[len(traceback_lines)-3]}")        
+        print(f"\t{Argum} | {Argum.__class__} | {Argum.__doc__}")
+        print("print empty line")
+
+        print(f"\t\tSEE 'server_messages.txt' file OR Contact Web Admin !")
+        logging.exception(f"{Argum} | exception from '0-prototype-colors.py()': ")
 
 #
 # ---------- COURSE EXCERCISE ----------
@@ -66,23 +107,20 @@ if __name__ == "__main__":
         for fold in init_folders:
             print(f"\t{fold}")
         print("print empty line")
-        """
-        up2_dir = dirname(dirname(__file__))
-        print(f"up2_dir: {up2_dir}")
-        sys.path.append(up2_dir)
-        """        
-        # Add the MyFunction folder to path 
-        # in my case ↓↓↓↓
-        # sys.path.append(up3_dir)
-        sys.path.insert(1, 'C:\\ML_Project\\NazarethCourse2023\\iggPyBlog\\static\\py_excercises\\20230227-OS-Examples-2\\MyFunctions')
-        # in your case, create a folder MyFunctions and copy path with double \\ like ↑↑↑↑
 
-        # create a new list with sys.path updated
+        # Add the '20230227-OS-Examples-2' folder to path                 
+        up2_dir = dirname(dirname(__file__))  # look for '20230227-OS-Examples-2' path        
+        sys.path.append(up2_dir)
+        # Add 'MyFunctions' path
+        myFunctions_path = up2_dir + '/MyFunctions'
+        sys.path.append(myFunctions_path) 
+
+        # create a new list with sys.path updated, to campare list of paths
         new_path = sys.path
 
         # IMPORT MODULE FROM PARALLEL FOLDER MyFunctions
-        from MyColors import *
-        from MyFunc import *
+        from MyFunctions.MyColors import *
+        from MyFunctions.MyFunc import *
 
         print(f'{FR_BLUE}Original sys.path in BLUE')       # this function is in MyColors
         #print(f"type of var init_path:  {type(init_folders)} | values: {init_folders}")
@@ -101,5 +139,5 @@ if __name__ == "__main__":
 
     except Exception as Argument:
         error_msg = "ERROR IN <" + my_script_name + ">. SEE server_messages.txt !"
-        #write_log_file("my_messages.txt",error_msg)
-        #write_traceback_info(Argument,traceback,my_script_name)        
+        write_log_file("my_messages.txt",error_msg)
+        write_traceback_info(Argument,traceback,my_script_name)        
