@@ -1,13 +1,12 @@
+
 """  
-THIS SCRIPT IS FOR..................
+    THIS SCRIPT IS FOR PRINTING WITH COLORS
 
 """
-#
 # IMPORT SECTION
-#
 
 try:   # Import My Own Functions from include dir 
-    import os, sys, traceback, math, platform
+    import sys, traceback     
     from os.path import dirname, realpath
     # get parent up 2 from __file__ path: 'static path'   
     up2_dir = dirname(dirname(dirname(realpath(__file__))))
@@ -23,54 +22,58 @@ try:   # Import My Own Functions from include dir
 except Exception as ImportError:
     FR_RED   = "\033[91m" 
     NO_COLOR = "\033[00m"
-    print("print empty line") 
+    print() 
     print(f"{FR_RED}IMPORT ERROR ==>{NO_COLOR} {ImportError} | {ImportError.__class__} | {ImportError.__doc__}")
 
 #
-# ---------- COURSE EXCERCISE ----------
+# ---------- MAIN ----------
 #
 
 if __name__ == "__main__":
-        
+
     try:
+
         # get name of script
         my_script = __file__.split('\\')
         my_script_name = my_script[len(my_script)-1]
         write_log_file("my_messages.txt","IN '" + my_script_name + "'")
+        print()
 
-        print(f"\n{FR_GREEN}---------- main ----------{NO_COLOR}\n")    
+        print(f"{FR_GREEN}---------- MAIN ----------{NO_COLOR}")
+        print()
+        pause()
 
-        # my code    
-        myPath = os.getcwd()
-        f = []
-        for (dirpath, dirnames, filenames) in os.walk(myPath):
-            f.extend(filenames)
-            break
-        print(f"{FR_GREEN}path -->{NO_COLOR} {myPath}\n")
-        matrix_view(f,3)
-        print(f"\n------------------------------------------------\n")
+        print(f"---------- using CONTANTS for colors ----------")
+        print()
+        
+        colors= [FR_RED,FR_GREEN,FR_YELL,FR_BLUE,FR_MAG]
+        colors_str=['\\033[91m - Red','\\033[92m - Green','\\033[93m - Yellow','\\033[94m - Blue','\\033[95m - Magenta']
+        
+        i=1/0
+        for color in colors:
+            color_str = color
+            msg=" ==> TESTING COLOR FUNCTION"
+            msg = msg.rjust(30)
+            #print("FR_RED value: " + colors_str[0])
+            print("\tPrint with ascii " + colors_str[i] + f":\t{color}{msg}") 
+            i+=1  
+        msg="print with default color:\t\t ==> TESTING COLOR FUNCTION"
+        print(f"\t{ms}")   
+        print()
 
-        parent = os.chdir('../')
-        parentPath = os.getcwd()
-        print(f"{FR_GREEN}parent path -->{NO_COLOR} {parentPath}\n")
-        f = []
-        for (dirpath, dirnames, filenames) in os.walk(parentPath):
-            f.extend(filenames)
-            break
-        matrix_view(f,3)
-        print(f"\n------------------------------------------------\n")
-
-        # Library methods info         
-        library_methods(os)        
-        library_methods(platform)
+        print(frGREEN(f"---------- using function prRed(msg) ----------"))         
+        msg="\tprint with function pfRed(msg) --> TESTING COLOR FUNCTION"
+        print()
+        prRed(msg)   
+        print()
+        
+        print(f"{FR_GREEN}---------- That's all for today ----------{NO_COLOR}")
 
     except Exception as Argument:
         error_msg = "ERROR IN <" + my_script_name + ">. SEE server_messages.txt !"
         write_log_file("my_messages.txt",error_msg)
         write_traceback_info(Argument,traceback,my_script_name)        
     
-
 else:
     # something wrong
-    print(f"\n{FR_RED}---- upsssssssss something is wrong 😢😢  ---{NO_COLOR}\n")
-    
+    print(frRED("---- upsssssssss something is wrong ----"))

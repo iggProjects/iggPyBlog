@@ -10,11 +10,11 @@ def Excercises():
             'date_created': '13-02-2023',
             'require_input_prompt': 'n',
             'section': 'Prototype Script',
-            'title': 'Colors Function',
+            'title': 'Use colors to print',
             'fileDirPath': 'static/py_excercises/20230213-PrototypeScript-colors/0-prototype-colors.py',
             'fileDirPath1': 'static/py_excercises/20230213-PrototypeScript-colors/0-prototype-colors1.py',
             
-            'homework': 'Use colors for print. Printing with style is a good practice. Go ahead with some ideas.',
+            'homework': 'Printing with style is a good practice. Go ahead with some ideas to do it with colors.',
             
             'body': 'Ascii format for colors works very well with the print function. Constants can be used, or specific functions can be created to print messages with the desired effects.\n\nSOME CONSTANTS FOR FOREGROUND COLORS\n\tNO_COLOR="\\033[00m"\tFR_RED="\\033[91m"\tFR_GREEN="\\033\[92m"\tFR_YELL="\\033\[93m"\tFR_BLUE="\\033\[94m"\n\nSIMPLE SYNTAX FOR PRINTING "------- MAIN -------" WHEN STARTING THE PRINTING OF RESULTS\n\tprint(f"\\n{FR_GREEN}------- MAIN -------{NO_COLOR}\\n"):\n\nAN EXAMPLE OF FUNCTION TO PRINT SOME MESSAGE:\n\tdef prRed(msg):\n\t\tprint(f"{FR_YELL} {} {NO_COLOR}".format(msg))\n\tprRed("TESTING COLOR FUNCTION")\n\nLink: https://xdevs.com/guide/color_serial/',
 
@@ -23,27 +23,9 @@ def Excercises():
             'img': '/img/icons8-consola-100.png'    
         },
        
-        {      
-            'id': 2, 
-            'author': 'Igg',
-            'date_created': '30-04-2023',
-            'require_input_prompt': 'n',
-            'section': 'Prototype Script',
-            'title': 'Zip Function',
-            'fileDirPath': 'static/py_excercises/20230215-PrototypeScript-ZipFunc/0-prototype-ZipExample.py',            
-            'fileDirPath1': 'static/py_excercises/20230215-PrototypeScript-ZipFunc/0-prototype-ZipExample1.py',            
-            
-            'homework': '',
-
-            'body': '',
-
-            'code_url':'../static/py_excercises/20230215-PrototypeScript-ZipFunc/0-prototype-ZipExample.py',
-            'zip_url': '../static/py_excercises/20230215-PrototypeScript-ZipFunc/0-prototype-ZipExample.zip',  
-            'img': '/img/icons8-consola-100.png'    
-        },
  
          {      
-            'id': 3, 
+            'id': 2, 
             'author': 'Igg',
             'date_created': '13-02-2023',
             'require_input_prompt': 'n',
@@ -62,12 +44,12 @@ def Excercises():
         },
 
          {      
-            'id': 4, 
+            'id': 3, 
             'author': 'Igg',
             'date_created': '13-02-2023',
             'require_input_prompt': 'n',
             'section': 'Prototype Script',
-            'title': 'Print Lists or Tuples in matrix form',
+            'title': 'Print in matrix form',
             'fileDirPath': 'static/py_excercises/20230213-PrototypeScript-MatrixView/0-prototype-matrix-view.py',            
             'fileDirPath1': 'static/py_excercises/20230213-PrototypeScript-MatrixView/0-prototype-matrix-view1.py',            
             
@@ -81,7 +63,7 @@ def Excercises():
         },        
          
         {      
-            'id': 5, 
+            'id': 4, 
             'author': 'Igg',
             'date_created': '13-02-2023',
             'require_input_prompt': 'n',
@@ -100,7 +82,7 @@ def Excercises():
         },        
 
         {      
-            'id': 6, 
+            'id': 5, 
             'author': 'Igg',
             'date_created': '13-02-2023',
             'require_input_prompt': 'n',
@@ -119,12 +101,12 @@ def Excercises():
         },
 
         {      
-            'id': 7, 
+            'id': 6, 
             'author': 'Igg',
             'date_created': '13-02-2023',
             'require_input_prompt': 'n',
             'section': 'Prototype Script',
-            'title': 'Know about related classes',
+            'title': 'Print related classes',
             'fileDirPath': 'static/py_excercises/20230213-PrototypeScript-RelatedClasses/0-prototype-related-classes.py',            
             'fileDirPath1': 'static/py_excercises/20230213-PrototypeScript-RelatedClasses/0-prototype-related-classes1.py',
             
@@ -138,12 +120,12 @@ def Excercises():
         },
 
         {      
-            'id': 8, 
+            'id': 7, 
             'author': 'Igg',
             'date_created': '13-02-2023',
             'require_input_prompt': 'n',
             'section': 'Prototype Script',
-            'title': 'Exception Hierarchy',
+            'title': 'Print Exception Hierarchy',
             'fileDirPath': 'static/py_excercises/20230218-PrototypeScript-Exception_Hierarchy/0-prototype-ExceptionHierarchy.py',            
             'fileDirPath1': 'static/py_excercises/20230218-PrototypeScript-Exception_Hierarchy/0-prototype-ExceptionHierarchy1.py',            
             
@@ -157,21 +139,40 @@ def Excercises():
         },
 
         {      
+            'id': 8, 
+            'author': 'Igg',
+            'date_created': '30-04-2023',
+            'require_input_prompt': 'n',
+            'section': 'Prototype Script',
+            'title': 'Upload the zip file of some dir',
+            'fileDirPath': 'static/py_excercises/20230215-PrototypeScript-ZipFunc/0-prototype-ZipExample.py',            
+            'fileDirPath1': 'static/py_excercises/20230215-PrototypeScript-ZipFunc/0-prototype-ZipExample1.py',            
+            
+            'homework': '',
+
+            'body': '',
+
+            'code_url':'../static/py_excercises/20230215-PrototypeScript-ZipFunc/0-prototype-ZipExample.py',
+            'zip_url': '../static/py_excercises/20230215-PrototypeScript-ZipFunc/0-prototype-ZipExample.zip',  
+            'img': '/img/icons8-consola-100.png'    
+        },
+
+        {      
             'id': 9, 
             'author': 'Igg',
             'date_created': '13-02-2023',
             'require_input_prompt': 'n',
             'section': 'Prototype Script',
-            'title': 'MyFunc.py imported by 0-prototype.py',
-            'fileDirPath': 'static/py_excercises/20230213-PrototypeScript/0-prototype.py',            
-            'fileDirPath1': 'static/py_excercises/20230213-PrototypeScript/0-prototype1.py',            
+            'title': 'Example of Try Exception when error occurs in <0-prototype-colors1.py>',
+            'fileDirPath': 'static/py_excercises/20230213-PrototypeScript-colors/0-prototype-colors1-error.py',            
+            'fileDirPath1': 'static/py_excercises/20230213-PrototypeScript-colors/0-prototype-colors1-error1.py',            
             
-            'homework': 'Download:\n\t\t1: 0-prototype.py;  2: MyFunc.py;  3: MyColors.py.\n',
+            'homework': '',
 
-            'body': 'OWN FUNCTIONS FOR:\n\t- see objects types, methods and attributes,\n\t- view objects info in matrix form\n\t- time functions like pause\n\t- printing with colors options\n\t- decisions functions\n\t -use HELP native function\n\t- write in log files, like "comments log", "errors log", "sql msg"\n\t- OS most used functions\n\t- MODULES info',          
+            'body': '',          
 
-            'code_url':'../static/py_excercises/20230213-PrototypeScript/0-prototype.py',
-            'zip_url': '../static/py_excercises/20230213-PrototypeScript/20230213-PrototypeScript.zip',
+            'code_url':'../static/py_excercises/20230213-PrototypeScript-colors/0-prototype-colors1-error.py',
+            'zip_url': '../static/py_excercises/20230213-PrototypeScript-colors/20230213-PrototypeScript.zip',
             'img': '/img/icons8-consola-100.png'    
         },
 
@@ -216,44 +217,6 @@ def Excercises():
         {      
             'id': 12, 
             'author': 'Igg',
-            'date_created': '21-02-2023',
-            'require_input_prompt': 'n',
-            'section': 'String methods',
-            'title': 'Teacher example',
-            'fileDirPath': 'static/py_excercises/20230221-strings/20230221-strings.py',            
-            'fileDirPath1': 'static/py_excercises/20230221-strings/20230221-strings1.py',            
-            
-            'homework': 'NEXT WEEK',
-
-            'body': '====== NEXT WEEK ======',          
-
-            'code_url':'../static/py_excercises/20230221-strings/20230221-strings.py',
-            'zip_url': '../static/py_excercises/20230221-strings/20230221-strings.zip',
-            'img': '/img/icons8-consola-100.png'    
-        },
-
-        {      
-            'id': 13, 
-            'author': 'Igg',
-            'date_created': '22-02-2023',
-            'require_input_prompt': 'n',
-            'section': 'String methods',
-            'title': 'String task page 33',
-            'fileDirPath': 'static/py_excercises/20230222-strings-Page33/20230222-page-33.py',            
-            'fileDirPath1': 'static/py_excercises/20230222-strings-Page33/20230222-page-331.py',            
-            
-            'homework': 'NEXT WEEK',
-
-            'body': '====== NEXT WEEK ======',          
-
-            'code_url':'../static/py_excercises/20230222-strings-Page33/20230222-page-33.py',
-            'zip_url': '../static/py_excercises/20230222-strings-Page33/20230222-strings-Page33.zip',
-            'img': '/img/icons8-consola-100.png'    
-        },
-
-        {      
-            'id': 14, 
-            'author': 'Igg',
             'date_created': '23-02-2023',
             'require_input_prompt': 'n',
             'section': 'Encrypt a msg',
@@ -271,7 +234,7 @@ def Excercises():
         },
 
         {      
-            'id': 15, 
+            'id': 13, 
             'author': 'Igg',
             'date_created': '23-02-2023',
             'require_input_prompt': 'n',
@@ -290,7 +253,7 @@ def Excercises():
         },
 
         {      
-            'id': 16, 
+            'id': 14, 
             'author': 'Igg',
             'date_created': '27-02-2023',
             'require_input_prompt': 'n',
@@ -309,7 +272,7 @@ def Excercises():
         },
 
         {      
-            'id': 17, 
+            'id': 15, 
             'author': 'Igg',
             'date_created': '27-02-2023',
             'require_input_prompt': 'n',
@@ -328,27 +291,7 @@ def Excercises():
         },
 
         {      
-            'id': 18, 
-            'author': 'Igg',
-            'date_created': '27-02-2023',
-            'require_input_prompt': 'n',
-            'section': 'OS module',
-            'title': 'Page 43-47',
-            'fileDirPath': 'static/py_excercises/20230227-page-43to47/20230227_Page43to47.py',            
-            'fileDirPath1': 'static/py_excercises/20230227-page-43to47/20230227_Page43to471.py',            
-            
-            'homework': 'Working with paths, folders, files, .....',
-
-            'body': '===== NEXT WEEK =====',          
-
-            'code_url':'../static/py_excercises/20230227-page-43to47/20230227_Page43to47.py',
-            'zip_url': '../static/py_excercises/20230227-page-43to44/20230227_Page43to47.zip',
-            'img': '/img/icons8-consola-100.png'    
-        },
-        
-
-        {      
-            'id': 19, 
+            'id': 16, 
             'author': 'Igg',
             'date_created': '01-03-2023',
             'require_input_prompt': 'n',
@@ -367,7 +310,7 @@ def Excercises():
         },
 
         {      
-            'id': 20, 
+            'id': 17, 
             'author': 'Igg',
             'date_created': '01-03-2023',
             'require_input_prompt': 'n',
@@ -386,7 +329,7 @@ def Excercises():
         },
 
         {      
-            'id': 21, 
+            'id': 18, 
             'author': 'Igg',
             'date_created': '08-03-2023',
             'require_input_prompt': 'n',
@@ -403,6 +346,65 @@ def Excercises():
             'zip_url': '../static/py_excercises/20230308-classes-nominas/20230308-classes-nominas.zip',
             'img': '/img/icons8-consola-100.png'    
         },
+
+        {      
+            'id': 19, 
+            'author': 'Igg',
+            'date_created': '21-02-2023',
+            'require_input_prompt': 'n',
+            'section': 'String methods',
+            'title': '',
+            'fileDirPath': '',            
+            'fileDirPath1': '',            
+            
+            'homework': '====== NEXT WEEK ======',
+
+            'body': '',          
+
+            'code_url':'../static/py_excercises/20230221-strings/20230221-strings.py',
+            'zip_url': '',
+            'img': '/img/icons8-consola-100.png'    
+        },
+
+        {      
+            'id': 20, 
+            'author': 'Igg',
+            'date_created': '22-02-2023',
+            'require_input_prompt': 'n',
+            'section': 'String methods',
+            'title': '',
+            'fileDirPath': '',            
+            'fileDirPath1': '',            
+            
+            'homework': '====== NEXT WEEK ======',
+
+            'body': '',          
+
+            'code_url':'../static/py_excercises/20230222-strings-Page33/20230222-page-33.py',
+            'zip_url': '../static/py_excercises/20230222-strings-Page33/20230222-strings-Page33.zip',
+            'img': '/img/icons8-consola-100.png'    
+        },
+
+        {      
+            'id': 21, 
+            'author': 'Igg',
+            'date_created': '27-02-2023',
+            'require_input_prompt': 'n',
+            'section': 'OS module',
+            'title': 'Page 43-47',
+            'fileDirPath': 'static/py_excercises/20230227-page-43to47/20230227_Page43to47.py',            
+            'fileDirPath1': 'static/py_excercises/20230227-page-43to47/20230227_Page43to471.py',            
+            
+            'homework': '====== NEXT WEEK ======',
+
+            'body': '',          
+
+            'code_url':'../static/py_excercises/20230227-page-43to47/20230227_Page43to47.py',
+            'zip_url': '../static/py_excercises/20230227-page-43to44/20230227_Page43to47.zip',
+            'img': '/img/icons8-consola-100.png'    
+        },
+
+
 
     ]
 

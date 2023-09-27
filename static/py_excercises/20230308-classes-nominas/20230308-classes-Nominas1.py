@@ -7,41 +7,31 @@
 # IMPORT SECTION
 #
 
-import os, sys
-
-# cleaning shell with system('cls')
-from os import system 
-
-# include root path in sys.path
-ROOT_DIR = os.path.abspath(os.curdir)
-# check in what server is app
-if "iggWebNz" in ROOT_DIR:              # pythonanywhere  
-    ROOT_DIR = ROOT_DIR + "/mysite"
-else:                                   # working in localhost server
-    pass 
-sys.path.insert(1, ROOT_DIR)
-
-# import "My Own Funct" from root path
-from MyFunc import *
+try:   # Import My Own Functions from include dir 
+    import os, sys, traceback, platform 
+    from os.path import dirname, realpath
+    # get parent up 2 from __file__ path: 'static path'   
+    up2_dir = dirname(dirname(dirname(realpath(__file__))))
+    # insert path in sys.path
+    sys.path.append(up2_dir)
+    # get parent up 3 from __file__ path: 'static parent path'       
+    up3_dir = dirname(dirname(dirname(dirname(realpath(__file__)))))
+    # insert path in sys.path
+    sys.path.append(up3_dir)
+    # import My Own Func
+    from static.include.MyFunc import *
+    from static.include.MyColors import *
+except Exception as ImportError:
+    FR_RED   = "\033[91m" 
+    NO_COLOR = "\033[00m"
+    print("print empty line") 
+    print(f"{FR_RED}IMPORT ERROR ==>{NO_COLOR} {ImportError} | {ImportError.__class__} | {ImportError.__doc__}")
 
 
 # CONSTANTS
 
-# my generic functions
-from MyFunc import *
-
 # classes for this excercise
 from Classes_Nomina import *
-
-# function
-# checking related classes in a composite class 
-def relatedClasses(clas):   
-
-    print(f"----- analysis of {FR_BLUE} \"classes related\"{NO_COLOR} with class \"{FR_GREEN}{clas}{NO_COLOR}\" -----\n")
-    for clas_rel in clas.__mro__:
-        print(f"{FR_GREEN}\trelated clas --> {clas_rel}\n")
-    print(f"{NO_COLOR}----- end analysis -----\n")    
-
 
 #
 # ---------- COURSE EXCERCISE ----------
@@ -81,48 +71,57 @@ class Comercial(SalarioEmpleado):
         return fijo + self.commision_ventas
 
 if __name__ == "__main__":
-    
-    print("print empty line")
-    print(f"{FR_BLUE}===== MAIN =====")  
-    print("print empty line")  
 
-    # ------------------- Nominas excercise ------------------
+    try:
+        my_script = __file__.split('\\')
+        my_script_name = my_script[len(my_script)-1]
+        write_log_file("my_messages.txt","IN '" + my_script_name + "'")
 
-    Empleados_empresa = []
-    Empleados_empresa.append(SalarioEmpleado(1, 'Inaki','1959','Errenteria','programador html',1500))
-    Empleados_empresa.append(SalarioEmpleado(2, 'Xabier','1990','Donostia','programador java',1700))
-    Empleados_empresa.append(SalarioEmpleado(3, 'Pedro', '1965','Donosita','programador python',2000))  
+        print("print empty line")
+        print(f"{FR_BLUE}===== MAIN =====")  
+        print("print empty line")  
 
-    Comerciales_empresa = []
-    Comerciales_empresa.append(Comercial(4, 'Che','1980','Bilbo','ventas empresas grandes',2500, 250,))
-    Comerciales_empresa.append(Comercial(5, 'Oihana','1985','New York','staff marketing',3500, 500))
+        # ------------------- Nominas excercise ------------------
 
-    print(f'\t{FR_BLUE}======= Calculando Nomina General ========')
-    print("print empty line")
+        Empleados_empresa = []
+        Empleados_empresa.append(SalarioEmpleado(1, 'Inaki','1959','Errenteria','programador html',1500))
+        Empleados_empresa.append(SalarioEmpleado(2, 'Xabier','1990','Donostia','programador java',1700))
+        Empleados_empresa.append(SalarioEmpleado(3, 'Pedro', '1965','Donosita','programador python',2000))  
 
-    corrida_nomina = SistemaNominas()    
+        Comerciales_empresa = []
+        Comerciales_empresa.append(Comercial(4, 'Che','1980','Bilbo','ventas empresas grandes',2500, 250,))
+        Comerciales_empresa.append(Comercial(5, 'Oihana','1985','New York','staff marketing',3500, 500))
 
-    print(f"{FR_BLUE}\t\t=== Grupo Oficinas ===")
-    corrida_nomina.calculo_nomina(Empleados_empresa)
-    print("print empty line")
-    print(f"{FR_BLUE}\t\t=== Grupo Comerciales ===")
-    corrida_nomina.calculo_nomina(Comerciales_empresa)
+        print(f'\t{FR_BLUE}======= Calculando Nomina General ========')
+        print("print empty line")
 
-    print("print empty line")
-    print(f"\t{FR_BLUE}======= Fin Corrida Nomina Empresa =======")   
-    
-    print("print empty line")
-    
-    # relatedClasses(Comercial)
-    print(f"\t{FR_BLUE}=== Analysis of related classes for {Comercial} ===")
-    
-    for clas_rel in Comercial.__mro__:
-        print(f"{FR_GREEN}\t\trelated clas --> {clas_rel}\n")
-    print("print empty line")
+        corrida_nomina = SistemaNominas()    
 
-    print(f"{FR_BLUE}===== That's All =====")
-    print("print empty line")    
+        print(f"{FR_BLUE}\t\t=== Grupo Oficinas ===")
+        corrida_nomina.calculo_nomina(Empleados_empresa)
+        print("print empty line")
+        print(f"{FR_BLUE}\t\t=== Grupo Comerciales ===")
+        corrida_nomina.calculo_nomina(Comerciales_empresa)
 
+        print("print empty line")
+        print(f"\t{FR_BLUE}======= Fin Corrida Nomina Empresa =======")   
+        
+        print("print empty line")
+        
+        # relatedClasses(Comercial)
+        print(f"\t{FR_BLUE}=== Analysis of related classes for {Comercial} ===")
+        
+        for clas_rel in Comercial.__mro__:
+            print(f"{FR_GREEN}\t\trelated clas --> {clas_rel}\n")
+        print("print empty line")
+
+        print(f"{FR_BLUE}===== That's All =====")
+        print("print empty line")    
+
+    except Exception as Argument:
+        error_msg = "ERROR IN <" + my_script_name + ">. SEE server_messages.txt !"
+        write_log_file("my_messages.txt",error_msg)
+        write_traceback_info(Argument,traceback,my_script_name)        
 
 else:
     # something wrong

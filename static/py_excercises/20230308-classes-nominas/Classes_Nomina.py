@@ -24,8 +24,6 @@
 from os import system 
 
 # my generic functions
-from MyFunc import *
-#from MyColors import *
 
 # CONSTANTS
 NO_COLOR = "\033[00m"
