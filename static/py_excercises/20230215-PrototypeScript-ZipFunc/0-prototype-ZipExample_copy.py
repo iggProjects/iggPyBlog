@@ -11,6 +11,8 @@
             from pathlib import Path
             downloads_path = str(Path.home() / "Downloads")
 
+    https://stackoverflow.com/questions/7518067/python-ioerror-errno-13-permission-denied-when-im-copying-file    
+
 
 """
 
@@ -151,7 +153,7 @@ if __name__ == "__main__":
             print(f"\t\tDir {downloads_path} created !!!")
 
         #shutil.copy(src_path, dst_path)        
-        #shutil.copy(src_path, downloads_path)        
+        shutil.copyfile(src_path, downloads_path)        
         print(f"\t\tCopy Process\n\t\t{dirNameZip} Copied in folder {downloads_path}\n")   
     
 
