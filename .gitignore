@@ -17,6 +17,9 @@ static/py_excercises/20230215-PrototypeScript-ZipFunc/*.zip
 list*.txt
 list*.csv
 
+# txt files
+*.txt
+
 # Build and Release Folders
 bin-debug/
 bin-release/
