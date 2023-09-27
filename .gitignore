@@ -5,6 +5,10 @@ igg_venv/
 *messages*
 static/logFiles/*messages*
 
+# z-docs-folder
+z-docs-folder/
+
+
 # text permutations files
 z*permutFile*.*
 static/proj_enigmaGame_scripts/z*permutFile*.*
