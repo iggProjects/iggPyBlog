@@ -64,7 +64,6 @@ def zipFilesInList(paths_list, zipFileName, filter):
             if isdir(path_name):       
                 # Iterate over all the files in directory
                 for folderName, subfolders, filenames in os.walk(path_name):
-                #for folderName, subfolders, filenames in os.walk(paths_list[0]):
                     for filename in filenames:
                         if filter(filename):
                             # create complete filepath of file in directory
@@ -73,7 +72,9 @@ def zipFilesInList(paths_list, zipFileName, filter):
                             zipObj.write(filePath, basename(filePath))
                             print(f"filename added: {filename}")
             elif isfile(path_name):
-                print(f"\tpath: {path_name}")
+                print(f"file: {path_name}")
+                zipObj.write(path_name, basename(path_name))
+
 
     print()
 
