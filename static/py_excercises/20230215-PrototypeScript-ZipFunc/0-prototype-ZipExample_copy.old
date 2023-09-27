@@ -17,7 +17,7 @@
 # IMPORT SECTION
 try:   # Import My Own Functions from include dir 
     import os, sys, traceback     
-    from os.path import basename, dirname, realpath
+    from os.path import basename, dirname, realpath, isdir, isfile
     from zipfile import ZipFile
     from os import system
     from pathlib import Path
@@ -43,18 +43,41 @@ except Exception as ImportError:
 
 # Zip the files from given directory that matches the filter
 def zipFilesInDir(dirName, zipFileName, filter):
-    # create a ZipFile object
-    with ZipFile(zipFileName, 'w') as zipObj:
-        # Iterate over all the files in directory
-        for folderName, subfolders, filenames in os.walk(dirName):
-            for filename in filenames:
-                if filter(filename):
-                    # create complete filepath of file in directory
-                    filePath = os.path.join(folderName, filename)
-                    # Add file to zip
-                    zipObj.write(filePath, basename(filePath))
-                    print(f"filename added: {filename}")
+   # create a ZipFile object
+   with ZipFile(zipFileName, 'w') as zipObj:
+       # Iterate over all the files in directory
+       for folderName, subfolders, filenames in os.walk(dirName):
+           for filename in filenames:
+               if filter(filename):
+                   # create complete filepath of file in directory
+                   filePath = os.path.join(folderName, filename)
+                   # Add file to zip
+                   zipObj.write(filePath, basename(filePath))
+
+# Zip the files from given directory that matches the filter
+def zipFilesInList(list_paths, zipFileName, filter):
+   print(f"Adding files to zip")
+   # create a ZipFile object
+   with ZipFile(zipFileName, 'w') as zipObj:
+       
+    for path_name in list_paths:
+        if isdir(path_name):
+            # Iterate over all the files in directory
+            for folderName, subfolders, filenames in os.walk(path_name):
+                for filename in filenames:
+                    if filter(filename):
+                        # create complete filepath of file in directory
+                        filePath = os.path.join(folderName, filename)
+                        # Add file to zip
+                        zipObj.write(filePath, basename(filePath))
+                        print(f"\tfilename added: {filename}")
+            print()
+
+        elif isfile(path_name):
+            print(f"\tpath: {path_name}")
+
     print()
+
 
 #
 # ---------- MAIN ----------
@@ -65,39 +88,53 @@ if __name__ == "__main__":
     system('cls')
     print("\n---------- MAIN ----------\n")
     pause()
-    # Name of the Directory to be zipped
-    
+    # Name of the Directory to be zipped    
     dirPath = dirname(__file__)
     os.chdir(dirPath)
     dirPath = os.getcwd()
+    list_paths = []
+    list_paths.append(dirPath)
     #name of zip file
-    dirArray = dirPath.split('\\')    
+    dirArray = dirPath.split('\\')
     dirName = dirArray[len(dirArray)-1]
     dirNameZip = dirName+'.zip'
-    print(f"\tdirPath: {dirPath}\n\tdirName: {dirName}\n")   
+    
+    # paths to MyColor.py & MyFunc.py
+    print(f"\tdirPath: {dirPath}\n\tdirName: {dirName}\n\tlist paths: {list_paths}\n")
+    static_path = dirname(dirname(dirname(__file__)))    
+    os.chdir(static_path)
+    static_path = os.getcwd()
+    print(f"static_path: {static_path}")
+    print()
+    MyColors_path = static_path + '\include\MyColors.py'
+    list_paths.append(MyColors_path)  
+    MyFunc_path = static_path + '\include\MyFunc.py'
+    list_paths.append(MyFunc_path)  
 
     # delete if exists  
     if os.path.exists(dirNameZip):
         os.remove(dirNameZip)
         print(f"\told {dirNameZip} deleted\n")    
 
-    print(f"{FR_BLUE}*** Creating a zip archive of only .py files in\n{dirPath} ***{NO_COLOR}\n")
-    zipFilesInDir(dirPath, dirNameZip, lambda name : 'py' in name)
+    print(f"{FR_BLUE}*** Creating a zip archive of only .py files\npaths: {list_paths} ***{NO_COLOR}\n")
+    zipFilesInList(list_paths, dirNameZip, lambda name : 'py' in name)
+    #zipFilesInList(dirPath, dirNameZip, lambda name : 'py' in name)
 
     if os.path.exists(dirNameZip):
 
-        print(f"\t\t{dirNameZip} succesfully created !\n")
+        print(f"{dirNameZip} succesfully created !\n")
 
         # Copy file to folder in PC
         import shutil
 
         # source file path
-        src_path = dirPath + '\\' + dirNameZip
-        print(f"\t\tsrc_path:\n\t\t{src_path}\n")
+        src_path_file = dirPath + '\\' + dirNameZip
+        print(f"\t\tsrc_path:\n\t\t{src_path_file}\n")
 
         # Destiny file path
-        # dst_path = "c:/iggPyBlog_ZipFiles"
+        # dst_path = dirPath
         downloads_path = str(Path.home() / "Downloads")
+        #print(f"\t\tdownload path in client ---> {dst_path}\n\n")
         print(f"\t\tdownload path in client ---> {downloads_path}\n\n")
         dst_path = r"c:\\Users\Amatxo\Downloads" 
 
@@ -110,9 +147,10 @@ if __name__ == "__main__":
         if not os.path.exists(downloads_path):
             os.mkdir(downloads_path)
             print(f"\t\tDir {downloads_path} created !!!")
-
-        #shutil.copy(src_path, dst_path)        
-        #shutil.copy(src_path, downloads_path)        
+        
+        #shutil.copy(src_path_file, dst_path)        
+        #shutil.copy(src_path_file, downloads_path)
+        
         print(f"\t\tCopy Process\n\t\t{dirNameZip} Copied in folder {downloads_path}\n")   
     
 

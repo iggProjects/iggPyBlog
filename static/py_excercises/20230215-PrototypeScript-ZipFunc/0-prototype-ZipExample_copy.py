@@ -17,7 +17,7 @@
 # IMPORT SECTION
 try:   # Import My Own Functions from include dir 
     import os, sys, traceback     
-    from os.path import basename, dirname, realpath
+    from os.path import basename, dirname, isdir, isfile, realpath
     from zipfile import ZipFile
     from os import system
     from pathlib import Path
@@ -56,6 +56,27 @@ def zipFilesInDir(dirName, zipFileName, filter):
                     print(f"filename added: {filename}")
     print()
 
+# Zip the files from given directory that matches the filter
+def zipFilesInList(paths_list, zipFileName, filter):
+    # create a ZipFile object
+    with ZipFile(zipFileName, 'w') as zipObj:
+        for path_name in paths_list: 
+            if isdir(path_name):       
+                # Iterate over all the files in directory
+                for folderName, subfolders, filenames in os.walk(path_name):
+                #for folderName, subfolders, filenames in os.walk(paths_list[0]):
+                    for filename in filenames:
+                        if filter(filename):
+                            # create complete filepath of file in directory
+                            filePath = os.path.join(folderName, filename)
+                            # Add file to zip
+                            zipObj.write(filePath, basename(filePath))
+                            print(f"filename added: {filename}")
+            elif isfile(path_name):
+                print(f"\tpath: {path_name}")
+
+    print()
+
 #
 # ---------- MAIN ----------
 #
@@ -65,16 +86,32 @@ if __name__ == "__main__":
     system('cls')
     print("\n---------- MAIN ----------\n")
     pause()
-    # Name of the Directory to be zipped
-    
+    # Name of the Directory to be added to list_paths
     dirPath = dirname(__file__)
     os.chdir(dirPath)
     dirPath = os.getcwd()
+    list_paths = []
+    list_paths.append(dirPath)
     #name of zip file
     dirArray = dirPath.split('\\')    
     dirName = dirArray[len(dirArray)-1]
     dirNameZip = dirName+'.zip'
-    print(f"\tdirPath: {dirPath}\n\tdirName: {dirName}\n")   
+    # paths to MyColor.py & MyFunc.py
+    #print(f"\tdirPath: {dirPath}\n\tdirName: {dirName}\n\tlist paths: {list_paths}\n")
+    static_path = dirname(dirname(dirname(__file__))) 
+    print(f"static_path: {static_path}")
+    print()
+    MyColors_path = static_path + '\include\MyColors.py'
+    list_paths.append(MyColors_path)  
+    MyFunc_path = static_path + '\include\MyFunc.py'
+    list_paths.append(MyFunc_path)      
+    
+    for path in list_paths:
+        print(f"\t{path}")
+    print()    
+
+    print(f"\tdirPath: {dirPath}")   
+    print(f"\tdirName: {dirName}\n")   
 
     # delete if exists  
     if os.path.exists(dirNameZip):
@@ -82,7 +119,8 @@ if __name__ == "__main__":
         print(f"\told {dirNameZip} deleted\n")    
 
     print(f"{FR_BLUE}*** Creating a zip archive of only .py files in\n{dirPath} ***{NO_COLOR}\n")
-    zipFilesInDir(dirPath, dirNameZip, lambda name : 'py' in name)
+    zipFilesInList(list_paths, dirNameZip, lambda name : 'py' in name)
+    #zipFilesInDir(dirPath, dirNameZip, lambda name : 'py' in name)
 
     if os.path.exists(dirNameZip):
 

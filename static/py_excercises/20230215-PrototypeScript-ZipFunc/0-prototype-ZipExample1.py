@@ -64,9 +64,9 @@ if __name__ == "__main__":
     print("\n---------- MAIN ----------\n")
     
     # Name of the Directory to be zipped    
-    dirPath = dirname(__file__)
-    print(f"dirPath: {dirPath}\nos.getcwd(): {os.getcwd()}")
+    dirPath = dirname(__file__)    
     #dirPath = os.getcwd()
+    print(f"dirPath: {dirPath}\nos.getcwd(): {os.getcwd()}")
     dirArray = dirPath.split('\\')
     dirName = dirArray[len(dirArray)-1]
     dirNameZip = dirName+'.zip'
@@ -80,6 +80,7 @@ if __name__ == "__main__":
     print(f"\t*** Creating a zip archive of only .py files in {dirPath} ***\n")
     zipFilesInDir(dirPath, dirNameZip, lambda name : 'py' in name)
 
+    """
     if os.path.exists(dirNameZip):
         print(f"\t\t{dirNameZip} succesfully created !\n")
 
@@ -95,22 +96,18 @@ if __name__ == "__main__":
         downloads_path = str(Path.home() / "Downloads")
         print(f"\t\tdownload path in client ---> {downloads_path}\n\n")
         dst_path = r"c:\\Users\Amatxo\Downloads" 
-        """        
-        if not os.path.exists(dst_path):
-            os.mkdir(dst_path)
-            print(f"\t\tDir {dst_path} created !!!")
-        """
         if not os.path.exists(downloads_path):
             os.mkdir(downloads_path)
             print(f"\t\tDir {downloads_path} created !!!")
 
         #shutil.copy(src_path, dst_path)        
         shutil.copy(src_path, downloads_path)        
-        print(f"\t\tCopy Process\n\t\t{dirNameZip} Copied in folder {downloads_path}\n")   
-    
+        print(f"\t\tCopy Process\n\t\t{dirNameZip} Copied in folder {downloads_path}\n") 
+          
 
     else:
         print(f"UPSSSSSS............")
+    """
     
     print(f"\n{FR_GREEN}---------- That's all for today 👌 ----------{NO_COLOR}\n")
 
