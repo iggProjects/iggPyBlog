@@ -18,7 +18,7 @@
 
 # to write in log files
 import os, datetime
-from os.path import basename ,dirname
+from os.path import basename ,dirname, isdir, isfile
 from zipfile import ZipFile
 
 # import logging configuration
@@ -334,21 +334,42 @@ def classtree(cls, indent=0):
     print('.' * indent, cls.__name__)
     for subcls in cls.__subclasses__():
         classtree(subcls, indent + 3)
-"""
+
 # Zip the files from given directory that matches the filter
 def zipFilesInDir(dirName, zipFileName, filter):
-   # create a ZipFile object
-   with ZipFile(zipFileName, 'w') as zipObj:
-       # Iterate over all the files in directory
-       for folderName, subfolders, filenames in os.walk(dirName):
-           for filename in filenames:
-               if filter(filename):
-                   # create complete filepath of file in directory
-                   filePath = os.path.join(folderName, filename)
-                   # Add file to zip
-                   zipObj.write(filePath, basename(filePath))
+    # create a ZipFile object
+    with ZipFile(zipFileName, 'w') as zipObj:
+        # Iterate over all the files in directory
+        for folderName, subfolders, filenames in os.walk(dirName):
+            for filename in filenames:
+                if filter(filename):
+                    # create complete filepath of file in directory
+                    filePath = os.path.join(folderName, filename)
+                    # Add file to zip
+                    zipObj.write(filePath, basename(filePath))
+                    print(f"file added: {filename}")
+    print()
 
-"""
+# Zip the files from given directory that matches the filter
+def zipFilesInList(paths_list, zipFileName, filter):
+    # create a ZipFile object
+    with ZipFile(zipFileName, 'w') as zipObj:
+        for path_name in paths_list: 
+            if isdir(path_name):       
+                # Iterate over all the files in directory
+                for folderName, subfolders, filenames in os.walk(path_name):
+                    for filename in filenames:
+                        if filter(filename):
+                            # create complete filepath of file in directory
+                            filePath = os.path.join(folderName, filename)
+                            # Add file to zip
+                            zipObj.write(filePath, basename(filePath))
+                            print(f"file added: {filename}")
+            elif isfile(path_name):
+                print(f"file added: {path_name}")
+                zipObj.write(path_name, basename(path_name))
+
+
 #
 #  LOG FILES FUNCTIONS
 #
