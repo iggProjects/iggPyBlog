@@ -9,16 +9,14 @@
         - https://stackoverflow.com/questions/35851281/python-finding-the-users-downloads-folder
 
             from pathlib import Path
-            downloads_path = str(Path.home() / "Downloads")
-
+            downloads_path = str(Path.home() / "Downloads")   
 
 """
 
 # IMPORT SECTION
-
 try:   # Import My Own Functions from include dir 
     import os, sys, traceback     
-    from os.path import basename, dirname, realpath
+    from os.path import basename, dirname, isdir, isfile, realpath
     from zipfile import ZipFile
     from os import system
     from pathlib import Path
@@ -44,16 +42,40 @@ except Exception as ImportError:
 
 # Zip the files from given directory that matches the filter
 def zipFilesInDir(dirName, zipFileName, filter):
-   # create a ZipFile object
-   with ZipFile(zipFileName, 'w') as zipObj:
-       # Iterate over all the files in directory
-       for folderName, subfolders, filenames in os.walk(dirName):
-           for filename in filenames:
-               if filter(filename):
-                   # create complete filepath of file in directory
-                   filePath = os.path.join(folderName, filename)
-                   # Add file to zip
-                   zipObj.write(filePath, basename(filePath))
+    # create a ZipFile object
+    with ZipFile(zipFileName, 'w') as zipObj:
+        # Iterate over all the files in directory
+        for folderName, subfolders, filenames in os.walk(dirName):
+            for filename in filenames:
+                if filter(filename):
+                    # create complete filepath of file in directory
+                    filePath = os.path.join(folderName, filename)
+                    # Add file to zip
+                    zipObj.write(filePath, basename(filePath))
+                    print(f"filename added: {filename}")
+    print()
+
+# Zip the files from given directory that matches the filter
+def zipFilesInList(paths_list, zipFileName, filter):
+    # create a ZipFile object
+    with ZipFile(zipFileName, 'w') as zipObj:
+        for path_name in paths_list: 
+            if isdir(path_name):       
+                # Iterate over all the files in directory
+                for folderName, subfolders, filenames in os.walk(path_name):
+                    for filename in filenames:
+                        if filter(filename):
+                            # create complete filepath of file in directory
+                            filePath = os.path.join(folderName, filename)
+                            # Add file to zip
+                            zipObj.write(filePath, basename(filePath))
+                            print(f"filename added: {filename}")
+            elif isfile(path_name):
+                print(f"file: {path_name}")
+                zipObj.write(path_name, basename(path_name))
+
+
+    print()
 
 #
 # ---------- MAIN ----------
@@ -61,27 +83,47 @@ def zipFilesInDir(dirName, zipFileName, filter):
 
 if __name__ == "__main__":
 
+    system('cls')
     print("\n---------- MAIN ----------\n")
-    
-    # Name of the Directory to be zipped    
-    dirPath = dirname(__file__)    
-    #dirPath = os.getcwd()
-    print(f"dirPath: {dirPath}\nos.getcwd(): {os.getcwd()}")
-    dirArray = dirPath.split('\\')
+    pause()
+    # Name of the Directory to be added to list_paths
+    dirPath = dirname(__file__)
+    os.chdir(dirPath)
+    dirPath = os.getcwd()
+    list_paths = []
+    list_paths.append(dirPath)
+    #name of zip file
+    dirArray = dirPath.split('\\')    
     dirName = dirArray[len(dirArray)-1]
     dirNameZip = dirName+'.zip'
-    print(f"\tdirPath: {dirPath}\n\tdirName: {dirName}\n")   
+    # paths to MyColor.py & MyFunc.py
+    #print(f"\tdirPath: {dirPath}\n\tdirName: {dirName}\n\tlist paths: {list_paths}\n")
+    static_path = dirname(dirname(dirname(__file__))) 
+    print(f"static_path: {static_path}")
+    print()
+    MyColors_path = static_path + '\include\MyColors.py'
+    list_paths.append(MyColors_path)  
+    MyFunc_path = static_path + '\include\MyFunc.py'
+    list_paths.append(MyFunc_path)      
+    
+    for path in list_paths:
+        print(f"\t{path}")
+    print()    
+
+    print(f"\tdirPath: {dirPath}")   
+    print(f"\tdirName: {dirName}\n")   
 
     # delete if exists  
     if os.path.exists(dirNameZip):
         os.remove(dirNameZip)
         print(f"\told {dirNameZip} deleted\n")    
 
-    print(f"\t*** Creating a zip archive of only .py files in {dirPath} ***\n")
-    zipFilesInDir(dirPath, dirNameZip, lambda name : 'py' in name)
+    print(f"{FR_BLUE}*** Creating a zip archive of only .py files in\n{dirPath} ***{NO_COLOR}\n")
+    zipFilesInList(list_paths, dirNameZip, lambda name : 'py' in name)
+    #zipFilesInDir(dirPath, dirNameZip, lambda name : 'py' in name)
 
-    """
     if os.path.exists(dirNameZip):
+
         print(f"\t\t{dirNameZip} succesfully created !\n")
 
         # Copy file to folder in PC
@@ -96,20 +138,64 @@ if __name__ == "__main__":
         downloads_path = str(Path.home() / "Downloads")
         print(f"\t\tdownload path in client ---> {downloads_path}\n\n")
         dst_path = r"c:\\Users\Amatxo\Downloads" 
+
+        """    
+        if not os.path.exists(dst_path):
+            os.mkdir(dst_path)
+            print(f"\t\tDir {dst_path} created !!!")
+        """
+
         if not os.path.exists(downloads_path):
             os.mkdir(downloads_path)
             print(f"\t\tDir {downloads_path} created !!!")
 
+        # permission problems
+        # https://stackoverflow.com/questions/7518067/python-ioerror-errno-13-permission-denied-when-im-copying-file    
+
         #shutil.copy(src_path, dst_path)        
-        shutil.copy(src_path, downloads_path)        
-        print(f"\t\tCopy Process\n\t\t{dirNameZip} Copied in folder {downloads_path}\n") 
-          
+        shutil.copy2(src_path, downloads_path)        
+        #shutil.copyfile(src_path, downloads_path)        
+        print(f"\t\tCopy Process\n\t\t{dirNameZip} Copied in folder {downloads_path}\n")   
+    
 
     else:
         print(f"UPSSSSSS............")
-    """
     
     print(f"\n{FR_GREEN}---------- That's all for today 👌 ----------{NO_COLOR}\n")
+
+    pause()
+    
+
+    # ------------------------------------------------
+    #           ASKING FOR SHOW VARS INFO 
+    #------------------------------------------------- 
+    """
+    # with Y_N_2 function
+    yesss=True   
+    while yesss:
+        _msg = "Do you want to see attributes for a specific VAR ? (Y,N): "
+        answer=Y_N_2(_msg)        
+        if answer in ['Y','N']: yesss = False
+
+    if answer == 'Y':            
+        # add question for name of var.....
+        _what_var = str(input("What VAR ? "))
+        try: 
+            _what_var
+            _my_Obj_name = eval(_what_var)
+            print(f"\n{FR_GREEN}---------- INFO FOR OBJECT '{_my_Obj_name}' ----------{NO_COLOR}\n")
+            # pause()
+            # my objects functions  
+            mostrar(_my_Obj_name)       
+
+        except NameError:
+            print(f"\n\t{FR_RED}---- Var '{_what_var}' doesn't exits 🙄🙄  ----")
+            print(f"\n{FR_GREEN}--------------- That's all for today 👌 ---------------{NO_COLOR}\n")
+            #_my_Obj_name = None 
+
+    else:
+        print(f"\n{FR_GREEN}---------- That's all for today 👌 ----------{NO_COLOR}\n")
+    """
 
 else:
     # something wrong
