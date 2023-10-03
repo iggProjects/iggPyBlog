@@ -1,4 +1,3 @@
-
 """  
     THIS SCRIPT IS ZIP FILES OF A DIRECTORY AND UPLOAD TO DOWNLOADS FOLDER OF PC
         - https://note.nkmk.me/en/python-os-basename-dirname-split-splitext/#:~:text=dirname()-,Use%20os.,name)%20from%20a%20path%20string.
@@ -9,8 +8,11 @@
         - https://stackoverflow.com/questions/35851281/python-finding-the-users-downloads-folder
 
             from pathlib import Path
-            downloads_path = str(Path.home() / "Downloads")   
+            downloads_path = str(Path.home() / "Downloads")  
 
+    permission problems
+        https://stackoverflow.com/questions/7518067/python-ioerror-errno-13-permission-denied-when-im-copying-file    
+        
 """
 
 # IMPORT SECTION
@@ -29,9 +31,10 @@ try:   # Import My Own Functions from include dir
     up3_dir = dirname(dirname(dirname(dirname(realpath(__file__)))))
     # insert path in sys.path
     sys.path.append(up3_dir)
-    # import My Own Func
-    from static.include.MyFunc import *
+    # import My Own Func    
     from static.include.MyColors import *
+    from static.include.MyFunc import *
+    #from static.include.MyFunc_copy_DL import *
 except Exception as ImportError:
     FR_RED   = "\033[91m" 
     NO_COLOR = "\033[00m"
@@ -67,7 +70,7 @@ if __name__ == "__main__":
     print()
     MyColors_path = static_path + '\include\MyColors.py'
     list_paths.append(MyColors_path)  
-    MyFunc_path = static_path + '\include\MyFunc.py'
+    MyFunc_path = static_path + '\include\MyFunc_copy_DL.py'
     list_paths.append(MyFunc_path)      
 
     """
@@ -83,7 +86,7 @@ if __name__ == "__main__":
 
     print(f"{FR_BLUE}*** Creating Zip File '{fileNameZip}' ***{NO_COLOR}")
     print()
-    zipFilesInList(list_paths, fileNameZip, lambda name : ('py' or 'bat')  in name)
+    zipFilesInList(list_paths, fileNameZip, lambda name: 'DL' in name)
 
     if os.path.exists(fileNameZip):
 
@@ -118,13 +121,8 @@ if __name__ == "__main__":
             print(f"Dir {downloads_path} created !!!")
             print()
 
-        # permission problems
-        # https://stackoverflow.com/questions/7518067/python-ioerror-errno-13-permission-denied-when-im-copying-file    
-
         #shutil.copy(src_path, dst_path)        
         shutil.copy(src_path, downloads_path)        
-        #shutil.copy2(src_path, downloads_path)        
-        #shutil.copyfile(src_path, downloads_path)        
         print(f"{FR_GREEN}Copy Process:{NO_COLOR}")
         print()  
         print(f"\tFile '{fileNameZip}' copied in folder '{downloads_path}'")  
@@ -136,39 +134,6 @@ if __name__ == "__main__":
     print(f"\n{FR_GREEN}---------- That's all for today 👌 ----------{NO_COLOR}\n")
 
     pause()
-    
-
-    # ------------------------------------------------
-    #           ASKING FOR SHOW VARS INFO 
-    #------------------------------------------------- 
-    """
-    # with Y_N_2 function
-    yesss=True   
-    while yesss:
-        _msg = "Do you want to see attributes for a specific VAR ? (Y,N): "
-        answer=Y_N_2(_msg)        
-        if answer in ['Y','N']: yesss = False
-
-    if answer == 'Y':            
-        # add question for name of var.....
-        _what_var = str(input("What VAR ? "))
-        try: 
-            _what_var
-            _my_Obj_name = eval(_what_var)
-            print(f"\n{FR_GREEN}---------- INFO FOR OBJECT '{_my_Obj_name}' ----------{NO_COLOR}\n")
-            # pause()
-            # my objects functions  
-            mostrar(_my_Obj_name)       
-
-        except NameError:
-            print(f"\n\t{FR_RED}---- Var '{_what_var}' doesn't exits 🙄🙄  ----")
-            print(f"\n{FR_GREEN}--------------- That's all for today 👌 ---------------{NO_COLOR}\n")
-            #_my_Obj_name = None 
-
-    else:
-        print(f"\n{FR_GREEN}---------- That's all for today 👌 ----------{NO_COLOR}\n")
-    """
-
 else:
     # something wrong
     print(frRED("\n---- upsssssssss something is wrong 😢😢  ----\n"))

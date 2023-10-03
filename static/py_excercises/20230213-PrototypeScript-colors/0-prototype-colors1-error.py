@@ -58,7 +58,7 @@ if __name__ == "__main__":
             print("\tPrint with ascii " + colors_str[i] + f":\t{color}{msg}") 
             i+=1  
         msg="print with default color:\t\t ==> TESTING COLOR FUNCTION"
-        print(f"\t{ms}")   
+        print(f"\t{msg}")   
         print()
 
         print(frGREEN(f"---------- using function prRed(msg) ----------"))         

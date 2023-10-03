@@ -165,8 +165,7 @@ def Excercises():
             'section': 'Prototype Script',
             'title': 'Example of Try Exception when error occurs in <0-prototype-colors1.py>',
             'fileDirPath': 'static/py_excercises/20230213-PrototypeScript-colors/0-prototype-colors1-error.py',            
-            'fileDirPath1': 'static/py_excercises/20230213-PrototypeScript-colors/0-prototype-colors1-error1.py',            
-            
+            'fileDirPath1': 'static/py_excercises/20230213-PrototypeScript-colors/0-prototype-colors1-error1.py',                       
             'homework': '',
 
             'body': '',          

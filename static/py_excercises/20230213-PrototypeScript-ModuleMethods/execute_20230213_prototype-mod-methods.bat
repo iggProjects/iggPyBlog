@@ -1,1 +1,0 @@
-python.exe 0-prototype-mod-methods.py

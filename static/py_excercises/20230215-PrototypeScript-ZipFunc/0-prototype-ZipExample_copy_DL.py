@@ -29,9 +29,9 @@ try:   # Import My Own Functions from include dir
     up3_dir = dirname(dirname(dirname(dirname(realpath(__file__)))))
     # insert path in sys.path
     sys.path.append(up3_dir)
-    # import My Own Func
-    from static.include.MyFunc import *
+    # import My Own Func    
     from static.include.MyColors import *
+    from static.include.MyFunc import *
 except Exception as ImportError:
     FR_RED   = "\033[91m" 
     NO_COLOR = "\033[00m"
@@ -67,7 +67,7 @@ if __name__ == "__main__":
     print()
     MyColors_path = static_path + '\include\MyColors.py'
     list_paths.append(MyColors_path)  
-    MyFunc_path = static_path + '\include\MyFunc.py'
+    MyFunc_path = static_path + '\include\MyFunc_copy_DL.py'
     list_paths.append(MyFunc_path)      
 
     """
@@ -83,7 +83,8 @@ if __name__ == "__main__":
 
     print(f"{FR_BLUE}*** Creating Zip File '{fileNameZip}' ***{NO_COLOR}")
     print()
-    zipFilesInList(list_paths, fileNameZip, lambda name : ('py' or 'bat')  in name)
+    zipFilesInList(list_paths, fileNameZip, lambda name: 'DL' in name)
+    #zipFilesInList(list_paths, fileNameZip, lambda name: ('py' or 'bat') in name)
 
     if os.path.exists(fileNameZip):
 
