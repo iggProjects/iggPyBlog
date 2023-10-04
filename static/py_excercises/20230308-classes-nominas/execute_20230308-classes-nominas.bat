@@ -1,1 +1,0 @@
-python.exe 20230308-classes-Nominas.py

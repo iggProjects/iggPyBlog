@@ -129,6 +129,7 @@ if __name__ == "__main__":
         print()  
         print(f"\tFile '{fileNameZip}' copied in folder '{downloads_path}'")  
         print() 
+        pause()
     
     else:
         print(f"UPSSSSSS............")

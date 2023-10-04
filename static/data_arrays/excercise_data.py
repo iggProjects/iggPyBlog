@@ -153,7 +153,7 @@ def Excercises():
             'body': '',
 
             'code_url':'../static/py_excercises/20230215-PrototypeScript-ZipFunc/0-prototype-ZipExample.py',
-            'zip_url': '../static/py_excercises/20230215-PrototypeScript-ZipFunc/0-prototype-ZipExample.zip',  
+            'zip_url': '../static/py_excercises/20230215-PrototypeScript-ZipFunc/20230215-PrototypeScript-ZipFunc.zip',  
             'img': '/img/icons8-consola-100.png'    
         },
 

@@ -315,6 +315,7 @@ def desc_obj_method(obj,todo=True):
 def relatedClasses(clas):   
 
     print(f"----- analysis of related classes with class {clas} -----")
+    print()
     for clas_rel in clas.__mro__:
         print(f"{FR_GREEN}\trelated class --> {clas_rel}\n")
     print(f"{NO_COLOR}----- end analysis -----\n")    

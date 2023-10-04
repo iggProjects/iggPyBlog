@@ -14,29 +14,23 @@
 """
 
 # IMPORT SECTION
+# My Own Functions from include dir 
 try:   # Import My Own Functions from include dir 
     import os, sys, traceback     
-    from os.path import basename, dirname, isdir, isfile, realpath
-    from zipfile import ZipFile
     from os import system
-    from pathlib import Path
-
-    # get parent up 2 from __file__ path: 'static path'   
-    up2_dir = dirname(dirname(dirname(realpath(__file__))))
-    # insert path in sys.path
-    sys.path.append(up2_dir)
-    # get parent up 3 from __file__ path: 'static parent path'       
-    up3_dir = dirname(dirname(dirname(dirname(realpath(__file__)))))
-    # insert path in sys.path
-    sys.path.append(up3_dir)
-    # import My Own Func    
-    from static.include.MyColors import *
-    from static.include.MyFunc import *
+    from os.path import dirname, realpath
+    # import My Own Func
+    from MyColors import *
+    from MyFunc_copy_DL import *    
 except Exception as ImportError:
     FR_RED   = "\033[91m" 
     NO_COLOR = "\033[00m"
     print("print empty line") 
     print(f"{FR_RED}IMPORT ERROR ==>{NO_COLOR} {ImportError} | {ImportError.__class__} | {ImportError.__doc__}")
+
+# get name of script
+my_script = __file__.split('\\')
+my_script_name = my_script[len(my_script)-1]
 
 
 #
@@ -53,28 +47,32 @@ if __name__ == "__main__":
     dirPath = dirname(__file__)
     os.chdir(dirPath)
     dirPath = os.getcwd()
+    print(f"dirPath: {dirPath}")
     list_paths = []
     list_paths.append(dirPath)
 
     # name of zip file
     dirArray = dirPath.split('\\')    
     dirName = dirArray[len(dirArray)-1]
-    fileNameZip = dirName+'.zip'
+    fileNameZip = dirName + '.zip'
+    print(f"fileNameZip: {fileNameZip}")
 
     # list_paths: append paths to MyColor.py & MyFunc.py
-    static_path = dirname(dirname(dirname(__file__))) 
+    #static_path = dirname(dirname(dirname(__file__))) 
     #print(f"static_path: {static_path}")
     print()
-    MyColors_path = static_path + '\include\MyColors.py'
+    
+    MyColors_path = os.path.join(dirPath,'MyColors.py')
     list_paths.append(MyColors_path)  
-    MyFunc_path = static_path + '\include\MyFunc_copy_DL.py'
-    list_paths.append(MyFunc_path)      
-
     """
+    MyFunc_path = os.path.join(dirPath,'MyFunc_copy_DL.py')
+    list_paths.append(MyFunc_path)      
+    """
+    
     for path in list_paths:
         print(f"\t{path}")
     print()    
-    """
+    
     # delete if exists  
     if os.path.exists(fileNameZip):
         os.remove(fileNameZip)
@@ -83,57 +81,12 @@ if __name__ == "__main__":
 
     print(f"{FR_BLUE}*** Creating Zip File '{fileNameZip}' ***{NO_COLOR}")
     print()
+
     zipFilesInList(list_paths, fileNameZip, lambda name: 'DL' in name)
-    #zipFilesInList(list_paths, fileNameZip, lambda name: ('py' or 'bat') in name)
-
-    if os.path.exists(fileNameZip):
-
-        print()
-        print(f"{FR_BLUE}{fileNameZip} succesfully created !{NO_COLOR}")
-        print()
-
-        # Copy file to folder in PC
-        import shutil
-
-        # source file path
-        src_path = dirPath + '\\' + fileNameZip
-        print(f"{FR_GREEN}src_path{NO_COLOR}")
-        print(f"{src_path}")
-        print()
-
-        # Destiny file path
-        downloads_path = str(Path.home() / "Downloads")
-        print(f"download path in client ---> {downloads_path}")
-        print()
-        
-        """
-        dst_path = r"c:\\Users\Amatxo\Downloads\\" + fileNameZip 
-        print(f"dst_path: {dst_path}")              
-        if not os.path.exists(dst_path):
-            os.mkdir(dst_path)
-            print(f"\t\tDir {dst_path} created !!!")
-        """
-
-        if not os.path.exists(downloads_path):
-            os.mkdir(downloads_path)
-            print(f"Dir {downloads_path} created !!!")
-            print()
-
-        # permission problems
-        # https://stackoverflow.com/questions/7518067/python-ioerror-errno-13-permission-denied-when-im-copying-file    
-
-        #shutil.copy(src_path, dst_path)        
-        shutil.copy(src_path, downloads_path)        
-        #shutil.copy2(src_path, downloads_path)        
-        #shutil.copyfile(src_path, downloads_path)        
-        print(f"{FR_GREEN}Copy Process:{NO_COLOR}")
-        print()  
-        print(f"\tFile '{fileNameZip}' copied in folder '{downloads_path}'")  
-        print() 
-    
-    else:
-        print(f"UPSSSSSS............")
-    
+    print()
+    print(f"{FR_BLUE}*** Zip File Created ***{NO_COLOR}")    
+    pause()
+   
     print(f"\n{FR_GREEN}---------- That's all for today 👌 ----------{NO_COLOR}\n")
 
     pause()
@@ -142,7 +95,7 @@ if __name__ == "__main__":
     # ------------------------------------------------
     #           ASKING FOR SHOW VARS INFO 
     #------------------------------------------------- 
-    """
+    
     # with Y_N_2 function
     yesss=True   
     while yesss:
@@ -168,7 +121,7 @@ if __name__ == "__main__":
 
     else:
         print(f"\n{FR_GREEN}---------- That's all for today 👌 ----------{NO_COLOR}\n")
-    """
+    
 
 else:
     # something wrong
