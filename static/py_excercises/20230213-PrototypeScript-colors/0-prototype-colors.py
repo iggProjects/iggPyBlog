@@ -49,7 +49,7 @@ if __name__ == "__main__":
         colors= [FR_RED,FR_GREEN,FR_YELL,FR_BLUE,FR_MAG]
         colors_str=['\\033[91m - Red','\\033[92m - Green','\\033[93m - Yellow','\\033[94m - Blue','\\033[95m - Magenta']
         
-        i=1/0
+        i=0
         for color in colors:
             color_str = color
             msg=" ==> TESTING COLOR FUNCTION"            
