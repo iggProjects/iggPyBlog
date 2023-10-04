@@ -3,23 +3,14 @@ THIS SCRIPT IS FOR..................
 
 """
 # IMPORT SECTION
-
 # My Own Functions from include dir 
 try:   # Import My Own Functions from include dir 
     import sys, traceback     
     from os import system
     from os.path import dirname, realpath
-    # get parent up 2 from __file__ path: 'static path'   
-    up2_dir = dirname(dirname(dirname(realpath(__file__))))
-    # insert path in sys.path
-    sys.path.append(up2_dir)
-    # get parent up 3 from __file__ path: 'static parent path'       
-    up3_dir = dirname(dirname(dirname(dirname(realpath(__file__)))))
-    # insert path in sys.path
-    sys.path.append(up3_dir)
     # import My Own Func
-    from static.include.MyFunc import *
-    from static.include.MyColors import *
+    from MyColors import *
+    from MyFunc_copy_DL import *    
 except Exception as ImportError:
     FR_RED   = "\033[91m" 
     NO_COLOR = "\033[00m"
@@ -30,8 +21,7 @@ except Exception as ImportError:
 my_script = __file__.split('\\')
 my_script_name = my_script[len(my_script)-1]
 
-# FUNCTIONS 
-
+# FUNCTIONS
 # print char by char
 def print_char_by_char(my_text):
     for ch in my_text:
@@ -74,7 +64,7 @@ if __name__ == "__main__":
     
     decipher(encripted_text)
     print(frGREEN(f"decoded text:\n {decoded_text}\n"))
-
+    
     pause()
 
     
@@ -97,8 +87,7 @@ if __name__ == "__main__":
             print(f"\n{FR_GREEN}---------- INFO FOR OBJECT '{_my_Obj_name}' ----------{NO_COLOR}\n")
             pause()
             # my objects functions  
-            mostrar(_my_Obj_name)  
-            pause()     
+            mostrar(_my_Obj_name)       
 
         except NameError:
             print(f"\n\t{FR_RED}---- Var '{_what_var}' doesn't exits ----")

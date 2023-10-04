@@ -1,1 +1,0 @@
-python.exe 20230223-RotateAlphab-twice.py

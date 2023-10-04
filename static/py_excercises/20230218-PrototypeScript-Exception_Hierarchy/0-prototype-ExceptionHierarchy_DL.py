@@ -3,6 +3,7 @@
 THIS SCRIPT IS FOR PRINTING WITH COLORS
 
 """
+
 # IMPORT SECTION
 
 # My Own Functions from include dir 
@@ -10,17 +11,9 @@ try:   # Import My Own Functions from include dir
     import sys, traceback     
     from os import system
     from os.path import dirname, realpath
-    # get parent up 2 from __file__ path: 'static path'   
-    up2_dir = dirname(dirname(dirname(realpath(__file__))))
-    # insert path in sys.path
-    sys.path.append(up2_dir)
-    # get parent up 3 from __file__ path: 'static parent path'       
-    up3_dir = dirname(dirname(dirname(dirname(realpath(__file__)))))
-    # insert path in sys.path
-    sys.path.append(up3_dir)
     # import My Own Func
-    from static.include.MyFunc import *
-    from static.include.MyColors import *
+    from MyColors import *
+    from MyFunc_copy_DL import *    
 except Exception as ImportError:
     FR_RED   = "\033[91m" 
     NO_COLOR = "\033[00m"
@@ -53,13 +46,12 @@ if __name__ == "__main__":
     classtree(Exception)
     
     print(f"\n{FR_GREEN}---------- That's all for today 👌 ----------{NO_COLOR}\n")
-    pause()
     
 
     # ------------------------------------------------
     #           ASKING FOR SHOW VARS INFO 
     #------------------------------------------------- 
-    """
+    
     # with Y_N_2 function
     yesss=True   
     while yesss:
@@ -82,10 +74,11 @@ if __name__ == "__main__":
             print(f"\n\t{FR_RED}---- Var '{_what_var}' doesn't exits 🙄🙄  ----")
             print(f"\n{FR_GREEN}--------------- That's all for today 👌 ---------------{NO_COLOR}\n")
             #_my_Obj_name = None 
+            pause()
 
     else:
         print(f"\n{FR_GREEN}---------- That's all for today 👌 ----------{NO_COLOR}\n")
-    """
+    
 
 else:
     # something wrong

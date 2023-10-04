@@ -5,28 +5,23 @@ THIS SCRIPT IS FOR DELETE REPEATED LINES AND SORT RESULTING FILE
 #
 # IMPORT SECTION
 #
+# My Own Functions from include dir 
 try:   # Import My Own Functions from include dir 
-    import os, sys, traceback, platform  
-    from os.path import dirname, realpath
+    import os, sys, traceback     
     from os import system
-    # get parent up 2 from __file__ path: 'static path'   
-    up2_dir = dirname(dirname(dirname(realpath(__file__))))
-    # insert path in sys.path
-    sys.path.append(up2_dir)
-    # get parent up 3 from __file__ path: 'static parent path'       
-    up3_dir = dirname(dirname(dirname(dirname(realpath(__file__)))))
-    # insert path in sys.path
-    sys.path.append(up3_dir)
+    from os.path import dirname, realpath
     # import My Own Func
-    from static.include.MyFunc import *
-    from static.include.MyColors import *
+    from MyColors import *
+    from MyFunc_copy_DL import *    
 except Exception as ImportError:
     FR_RED   = "\033[91m" 
     NO_COLOR = "\033[00m"
     print("print empty line") 
     print(f"{FR_RED}IMPORT ERROR ==>{NO_COLOR} {ImportError} | {ImportError.__class__} | {ImportError.__doc__}")
 
-# CONSTANTS
+# get name of script
+my_script = __file__.split('\\')
+my_script_name = my_script[len(my_script)-1]
 
 #
 # ---------- COURSE EXCERCISE ----------
@@ -38,7 +33,7 @@ if __name__ == "__main__":
 
         my_script = __file__.split('\\')
         my_script_name = my_script[len(my_script)-1]
-        write_log_file("my_messages.txt","IN '" + my_script_name + "'")
+        
         system('cls')
         print(f"\n{FR_BLUE}=== MAIN{NO_COLOR}\n")
         pause()
@@ -47,7 +42,7 @@ if __name__ == "__main__":
         print(f"cwd: {cwd}")
         #base_dir = os.path.dirname(os.getcwd())
         #print(f"base dir: {base_dir}")
-        file_path = os.path.join(cwd, 'static\py_excercises\\20230301-DelRepeatedLinesAndSort\z-fileRepeatedLines.txt')
+        file_path = os.path.join(cwd, 'z-fileRepeatedLines_DL.txt')
         # static\py_excercises\20230301-DelRepeatedLinesAndSort\20230301-DelRepeatedLinesAndSort.py
         print(f"file: {file_path}")
         file = open(file_path,"r")
@@ -61,7 +56,7 @@ if __name__ == "__main__":
         file.close()
 
         print(f"{FR_YELL}\tRead 'file z-fileRepeatedLines.txt' with 'uniqlines = set('z-fileRepeatedLines.txt').readlines'{NO_COLOR}\n")
-        uniqlines = set(open('static\py_excercises\\20230301-DelRepeatedLinesAndSort\z-fileRepeatedLines.txt').readlines())
+        uniqlines = set(open('z-fileRepeatedLines_DL.txt').readlines())
         uniqlines_bef = str(uniqlines).replace(',',';').replace('\\n','')
         print(f"\tuniqlines before: {uniqlines_bef}\n")
 
@@ -73,14 +68,12 @@ if __name__ == "__main__":
         print(f"\tuniqlines after: {uniqlines_aft}\n")
 
         print(f"{FR_YELL}\tCreating sorted file without repeated lines \"z-fileWithOutRepetitionLines.txt\"\n")
-        open('static\py_excercises\\20230301-DelRepeatedLinesAndSort\z-fileWithOutRepetitionLines.txt', 'w').writelines(uniqlines)
+        open('z-fileWithOutRepetitionLines.txt', 'w').writelines(uniqlines)
 
         pause()
 
     except Exception as Argument:
         error_msg = "ERROR IN <" + my_script_name + ">. SEE server_messages.txt !"
-        write_log_file("my_messages.txt",error_msg)
-        write_traceback_info(Argument,traceback,my_script_name)        
 
 else:
     # something wrong
@@ -104,8 +97,8 @@ else:
             print(f"\n{FR_GREEN}---------- INFO FOR OBJECT '{_my_Obj_name}' ----------{NO_COLOR}\n")
             pause()
             # my objects functions  
-            mostrar(_my_Obj_name)   
-            pause()    
+            mostrar(_my_Obj_name) 
+            pause()      
 
         except NameError:
             print(f"\n\t{FR_RED}---- Var '{_what_var}' doesn't exits 🙄🙄  ----")
