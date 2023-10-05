@@ -1,1 +1,0 @@
-python.exe 20230220-InputTrabajadores.py
