@@ -25,19 +25,26 @@
 #
 #   Execute ImportModuleFromParallel_folder.py 
 #  
-
-# IMPORT SECTION
 import sys, os, datetime, logging, traceback 
+from os import system
 from os.path import dirname
 
 # error handlng 
 
-static_path = dirname(dirname(dirname(dirname(__file__))))
-log_file_path = static_path + "/logFiles/server_messages.txt"
+# create dir logFiles for logging process
+static_path = dirname(dirname(__file__))
+logDirPath = os.path.join(static_path, 'logFiles')
+if os.path.exists(logDirPath):
+    pass
+else:
+    os.makedirs(logDirPath)
+log_file_path = logDirPath + "/server_messages.txt"
+
 logging.basicConfig(filename=log_file_path, 
                 encoding='utf-8', level=logging.DEBUG, format="%(asctime)-15s %(levelname)-8s %(funcName)s %(message)s")
 logging.captureWarnings(True)
 
+"""
 # function to write in logFile
 def write_log_file(logFile,msg):
 
@@ -58,9 +65,9 @@ def write_traceback_info(Argum,TraceList,script):
                
         traceback_formatted = TraceList.format_exc().replace('"','').replace(',',' | ')
         traceback_lines = traceback_formatted.split('\n')
-        print("print empty line")        
+        print()        
         print(f"====================== ERROR FOUND ======================")
-        print("print empty line")
+        print()
         for line in traceback_lines:
             #if ('File' or 'line' or 'Module') in line:
             if 'line' in line:
@@ -69,13 +76,14 @@ def write_traceback_info(Argum,TraceList,script):
                       line_numb = field
 
         print(f"FILE: <{script}>")
-        print("print empty line")
+        print()
         print(f"\tcode in{line_numb}:{traceback_lines[len(traceback_lines)-3]}")        
         print(f"\t{Argum} | {Argum.__class__} | {Argum.__doc__}")
-        print("print empty line")
+        print()
 
         print(f"\t\tSEE 'server_messages.txt' file OR Contact Web Admin !")
         logging.exception(f"{Argum} | exception from '0-prototype-colors.py()': ")
+"""
 
 #
 # ---------- COURSE EXCERCISE ----------
@@ -83,18 +91,20 @@ def write_traceback_info(Argum,TraceList,script):
 
 if __name__ == "__main__":
 
+    system('cls')
+
     try:
         # get name of script
         my_script = __file__.split('\\')
         my_script_name = my_script[len(my_script)-1]
         #write_log_file("my_messages.txt","IN '" + my_script_name + "'")
-        print("print empty line")
+        print()
         print(f"=== MAIN ===")
-        #print(f"{FR_BLUE}=== MAIN ===")  # NOTE: try to print and note that you must have an error
-        print("print empty line")
+        #print(f"{FR_MAG}=== MAIN ===")  # NOTE: try to print and note that you must have an error
+        print()
 
         print(f"=== Using functions located in a parallel folder ===")
-        print("print empty line")
+        print()
 
         # printing folders in path without including de parallel folder with my functions --- default colors
         init_path = sys.path
@@ -105,7 +115,7 @@ if __name__ == "__main__":
         print("---printing list of folders in path, without including colors of 'my functions', located in parallel folder")
         for fold in init_folders:
             print(f"\t{fold}")
-        print("print empty line")
+        print()
         
         # Add the '20230227-OS-Examples-2' folder to path                 
         up2_dir = dirname(dirname(__file__))  # look for '20230227-OS-Examples-2' path        
@@ -121,21 +131,26 @@ if __name__ == "__main__":
         from MyFunctions.MyCol import *
         from MyFunctions.MyFun import *
 
-        print(f'{FR_BLUE}Original sys.path in BLUE')       # this function is in MyColors
+        print(f'{FR_MAG}Original sys.path in BLUE')       # this function is in MyColors
         for fold in init_folders:
-            print(f"\t{FR_BLUE}{fold}")
-        print("print empty line")
+            print(f"\t{FR_MAG}{fold}")
+        print()
+        pause()
 
         print(f'{FR_GREEN}Updated sys.path in GREEN')
         print(f'\t{FR_RED}NOTE that two new folders are included now: <20230227-OS-Examples-2> & <MyFunctions>')
         for fold in new_path:
             print(f"\t{FR_GREEN}{fold}")
-        print("print empty line")
+        print()
+        pause()
 
-        print(f"{FR_BLUE}=== That's All ===\n")
-        print("print empty line")
+        print(f"{FR_MAG}=== That's All ===\n")
+        print()
 
     except Exception as Argument:
         error_msg = "ERROR IN <" + my_script_name + ">. SEE server_messages.txt !"
         write_log_file("my_messages.txt",error_msg)
-        write_traceback_info(Argument,traceback,my_script_name)        
+        write_traceback_info(Argument,traceback,my_script_name)    
+        pause()    
+
+
