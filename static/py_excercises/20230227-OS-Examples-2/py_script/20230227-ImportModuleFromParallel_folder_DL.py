@@ -127,11 +127,12 @@ if __name__ == "__main__":
         # create a new list with sys.path updated, to campare list of paths
         new_path = sys.path
 
-        # IMPORT MODULE FROM PARALLEL FOLDER MyFunctions
+        # IMPORT MODULE F
+        # ROM PARALLEL FOLDER MyFunctions
         from MyFunctions.MyCol import *
         from MyFunctions.MyFun import *
 
-        print(f'{FR_MAG}Original sys.path in BLUE')       # this function is in MyColors
+        print(f'{FR_MAG}Original sys.path in MAG')       # this function is in MyColors
         for fold in init_folders:
             print(f"\t{FR_MAG}{fold}")
         print()
