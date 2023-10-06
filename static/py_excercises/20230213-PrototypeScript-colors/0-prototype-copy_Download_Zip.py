@@ -103,25 +103,16 @@ if __name__ == "__main__":
         print(f"{src_path}")
         print()
 
-        # Destiny file path
-        downloads_path = str(Path.home() / "Downloads")
+        # folder to save file: "iggPyWeb" in Downloads folder
+        downloads_path = str(Path.home() / "Downloads" / "iggPyWeb")
         print(f"download path in client ---> {downloads_path}")
         print()
         
-        """
-        dst_path = r"c:\\Users\Amatxo\Downloads\\" + fileNameZip 
-        print(f"dst_path: {dst_path}")              
-        if not os.path.exists(dst_path):
-            os.mkdir(dst_path)
-            print(f"\t\tDir {dst_path} created !!!")
-        """
-
         if not os.path.exists(downloads_path):
             os.mkdir(downloads_path)
             print(f"Dir {downloads_path} created !!!")
             print()
 
-        #shutil.copy(src_path, dst_path)        
         shutil.copy(src_path, downloads_path)        
         print(f"{FR_GREEN}Copy Process:{NO_COLOR}")
         print()  

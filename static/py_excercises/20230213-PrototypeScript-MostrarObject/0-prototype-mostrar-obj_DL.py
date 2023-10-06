@@ -37,17 +37,16 @@ if __name__ == "__main__":
     msg="------- EXIT PAUSE FUNCTION COMPLETED -------\n"    
 
     mostrar(msg)   
-    #pause()
+    pause()
 
     print(frGREEN("\nObject: variable colors_str =['\\033[91m - Red','\\033[92m - Green','\\033[93m - Yellow','\\033[94m - Blue','\\033[95m - Magenta']\n"))
     colors_str=['\\033[91m - Red','\\033[92m - Green','\\033[93m - Yellow','\\033[94m - Blue','\\033[95m - Magenta']
     #pause()
-    mostrar(colors_str)      
+    mostrar(colors_str) 
+    pause()     
 
     print(frGREEN("---------- That's all for today 👌 ----------\n"))
-    pause()
-
-    
+        
     # ------------------------------------------------
     #           ASKING FOR SHOW VARS INFO 
     #------------------------------------------------- 

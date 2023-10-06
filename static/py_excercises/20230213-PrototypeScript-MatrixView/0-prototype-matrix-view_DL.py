@@ -19,10 +19,6 @@ except Exception as ImportError:
     print("print empty line") 
     print(f"{FR_RED}IMPORT ERROR ==>{NO_COLOR} {ImportError} | {ImportError.__class__} | {ImportError.__doc__}")
 
-# get name of script
-my_script = __file__.split('\\')
-my_script_name = my_script[len(my_script)-1]
-
 #
 # ---------- MAIN ----------
 #
@@ -30,16 +26,19 @@ my_script_name = my_script[len(my_script)-1]
 if __name__ == "__main__":
 
     system('cls')
+    # get name of script
+    my_script = __file__.split('\\')
+    my_script_name = my_script[len(my_script)-1]
 
     print(frGREEN("\n---------- main ----------\n"))
-    pause()
 
     sqr_var = [i*i for i in range(100)]
 
     prYellow("\n---------- list of first hundred numbers squared ----------\n")
+    pause()
 
     matrix_view(sqr_var,20)
- 
+     
     print(f"\n{FR_GREEN}---------- That's all for today 👌 ----------{NO_COLOR}\n")
 
     # ------------------------------------------------

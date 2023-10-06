@@ -63,11 +63,12 @@ if __name__ == "__main__":
         matrix_view(sqr_var,20)
         print("print empty line")
         print(f"{FR_GREEN}=== That's all for today")
-    except Exception as ImportError:
-        FR_RED   = "\033[91m" 
-        NO_COLOR = "\033[00m"
-        print("print empty line") 
-        print(f"{FR_RED}IMPORT ERROR ==>{NO_COLOR} {ImportError} | {ImportError.__class__} | {ImportError.__doc__}")
+
+    except Exception as Argument:
+        error_msg = "ERROR IN <" + my_script_name + ">. SEE server_messages.txt !"
+        write_log_file("my_messages.txt",error_msg)
+        write_traceback_info_1(Argument,traceback,my_script_name)  
+
 
 else:
     # something wrong

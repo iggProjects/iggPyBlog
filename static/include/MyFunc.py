@@ -43,7 +43,7 @@ def write_log_file(logFile,msg):
         print(f"Error {Argument}")
         logging.exception(f"{Argument} | exception from 'write_log_file()' ")
 
-def write_traceback_info(Argum,TraceList,script): 
+def write_traceback_info_1(Argum,TraceList,script): 
                
         traceback_formatted = TraceList.format_exc().replace('"','').replace(',',' | ')
         traceback_lines = traceback_formatted.split('\n')
@@ -76,7 +76,7 @@ def write_traceback_info(Argum,TraceList,script):
         print(frRED(f"\t\tSEE 'server_messages.txt' file OR Contact Web Admin !"))
         logging.exception(f"{Argum} | exception from '0-prototype-colors.py()': ")
 
-def write_traceback_info_1(Argum,TraceList,script): 
+def write_traceback_info(Argum,TraceList,script): 
                
         traceback_formatted = TraceList.format_exc().replace('"','').replace(',',' | ')
         traceback_lines = traceback_formatted.split('\n')
@@ -184,9 +184,9 @@ def mostrar(obj):
   # print attributes and methods in matrix form
   print(f"Object assigned attributes and methods are:\n")
   matrix_view(attr_meth,6)
-  print()
-  prBG("-----------------END MOSTRAR OBJECT TYPE AND ATTRIB-METHODS-----------------",17)    
-  print()
+  print("------")
+  print("-----------------END MOSTRAR OBJECT TYPE AND ATTRIB-METHODS----------------")    
+  print("------")
   
 # Show elements looking at dir(obj)
 def ver_objetos(obj):

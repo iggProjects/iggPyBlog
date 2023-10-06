@@ -17,17 +17,18 @@ except Exception as ImportError:
     print("print empty line") 
     print(f"{FR_RED}IMPORT ERROR ==>{NO_COLOR} {ImportError} | {ImportError.__class__} | {ImportError.__doc__}")
 
-# get name of script
-my_script = __file__.split('\\')
-my_script_name = my_script[len(my_script)-1]
-
 #
 # ---------- MAIN ----------
 #
 
 if __name__ == "__main__":
 
+
+    # clear console screen
     system('cls')
+    # get name of script
+    my_script = __file__.split('\\')
+    my_script_name = my_script[len(my_script)-1]
 
     print(frGREEN("\n=== MAIN ===\n"))
     pause()

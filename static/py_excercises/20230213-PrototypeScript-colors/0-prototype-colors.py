@@ -29,9 +29,6 @@ except Exception as ImportError:
     print("print empty line") 
     print(f"{FR_RED}IMPORT ERROR ==>{NO_COLOR} {ImportError} | {ImportError.__class__} | {ImportError.__doc__}")
 
-# get name of script
-my_script = __file__.split('\\')
-my_script_name = my_script[len(my_script)-1]
 
 #
 # ---------- MAIN ----------
@@ -39,9 +36,14 @@ my_script_name = my_script[len(my_script)-1]
 
 if __name__ == "__main__":
 
-    try:    
+    try:
 
+        # clear console screen
         system('cls')
+        # get name of script
+        my_script = __file__.split('\\')
+        my_script_name = my_script[len(my_script)-1]
+
         print(frGREEN("\n---------- main ----------\n"))
 
         print(frGREEN("\n---------- using CONTANTS ----------\n"))
@@ -105,42 +107,8 @@ if __name__ == "__main__":
     except Exception as Argument:
         error_msg = "ERROR IN <" + my_script_name + ">. SEE server_messages.txt !"
         write_log_file("my_messages.txt",error_msg)
-        write_traceback_info_1(Argument,traceback,my_script_name)        
+        write_traceback_info(Argument,traceback,my_script_name)        
 
-    """
-    except Exception as Argument: 
-        print(frRED(f"-------- upsssssssss: ERROR in '0-prototype-colors.py()' | {Argument}--------\n"))
-        logging.exception(" | exception from '0-prototype-colors.py()': ")
-
-        
-        print("traceback")
-        print(f"{traceback.format_exc()}")
-        print()
-
-        traceback_formatted = traceback.format_exc().replace('"','').replace(',','|')
-        traceback_lines = traceback_formatted.split('\n')
-        print(f"traceback_lines length: {len(traceback_lines)}")
-        print(f"{traceback_lines}")
-        print()
-
-        for line in traceback_lines:
-            print(f"{line}")    
-
-
-        print("traceback_lines[1]")
-        print(f"{traceback_lines[1]}")    
-        print()
-
-        traceback_lines_2 = traceback_lines[1].split('|')
-        print("traceback_lines_2")
-        print(f"{traceback_lines_2}")
-        print()
-
-        #traceback_lines_2_2 = traceback_lines_2[2].split('|')
-        print("traceback_lines_2_2")        
-        print(traceback_lines_2[1])
-        
-        """
 
 else:
     # something wrong    

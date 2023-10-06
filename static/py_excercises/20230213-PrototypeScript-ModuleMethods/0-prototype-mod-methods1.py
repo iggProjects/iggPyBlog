@@ -44,13 +44,13 @@ if __name__ == "__main__":
         print("print empty line")
         print(f"{FR_GREEN}=== List of OS module methods{NO_COLOR}")
         print("print empty line")
-        library_methods(os)    
+        library_methods(os)            
         print("print empty line")
         print(f"{FR_GREEN}=== That's all for today ===")
     except Exception as Argument:
         error_msg = "ERROR IN <" + my_script_name + ">. SEE server_messages.txt !"
         write_log_file("my_messages.txt",error_msg)
-        write_traceback_info(Argument,traceback,my_script_name)        
+        write_traceback_info_1(Argument,traceback,my_script_name)        
 
 else:
     # something wrong

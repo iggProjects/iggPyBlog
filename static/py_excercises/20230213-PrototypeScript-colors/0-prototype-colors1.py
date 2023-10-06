@@ -71,7 +71,7 @@ if __name__ == "__main__":
     except Exception as Argument:
         error_msg = "ERROR IN <" + my_script_name + ">. SEE server_messages.txt !"
         write_log_file("my_messages.txt",error_msg)
-        write_traceback_info(Argument,traceback,my_script_name)        
+        write_traceback_info_1(Argument,traceback,my_script_name)        
     
 else:
     # something wrong
