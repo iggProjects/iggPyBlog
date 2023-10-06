@@ -31,7 +31,7 @@ from os.path import dirname
 
 # error handlng 
 
-# create dir logFiles for logging process
+# create dir & logFiles for logging process
 static_path = dirname(dirname(__file__))
 logDirPath = os.path.join(static_path, 'logFiles')
 if os.path.exists(logDirPath):
@@ -39,7 +39,6 @@ if os.path.exists(logDirPath):
 else:
     os.makedirs(logDirPath)
 log_file_path = logDirPath + "/server_messages.txt"
-
 logging.basicConfig(filename=log_file_path, 
                 encoding='utf-8', level=logging.DEBUG, format="%(asctime)-15s %(levelname)-8s %(funcName)s %(message)s")
 logging.captureWarnings(True)

@@ -6,6 +6,7 @@ THIS SCRIPT IS FOR PRINTING WITH COLORS
 # IMPORT SECTION
 try:   # Import My Own Functions from include dir 
     import sys, traceback
+    import inspect
     from os.path import dirname, realpath
     # get parent up 2 from __file__ path: 'static path'   
     up2_dir = dirname(dirname(dirname(realpath(__file__))))
@@ -40,7 +41,7 @@ def classtree(cls, indent=0):
 if __name__ == "__main__":
 
     try:
-        import inspect
+
         # get name of script
         my_script = __file__.split('\\')
         my_script_name = my_script[len(my_script)-1]
@@ -64,7 +65,7 @@ if __name__ == "__main__":
     except Exception as Argument:
         error_msg = "ERROR IN <" + my_script_name + ">. SEE server_messages.txt !"
         write_log_file("my_messages.txt",error_msg)
-        write_traceback_info(Argument,traceback,my_script_name)        
+        write_traceback_info_1(Argument,traceback,my_script_name)        
 
 else:
     # something wrong

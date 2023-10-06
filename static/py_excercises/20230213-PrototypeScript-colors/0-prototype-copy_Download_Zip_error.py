@@ -62,7 +62,7 @@ if __name__ == "__main__":
     # name of zip file
     dirArray = dirPath.split('\\')    
     dirName = dirArray[len(dirArray)-1]
-    fileNameZip = dirName+'.zip'
+    fileNameZip = dirName +'_error.zip'
 
     # list_paths: append paths to MyColor.py & MyFunc.py
     static_path = dirname(dirname(dirname(__file__))) 
@@ -86,7 +86,7 @@ if __name__ == "__main__":
 
     print(f"{FR_BLUE}*** Creating Zip File '{fileNameZip}' ***{NO_COLOR}")
     print()
-    zipFilesInList(list_paths, fileNameZip, lambda name: 'DL' in name)
+    zipFilesInList(list_paths, fileNameZip, lambda name: 'error' and 'DL' in name)
 
     if os.path.exists(fileNameZip):
 
@@ -113,7 +113,6 @@ if __name__ == "__main__":
             print(f"Dir {downloads_path} created !!!")
             print()
 
-        #shutil.copy(src_path, dst_path)        
         shutil.copy(src_path, downloads_path)        
         print(f"{FR_GREEN}Copy Process:{NO_COLOR}")
         print()  

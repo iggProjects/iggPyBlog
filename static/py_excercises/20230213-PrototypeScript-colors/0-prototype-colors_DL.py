@@ -21,10 +21,6 @@ except Exception as ImportError:
     print("print empty line") 
     print(f"{FR_RED}IMPORT ERROR ==>{NO_COLOR} {ImportError} | {ImportError.__class__} | {ImportError.__doc__}")
 
-# get name of script
-my_script = __file__.split('\\')
-my_script_name = my_script[len(my_script)-1]
-
 #
 # ---------- MAIN ----------
 #
@@ -34,6 +30,10 @@ if __name__ == "__main__":
     try:    
 
         system('cls')
+        # get name of script
+        my_script = __file__.split('\\')
+        my_script_name = my_script[len(my_script)-1]
+
         print(frGREEN("\n---------- main ----------\n"))
 
         print(frGREEN("\n---------- using CONTANTS ----------\n"))
@@ -96,7 +96,8 @@ if __name__ == "__main__":
             print(f"\n{FR_GREEN}---------- That's all for today 👌 ----------{NO_COLOR}\n")
         
     except Exception as Argument:
-        error_msg = "ERROR IN <" + my_script_name + ">. SEE server_messages.txt !"
+        print(f"{FR_RED}ERROR ==>{NO_COLOR} {ImportError} | {ImportError.__class__} | {ImportError.__doc__}")
+        pause()
 
 else:
     # something wrong    
