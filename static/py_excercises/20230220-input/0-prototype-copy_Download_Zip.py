@@ -103,8 +103,8 @@ if __name__ == "__main__":
         print(f"{src_path}")
         print()
 
-        # Destiny file path
-        downloads_path = str(Path.home() / "Downloads")
+        # folder to save file: "iggPyWeb" in Downloads folder
+        downloads_path = str(Path.home() / "Downloads" / "iggPyWeb")
         print(f"download path in client ---> {downloads_path}")
         print()
         

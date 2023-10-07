@@ -1,28 +1,23 @@
 # scrip for register worker data
 
 # IMPORT
-import re   
-from math import ceil
-import os, sys
-from os import  system
 
 # My Own Functions from include dir 
 try:   # Import My Own Functions from include dir 
-    import sys, traceback     
+    import sys, traceback
+    import re   
+    from math import ceil
     from os import system
     from os.path import dirname, realpath
     # import My Own Func
     from MyColors import *
-    from MyFunc_copy_DL import *    
+    from MyFunc_copy_DL import * 
+
 except Exception as ImportError:
     FR_RED   = "\033[91m" 
     NO_COLOR = "\033[00m"
     print("print empty line") 
     print(f"{FR_RED}IMPORT ERROR ==>{NO_COLOR} {ImportError} | {ImportError.__class__} | {ImportError.__doc__}")
-
-# get name of script
-my_script = __file__.split('\\')
-my_script_name = my_script[len(my_script)-1]
 
 # Y,N answer function
 def Y_N():
@@ -78,58 +73,68 @@ def input_worker_data():
 # MAIN
 if __name__ == "__main__":
 
-    system('cls')
-    print(f"\n{FR_BLUE}=== MAIN ==={NO_COLOR}\n")
-    print(f"{FR_GREEN}=== INPUT WORKERS TABLE\n")
-    #pause()    
-    
-    # global variables
-    moreData=True
-    workers = []
-    worker = {"name":'',"age":''}
+    try:
+        # clear console screen
+        system('cls')
+        # get name of script
+        my_script = __file__.split('\\')
+        my_script_name = my_script[len(my_script)-1]
 
-    # loop until stop is "Y"
-    while moreData:    
-        input_worker_data()     
+        print(f"\n{FR_BLUE}=== MAIN ==={NO_COLOR}\n")
+        print(f"{FR_GREEN}=== INPUT WORKERS TABLE\n")
+        #pause()    
+        
+        # global variables
+        moreData=True
+        workers = []
+        worker = {"name":'',"age":''}
 
-    print(f"\n\t{FR_YELL}Session terminated by user{NO_COLOR}\n")        
-    print(f"\tVar Workers type: {type(workers)} | Values: {workers}\n")
-    for i in range(len(workers)):
-        print(f"\tworker {i}: - {workers[i]}, type: {type(workers[i])}")        
-        for key,value in workers[i].items():
-            print(f"\t\t{key}: {value}")
-    print()
-    pause()   
+        # loop until stop is "Y"
+        while moreData:    
+            input_worker_data()     
 
-    # ------------------------------------------------
-    #        OPTIONAL: SHOW VARS CHARACTERISTICS 
-    #------------------------------------------------ 
+        print(f"\n\t{FR_YELL}Session terminated by user{NO_COLOR}\n")        
+        print(f"\tVar Workers type: {type(workers)} | Values: {workers}\n")
+        for i in range(len(workers)):
+            print(f"\tworker {i}: - {workers[i]}, type: {type(workers[i])}")        
+            for key,value in workers[i].items():
+                print(f"\t\t{key}: {value}")
+        print()
+        pause()   
 
-    yesss=True
-    _msg = "\tDo you want to see attributes for a specific VAR ? (Y,N): "   
-    while yesss:        
-        answer=Y_N_2(_msg)        
-        if answer in ['Y','N']: yesss = False
+        # ------------------------------------------------
+        #        OPTIONAL: SHOW VARS CHARACTERISTICS 
+        #------------------------------------------------ 
 
-    if answer == 'Y':            
-        # add question for name of var.....
-        _what_var = str(input("\tWhat VAR ? "))
-        try:
-            _what_var
-            _my_Obj_name = eval(_what_var)
-            print(f"\n{FR_GREEN}---------- INFO FOR OBJECT '{_my_Obj_name}' ----------{NO_COLOR}\n")
-            pause()
-            # my objects functions  
-            mostrar(_my_Obj_name)  
-            pause()     
+        yesss=True
+        _msg = "\tDo you want to see attributes for a specific VAR ? (Y,N): "   
+        while yesss:        
+            answer=Y_N_2(_msg)        
+            if answer in ['Y','N']: yesss = False
 
-        except NameError:
-            print(f"\n\t{FR_RED}---- Var '{_what_var}' doesn't exits ----")
-            print(f"\n{FR_GREEN}--------------- That's all for today ---------------{NO_COLOR}\n")
-            #_my_Obj_name = None 
+        if answer == 'Y':            
+            # add question for name of var.....
+            _what_var = str(input("\tWhat VAR ? "))
+            try:
+                _what_var
+                _my_Obj_name = eval(_what_var)
+                print(f"\n{FR_GREEN}---------- INFO FOR OBJECT '{_my_Obj_name}' ----------{NO_COLOR}\n")
+                pause()
+                # my objects functions  
+                mostrar(_my_Obj_name)  
+                pause()     
 
-    else:
-        print(f"\n{FR_GREEN}---------- That's all for today ----------{NO_COLOR}\n")
+            except NameError:
+                print(f"\n\t{FR_RED}---- Var '{_what_var}' doesn't exits ----")
+                print(f"\n{FR_GREEN}--------------- That's all for today ---------------{NO_COLOR}\n")
+                #_my_Obj_name = None 
+
+        else:
+            print(f"\n{FR_GREEN}---------- That's all for today ----------{NO_COLOR}\n")
+
+    except Exception as Argument:
+        write_traceback_info(Argument,traceback,my_script_name)        
+        pause()
 
 else:
     # something wrong

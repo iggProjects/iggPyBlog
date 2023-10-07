@@ -22,10 +22,6 @@ except Exception as ImportError:
 my_script = __file__.split('\\')
 my_script_name = my_script[len(my_script)-1]
 
-# get name of script
-my_script = __file__.split('\\')
-my_script_name = my_script[len(my_script)-1]
-
 # FUNCTIONS SECTION
 
 # funtion to encrypt a text
@@ -53,75 +49,87 @@ def decipher(text,alphab1,alphab2):
         else:      
             pass    
 
+
 #
 # ---------- MAIN ----------
 #
 
 if __name__ == "__main__":
 
-    system('cls')
-    print(frGREEN("\n---------- main ----------\n"))
-    pause()
+    try:
 
-    # create list of alphabet
-    string.ascii_lowercase
-    'abcdefghijklmnopqrstuvwxyz'
-    alphab = list(string.ascii_lowercase)
-    old_alphab = list(string.ascii_lowercase)
-    print(frGREEN(f"{FR_YELL}Alphabet list{NO_COLOR}\n{old_alphab}\n"))
-    
-    # random.shuffle() to create new_alphab
-    random.shuffle(old_alphab)
-    new_alphab=old_alphab       
-    print(frGREEN(f"{FR_GREEN}Messy alphabet 'list' to encrypt{NO_COLOR}\n{new_alphab}\n"))
-    print(frGREEN(f"{FR_GREEN}Messy alphabet 'string' to encrypt{NO_COLOR}\n{''.join(new_alphab)}\n"))
-    pause()
+        # clear console screen
+        system('cls')
+        # get name of script
+        my_script = __file__.split('\\')
+        my_script_name = my_script[len(my_script)-1]
+        print(frGREEN("\n---------- main ----------\n"))
+        print()
+        pause()
 
-    # my text
-    my_text = 'El murcielago esta hambriento'
-    #my_text = 'abcdef ghijk lmnopq KAIXO TEACHER'
+        # create list of alphabet
+        string.ascii_lowercase
+        'abcdefghijklmnopqrstuvwxyz'
+        alphab = list(string.ascii_lowercase)
+        old_alphab = list(string.ascii_lowercase)
+        print(frGREEN(f"{FR_YELL}Alphabet list{NO_COLOR}\n{old_alphab}\n"))
+        
+        # random.shuffle() to create new_alphab
+        random.shuffle(old_alphab)
+        new_alphab=old_alphab       
+        print(frGREEN(f"{FR_GREEN}Messy alphabet 'list' to encrypt{NO_COLOR}\n{new_alphab}\n"))
+        print(frGREEN(f"{FR_GREEN}Messy alphabet 'string' to encrypt{NO_COLOR}\n{''.join(new_alphab)}\n"))
+        pause()
 
-    print(frGREEN(f"my text\n\t{my_text}\n"))
+        # my text
+        my_text = 'El murcielago esta hambriento'
+        #my_text = 'abcdef ghijk lmnopq KAIXO TEACHER'
 
-    # call encrypt function to change original text
-    encripted_text = ''    
-    encrypt(my_text.casefold(),alphab,new_alphab)
-    print(frRED(f"encrypted text\n\t{encripted_text}\n"))    
+        print(frGREEN(f"my text\n\t{my_text}\n"))
 
-    # decode process
-    decoded_text=''
-    decipher(encripted_text,new_alphab,alphab)
-    print(f"{FR_YELL}decoded text\n\t{NO_COLOR} {decoded_text}\n")
-    pause()
+        # call encrypt function to change original text
+        encripted_text = ''    
+        encrypt(my_text.casefold(),alphab,new_alphab)
+        print(frRED(f"encrypted text\n\t{encripted_text}\n"))    
 
-    # ------------------------------------------------
-    #          SHOW VARS CHARACTERISTICS 
-    #------------------------------------------------ 
+        # decode process
+        decoded_text=''
+        decipher(encripted_text,new_alphab,alphab)
+        print(f"{FR_YELL}decoded text\n\t{NO_COLOR} {decoded_text}\n")
+        pause()
 
-    yesss=True   
-    while yesss:
-        _msg = "Do you want to see attributes for a specific VAR ? (Y,N): "
-        answer=Y_N_2(_msg)        
-        if answer in ['Y','N']: yesss = False
+        # ------------------------------------------------
+        #          SHOW VARS CHARACTERISTICS 
+        #------------------------------------------------ 
 
-    if answer == 'Y':            
-        # add question for name of var.....
-        _what_var = str(input("What VAR ? "))
-        try: 
-            _what_var
-            _my_Obj_name = eval(_what_var)
-            print(f"\n{FR_GREEN}---------- INFO FOR OBJECT '{_my_Obj_name}' ----------{NO_COLOR}\n")
-            pause()
-            # my objects functions  
-            mostrar(_my_Obj_name)       
+        yesss=True   
+        while yesss:
+            _msg = "Do you want to see attributes for a specific VAR ? (Y,N): "
+            answer=Y_N_2(_msg)        
+            if answer in ['Y','N']: yesss = False
 
-        except NameError:
-            print(f"\n\t{FR_RED}---- Var '{_what_var}' doesn't exits ----")
-            print(f"\n{FR_GREEN}--------------- That's all for today ---------------{NO_COLOR}\n")
-            #_my_Obj_name = None 
+        if answer == 'Y':            
+            # add question for name of var.....
+            _what_var = str(input("What VAR ? "))
+            try: 
+                _what_var
+                _my_Obj_name = eval(_what_var)
+                print(f"\n{FR_GREEN}---------- INFO FOR OBJECT '{_my_Obj_name}' ----------{NO_COLOR}\n")
+                pause()
+                # my objects functions  
+                mostrar(_my_Obj_name)       
 
-    else:
-        print(f"\n{FR_GREEN}---------- That's all for today ----------{NO_COLOR}\n")
+            except NameError:
+                print(f"\n\t{FR_RED}---- Var '{_what_var}' doesn't exits ----")
+                print(f"\n{FR_GREEN}--------------- That's all for today ---------------{NO_COLOR}\n")
+                #_my_Obj_name = None 
+
+        else:
+            print(f"\n{FR_GREEN}---------- That's all for today ----------{NO_COLOR}\n")
+
+    except Exception as Argument:
+        write_traceback_info(Argument,traceback,my_script_name)        
+        pause()
 
 else:
     # something wrong

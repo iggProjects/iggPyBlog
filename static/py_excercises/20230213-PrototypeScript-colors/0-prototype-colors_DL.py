@@ -96,7 +96,7 @@ if __name__ == "__main__":
             print(f"\n{FR_GREEN}---------- That's all for today 👌 ----------{NO_COLOR}\n")
         
     except Exception as Argument:
-        print(f"{FR_RED}ERROR ==>{NO_COLOR} {ImportError} | {ImportError.__class__} | {ImportError.__doc__}")
+        write_traceback_info(Argument,traceback,my_script_name)        
         pause()
 
 else:

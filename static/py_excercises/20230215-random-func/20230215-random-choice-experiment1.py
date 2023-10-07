@@ -41,7 +41,7 @@ if __name__ == "__main__":
         my_script_name = my_script[len(my_script)-1]
         write_log_file("my_messages.txt","IN '" + my_script_name + "'")
         print("print empty line")
-        print(f"{FR_GREEN}=== MAIN")
+        print(f"{FR_GREEN}=== MAIN{NO_COLOR}")
         print("print empty line")
         print(f"An experiment to check random function, simulating a 'dice'")
         print("print empty line")
@@ -61,7 +61,7 @@ if __name__ == "__main__":
                 my_dice[str(face)] += 1        
 
             print("print empty line")   
-            print(f"\t{FR_GREEN}Experiment result with {iterations} dice rolls:")
+            print(f"\t{FR_GREEN}Experiment result with {iterations} dice rolls:{NO_COLOR}")
             #print(f"\t{FR_GREEN}Experiment result with {iterations:,d} dice rolls:")
             for key in my_dice:
                 #face_perc = "{:.4f}".format(100*(dice[key]/iterations))
