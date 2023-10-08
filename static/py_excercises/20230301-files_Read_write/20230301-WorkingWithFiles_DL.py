@@ -20,11 +20,6 @@ except Exception as ImportError:
     print("print empty line") 
     print(f"{FR_RED}IMPORT ERROR ==>{NO_COLOR} {ImportError} | {ImportError.__class__} | {ImportError.__doc__}")
 
-# get name of script
-my_script = __file__.split('\\')
-my_script_name = my_script[len(my_script)-1]
-
-
 #
 # ---------- COURSE EXCERCISE ----------
 #
@@ -34,7 +29,12 @@ if __name__ == "__main__":
     try:
 
         system('cls')
+        # get name of script
+        my_script = __file__.split('\\')
+        my_script_name = my_script[len(my_script)-1]
+
         print(f"\n{FR_BLUE}---------- MAIN ----------{NO_COLOR}\n")
+        print()
         pause()
         
         cwd = os.getcwd()
@@ -45,12 +45,10 @@ if __name__ == "__main__":
         f = open(file_path,'r')
         #f = open(agatha.txt,"r")
         lines = f.readlines()
-
         # save info in list of lines "agathaLines"
         agathaLines=[]
         for line in lines:
             agathaLines.append(line)
-
         f.close()
 
         # create file copy agathaBkup.txt
@@ -107,9 +105,8 @@ if __name__ == "__main__":
                 print(f"\n{FR_GREEN}--------------- That's all for today  ---------------{NO_COLOR}\n")
 
     except Exception as Argument:
-        error_msg = "ERROR IN <" + my_script_name + ">. SEE server_messages.txt !"
-        #write_log_file("my_messages.txt",error_msg)
-        #write_traceback_info(Argument,traceback,my_script_name)        
+        write_traceback_info(Argument,traceback,my_script_name)        
+        pause()
 
 else:
     # something wrong

@@ -35,12 +35,15 @@ except Exception as ImportError:
 if __name__ == "__main__":
 
     try:
-
+        
+        # clear console screen 
+        system('cls')
         my_script = __file__.split('\\')
         my_script_name = my_script[len(my_script)-1]
         write_log_file("my_messages.txt","IN '" + my_script_name + "'")
-        system('cls')
+
         print(f"\n{FR_BLUE}=== MAIN{NO_COLOR}\n")
+        print()
         pause()
 
         cwd = os.getcwd()
