@@ -63,6 +63,8 @@ if __name__ == "__main__":
         os.chdir('../../')
         rootPath = os.getcwd()
         print(f"{FR_GREEN}parent path: {rootPath}")
+        print("print empty line")
+
         f = []
         d = []
         for (dirpath, dirnames, filenames) in os.walk(rootPath):
@@ -70,21 +72,22 @@ if __name__ == "__main__":
             d.extend(dirnames)
             break
 
-        print("print empty line")
         print(f"{FR_GREEN}DIRS IN {rootPath}: ")
         print("print empty line")
         matrix_view(d,3)
         print("print empty line")
+        
         print(f"{FR_GREEN}FILES IN {rootPath}: ")
         print("print empty line")
         matrix_view(f,3)
         print("print empty line")
+        
         print(f"----------------- That's All -----------------")
 
     except Exception as Argument:
         error_msg = "ERROR IN <" + my_script_name + ">. SEE server_messages.txt !"
         write_log_file("my_messages.txt",error_msg)
-        write_traceback_info(Argument,traceback,my_script_name)        
+        write_traceback_info_1(Argument,traceback,my_script_name)        
 
 else:
     # something wrong

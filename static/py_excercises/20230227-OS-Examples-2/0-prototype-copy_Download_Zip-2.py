@@ -33,11 +33,15 @@ except Exception as ImportError:
 
 # Function for tree structure zip file, needed in this excercise
 def zip_compression_tree(root_path, zip_name):
+    print(f"..... from zip_compression_tree: {root_path} | zip_name: {zip_name}")
     with zipfile.ZipFile(zip_name, 'w') as z:
         for root, dirs, files in os.walk(root_path):
-            for file in files:                
-                z.write(os.path.join(root, file))
+            for file in files:
+                print(f"...file added: {file}")  
+                if file != zip_name:             
+                    z.write(os.path.join(root, file))
             for directory in dirs:
+                print(f"...dir added: {directory}")               
                 z.write(os.path.join(root, directory))
 
 #
@@ -60,6 +64,8 @@ if __name__ == "__main__":
         dirPath = dirname(__file__)
         os.chdir(dirPath)
         dirPath = os.getcwd()
+        print(f"dirPath: {dirPath}")
+        print()
         list_paths = []
         list_paths.append(dirPath)
 
@@ -67,13 +73,12 @@ if __name__ == "__main__":
         dirArray = dirPath.split('\\')    
         dirName = dirArray[len(dirArray)-1]
         fileNameZip = dirName+'.zip'
-
-        """
+        
+        print(f"list_paths:")
         for path in list_paths:
             print(f"\t{path}")
         print()    
-        """
-
+        
         # delete if exists  
         if os.path.exists(fileNameZip):
             os.remove(fileNameZip)
@@ -83,8 +88,18 @@ if __name__ == "__main__":
         print(f"{FR_BLUE}*** Creating Zip File '{fileNameZip}' ***{NO_COLOR}")
         print()
 
-        zip_compression_tree(dirPath, fileNameZip)
-        
+        zip_compression_tree(list_paths[0], fileNameZip)
+        """
+        zf = ZipFile("myzipfile.zip", "w")
+        dirPath1 = dirname(__file__)
+        print(f"===> dirPath1 '{dirPath1}'")
+        for dirPath1, subdirs, files in os.walk(dirPath):
+            zf.write(dirPath1)
+            for filename in files:
+                zf.write(os.path.join(dirPath1, filename))
+        zf.close() 
+
+        """        
         if os.path.exists(fileNameZip):
 
             print()

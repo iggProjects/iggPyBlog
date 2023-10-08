@@ -34,48 +34,62 @@ except Exception as ImportError:
 #
 
 if __name__ == "__main__":
-    #print(f"\n{Fore.RED}---------- main ----------{Style.RESET_ALL}\n")
-    system('cls')
-    print(f"\n{FR_GREEN}---------- MAIN ----------{NO_COLOR}\n")
-    pause()
-    # my code    
-    # my code    
-    myPath = dirname(dirname(__file__))
-    d = []
-    for (dirpath, dirnames, filenames) in os.walk(myPath):
-        d.extend(dirnames)
-        #f.extend(filenames)
-        break
-    print(f"{FR_GREEN}Path: {myPath}")
-    print()
-    print(f"{FR_GREEN}FILES IN {myPath}: ")
-    print()
-    matrix_view(d,3)
-    print()
-    pause()
 
-    os.chdir(myPath)
-    os.chdir('../../')
-    rootPath = os.getcwd()
-    print(f"{FR_GREEN}parent path: {rootPath}")
-    f = []
-    d = []
-    for (dirpath, dirnames, filenames) in os.walk(rootPath):
-        f.extend(filenames)
-        d.extend(dirnames)
-        break
+    try:
+        # clear console screen
+        system('cls')
+        # get name of script
+        my_script = __file__.split('\\')
+        my_script_name = my_script[len(my_script)-1]
 
-    print()
-    print(f"{FR_GREEN}DIRS IN {rootPath}: ")
-    print()
-    matrix_view(d,3)
-    print()
-    print(f"{FR_GREEN}FILES IN {rootPath}: ")
-    print()
-    matrix_view(f,3)
+        print(f"\n{FR_GREEN}---------- MAIN ----------{NO_COLOR}\n")
+        pause()
+        # my code    
+        # my code    
+        myPath = dirname(dirname(__file__))
+        d = []
+        for (dirpath, dirnames, filenames) in os.walk(myPath):
+            d.extend(dirnames)
+            #f.extend(filenames)
+            break
+        print(f"{FR_GREEN}Path: {myPath}")
+        print()
+        print(f"{FR_GREEN}FILES IN {myPath}: ")
+        print()
+        matrix_view(d,3)
+        print()
+        pause()
 
-    print(f"\n{FR_GREEN}---------- THAT'S ALL ----------{NO_COLOR}\n")
+        os.chdir(myPath)
+        os.chdir('../../')
+        rootPath = os.getcwd()
+        print(f"{FR_GREEN}parent path: {rootPath}")
+        print()
+
+        f = []
+        d = []
+        for (dirpath, dirnames, filenames) in os.walk(rootPath):
+            f.extend(filenames)
+            d.extend(dirnames)
+            break
+
+        print(f"{FR_GREEN}DIRS IN {rootPath}: ")
+        print()
+        matrix_view(d,3)
+        print()
+        pause()
+        
+        print(f"{FR_GREEN}FILES IN {rootPath}: ")
+        print()
+        matrix_view(f,3)
+        pause()
+
+        print(f"\n{FR_GREEN}---------- THAT'S ALL ----------{NO_COLOR}\n")
    
+    except Exception as Argument:
+        error_msg = "ERROR IN <" + my_script_name + ">. SEE server_messages.txt !"
+        write_log_file("my_messages.txt",error_msg)
+        write_traceback_info(Argument,traceback,my_script_name)  
 
 else:
     # something wrong

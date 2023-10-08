@@ -28,14 +28,13 @@ with zipfile.ZipFile('Python.zip', 'w', zipfile.ZIP_DEFLATED) as zipf:
     zipdir('tmp/', zipf)        
 
 ********************************
+
     zf = zipfile.ZipFile("myzipfile.zip", "w")
     for dirPath, subdirs, files in os.walk(dirPath):
         zf.write(dirPath)
         for filename in files:
             zf.write(os.path.join(dirPath, filename))
-    zf.close()    
-    
-
+    zf.close()      
 
 """
 
@@ -68,6 +67,7 @@ except Exception as ImportError:
 # Functions for zip file
 # https://techoverflow.net/2022/09/24/how-to-zip-folder-recursively-using-python-zipfile/
 # https://stackoverflow.com/questions/10480440/zip-folder-with-subfolder-in-python
+
 def zip_compression_tree(root_path, zip_name):
     with zipfile.ZipFile(zip_name, 'w') as z:
         for root, dirs, files in os.walk(root_path):
