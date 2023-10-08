@@ -28,10 +28,6 @@ except Exception as ImportError:
     print("print empty line") 
     print(f"{FR_RED}IMPORT ERROR ==>{NO_COLOR} {ImportError} | {ImportError.__class__} | {ImportError.__doc__}")
 
-# get name of script
-my_script = __file__.split('\\')
-my_script_name = my_script[len(my_script)-1]
-
 
 #
 # ---------- MAIN ----------
@@ -39,90 +35,99 @@ my_script_name = my_script[len(my_script)-1]
 
 if __name__ == "__main__":
 
-    system('cls')
-    print("\n---------- MAIN ----------\n")
-    pause()
+    try:
+        # clear console screen
+        system('cls')
+        # get name of script
+        my_script = __file__.split('\\')
+        my_script_name = my_script[len(my_script)-1]
+        print("\n---------- MAIN ----------\n")
+        print()
+        pause()
 
-    # list_paths: append Directory of file
-    dirPath = dirname(__file__)
-    os.chdir(dirPath)
-    dirPath = os.getcwd()
-    print(f"dirPath: {dirPath}")
-    list_paths = []
-    list_paths.append(dirPath)
+        # list_paths: append Directory of file
+        dirPath = dirname(__file__)
+        os.chdir(dirPath)
+        dirPath = os.getcwd()
+        print(f"dirPath: {dirPath}")
+        list_paths = []
+        list_paths.append(dirPath)
 
-    # name of zip file
-    dirArray = dirPath.split('\\')    
-    dirName = dirArray[len(dirArray)-1]
-    fileNameZip = dirName + '.zip'
-    print(f"fileNameZip: {fileNameZip}")
+        # name of zip file
+        dirArray = dirPath.split('\\')    
+        dirName = dirArray[len(dirArray)-1]
+        fileNameZip = dirName + '.zip'
+        print(f"fileNameZip: {fileNameZip}")
 
-    # list_paths: append paths to MyColor.py & MyFunc.py
-    #static_path = dirname(dirname(dirname(__file__))) 
-    #print(f"static_path: {static_path}")
-    print()
-    
-    MyColors_path = os.path.join(dirPath,'MyColors.py')
-    list_paths.append(MyColors_path)  
-    """
-    MyFunc_path = os.path.join(dirPath,'MyFunc_copy_DL.py')
-    list_paths.append(MyFunc_path)      
-    """
-    
-    for path in list_paths:
-        print(f"\t{path}")
-    print()    
-    
-    # delete if exists  
-    if os.path.exists(fileNameZip):
-        os.remove(fileNameZip)
-        print(f"===> file '{fileNameZip}' deleted")
+        # list_paths: append paths to MyColor.py & MyFunc.py
+        #static_path = dirname(dirname(dirname(__file__))) 
+        #print(f"static_path: {static_path}")
+        print()
+        
+        MyColors_path = os.path.join(dirPath,'MyColors.py')
+        list_paths.append(MyColors_path)  
+        """
+        MyFunc_path = os.path.join(dirPath,'MyFunc_copy_DL.py')
+        list_paths.append(MyFunc_path)      
+        """
+        
+        for path in list_paths:
+            print(f"\t{path}")
         print()    
+        
+        # delete if exists  
+        if os.path.exists(fileNameZip):
+            os.remove(fileNameZip)
+            print(f"===> file '{fileNameZip}' deleted")
+            print()    
 
-    print(f"{FR_BLUE}*** Creating Zip File '{fileNameZip}' ***{NO_COLOR}")
-    print()
+        print(f"{FR_BLUE}*** Creating Zip File '{fileNameZip}' ***{NO_COLOR}")
+        print()
 
-    zipFilesInList(list_paths, fileNameZip, lambda name: 'DL' in name)
-    print()
-    print(f"{FR_BLUE}*** Zip File Created ***{NO_COLOR}")    
-    pause()
-   
-    print(f"\n{FR_GREEN}---------- That's all for today 👌 ----------{NO_COLOR}\n")
-
-    pause()
+        zipFilesInList(list_paths, fileNameZip, lambda name: 'DL' in name)
+        print()
+        print(f"{FR_BLUE}*** Zip File Created ***{NO_COLOR}")    
+        pause()
     
-
-    # ------------------------------------------------
-    #           ASKING FOR SHOW VARS INFO 
-    #------------------------------------------------- 
-    
-    # with Y_N_2 function
-    yesss=True   
-    while yesss:
-        _msg = "Do you want to see attributes for a specific VAR ? (Y,N): "
-        answer=Y_N_2(_msg)        
-        if answer in ['Y','N']: yesss = False
-
-    if answer == 'Y':            
-        # add question for name of var.....
-        _what_var = str(input("What VAR ? "))
-        try: 
-            _what_var
-            _my_Obj_name = eval(_what_var)
-            print(f"\n{FR_GREEN}---------- INFO FOR OBJECT '{_my_Obj_name}' ----------{NO_COLOR}\n")
-            # pause()
-            # my objects functions  
-            mostrar(_my_Obj_name)       
-
-        except NameError:
-            print(f"\n\t{FR_RED}---- Var '{_what_var}' doesn't exits 🙄🙄  ----")
-            print(f"\n{FR_GREEN}--------------- That's all for today 👌 ---------------{NO_COLOR}\n")
-            #_my_Obj_name = None 
-
-    else:
         print(f"\n{FR_GREEN}---------- That's all for today 👌 ----------{NO_COLOR}\n")
-    
 
+        pause()
+        
+
+        # ------------------------------------------------
+        #           ASKING FOR SHOW VARS INFO 
+        #------------------------------------------------- 
+        
+        # with Y_N_2 function
+        yesss=True   
+        while yesss:
+            _msg = "Do you want to see attributes for a specific VAR ? (Y,N): "
+            answer=Y_N_2(_msg)        
+            if answer in ['Y','N']: yesss = False
+
+        if answer == 'Y':            
+            # add question for name of var.....
+            _what_var = str(input("What VAR ? "))
+            try: 
+                _what_var
+                _my_Obj_name = eval(_what_var)
+                print(f"\n{FR_GREEN}---------- INFO FOR OBJECT '{_my_Obj_name}' ----------{NO_COLOR}\n")
+                # pause()
+                # my objects functions  
+                mostrar(_my_Obj_name)       
+
+            except NameError:
+                print(f"\n\t{FR_RED}---- Var '{_what_var}' doesn't exits 🙄🙄  ----")
+                print(f"\n{FR_GREEN}--------------- That's all for today 👌 ---------------{NO_COLOR}\n")
+                #_my_Obj_name = None 
+
+        else:
+            print(f"\n{FR_GREEN}---------- That's all for today 👌 ----------{NO_COLOR}\n")
+    
+    except Exception as Argument:
+        write_traceback_info(Argument,traceback,my_script_name)        
+        pause()
+  
 else:
     # something wrong
     print(frRED("\n---- upsssssssss something is wrong 😢😢  ----\n"))
