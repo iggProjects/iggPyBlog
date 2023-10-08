@@ -45,122 +45,124 @@ except Exception as ImportError:
 
 if __name__ == "__main__":
 
-    system('cls')
-    print("\n---------- MAIN ----------\n")
-    pause()
+    try:
+        # clear console screen
+        system('cls')
+        # get name of script
+        my_script = __file__.split('\\')
+        my_script_name = my_script[len(my_script)-1]
+        print("\n---------- MAIN ----------\n")
+        print()
+        pause()
 
-    # list_paths: append Directory of file
-    dirPath = dirname(__file__)
-    os.chdir(dirPath)
-    dirPath = os.getcwd()
-    list_paths = []
-    list_paths.append(dirPath)
+        # list_paths: append Directory of file
+        dirPath = dirname(__file__)
+        os.chdir(dirPath)
+        dirPath = os.getcwd()
+        list_paths = []
+        list_paths.append(dirPath)
 
-    # name of zip file
-    dirArray = dirPath.split('\\')    
-    dirName = dirArray[len(dirArray)-1]
-    fileNameZip = dirName+'.zip'
+        # name of zip file
+        dirArray = dirPath.split('\\')    
+        dirName = dirArray[len(dirArray)-1]
+        fileNameZip = dirName+'.zip'
 
-    # list_paths: append paths to MyColor.py & MyFunc.py
-    static_path = dirname(dirname(dirname(__file__))) 
-    #print(f"static_path: {static_path}")
-    print()
-    MyColors_path = static_path + '\include\MyColors.py'
-    list_paths.append(MyColors_path)  
-    MyFunc_path = static_path + '\include\MyFunc.py'
-    list_paths.append(MyFunc_path)      
+        # list_paths: append paths to MyColor.py & MyFunc.py
+        static_path = dirname(dirname(dirname(__file__))) 
+        #print(f"static_path: {static_path}")
+        print()
+        MyColors_path = static_path + '\include\MyColors.py'
+        list_paths.append(MyColors_path)  
+        MyFunc_path = static_path + '\include\MyFunc_copy_DL.py'
+        list_paths.append(MyFunc_path)      
 
-    """
-    for path in list_paths:
-        print(f"\t{path}")
-    print()    
-    """
-    # delete if exists  
-    if os.path.exists(fileNameZip):
-        os.remove(fileNameZip)
-        print(f"===> file '{fileNameZip}' deleted")
+        for path in list_paths:
+            print(f"\t{path}")
         print()    
 
-    print(f"{FR_BLUE}*** Creating Zip File '{fileNameZip}' ***{NO_COLOR}")
-    print()
-    zipFilesInList(list_paths, fileNameZip, lambda name : ('py' or 'bat')  in name)
+        # delete if exists  
+        if os.path.exists(fileNameZip):
+            os.remove(fileNameZip)
+            print(f"===> file '{fileNameZip}' deleted")
+            print()    
 
-    if os.path.exists(fileNameZip):
-
+        print(f"{FR_BLUE}*** Creating Zip File '{fileNameZip}' ***{NO_COLOR}")
         print()
-        print(f"{FR_BLUE}{fileNameZip} succesfully created !{NO_COLOR}")
-        print()
+        zipFilesInList(list_paths, fileNameZip, lambda name : 'DL' in name)
 
-        # Copy file to folder in PC
-        import shutil
+        if os.path.exists(fileNameZip):
 
-        # source file path
-        src_path = dirPath + '\\' + fileNameZip
-        print(f"{FR_GREEN}src_path{NO_COLOR}")
-        print(f"{src_path}")
-        print()
-
-        # folder to save file: "iggPyWeb" in Downloads folder
-        downloads_path = str(Path.home() / "Downloads" / "iggPyWeb")
-        print(f"download path in client ---> {downloads_path}")
-        print()
-        
-        if not os.path.exists(downloads_path):
-            os.mkdir(downloads_path)
-            print(f"Dir {downloads_path} created !!!")
+            print()
+            print(f"{FR_BLUE}{fileNameZip} succesfully created !{NO_COLOR}")
             print()
 
-        # permission problems
-        # https://stackoverflow.com/questions/7518067/python-ioerror-errno-13-permission-denied-when-im-copying-file    
+            # Copy file to folder in PC
+            import shutil
 
-        #shutil.copy(src_path, dst_path)        
-        shutil.copy(src_path, downloads_path)        
-        #shutil.copy2(src_path, downloads_path)        
-        #shutil.copyfile(src_path, downloads_path)        
-        print(f"{FR_GREEN}Copy Process:{NO_COLOR}")
-        print()  
-        print(f"\tFile '{fileNameZip}' copied in folder '{downloads_path}'")  
-        print() 
-        pause()
-    
-    else:
-        print(f"UPSSSSSS............")
-    
-    print(f"\n{FR_GREEN}---------- That's all for today 👌 ----------{NO_COLOR}\n")
+            # source file path
+            src_path = dirPath + '\\' + fileNameZip
+            print(f"{FR_GREEN}src_path{NO_COLOR}")
+            print(f"{src_path}")
+            print()
 
-    pause()
-    
+            # folder to save file: "iggPyWeb" in Downloads folder
+            downloads_path = str(Path.home() / "Downloads" / "iggPyWeb")
+            print(f"download path in client ---> {downloads_path}")
+            print()
+            
+            if not os.path.exists(downloads_path):
+                os.mkdir(downloads_path)
+                print(f"Dir {downloads_path} created !!!")
+                print()
 
-    # ------------------------------------------------
-    #           ASKING FOR SHOW VARS INFO 
-    #------------------------------------------------- 
-    """
-    # with Y_N_2 function
-    yesss=True   
-    while yesss:
-        _msg = "Do you want to see attributes for a specific VAR ? (Y,N): "
-        answer=Y_N_2(_msg)        
-        if answer in ['Y','N']: yesss = False
+            # permission problems
+            # https://stackoverflow.com/questions/7518067/python-ioerror-errno-13-permission-denied-when-im-copying-file    
 
-    if answer == 'Y':            
-        # add question for name of var.....
-        _what_var = str(input("What VAR ? "))
-        try: 
-            _what_var
-            _my_Obj_name = eval(_what_var)
-            print(f"\n{FR_GREEN}---------- INFO FOR OBJECT '{_my_Obj_name}' ----------{NO_COLOR}\n")
-            # pause()
-            # my objects functions  
-            mostrar(_my_Obj_name)       
+            shutil.copy(src_path, downloads_path)        
+            print(f"{FR_GREEN}Copy Process:{NO_COLOR}")
+            print()  
+            print(f"\tFile '{fileNameZip}' copied in folder '{downloads_path}'")  
+            print()
+            print(f"\n{FR_GREEN}---------- That's all for today 👌 ----------{NO_COLOR}\n") 
+            pause()
+        
+        else:
+            print(f"UPSSSSSS............")       
+        
+        # ------------------------------------------------
+        #           ASKING FOR SHOW VARS INFO 
+        #------------------------------------------------- 
+        
+        # with Y_N_2 function
+        yesss=True   
+        while yesss:
+            _msg = "Do you want to see attributes for a specific VAR ? (Y,N): "
+            answer=Y_N_2(_msg)        
+            if answer in ['Y','N']: yesss = False
 
-        except NameError:
-            print(f"\n\t{FR_RED}---- Var '{_what_var}' doesn't exits 🙄🙄  ----")
-            print(f"\n{FR_GREEN}--------------- That's all for today 👌 ---------------{NO_COLOR}\n")
-            #_my_Obj_name = None 
+        if answer == 'Y':            
+            # add question for name of var.....
+            _what_var = str(input("What VAR ? "))
+            try: 
+                _what_var
+                _my_Obj_name = eval(_what_var)
+                print(f"\n{FR_GREEN}---------- INFO FOR OBJECT '{_my_Obj_name}' ----------{NO_COLOR}\n")
+                # pause()
+                # my objects functions  
+                mostrar(_my_Obj_name)       
 
-    else:
-        print(f"\n{FR_GREEN}---------- That's all for today 👌 ----------{NO_COLOR}\n")
-    """
+            except NameError:
+                print(f"\n\t{FR_RED}---- Var '{_what_var}' doesn't exits 🙄🙄  ----")
+                print(f"\n{FR_GREEN}--------------- That's all for today 👌 ---------------{NO_COLOR}\n")
+                #_my_Obj_name = None 
+
+        else:
+            print(f"\n{FR_GREEN}---------- That's all for today 👌 ----------{NO_COLOR}\n")
+        
+    except Exception as Argument:
+        error_msg = "ERROR IN <" + my_script_name + ">. SEE server_messages.txt !"
+        write_log_file("my_messages.txt",error_msg)
+        write_traceback_info(Argument,traceback,my_script_name)  
 
 else:
     # something wrong
