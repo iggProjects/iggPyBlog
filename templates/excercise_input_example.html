@@ -45,8 +45,8 @@ check if 'cancel' button was clicked
             //alert("upsssss function not defined yet...")
             let worker_age = prompt(msg);  
             
-            if ( isNaN(parseInt(worker_age)) || ( parseInt(worker_age) < 0 ) || ( parseInt(worker_age) > 115 ) ) {
-                input_worker_age("Please remember age must be in (0,115) interval")
+            if ( isNaN(parseInt(worker_age)) || ( parseInt(worker_age) < 18 ) || ( parseInt(worker_age) > 115 ) ) {
+                input_worker_age("Please remember age must be in [18,115] interval")
             } else {                
                 console.log("---> the worker's age has been saved: " + parseInt(worker_age))
                 worker.push(worker_name,worker_age)
@@ -82,13 +82,13 @@ check if 'cancel' button was clicked
 
             py_temp_path = py_path;
             msg = "Please enter worker name: ";
-            console.log("---> in request process with param: " + py_path); 
+            console.log("....... in request process with param: " + py_path); 
  
             while (moreData) {         
                 input_worker_name(msg);
             }
 
-            console.log("---> final worker array: " + workers + " | length: " + workers.length );
+            console.log("....... final worker array: " + workers + " | length: " + workers.length );
             
             // https://www.geeksforgeeks.org/pass-javascript-variables-to-python-in-flask/
             // 

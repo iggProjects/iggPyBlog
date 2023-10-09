@@ -30,6 +30,7 @@ except Exception as ImportError:
 if __name__ == "__main__":
 
     try:
+        system('cls')
         # get name of script
         my_script = __file__.split('\\')
         my_script_name = my_script[len(my_script)-1]
@@ -39,21 +40,22 @@ if __name__ == "__main__":
         print(f"{FR_GREEN}=== INPUT WORKERS TABLE{NO_COLOR}")
         print("print empty line")
          
-        # argument dict
-        workers = json.loads(sys.argv[1])
-        
-        print(f"\n\t{FR_YELL}Session terminated by user{NO_COLOR}\n")        
-        print(f"\tVar Workers type: {type(workers)} | Values: {workers}\n")
-       
-        print("print empty line") 
-        """       
-        for k in workers:
-            print(f"\t\tName: {k} | age: {workers[k]}")        
-        """
-        for i in range(len(workers)):
-            print(f"\tworker {i}: - {workers[i]}, type: {type(workers[i])}")        
-            print(f"\t\tName: {workers[i][0]} | Age: {workers[i][1]}")
+        # global variables
+        moreData=True
+        workers = sys.argv[1]
+        print(f"\tVar Workers type: {type(workers)} | Values: {str(workers)}\n")
 
+        #workers1 = json.loads()
+        workers1 = list(str(workers))
+        print(f"\tVar Workers type: {type(workers1)} | Values: {workers1}\n")
+
+        workers2 = json.loads(sys.argv[1])
+        print(f"\tVar Workers type: {type(workers2)} | Values: {workers2}\n")
+
+        for k in workers2:
+            print(f"\t\t{k}: {workers2[k]}")
+        
+        
         print("print empty line")
         print(f"\n{FR_GREEN}---------- That's all for today ----------{NO_COLOR}\n")     
 

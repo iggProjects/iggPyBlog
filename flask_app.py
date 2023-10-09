@@ -369,10 +369,10 @@ def result_script_exec():
 
 # subprocess with a dict as parameter
 #   - https://stackoverflow.com/questions/48395685/launch-a-python-script-from-another-script-with-parameters-in-subprocess-argume
-#   - https://www.askpython.com/python-modules/python-subprocess-module
-#   - https://earthly.dev/blog/python-subprocess/
+#   - 
+#   - 
 
-
+# ONLY FOR 'INPUT WORKERS EXAMPLE' (excercise 11)
 @app.route('/result_script_exec1/')
 def result_script_exec1():
 
@@ -392,7 +392,7 @@ def result_script_exec1():
 
         # read path to script
         py_script_path = request.args['py_path']
-        print(f"py_path --> {py_script_path}")
+        print(f"py_path ===> {py_script_path}")
 
         #workers = request.args.get("workers")
         workers = request.args['workers']    
@@ -400,7 +400,7 @@ def result_script_exec1():
         workers_list = json.loads(workers)
         print(f"workers list var type: {type(workers_list)} | worker length: {len(workers_list)}")
         for k in workers_list:
-            print(f"{k} -> {k[0]}, {k[1]} ")
+            print(f"worker {k} -> {k[0]}, {k[1]} ")
 
         #for k in len(workers_list):
         #    print(f"key: {k}, value: {workers_list[k]}")
@@ -420,7 +420,8 @@ def result_script_exec1():
         
         # call subprocess to excecute py_script_path
         if opSys == "Windows":
-            text = subprocess.run(["cmd", "/c", "python.exe", py_script_path],capture_output=True)
+            text = subprocess.run(["cmd", "/c", "python.exe", py_script_path, workers],capture_output=True)
+            #text = subprocess.run(["cmd", "/c", "python.exe", py_script_path],capture_output=True)
         elif opSys == "Linux":
             # put mysite/ in path for "pythonanywhere"
             text = subprocess.run(["/usr/bin/bash", "-c", f"python {basedir}/{py_script_path}"],capture_output=True)
