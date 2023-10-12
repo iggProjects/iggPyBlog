@@ -10,6 +10,7 @@ ONLY WORK IN LOCALHOST
 # My Own Functions from include dir 
 try:   # Import My Own Functions from include dir 
     import sys, traceback     
+    import platform
     from os import system
     from os.path import dirname, realpath
     # get parent up 2 from __file__ path: 'static path'   
@@ -38,15 +39,8 @@ if __name__ == "__main__":
 
     try:
 
-        # clear console screen
-        import platform
-        if platform.system() == 'Windows':
-            system('cls')
-        elif platform.system() == 'Linux':
-            system('clear')
-        else:
-            print(f"you OS is {platform.system()}. Find corresponding command to clear console screen")        
-
+        # clear console screen        
+        clear_console_screen()
         # get name of script
         my_script = __file__.split('\\')
         my_script_name = my_script[len(my_script)-1]

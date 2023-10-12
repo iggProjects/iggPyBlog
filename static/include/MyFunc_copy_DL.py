@@ -18,6 +18,8 @@
 
 # to write in log files
 import os, datetime
+from os import system
+import platform
 from os.path import basename ,dirname, isdir, isfile
 from zipfile import ZipFile
 
@@ -25,6 +27,16 @@ from zipfile import ZipFile
 # from static.include.config_logging import *
 # import My own colors
 from MyColors import *
+
+# clean console screen considering OS
+def clear_console_screen():
+    import platform
+    if platform.system() == 'Windows':
+        system('cls')
+    elif platform.system() == 'Linux':
+        system('clear')
+    else:
+        print(f"you OS is {platform.system()}. Find corresponding command to clear console screen")        
 
 
 # function to write in logFile

@@ -20,11 +20,22 @@
 import os, datetime
 from os.path import basename ,dirname, isdir, isfile
 from zipfile import ZipFile
+from os import system
 
 # import logging configuration
 from static.include.config_logging import *
 # import My own colors
 from static.include.MyColors import *
+
+# clean console screen considering OS
+def clear_console_screen():
+    import platform
+    if platform.system() == 'Windows':
+        system('cls')
+    elif platform.system() == 'Linux':
+        system('clear')
+    else:
+        print(f"you OS is {platform.system()}. Find corresponding command to clear console screen")        
 
 # function to write in logFile
 def write_log_file(logFile,msg):
@@ -70,37 +81,37 @@ def write_traceback_info(Argum,TraceList,script):
 
 def write_traceback_info_1(Argum,TraceList,script): 
                
-        traceback_formatted = TraceList.format_exc().replace('"','').replace(',',' | ')
-        traceback_lines = traceback_formatted.split('\n')
-        print("print empty line")        
-        print(frRED(f"====================== ERROR FOUND ======================"))
-        print("print empty line")
-        line_numb = []
-        for line in traceback_lines:
-            #if ('File' or 'line' or 'Module') in line:
-            if 'line ' in line:                
-                for field in line.split('|'):
-                   if 'line' in field:                      
-                      line_numb.append(field)
+    traceback_formatted = TraceList.format_exc().replace('"','').replace(',',' | ')
+    traceback_lines = traceback_formatted.split('\n')
+    print("print empty line")        
+    print(frRED(f"====================== ERROR FOUND ======================"))
+    print("print empty line")
+    line_numb = []
+    for line in traceback_lines:
+        #if ('File' or 'line' or 'Module') in line:
+        if 'line ' in line:                
+            for field in line.split('|'):
+                if 'line' in field:                      
+                  line_numb.append(field)
 
-        print(frRED(f"FILE: <{script}>"))
-        print("print empty line")
-        print(f"\t{FR_GREEN}code in{line_numb[0]}:{traceback_lines[len(traceback_lines)-3]}{NO_COLOR}")        
-        print(f"\t{FR_BLUE}{Argum} | {Argum.__class__} | {Argum.__doc__}{NO_COLOR}")
-        print("print empty line")
+    print(frRED(f"FILE: <{script}>"))
+    print("print empty line")
+    print(f"\t{FR_GREEN}code in{line_numb[0]}:{traceback_lines[len(traceback_lines)-3]}{NO_COLOR}")        
+    print(f"\t{FR_BLUE}{Argum} | {Argum.__class__} | {Argum.__doc__}{NO_COLOR}")
+    print("print empty line")
 
-        """
-        for line in traceback_lines:
-            if ('File' or 'line') in line:
-                print(f"{line}")  
+    """
+    for line in traceback_lines:
+        if ('File' or 'line') in line:
+            print(f"{line}")  
 
 
-        print("print empty line")
-        print(f"{FR_BLUE}===> {Argum} | {Argum.__class__} | {Argum.__doc__} <==={NO_COLOR}")
-        print("print empty line")
-        """
-        print(frRED(f"\t\tSEE 'server_messages.txt' file OR Contact Web Admin !"))
-        logging.exception(f"{Argum} | exception from '0-prototype-colors.py()': ")
+    print("print empty line")
+    print(f"{FR_BLUE}===> {Argum} | {Argum.__class__} | {Argum.__doc__} <==={NO_COLOR}")
+    print("print empty line")
+    """
+    print(frRED(f"\t\tSEE 'server_messages.txt' file OR Contact Web Admin !"))
+    logging.exception(f"{Argum} | exception from '0-prototype-colors.py()': ")
 
 
 

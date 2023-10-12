@@ -35,14 +35,7 @@ if __name__ == "__main__":
     try:    
 
         # clear screen
-        import platform
-        if platform.system() == 'Windows':
-            system('cls')
-        elif platform.system() == 'Linux':
-            system('clear')
-        else:
-            print(frGREEN("\n---------- MAIN ----------\n"))
-
+        clear_console_screen()
         write_log_file("my_messages.txt","IN 'func 0-prototype.py()'")
 
         #

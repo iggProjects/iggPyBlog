@@ -34,13 +34,7 @@ if __name__ == "__main__":
 
     try:
 
-        # clear screen
-        if platform.system() == 'Windows':
-            system('cls')
-        elif platform.system() == 'Linux':
-            system('clear')
-        else:
-            print(f"your OS is {platform.system()}. Find corresponding command to clear console screen")        
+        clear_console_screen()
         
         # get name of script
         my_script = __file__.split('\\')
