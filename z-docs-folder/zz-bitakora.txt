@@ -22,6 +22,14 @@ UPLOAD PAW:
 
 STILL TO DO !!!
 
+- flask get host info (localhost vs production web)
+    https://stackoverflow.com/questions/17077863/how-to-see-if-a-flask-app-is-being-run-on-localhost
+    https://stackoverflow.com/questions/24892035/how-can-i-get-the-named-parameters-from-a-url-using-flask
+    https://www.educba.com/flask-url-parameters/
+    https://www.verisign.com/en_US/website-presence/online/what-is-a-url/index.xhtml
+    https://stackoverflow.com/questions/28506953/get-url-of-flask-app-without-a-request
+
+
 - href 
     https://stackoverflow.com/questions/2793751/how-can-i-create-download-link-in-html
 
