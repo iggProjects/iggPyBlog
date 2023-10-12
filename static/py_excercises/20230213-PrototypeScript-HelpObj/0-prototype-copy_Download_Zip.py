@@ -48,14 +48,7 @@ except Exception as ImportError:
 
 if __name__ == "__main__":
 
-    import platform
-    if platform.system() == 'Windows':
-        system('cls')
-    elif platform.system() == 'Linux':            
-        system('clear')
-    else:
-        print(f"you OS is {platform.system()}. Find corresponding command to clear console screen") 
-
+    clear_console_screen()
     print("\n---------- MAIN ----------\n")
     pause()
 
