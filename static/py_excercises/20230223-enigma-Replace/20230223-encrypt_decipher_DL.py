@@ -50,13 +50,7 @@ def decipher(text):
 if __name__ == "__main__":
     
     # clear console screen
-    if platform.system() == 'Windows':
-        system('cls')
-    elif platform.system() == 'Linux':
-        system('clear')
-    else:
-        print(f"you OS is {platform.system()}. Find corresponding command to clear console screen")        
-    
+    clear_console_screen()    
     print(frGREEN("\n---------- main ----------\n"))
     print()
     pause()
