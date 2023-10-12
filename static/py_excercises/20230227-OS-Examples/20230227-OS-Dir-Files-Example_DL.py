@@ -27,12 +27,21 @@ except Exception as ImportError:
 if __name__ == "__main__":
 
     try:
+
         # clear console screen
-        system('cls')
+        if platform.system() == 'Windows':
+            system('cls')
+        elif platform.system() == 'Linux':
+            system('clear')
+        else:
+            print(f"you OS is {platform.system()}. Find corresponding command to clear console screen")        
+
         # get name of script
         my_script = __file__.split('\\')
         my_script_name = my_script[len(my_script)-1]
+        print()
         print(f"\n{FR_GREEN}---------- MAIN ----------{NO_COLOR}\n")
+        print()
         pause()
 
         myPath = dirname(dirname(__file__))

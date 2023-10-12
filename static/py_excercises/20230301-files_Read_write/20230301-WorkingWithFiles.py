@@ -6,7 +6,8 @@ THIS SCRIPT IS FOR..................
 # IMPORT SECTION
 #
 try:   # Import My Own Functions from include dir 
-    import os, sys, traceback, platform 
+    import os, sys, traceback
+    import platform 
     from os.path import dirname, realpath
     from os import system
     # get parent up 2 from __file__ path: 'static path'   
@@ -37,14 +38,22 @@ if __name__ == "__main__":
     try:
 
         # clear console screen
-        system('cls')
+        if platform.system() == 'Windows':
+            system('cls')
+        elif platform.system() == 'Linux':
+            system('clear')
+        else:
+            print(f"you OS is {platform.system()}. Find corresponding command to clear console screen")        
+
         # get name of script
         my_script = __file__.split('\\')
         my_script_name = my_script[len(my_script)-1]
 
         write_log_file("my_messages.txt","IN '" + my_script_name + "'")
 
+        print()
         print(f"\n{FR_BLUE}---------- MAIN ----------{NO_COLOR}\n")
+        print()
         pause()
         
         cwd = os.getcwd()

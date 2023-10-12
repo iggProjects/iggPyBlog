@@ -6,22 +6,15 @@
 #
 # IMPORT SECTION
 #
+# My Own Functions from include dir 
 try:   # Import My Own Functions from include dir 
     import os, sys, traceback
-    import platform 
-    from os.path import dirname, realpath
+    import platform
     from os import system
-    # get parent up 2 from __file__ path: 'static path'   
-    up2_dir = dirname(dirname(dirname(realpath(__file__))))
-    # insert path in sys.path
-    sys.path.append(up2_dir)
-    # get parent up 3 from __file__ path: 'static parent path'       
-    up3_dir = dirname(dirname(dirname(dirname(realpath(__file__)))))
-    # insert path in sys.path
-    sys.path.append(up3_dir)
+    from os.path import dirname, realpath
     # import My Own Func
-    from static.include.MyFunc import *
-    from static.include.MyColors import *
+    from MyColors import *
+    from MyFunc_copy_DL import *    
 except Exception as ImportError:
     FR_RED   = "\033[91m" 
     NO_COLOR = "\033[00m"

@@ -3,23 +3,26 @@
 THIS IS MY STANDAR SCRIPT TO CREATE NEWS SCRIPTS 
 
 """
-# IMPORT SECTION
-import os, sys
-from os import  system
-
-# include root path in sys.path
-ROOT_DIR = os.path.abspath(os.curdir)
-# check in what server is app
-if "iggWebNz" in ROOT_DIR:              # pythonanywhere  
-    ROOT_DIR = ROOT_DIR + "/mysite"
-else:                                   # working in localhost server
-    pass 
-sys.path.insert(1, ROOT_DIR)
-
-# import "My Own Funct" from root path
-from MyFunc import *
-
-# CONSTANTS
+try:   # Import My Own Functions from include dir 
+    import sys, traceback, platform     
+    from os.path import dirname, realpath
+    from os import system
+    # get parent up 2 from __file__ path: 'static path'   
+    up2_dir = dirname(dirname(dirname(realpath(__file__))))
+    # insert path in sys.path
+    sys.path.append(up2_dir)
+    # get parent up 3 from __file__ path: 'static parent path'       
+    up3_dir = dirname(dirname(dirname(dirname(realpath(__file__)))))
+    # insert path in sys.path
+    sys.path.append(up3_dir)
+    # import My Own Func
+    from static.include.MyFunc import *
+    from static.include.MyColors import *
+except Exception as ImportError:
+    FR_RED   = "\033[91m" 
+    NO_COLOR = "\033[00m"
+    print() 
+    print(f"{FR_RED}IMPORT ERROR ==>{NO_COLOR} {ImportError} | {ImportError.__class__} | {ImportError.__doc__}")
 
 #
 # ---------- MAIN ----------

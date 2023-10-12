@@ -7,7 +7,8 @@ Script for
 # IMPORT SECTION
 
 try:   # Import My Own Functions from include dir 
-    import os, sys, traceback, zipfile     
+    import os, sys, traceback, zipfile
+    import platform 
     from os.path import basename, dirname, realpath
     from zipfile import ZipFile
     from os import system
@@ -51,13 +52,23 @@ def zip_compression_tree(root_path, zip_name):
 if __name__ == "__main__":
 
     try:
+
+        # clear console screen
+        if platform.system() == 'Windows':
+            system('cls')
+        elif platform.system() == 'Linux':
+            system('clear')
+        else:
+            print(f"you OS is {platform.system()}. Find corresponding command to clear console screen")        
+        
         # get name of script
         my_script = __file__.split('\\')
         my_script_name = my_script[len(my_script)-1]
         write_log_file("my_messages.txt","IN '" + my_script_name + "'")
 
-        system('cls')
+        print()
         print("\n---------- MAIN ----------\n")
+        print()
         pause()
 
         # list_paths: append Directory of file

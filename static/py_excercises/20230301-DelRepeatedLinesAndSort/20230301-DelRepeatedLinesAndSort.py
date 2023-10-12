@@ -36,12 +36,19 @@ if __name__ == "__main__":
 
     try:
         
-        # clear console screen 
-        system('cls')
+        # clear console screen
+        if platform.system() == 'Windows':
+            system('cls')
+        elif platform.system() == 'Linux':
+            system('clear')
+        else:
+            print(f"you OS is {platform.system()}. Find corresponding command to clear console screen")        
+
         my_script = __file__.split('\\')
         my_script_name = my_script[len(my_script)-1]
         write_log_file("my_messages.txt","IN '" + my_script_name + "'")
 
+        print()
         print(f"\n{FR_BLUE}=== MAIN{NO_COLOR}\n")
         print()
         pause()

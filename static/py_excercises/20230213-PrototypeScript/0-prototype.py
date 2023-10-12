@@ -5,16 +5,26 @@ THIS IS MY STANDAR SCRIPT TO CREATE NEWS SCRIPTS
 """
 # IMPORT SECTION
 
-# modules
-import os, sys
-from os import  system
-
-# Include root path in sys.path
-ROOT_DIR = os.path.abspath(os.curdir)
-sys.path.insert(1, ROOT_DIR)
-
-# Import My Own Funct in root path
-from MyFunc import *
+try:   # Import My Own Functions from include dir 
+    import sys, traceback, platform     
+    from os.path import dirname, realpath
+    from os import system
+    # get parent up 2 from __file__ path: 'static path'   
+    up2_dir = dirname(dirname(dirname(realpath(__file__))))
+    # insert path in sys.path
+    sys.path.append(up2_dir)
+    # get parent up 3 from __file__ path: 'static parent path'       
+    up3_dir = dirname(dirname(dirname(dirname(realpath(__file__)))))
+    # insert path in sys.path
+    sys.path.append(up3_dir)
+    # import My Own Func
+    from static.include.MyFunc import *
+    from static.include.MyColors import *
+except Exception as ImportError:
+    FR_RED   = "\033[91m" 
+    NO_COLOR = "\033[00m"
+    print() 
+    print(f"{FR_RED}IMPORT ERROR ==>{NO_COLOR} {ImportError} | {ImportError.__class__} | {ImportError.__doc__}")
 
 #
 # ---------- MAIN ----------
@@ -24,10 +34,16 @@ if __name__ == "__main__":
         
     try:    
 
-        write_log_file("my_messages.txt","IN 'func 0-prototype.py()'")
+        # clear screen
+        import platform
+        if platform.system() == 'Windows':
+            system('cls')
+        elif platform.system() == 'Linux':
+            system('clear')
+        else:
+            print(frGREEN("\n---------- MAIN ----------\n"))
 
-        system('cls')
-        print(frGREEN("\n---------- MAIN ----------\n"))
+        write_log_file("my_messages.txt","IN 'func 0-prototype.py()'")
 
         #
         # YOUR CODE

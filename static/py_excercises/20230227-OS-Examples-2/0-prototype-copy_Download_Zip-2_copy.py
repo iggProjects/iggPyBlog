@@ -40,7 +40,8 @@ with zipfile.ZipFile('Python.zip', 'w', zipfile.ZIP_DEFLATED) as zipf:
 
 # IMPORT SECTION
 try:   # Import My Own Functions from include dir 
-    import os, sys, traceback, zipfile     
+    import os, sys, traceback, zipfile
+    import platform   
     from os.path import basename, dirname, isdir, isfile, realpath
     from zipfile import ZipFile
     from os import system
@@ -103,8 +104,17 @@ def zipFilesInDir(dirName, zipFileName, filter):
 
 if __name__ == "__main__":
 
-    system('cls')
+    # clear console screen
+    if platform.system() == 'Windows':
+        system('cls')
+    elif platform.system() == 'Linux':
+        system('clear')
+    else:
+        print(f"you OS is {platform.system()}. Find corresponding command to clear console screen")        
+    
+    print()
     print("\n---------- MAIN ----------\n")
+    print()
     pause()
 
     # list_paths: append Directory of file

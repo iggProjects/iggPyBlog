@@ -5,6 +5,7 @@
 # My Own Functions from include dir 
 try:   # Import My Own Functions from include dir 
     import sys, traceback
+    import platform
     import re   
     from math import ceil
     from os import system
@@ -74,8 +75,15 @@ def input_worker_data():
 if __name__ == "__main__":
 
     try:
+
         # clear console screen
-        system('cls')
+        if platform.system() == 'Windows':
+            system('cls')
+        elif platform.system() == 'Linux':
+            system('clear')
+        else:
+            print(f"you OS is {platform.system()}. Find corresponding command to clear console screen")        
+
         # get name of script
         my_script = __file__.split('\\')
         my_script_name = my_script[len(my_script)-1]

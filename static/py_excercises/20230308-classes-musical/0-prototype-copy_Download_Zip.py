@@ -17,7 +17,8 @@
 
 # IMPORT SECTION
 try:   # Import My Own Functions from include dir 
-    import os, sys, traceback     
+    import os, sys, traceback
+    import platform
     from os.path import basename, dirname, isdir, isfile, realpath
     from zipfile import ZipFile
     from os import system
@@ -48,8 +49,17 @@ except Exception as ImportError:
 
 if __name__ == "__main__":
 
-    system('cls')
+    # clear console screen
+    if platform.system() == 'Windows':
+        system('cls')
+    elif platform.system() == 'Linux':
+        system('clear')
+    else:
+        print(f"you OS is {platform.system()}. Find corresponding command to clear console screen")        
+
+    print()
     print("\n---------- MAIN ----------\n")
+    print()
     pause()
 
     # list_paths: append Directory of file
@@ -104,7 +114,7 @@ if __name__ == "__main__":
         print()
 
         # Destiny file path
-        downloads_path = str(Path.home() / "Downloads")
+        downloads_path = str(Path.home() / "Downloads" / "iggPyWeb")
         print(f"download path in client ---> {downloads_path}")
         print()
         

@@ -6,7 +6,8 @@ THIS SCRIPT IS FOR..................
 
 # My Own Functions from include dir 
 try:   # Import My Own Functions from include dir 
-    import sys, traceback     
+    import sys, traceback
+    import platform
     from os import system
     from os.path import dirname, realpath
     # get parent up 2 from __file__ path: 'static path'   
@@ -58,11 +59,20 @@ def decipher(text):
 #
 if __name__ == "__main__":
     
-    system('cls')
+    # clear console screen
+    if platform.system() == 'Windows':
+        system('cls')
+    elif platform.system() == 'Linux':
+        system('clear')
+    else:
+        print(f"you OS is {platform.system()}. Find corresponding command to clear console screen")        
+
     print(frGREEN("\n---------- main ----------\n"))
+    print()
     pause()
 
     # your code
+
     encripted_text = ''
     decoded_text = ''
 

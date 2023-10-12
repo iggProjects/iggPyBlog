@@ -17,7 +17,8 @@
 
 # IMPORT SECTION
 try:   # Import My Own Functions from include dir 
-    import os, sys, traceback     
+    import os, sys, traceback
+    import platform
     from os.path import basename, dirname, isdir, isfile, realpath
     from zipfile import ZipFile
     from os import system
@@ -48,7 +49,14 @@ except Exception as ImportError:
 
 if __name__ == "__main__":
 
-    system('cls')
+    # clear console screen
+    if platform.system() == 'Windows':
+        system('cls')
+    elif platform.system() == 'Linux':            
+        system('clear')
+    else:
+        print(f"you OS is {platform.system()}. Find corresponding command to clear console screen") 
+
     print("\n---------- MAIN ----------\n")
     pause()
 

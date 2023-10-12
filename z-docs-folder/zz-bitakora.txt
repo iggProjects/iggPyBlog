@@ -5,6 +5,7 @@ igg.git.h@g @gittu.....@
 iggProjects @i..P...@
 
 https://eu.pythonanywhere.com/login/  | igg.git.h@ | @n.20..N.@
+
     - bash console: https://eu.pythonanywhere.com/user/iggWebNz/consoles/373990/
 
 nazareth user: jo.gainzarain@aulanz.net  | nz2223Nz
@@ -20,6 +21,9 @@ UPLOAD PAW:
 ************************************************
 
 STILL TO DO !!!
+
+- href 
+    https://stackoverflow.com/questions/2793751/how-can-i-create-download-link-in-html
 
 - all .zip (): all scripts must be a copy of original, deleting root path reference, without
   write_log_file funct, and must have MyFunc and MyColors inside dir

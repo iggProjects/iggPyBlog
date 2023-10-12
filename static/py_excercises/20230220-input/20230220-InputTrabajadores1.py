@@ -2,7 +2,8 @@
 
 # IMPORT
 try:   # Import My Own Functions from include dir 
-    import re   
+    import re
+    import platform
     from math import ceil
     import sys, traceback, json
     from os import system	 
@@ -30,6 +31,14 @@ except Exception as ImportError:
 if __name__ == "__main__":
 
     try:
+        # clear console screen
+        if platform.system() == 'Windows':
+            system('cls')
+        elif platform.system() == 'Linux':
+            system('clear')
+        else:
+            print(f"you OS is {platform.system()}. Find corresponding command to clear console screen")        
+
         # get name of script
         my_script = __file__.split('\\')
         my_script_name = my_script[len(my_script)-1]

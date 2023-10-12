@@ -17,7 +17,8 @@
 
 # IMPORT SECTION
 try:   # Import My Own Functions from include dir 
-    import os, sys, traceback     
+    import os, sys, traceback
+    import platform
     from os.path import basename, dirname, isdir, isfile, realpath
     from zipfile import ZipFile
     from os import system
@@ -48,7 +49,14 @@ except Exception as ImportError:
 
 if __name__ == "__main__":
 
-    system('cls')
+    # clear screen
+    if platform.system() == 'Windows':
+        system('cls')
+    elif platform.system() == 'Linux':            
+        system('clear')
+    else:
+        print(f"you OS is {platform.system()}. Find corresponding command to clear console screen") 
+
     print("\n---------- MAIN ----------\n")
     pause()
 
@@ -60,17 +68,26 @@ if __name__ == "__main__":
     list_paths.append(dirPath)
 
     # name of zip file
-    dirArray = dirPath.split('\\')    
+    dirArray = dirPath.split('\\')
+    print(f".......... dirArray: {dirArray}")
+    # os.path.normpath(path) 
+    dirArray1 = os.path.split(dirPath)
+    print(f".......... dirArray1: {dirArray1}")
     dirName = dirArray[len(dirArray)-1]
-    fileNameZip = dirName+'.zip'
+    print(f".......... dirName: {dirName}")
+    fileNameZip = dirName + '.zip'
+    print(f".......... fileNameZip: {fileNameZip}")
+    file_zip_path = dirPath + '/' + fileNameZip
+    print(f".......... file_zip_path: {file_zip_path}")
+    
 
     # list_paths: append paths to MyColor.py & MyFunc.py
     static_path = dirname(dirname(dirname(__file__))) 
     #print(f"static_path: {static_path}")
     print()
-    MyColors_path = static_path + '\include\MyColors.py'
+    MyColors_path = static_path + '/include/MyColors.py'
     list_paths.append(MyColors_path)  
-    MyFunc_path = static_path + '\include\MyFunc_copy_DL.py'
+    MyFunc_path = static_path + '/include/MyFunc_copy_DL.py'
     list_paths.append(MyFunc_path)      
 
     """
@@ -86,7 +103,9 @@ if __name__ == "__main__":
 
     print(f"{FR_BLUE}*** Creating Zip File '{fileNameZip}' ***{NO_COLOR}")
     print()
-    zipFilesInList(list_paths, fileNameZip, lambda name: 'DL' in name)
+    
+    zipFilesInList(list_paths, file_zip_path, lambda name: 'DL' in name)
+    #zipFilesInList(list_paths, fileNameZip, lambda name: 'DL' in name)
 
     if os.path.exists(fileNameZip):
 
@@ -98,16 +117,27 @@ if __name__ == "__main__":
         import shutil
 
         # source file path
-        src_path = dirPath + '\\' + fileNameZip
+        src_path = os.path.join(dirPath, fileNameZip)
+        #src_path = dirPath + '\\' + fileNameZip
         print(f"{FR_GREEN}src_path{NO_COLOR}")
         print(f"{src_path}")
         print()
 
         # folder to save file: "iggPyWeb" in Downloads folder
-        downloads_path = str(Path.home() / "Downloads" / "iggPyWeb")
+        print(f"...... os.path.expanduser('~'): {os.path.expanduser('~')}")
+        print(f"...... Path.home(): {Path.home()}")
+        downloads_path = os.path.join(Path.home(),"Downloads/iggPyWeb")
+        #downloads_path = str(Path.home() / "Downloads" / "iggPyWeb")
         print(f"download path in client ---> {downloads_path}")
         print()
         
+        """
+            pythonanywhere copy file in client machine
+            
+            wget
+            https://stackoverflow.com/questions/66382684/files-are-being-downloaded-at-pythonanywhere-server-and-user-laptop-pc-too-how
+        """
+
         if not os.path.exists(downloads_path):
             os.mkdir(downloads_path)
             print(f"Dir {downloads_path} created !!!")

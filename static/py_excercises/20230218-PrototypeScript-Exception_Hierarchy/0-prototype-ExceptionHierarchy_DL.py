@@ -9,7 +9,7 @@ THIS SCRIPT IS FOR PRINTING WITH COLORS
 # My Own Functions from include dir 
 try:   # Import My Own Functions from include dir 
     import sys, traceback, inspect     
-
+    import platform
     from os import system
     from os.path import dirname, realpath
     # import My Own Func
@@ -28,8 +28,15 @@ except Exception as ImportError:
 if __name__ == "__main__":
 
     try:
+
         # clear console screen
-        system('cls')
+        if platform.system() == 'Windows':
+            system('cls')
+        elif platform.system() == 'Linux':
+            system('clear')
+        else:
+            print(f"you OS is {platform.system()}. Find corresponding command to clear console screen")        
+
         # get name of script
         my_script = __file__.split('\\')
         my_script_name = my_script[len(my_script)-1]
