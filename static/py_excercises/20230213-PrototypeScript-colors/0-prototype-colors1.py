@@ -66,7 +66,7 @@ if __name__ == "__main__":
         #print(f"......my_script: {my_script}")
         my_script = __file__.split('\\')
         my_script_name = my_script[len(my_script)-1]
-        print(f".....my_script_name: {my_script_name}")
+        #print(f".....my_script_name: {my_script_name}")
         print()
         write_log_file("my_messages.txt","IN '" + my_script_name + "'")
         print("print empty line")

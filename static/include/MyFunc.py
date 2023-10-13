@@ -28,7 +28,7 @@ from static.include.config_logging import *
 # import My own colors
 from static.include.MyColors import *
 
-# clean console screen considering OS
+# Clean the console according to the server operating system
 def clear_console_screen():
     if platform.system() == 'Windows':
         system('cls')

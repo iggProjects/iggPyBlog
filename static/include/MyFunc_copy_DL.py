@@ -28,7 +28,7 @@ from zipfile import ZipFile
 # import My own colors
 from MyColors import *
 
-# clean console screen considering OS
+# Clean the console according to the server operating system
 def clear_console_screen():
     if platform.system() == 'Windows':
         system('cls')
