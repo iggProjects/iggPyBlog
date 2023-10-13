@@ -71,7 +71,8 @@ if __name__ == "__main__":
     print(f".......... dirName: {dirName}")
     fileNameZip = dirName + '.zip'
     print(f".......... fileNameZip: {fileNameZip}")
-    file_zip_path = dirPath + '/' + fileNameZip
+    file_zip_path = os.path.join(dirPath,fileNameZip)
+    #file_zip_path = dirPath + '/' + fileNameZip
     print(f".......... file_zip_path: {file_zip_path}")
     
 
@@ -103,6 +104,8 @@ if __name__ == "__main__":
 
     if os.path.exists(fileNameZip):
 
+        #home_dir = os.path.expanduser()
+        print(f"home dir...... {os.path.expanduser('')}")
         print()
         print(f"{FR_BLUE}{fileNameZip} succesfully created !{NO_COLOR}")
         print()

@@ -57,12 +57,10 @@ if __name__ == "__main__":
 
         print(frGREEN("\n---------- using function prRed(msg) ----------\n"))
         msg="\tprint with function pfRed() --> TESTING COLOR FUNCTION\n"        
-        prRed(msg)   
-        pause()
+        prRed(msg)
 
         print(f"\n{FR_GREEN}---------- That's all for today 👌 ----------{NO_COLOR}\n")
-        
-
+ 
         # ------------------------------------------------
         #           ASKING FOR SHOW VARS INFO 
         #------------------------------------------------- 

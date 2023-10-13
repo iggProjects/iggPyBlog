@@ -65,6 +65,9 @@ if __name__ == "__main__":
     dirArray = dirPath.split('\\')    
     dirName = dirArray[len(dirArray)-1]
     fileNameZip = dirName +'_error.zip'
+    file_zip_path = os.path.join(dirPath,fileNameZip)
+    print(f".......... file_zip_path: {file_zip_path}")
+
 
     # list_paths: append paths to MyColor.py & MyFunc.py
     static_path = dirname(dirname(dirname(__file__))) 
@@ -88,7 +91,8 @@ if __name__ == "__main__":
 
     print(f"{FR_BLUE}*** Creating Zip File '{fileNameZip}' ***{NO_COLOR}")
     print()
-    zipFilesInList(list_paths, fileNameZip, lambda name: 'error' and 'DL' in name)
+    zipFilesInList(list_paths, file_zip_path, lambda name: 'error' and 'DL' in name)
+#    zipFilesInList(list_paths, fileNameZip, lambda name: 'error' and 'DL' in name)
 
     import socket
     print(f"hostname: {socket.gethostname()}")
