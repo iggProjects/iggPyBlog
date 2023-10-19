@@ -134,7 +134,7 @@ def Excercises():
             'body': ' TO DO ',          
 
             'code_url':'../static/py_excercises/20230218-PrototypeScript-Exception_Hierarchy/0-prototype-ExceptionHierarchy.py',
-            'zip_url': '../static/py_excercises/20230218-PrototypeScript-Exception_Hierarchy/0-prototype-ExceptionHierarchy.zip',
+            'zip_url': '../static/py_excercises/20230218-PrototypeScript-Exception_Hierarchy/20230218-PrototypeScript-Exception_Hierarchy.zip',                                                
             'img': '/img/icons8-consola-100.png'    
         },
 
