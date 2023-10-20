@@ -74,11 +74,17 @@ if __name__ == "__main__":
         list_paths = []
         list_paths.append(dirPath)
 
+        # os.path.normpath(path) 
+        dirArray = os.path.split(dirPath)
+        fileNameZip = dirArray[1] + '.zip'
+        file_zip_path = os.path.join(dirname(__file__),fileNameZip)
+        
+        """
         # name of zip file
         dirArray = dirPath.split('\\')    
         dirName = dirArray[len(dirArray)-1]
         fileNameZip = dirName+'.zip'
-        
+        """
         print(f"list_paths:")
         for path in list_paths:
             print(f"\t{path}")

@@ -171,7 +171,7 @@ def Excercises():
             'body': '',          
 
             'code_url':'../static/py_excercises/20230213-PrototypeScript-colors/0-prototype-colors-error.py',
-            'zip_url': '../static/py_excercises/20230213-PrototypeScript-colors/20230213-PrototypeScript.zip',
+            'zip_url': '../static/py_excercises/20230213-PrototypeScript-colors/20230213-PrototypeScript-colors-error.zip',
             'img': '/img/icons8-consola-100.png'    
         },
 
@@ -266,7 +266,7 @@ def Excercises():
             'body': '====== NEXT WEEK ======',          
 
             'code_url':'../static/py_excercises/20230227-OS-Examples/20230227-OS-Dir-Files-Example.py',
-            'zip_url': '../static/py_excercises/20230227-OS-Examples/20230227-OS-examples.zip',
+            'zip_url': '../static/py_excercises/20230227-OS-Examples/20230227-OS-Examples.zip',
             'img': '/img/icons8-consola-100.png'    
         },
 
@@ -285,7 +285,7 @@ def Excercises():
             'body': '====== NEXT WEEK ======',          
 
             'code_url':'../static/py_excercises/20230227-OS-Examples-2/py_script/20230227-ImportModuleFromParallel_folder.py',
-            'zip_url': '../static/py_excercises/20230227-OS-Examples-2/',
+            'zip_url': '../static/py_excercises/20230227-OS-Examples-2/20230227-OS-Examples-2.zip',
             'img': '/img/icons8-consola-100.png'    
         },
 

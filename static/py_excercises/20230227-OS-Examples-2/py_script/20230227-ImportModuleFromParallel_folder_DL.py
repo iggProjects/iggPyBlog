@@ -85,6 +85,15 @@ def write_traceback_info(Argum,TraceList,script):
         logging.exception(f"{Argum} | exception from '0-prototype-colors.py()': ")
 """
 
+# Clean the console according to the server operating system
+def clear_console_screen():
+    if platform.system() == 'Windows':
+        system('cls')
+    elif platform.system() == 'Linux':            
+        system('clear')
+    else:
+        print(f"you OS is {platform.system()}. Find corresponding command to clear console screen") 
+
 #
 # ---------- COURSE EXCERCISE ----------
 #

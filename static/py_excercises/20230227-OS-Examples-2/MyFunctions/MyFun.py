@@ -16,7 +16,8 @@
 # IMPORT LIBRERIES OR YOUR OWN FUNCTIONS 
 #
 
-import logging, datetime
+import logging, datetime, platform
+from os import system
 from os.path import dirname, realpath
 from MyCol import *
 
@@ -34,6 +35,16 @@ NO_COLOR = "\033[00m"
 #
 # TIME FUNCTIONS
 #
+
+# Clean the console according to the server operating system
+def clear_console_screen():
+    if platform.system() == 'Windows':
+        system('cls')
+    elif platform.system() == 'Linux':            
+        system('clear')
+    else:
+        print(f"you OS is {platform.system()}. Find corresponding command to clear console screen") 
+
 
 # function to write in logFile
 def write_log_file(logFile,msg):

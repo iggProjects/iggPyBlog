@@ -49,32 +49,29 @@ except Exception as ImportError:
 
 if __name__ == "__main__":
 
-    # clear console screen
+    # clear screen
     clear_console_screen()
     print()
-    print("\n---------- MAIN ----------\n")
-    print()
-    pause()
+    print("---------- MAIN ----------")
 
     # list_paths: append Directory of file
-    dirPath = dirname(__file__)
-    os.chdir(dirPath)
+    dirName = dirname(__file__)
+    os.chdir(dirname(__file__))
     dirPath = os.getcwd()
+
     list_paths = []
     list_paths.append(dirPath)
 
-    # name of zip file
-    dirArray = dirPath.split('\\')    
-    dirName = dirArray[len(dirArray)-1]
-    fileNameZip = dirName+'.zip'
-
+    # os.path.normpath(path) 
+    dirArray = os.path.split(dirPath)
+    fileNameZip = dirArray[1] + '.zip'
+    file_zip_path = os.path.join(dirname(__file__),fileNameZip)
+    
     # list_paths: append paths to MyColor.py & MyFunc.py
     static_path = dirname(dirname(dirname(__file__))) 
-    #print(f"static_path: {static_path}")
-    print()
-    MyColors_path = static_path + '\include\MyColors.py'
+    MyColors_path = static_path + '/include/MyColors.py'
     list_paths.append(MyColors_path)  
-    MyFunc_path = static_path + '\include\MyFunc_copy_DL.py'
+    MyFunc_path = static_path + '/include/MyFunc_copy_DL.py'
     list_paths.append(MyFunc_path)      
 
     """
@@ -82,55 +79,56 @@ if __name__ == "__main__":
         print(f"\t{path}")
     print()    
     """
+    print()
+    print(f"{FR_BLUE}*** Creating Zip File '{fileNameZip}' ***{NO_COLOR}")
+    print()
+    pause()
+
     # delete if exists  
     if os.path.exists(fileNameZip):
         os.remove(fileNameZip)
-        print(f"===> file '{fileNameZip}' deleted")
+        print()
+        print(f"{FR_RED}file '{fileNameZip}' deleted{NO_COLOR}")
         print()    
 
-    print(f"{FR_BLUE}*** Creating Zip File '{fileNameZip}' ***{NO_COLOR}")
-    print()
-    zipFilesInList(list_paths, fileNameZip, lambda name: 'DL' in name)
+    zipFilesInList(list_paths, file_zip_path, lambda name: 'DL' in name)
 
     if os.path.exists(fileNameZip):
 
         print()
-        print(f"{FR_BLUE}{fileNameZip} succesfully created !{NO_COLOR}")
+        print(f"{FR_BLUE}File '{fileNameZip}' succesfully created{NO_COLOR}\n\tstored in: {dirname(__file__)}")
         print()
+    
+        # Case localhost, folder to save in Downloads folder: "iggPyWeb"
+        #print(f".... os.path.expanduser('~'): {os.path.expanduser('~')}")    
+        downloads_path = os.path.join(Path.home(),"Downloads","iggPyWeb")
 
-        # Copy file to folder in PC
-        import shutil
+        if ('home' not in downloads_path):
 
-        # source file path
-        src_path = dirPath + '\\' + fileNameZip
-        print(f"{FR_GREEN}src_path{NO_COLOR}")
-        print(f"{src_path}")
-        print()
-
-        # folder to save file: "iggPyWeb" in Downloads folder
-        downloads_path = str(Path.home() / "Downloads" / "iggPyWeb")
-        print(f"download path in client ---> {downloads_path}")
-        print()
-        
-        if not os.path.exists(downloads_path):
-            os.mkdir(downloads_path)
-            print(f"Dir {downloads_path} created !!!")
+            print(f"{FR_GREEN}download path in client --->{NO_COLOR} {downloads_path}")
             print()
 
-        #shutil.copy(src_path, dst_path)        
-        shutil.copy(src_path, downloads_path)        
-        print(f"{FR_GREEN}Copy Process:{NO_COLOR}")
-        print()  
-        print(f"\tFile '{fileNameZip}' copied in folder '{downloads_path}'")  
-        print() 
+            # Copy file to folder in PC
+            import shutil
+
+            # source file path
+            src_path = os.path.join(dirPath, fileNameZip)
+
+            if not os.path.exists(downloads_path):
+                os.mkdir(downloads_path)
+                print(f"Dir {downloads_path} created !!!")
+                print()
+
+            shutil.copy(src_path, downloads_path)        
+            print(f"{FR_GREEN}File '{fileNameZip}'{NO_COLOR} also copied in folder '{downloads_path}'")  
+            print() 
     
-    else:
-        print(f"UPSSSSSS............")
+        else:
+            print(f"{FR_MAG}Could not create file {fileNameZip}{NO_COLOR}")
     
     print(f"\n{FR_GREEN}---------- That's all for today 👌 ----------{NO_COLOR}\n")
 
-    pause()
 else:
     # something wrong
     print(frRED("\n---- upsssssssss something is wrong 😢😢  ----\n"))
-    # pause()
+    pause()

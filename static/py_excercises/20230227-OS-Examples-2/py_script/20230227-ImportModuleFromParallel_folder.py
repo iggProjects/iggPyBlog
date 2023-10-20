@@ -38,6 +38,15 @@ logging.basicConfig(filename=log_file_path,
                 encoding='utf-8', level=logging.DEBUG, format="%(asctime)-15s %(levelname)-8s %(funcName)s %(message)s")
 logging.captureWarnings(True)
 
+# Clean the console according to the server operating system
+def clear_console_screen():
+    if platform.system() == 'Windows':
+        system('cls')
+    elif platform.system() == 'Linux':            
+        system('clear')
+    else:
+        print(f"you OS is {platform.system()}. Find corresponding command to clear console screen") 
+
 # function to write in logFile
 def write_log_file(logFile,msg):
 

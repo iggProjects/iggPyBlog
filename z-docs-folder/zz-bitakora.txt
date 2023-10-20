@@ -35,6 +35,15 @@ excer 4 methods:
 
 similar excer 7 hierarchy
 
+excer 8: check execution in html: folder direction in static...
+        create downloads folder in static to store it...
+
+excer 15: check dir structure to create zip file... zip file does not working
+
+excer 16, 17: check dir to txt file in PAW
+    my_script = __file__.split('\\')
+
+
 ************************************************
 
 STILL TO DO !!!
