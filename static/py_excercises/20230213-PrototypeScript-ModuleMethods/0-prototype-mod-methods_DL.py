@@ -36,8 +36,9 @@ if __name__ == "__main__":
         print(frGREEN("\n=== MAIN ===\n"))
         pause()
 
-        prYellow("\n---------- list of module 'OS' methods ----------\n")
-        library_methods(os)
+        library = traceback
+        print(f"{FR_GREEN}=== List of {library} module methods{NO_COLOR}")
+        library_methods(library)
         pause()
     
         print(f"\n{FR_GREEN}---------- That's all for today 👌 ----------{NO_COLOR}\n")

@@ -190,10 +190,13 @@ def result_script_exec():
             #print(f" ===> 'text'   data: {text}")    
 
             # see order in list_b_lines
+            print()
             list_b_lines = text.stdout.splitlines()
-            # print(f" ===> 'list_b_lines' type: {type(list_b_lines)}")
-            # print(f" ===> 'list_b_lines' attrib: {dir(list_b_lines)}")
-            # print(f" ===> 'list_b_lines' data: {list_b_lines}")
+            print(f"==> {FR_GREEN}'list_b_lines' length: {NO_COLOR}{len(list_b_lines)}") 
+            print()         
+            # print(f" ==> 'list_b_lines' type: {type(list_b_lines)}")
+            # print(f" ==> 'list_b_lines' attrib: {dir(list_b_lines)}")
+            # print(f" ==> 'list_b_lines' data: {list_b_lines}")
 
             for line in list_b_lines:
                 print(f"==> line: {line}")

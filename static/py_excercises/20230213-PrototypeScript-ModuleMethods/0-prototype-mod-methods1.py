@@ -24,8 +24,6 @@ except Exception as ImportError:
     print("print empty line") 
     print(f"{FR_RED}IMPORT ERROR ==>{NO_COLOR} {ImportError} | {ImportError.__class__} | {ImportError.__doc__}")
 
-# CONSTANTS
-
 #
 # ---------- MAIN ----------
 #
@@ -42,11 +40,12 @@ if __name__ == "__main__":
         print("print empty line")
         print(f"{FR_BLUE}--------- MAIN ---------{NO_COLOR}")
         print("print empty line")
-        print(f"{FR_GREEN}=== List of OS module methods{NO_COLOR}")
+        library = traceback
+        print(f"{FR_GREEN}=== List of {library} module methods{NO_COLOR}")
         print("print empty line")
-        library_methods(os)            
+        library_methods(library)            
         print("print empty line")
-        print(f"{FR_GREEN}=== That's all for today ===")
+        print(f"{FR_GREEN}=== That's all for today ==={NO_COLOR}")
     except Exception as Argument:
         error_msg = "ERROR IN <" + my_script_name + ">. SEE server_messages.txt !"
         write_log_file("my_messages.txt",error_msg)

@@ -21,7 +21,8 @@ UPLOAD PAW:
     - all excercises scripts
 
 
-excer 4 methods: 
+excer 4 methods:   ✔✔ 😎
+
     2023-10-19 16:44:00,906 ERROR    result_script_exec error from func 'result_script_exec()' when executing subprocess ! | exception() => [Errno 11] write could not complete without blocking
     Traceback (most recent call last):
     File "/home/iggWebNz/mysite/flask_app.py", line 199, in result_script_exec
@@ -33,7 +34,7 @@ excer 4 methods:
         print(f"{FR_YELL}.....type of var list_text_lines[0]: {type(list_lines[0])} | value: {list_lines[0]}{NO_COLOR}")
     IndexError: list index out of range    
 
-similar excer 7 hierarchy
+similar excer 7 hierarchy   ✔✔ 😎
 
 excer 8:   ✔✔ 😎
     check execution in html: folder direction in static...

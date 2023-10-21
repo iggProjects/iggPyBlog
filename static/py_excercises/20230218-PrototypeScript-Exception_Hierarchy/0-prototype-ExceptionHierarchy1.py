@@ -51,12 +51,23 @@ if __name__ == "__main__":
         print("print empty line")
 
         print(frGREEN("\n---------- Exception Hierarchy ----------\n"))    
-        print(frRED("The class hierarchy for built-in exceptions is:"))
         print("print empty line")
 
         # 
-        inspect.getclasstree(inspect.getmro(Exception))
-        classtree(Exception)
+        #inspect.getclasstree(inspect.getmro(Exception))
+        #classtree(Exception)
+
+        #class_Exception = Exception
+        class_Exception = ValueError  # sub class of Exception hierarchy
+        print(f"{FR_GREEN}The hierarchy for built-in '{class_Exception}' is{NO_COLOR}:")
+        print("print empty line")
+
+        inspect.getclasstree(inspect.getmro(class_Exception))
+        print(f"{FR_BLUE}---------- Tree for {class_Exception} ----------{NO_COLOR}")
+        print("print empty line")
+
+        classtree(class_Exception)
+
 
         print("print empty line")
         print(f"{FR_GREEN}---------- That's all for today ----------{NO_COLOR}")
