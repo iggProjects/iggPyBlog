@@ -88,6 +88,11 @@ def write_traceback_info(Argum,TraceList,script):
         print(f"\t\tSEE 'server_messages.txt' file OR Contact Web Admin !")
         logging.exception(f"{Argum} | exception from '0-prototype-colors.py()': ")
 
+# pause function
+def pause():  
+  userInput = input(f"{FR_RED}Press ENTER to continue, or CTRL-C to exit{NO_COLOR}\n")  
+
+
 #
 # ---------- COURSE EXCERCISE ----------
 #
@@ -98,8 +103,9 @@ if __name__ == "__main__":
         # get name of script
         my_script = __file__.split('\\')
         my_script_name = my_script[len(my_script)-1]
-        #write_log_file("my_messages.txt","IN '" + my_script_name + "'")
+        write_log_file("my_messages.txt","IN '" + my_script_name + "'")
         print("print empty line")
+
         print(f"=== MAIN ===")
         #print(f"{FR_BLUE}=== MAIN ===")  # NOTE: try to print and note that you must have an error
         print("print empty line")

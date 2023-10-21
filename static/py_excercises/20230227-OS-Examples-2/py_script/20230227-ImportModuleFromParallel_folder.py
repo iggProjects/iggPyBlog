@@ -86,6 +86,10 @@ def write_traceback_info(Argum,TraceList,script):
         print(f"\t\tSEE 'server_messages.txt' file OR Contact Web Admin !")
         logging.exception(f"{Argum} | exception from '0-prototype-colors.py()': ")
 
+# pause function
+def pause():  
+  userInput = input(f"{FR_RED}Press ENTER to continue, or CTRL-C to exit{NO_COLOR}\n")  
+
 #
 # ---------- COURSE EXCERCISE ----------
 #
@@ -120,6 +124,7 @@ if __name__ == "__main__":
         for fold in init_folders:
             print(f"\t{fold}")
         print()
+        pause()
         
         # Add the '20230227-OS-Examples-2' folder to path                 
         up2_dir = dirname(dirname(__file__))  # look for '20230227-OS-Examples-2' path        

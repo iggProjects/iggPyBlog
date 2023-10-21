@@ -44,46 +44,6 @@ logging.basicConfig(filename=log_file_path,
                 encoding='utf-8', level=logging.DEBUG, format="%(asctime)-15s %(levelname)-8s %(funcName)s %(message)s")
 logging.captureWarnings(True)
 
-"""
-# function to write in logFile
-def write_log_file(logFile,msg):
-
-    try:
-        # path to log file
-        logFile_path = static_path + "/logFiles/" + logFile
-        # creating/opening a file
-        f = open(logFile_path, "a") 
-        # write in file        
-        f.write('%s | %s\n' % (datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S.%f')[:-3],msg))      
-        # close file
-        f.close()
-    except Exception as Argument:
-        print(f"Error {Argument}")
-        logging.exception(f"{Argument} | exception from 'write_log_file()' ")
-
-def write_traceback_info(Argum,TraceList,script): 
-               
-        traceback_formatted = TraceList.format_exc().replace('"','').replace(',',' | ')
-        traceback_lines = traceback_formatted.split('\n')
-        print()        
-        print(f"====================== ERROR FOUND ======================")
-        print()
-        for line in traceback_lines:
-            #if ('File' or 'line' or 'Module') in line:
-            if 'line' in line:
-                for field in line.split('|'):
-                   if 'line' in field:
-                      line_numb = field
-
-        print(f"FILE: <{script}>")
-        print()
-        print(f"\tcode in{line_numb}:{traceback_lines[len(traceback_lines)-3]}")        
-        print(f"\t{Argum} | {Argum.__class__} | {Argum.__doc__}")
-        print()
-
-        print(f"\t\tSEE 'server_messages.txt' file OR Contact Web Admin !")
-        logging.exception(f"{Argum} | exception from '0-prototype-colors.py()': ")
-"""
 
 # Clean the console according to the server operating system
 def clear_console_screen():
@@ -93,6 +53,11 @@ def clear_console_screen():
         system('clear')
     else:
         print(f"you OS is {platform.system()}. Find corresponding command to clear console screen") 
+
+# pause function
+def pause1():  
+  userInput = input(f"Press ENTER to continue, or CTRL-C to exit\n")  
+
 
 #
 # ---------- COURSE EXCERCISE ----------
@@ -127,7 +92,8 @@ if __name__ == "__main__":
         for fold in init_folders:
             print(f"\t{fold}")
         print()
-        
+        pause1()
+
         # Add the '20230227-OS-Examples-2' folder to path                 
         up2_dir = dirname(dirname(__file__))  # look for '20230227-OS-Examples-2' path        
         sys.path.append(up2_dir)
