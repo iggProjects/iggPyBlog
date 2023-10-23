@@ -87,6 +87,7 @@ if __name__ == "__main__":
         # get name of script
         my_script = __file__.split('\\')
         my_script_name = my_script[len(my_script)-1]
+        write_log_file("my_messages.txt","IN '" + my_script_name + "'")
         print(f"\n{FR_BLUE}=== MAIN ==={NO_COLOR}\n")
         print(f"{FR_GREEN}=== INPUT WORKERS TABLE\n")
         #pause()    

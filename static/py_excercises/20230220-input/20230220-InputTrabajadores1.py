@@ -36,6 +36,7 @@ if __name__ == "__main__":
         # get name of script
         my_script = __file__.split('\\')
         my_script_name = my_script[len(my_script)-1]
+        write_log_file("my_messages.txt","IN '" + my_script_name + "'")
         print("print empty line")
         print(f"{FR_BLUE}=== MAIN ==={NO_COLOR}")
         print("print empty line")
@@ -43,6 +44,7 @@ if __name__ == "__main__":
         print("print empty line")
          
         # argument dict
+
         workers = json.loads(sys.argv[1])
         
         print(f"\n\t{FR_YELL}Session terminated by user{NO_COLOR}\n")        
@@ -54,7 +56,7 @@ if __name__ == "__main__":
             print(f"\t\tName: {k} | age: {workers[k]}")        
         """
         for i in range(len(workers)):
-            print(f"\tworker {i}: - {workers[i]}, type: {type(workers[i])}")        
+            print(f"\tworker {i+1}: - {workers[i]}, type: {type(workers[i])}")        
             print(f"\t\tName: {workers[i][0]} | Age: {workers[i][1]}")
 
         print("print empty line")
