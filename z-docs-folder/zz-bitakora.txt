@@ -23,7 +23,11 @@ EXCERCISES
 
     review teacher paper
 
+LIFE GAME & ENIGMA GAME
+    - try exception structure in MAIN
+
 LIFE GAME
+  - Check what happens in exc 3, 4, 5 when running in PAW
   - FILL info data in all excercises
   - If the matrices are equal, stop the process
 
