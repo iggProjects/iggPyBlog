@@ -78,71 +78,63 @@ if __name__ == "__main__":
         dirArray = os.path.split(dirPath)
         fileNameZip = dirArray[1] + '.zip'
         file_zip_path = os.path.join(dirname(__file__),fileNameZip)
-        
-        """
-        # name of zip file
-        dirArray = dirPath.split('\\')    
-        dirName = dirArray[len(dirArray)-1]
-        fileNameZip = dirName+'.zip'
+
         """
         print(f"list_paths:")
         for path in list_paths:
             print(f"\t{path}")
         print()    
-        
+        """
+        print()
+        print(f"{FR_BLUE}*** Creating Zip File '{fileNameZip}' ***{NO_COLOR}")
+        print()
+        pause()
+
         # delete if exists  
         if os.path.exists(fileNameZip):
             os.remove(fileNameZip)
-            print(f"===> file '{fileNameZip}' deleted")
+            print()
+            print(f"{FR_RED}file '{fileNameZip}' deleted{NO_COLOR}")
             print()
 
-        print(f"{FR_BLUE}*** Creating Zip File '{fileNameZip}' ***{NO_COLOR}")
-        print()
-
         zip_compression_tree(list_paths[0], fileNameZip)
-        """
-        zf = ZipFile("myzipfile.zip", "w")
-        dirPath1 = dirname(__file__)
-        print(f"===> dirPath1 '{dirPath1}'")
-        for dirPath1, subdirs, files in os.walk(dirPath):
-            zf.write(dirPath1)
-            for filename in files:
-                zf.write(os.path.join(dirPath1, filename))
-        zf.close() 
 
-        """        
         if os.path.exists(fileNameZip):
 
             print()
-            print(f"{FR_BLUE}{fileNameZip} succesfully created !{NO_COLOR}")
+            print(f"{FR_BLUE}File '{fileNameZip}' succesfully created{NO_COLOR}\n\tstored in: {dirname(__file__)}")
             print()
             pause()
 
-            # Copy file to folder in PC
-            import shutil
+            # Case localhost, folder to save in Downloads folder: "iggPyWeb"
+            #print(f".... os.path.expanduser('~'): {os.path.expanduser('~')}")    
+            downloads_path = os.path.join(Path.home(),"Downloads","iggPyWeb")
 
-            # source file path
-            src_path = dirPath + '\\' + fileNameZip
-            print(f"{FR_GREEN}src_path{NO_COLOR}")
-            print(f"{src_path}")
-            print()
+            if ('home' not in downloads_path):
 
-            # Destiny file path
-            downloads_path = str(Path.home() / "Downloads" / "iggPyWeb")
-            print(f"download path in client ---> {downloads_path}")
-            print()
-            
-            if not os.path.exists(downloads_path):
-                os.mkdir(downloads_path)
-                print(f"Dir {downloads_path} created !!!")
+                print(f"{FR_GREEN}download path in client --->{NO_COLOR} {downloads_path}")
                 print()
 
-            #shutil.copy(src_path, dst_path)        
-            shutil.copy(src_path, downloads_path)        
-            print(f"{FR_GREEN}Copy Process:{NO_COLOR}")
-            print()  
-            print(f"\tFile '{fileNameZip}' copied in folder '{downloads_path}'")  
-            print()        
+                # Copy file to folder in PC
+                import shutil
+
+                # source file path
+                src_path = os.path.join(dirPath, fileNameZip)
+                print(f"{FR_GREEN}src_path{NO_COLOR}")
+                print(f"{src_path}")
+                print()
+               
+                if not os.path.exists(downloads_path):
+                    os.mkdir(downloads_path)
+                    print(f"Dir {downloads_path} created !!!")
+                    print()
+
+                shutil.copy(src_path, downloads_path)        
+                print(f"\tFile '{fileNameZip}' copied in folder '{downloads_path}'")  
+                print() 
+
+            else:
+                print(f"{FR_MAG}Could not create file {fileNameZip}{NO_COLOR}")
         
         else:
             print(f"{FR_BLUE} Zip file could '{fileNameZip}' not be created !{NO_COLOR}")

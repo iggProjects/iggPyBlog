@@ -21,6 +21,9 @@ UPLOAD PAW:
     - all excercises scripts
 
 
+excercise pause() 
+    - create pause() version in html console mode
+
 excer 4 methods:   ✔✔ 😎
 
     2023-10-19 16:44:00,906 ERROR    result_script_exec error from func 'result_script_exec()' when executing subprocess ! | exception() => [Errno 11] write could not complete without blocking
@@ -61,22 +64,23 @@ STILL TO DO !!!
 - href 
     https://stackoverflow.com/questions/2793751/how-can-i-create-download-link-in-html
 
-- all .zip (): all scripts must be a copy of original, deleting root path reference, without
-  write_log_file funct, and must have MyFunc and MyColors inside dir
+- all .zip ():  ✔✔ 😎
+    all scripts must be a copy of original, deleting root path reference, without
+    write_log_file funct, and must have MyFunc and MyColors inside dir
 
 - ADD google link to look for error info... "in write_traceback_info"  
 
 - update restrictions in .gitignore
 
-- error_page vs logFiles
+- error_page vs logFiles   ✔✔ 😎
     - error_page in flask_app for render_template
     - don't call error_page when rendering is good and error can be directed to log file
 
 - normalize all excercises: root path and TRY EXCEPTION (excercises, EnigmaGame, LifeGame)
 
-- excercises 
-    - create "sleep()" to substitute pause() in html console version
-    - # 10 inputTrabajadores1.py receive data and only need to print 
+- excercises     
+
+    - # 10 inputTrabajadores1.py receive data and only need to print         ✔✔ 😎
     - # 11 teacher example --- adjust printing colors, check substitutions
     - # 12 strings.... adjust printing colors, substitute input with delay
     - # 17 decide if will be included....

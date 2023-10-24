@@ -97,7 +97,7 @@ if __name__ == "__main__":
 
         print()
         print(f"{FR_BLUE}File '{fileNameZip}' succesfully created{NO_COLOR}\n\tstored in: {dirname(__file__)}")
-        print()
+        print()        
     
         # Case localhost, folder to save in Downloads folder: "iggPyWeb"
         #print(f".... os.path.expanduser('~'): {os.path.expanduser('~')}")    
