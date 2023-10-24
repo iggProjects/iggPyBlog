@@ -43,12 +43,29 @@ if __name__ == "__main__":
         print("print empty line")
         print(f"{FR_BLUE}=== MAIN")
         print("print empty line")
+
+        """
         base_dir = os.path.dirname(os.getcwd())
         print(f"base dir: {base_dir}")
         print("print empty line")
-            
+        """    
+        
+        # list_paths: append Directory of file
+        dirName = dirname(__file__)
+        os.chdir(dirname(__file__))
+        dirPath = os.getcwd()
+        
+        """
+        # os.path.normpath(path) 
+        dirArray = os.path.split(dirPath)
+        fileNameZip = dirArray[1] + '.zip'
+        file_zip_path = os.path.join(dirname(__file__),fileNameZip)
+
+        """
+        file_txt_path = os.path.join(dirPath,"z-fileRepeatedLines.txt")
         #file = open("z-fileRepeatedLines.txt","r")
-        file = open("static\py_excercises\\20230301-DelRepeatedLinesAndSort\z-fileRepeatedLines.txt")
+        file = open(file_txt_path)
+        #file = open("static\py_excercises\\20230301-DelRepeatedLinesAndSort\z-fileRepeatedLines.txt")
         print(f"{FR_GREEN}Read and print '{file.name}'")
         # read lines
         lines = file.readlines()
@@ -59,7 +76,8 @@ if __name__ == "__main__":
         print("print empty line")
 
         print(f"{FR_GREEN}Read file 'z-fileRepeatedLines.txt' with command <uniqlines = set('z-fileRepeatedLines.txt').readlines>")
-        uniqlines = set(open('static\py_excercises\\20230301-DelRepeatedLinesAndSort\z-fileRepeatedLines.txt').readlines())
+        uniqlines = set(open(file_txt_path).readlines())
+        #uniqlines = set(open('static\py_excercises\\20230301-DelRepeatedLinesAndSort\z-fileRepeatedLines.txt').readlines())
         uniqlines_bef = str(uniqlines).replace(',',';').replace('\\n','')
         print(f"\tuniqlines type is {type(uniqlines)}")
         print(f"\tuniqlines before: {uniqlines_bef}")
@@ -72,7 +90,8 @@ if __name__ == "__main__":
         print("print empty line")
 
         print(f"{FR_BLUE}Creating sorted file without repeated lines 'z-fileWithOutRepetitionLines.txt'")
-        open('static\py_excercises\\20230301-DelRepeatedLinesAndSort\z-fileWithOutRepetitionLines.txt', 'w').writelines(uniqlines)
+        file_txt_sorted_uniq = os.path.join(dirPath,"z-fileWithOutRepetitionLines.txt")
+        open(file_txt_sorted_uniq, 'w').writelines(uniqlines)
         print(f"{NO_COLOR}")
 
     except Exception as Argument:
