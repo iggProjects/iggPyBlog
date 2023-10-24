@@ -40,9 +40,9 @@ excer 8:   ✔✔ 😎
     check execution in html: folder direction in static...
     create downloads folder in static to store it...
 
-excer 15: check dir structure to create zip file... zip file does not working
+excer 15: check dir structure to create zip file... zip file does not working  ✔✔ 😎
 
-excer 16, 17: check dir to txt file in PAW
+excer 16, 17: check dir to txt file in PAW  ✔✔ 😎
     my_script = __file__.split('\\')
 
 

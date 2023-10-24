@@ -51,18 +51,18 @@ if __name__ == "__main__":
         # MY CODE
         #
 
-        # base dir
-        cwd = os.getcwd()
-        print(f"\tbase dir: {cwd}")
-        print("print empty line")
+        # list_paths: append Directory of file
+        dirName = dirname(__file__)
+        os.chdir(dirname(__file__))
+        dirPath = os.getcwd()
 
         # read file "agatha.txt" 
-        file_path = os.path.join(cwd,'static\py_excercises\\20230301-files_Read_write\z-agatha.txt')
-        print(f"\tz-agatha.txt relative path: 'static\py_excercises\\20230301-files_Read_write\z-agatha.txt'")
+        file_txt_path = os.path.join(dirPath,'z-agatha.txt')
+        print(f"\tz-agatha.txt relative path: {file_txt_path}")
         print("print empty line")
 
 
-        f = open(file_path,'r')
+        f = open(file_txt_path,'r')
         lines = f.readlines()
 
         # save info in list of lines "agathaLines"
@@ -73,7 +73,7 @@ if __name__ == "__main__":
         f.close()
 
         # create file copy agathaBkup.txt
-        fBkup = open(os.path.join(cwd,'static\py_excercises\\20230301-files_Read_write\z-agathaBackup.txt'), 'w')
+        fBkup = open(os.path.join(dirPath,'z-agathaBackup.txt'), 'w')
 
         # write list in copy file
         for line in agathaLines:
@@ -82,7 +82,8 @@ if __name__ == "__main__":
         fBkup.close()
 
         # reading backup file
-        f = open('static\py_excercises\\20230301-files_Read_write\z-agathaBackup.txt','r')
+        f = open(os.path.join(dirPath,'z-agathaBackup.txt'),'r')
+        #f = open('static\py_excercises\\20230301-files_Read_write\z-agathaBackup.txt','r')
         print(f"{FR_GREEN}\tPrinting 'z-agatha' backup file{NO_COLOR}")
         print(f"\t(relative path: {f.name})\n")    
         print("print empty line")
@@ -96,7 +97,9 @@ if __name__ == "__main__":
             print(f"\t{FR_GREEN}{line}")    
 
         f.close()
-        # return default color 
+        
+        print("print empty line")
+        print(f"{FR_BLUE}---------- That's all for today ----------{NO_COLOR}")
         print("print empty line")
 
     except Exception as Argument:
