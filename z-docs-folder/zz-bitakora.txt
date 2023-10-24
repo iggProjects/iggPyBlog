@@ -12,41 +12,38 @@ nazareth user: jo.gainzarain@aulanz.net  | nz2223Nz
 
 ************************************************
 
-UPLOAD PAW: 
-    - flask_app       ✔✔ 😎
-    - error_page.html ✔✔ 😎
-    - excercise.html  ✔✔ 😎
-    - excercise_data  ✔✔ 😎
+EXCERCISES
 
-    - all excercises scripts
+    excercise pause() 
+        - create pause() version in html console mode
+
+    text for excerc 7, 8, 9    
+
+    excercises 19, 20 ,21
+
+    review teacher paper
+
+LIFE GAME
+  - FILL info data in all excercises
+  - If the matrices are equal, stop the process
+
+ENIGMA
+  - if equal matrices --> STOP
+  - Input to ask for numbre of CPU's  ???
+  - Permutation and one rotation
+
+TO IMPROVE
+
+- final check of writing logic in flask_app (matrix vs comment)
+
+- result_script_html.html -> review JS 
+  - Case LifeGame ex 7: JS function ... print lines (<p>) with delay. possible ✔✔  😎 
+
+- FADING Effects to exit from alert window
+        - https://codepen.io/thebabydino/pen/MWYJdNY
+        - https://www.geeksforgeeks.org/image-transition-with-fading-effect-using-javascript/
 
 
-excercise pause() 
-    - create pause() version in html console mode
-
-excer 4 methods:   ✔✔ 😎
-
-    2023-10-19 16:44:00,906 ERROR    result_script_exec error from func 'result_script_exec()' when executing subprocess ! | exception() => [Errno 11] write could not complete without blocking
-    Traceback (most recent call last):
-    File "/home/iggWebNz/mysite/flask_app.py", line 199, in result_script_exec
-        print(f"==> line: {line}")
-    BlockingIOError: [Errno 11] write could not complete without blocking
-    2023-10-19 16:44:00,991 ERROR    result_script_html error from function 'result_script_html()' - NO DATA ! |exception => list index out of range
-    Traceback (most recent call last):
-    File "/home/iggWebNz/mysite/flask_app.py", line 669, in result_script_html
-        print(f"{FR_YELL}.....type of var list_text_lines[0]: {type(list_lines[0])} | value: {list_lines[0]}{NO_COLOR}")
-    IndexError: list index out of range    
-
-similar excer 7 hierarchy   ✔✔ 😎
-
-excer 8:   ✔✔ 😎
-    check execution in html: folder direction in static...
-    create downloads folder in static to store it...
-
-excer 15: check dir structure to create zip file... zip file does not working  ✔✔ 😎
-
-excer 16, 17: check dir to txt file in PAW  ✔✔ 😎
-    my_script = __file__.split('\\')
 
 
 ************************************************
@@ -76,45 +73,10 @@ STILL TO DO !!!
     - error_page in flask_app for render_template
     - don't call error_page when rendering is good and error can be directed to log file
 
-- normalize all excercises: root path and TRY EXCEPTION (excercises, EnigmaGame, LifeGame)
-
-- excercises     
-
-    - # 10 inputTrabajadores1.py receive data and only need to print         ✔✔ 😎
-    - # 11 teacher example --- adjust printing colors, check substitutions
-    - # 12 strings.... adjust printing colors, substitute input with delay
-    - # 17 decide if will be included....
-
-
 PAW & local PATHS
-
-- Probar os.cwd() in PAW for insert in sys.path if and only if os.cwd have "mysite" --> discarded  ✔✔  😎
-
-- config: base dir with array value for server key directory  ---- > to investigate
-
-
-- INCLUDE IN ALL EXCERCISES TRY EXCEPTION ERROR_PAGE SCHEMMA     
 
 - CSS file and responsive
     - menu like smartphones
-
-- z-permutFileSorted.txt  ✔✔  😎
-    - in z-writePermut_15_File (17,26)
-        find with: open('z-permutFileSorted.txt', 'w').writelines(uniqlines)
-
-    - in series "mpPoolManagerEnigmaRandom?????.py" 
-        find with: open('z-permutFileSorted.txt').readlines()
-
-- list_JS_lines.txt, list_text_lines.csv ....   ✔✔ 😎  
-
-- write_log_file function ✔✔ 😎
-    - check file path in both cases
-
-- PAW vs local --- file paths   ✔✔ 😎 
-    - check what is happens in PAW when working in excercises and enigma project
-    - look at root path "https://eu.pythonanywhere.com/user/iggWebNz/files/home/iggWebNz"
-    - It seems that you have to include "mysite" when creating paths
-
 
 
 **********************************************************
@@ -125,11 +87,6 @@ Actual web
 
     - input excercise as form page vs JS prompt  ✔✔ 😎
         - https://stackoverflow.com/questions/67189491/flask-python-website-save-user-input-and-add-it-to-the-list#:~:text=from%20flask%20import%20%2A%20app%20%3D%20Flask%20%28__name__%29,request.form%20%5B%27ques%27%5D%7D%29%20return%20render_template%20%28%27def.html%27%2C%20questions%3Dquestions%29%20app.run%20%28debug%3DTrue%29
-
-    - LOG FILES & TRY SCHEMMA 
-        checking if scripts contain write_log_file(my_messages.txt), the writing procedure to server_messages.txt 
-        & rendering to error_page if proceed
-            - include file name in message
 
     - ZIP example script
         - Check .zip schemma for excercises, life game and enigma  (MyFunc and MyColors files can work in root path only)
@@ -142,19 +99,7 @@ Actual web
         Python Zip files, dirs, dirs and some specific files
            -> https://www.tutorialspoint.com/How-to-create-a-zip-file-using-Python
 
-    - Finish info filling (excercises, lifegame and enigma game) 
-        - input example
-        - Excercises: include zip example
-        - check equal matrices in life game excercises
-        - simple version of enigma -> one rotation ↣ check alphab 0 = orig alphab       
-
     - Read course material and "highlight special elements". Improve suggestions
-
-    - CSS file and responsive
-        - menu like smartphones
-
-    - waiting bar  ✔✔😎
-        - 
 
     - modal for img
         - modal for img  vs image zoom by click
