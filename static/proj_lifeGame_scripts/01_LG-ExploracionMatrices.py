@@ -84,7 +84,7 @@ if __name__ == "__main__":
 		msg = " Matriz inicial de nX= " + str(nX) + " cols y nY= " + str(nY) + " rows | numpy: matriz = np.arange(nX*nY).reshape(nX, nY) "
 		mostrar_matriz(matriz,msg)
 
-		m0 = matriz[ 0:int(nX/0), 0:int(nY/2) ]
+		m0 = matriz[ 0:int(nX/2), 0:int(nY/2) ]
 		mostrar_matriz(m0, " m0 = matriz[ 0:int(nX/2), 0:int(nY/2) ]")
 
 		m1 = matriz[ int(nX/2):nX, 0:int(nY/2) ]
