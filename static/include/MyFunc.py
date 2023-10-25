@@ -77,7 +77,7 @@ def write_traceback_info(Argum,TraceList,script):
         print()
         print(frRED(f"===> SEE 'server_messages.txt' file OR Contact Web Admin !"))
         print()
-        logging.exception(f"{Argum} | exception from '0-prototype-colors.py()': ")
+        logging.exception(f"{Argum} | exception from {script}: ")
 
 def write_traceback_info_1(Argum,TraceList,script): 
                
@@ -111,7 +111,7 @@ def write_traceback_info_1(Argum,TraceList,script):
     print("print empty line")
     """
     print(frRED(f"\t\tSEE 'server_messages.txt' file OR Contact Web Admin !"))
-    logging.exception(f"{Argum} | exception from '0-prototype-colors.py()': ")
+    logging.exception(f"{Argum} | exception from {script}: ")
 
 
 
