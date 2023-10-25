@@ -23,7 +23,7 @@ try:   # Import My Own Functions from include dir
 except Exception as ImportError:
     FR_RED   = "\033[91m" 
     NO_COLOR = "\033[00m"
-    print() 
+    print("print empty line") 
     print(f"{FR_RED}IMPORT ERROR ==>{NO_COLOR} {ImportError} | {ImportError.__class__} | {ImportError.__doc__}")
 
 #
@@ -39,10 +39,10 @@ if __name__ == "__main__":
         #print(f".....my_script_name: {my_script_name}")
         print()
         write_log_file("my_messages.txt","IN '" + my_script_name + "'")
-        print()
+        print("print empty line")
 
         print(f"{FR_GREEN}---------- MAIN ----------{NO_COLOR}")
-        print()
+        print("print empty line")
 
         #
 

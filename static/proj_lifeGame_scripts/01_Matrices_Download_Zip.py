@@ -15,6 +15,7 @@ try:   # Import My Own Functions from include dir
     sys.path.append(up2_dir)
     # get parent up 3 from __file__ path: 'static parent path'       
     up3_dir = dirname(dirname(dirname(realpath(__file__))))
+    print(f"up2_dir {up2_dir}")
     # insert path in sys.path
     sys.path.append(up3_dir)
     # import My Own Func    
