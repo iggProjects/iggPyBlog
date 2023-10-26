@@ -1,23 +1,19 @@
+# IMPORT SECTION
+# My Own Functions from include dir 
 try:   # Import My Own Functions from include dir 
-    import sys, traceback
-    import numpy as np   
-    from os.path import dirname, realpath
-    from os import scandir
-    # get parent up 2 from __file__ path: 'static path'   
-    up2_dir = dirname(dirname(dirname(realpath(__file__))))
-    # insert path in sys.path
-    sys.path.append(up2_dir)
-    # get parent up 3 from __file__ path: 'static parent path'       
-    up3_dir = dirname(dirname(dirname(dirname(realpath(__file__)))))
-    # insert path in sys.path
-    sys.path.append(up3_dir)
-    # import My Own Func
-    from static.include.MyFunc import *
-    from static.include.MyColors import *
+	import sys, traceback
+	import platform
+	import numpy as np 
+	from os import system
+	from os.path import dirname, realpath
+	# import My Own Func
+	from MyColors import *
+	from MyFunc_copy_DL import *    
+
 except Exception as ImportError:
     FR_RED   = "\033[91m" 
     NO_COLOR = "\033[00m"
-    print() 
+    print("print empty line") 
     print(f"{FR_RED}IMPORT ERROR ==>{NO_COLOR} {ImportError} | {ImportError.__class__} | {ImportError.__doc__}")
 
 
@@ -65,8 +61,6 @@ if __name__ == "__main__":
 	
 		my_script = __file__.split('\\')
 		my_script_name = my_script[len(my_script)-1]
-		#print(f".....my_script_name: {my_script_name}")
-		write_log_file("my_messages.txt","IN '" + my_script_name + "'")
 
 		matriz  = np.random.randint(2, size=(nX, nY))
 		matriz_ext = np.zeros((nX,yExt))
@@ -137,11 +131,11 @@ if __name__ == "__main__":
 		print(f"\n{FR_YELL}Total iteraciones Game of Life: {ITERAC} | matriz {nX} x {nY}\n")
 
 		print(f"\n{FR_YELL}======== that's all ========{NO_COLOR}\n")		
+		pause()
 
 
 	except Exception as Argument:
 		error_msg = "ERROR IN <" + my_script_name + ">. SEE server_messages.txt !"
-		write_log_file("my_messages.txt",error_msg)
 		write_traceback_info_1(Argument,traceback,my_script_name)
 		
 	

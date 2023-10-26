@@ -37,7 +37,7 @@ def LG_scripts():
             'body': 'Expand and contract matrices with numpy !\n\n============== DETAILS NEXT WEEK ==============\n\nFor now, you can execute in console button, or download the .zip (download button) and execute .bat file in your local "downloads folder".\n\nTIP: create a folder called "py_files" inside "downloads", and move the .zip to that folder. Extract the files and run the .bat (with double click). NOTE: you must have python in the "path" of your pc, which you can check in "environment variables"',  
 
             'code_url': '/static/proj_lifeGame_scripts/02_LG-expandir-contraer-funciones.py',  
-            'zip_url': '/static/proj_lifeGame_scripts/02_LG-expandir-contraer-funciones.zip',  
+            'zip_url': '/static/proj_lifeGame_scripts/02_LG-Expandir-Contraer.zip',  
             'img': '/img/icons8-consola-100.png'    
         },     
 
@@ -56,7 +56,7 @@ def LG_scripts():
             'body': '\n\n============== DETAILS NEXT WEEK ==============\n\nFor now, you can execute in console button, or download the .zip (download button) and execute .bat file in your local "downloads folder".\n\nTIP: create a folder called "py_files" inside "downloads", and move the .zip to that folder. Extract the files and run the .bat (with double click). NOTE: you must have python in the "path" of your pc, which you can check in "environment variables"',  
 
             'code_url': '/static/proj_lifeGame_scripts/03_LG-reglas.py',  
-            'zip_url': '/static/proj_lifeGame_scripts/03_LG-reglas.zip',  
+            'zip_url': '/static/proj_lifeGame_scripts/03_LG_reglas.zip',  
             'img': '/img/icons8-consola-100.png'    
         },       
 

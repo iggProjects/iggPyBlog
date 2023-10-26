@@ -1,23 +1,30 @@
-#!/usr/bin/python3
-import numpy as np
-import os, sys, traceback
-import time
+try:   # Import My Own Functions from include dir 
+    import sys, traceback, time
+    import numpy as np   
+    from os.path import dirname, realpath
+    from os import scandir
+    # get parent up 2 from __file__ path: 'static path'   
+    up2_dir = dirname(dirname(dirname(realpath(__file__))))
+    # insert path in sys.path
+    sys.path.append(up2_dir)
+    # get parent up 3 from __file__ path: 'static parent path'       
+    up3_dir = dirname(dirname(dirname(dirname(realpath(__file__)))))
+    # insert path in sys.path
+    sys.path.append(up3_dir)
+    # import My Own Func
+    from static.include.MyFunc import *
+    from static.include.MyColors import *
+except Exception as ImportError:
+    FR_RED   = "\033[91m" 
+    NO_COLOR = "\033[00m"
+    print() 
+    print(f"{FR_RED}IMPORT ERROR ==>{NO_COLOR} {ImportError} | {ImportError.__class__} | {ImportError.__doc__}")
 
 #
 # Constantes
 #
 ITERAC = 1000
 DORMIR= 0.005
-
-from os import system
-
-# Colors
-NO_COLOR = "\033[00m"
-FR_RED   = "\033[91m"
-FR_GREEN = "\033[92m"
-FR_YELL  = "\033[93m"
-FR_BLUE  = "\033[94m"
-FR_MAG   = "\033[95m"
 
 #
 # Funciones
@@ -35,7 +42,7 @@ def parificar(numero):
 # Muestro la Matriz
 def mostrar_matriz(matriz,msg):
 	#print(f"\n{FR_YELL}{msg}{NO_COLOR}\n")
-	os.system('cls')                                    # Ejecuto el comando 'clear' del OS
+	clear_console_screen()
 	X, Y = matriz.shape                                   # Dimensiones de la matriz
 	for y in range(0, Y):
 		for x in range(0, X):
@@ -126,67 +133,84 @@ def contraer_matriz(matriz):
 	return matriz
 
 #
-# Programa
+# MAIN
 #
 
 if __name__ == '__main__':
-
-	n=1																								# Numero Iteraciones
-	#nX, nY = os.get_terminal_size()					 	# Windows Obtengo COLUMNAS y LINEAS de la consola
-	#nX, nY = os.get_terminal_size(0)					# Linux   Obtengo COLUMNAS y LINEAS de la consola
-	#nX, nY = parificar(int(nX/2)), parificar(nY-2)		# Ajusto por espacios e indicador de iteraciones
-
-	nX, nY = 25,25
-
-	# Intento capturar nombre de archivo de la llamada
+		
 	try:
-		archivo = sys.argv[1]
-	except:
-		archivo = 'NO_ARCHIVO'
 
-	matriz = crear_matriz(archivo)								# Obtengo la matriz
-	mostrar_matriz(matriz,"Matriz Inicial")
-	print(f"{FR_GREEN}MATRIZ INICIAL{NO_COLOR}")
-	pausar()
+		clear_console_screen()
+	
+		my_script = __file__.split('\\')
+		my_script_name = my_script[len(my_script)-1]
+		write_log_file("my_messages.txt","IN '" + my_script_name + "'")
 
-	# Registro hora-seg inicio
-	inicio = time.time()
+		n=1												 # contador Iteraciones
+		#nX, nY = os.get_terminal_size()				 # Windows Obtengo COLUMNAS y LINEAS de la consola
+		#nX, nY = os.get_terminal_size(0)				 # Linux   Obtengo COLUMNAS y LINEAS de la consola
+		#nX, nY = parificar(int(nX/2)), parificar(nY-2)	 # Ajusto por espacios e indicador de iteraciones
 
-	# Iteraciones del programa
-	while n <= ITERAC:
-		# particiono la matriz
-		m0 = matriz[ 0:int(nX/2), 0:int(nY/2) ]
-		m1 = matriz[ int(nX/2):nX, 0:int(nY/2) ]
-		m2 = matriz[ 0:int(nX/2), int(nY/2):nY ]
-		m3 = matriz[ int(nX/2):nX, int(nY/2):nY ]
+		nX, nY = 26,13
 
-		# Expando las matrices
-		m0e = expandir_matriz(m0, m1, m2, m3)
-		m1e = expandir_matriz(m1, m0, m3, m2)
-		m2e = expandir_matriz(m2, m3, m0, m1)
-		m3e = expandir_matriz(m3, m2, m1, m0)
+		# Intento capturar nombre de archivo de la llamada
+		try:
+			archivo = sys.argv[1]
+		except:
+			archivo = 'NO_ARCHIVO'
 
-		# Calculo la iteracion de la matriz
-		m0e = calcular_matriz(m0e)
-		m1e = calcular_matriz(m1e)
-		m2e = calcular_matriz(m2e)
-		m3e = calcular_matriz(m3e)
+		matriz = crear_matriz(archivo)								# Obtengo la matriz
+		mostrar_matriz(matriz,"Matriz Inicial")
+		print(f"{FR_GREEN}MATRIZ INICIAL{NO_COLOR}")
+		pausar()
 
-		# contraigo las matricez
-		m0 = contraer_matriz(m0e)
-		m1 = contraer_matriz(m1e)
-		m2 = contraer_matriz(m2e)
-		m3 = contraer_matriz(m3e)
+		# Registro hora-seg inicio
+		inicio = time.time()
 
-		# Recombino las matrices particionadas
-		matriz = np.hstack( (np.vstack( (m0,m1) ), np.vstack( (m2,m3) )) )
-		# Print cada 10 iteraciones
-		if n % 50 == 0:
-			mostrar_matriz(matriz,"Nueva cara Matriz")
-			print(f"Iteraciones: {n} de {ITERAC} | Matriz {nX} x {nY}")
-		time.sleep(DORMIR)
-		n+=1
+		# Iteraciones del programa
+		while n <= ITERAC:
+			# particiono la matriz
+			m0 = matriz[ 0:int(nX/2), 0:int(nY/2) ]
+			m1 = matriz[ int(nX/2):nX, 0:int(nY/2) ]
+			m2 = matriz[ 0:int(nX/2), int(nY/2):nY ]
+			m3 = matriz[ int(nX/2):nX, int(nY/2):nY ]
 
-	elapsed_time = "{:.2f}".format(time.time()-inicio)
-	print(f"\n{FR_GREEN}   Elapsed Time: {elapsed_time} seconds{NO_COLOR}\n")
-	print(f"\n{FR_YELL}   ----------THAT's ALL----------\033[0m\n")
+			# Expando las matrices
+			m0e = expandir_matriz(m0, m1, m2, m3)
+			m1e = expandir_matriz(m1, m0, m3, m2)
+			m2e = expandir_matriz(m2, m3, m0, m1)
+			m3e = expandir_matriz(m3, m2, m1, m0)
+
+			# Calculo la iteracion de la matriz
+			m0e = calcular_matriz(m0e)
+			m1e = calcular_matriz(m1e)
+			m2e = calcular_matriz(m2e)
+			m3e = calcular_matriz(m3e)
+
+			# contraigo las matricez
+			m0 = contraer_matriz(m0e)
+			m1 = contraer_matriz(m1e)
+			m2 = contraer_matriz(m2e)
+			m3 = contraer_matriz(m3e)
+
+			# Recombino las matrices particionadas
+			matriz = np.hstack( (np.vstack( (m0,m1) ), np.vstack( (m2,m3) )) )
+			# Print cada 10 iteraciones
+			if n % 50 == 0:
+				mostrar_matriz(matriz,"Nueva cara Matriz")
+				print(f"Iteraciones: {n} de {ITERAC} | Matriz {nX} x {nY}")
+			time.sleep(DORMIR)
+			n+=1
+
+		elapsed_time = "{:.2f}".format(time.time()-inicio)
+		print(f"\n{FR_GREEN}   Elapsed Time: {elapsed_time} seconds{NO_COLOR}\n")
+		print(f"\n{FR_YELL}   ----------THAT's ALL----------\033[0m\n")
+
+	except Exception as Argument:
+		error_msg = "ERROR IN <" + my_script_name + ">. SEE server_messages.txt !"
+		write_log_file("my_messages.txt",error_msg)
+		write_traceback_info_1(Argument,traceback,my_script_name)
+	
+else:
+    # something wrong
+    print(frRED("---- upsssssssss something is wrong ----"))

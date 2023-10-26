@@ -1,0 +1,1 @@
+python.exe 03_LG-reglas_DL.py

@@ -1,1 +1,0 @@
-python.exe 04_LG-iterations-funciones.py
