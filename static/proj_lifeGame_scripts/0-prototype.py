@@ -6,7 +6,8 @@
 # IMPORT SECTION
 
 try:   # Import My Own Functions from include dir 
-    import sys, traceback     
+    import sys, traceback
+    import numpy as np   
     from os.path import dirname, realpath
     from os import scandir
     # get parent up 2 from __file__ path: 'static path'   
@@ -51,6 +52,7 @@ if __name__ == "__main__":
 
 
         print(f"{FR_GREEN}---------- That's all for today ----------{NO_COLOR}")
+        pause()
 
     except Exception as Argument:
         error_msg = "ERROR IN <" + my_script_name + ">. SEE server_messages.txt !"

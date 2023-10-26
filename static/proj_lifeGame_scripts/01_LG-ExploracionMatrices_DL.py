@@ -17,6 +17,17 @@ except Exception as ImportError:
     print("print empty line") 
     print(f"{FR_RED}IMPORT ERROR ==>{NO_COLOR} {ImportError} | {ImportError.__class__} | {ImportError.__doc__}")
 
+def mostrar_matriz(matriz,msg):
+	X, Y = matriz.shape                                   # Dimensiones de la matriz
+	print(f"{FR_GREEN}{msg}")
+	print(f"{NO_COLOR}")
+	for y in range(0, Y):
+		for x in range(0, X):
+			print(f"\t{int(matriz[x,y])}", end =" ")
+		print()
+	print()	# 	
+	pause()	
+
 
 #
 # ---------- MAIN ----------

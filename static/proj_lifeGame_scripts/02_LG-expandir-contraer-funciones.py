@@ -1,18 +1,27 @@
-#!/usr/bin/python3
-import numpy as np
-from os import system
+# IMPORT SECTION
 
-# Colors
-NO_COLOR = "\033[00m"
-FR_GREEN = "\033[92m"
-FR_RED   = "\033[91m"
-FR_BLUE  = "\033[94m"
-FR_YELL  = "\033[93m"
-FR_MAG   = "\033[95m"
+try:   # Import My Own Functions from include dir 
+    import sys, traceback
+    import numpy as np   
+    from os.path import dirname, realpath
+    from os import scandir
+    # get parent up 2 from __file__ path: 'static path'   
+    up2_dir = dirname(dirname(dirname(realpath(__file__))))
+    # insert path in sys.path
+    sys.path.append(up2_dir)
+    # get parent up 3 from __file__ path: 'static parent path'       
+    up3_dir = dirname(dirname(dirname(dirname(realpath(__file__)))))
+    # insert path in sys.path
+    sys.path.append(up3_dir)
+    # import My Own Func
+    from static.include.MyFunc import *
+    from static.include.MyColors import *
+except Exception as ImportError:
+    FR_RED   = "\033[91m" 
+    NO_COLOR = "\033[00m"
+    print() 
+    print(f"{FR_RED}IMPORT ERROR ==>{NO_COLOR} {ImportError} | {ImportError.__class__} | {ImportError.__doc__}")
 
-# Pauso la ejecucion
-def pausar():
-	userInput = input("\tPresiona ENTER para continuar CTRL-C para salir.")
 
 # Muestro la Matriz
 def mostrar_matriz(matriz,msg):	
@@ -20,12 +29,10 @@ def mostrar_matriz(matriz,msg):
 	X, Y = matriz.shape
 	for y in range(0, Y):
 		for x in range(0, X):
-			if matriz[x,y] == 1:
-				print(f"\t\033[0;91m{int(matriz[x,y])}\033[0m", end =" ")
-			else:
-				print(f"\t\033[0;37m{int(matriz[x,y])}\033[0m", end =" ")
+			print(f"{int(matriz[x,y])}", end =" ")
 		print()
-	pausar()
+	print()	
+	pause()
 
 # Expando una matriz
 def expandir_matriz(m0, m1, m2, m3):          # matriz, izq, der, top, fon
@@ -54,61 +61,78 @@ def contraer_matriz(matriz):
 #
 #
 
-system('cls')
+if __name__ == "__main__":
 
-nX, nY = 6, 6
+	try:
 
-matriz = np.arange(nX*nY).reshape(nX, nY)
-mostrar_matriz(matriz," matriz = np.arange(nX*nY).reshape(nX, nY)")
+		clear_console_screen()
 
-# particiono la matriz
-m0 = matriz[ 0:int(nX/2), 0:int(nY/2) ]
-m1 = matriz[ int(nX/2):nX, 0:int(nY/2) ]
-m2 = matriz[ 0:int(nX/2), int(nY/2):nY ]
-m3 = matriz[ int(nX/2):nX, int(nY/2):nY ]
+		my_script = __file__.split('\\')
+		my_script_name = my_script[len(my_script)-1]
+		#print(f".....my_script_name: {my_script_name}")
+		print()
+		write_log_file("my_messages.txt","IN '" + my_script_name + "'")
+		print()
 
-print(f"{FR_MAG}\n============== Matrices partidas ==============={NO_COLOR}\n")
+		print(f"{FR_GREEN}---------- MAIN ----------{NO_COLOR}")
+		print()
 
-mostrar_matriz(m0," Matriz m0:  matriz[ 0:int(nX/2), 0:int(nY/2) ]")
-print()
-mostrar_matriz(m1," Matriz m1:  matriz[int(nX/2):nX, 0:int(nY/2) ]")
-print()
-mostrar_matriz(m2," Matriz m2:  matriz[ 0:int(nX/2), int(nY/2):nY ]")
-print()
-mostrar_matriz(m3," Matriz m3:  matriz[ int(nX/2):nX, int(nY/2):nY ]")
-print()
+		nX, nY = 6, 6
 
-# Expandimos las matrices m0, m1, m2, m3
-m0e = expandir_matriz(m0, m1, m2, m3)
-m1e = expandir_matriz(m1, m0, m3, m2)
-m2e = expandir_matriz(m2, m3, m0, m1)
-m3e = expandir_matriz(m3, m2, m1, m0)
+		matriz = np.arange(nX*nY).reshape(nX, nY)
+		mostrar_matriz(matriz,"matriz = np.arange(nX*nY).reshape(nX, nY)")
 
-print(f"{FR_MAG}\n====== Matrices expandidas ======{NO_COLOR}\n")
-mostrar_matriz(m0e," m0e: expandir_matriz(m0, m1, m2, m3)")
-print()
-mostrar_matriz(m1e," m1e: expandir_matriz(m1, m0, m3, m2)")
-print()
-mostrar_matriz(m2e," m2e: expandir_matriz(m2, m3, m0, m1)")
-print()
-mostrar_matriz(m3e," m3e: expandir_matriz(m3, m2, m1, m0)")
-print()
+		# particiono la matriz
+		m0 = matriz[ 0:int(nX/2), 0:int(nY/2) ]
+		m1 = matriz[ int(nX/2):nX, 0:int(nY/2) ]
+		m2 = matriz[ 0:int(nX/2), int(nY/2):nY ]
+		m3 = matriz[ int(nX/2):nX, int(nY/2):nY ]
 
-# contraemos las matrices m0e, m1e, m2e, m3e
-m0c = contraer_matriz(m0e)
-m1c = contraer_matriz(m1e)
-m2c = contraer_matriz(m2e)
-m3c = contraer_matriz(m3e)
+		print(f"{FR_MAG}\n============== Matrices partidas ==============={NO_COLOR}\n")
 
-print(f"{FR_MAG}\n====== Matrices contraidas ======\n{NO_COLOR}")
+		mostrar_matriz(m0,"Matriz m0:  matriz[ 0:int(nX/2), 0:int(nY/2) ]")
+		mostrar_matriz(m1,"Matriz m1:  matriz[int(nX/2):nX, 0:int(nY/2) ]")
+		mostrar_matriz(m2,"Matriz m2:  matriz[ 0:int(nX/2), int(nY/2):nY ]")
+		mostrar_matriz(m3,"Matriz m3:  matriz[ int(nX/2):nX, int(nY/2):nY ]")
 
-mostrar_matriz(m0c," m0c: contraer_matriz(m0e)")
-mostrar_matriz(m1c," m1c: contraer_matriz(m1e)")
-mostrar_matriz(m2c," m2c: contraer_matriz(m2e)")
-mostrar_matriz(m3c," m3c: contraer_matriz(m3e)")
+		# Expandimos las matrices m0, m1, m2, m3
+		m0e = expandir_matriz(m0, m1, m2, m3)
+		m1e = expandir_matriz(m1, m0, m3, m2)
+		m2e = expandir_matriz(m2, m3, m0, m1)
+		m3e = expandir_matriz(m3, m2, m1, m0)
 
-print(f"{FR_GREEN}\n====== MATRIZ FINAL COMPLETA ======\n{NO_COLOR}")
-matrizFinal = np.hstack( (np.vstack( (m0c, m1c) ), np.vstack( (m2c, m3c) )) )
-mostrar_matriz(matrizFinal,"Matriz Final: np.hstack( (np.vstack( (m0c, m1c) ), np.vstack( (m2c, m3c) )) )")
+		print(f"{FR_MAG}\n====== Matrices expandidas ======{NO_COLOR}\n")
+		mostrar_matriz(m0e,"m0e: expandir_matriz(m0, m1, m2, m3)")
+		mostrar_matriz(m1e,"m1e: expandir_matriz(m1, m0, m3, m2)")
+		mostrar_matriz(m2e,"m2e: expandir_matriz(m2, m3, m0, m1)")
+		mostrar_matriz(m3e,"m3e: expandir_matriz(m3, m2, m1, m0)")
 
-print(f"\n{FR_YELL}======== that's all ========{NO_COLOR}\n")
+		# contraemos las matrices m0e, m1e, m2e, m3e
+		m0c = contraer_matriz(m0e)
+		m1c = contraer_matriz(m1e)
+		m2c = contraer_matriz(m2e)
+		m3c = contraer_matriz(m3e)
+
+		print(f"{FR_MAG}\n====== Matrices contraidas ======\n{NO_COLOR}")
+
+		mostrar_matriz(m0c,"m0c: contraer_matriz(m0e)")
+		mostrar_matriz(m1c,"m1c: contraer_matriz(m1e)")
+		mostrar_matriz(m2c,"m2c: contraer_matriz(m2e)")
+		mostrar_matriz(m3c,"m3c: contraer_matriz(m3e)")
+
+		print(f"{FR_GREEN}\n====== MATRIZ FINAL COMPLETA ======\n{NO_COLOR}")
+		matrizFinal = np.hstack( (np.vstack( (m0c, m1c) ), np.vstack( (m2c, m3c) )) )
+		mostrar_matriz(matrizFinal,"Matriz Final: np.hstack( (np.vstack( (m0c, m1c) ), np.vstack( (m2c, m3c) )) )")
+
+		print(f"\n{FR_YELL}======== that's all ========{NO_COLOR}\n")
+		pause()
+
+	except Exception as Argument:
+		error_msg = "ERROR IN <" + my_script_name + ">. SEE server_messages.txt !"
+		write_log_file("my_messages.txt",error_msg)
+		write_traceback_info_1(Argument,traceback,my_script_name)
+		pause()     
+	
+else:
+    # something wrong
+    print(frRED("---- upsssssssss something is wrong ----"))
