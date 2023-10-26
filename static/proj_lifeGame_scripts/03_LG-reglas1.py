@@ -23,7 +23,7 @@ except Exception as ImportError:
 
 # CONSTANTS
 
-ITERAC = 100
+ITERAC = 50
 nX = 10
 nY = 16
 yExt = 2*nY + 1
@@ -122,7 +122,7 @@ if __name__ == "__main__":
 				print(f"MATRIZ-INICIAL-{nX}x{nY}-Acompañada-Matriz-Nro-Vecinos")	
 				mostrar_matriz( matriz_ext )		
 				#print(f"-----MatrizGameLife----------MatrizNumVecinos-----")	
-			elif n % 5 == 0:
+			elif n % 2 == 0:
 				print(f"Iterac--{n}--matriz-{nX}x{nY}")	
 				#print(f"----MatrizGameLife----------MatrizNumVecinos-----")		
 				mostrar_matriz( matriz_ext )
