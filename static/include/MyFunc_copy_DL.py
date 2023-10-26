@@ -377,6 +377,34 @@ def zipFilesInList(paths_list, zipFileName, filter):
                 print(f"file added: {path_name}")
                 zipObj.write(path_name, basename(path_name))
 
+# FOR LIFE GAME
+# Muestro la Matriz
+def mostrar_matriz(matriz,msg):
+	X, Y = matriz.shape                                   # Dimensiones de la matriz
+	print(f"{FR_GREEN}{msg}")
+	print(f"{NO_COLOR}")
+	for y in range(0, Y):
+		for x in range(0, X):
+			if matriz[x,y] == 1:
+				print(f"\t{FR_RED}{int(matriz[x,y])}{NO_COLOR}", end =" ")
+			else:
+				print(f"\t{int(matriz[x,y])}", end =" ")
+		print()
+	print()	# 	
+	pause()	
+    
+def mostrar_matriz1(matriz,msg):
+	X, Y = matriz.shape                                   # Dimensiones de la matriz
+	print(f"{FR_GREEN}{msg}")
+	print(f"{FR_BLUE}")
+	for y in range(0, Y):
+		for x in range(0, X):
+			if matriz[x,y] == 1:
+				print(f"\t{FR_RED}{int(matriz[x,y])}{FR_BLUE}", end =" ")
+			else:
+				print(f"\t{int(matriz[x,y])}", end =" ")
+		print()
+	print("print empty line") 	
 
 #
 #  LOG FILES FUNCTIONS

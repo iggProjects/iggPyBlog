@@ -34,6 +34,8 @@ if __name__ == "__main__":
 
     try:
 
+        clear_console_screen()
+
         my_script = __file__.split('\\')
         my_script_name = my_script[len(my_script)-1]
         #print(f".....my_script_name: {my_script_name}")
@@ -53,7 +55,8 @@ if __name__ == "__main__":
     except Exception as Argument:
         error_msg = "ERROR IN <" + my_script_name + ">. SEE server_messages.txt !"
         write_log_file("my_messages.txt",error_msg)
-        write_traceback_info_1(Argument,traceback,my_script_name)        
+        write_traceback_info_1(Argument,traceback,my_script_name)
+        pause()     
     
 else:
     # something wrong

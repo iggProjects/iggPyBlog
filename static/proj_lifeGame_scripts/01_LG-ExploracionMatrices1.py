@@ -36,7 +36,6 @@ try:
 	# import My Own Func    
 	from static.include.MyColors import *
 	from static.include.MyFunc import *
-	#from static.include.MyFunc_copy_DL import *
 
 except Exception as ImportError:
     FR_RED   = "\033[91m" 
@@ -46,13 +45,13 @@ except Exception as ImportError:
 
 def mostrar_matriz1(matriz,msg):
 	X, Y = matriz.shape                                   # Dimensiones de la matriz
-	print(f"{FR_GREEN}{msg}{NO_COLOR}")
-	#print(f"{FR_BLUE}")
+	print(f"{FR_GREEN}{msg}")
+	print(f"{FR_BLUE}")
 	for y in range(0, Y):
 		for x in range(0, X):
 			print(f"\t{int(matriz[x,y])}", end =" ")
 		print()
-	print("print empty line") 	
+	print("print empty line")
 
 #
 # ---------- MAIN ----------
@@ -64,19 +63,16 @@ if __name__ == "__main__":
 
 		my_script = __file__.split('\\')
 		my_script_name = my_script[len(my_script)-1]
-		#print(f".....my_script_name: {my_script_name}")
 		print("print empty line")
-		#write_log_file("my_messages.txt","IN '" + my_script_name + "'")
+		write_log_file("my_messages.txt","IN '" + my_script_name + "'")
 		print("print empty line")
 
 		print(f"{FR_GREEN}---------- MAIN ----------{NO_COLOR}")
 		print("print empty line")
-
-		nX, nY = 8, 8
-
-		#print("\n-------------------------- MAIN -------------------------------------\n")
 		print(f"{FR_RED}======= MATRIX WITH NUMPY METHODS   =======")
 		print("print empty line")
+
+		nX, nY = 8, 8
 
 		matriz = np.arange(nX*nY).reshape(nX, nY)
 		msg = " Matriz inicial de nX= " + str(nX) + " cols y nY= " + str(nY) + " rows | numpy: matriz = np.arange(nX*nY).reshape(nX, nY) "
@@ -118,22 +114,10 @@ if __name__ == "__main__":
 
 		print(f"{FR_RED}======== THAT'S ALL ========{NO_COLOR}")
 
-		#print("print empty line")
-		#mostrar_matriz1( np.vstack( (m0,m1) ) )
-		#print("print empty line")
-		#mostrar_matriz1( np.
-		# 
-		# vstack( (m2,m3) ) )
-		#print("print empty line")
-		#
-		#matriz = np.hstack( (np.vstack( (m0,m1) ), np.vstack( (m2,m3) )) )
-		#mostrar_matriz1(matriz)
-
 	except Exception as Argument:
 		error_msg = "ERROR IN <" + my_script_name + ">. SEE server_messages.txt !"
-		#write_log_file("my_messages.txt",error_msg)
-		#write_traceback_info_1(Argument,traceback,my_script_name)        
-
+		write_log_file("my_messages.txt",error_msg)
+		write_traceback_info_1(Argument,traceback,my_script_name)        
 
 else:
     # something wrong

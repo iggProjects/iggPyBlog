@@ -54,7 +54,7 @@ if __name__ == "__main__":
     # os.path.normpath(path) 
     #dirArray = os.path.split(dirPath)
     fileNameZip = basename(__file__) + '.zip'
-    fileNameZip = fileNameZip.replace('Matrices_Download_Zip.py','matrices')
+    fileNameZip = fileNameZip.replace('Matrices_Download_Zip.py','LG_matrices')
     print(f"fileNameZip: {fileNameZip}")
     file_zip_path = os.path.join(dirname(__file__),fileNameZip)
     
@@ -86,7 +86,7 @@ if __name__ == "__main__":
         print()    
 
     
-    zipFilesInList(list_paths, file_zip_path, lambda name: 'Matrices' in name)
+    zipFilesInList(list_paths, file_zip_path, lambda name: 'Matrices_DL' in name)
     
     if os.path.exists(fileNameZip):
 

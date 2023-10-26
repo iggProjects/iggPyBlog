@@ -1,49 +1,20 @@
-#!/usr/bin/python3
-#  vstack
-#  		https://numpy.org/doc/1.18/reference/generated/numpy.vstack.html
-#			https://www.geeksforgeeks.org/numpy-vstack-in-python/
-#			https://www.w3resource.com/numpy/manipulation/vstack.php
-#			https://www.geeksforgeeks.org/numpy-hstack-in-python/
-#
-#  arange
-#			https://www.geeksforgeeks.org/numpy-arange-python/	
-#
-#  extract sub matriz
-#			https://mail.python.org/pipermail/tutor/2010-July/077020.html
-#			https://stackoverflow.com/questions/509211/understanding-slice-notation 
-#
 
 # IMPORT SECTION
-try:
-	import numpy as np 
-	import os, sys, traceback
+# My Own Functions from include dir 
+try:   # Import My Own Functions from include dir 
+	import sys, traceback
 	import platform
-	from os.path import basename, dirname, isdir, isfile, realpath
-	from zipfile import ZipFile
+	import numpy as np 
 	from os import system
-	from pathlib import Path
-
-	# get parent up 2 from __file__ path: 'static path'   
-	up2_dir = dirname(dirname(realpath(__file__)))
-	print(f"up2_dir {up2_dir}")
-  
-	#up2_dir = dirname(dirname(dirname(realpath(__file__))))
-	# insert path in sys.path
-	sys.path.append(up2_dir)
-	# get parent up 3 from __file__ path: 'static parent path'       
-	up3_dir = dirname(dirname(dirname(realpath(__file__))))
-	print(f"up3_dir {up3_dir}")      
-	# insert path in sys.path
-	sys.path.append(up3_dir)
-	# import My Own Func    
-	from static.include.MyColors import *
-	from static.include.MyFunc import *
-	#from static.include.MyFunc_copy_DL import *
+	from os.path import dirname, realpath
+	# import My Own Func
+	from MyColors import *
+	from MyFunc_copy_DL import *    
 
 except Exception as ImportError:
     FR_RED   = "\033[91m" 
     NO_COLOR = "\033[00m"
-    print() 
+    print("print empty line") 
     print(f"{FR_RED}IMPORT ERROR ==>{NO_COLOR} {ImportError} | {ImportError.__class__} | {ImportError.__doc__}")
 
 
@@ -55,13 +26,14 @@ if __name__ == "__main__":
 
 	try:
 
+		clear_console_screen()	
+
 		print("\n-------------------------- MAIN -------------------------------------\n")
 		print(f"{FR_YELL}\t======= MATRIX WITH NUMPY METHODS   ======={NO_COLOR}\n")
-          
+
 		my_script = __file__.split('\\')
 		my_script_name = my_script[len(my_script)-1]
-		print()
-		write_log_file("my_messages.txt","IN '" + my_script_name + "'")
+		#print(f".....my_script_name: {my_script_name}")
 		print()
 
 		nX, nY = 8, 8
@@ -105,11 +77,13 @@ if __name__ == "__main__":
 		mostrar_matriz(m0e, " m0e expandida = np.hstack( ( top, m0e, bot) )")
 
 		print(f"\n{FR_YELL}======== that's all ========{NO_COLOR}\n")
+		pause()
 
 	except Exception as Argument:
 		error_msg = "ERROR IN <" + my_script_name + ">. SEE server_messages.txt !"
-		write_log_file("my_messages.txt",error_msg)
-		write_traceback_info(Argument,traceback,my_script_name)        
+		write_traceback_info(Argument,traceback,my_script_name) 
+		pause()       
+
 
 else:
     # something wrong

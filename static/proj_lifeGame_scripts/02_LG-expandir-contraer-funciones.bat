@@ -1,1 +1,0 @@
-python.exe 02_LG-expandir-contraer-funciones.py
