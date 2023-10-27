@@ -94,7 +94,7 @@ def LG_scripts():
             'body': '\n\n============== DETAILS NEXT WEEK ==============\n\nFor now, you can execute in console button, or download the .zip (download button) and execute .bat file in your local "downloads folder".\n\nTIP: create a folder called "py_files" inside "downloads", and move the .zip to that folder. Extract the files and run the .bat (with double click). NOTE: you must have python in the "path" of your pc, which you can check in "environment variables"',  
 
             'code_url': '/static/proj_lifeGame_scripts/05_LG-Iterations-ejec-normal.py',  
-            'zip_url': '/static/proj_lifeGame_scripts/05_LG-Iterations-ejec-normal.zip',  
+            'zip_url': '/static/proj_lifeGame_scripts/05_LG-iterations-ejec-normal.zip',  
             'img': '/img/icons8-consola-100.png'    
         },       
 

@@ -23,8 +23,8 @@ except Exception as ImportError:
 #
 # Constantes
 #
-ITERAC = 300
-DORMIR= 0.005
+ITERAC = 200
+DORMIR= 0.01
 
 #
 # Funciones
@@ -194,7 +194,7 @@ if __name__ == '__main__':
 			# Recombino las matrices particionadas
 			matriz = np.hstack( (np.vstack( (m0,m1) ), np.vstack( (m2,m3) )) )
 			# Print cada 50 iteraciones
-			if n % 50 == 0:
+			if n % 20 == 0:
 				print(f"Iteracion {n} de {ITERAC} | Matriz {nX} x {nY}")
 				mostrar_matriz(matriz,"")
 			# time.sleep(DORMIR)

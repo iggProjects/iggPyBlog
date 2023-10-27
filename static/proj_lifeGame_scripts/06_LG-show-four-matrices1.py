@@ -1,40 +1,47 @@
-#!/usr/bin/python3
-
 #
 # One Game of Life executed in four quadrants, one at a time, without multiprocessint
 #
 
-import numpy as np
-import os, sys, traceback
-import time
+"""  
+    
+    THIS SCRIPT IS FOR .............
+
+"""
+# IMPORT SECTION
+
+try:   # Import My Own Functions from include dir 
+    import sys, traceback
+    import numpy as np   
+    from os.path import dirname, realpath
+    from os import scandir
+    # get parent up 2 from __file__ path: 'static path'   
+    up2_dir = dirname(dirname(dirname(realpath(__file__))))
+    # insert path in sys.path
+    sys.path.append(up2_dir)
+    # get parent up 3 from __file__ path: 'static parent path'       
+    up3_dir = dirname(dirname(dirname(dirname(realpath(__file__)))))
+    # insert path in sys.path
+    sys.path.append(up3_dir)
+    # import My Own Func
+    from static.include.MyFunc import *
+    from static.include.MyColors import *
+except Exception as ImportError:
+    FR_RED   = "\033[91m" 
+    NO_COLOR = "\033[00m"
+    print("print empty line") 
+    print(f"{FR_RED}IMPORT ERROR ==>{NO_COLOR} {ImportError} | {ImportError.__class__} | {ImportError.__doc__}")
 
 #
-# Constantes
+# CONTANTS
 #
 ITERAC = 10 
-DORMIR= 1
-
-# Colors
-NO_COLOR = "\033[00m"
-FR_RED   = "\033[91m"
-FR_GREEN = "\033[92m"
-FR_YELL  = "\033[93m"
-FR_BLUE  = "\033[94m"
-FR_MAG   = "\033[95m"
-
-
 
 #
-# Funciones
+# FUNCT
 #
-
-# Pauso la ejecucion
-#def pausar():
-#	userInput = input('Presiona ENTER para continuar CTRL-C para salir. ');
 
 # Muestro la Matriz
 def mostrar_matriz(matriz,loc):
-	#os.system('cls')                                  # Ejecuto el comando 'clear' del OS
 	X, Y = matriz.shape                                 # Dimensiones de la matriz
 	matriz_Ext = np.zeros((2*X+1, 2*Y+1))				# Inicializo la matriz con ceros
 	print(f"ITERAC--{n}--ROTANDO-MATRIZ-POR-CUADRANTE")
@@ -154,45 +161,51 @@ def ejecutar_matriz(matriz):
 		#if n % 2 == 0:
 		# Muestro la nueva cara de la matriz
 		mostrar_matriz(matriz,1)
-		# time.sleep(DORMIR)
+		
 		n+=1
 		mostrar_matriz(matriz,2)
-		# time.sleep(DORMIR)
+		
 		n+=1
 		mostrar_matriz(matriz,3)
-		# time.sleep(DORMIR)
+		
 		n+=1
 		mostrar_matriz(matriz,4)
-		# time.sleep(DORMIR)
+		
 		n+=1
 
 #
 #  MAIN
 #	
 
-#os.system('cls')
+if __name__ == "__main__":
+	
+	try:
 
-n = 1  # iteration counter
-#nY, nX = os.get_terminal_size(0)		# Linux Obtengo COLUMNAS y LINEAS de la consola
-# nY, nX = os.get_terminal_size()		    # Windows Obtengo COLUMNAS y LINEAS de la consola
-#print(f"cols: {os.get_terminal_size()[0]} , rows:  {os.get_terminal_size()[1]} ")
-# nX, nY = int(nX/2) -5 , int(nY/2)-10		  	# Ajusto por espacios e indicador de iteraciones
-#print(f"{FR_GREEN}M TERMINAL SIZE: {os.get_terminal_size()[0]} x {os.get_terminal_size()[1]} |  MATRIX SIZE: {nX} x {nY}")
-#print("print empty line") 	
-#pausar()
+		my_script = __file__.split('\\')
+		my_script_name = my_script[len(my_script)-1]
+		write_log_file("my_messages.txt","IN '" + my_script_name + "'")
 
-nY, nX = 24,12
 
-inicio = time.time()
+		n = 1  										# iteration counter
+		#nY, nX = os.get_terminal_size(0)			# Linux Obtengo COLUMNAS y LINEAS de la consola
+		# nY, nX = os.get_terminal_size()		    # Windows Obtengo COLUMNAS y LINEAS de la consola
+		#print(f"cols: {os.get_terminal_size()[0]} , rows:  {os.get_terminal_size()[1]} ")
 
-matriz = crear_matriz()
+		# nX, nY = int(nX/2) -5 , int(nY/2)-10		# Ajusto por espacios e indicador de iteraciones
+		#print(f"{FR_GREEN}M TERMINAL SIZE: {os.get_terminal_size()[0]} x {os.get_terminal_size()[1]} |  MATRIX SIZE: {nX} x {nY}")
 
-ejecutar_matriz(matriz)
-"""
-print(f"{FR_GREEN}-----------BALANCE--------------")
-print("print empty line") 	
-print(f"{FR_MAG}Duración: {time.time()-inicio}")
-print("print empty line") 	
-print(f"{FR_YELL}Iteraciones: {n-1} de {ITERAC} | 4 matrices de {nX} filas y {nY} columnas{NO_COLOR}")
-print("print empty line") 	
-"""
+		nY, nX = 24,12
+
+		matriz = crear_matriz()
+
+		ejecutar_matriz(matriz)
+
+	except Exception as Argument:
+		error_msg = "ERROR IN <" + my_script_name + ">. SEE server_messages.txt !"
+		write_log_file("my_messages.txt",error_msg)
+		write_traceback_info_1(Argument,traceback,my_script_name)        
+
+else:
+	# something wrong
+	print(frRED("---- upsssssssss something is wrong ----"))
+

@@ -1,12 +1,13 @@
-
 """  
-    THIS SCRIPT IS FOR PRINTING WITH COLORS
+    
+    THIS SCRIPT IS FOR .............
 
 """
 # IMPORT SECTION
 
 try:   # Import My Own Functions from include dir 
-    import sys, traceback     
+    import sys, traceback
+    import numpy as np   
     from os.path import dirname, realpath
     from os import scandir
     # get parent up 2 from __file__ path: 'static path'   
@@ -36,16 +37,15 @@ if __name__ == "__main__":
 
         my_script = __file__.split('\\')
         my_script_name = my_script[len(my_script)-1]
-        #print(f".....my_script_name: {my_script_name}")
-        print()
+        print("print empty line")
         write_log_file("my_messages.txt","IN '" + my_script_name + "'")
         print("print empty line")
 
         print(f"{FR_GREEN}---------- MAIN ----------{NO_COLOR}")
         print("print empty line")
 
-        #
 
+        # YOUR CODE
 
 
         print(f"{FR_GREEN}---------- That's all for today ----------{NO_COLOR}")

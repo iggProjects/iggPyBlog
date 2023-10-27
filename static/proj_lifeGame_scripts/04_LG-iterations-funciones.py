@@ -1,3 +1,10 @@
+"""  
+    
+    THIS SCRIPT IS FOR .............
+
+"""
+# IMPORT SECTION
+
 try:   # Import My Own Functions from include dir 
     import sys, traceback, time
     import numpy as np   
@@ -21,9 +28,13 @@ except Exception as ImportError:
     print(f"{FR_RED}IMPORT ERROR ==>{NO_COLOR} {ImportError} | {ImportError.__class__} | {ImportError.__doc__}")
 
 #
-# Constantes
+# ---------- MAIN ----------
 #
-ITERAC = 1000
+
+#
+# CONSTANTS
+#
+ITERAC = 200
 DORMIR= 0.005
 
 #
@@ -196,7 +207,7 @@ if __name__ == '__main__':
 			# Recombino las matrices particionadas
 			matriz = np.hstack( (np.vstack( (m0,m1) ), np.vstack( (m2,m3) )) )
 			# Print cada 10 iteraciones
-			if n % 50 == 0:
+			if n % 10 == 0:
 				mostrar_matriz(matriz,"Nueva cara Matriz")
 				print(f"Iteraciones: {n} de {ITERAC} | Matriz {nX} x {nY}")
 			time.sleep(DORMIR)

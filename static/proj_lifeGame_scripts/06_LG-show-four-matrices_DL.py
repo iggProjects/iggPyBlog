@@ -7,28 +7,27 @@
     THIS SCRIPT IS FOR .............
 
 """
-# IMPORT SECTION
+"""  
+    
+    THIS SCRIPT IS FOR .............
 
+"""
+# IMPORT SECTION
+# My Own Functions from include dir 
 try:   # Import My Own Functions from include dir 
-    import sys, traceback, time
-    import numpy as np   
-    from os.path import dirname, realpath
-    from os import scandir
-    # get parent up 2 from __file__ path: 'static path'   
-    up2_dir = dirname(dirname(dirname(realpath(__file__))))
-    # insert path in sys.path
-    sys.path.append(up2_dir)
-    # get parent up 3 from __file__ path: 'static parent path'       
-    up3_dir = dirname(dirname(dirname(dirname(realpath(__file__)))))
-    # insert path in sys.path
-    sys.path.append(up3_dir)
-    # import My Own Func
-    from static.include.MyFunc import *
-    from static.include.MyColors import *
+	import sys, traceback, time
+	import platform
+	import numpy as np 
+	from os import system
+	from os.path import dirname, realpath
+	# import My Own Func
+	from MyColors import *
+	from MyFunc_copy_DL import *    
+
 except Exception as ImportError:
     FR_RED   = "\033[91m" 
     NO_COLOR = "\033[00m"
-    print() 
+    print("print empty line") 
     print(f"{FR_RED}IMPORT ERROR ==>{NO_COLOR} {ImportError} | {ImportError.__class__} | {ImportError.__doc__}")
 
 #
@@ -47,7 +46,7 @@ def pausar():
 
 # Muestro la Matriz
 def mostrar_matriz(matriz,loc):
-	os.system('cls')                                    # Ejecuto el comando 'clear' del OS
+	clear_console_screen()
 	X, Y = matriz.shape                                 # Dimensiones de la matriz
 	matriz_Ext = np.zeros((2*X+1, 2*Y+1))				# Inicializo la matriz con ceros
 	print(f"\n{FR_BLUE}ITERACIÓN {n} \ ROTANDO MATRIZ de 0 y 1 POR CUADRANTE{NO_COLOR}")
@@ -190,7 +189,6 @@ if __name__ == "__main__":
 
 		my_script = __file__.split('\\')
 		my_script_name = my_script[len(my_script)-1]
-		write_log_file("my_messages.txt","IN '" + my_script_name + "'")
 
 		n = 1  										# iteration counter
 		#nY, nX = os.get_terminal_size(0)			# Linux Obtengo COLUMNAS y LINEAS de la consola
@@ -219,8 +217,7 @@ if __name__ == "__main__":
 
 	except Exception as Argument:
 		error_msg = "ERROR IN <" + my_script_name + ">. SEE server_messages.txt !"
-		write_log_file("my_messages.txt",error_msg)
-		write_traceback_info_1(Argument,traceback,my_script_name)
+		write_traceback_info(Argument,traceback,my_script_name)
 		pause()     
     
 else:

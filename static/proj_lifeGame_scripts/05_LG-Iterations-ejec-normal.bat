@@ -1,1 +1,0 @@
-python.exe 05_LG-Iterations-ejec-normal.py
