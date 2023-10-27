@@ -1,1 +1,0 @@
-python.exe 07-LG_-multiprocessing-cpu.py

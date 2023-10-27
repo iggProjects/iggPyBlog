@@ -1,3 +1,12 @@
+"""
+	
+	https://stackoverflow.com/questions/8804830/python-multiprocessing-picklingerror-cant-pickle-type-function
+	https://youtrack.jetbrains.com/issue/PY-20885
+	https://stackoverflow.com/questions/72766345/attributeerror-cant-pickle-local-object-in-multiprocessing
+	https://stackoverflow.com/questions/7016567/picklingerror-when-using-multiprocessing
+
+"""
+
 #
 #  Execute Sets of 4 "Games of life", 1 for each quadrant, with multiprocessing.
 #
@@ -35,15 +44,15 @@ except Exception as ImportError:
     FR_RED   = "\033[91m" 
     NO_COLOR = "\033[00m"
     print() 
-    print(f"{FR_RED}IMPORT ERROR ==>{NO_COLOR} {ImportError} | {ImportError.__class__} | {ImportError.__doc__}")
-
+    print(f"\033[91mIMPORT ERROR ==>\033[00m {ImportError} | {ImportError.__class__} | {ImportError.__doc__}")
 
 #
-# FUNCT
+# Funciones
 #
 
 # Creo matriz a partir de una archivo si es suministrado
 def crear_matriz():	
+	#print(f"......from crear_matriz() NX: {NX} , NY: {NY}")
 	matriz = np.zeros((NX, NY))					 	# Inicializo la matriz con ceros
 	matriz = np.random.randint(2, size=(NX, NY))
 	return matriz
@@ -53,17 +62,15 @@ def mostrar_matriz(matriz):
 	for x in range(0, X):
 		for y in range(0, Y):
 			if matriz[x,y] == 1:
-				print(f"{FR_RED}{int(matriz[x,y])}{NO_COLOR}", end ="")
+				print(f"{int(matriz[x,y])}", end ="")
 			else:
 				print(f"{int(matriz[x,y])}", end ="")
 		print()
-
+	
 
 # Muestro las 4 Matrices (games)
 def show_4_matrix(mat1,mat2,mat3,mat4):
-  
-	print() 
-	
+
 	X, Y = NX, NY
 
 	for x in range(0, 2*X+1):
@@ -72,39 +79,36 @@ def show_4_matrix(mat1,mat2,mat3,mat4):
 			# matriz1  (1er cuadrante)
 			if x<X and y<Y:
 				if mat1[x,y] == 1:
-					print(f"{FR_RED}{int(mat1[x,y])}{NO_COLOR}", end ="")
+					print(f"{int(mat1[x,y])}", end ="")
 				else:
 					print(f"{int(mat1[x,y])}", end ="")
 			
 			#separación entre matrices 1 y 2
-			if y == Y:
-				print(f"", end =" ")
-				#print(f"\033[0;34m{NO_COLOR}", end =" ")
+			if y == Y and x != X:
+				print(f" ", end =" ")
 			
 			# matriz2	(2do cuadrante)	
 			if ( x<X ) and ( y > Y ):
 				if mat2[x,(y-Y-1)] == 1:
-					print(f"{FR_RED}{int(mat2[x,y-Y-1])}{NO_COLOR}", end ="")
+					print(f"{int(mat2[x,y-Y-1])}", end ="")
 				else:
 					print(f"{int(mat2[x,y-Y-1])}", end ="")
-					#print(f"\033[0;37m{int(mat2[x,y-Y-1])}{NO_COLOR}", end ="")
 
 			# línea entre matrices 1 y 2 con 3 y 4
 			if x == X:
 				print(f"", end =" ")
-				#print(f"\033[0;34m{NO_COLOR}", end =" ")
 			
 			# matriz3 (3er cuadrante)
 			if ( x>X ) and ( y<Y ):
 				if mat3[x-X-1,y] == 1:					
-					print(f"{FR_RED}{int(mat3[x-X-1,y])}{NO_COLOR}", end ="")
+					print(f"{int(mat3[x-X-1,y])}", end ="")
 				else:					
 					print(f"{int(mat3[x-X-1,y])}", end ="")	
 
 			#matriz4 (4to cuadrante)
 			if ( x>X ) and ( y>Y ):
 				if mat4[x-X-1,y-Y-1] == 1:
-					print(f"{FR_RED}{int(mat4[x-X-1,y-Y-1])}{NO_COLOR}", end ="")
+					print(f"{int(mat4[x-X-1,y-Y-1])}", end ="")
 				else:
 					print(f"{int(mat4[x-X-1,y-Y-1])}", end ="")
 			
@@ -144,7 +148,7 @@ def exec_game_iter(matriz,name):
 	if np.array_equal(matriz,matrizTemp):
 		if multiprocessing.current_process().name == "SpawnPoolWorker-1":
 			#mostrar_matriz(matriz)
-			print(f"\t{FR_GREEN}cpu name {multiprocessing.current_process().name} - process {multiprocessing.Process().name} ==> game reach equality with matriz {name} ==={NO_COLOR}")
+			print(f"COMMENT:cpu name:{multiprocessing.current_process().name}||{multiprocessing.Process().name}||obs:game-reach-equality:{name}")
 		matriz = 9 * np.ones([NX,NY])
 	else:	
 		# Copio matrizTemp en matriz para la proxima iteracion
@@ -155,7 +159,7 @@ def exec_game_iter(matriz,name):
 # Execute 4 matrixes (games) simultaneously 
 def exec_4_game(game):
 	
-	print(f"Set-> {game} | cpu name {multiprocessing.current_process().name} |  mp name {multiprocessing.Process().name}\n")
+	print(f"COMMENT:Set:{game}||cpu-name:{multiprocessing.current_process().name}||multiproc-name:{multiprocessing.Process().name}")
 	 
 	matriz1 = crear_matriz()
 	matriz2 = crear_matriz()
@@ -163,29 +167,40 @@ def exec_4_game(game):
 	matriz4 = crear_matriz()
 
 	n=1
-	while n <= NITER:     # while n<= nIter or [CONDICION DE MATRIZ IDENTICA ENTRE DOS ITER]:	  	  
-	
+	while n <= NITER:	  
+	# while n<= nIter or [CONDICION DE MATRIZ IDENTICA ENTRE DOS ITER]:	  
+
 		matriz1 = exec_game_iter(matriz1,'matriz1')
 		matriz2 = exec_game_iter(matriz2,'matriz2')
 		matriz3 = exec_game_iter(matriz3,'matriz3')
 		matriz4 = exec_game_iter(matriz4,'matriz4')
 
 		if ( (multiprocessing.current_process().name == "SpawnPoolWorker-1") and (n % BASE_PRINT == 0) ):
-			print(f"\n{FR_YELL}Printing only for cpu name {multiprocessing.current_process().name} - mp {multiprocessing.Process().name} | iteration-> {n}{NO_COLOR}")
+			print(f"COMMENT:Printing-only-for-cpu-name:{multiprocessing.current_process().name}||{multiprocessing.Process().name}||iteration:{n}")
 			show_4_matrix(matriz1,matriz2,matriz3,matriz4)
 			time.sleep(SLEEP)			
 		n+=1
 
-	print(f"\n{FR_MAG}{multiprocessing.current_process().name} ===> Set {game} finished{NO_COLOR} | {NITER} of iterations for each game | total games: 4, total iterat {NITER*4}")
+	print(f"COMMENT:{multiprocessing.current_process().name}==>Set:{game}-finished||{NITER}-of-iterat-for-each-game||games:4,total-iterat-{NITER*4}")
+	
+	#return n
+
 
 # FUNCTION POOL FOR MULTIPROCESSING  #
 ######################################
 def exec_games(list_g,n_cpu):
-	
-	#print(f"\n......from exec_games() NX: {NX} , NY: {NY}\n\n")
-	with multiprocessing.Pool(n_cpu) as pool:
-		pool.map(exec_4_game,list_g)
 
+	try:
+	
+		#print(f"......from exec_games() NX: {NX} , NY: {NY}")
+		with multiprocessing.Pool(n_cpu) as pool:
+			pool.map(exec_4_game,list_g)
+
+	except Exception as Argument:
+		error_msg = "ERROR IN function <exec_games>. SEE server_messages.txt !"
+		write_log_file("my_messages.txt",error_msg)
+		write_traceback_info(Argument,traceback,"function exec_games")
+		
 
 ##############################################################
 #                         MAIN                               # 
@@ -201,17 +216,14 @@ if __name__ == '__main__':
 
 	try:
 
-		clear_console_screen()
-
 		my_script = __file__.split('\\')
 		my_script_name = my_script[len(my_script)-1]
 		write_log_file("my_messages.txt","IN '" + my_script_name + "'")
 
 		# READ PARAMETERS 
 		# number of SET's, each of one of four games (matrixs)
-		nSets = 4
+		nSets = 2
 		#nSets = int(sys.argv[1])
-
 		# number of CPU in multiprocessing call
 		nCPU = 2
 		#nCPU = int(sys.argv[2])
@@ -219,36 +231,40 @@ if __name__ == '__main__':
 		# parameter for multiporcessing call
 		list_games = [(x+1) for x in range(0,nSets)]
 
-		print(f"\n{FR_BLUE}----------- Starting Life Game Series ----------- {NO_COLOR}\n ")
-		print(f"\t ..... Number of Sets of 4 simultaneous 'life game' (matrix): {len(list_games)}\n\t ..... Iterations for each game: {NITER}\n\t ..... number of cpu's participating: {nCPU}")
-		print(f"\t ..... matrices of {NX} cols, {NY} rows")
-		print(f"\t ..... Printing only for first process")
-		print(f"\t ..... List of Sets: {list_games}\n")
+		print(f"COMMENT:===== Life Game Series =====")
+		print(f"COMMENT:.....NumberSetsfor-4-simultaneous'Life_Game_Matrix':{len(list_games)}||Iterations-for-each-game:{NITER}||number-of-cpu's-participating:{nCPU}")
+		print(f"COMMENT:.....matrices-{NX}x{NY}")
+		print(f"COMMENT:.....Printing-only-for-first-process")
+		print(f"COMMENT:.....List-of-Sets:{list_games}")
+		#pausar()	
 		# time
 		inicio = time.time()
 
+
 		# CALL MULTIPROCESSING
-		exec_games(list_games,nCPU)
+		#exec_games(list_games,nCPU)
+
+		with multiprocessing.Pool(nCPU) as pool:
+			pool.map(exec_4_game,list_games)
+
 
 		# BALANCE
-		print(f"\n{FR_YELL} ----------BALANCE----------{NO_COLOR}\n")
-		print(f"\tNumber of cpu's participating: {nCPU}")
-		print(f"\tSets executed: {list_games[nSets-1]}\n\tGames executed: {list_games[nSets-1]*4}")
-		print(f"\tEach game (matrix) includes {NITER} iterations of game of life\n\t\twith a matrix of {NX} x {NY} in each quadrant of the screen,\n\t\tand only {int(NITER/BASE_PRINT)} print screens for each game (matrix)\n\t\tof the first process")
+		print(f"COMMENT:----------BALANCE----------")
+		print(f"COMMENT:Number-of-cpu's-participating:{nCPU}")
+		print(f"COMMENT:Sets-executed:{list_games[nSets-1]}\t-Games executed:{list_games[nSets-1]*4}")
+		print(f"COMMENT:Each-game-(matrix)-includes-{NITER}-iterations-of-game-of-life")
+		print(f"COMMENT:\twith-a-matrix-of-{NX}x{NY}-in-each-quadrant-of-the screen")
+		print(f"COMMENT:\tand-only-{int(NITER/BASE_PRINT)}-print-screens-for-each-game-(matrix)-of-the-first-process")
 		
 		elapsed_time = "{:.2f}".format(time.time()-inicio)
-		print(f"\tElapsed Time: {elapsed_time} seconds")
-		print(f"\n{FR_GREEN} ----------THAT's ALL----------{NO_COLOR}\n")
-		pause()
+		print(f"COMMENT:Elapsed-Time:{elapsed_time}-seconds")
+		print(f"COMMENT:----------THAT's-ALL----------")
 
 	except Exception as Argument:
 		error_msg = "ERROR IN <" + my_script_name + ">. SEE server_messages.txt !"
 		write_log_file("my_messages.txt",error_msg)
 		write_traceback_info(Argument,traceback,my_script_name)
-		print()
-	
-		pause()     
-    
+
 else:
     # something wrong
     print(frRED("---- upsssssssss something is wrong ----"))
