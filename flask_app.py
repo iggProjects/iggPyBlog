@@ -216,14 +216,16 @@ def result_script_exec():
                     color = "transparent"
                     list = [color,new_line]
                     list_color_text.append(list) 
-
-                    #print("=====> print empty line") 
+                    #print("=====> print empty line")
+                elif '7777' in new_line:
+                    color = "transparent"
+                    list = [color,new_line]
+                    list_color_text.append(list) 
                 else: 
                     #print(f"0,1 --> {new_line[0:2]}")
                     if "b'" in new_line[0:2]  or "b\"" in new_line[0:2]:
                         #print(f"0,1 ==> {new_line[0:2]}")
                         new_line= new_line[2:]
-
                     new_line = new_line.replace('-->','==>')
                     new_line = new_line.replace('<','&lt;')
                     #new_line = new_line.replace('<','<&nbsp;&nbsp;')

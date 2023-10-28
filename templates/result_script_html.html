@@ -28,6 +28,8 @@
 
         /* <span> for '1' */
         function span_ones(line){
+            if ( line[0] = 7 ) { console.log('span_ones --------> line of 7: ' + line) }
+            
             span_line="";
             
             for ( j=0; j<line.length; j++ ){
@@ -35,6 +37,8 @@
                     span_line += "<span> 1</span>";
                 } else if (line[j] == 0) {
                     span_line += " " + line[j];
+                } else if (line[j] == 7) {
+                    span_line += "&nbsp;"; 
                 } else if (line[j] == 9) {
                     span_line += "&nbsp;";    
                 } else {
@@ -48,6 +52,9 @@
 
         /* <span> for '1' */
         function span_ones_2(line){
+
+            if ( line[0] = 7 ) { console.log('span_ones_2 --------> line of 7: ' + line) }
+           
             span_line="";
             
             for ( j=0; j<line.length; j++ ){
@@ -55,10 +62,12 @@
                     span_line += "<span class='span0'>0</span>";
                 } else if (line[j] == 1) {
                     span_line += "<span class='span1'>1</span>";
-                } else if (line[j] == 'x') {
-                    span_line += "<span class='span9'>&nbsp;&nbsp;</span>";
+                } else if (line[j] == '7') {
+                    span_line += "<span class='span7'>7</span>";  
                 } else if (line[j] == '9') {
                     span_line += "<span class='span9'>9</span>";   
+                } else if (line[j] == 'x') {
+                    span_line += "<span class='span9'>&nbsp;&nbsp;</span>";
                 } else {
                     span_line += "<span class='span9'>?</span>";
                 }
@@ -112,7 +121,7 @@
                     matrix.push(lines[i])
                     console.log('matrix ===> I ' + lines[i])          
 
-                } else if ( lines[i][0] == 0 || lines[i][0] == 1 || lines[i][0] == 9 ) {    
+                } else if ( lines[i][0] == 0 || lines[i][0] == 1 || lines[i][0] == 7 || lines[i][0] == 9 ) {    
                     // div_matrix_html += "<p class='p_result'>" + span_ones(lines[i]) + "</p>";   
                     if ( comment ) {
                         console.log('COMMENT ' + lines[i])          
@@ -148,12 +157,18 @@
         } else {
             /* replace 'COMMENT' with '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'  */
             for ( i=0; i<lines_col_txt.length; i++) {
+
                 /*
                 if ( lines_col_txt[i][1][0] == 0 || lines_col_txt[i][1][0] == 1 || lines_col_txt[i][1][0] == 9 ) {
                     lines_col_txt[i][1] = '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' +  lines_col_txt[i][1]
                 }
                 */
-                lines_col_txt[i][1]=lines_col_txt[i][1].replace('COMMENT:','COMMENT:&nbsp;&nbsp;')
+                //if lines_col_txt[i][1].toLowerCase.includes("COMMENT") {
+                console.log("col_txt ----> " + i + " color " + lines_col_txt[i][0] + " | text "  + lines_col_txt[i][1])    
+                lines_col_txt[i][1]=lines_col_txt[i][1].replace('COMMENT:','&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;')
+                //} else {
+
+                //}
                 //lines_col_txt[i][1]=lines_col_txt[i][1].replace('COMMENT:','&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;===> ')
                 //console.log('lines_col_txt[' + i + '][1]: ' + lines_col_txt[i][1])
             }
@@ -190,7 +205,7 @@
                     if ( matrix[l][0] == 'M' || matrix[l][0] == 'I' ) {  
                         div_html += "<br><p class='p_result' style='color:yellow;'>" + matrix[l] + "</p>";
                     
-                    } else if ( matrix[l][0] == 0 || matrix[l][0] == 1) {
+                    } else if ( matrix[l][0] == 0 || matrix[l][0] == 1 || matrix[l][0] == 8 ) {
                         div_html += "<p class='p_result'>" + span_ones(matrix[l]) + "</p>";
 
                     } else if ( matrix[l][0] == 9 ) {
@@ -318,7 +333,7 @@
             observer.observe(targetNode, config);  
 
             k=0;
-            iter = setInterval(print_html_LINE,100);
+            iter = setInterval(print_html_LINE,50);
 
                 
         } else {

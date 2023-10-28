@@ -23,12 +23,13 @@ try:   # Import My Own Functions from include dir
 	#
 	# Constantes
 	#
-	SLEEP= 0.2
+	SLEEP= 0.3
 	NX = 20
 	NY = 40
-	NITER= 500
+	NITER= 20
 	MSG_TEXT  = 'Games record-> '
-	BASE_PRINT = int(NITER/10)
+	BASE_PRINT = 1
+	#BASE_PRINT = int(NITER/50)
 	N_CPU = multiprocessing.cpu_count()
 
 except Exception as ImportError:
@@ -140,12 +141,12 @@ def exec_game_iter(matriz,name):
 			elif matriz[x,y] == 1 and ( nVecinos < 2 or nVecinos > 3 ):
 				matrizTemp[x,y] = 0
 	
-  # try to control event pf equal matrixes
+  	# try to control event of equal matrixes
 	if np.array_equal(matriz,matrizTemp):
 		if multiprocessing.current_process().name == "SpawnPoolWorker-1":
 			#mostrar_matriz(matriz)
 			print(f"\t{FR_GREEN}cpu name {multiprocessing.current_process().name} - process {multiprocessing.Process().name} ==> game reach equality with matriz {name} ==={NO_COLOR}")
-		matriz = 9 * np.ones([NX,NY])
+		#matriz = 9 * np.ones([NX,NY])
 	else:	
 		# Copio matrizTemp en matriz para la proxima iteracion
 		matriz = np.copy(matrizTemp)
@@ -170,7 +171,8 @@ def exec_4_game(game):
 		matriz3 = exec_game_iter(matriz3,'matriz3')
 		matriz4 = exec_game_iter(matriz4,'matriz4')
 
-		if ( (multiprocessing.current_process().name == "SpawnPoolWorker-1") and (n % BASE_PRINT == 0) ):
+		if (multiprocessing.current_process().name == "SpawnPoolWorker-1"):
+		#if ( (multiprocessing.current_process().name == "SpawnPoolWorker-1") and (n % BASE_PRINT == 0) ):
 			print(f"\n{FR_YELL}Printing only for cpu name {multiprocessing.current_process().name} - mp {multiprocessing.Process().name} | iteration-> {n}{NO_COLOR}")
 			show_4_matrix(matriz1,matriz2,matriz3,matriz4)
 			time.sleep(SLEEP)			
@@ -213,7 +215,7 @@ if __name__ == '__main__':
 		#nSets = int(sys.argv[1])
 
 		# number of CPU in multiprocessing call
-		nCPU = 2
+		nCPU = 4
 		#nCPU = int(sys.argv[2])
 
 		# parameter for multiporcessing call
@@ -234,7 +236,10 @@ if __name__ == '__main__':
 		print(f"\n{FR_YELL} ----------BALANCE----------{NO_COLOR}\n")
 		print(f"\tNumber of cpu's participating: {nCPU}")
 		print(f"\tSets executed: {list_games[nSets-1]}\n\tGames executed: {list_games[nSets-1]*4}")
-		print(f"\tEach game (matrix) includes {NITER} iterations of game of life\n\t\twith a matrix of {NX} x {NY} in each quadrant of the screen,\n\t\tand only {int(NITER/BASE_PRINT)} print screens for each game (matrix)\n\t\tof the first process")
+		print(f"\tEach game (matrix) includes {NITER} iterations of game of life")
+		print(f"\twith a matrix of {NX} x {NY} in each quadrant of the screen,")
+		print(f"\tand only {int(NITER/BASE_PRINT)} print screens for each game (matrix)")
+		print(f"\tof the first process")
 		
 		elapsed_time = "{:.2f}".format(time.time()-inicio)
 		print(f"\tElapsed Time: {elapsed_time} seconds")
