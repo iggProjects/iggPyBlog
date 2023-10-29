@@ -87,12 +87,13 @@
         console.log('TYPE of lines[0] var: ' + typeof(lines[0]));
         console.log('TYPE of lines[0] var: ' + Object.prototype.toString.call(lines[0]));
         console.log('LENGHT of lines var: ' + lines.length);
+        console.log('line[0]: ' + lines[0]);
 
         var lines_col_txt = {{ list_lines | tojson }};        
-        //console.log('type of lines_col_txt[0] var: ' + typeof(lines_col_txt[0]));
-        //console.log('type of lines_col_txt[0] var: ' + Object.prototype.toString.call(lines_col_txt[0]));
-        //console.log('Length of lines_col_txt var: ' + lines_col_txt.length);
-        //console.log('color: ' + lines_col_txt[0][0] + ' | text: ' + lines_col_txt[0][1])
+        console.log('type of lines_col_txt[0] var: ' + typeof(lines_col_txt[0]));
+        console.log('type of lines_col_txt[0] var: ' + Object.prototype.toString.call(lines_col_txt[0]));
+        console.log('Length of lines_col_txt var: ' + lines_col_txt.length);
+        console.log('color: ' + lines_col_txt[0][0] + ' | text: ' + lines_col_txt[0][1])
 
         /* variables  */  
         div_matrix_html = "";
@@ -100,11 +101,12 @@
         matrix = [];
         comment = false;   
 
+        // First option
         // DATA comes from 'list_JS_lines' to create a list of matrices
         //      used in LIFE GAME, EXCERCISES 3 to 6
         if ( lines[0].toLowerCase().includes("matriz") || lines[0].toLowerCase().includes("iter") || lines[0].toLowerCase().includes("starting")) {
    
-            console.log("===== IF first opt =====")   
+            console.log("===== IF of first opt =====")   
             document.getElementById("div_matrix").style.backgroundColor = "blue"; 
     
             // create array for all matrices
@@ -156,10 +158,42 @@
 
             list_matrices.push(matrix)   
         
+        // Second option
         // DATA comes from 'list_lines', and it has to be transform in list of matrices
         //      used in LIFE GAME, 7 EXCERCISE
+        /*
+            READ CSV
+            https://stackoverflow.com/questions/7431268/how-to-read-data-from-csv-file-using-javascript
+            https://stackoverflow.com/questions/29393064/reading-in-a-local-csv-file-in-javascript
+            https://www.tutorialspoint.com/how-to-read-data-from-csv-file-using-javascript
+            https://www.geeksforgeeks.org/javascript-program-to-read-text-file/
+
+            https://stackoverflow.com/questions/69981833/how-can-i-read-a-file-from-a-path-in-javascript    
+            var fs = require('fs');
+
+            fs.readFile('test.txt', 'utf8', function(err, data) {
+                if (err) {
+                    return console.log(err);
+                }
+                console.log(data);
+            });
+
+        */
+
         } else if ( lines_col_txt[0][1].toLowerCase().includes("lg mp") || lines_col_txt[0][1].includes("---- ***** ----") ) {
-            console.log("===== IF second opt =====") 
+
+            console.log("===== IF of second opt =====") 
+            document.getElementById("div_matrix").style.backgroundColor = "#99ccff";       
+
+            fetch("/static/temp/list_text_lines.csv")
+            //fetch("/static/temp/list_JS_lines.txt")
+                .then((res) => res.text())
+                .then((text) => {
+                    // do something with "text"
+                    console.log("====> list_JS_lines.txt: " + text)
+                })
+                .catch((e) => console.error(e));           
+
             /* replace 'COMMENT' with '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'  */
             for ( i=0; i<lines_col_txt.length; i++) {
                 console.log("col_txt ----> " + i + " color " + lines_col_txt[i][0] + " | text "  + lines_col_txt[i][1])    
@@ -167,13 +201,13 @@
             }
 
             list_matrices.push(lines_col_txt);
-            document.getElementById("div_matrix").style.backgroundColor = "#b3ffd9";            
 
-
-        // DATA comes from 'list_lines', and it will be seen like list of sucesive lines
-        //      used for EXCERCISES, LIFE GAME (1 & 2) and ENIGMA GAME     
-        } else {
-            console.log("===== IF third opt =====")
+    // Third option
+    // DATA comes from 'list_lines', and it will be seen like list of sucesive lines
+    //      used for EXCERCISES, LIFE GAME (1 & 2) and ENIGMA GAME     
+    } else {
+            console.log("===== IF of third opt =====")
+            document.getElementById("div_matrix").style.backgroundColor = "#b3ffd9";
             /* replace 'COMMENT' with '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'  
             for ( i=0; i<lines_col_txt.length; i++) {
                 console.log("col_txt ----> " + i + " color " + lines_col_txt[i][0] + " | text "  + lines_col_txt[i][1])    
@@ -181,7 +215,7 @@
             }
             */
             list_matrices.push(lines_col_txt);
-            document.getElementById("div_matrix").style.backgroundColor = "#b3ffd9";
+
         }    
 
         console.log('list_matrices length ==> ' + list_matrices.length)
