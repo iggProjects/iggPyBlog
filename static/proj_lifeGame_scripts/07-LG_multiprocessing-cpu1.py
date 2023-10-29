@@ -27,7 +27,7 @@ try:   # Import My Own Functions from include dir
 
 	NX = 15
 	NY = 36
-	NITER= 10
+	NITER= 2
 	MSG_TEXT  = 'Games record-> '
 	BASE_PRINT = 1
 	#BASE_PRINT = int(NITER/10)
@@ -226,7 +226,8 @@ if __name__ == '__main__':
 
 		# parameter for multiporcessing call
 		list_games = [(x+1) for x in range(0,nSets)]
-		print("print empty line")
+		#print("print empty line")
+		print(f"{FR_BLUE}COMMENT:===== LG MP ====={NO_COLOR}")
 		print(f"{FR_BLUE}COMMENT:===== GAME OF LIFE PARAMETERS ====={NO_COLOR}")
 		print(f"COMMENT:........Number Sets for 4 simultaneous 'Life_Game_Matrix': {len(list_games)}")
 		print(f"COMMENT:........Iterations for each game: {NITER}")
@@ -237,7 +238,6 @@ if __name__ == '__main__':
 		#pausar()	
 		# time
 		inicio = time.time()
-
 
 		# CALL MULTIPROCESSING
 		exec_games(list_games,nCPU)

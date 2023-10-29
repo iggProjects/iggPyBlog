@@ -28,7 +28,7 @@
 
         /* <span> for '1' */
         function span_ones(line){
-            if ( line[0] == '7' ) { console.log('span_ones ==> line of 7: ' + line) }
+            if ( line[0] = 7 ) { console.log('span_ones --------> line of 7: ' + line) }
             
             span_line="";
             
@@ -45,8 +45,8 @@
                     span_line += " " + line[j];
                 }
             }
-            // console.log("FROM span_ones, length of span_line: " + span_line.length); 
-            // console.log("FROM span_ones, span_line: " + span_line); 
+            // console.log("=== FROM span_ones, length of span_line: " + span_line.length); 
+            // console.log("=== FROM span_ones, span_line: " + span_line); 
             return span_line;
         }
 
@@ -72,8 +72,8 @@
                     span_line += "<span class='span9'>?</span>";
                 }
             }
-            // console.log("FROM span_ones_2, length of span_line: " + span_line.length); 
-            console.log("FROM span_ones_2, span_line: " + span_line); 
+            // console.log("=== FROM span_ones, length of span_line: " + span_line.length); 
+            // console.log("=== FROM span_ones, span_line: " + span_line); 
             return span_line;
         }
 
@@ -84,108 +84,100 @@
 
         // read server data JS as array
         var lines = {{ list_JS_lines | tojson }};
-        console.log('TYPE of lines[0] var: ' + typeof(lines[0]));
-        console.log('TYPE of lines[0] var: ' + Object.prototype.toString.call(lines[0]));
-        console.log('LENGHT of lines var: ' + lines.length);
+        console.log('type of lines[0] var: ' + typeof(lines[0]));
+        console.log('type of lines[0] var: ' + Object.prototype.toString.call(lines[0]));
+        console.log('Length of lines var: ' + lines.length);
 
         var lines_col_txt = {{ list_lines | tojson }};        
-        //console.log('type of lines_col_txt[0] var: ' + typeof(lines_col_txt[0]));
-        //console.log('type of lines_col_txt[0] var: ' + Object.prototype.toString.call(lines_col_txt[0]));
-        //console.log('Length of lines_col_txt var: ' + lines_col_txt.length);
-        //console.log('color: ' + lines_col_txt[0][0] + ' | text: ' + lines_col_txt[0][1])
+        console.log('type of lines_col_txt[0] var: ' + typeof(lines_col_txt[0]));
+        console.log('type of lines_col_txt[0] var: ' + Object.prototype.toString.call(lines_col_txt[0]));
+        console.log('Length of lines_col_txt var: ' + lines_col_txt.length);
+        console.log('color: ' + lines_col_txt[0][0] + ' | text: ' + lines_col_txt[0][1])
 
         /* variables  */  
         div_matrix_html = "";
         list_matrices = [];
         matrix = [];
-        comment = false;   
+        comment = false;        
 
-        // DATA comes from 'list_JS_lines' to create a list of matrices
-        //      used in LIFE GAME, EXCERCISES 3 to 6
         if ( lines[0].toLowerCase().includes("matriz") || lines[0].toLowerCase().includes("iter") || lines[0].toLowerCase().includes("starting")) {
-   
-            console.log("===== IF first opt =====")   
-            document.getElementById("div_matrix").style.backgroundColor = "blue"; 
-    
+                 
+            document.getElementById("div_matrix").style.backgroundColor = "blue";
+
             // create array for all matrices
             for (i=0; i < lines.length; i++) {
                 // console.log('===> list line ' + i + ' -- ' + lines[i])            
                 if ( lines[i][0] == 'M' || lines[0].toLowerCase().includes("starting")) {                      
                     matrix = []
+                    // div_matrix_html += "<br><p class='p_result' style='color:yellow;'>" + lines[i] + "</p>";
                     matrix.push(lines[i])     
-                    console.log('IF lines[0].toLowerCase() Starting ==> ' + lines[i])          
+                    console.log('Starting ===> ' + lines[i])          
                 
                 } else if ( lines[i][0] == 'I' ) { 
                     //console.log('matrix ===> ' + matrix)        
                     list_matrices.push(matrix)
                     matrix = []                    
+                    // div_matrix_html = "<br><p class='p_result' style='color:yellow;'>" + lines[i] + "</p>";  
                     matrix.push(lines[i])
-                    console.log('IF lines[0].toLowerCase() ==> I ' + lines[i])          
+                    console.log('matrix ===> I ' + lines[i])          
 
                 } else if ( lines[i][0] == 0 || lines[i][0] == 1 || lines[i][0] == 7 || lines[i][0] == 9 ) {    
-
+                    // div_matrix_html += "<p class='p_result'>" + span_ones(lines[i]) + "</p>";   
                     if ( comment ) {
-                        console.log('IF lines[0].toLowerCase() COMMENT ==>' + lines[i])          
+                        console.log('COMMENT ' + lines[i])          
                         list_matrices.push(matrix);
                         comment = false;
                         matrix = [];
                         matrix.push(lines[i]);                        
-
                     } else if ( !comment ) {
                         matrix.push(lines[i]);     
                     }
-
                     else { 
-                        console.log("IF lines[0].toLowerCase() ==> from lines in result_script_html.html: SOS ! ")
+                        console.log("=== from lines in result_script_html.html: SOS ! ")
                     }
-                    //console.log('IF lines[0].toLowerCase() ==> 0,1,9 ' + matrix)          
+                    //console.log('matrix ===> 0,1,9 ' + matrix)          
 
                 } else if ( lines[i].toLowerCase().includes("comment") ) {
+                    // lines[i]=lines[i].replace('COMMENT','&nbsp;&nbsp;&nbsp;&nbsp;')
                     matrix.push(lines[i]);
                     comment = true;
 
                 } else if ( lines[i][0] == 'E' ) {      
                     list_matrices.push(matrix)   
                     //div_matrix_html += "<br><p class='p_result' style='color:yellow;'>" + lines[i] + "</p>";
-                    console.log('IF lines[0].toLowerCase() ===> E ' + lines[i])  
+                    console.log('matrix ===> E ' + lines[i])  
 
                 } else {                    
-                    console.log('IF lines[i][0] ===> ' + lines[i][0])
+                    console.log('lines[i][0] ===> ' + lines[i][0])
                 }
             }
 
             list_matrices.push(matrix)   
-        
-        // DATA comes from 'list_lines', and it has to be transform in list of matrices
-        //      used in LIFE GAME, 7 EXCERCISE
-        } else if ( lines_col_txt[0][1].toLowerCase().includes("lg mp") || lines_col_txt[0][1].includes("---- ***** ----") ) {
-            console.log("===== IF second opt =====") 
+
+        } else {
             /* replace 'COMMENT' with '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'  */
             for ( i=0; i<lines_col_txt.length; i++) {
+
+                /*
+                if ( lines_col_txt[i][1][0] == 0 || lines_col_txt[i][1][0] == 1 || lines_col_txt[i][1][0] == 9 ) {
+                    lines_col_txt[i][1] = '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' +  lines_col_txt[i][1]
+                }
+                */
+                //if lines_col_txt[i][1].toLowerCase.includes("COMMENT") {
                 console.log("col_txt ----> " + i + " color " + lines_col_txt[i][0] + " | text "  + lines_col_txt[i][1])    
-                lines_col_txt[i][1]=lines_col_txt[i][1].replace('COMMENT:','*****')
+                lines_col_txt[i][1]=lines_col_txt[i][1].replace('COMMENT:','&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;')
+                //} else {
+
+                //}
+                //lines_col_txt[i][1]=lines_col_txt[i][1].replace('COMMENT:','&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;===> ')
+                //console.log('lines_col_txt[' + i + '][1]: ' + lines_col_txt[i][1])
             }
 
-            list_matrices.push(lines_col_txt);
-            document.getElementById("div_matrix").style.backgroundColor = "#b3ffd9";            
-
-
-        // DATA comes from 'list_lines', and it will be seen like list of sucesive lines
-        //      used for EXCERCISES, LIFE GAME (1 & 2) and ENIGMA GAME     
-        } else {
-            console.log("===== IF third opt =====")
-            /* replace 'COMMENT' with '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'  
-            for ( i=0; i<lines_col_txt.length; i++) {
-                console.log("col_txt ----> " + i + " color " + lines_col_txt[i][0] + " | text "  + lines_col_txt[i][1])    
-                lines_col_txt[i][1]=lines_col_txt[i][1].replace('COMMENT:','*****')
-            }
-            */
             list_matrices.push(lines_col_txt);
             document.getElementById("div_matrix").style.backgroundColor = "#b3ffd9";
         }    
 
-        console.log('list_matrices length ==> ' + list_matrices.length)
-        //console.log('list_matrices ==> ' + list_matrices)
+        console.log('list_matrices===> ' + list_matrices.length)
 
         // call function to print list_matrices with delay
         let k = 0;        
@@ -193,6 +185,7 @@
         console.log('k is: ' + k + ' | k_max is: ' + k_max);
         div_html = "";
         matrix = [];
+        //const words= ['w1111111','w222','w333','w444','w1111111','w222','w333','w1111111','w222','w333','w1111111','w222','w333'];
 
         blank_line =[]
 
@@ -203,34 +196,36 @@
             iter = setInterval(print_html_MATRIX,200);
 
             function print_html_MATRIX() {
-
                 div_html =  "";
                 document.getElementById("div_matrix").innerHTML = "";
                 matrix = list_matrices[k];     
-
+                // console.log("=== list_matrices[k]" + list_matrices[k])       
                 for ( var l=0; l < matrix.length; l++ ) {
-
-                    //console.log('IF k_max  ===> matrix line ' + l + ' --> ' + matrix[l])
+                    //console.log(' ===> matrix line ' + l + ' --> ' + matrix[l])
                     if ( matrix[l][0] == 'M' || matrix[l][0] == 'I' ) {  
                         div_html += "<br><p class='p_result' style='color:yellow;'>" + matrix[l] + "</p>";
                     
-                    } else if ( matrix[l][0] == 0 || matrix[l][0] == 1 || matrix[l][0] == 7 ) {
+                    } else if ( matrix[l][0] == 0 || matrix[l][0] == 1 || matrix[l][0] == 8 ) {
                         div_html += "<p class='p_result'>" + span_ones(matrix[l]) + "</p>";
 
                     } else if ( matrix[l][0] == 9 ) {
+                        /*
+                        for (m=0; m < matrix[l].length; m++) {
+                            blank_line+="&nbsp;";
+                        } 
+                        */   
                         div_html += "<p class='p_result'>&nbsp;&nbsp;&nbsp;&nbsp;</p>";    
-
                     } else {
-                        console.log('======> matrix[l]' + matrix[l])
+                        // console.log('==> matrix[l]' + matrix[l])
                         if ( ( matrix[l][1][0] == 0 || matrix[l][1][0] == 1 || matrix[l][1][0] == 9 ) && matrix[l][1][1] != '|' ) {
                             div_html += "<p class='p_result'>" + span_ones_2(matrix[l][1]) + "</p>";    
                         } else if ( matrix[l][1][0] == '-' ) {
                             div_html += "<p class='p_result' style='height:3px; color:transparent;'>" + matrix[l][1] + "</p>";
+                            // div_html += "<p class='p_result' style='color: " + matrix[l][0]  + "'>" + matrix[l][1] + "</p>";
                         } else {
                             div_html += "<p class='p_result' style='text-align: left; color: " + matrix[l][0]  + "'>" + matrix[l][1] + "</p>";
                         }
                     }  
-
                 }
 
                 // document.getElementById("test").innerHTML = words[k];
@@ -244,24 +239,73 @@
 
         } else if ( k_max ==1 ) {   // background response must be work like list of text lines 
 
+
+            /*
+            function appendChild() {
+                let msg = document.createElement("div");
+                msg.className = "message";
+                msg.innerText = (i+1) + ": " + messages[i];
+                //msg.innerText = randomMessage();
+                scroller.insertBefore(msg, anchor);
+                i++;
+                if ( i >= 40 ) { 
+                clearInterval(iter);
+                }      
+            }
+
+            const targetNode_Parent = document.getElementById("div_matrix");
+            const targetNode = document.getElementById("scroller");
+            const config = { childList: true };
+
+            const callback = function (mutationsList, observer) {
+                for (let mutation of mutationsList) {
+                if (mutation.type === "childList") {
+                    console.log('scrollHeight: ' + document.getElementById("div_msg").scrollHeight)        
+                    targetNode_Parent.scrollTo(0, targetNode.scrollHeight);
+                    //window.scrollTo(0, document.body.scrollHeight);
+                }
+                }
+            };
+
+            const observer = new MutationObserver(callback);
+            observer.observe(targetNode, config);  
+            
+            i=0;
+            iter=setInterval(appendChild, 200);
+
+
+*/
+
             let scroller = document.getElementById("scroller");
             let anchor = document.getElementById("anchor");
 
-            console.log("list_matrices length:" + k_max)
             /* Printing line by line with small delay*/
+
             function print_html_LINE() {
 
                 // https://stackoverflow.com/questions/31590625/uncaught-typeerror-failed-to-execute-insertbefore-on-node-parameter-1-is-n
-               
+                
                 // to see as lines comes
+                // document.getElementById("div_matrix").scrollIntoView(false);
                 let p_tag_html = document.createElement("p");
                 p_tag_html.className = "p_result";
                 let col = list_matrices[0][k][0].replace(';','') 
+                /*
+                if ( list_matrices[0][k][0] != 'green;' && list_matrices[0][k][0] != 'blue;') {
+                    p_tag_html.style.color = list_matrices[0][k][0];
+                } else {
+                    p_tag_html.style.color = 'blue';
+                }
+                */
                 p_tag_html.style.color = col;
                 p_tag_html.style.textAlign = 'left';
                 p_tag_html.innerHTML = list_matrices[0][k][1];
+                //p_tag_html.innerText = list_matrices[0][k][1];
 
+                // div_html = "<p class='p_result' style='text-align: left; color: " + list_matrices[0][k][0]  + "'>" + list_matrices[0][k][1] + "</p>";
                 console.log("p_tag_html color: " + p_tag_html.style.color + " | text: " + p_tag_html.innerText)   
+                //div_html += "<p class='p_result' style='text-align: left; color: " + list_matrices[0][k][0]  + "'>" + list_matrices[0][k][1] + "</p>";
+                //document.getElementById("div_matrix").innerHTML = div_html;
                 scroller.insertBefore(p_tag_html, anchor);
                 k++;
                 
@@ -269,7 +313,6 @@
                     clearInterval(iter);
                     anchor.style.display='none';
                 }
-
             }
 
             const targetNode_Parent = document.getElementById("div_matrix");
@@ -294,9 +337,13 @@
 
                 
         } else {
-            console.log("IF k_max value ==> " + k_max )
+            // UPSSSSSSSS SOMETHING WRONG !!!
         }
- 
+
+    
+
+
+        
     </script>
 
 {% endblock %}
