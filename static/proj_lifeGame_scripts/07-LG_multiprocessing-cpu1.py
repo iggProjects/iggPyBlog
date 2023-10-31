@@ -27,7 +27,7 @@ try:   # Import My Own Functions from include dir
 
 	NX = 15
 	NY = 36
-	NITER= 2
+	NITER= 5
 	MSG_TEXT  = 'Games record-> '
 	BASE_PRINT = 1
 	#BASE_PRINT = int(NITER/10)

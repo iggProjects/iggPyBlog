@@ -161,30 +161,13 @@
         // Second option
         // DATA comes from 'list_lines', and it has to be transform in list of matrices
         //      used in LIFE GAME, 7 EXCERCISE
-        /*
-            READ CSV
-            https://stackoverflow.com/questions/7431268/how-to-read-data-from-csv-file-using-javascript
-            https://stackoverflow.com/questions/29393064/reading-in-a-local-csv-file-in-javascript
-            https://www.tutorialspoint.com/how-to-read-data-from-csv-file-using-javascript
-            https://www.geeksforgeeks.org/javascript-program-to-read-text-file/
-
-            https://stackoverflow.com/questions/69981833/how-can-i-read-a-file-from-a-path-in-javascript    
-            var fs = require('fs');
-
-            fs.readFile('test.txt', 'utf8', function(err, data) {
-                if (err) {
-                    return console.log(err);
-                }
-                console.log(data);
-            });
-
-        */
-
         } else if ( lines_col_txt[0][1].toLowerCase().includes("lg mp") || lines_col_txt[0][1].includes("---- ***** ----") ) {
 
             console.log("========= IF of second opt =========") 
 
             document.getElementById("div_matrix").style.backgroundColor = "blue";
+            document.getElementById("div_matrix").style.height = 'auto';
+            
             text_lines = Array()       
 
             fetch("/static/temp/list_text_lines.csv")
@@ -197,16 +180,12 @@
                     //console.log("====> text_lines type: " + typeof(text_lines))
 
                     for (i=0; i < text_lines.length; i++) { 
-                        if ( text_lines[i].includes('COMMENT:') ) { text_lines[i] = text_lines[i].replace('COMMENT:','C> ') }
-                        // if ( text_lines[i].includes('77') ) { text_lines[i] = text_lines[i].replaceAll('7','') }
+                        if ( text_lines[i].includes('COMMENT:') ) { text_lines[i] = text_lines[i].replace('COMMENT:','C> ') }                        
                         text_l = text_lines[i].split(',')
                         if ( text_l[1] != undefined ) {
                             lines_col_txt[i][0] = text_l[0]
-                            if ( text_l[1].includes('77') ) { 
-                                lines_col_txt[i][1] = '---' 
-                            } else {
-                                lines_col_txt[i][1] = text_l[1]
-                            }
+                            if ( text_l[1].includes('--') ) { text_l[1] = text_l[1].replaceAll('--','99') }
+                            lines_col_txt[i][1] = text_l[1]
                         } 
                         console.log(i + " color: " + text_l[0] + " | text_lines: " + text_l[1])
                     }
@@ -259,13 +238,37 @@
                     matrix = [];
 
                     blank_line =[];
+
+                    // ========================================
+
+                    let scroller = document.getElementById("scroller");
+                    let anchor = document.getElementById("anchor");
+
+                    const targetNode_Parent = document.getElementById("div_matrix");
+                    const targetNode = document.getElementById("scroller");
+                    const config = { childList: true };
+
+                    const callback = function (mutationsList, observer) {
+                        for (let mutation of mutationsList) {
+                        if (mutation.type === "childList") {
+                            // console.log('scrollHeight: ' + document.getElementById("div_matrix").scrollHeight)        
+                            targetNode_Parent.scrollTo(0, targetNode.scrollHeight);
+                            //window.scrollTo(0, document.body.scrollHeight);
+                        }
+                        }
+                    };
+
+                    const observer = new MutationObserver(callback);
+                    observer.observe(targetNode, config);  
+
+                    // ========================================
                     
-                    iter = setInterval(print_html_MATRIX,200);
+                    iter = setInterval(print_html_MATRIX,300);
                         
                     function print_html_MATRIX() {
 
                         div_html =  "";
-                        //document.getElementById("div_matrix").innerHTML = "";
+                        
                         matrix = list_matrices[k];
                         console.log("matrix " + matrix)
 
@@ -291,9 +294,12 @@
                         // document.getElementById("test").innerHTML = words[k];
                         document.getElementById("div_matrix").innerHTML += div_html;
                         k++;
+                        scroller.insertBefore(document.getElementById("div_matrix").innerHTML, anchor);
+
                         // console.log('k is: ' + k + ' | k_max is: ' + k_max);
                         if ( k >= k_max ) {                     
-                            clearInterval(iter);                    
+                            clearInterval(iter);
+                            anchor.style.display='none';
                         }
                     }
                     
@@ -309,19 +315,19 @@
             console.log("================================================")
 
 
-    // Third option
-    // DATA comes from 'list_lines', and it will be seen like list of sucesive lines
-    //      used for EXCERCISES, LIFE GAME (1 & 2) and ENIGMA GAME     
-    } else {
-            console.log("===== IF of third opt =====")
-            document.getElementById("div_matrix").style.backgroundColor = "#b3ffd9";
-            /* replace 'COMMENT' with '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'  
-            for ( i=0; i<lines_col_txt.length; i++) {
-                console.log("col_txt ----> " + i + " color " + lines_col_txt[i][0] + " | text "  + lines_col_txt[i][1])    
-                lines_col_txt[i][1]=lines_col_txt[i][1].replace('COMMENT:','*****')
-            }
-            */
-            list_matrices.push(lines_col_txt);
+        // Third option
+        // DATA comes from 'list_lines', and it will be seen like list of sucesive lines
+        //      used for EXCERCISES, LIFE GAME (1 & 2) and ENIGMA GAME     
+        } else {
+                console.log("===== IF of third opt =====")
+                document.getElementById("div_matrix").style.backgroundColor = "#b3ffd9";
+                /* replace 'COMMENT' with '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'  
+                for ( i=0; i<lines_col_txt.length; i++) {
+                    console.log("col_txt ----> " + i + " color " + lines_col_txt[i][0] + " | text "  + lines_col_txt[i][1])    
+                    lines_col_txt[i][1]=lines_col_txt[i][1].replace('COMMENT:','*****')
+                }
+                */
+                list_matrices.push(lines_col_txt);
 
         }    
 
@@ -388,31 +394,6 @@
             let scroller = document.getElementById("scroller");
             let anchor = document.getElementById("anchor");
 
-            console.log("list_matrices length:" + k_max)
-            /* Printing line by line with small delay*/
-            function print_html_LINE() {
-
-                // https://stackoverflow.com/questions/31590625/uncaught-typeerror-failed-to-execute-insertbefore-on-node-parameter-1-is-n
-               
-                // to see as lines comes
-                let p_tag_html = document.createElement("p");
-                p_tag_html.className = "p_result";
-                let col = list_matrices[0][k][0].replace(';','') 
-                p_tag_html.style.color = col;
-                p_tag_html.style.textAlign = 'left';
-                p_tag_html.innerHTML = list_matrices[0][k][1];
-
-                //console.log("p_tag_html color: " + p_tag_html.style.color + " | text: " + p_tag_html.innerText)   
-                scroller.insertBefore(p_tag_html, anchor);
-                k++;
-                
-                if ( k >= list_matrices[0].length ) {                     
-                    clearInterval(iter);
-                    anchor.style.display='none';
-                }
-
-            }
-
             const targetNode_Parent = document.getElementById("div_matrix");
             const targetNode = document.getElementById("scroller");
             const config = { childList: true };
@@ -432,8 +413,31 @@
 
             k=0;
             iter = setInterval(print_html_LINE,50);
+        
+            /* Printing line by line with small delay*/
+            function print_html_LINE() {
 
-                
+                // https://stackoverflow.com/questions/31590625/uncaught-typeerror-failed-to-execute-insertbefore-on-node-parameter-1-is-n
+
+                // to see as lines comes
+                let p_tag_html = document.createElement("p");
+                p_tag_html.className = "p_result";
+                let col = list_matrices[0][k][0].replace(';','') 
+                p_tag_html.style.color = col;
+                p_tag_html.style.textAlign = 'left';
+                p_tag_html.innerHTML = list_matrices[0][k][1];
+
+                //console.log("p_tag_html color: " + p_tag_html.style.color + " | text: " + p_tag_html.innerText)   
+                scroller.insertBefore(p_tag_html, anchor);
+                k++;
+
+                if ( k >= list_matrices[0].length ) {                     
+                    clearInterval(iter);
+                    anchor.style.display='none';
+                }
+            }
+
+                    
         } else {
             console.log("IF k_max value ==> " + k_max )
         }

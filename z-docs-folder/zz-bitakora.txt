@@ -124,6 +124,22 @@ Actual web
             - https://www.thoughtco.com/how-to-hide-links-using-css-3466933#:~:text=The%20first%20way%20is%20by,the%20background%20of%20the%20pag
             - https://www.w3.org/WAI/WCAG22/Techniques/css/C7
 
+    READ CSV
+        READ CSV
+        https://stackoverflow.com/questions/7431268/how-to-read-data-from-csv-file-using-javascript
+        https://stackoverflow.com/questions/29393064/reading-in-a-local-csv-file-in-javascript
+        https://www.tutorialspoint.com/how-to-read-data-from-csv-file-using-javascript
+        https://www.geeksforgeeks.org/javascript-program-to-read-text-file/
+
+        https://stackoverflow.com/questions/69981833/how-can-i-read-a-file-from-a-path-in-javascript    
+        var fs = require('fs');
+
+        fs.readFile('test.txt', 'utf8', function(err, data) {
+            if (err) {
+                return console.log(err);
+            }
+            console.log(data);
+        });
 
 ***********************************************
 
