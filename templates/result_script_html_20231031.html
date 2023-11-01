@@ -15,9 +15,9 @@
         <button style="margin-left:20px; padding:5px;"><a  href="/static/logFiles/my_messages.txt" target="_blank" title="my comments file">access 'my_messages' file</a></button>
     </div>
     <div id="div_matrix" style="max-width:80%; max-height:70vh; margin:auto; padding: 20px; padding-top: 0px; text-align: center; overflow-y:scroll; direction: ltr; border:10px solid rgb(128, 106, 252); border-radius: 10px; ">
-        <div id="scroller" style="width: 95%; max-height: 68vh; margin:auto; margin-top:5px; margin-bottom:5px; ">
+        <div id="scroller" style="width: 95%; margin:auto; margin-top:5px; margin-bottom:5px; ">
             <!-- new content dynamically inserted here -->
-            <div id="anchor" style="height: 2px; margin:15px; background-color: rgb(198, 197, 197);"></div>
+            <div id="anchor" style="height: 2px; margin:15px; background-color: rgb(153, 152, 152);"></div>
         </div>
     </div>
     <div>
@@ -166,7 +166,7 @@
             console.log("========= IF of second opt =========") 
 
             document.getElementById("div_matrix").style.backgroundColor = "blue";
-            //document.getElementById("div_matrix").style.height = 'auto';
+            document.getElementById("div_matrix").style.height = 'auto';
             
             text_lines = Array()       
 
@@ -263,7 +263,7 @@
 
                     // ========================================
                     
-                    iter = setInterval(print_html_MATRIX,500);
+                    iter = setInterval(print_html_MATRIX,300);
                         
                     function print_html_MATRIX() {
 
@@ -272,46 +272,44 @@
                         matrix = list_matrices[k];
                         console.log("matrix " + matrix)
 
-                        let div_tag_html = document.createElement("div");
-
                         for ( var l=0; l < matrix.length; l++ ) {
 
                             console.log('======> matrix[' + l + ']: ' + matrix[l])
 
-                        /*
-                            // to see as lines comes
-                            let p_tag_html = document.createElement("p");
-                            p_tag_html.className = "p_result";
-                            let col = list_matrices[0][k][0].replace(';','') 
-                            p_tag_html.style.color = col;
-                            p_tag_html.style.textAlign = 'left';
-                            p_tag_html.innerHTML = list_matrices[0][k][1];
-
-                            //console.log("p_tag_html color: " + p_tag_html.style.color + " | text: " + p_tag_html.innerText)   
-                            scroller.insertBefore(p_tag_html, anchor);
-                            k++;
-
-                        */
-
                             //console.log('IF k_max  ===> list matrices L:ine ' + l + ' --> ' + matrix[l])
                             if ( matrix[l][0] == 0 || matrix[l][0] == 1 ) {
-                                div_tag_html.innerHTML += "<p class='p_result'>" + span_ones(matrix[l]) + "</p>"; 
+                                div_html += "<p class='p_result'>" + span_ones(matrix[l]) + "</p>"; 
                             } else {
                                 if ( matrix[l][0] == '-' ) {                                                                      
                                     // div_html += "<p>&nbsp;</p>";
-                                    div_tag_html.innerHTML += "<p style='text-align:left; color:#ffad33;'>" + matrix[l] + "</p>";   
+                                    div_html += "<p  style='text-align: left; color:yellow;>" + matrix[l] + "</p>";   
                                 } else {
-                                    div_tag_html.innerHTML += "<p style='text-align:left; color:#ffad33;'>" + matrix[l] + "</p>";   
+                                    div_html += "<p  style='text-align: left; color:yellow;>" + matrix[l] + "</p>";   
                                 }
                                 
                             }  
 
                         }
 
+/*
+                // to see as lines comes
+                let p_tag_html = document.createElement("p");
+                p_tag_html.className = "p_result";
+                let col = list_matrices[0][k][0].replace(';','') 
+                p_tag_html.style.color = col;
+                p_tag_html.style.textAlign = 'left';
+                p_tag_html.innerHTML = list_matrices[0][k][1];
+
+                //console.log("p_tag_html color: " + p_tag_html.style.color + " | text: " + p_tag_html.innerText)   
+                scroller.insertBefore(p_tag_html, anchor);
+                k++;
+
+*/
+
                         // document.getElementById("test").innerHTML = words[k];
-                        //document.getElementById("div_matrix").innerHTML += div_html;
+                        document.getElementById("div_matrix").innerHTML += div_html;
                         k++;
-                        scroller.insertBefore(div_tag_html, anchor);
+                        scroller.insertBefore(document.getElementById("div_matrix").innerHTML, anchor);
 
                         // console.log('k is: ' + k + ' | k_max is: ' + k_max);
                         if ( k >= k_max ) {                     
