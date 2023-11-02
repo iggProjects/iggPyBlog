@@ -212,7 +212,8 @@ def result_script_exec():
                 if new_line == 'b\'\\x0c\\x1b[92m\'' or new_line == 'b\' \\x1b[00m\'' or new_line == 'b\'\\x1b[92m\'' or new_line == '\\x0c': 
                     pass
                 elif 'print empty line' in new_line:
-                    new_line = "---"
+                    new_line = "empty line"
+                    #new_line = "---"
                     color = "transparent"
                     list = [color,new_line]
                     list_color_text.append(list) 
@@ -461,7 +462,8 @@ def result_script_exec1():
                 if new_line == 'b\'\\x0c\\x1b[92m\'' or new_line == 'b\' \\x1b[00m\'' or new_line == 'b\'\\x1b[92m\'' or new_line == '\\x0c': 
                     pass
                 elif 'print empty line' in new_line:
-                    new_line = "---"
+                    new_line = "empty line"
+                    #new_line = "---"
                     color = "transparent"
                     list = [color,new_line]
                     list_color_text.append(list) 
