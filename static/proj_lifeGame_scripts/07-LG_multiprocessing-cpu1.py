@@ -27,7 +27,7 @@ try:   # Import My Own Functions from include dir
 
 	NX = 15
 	NY = 36
-	NITER= 5
+	NITER= 1
 	MSG_TEXT  = 'Games record-> '
 	BASE_PRINT = 1
 	#BASE_PRINT = int(NITER/10)
@@ -176,8 +176,8 @@ def exec_4_game(game):
 		n+=1
 
 	print("print empty line")
-	print(f"COMMENT:MP {multiprocessing.current_process().name} | Set {game} finished")
-	print(f"COMMENT:{NITER} of iterat for each game | games: 4, total-iterat {NITER*4}")
+	print(f"COMMENT:{multiprocessing.current_process().name}: Set {game} finished | {NITER} iterat for each game | games: 4 | total-iterat {NITER*4}")
+	
 	
 	#return n
 

@@ -161,8 +161,9 @@ def result_script_exec():
         print(f"py_path --> {py_script_path}")
         py_list = py_script_path.split('/')
         py_name = py_list[len(py_list)-1]
+        print(f"script py name: {py_name}")
         print(f"py_list: {py_list}")
-        print(f"script name: {py_name}")
+
         """
         # call subprocess to excecute py_script_path 
         if opSys == "Windows":        
@@ -259,8 +260,7 @@ def result_script_exec():
                         new_line = new_line.replace('\\x1b[95m','')
                         color= "magenta"
                     else:
-                        pass    
-
+                        pass
 
                     # Replace ',' by ';' in temp_line1[1] field for html printing effects
                     new_line = new_line.replace(',',';')
@@ -332,11 +332,14 @@ def result_script_exec():
             session['matrix_file_name'] = 'list_JS_lines.txt'
             session['textLines_file_name'] = 'list_text_lines.csv'
 
-            session['py_name'] = py_name
+            print(f"{FR_RED}py_name previous calling session parameter: {py_name}{NO_COLOR}")
+            session['py_name'] = py_name            
+            print(f"{FR_RED}py_name session parameter: {session['py_name']}{NO_COLOR}")
+
             session['list_lines'] = list_color_text
             session['list_JS_lines'] = list_JS_lines    
             
-            print(f"{FR_YELL}====== exit result_script_exec() in html ======{NO_COLOR}\n")
+            print(f"{FR_YELL}====== exit result_script_exec() for html ======{NO_COLOR}\n")
             print(f"{FR_YELL}====== go to result_script_exec.html ======{NO_COLOR}\n")
 
             # return redirect(url_for('result_script_html'))
@@ -413,6 +416,7 @@ def result_script_exec1():
         
         py_list = py_script_path.split('/')
         py_name = py_list[len(py_list)-1]
+        print(f"py_name: {py_name}")
         print(f"py_list: {py_list}")
         print(f"script name: {py_name}")
         
@@ -583,7 +587,7 @@ def result_script_exec1():
             session['workers'] = workers
             print(f"{FR_BLUE}worker name value --> {workers}")
             
-            print(f"{FR_YELL}====== exit result_script_exec1() in html ======{NO_COLOR}\n")
+            print(f"{FR_YELL}====== exit result_script_exec1() for html ======{NO_COLOR}\n")
             print(f"{FR_YELL}====== go to result_script_exec.html ======{NO_COLOR}\n")
 
             # return redirect(url_for('result_script_html'))
@@ -602,8 +606,6 @@ def result_script_exec1():
             logging.exception("error from func 'result_script_exec1()' when executing subprocess ! | exception() => "  + str(Argument))
             error_msg = "error from function 'result_script_exec1()' when executing subprocess ! => "  + str(Argument)
             return render_template('error_page.html', error_msg = error_msg )
-
-
 
     except Exception as Argument:   
         """     
@@ -629,11 +631,11 @@ def result_script_html():
 
         print("----------------------------------------------")
         py_name = session['py_name']
-        print(f"py_name: {py_name}")
-
+        print(f"{FR_RED}py_name: {py_name}{NO_COLOR}")
+        print("----------------------------------------------")
+        
         workers = session['workers']
 
-        print("----------------------------------------------")
         # read file of matrix lines
         matrix_file_name = basedir + "/static/temp/" + session['matrix_file_name'] 
         list_matrix_lines = []
