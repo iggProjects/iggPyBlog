@@ -26,7 +26,7 @@ try:   # Import My Own Functions from include dir
 	SLEEP= 0.3
 	NX = 20
 	NY = 40
-	NITER= 20
+	NITER= 1
 	MSG_TEXT  = 'Games record-> '
 	BASE_PRINT = 1
 	#BASE_PRINT = int(NITER/50)
