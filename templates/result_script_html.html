@@ -87,7 +87,7 @@
         console.log('TYPE of lines[0] var: ' + typeof(lines[0]));
         console.log('TYPE of lines[0] var: ' + Object.prototype.toString.call(lines[0]));
         console.log('LENGHT of lines var: ' + lines.length);
-        console.log('line[0]: ' + lines[0]);
+        console.log('line[0]: ' + lines[0]+ " | type: "+ typeof([0]) );
 
         var lines_col_txt = {{ list_lines | tojson }};        
         console.log('type of lines_col_txt[0] var: ' + typeof(lines_col_txt[0]));
@@ -101,6 +101,137 @@
         matrix = [];
         comment = false;   
 
+        // First option using file list_JS_lines.txt instead arrray coming from render_template
+        text_lines = Array()       
+
+        // First option
+        // DATA comes from 'list_JS_lines' to create a list of matrices
+        //      used in LIFE GAME, EXCERCISES 3 to 6
+    
+        fetch("/static/temp/list_JS_lines.txt")
+
+            .then((res) => res.text())
+            .then((text) => {
+                text_lines = text.split('\n')
+                /*
+                for ( i=0; i < text_lines.length; i++ ) {
+                    console.log("FROM opt 1, reading line" + i + " in list_JS_lines.txt: " + text_lines[i] )
+                }
+                */    
+                
+                if ( text_lines[0].toLowerCase().includes("matriz") || text_lines[0].toLowerCase().includes("iter") || text_lines[0].toLowerCase().includes("starting")) {
+        
+                    console.log("===== IF of first opt =====")   
+                    document.getElementById("div_matrix").style.backgroundColor = "blue"; 
+
+                    // create array for all matrices
+                    for (i=0; i < text_lines.length; i++) {
+                        // console.log('===> list line ' + i + ' -- ' + lines[i])            
+                        if ( text_lines[i][0] == 'M' || text_lines[0].toLowerCase().includes("starting")) {                      
+                            matrix = []
+                            matrix.push(text_lines[i])     
+                            console.log('IF text_lines[0].toLowerCase() Starting ==> ' + text_lines[i])          
+                        
+                        } else if ( text_lines[i][0] == 'I' ) { 
+                            //console.log('matrix ===> ' + matrix)        
+                            list_matrices.push(matrix)
+                            matrix = []                    
+                            matrix.push(text_lines[i])
+                            console.log('IF text_lines[0].toLowerCase() ==> I ' + text_lines[i])          
+
+                        } else if ( text_lines[i][0] == 0 || text_lines[i][0] == 1 || text_lines[i][0] == 9 ) {    
+
+                            if ( comment ) {
+                                console.log('IF text_lines[0].toLowerCase() COMMENT ==>' + text_lines[i])          
+                                list_matrices.push(matrix);
+                                comment = false;
+                                matrix = [];
+                                matrix.push(text_lines[i]);                        
+
+                            } else if ( !comment ) {
+                                matrix.push(text_lines[i]);     
+                            }
+
+                            else { 
+                                console.log("IF text_lines[0].toLowerCase() ==> from lines in result_script_html.html: SOS ! ")
+                            }
+                            //console.log('IF lines[0].toLowerCase() ==> 0,1,9 ' + matrix)          
+
+                        } else if ( text_lines[i].toLowerCase().includes("comment") ) {
+                            matrix.push(text_lines[i]);
+                            comment = true;
+
+                        } else if ( text_lines[i][0] == 'E' ) {      
+                            list_matrices.push(matrix)   
+                            //div_matrix_html += "<br><p class='p_result' style='color:yellow;'>" + lines[i] + "</p>";
+                            console.log('IF text_lines[0].toLowerCase() ===> E ' + text_lines[i])  
+
+                        } else {                    
+                            console.log('IF text_lines[i][0] ===> ' + text_lines[i][0])
+                        }
+                    }
+
+                    list_matrices.push(matrix)
+                }
+
+                // call function to print list_matrices with delay
+                let k = 0;        
+                let k_max = list_matrices.length; 
+                console.log('k is: ' + k + ' | k_max is: ' + k_max);
+                div_html = "";
+                matrix = [];
+
+                blank_line =[]
+
+                iter = setInterval(print_html_MATRIX1,200);
+
+                function print_html_MATRIX1() {
+
+                    div_html =  "";
+                    document.getElementById("div_matrix").innerHTML = "";
+                    matrix = list_matrices[k];     
+
+                    for ( var l=0; l < matrix.length; l++ ) {
+
+                        //console.log('IF k_max  ===> list matrices L:ine ' + l + ' --> ' + matrix[l])
+                        if ( matrix[l][0] == 'M' || matrix[l][0] == 'I' ) {  
+                            div_html += "<br><p class='p_result' style='color:yellow;'>" + matrix[l] + "</p>";
+                        
+                        } else if ( matrix[l][0] == 0 || matrix[l][0] == 1 ) {
+                            div_html += "<p class='p_result'>" + span_ones(matrix[l]) + "</p>";
+
+                        } else if ( matrix[l][0] == 7 || matrix[l][0] == 9 ) {
+                            div_html += "<p class='p_result'>&nbsp;&nbsp;&nbsp;&nbsp;</p>";    
+
+                        } else {
+                            console.log('======> matrix[' + l + ']: ' + matrix[l])
+                            if ( ( matrix[l][1][0] == 0 || matrix[l][1][0] == 1 ||  matrix[l][1][0] == 9 ) && matrix[l][1][1] != '|' ) {
+                                div_html += "<p class='p_result'>" + span_ones_2(matrix[l][1]) + "</p>";    
+                            } else if ( matrix[l][1][0] == '-' || matrix[l][1][2] == '7' ) {
+                                div_html += "<p class='p_result' style='height:3px; color:transparent;'>" + matrix[l][1] + "</p>";
+                            } else {
+                                div_html += "<p class='p_result' style='text-align: left; color: " + matrix[l][0]  + "'>" + matrix[l][1] + "</p>";
+                            }
+                        }  
+
+                    }
+
+                    // document.getElementById("test").innerHTML = words[k];
+                    document.getElementById("div_matrix").innerHTML = div_html;
+                    k++;
+                    // console.log('k is: ' + k + ' | k_max is: ' + k_max);
+                    if ( k >= k_max ) {                     
+                        clearInterval(iter);                    
+                    }
+                }
+               
+            })
+
+            .catch((e) => console.error(e));
+
+
+
+        /*    
         // First option
         // DATA comes from 'list_JS_lines' to create a list of matrices
         //      used in LIFE GAME, EXCERCISES 3 to 6
@@ -157,11 +288,13 @@
             }
 
             list_matrices.push(matrix)   
-        
+            */
+            
+
         // Second option
         // DATA comes from 'list_lines', and it has to be transform in list of matrices
         //      used in LIFE GAME, 7 EXCERCISE
-        } else if ( lines_col_txt[0][1].toLowerCase().includes("lg mp") || lines_col_txt[0][1].includes("---- ***** ----") ) {
+        if ( lines_col_txt[0][1].toLowerCase().includes("lg mp") || lines_col_txt[0][1].includes("---- ***** ----") ) {
 
             console.log("========= IF of second opt =========") 
 
@@ -318,7 +451,7 @@
 
                 .catch((e) => console.error(e));
 
-            list_matrices = []     
+            list_matrices = []     // to avoid process of printing case 1 and 3 
 
             console.log("Second Opt FINISHED -- list_matrices length: " + list_matrices.length);
             console.log("================================================")
@@ -327,7 +460,7 @@
         // Third option
         // DATA comes from 'list_lines', and it will be seen like list of sucesive lines
         //      used for EXCERCISES, LIFE GAME (1 & 2) and ENIGMA GAME     
-        } else {
+        } else if ( lines_col_txt[0][1].toLowerCase().includes("comment") ) {
                 console.log("===== IF of third opt =====")
                 document.getElementById("div_matrix").style.backgroundColor = "#b3ffd9";
                 /* replace 'COMMENT' with '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'  
@@ -337,6 +470,8 @@
                 }
                 */
                 list_matrices.push(lines_col_txt);
+ 
+        } else {
 
         }    
 
