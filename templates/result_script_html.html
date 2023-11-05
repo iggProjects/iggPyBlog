@@ -383,14 +383,14 @@
 
                             //console.log('======> matrix[' + l + ']: ' + matrix[l])
 
-                            if ( matrix[l][1][0] == 0 || matrix[l][1][0] == 1 ) {
-                                div_tag_html.innerHTML += "<p class='p_result'>" + span_ones(matrix[l][1]) + "</p>"; 
+                            if ( matrix[l][0] == 0 || matrix[l][0] == 1 ) {
+                                div_tag_html.innerHTML += "<p class='p_result'>" + span_ones(matrix[l]) + "</p>"; 
                             } else {
-                                if ( matrix[l][1][0] == '-' ) {                                                                      
+                                if ( matrix[l][0] == '-' ) {                                                                      
                                     // div_html += "<p>&nbsp;</p>";
-                                    div_tag_html.innerHTML += "<p style='text-align:left; color:" + matrix[l][0] + ";'>" + matrix[l][1] + "</p>";   
+                                    div_tag_html.innerHTML += "<p style='text-align:left; color:" + color_lines[l] + ";'>" + matrix[l] + "</p>";   
                                 } else {
-                                    div_tag_html.innerHTML += "<p style='text-align:left; color:" + matrix[l][0] + ";'>" + matrix[l][1] + "</p>";   
+                                    div_tag_html.innerHTML += "<p style='text-align:left; color:" + color_lines[l] + ";'>" + matrix[l] + "</p>";   
                                 }                                
                             } 
                         }
