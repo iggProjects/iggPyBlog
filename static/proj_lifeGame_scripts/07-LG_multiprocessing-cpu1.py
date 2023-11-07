@@ -257,7 +257,7 @@ if __name__ == '__main__':
 		print(f"COMMENT:. . . . Elapsed Time: {elapsed_time} seconds")
 		print(f"print empty line")
 		print(f"COMMENT:- - - - - THAT's-ALL - - - - - THAT's-ALL - - - - - ")
-		print("print empty line")
+		print(f"print empty line")
 
 	except Exception as Argument:
 		error_msg = "ERROR IN <" + my_script_name + ">. SEE server_messages.txt !"

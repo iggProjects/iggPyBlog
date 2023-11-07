@@ -99,6 +99,7 @@ if __name__ == "__main__":
         print("print empty line")
         
         print(f"{FR_GREEN}---------- That's all for today ----------{NO_COLOR}")
+        print("print empty line")        
 
     except Exception as Argument:
         error_msg = "ERROR IN <" + my_script_name + ">. SEE server_messages.txt !"
