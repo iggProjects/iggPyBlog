@@ -153,8 +153,8 @@ def result_script_exec():
 
         session['py_name'] = ""
         session['workers'] = ""
-        session['list_lines'] = []
-        session['list_JS_lines'] = []
+        #session['list_lines'] = []
+        #session['list_JS_lines'] = []
 
         # read path to script
         py_script_path = request.args['py_path']
@@ -329,21 +329,22 @@ def result_script_exec():
             """       
             
             # session variable to call render_template
-            session['matrix_file_name'] = 'list_JS_lines.txt'
+            #session['matrix_file_name'] = 'list_JS_lines.txt'
             session['textLines_file_name'] = 'list_text_lines.csv'
 
             print(f"{FR_RED}py_name previous calling session parameter: {py_name}{NO_COLOR}")
             session['py_name'] = py_name            
             print(f"{FR_RED}py_name session parameter: {session['py_name']}{NO_COLOR}")
 
-            session['list_lines'] = list_color_text
-            session['list_JS_lines'] = list_JS_lines    
+            #session['list_lines'] = list_color_text
+            #session['list_JS_lines'] = list_JS_lines    
             
             print(f"{FR_YELL}====== exit result_script_exec() for html ======{NO_COLOR}\n")
             print(f"{FR_YELL}====== go to result_script_exec.html ======{NO_COLOR}\n")
 
             # return redirect(url_for('result_script_html'))
-            return render_template('result_script_exec.html',list_lines=list_color_text, list_JS_lines=list_JS_lines, py_name=py_name)
+            return render_template('result_script_exec.html', csv_file_name=session['textLines_file_name'], py_name=py_name)
+            #return render_template('result_script_exec.html',list_lines=list_color_text, list_JS_lines=list_JS_lines, py_name=py_name)
 
         except Exception as Argument:   
             """     
@@ -579,11 +580,9 @@ def result_script_exec1():
             # session variable to call render_template
             session['matrix_file_name'] = 'list_JS_lines.txt'
             session['textLines_file_name'] = 'list_text_lines.csv'
-
             session['py_name'] = py_name
-            session['list_lines'] = list_color_text
-            session['list_JS_lines'] = list_JS_lines 
-
+            #session['list_lines'] = list_color_text
+            #session['list_JS_lines'] = list_JS_lines 
             session['workers'] = workers
             print(f"{FR_BLUE}worker name value --> {workers}")
             
@@ -591,9 +590,9 @@ def result_script_exec1():
             print(f"{FR_YELL}====== go to result_script_exec.html ======{NO_COLOR}\n")
 
             # return redirect(url_for('result_script_html'))
-            return render_template('result_script_html.html',py_name=py_name, workers=workers)
+            return render_template('result_script_html.html')
+            # return render_template('result_script_html.html',py_name=py_name, workers=workers)
             #return render_template('result_script_html.html',list_lines=list_color_text, list_JS_lines=list_JS_lines, py_name=py_name, workers=workers)
-            #return render_template('result_script_exec.html',list_lines=list_color_text, list_JS_lines=list_JS_lines, py_name=py_name, name=name)
 
         except Exception as Argument:   
             """     
@@ -632,10 +631,11 @@ def result_script_html():
 
         print("----------------------------------------------")
         py_name = session['py_name']
-        print(f"{FR_RED}py_name: {py_name}{NO_COLOR}")
-        print("----------------------------------------------")
-        
         workers = session['workers']
+        csv_file_name = session['textLines_file_name']
+        print(f"{FR_RED}py_name: {py_name} | workers: {workers} | csv file name: {csv_file_name}{NO_COLOR}")     
+        print("----------------------------------------------")
+
 
         # read file of matrix lines
         matrix_file_name = basedir + "/static/temp/" + session['matrix_file_name'] 
@@ -685,12 +685,8 @@ def result_script_html():
             """
             print("----------------------------------------------")
 
-            #list_JS_lines = session['list_JS_lines']
-            #print(f"===== list_matrix_lines length:{NO_COLOR} {len(list_matrix_lines)}")
-            #print("----------------------------------------------")
-            #return render_template('result_script_html.html', list_lines=list_lines, list_JS_lines=list_matrix_lines, py_name=py_name)
-            return render_template('result_script_html.html', csv_file_name = textLines_file_name, list_lines=list_color_text_lines, list_JS_lines=list_matrix_lines, py_name=py_name, workers=workers)
-            # return render_template('result_script_html.html', py_name=py_name, workers=workers)
+            #return render_template('result_script_html.html', csv_file_name = csv_file_name, list_lines=list_color_text_lines, list_JS_lines=list_matrix_lines, py_name=py_name, workers=workers)
+            return render_template('result_script_html.html', csv_file_name = csv_file_name, py_name=py_name, workers=workers)
 
         except Exception as Argument:
             write_log_file("my_messages.txt","ERROR FROM 'func result_script_html(), NO DATA ! ... SEE server_messages.txt'")

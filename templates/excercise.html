@@ -40,7 +40,7 @@
            <!-- <th style="width:9%"><a href="/result_script_exec/?py_path={{excercise.fileDirPath1}}" target="_blank"><img class="myImg" onclick='my_msg_window.render("ALERT","Please wait a bit while the script runs in the background !")' src="{{ url_for('static', filename='img/icons8-html-filetype-50.png') }}" title='Visualize the scrip execution in html format' alt="console-100" width="35"/></a></th>  -->
                 <th style="width:9%; padding:10px;">
                     <!-- <img class="myImg" onclick='ExecPythonScript("{{excercise.fileDirPath}}")' src="{{ url_for('static', filename='img/icons8-consola-100.png') }}" title='= PLEASE CHECK CONSOLE TO SEE SCRIPT EXECUTION =' alt="console-100" width="30"/> -->
-                    <span data-title=' Only use if you are in Locahost. Check Flask Console '><img class="myImg" onclick='ExecPythonScript("{{excercise.fileDirPath}}")' src="{{ url_for('static', filename='img/icons8-consola-100.png') }}" alt="console-100" width="30"/></span>
+                    <span data-title=' Only use if you are in Localhost. Check Flask Console '><img class="myImg" onclick='ExecPythonScript("{{excercise.fileDirPath}}")' src="{{ url_for('static', filename='img/icons8-consola-100.png') }}" alt="console-100" width="30"/></span>
                 </th>                
             </tr>            
         </table>           
@@ -142,7 +142,7 @@
             // alert("\n=====  PLEASE WAIT A BIT  =====\n\nWHILE THE SCRIPT RUNS IN THE BACKGROUND !");
             my_msg_window.render("ALERT","Please WAIT a BIT while the script runs in the background !");
             await delay(2000);
-            // go to result_script_exec.html 
+            // go to result_script_html.html 
             myRequest(py_path);
         }
 

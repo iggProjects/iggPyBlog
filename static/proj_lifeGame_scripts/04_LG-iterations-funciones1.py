@@ -158,7 +158,6 @@ if __name__ == '__main__':
 
 		
 		matriz = crear_matriz(archivo)						# Obtengo la matriz
-		print("print empty line") 	
 		print(f"Matriz-inicial|Matriz-{nX}x{nY}")
 		mostrar_matriz(matriz,"")
 		
