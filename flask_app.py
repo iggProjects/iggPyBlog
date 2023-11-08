@@ -591,7 +591,8 @@ def result_script_exec1():
             print(f"{FR_YELL}====== go to result_script_exec.html ======{NO_COLOR}\n")
 
             # return redirect(url_for('result_script_html'))
-            return render_template('result_script_html.html',list_lines=list_color_text, list_JS_lines=list_JS_lines, py_name=py_name, workers=workers)
+            return render_template('result_script_html.html',py_name=py_name, workers=workers)
+            #return render_template('result_script_html.html',list_lines=list_color_text, list_JS_lines=list_JS_lines, py_name=py_name, workers=workers)
             #return render_template('result_script_exec.html',list_lines=list_color_text, list_JS_lines=list_JS_lines, py_name=py_name, name=name)
 
         except Exception as Argument:   
@@ -688,7 +689,8 @@ def result_script_html():
             #print(f"===== list_matrix_lines length:{NO_COLOR} {len(list_matrix_lines)}")
             #print("----------------------------------------------")
             #return render_template('result_script_html.html', list_lines=list_lines, list_JS_lines=list_matrix_lines, py_name=py_name)
-            return render_template('result_script_html.html', list_lines=list_color_text_lines, list_JS_lines=list_matrix_lines, py_name=py_name, workers=workers)
+            return render_template('result_script_html.html', csv_file_name = textLines_file_name, list_lines=list_color_text_lines, list_JS_lines=list_matrix_lines, py_name=py_name, workers=workers)
+            # return render_template('result_script_html.html', py_name=py_name, workers=workers)
 
         except Exception as Argument:
             write_log_file("my_messages.txt","ERROR FROM 'func result_script_html(), NO DATA ! ... SEE server_messages.txt'")

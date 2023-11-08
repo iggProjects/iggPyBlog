@@ -36,7 +36,7 @@ try:   # Import My Own Functions from include dir
 except Exception as ImportError:
     FR_RED   = "\033[91m" 
     NO_COLOR = "\033[00m"
-    print() 
+    print("print empty line") 
     print(f"\033[91mIMPORT ERROR ==>\033[00m {ImportError} | {ImportError.__class__} | {ImportError.__doc__}")
 
 #
@@ -141,7 +141,7 @@ def exec_game_iter(matriz,name):
 	if np.array_equal(matriz,matrizTemp):
 		if multiprocessing.current_process().name == "SpawnPoolWorker-1":
 			#mostrar_matriz(matriz)
-			print(f"COMMENT:cpu id: {multiprocessing.current_process().name} | {multiprocessing.Process().name} | obs:game-reach-equality: {name}")
+			print(f"{FR_GREEN}COMMENT:cpu id: {multiprocessing.current_process().name} | {multiprocessing.Process().name} | obs:game-reach-equality: {name}")
 		#matriz = 9 * np.ones([NX,NY])
 	else:	
 		# Copio matrizTemp en matriz para la proxima iteracion
@@ -152,7 +152,7 @@ def exec_game_iter(matriz,name):
 # Execute 4 matrixes (games) simultaneously 
 def exec_4_game(game):
 	
-	print(f"COMMENT:Set {game} | cpu name: {multiprocessing.current_process().name} | mp-name: {multiprocessing.Process().name}")
+	print(f"{FR_GREEN}COMMENT:Set {game} | cpu name: {multiprocessing.current_process().name} | mp-name: {multiprocessing.Process().name}")
 	 
 	matriz1 = crear_matriz()
 	matriz2 = crear_matriz()
@@ -170,13 +170,13 @@ def exec_4_game(game):
 
 		if ( (multiprocessing.current_process().name == "SpawnPoolWorker-1") and (n % BASE_PRINT == 0) ):
 			print("print empty line")
-			print(f"COMMENT:cpu name: {multiprocessing.current_process().name} | {multiprocessing.Process().name} | iteration: {n}")
+			print(f"{FR_GREEN}COMMENT:cpu name: {multiprocessing.current_process().name} | {multiprocessing.Process().name} | iteration: {n}")
 			show_4_matrix(matriz1,matriz2,matriz3,matriz4)
 			#time.sleep(SLEEP)			
 		n+=1
 
 	print("print empty line")
-	print(f"COMMENT:{multiprocessing.current_process().name}: Set {game} finished | {NITER} iterat for each game | games: 4 | total-iterat {NITER*4}")
+	print(f"{FR_GREEN}COMMENT:{multiprocessing.current_process().name}: Set {game} finished | {NITER} iterat for each game | games: 4 | total-iterat {NITER*4}")
 	
 	
 	#return n
@@ -227,14 +227,14 @@ if __name__ == '__main__':
 		# parameter for multiporcessing call
 		list_games = [(x+1) for x in range(0,nSets)]
 		#print("print empty line")
-		print(f"COMMENT:= = = = = LG MP = = = = =")
-		print(f"COMMENT:= = = GAME PARAMETERS = = = ")
-		print(f"COMMENT:. . . . Number Sets for 4 simultaneous Life_Game_Matrix: {len(list_games)}")
-		print(f"COMMENT:. . . . Iterations for each game: {NITER}")
-		print(f"COMMENT:. . . . number of cpus participating: {nCPU}")
-		print(f"COMMENT:. . . . matrices {NX} x {NY}")
-		print(f"COMMENT:. . . . Printing only for first process")
-		print(f"COMMENT:. . . . List of Sets: {list_games}")
+		print(f"{FR_GREEN}= = = = = LG MP = = = = =")
+		print(f"{FR_GREEN}= = = GAME PARAMETERS = = = ")
+		print(f"{FR_GREEN}. . . . Number Sets for 4 simultaneous Life_Game_Matrix: {len(list_games)}")
+		print(f"{FR_GREEN}. . . . Iterations for each game: {NITER}")
+		print(f"{FR_GREEN}. . . . number of cpus participating: {nCPU}")
+		print(f"{FR_GREEN}. . . . matrices {NX} x {NY}")
+		print(f"{FR_GREEN}. . . . Printing only for first process")
+		print(f"{FR_GREEN}. . . . List of Sets: {list_games}")
 		#pausar()	
 		# time
 		inicio = time.time()
@@ -244,19 +244,19 @@ if __name__ == '__main__':
 
 		# BALANCE
 		print(f"print empty line")
-		print(f"COMMENT:- - - - - BALANCE - - - - -")
-		print(f"COMMENT:. . . . Number of cpus participating: {nCPU}")
-		print(f"COMMENT:. . . . Sets executed: {list_games[nSets-1]}")
-		print(f"COMMENT:. . . . Games executed: {list_games[nSets-1]*4}")
-		print(f"COMMENT:. . . . Each game (matrix) includes {NITER} iterations of game of life")
-		print(f"COMMENT:\twith a matrix of {NX} x {NY} in each quadrant of the screen")
-		print(f"COMMENT:\tand only {int(NITER/BASE_PRINT)} print screens for each game (matrix) of the first process")
+		print(f"{FR_GREEN}- - - - - BALANCE - - - - -")
+		print(f"{FR_GREEN}. . . . Number of cpus participating: {nCPU}")
+		print(f"{FR_GREEN}. . . . Sets executed: {list_games[nSets-1]}")
+		print(f"{FR_GREEN}. . . . Games executed: {list_games[nSets-1]*4}")
+		print(f"{FR_GREEN}. . . . Each game (matrix) includes {NITER} iterations of game of life")
+		print(f"{FR_GREEN}\twith a matrix of {NX} x {NY} in each quadrant of the screen")
+		print(f"{FR_GREEN}\tand only {int(NITER/BASE_PRINT)} print screens for each game (matrix) of the first process")
 		
 		elapsed_time = "{:.2f}".format(time.time()-inicio)
 		print(f"print empty line")
-		print(f"COMMENT:. . . . Elapsed Time: {elapsed_time} seconds")
+		print(f"{FR_GREEN}. . . . Elapsed Time: {elapsed_time} seconds")
 		print(f"print empty line")
-		print(f"COMMENT:- - - - - THAT's-ALL - - - - - THAT's-ALL - - - - - ")
+		print(f"{FR_GREEN}- - - - - THAT's-ALL - - - - - THAT's-ALL - - - - - ")
 		print(f"print empty line")
 
 	except Exception as Argument:

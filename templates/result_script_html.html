@@ -76,25 +76,7 @@
             console.log("FROM span_ones_2, span_line: " + span_line); 
             return span_line;
         }
-       
-        // read workers array
-        var workers = {{ workers | tojson }}
-        console.log("===> workers: " + workers)
 
-        // read server data JS as array
-        var lines = {{ list_JS_lines | tojson }};
-        console.log('TYPE of lines[0] var: ' + typeof(lines[0]));
-        console.log('TYPE of lines[0] var: ' + Object.prototype.toString.call(lines[0]));
-        console.log('LENGHT of lines var: ' + lines.length);
-        console.log('line[0]: ' + lines[0]+ " | type: "+ typeof([0]) );
-
-        var lines_col_txt = {{ list_lines | tojson }};        
-        console.log('type of lines_col_txt[0] var: ' + typeof(lines_col_txt[0]));
-        console.log('type of lines_col_txt[0] var: ' + Object.prototype.toString.call(lines_col_txt[0]));
-        console.log('Length of lines_col_txt var: ' + lines_col_txt.length);
-        console.log('color: ' + lines_col_txt[0][0] + ' | text: ' + lines_col_txt[0][1])
-
-        var excercise = {{ py_name | tojson }};
 
         /* local variables  */  
         div_matrix_html = "";
@@ -106,7 +88,14 @@
         text_lines = Array()       
 
         // READING CSV FILE
-        fetch("/static/temp/list_text_lines.csv")
+        //csv_file_name
+        var csv_name_path = {{ csv_file_name | tojson }};
+        csv_name_array = csv_name_path.split('/');
+        csv_name = csv_name_array[csv_name_array.length-1]
+
+        
+        fetch("/static/temp/" + csv_name)
+        // fetch("/static/temp/list_text_lines.csv")
 
             .then((res) => res.text())
             .then((text) => {
@@ -117,8 +106,7 @@
                 for ( i=0; i < lines.length; i++ ) {
                     if ( lines[i] != "" ) { lines[i] = lines[i].replace('\r\r',''); }
                     else { lines[i] = "transparent,empty line" }
-
-                    console.log("READING CSV, LINE " + i + ": " + lines[i] );
+                    console.log("READING CSV, LINE " + i + ": " + lines[i] );                    
                 }
 
                 text_lines = []
@@ -130,15 +118,14 @@
                     col_text_line[1] = col_text_line[1].replace('\r\r','')      
                     //console.log("==== col_text_line: " + col_text_line + " | type: " + typeof(col_text_line));
                     //console.log("==== text: " + col_text_line[1] + " | type: " + typeof(col_text_line[1]));
+                    //console.log("line: " + lines[i]);
 
                     empty_line = col_text_line[1].includes('empty line');
 
-                    if ( empty_line ) {
-                        console.log("empty_line: " + empty_line);
+                    if ( empty_line ) {                        
                         color_lines.push(col_text_line[0]);
                         text_lines.push(col_text_line[1]);  
-
-                    } else {
+                    } else {                      
                         color_lines.push(col_text_line[0]);
                         text_lines.push(col_text_line[1]);  
                     }
@@ -253,14 +240,14 @@
                         }
                     }
 
-                // SECOND OPTION used in LIFE GAME for EXCERCISE 7    
+                // SECOND OPTION used in LIFE GAME for EXCERCISE 7
+                // ( use lines to construct list_matrices !!! )   
                 } else if ( ( text_lines[0].toLowerCase().includes("lg mp") || text_lines[0].includes("---- ***** ----") ) ) {
     
-                    console.log("========= IF of second opt, excercise 7 LG =========") 
+                    document.getElementById("div_matrix").style.backgroundColor = "#1a1a1a";    
 
-                    document.getElementById("div_matrix").style.backgroundColor = "#1a1a1a";                   
+                    for (i=0; i < text_lines.length; i++) {
 
-                    for (i=0; i < text_lines.length; i++) { 
                         if ( text_lines[i].includes('COMMENT:') ) { text_lines[i] = text_lines[i].replace('COMMENT:','') } 
                         if ( text_lines[i] == '---' ) { text_lines[i] = '&nbsp;' }
                         if ( text_lines[i].includes('7777') ) { text_lines[i] = '&nbsp;' }                       
@@ -271,28 +258,26 @@
                             color_lines[i] = '#e68a00' 
                         }
                     }    
-
+                    /*    
                     console.log("text_lines length " + text_lines.length)
                     console.log(text_lines)
                     console.log("color_lines length " + color_lines.length)
                     console.log(color_lines)
-
+                    */    
                     comment = true
                     for (i=0; i<text_lines.length; i++) {
 
                         if ( ( text_lines[i][0] != '0' && text_lines[i][0] != '1' && text_lines[i][2] != '7' )  ) {
                             
                             if ( comment == true ) {                        
-                                matrix.push(text_lines[i]);
-                                //matrix.push(lines_col_txt[i][1]);
-                                console.log("1 => comment: " + comment + " | list matrices L: " + list_matrices.length + " | " + text_lines[i])
+                                matrix.push(lines[i]);
+                                console.log("1 => comment: " + comment + " | list matrices L: " + list_matrices.length + " | " + lines[i])
                             } else {
-                                console.log("2 ==> comment: " + comment + " | " + text_lines[i])
+                                console.log("2 ==> comment: " + comment + " | " + lines[i])
                                 list_matrices.push(matrix);
                                 comment = true;
                                 matrix = []
-                                matrix.push(text_lines[i]);
-                                //matrix.push(lines_col_txt[i][1]);
+                                matrix.push(lines[i]);
                                 console.log("2 ==> list matrices L: " + list_matrices.length)
                             }
 
@@ -300,18 +285,16 @@
                             
                             if ( comment == true ) {                         
                                 list_matrices.push(matrix);
-                                console.log("1 => comment: " + comment + " | list matrices L: " + list_matrices.length + " | " + text_lines[i])
+                                console.log("1 => comment: " + comment + " | list matrices L: " + list_matrices.length + " | " + lines[i])
                                 comment = false;
                                 matrix = [];
-                                matrix.push(text_lines[i]);
-                                //matrix.push(lines_col_txt[i]);
+                                matrix.push(lines[i]);
                             } else {                        
-                                matrix.push(text_lines[i]);
-                                //matrix.push(lines_col_txt[i][1]);
-                                console.log("1 => comment: " + comment + " | list matrices L: " + list_matrices.length + " | " + text_lines[i])
+                                matrix.push(lines[i]);
+                                console.log("1 => comment: " + comment + " | list matrices L: " + list_matrices.length + " | " + lines[i])
                             }    
                                 
-                        } else {
+                        } else {  // ????
 
                         }
                     }    
@@ -328,10 +311,7 @@
                     console.log('k is: ' + k + ' | k_max is: ' + k_max);
                     div_html = "";
                     matrix = [];
-
                     blank_line =[];
-
-                    // ========================================
 
                     let scroller = document.getElementById("scroller");
                     let anchor = document.getElementById("anchor");
@@ -353,8 +333,6 @@
                     const observer = new MutationObserver(callback);
                     observer.observe(targetNode, config);  
 
-                    // ========================================
-                    
                     iter = setInterval(print_html_MATRIX,500);
                         
                     function print_html_MATRIX() {
@@ -366,19 +344,20 @@
                         console.log(matrix)
 
                         let div_tag_html = document.createElement("div");
+                        let col_text_line = []
 
                         for ( var l=0; l < matrix.length; l++ ) {
 
-                            //console.log('======> matrix[' + l + ']: ' + matrix[l])
+                            // convert line in color, text
+                            col_text_line = matrix[l].split(',');
 
-                            if ( matrix[l][0] == 0 || matrix[l][0] == 1 ) {
-                                div_tag_html.innerHTML += "<p class='p_result'>" + span_ones(matrix[l]) + "</p>"; 
+                            if ( col_text_line[1][0] == 0 || col_text_line[1][0] == 1 ) {
+                                div_tag_html.innerHTML += "<p class='p_result'>" + span_ones(col_text_line[1]) + "</p>"; 
                             } else {
-                                if ( matrix[l][0] == '-' ) {                                                                      
-                                    // div_html += "<p>&nbsp;</p>";
-                                    div_tag_html.innerHTML += "<p style='text-align:left; color:" + color_lines[l] + ";'>" + matrix[l] + "</p>";   
+                                if ( col_text_line[1][0] == '-' ) {                                                                      
+                                    div_tag_html.innerHTML += "<p style='text-align:left; color:" + col_text_line[0] + ";'>" + col_text_line[1] + "</p>";   
                                 } else {
-                                    div_tag_html.innerHTML += "<p style='text-align:left; color:" + color_lines[l] + ";'>" + matrix[l] + "</p>";   
+                                    div_tag_html.innerHTML += "<p style='text-align:left; color:" + col_text_line[0] + ";'>" + col_text_line[1] + "</p>";   
                                 }                                
                             } 
                         }
@@ -398,17 +377,13 @@
                 } else  {
                     console.log("===== IF of third opt =====")
                     document.getElementById("div_matrix").style.backgroundColor = "#b3ffd9";
-                    /*
-                    for ( i=0; i<lines_col_txt.length; i++) {
-                        console.log("col_txt ----> " + i + " color " + lines_col_txt[i][0] + " | text "  + lines_col_txt[i][1])    
-                        lines_col_txt[i][1]=lines_col_txt[i][1].replace('COMMENT:','*****')
-                    }
-                    */
+
+                    console.log("-----------------------------------------------------------")
                     console.log("lines:")
                     console.log(lines)                    
+                    console.log("-----------------------------------------------------------")
 
                     list_matrices.push(lines);
-                    //list_matrices.push(lines_col_txt);
 
                     let scroller = document.getElementById("scroller");
                     let anchor = document.getElementById("anchor");
@@ -432,6 +407,7 @@
 
                     k=0;
                     iter = setInterval(print_html_LINE,50);
+                    let col_text_line = []
                 
                     // Printing line by line with small delay
                     function print_html_LINE() {
@@ -463,9 +439,6 @@
                     }
 
                 }
-
-
-
                
             })
 
