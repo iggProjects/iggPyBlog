@@ -282,8 +282,8 @@ def result_script_exec():
             print(f"{FR_YELL}====== exit result_script_exec() for html ======{NO_COLOR}\n")
             print(f"{FR_YELL}====== go to result_script_exec.html ======{NO_COLOR}\n")
 
-            # return redirect(url_for('result_script_html'))
-            return render_template('result_script_exec.html')
+            #return render_template('result_script_exec.html')
+            return render_template('result_script_html.html')
             #return render_template('result_script_exec.html', csv_file_name=csv_file_name, py_name=py_name)
             #return render_template('result_script_exec.html',list_lines=list_color_text, list_JS_lines=list_JS_lines,  csv_file_name=csv_file_name, py_name=py_name)
 
@@ -525,7 +525,7 @@ def result_script_exec1():
             print(f"{FR_BLUE}worker name value --> {workers}")
             
             print(f"{FR_YELL}====== exit result_script_exec1() for html ======{NO_COLOR}\n")
-            print(f"{FR_YELL}====== go to result_script_exec.html ======{NO_COLOR}\n")
+            print(f"{FR_YELL}====== go to result_script_html.html ======{NO_COLOR}\n")
 
             # return redirect(url_for('result_script_html'))
             return render_template('result_script_html.html')
@@ -573,35 +573,25 @@ def result_script_html():
         csv_file_name = session['textLines_file_name']
         print(f"{FR_RED}csv file name: {csv_file_name} | py_name: {py_name} | workers: {workers}{NO_COLOR}")     
         print("----------------------------------------------")
-
+        """
         # read file of text lines
         textLines_file_name = basedir + "/static/temp/" + session['textLines_file_name'] 
         list_text_lines = []
         with open(textLines_file_name) as f:
             list_text_lines = f.readlines()
-
+        """
         try:
-
+            """    
             print(f"{FR_GREEN}.....type of var list_text_lines: {type(list_text_lines)} | length: {len(list_text_lines)}{NO_COLOR}")    
             print(f"{FR_GREEN}.....type of var list_text_lines[0]: {type(list_text_lines[0])} | value: {list_text_lines[0]}{NO_COLOR}")
             print(f"{FR_GREEN}.....type of var list_text_lines[0]: {type(list_text_lines[0])} | value: {list_text_lines[0].split(',')}{NO_COLOR}")
             print(f"{FR_GREEN}.....type of var list_text_lines[0].split(','): {type((list_text_lines[0]).split(','))}")
+            """
+            print()    
+            print(f"{NO_COLOR}----------------------------------------------")
+            print(f"{FR_YELL}Going FROM 'result_script_html' TO 'result_script_html.html' with csv file name & py_name & workers=''{NO_COLOR}")        
+            print("----------------------------------------------")
 
-            #print(f"{FR_GREEN}.....type of var list_text_lines[0][0]: {type(list_text_lines[0][0])} | value: {list_text_lines[0][0]}{NO_COLOR}")
-            #print(f"{FR_GREEN}.....list: {list_text_lines}")   
-            
-            list_color_text_lines = []
-            for line in list_text_lines:        
-                temp_line1 = line.replace('\n','').split(',')
-                #temp_line1 = temp_line1.split(',')       
-
-                if len(temp_line1) > 1:
-                    #print(f"{FR_GREEN}list_text_lines---> {temp_line2}")    
-                    print(f"{FR_GREEN}list_text_lines---> {temp_line1[0]} | {temp_line1[1]}")
-                    list_color_text_lines.append(temp_line1)   
-
-            #return render_template('result_script_html.html', csv_file_name = csv_file_name, list_lines=list_color_text_lines, list_JS_lines=list_matrix_lines, py_name=py_name, workers=workers)
-            #return render_template('result_script_html.html')
             return render_template('result_script_html.html', csv_file_name=csv_file_name, py_name=py_name, workers=workers)
 
         except Exception as Argument:
