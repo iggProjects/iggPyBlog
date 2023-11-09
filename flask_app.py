@@ -153,8 +153,6 @@ def result_script_exec():
 
         session['py_name'] = ""
         session['workers'] = ""
-        #session['list_lines'] = []
-        #session['list_JS_lines'] = []
 
         # read path to script
         py_script_path = request.args['py_path']
@@ -163,16 +161,6 @@ def result_script_exec():
         py_name = py_list[len(py_list)-1]
         print(f"script py name: {py_name}")
         print(f"py_list: {py_list}")
-
-        """
-        # call subprocess to excecute py_script_path 
-        if opSys == "Windows":        
-            text = subprocess.run(["cmd", "/c", "python.exe", py_script_path],capture_output=True)    
-        elif opSys == "Linux":
-            text = subprocess.run(["/usr/bin/bash", "-c", f"python {py_script_path}"],capture_output=True)
-        else:
-            print(f"Please check how to pass list of parameters for operating system: {opSys}")
-        """ 
 
         try: 
 
@@ -203,8 +191,6 @@ def result_script_exec():
                 print(f"==> line: {line}")
 
             list_color_text = []
-            list_JS_lines = []
-            #lines_colors = []
 
             for line in list_b_lines:
                 #new_line = "<p>" + str(line) + "</p>"
@@ -264,14 +250,7 @@ def result_script_exec():
 
                     # Replace ',' by ';' in temp_line1[1] field for html printing effects
                     new_line = new_line.replace(',',';')
-
                     #print(f"line to print: {new_line}")
-                    js_line = new_line
-                    
-                    if '0' or '1' or '9' in js_line[0]:                
-                        list_JS_lines.append(js_line.replace(' ',''))
-                    else:
-                        pass
 
                     new_line=Markup(new_line)
                     list = [color,new_line]
@@ -279,28 +258,7 @@ def result_script_exec():
                     
                     print(f"new_line formatted => {list}")
             
-            # print(f"list_JS_lines type: {type(list_JS_lines)} | first line: {list_JS_lines[2]}")
-            
-            # print(f"{FR_YELL}====== exit result_script_exec() in html ======{NO_COLOR}\n")
-            
-            # write list as text file
-            # first case, output with matrix of (0,1,9) form from 'list_JS_lines' 
-            # delete if exists    
-            if os.path.exists("list_JS_lines.txt"):
-                os.remove("list_JS_lines.txt")
-                print(f"{FR_GREEN}........ old list_JS_lines.txt deleted")    
-            
-            with open(basedir + '/static/temp/list_JS_lines.txt', 'w') as f:
-            #with open('list_JS_lines.txt', 'w') as f:
-                for line in list_JS_lines:
-                    f.write(f"{line}\n")
-            
-            # second case, output with lines of text from 'list_color_text' 
-            # delete if exists  
-            if os.path.exists("list_text_lines.txt"):
-                os.remove("list_text_lines.txt")
-                print(f"{FR_GREEN}........ old list_text_lines.txt deleted")    
-
+ 
             # https://www.geeksforgeeks.org/python-save-list-to-csv/
             import csv
 
@@ -310,41 +268,24 @@ def result_script_exec():
                 print(f"{FR_GREEN}........ old list_text_lines.csv deleted")    
 
             # data rows of csv file --> list_color_text
-            with open(basedir + '/static/temp/list_text_lines.csv', 'w') as f:
-            #with open('list_text_lines.csv', 'w') as f:
-                
+            with open(basedir + '/static/temp/list_text_lines.csv', 'w') as f:           
                 # using csv.writer method from CSV package
                 write = csv.writer(f,delimiter=",")
                 write.writerows(list_color_text)
-
-            """
-            with open('list_text_lines.txt', 'w') as f:
-                for line in list_color_text:
-                    f.write(f"{line}\n")
-            """
-
-            """
-            with open('list_text_lines.txt', "w") as f:
-                json.dump(list_color_text, f)
-            """       
-            
-            # session variable to call render_template
-            #session['matrix_file_name'] = 'list_JS_lines.txt'
+           
+            # session variable to call render_template           
             session['textLines_file_name'] = 'list_text_lines.csv'
-
-            print(f"{FR_RED}py_name previous calling session parameter: {py_name}{NO_COLOR}")
             session['py_name'] = py_name            
             print(f"{FR_RED}py_name session parameter: {session['py_name']}{NO_COLOR}")
+            print(f"{FR_RED}csv file name session parameter: {session['textLines_file_name']}{NO_COLOR}")
 
-            #session['list_lines'] = list_color_text
-            #session['list_JS_lines'] = list_JS_lines    
-            
             print(f"{FR_YELL}====== exit result_script_exec() for html ======{NO_COLOR}\n")
             print(f"{FR_YELL}====== go to result_script_exec.html ======{NO_COLOR}\n")
 
             # return redirect(url_for('result_script_html'))
-            return render_template('result_script_exec.html', csv_file_name=session['textLines_file_name'], py_name=py_name)
-            #return render_template('result_script_exec.html',list_lines=list_color_text, list_JS_lines=list_JS_lines, py_name=py_name)
+            return render_template('result_script_exec.html')
+            #return render_template('result_script_exec.html', csv_file_name=csv_file_name, py_name=py_name)
+            #return render_template('result_script_exec.html',list_lines=list_color_text, list_JS_lines=list_JS_lines,  csv_file_name=csv_file_name, py_name=py_name)
 
         except Exception as Argument:   
             """     
@@ -373,9 +314,6 @@ def result_script_exec():
         logging.exception("error from func result_script_exec() | exception() => "  + str(Argument))
         error_msg = "error from function 'result_script_exec()' => "  + str(Argument)
         return render_template('error_page.html', error_msg = error_msg )
-
-
-
 
 # subprocess with a dict as parameter
 #   - https://stackoverflow.com/questions/48395685/launch-a-python-script-from-another-script-with-parameters-in-subprocess-argume
@@ -581,7 +519,7 @@ def result_script_exec1():
             session['matrix_file_name'] = 'list_JS_lines.txt'
             session['textLines_file_name'] = 'list_text_lines.csv'
             session['py_name'] = py_name
-            #session['list_lines'] = list_color_text
+            session['list_lines'] = list_color_text
             #session['list_JS_lines'] = list_JS_lines 
             session['workers'] = workers
             print(f"{FR_BLUE}worker name value --> {workers}")
@@ -633,19 +571,9 @@ def result_script_html():
         py_name = session['py_name']
         workers = session['workers']
         csv_file_name = session['textLines_file_name']
-        print(f"{FR_RED}py_name: {py_name} | workers: {workers} | csv file name: {csv_file_name}{NO_COLOR}")     
+        print(f"{FR_RED}csv file name: {csv_file_name} | py_name: {py_name} | workers: {workers}{NO_COLOR}")     
         print("----------------------------------------------")
 
-
-        # read file of matrix lines
-        matrix_file_name = basedir + "/static/temp/" + session['matrix_file_name'] 
-        list_matrix_lines = []
-        with open(matrix_file_name) as f:
-            list_matrix_lines = f.readlines()        
-        """
-        for line in list_matrix_lines:
-            print(f"{FR_GREEN}...... {line}")    
-        """
         # read file of text lines
         textLines_file_name = basedir + "/static/temp/" + session['textLines_file_name'] 
         list_text_lines = []
@@ -671,30 +599,16 @@ def result_script_html():
                     #print(f"{FR_GREEN}list_text_lines---> {temp_line2}")    
                     print(f"{FR_GREEN}list_text_lines---> {temp_line1[0]} | {temp_line1[1]}")
                     list_color_text_lines.append(temp_line1)   
-                
-            print("----------------------------------------------")
-
-            list_lines = session['list_lines']
-            print(f"{FR_YELL}.....type of var list_lines: {type(list_lines)} | length: {len(list_lines)}{NO_COLOR}")
-            print(f"{FR_YELL}.....type of var list_text_lines[0]: {type(list_lines[0])} | value: {list_lines[0]}{NO_COLOR}")    
-            print(f"{FR_YELL}.....type of var list_text_lines[0][0]: {type(list_lines[0][0])} | value: {list_lines[0][0]}{NO_COLOR}") 
-            #print(f"{FR_YELL}.....list: {list_lines}")   
-            """
-            for line in list_lines:
-                print(f"{FR_YELL}list_lines===> {line}")    
-            """
-            print("----------------------------------------------")
 
             #return render_template('result_script_html.html', csv_file_name = csv_file_name, list_lines=list_color_text_lines, list_JS_lines=list_matrix_lines, py_name=py_name, workers=workers)
-            return render_template('result_script_html.html', csv_file_name = csv_file_name, py_name=py_name, workers=workers)
+            #return render_template('result_script_html.html')
+            return render_template('result_script_html.html', csv_file_name=csv_file_name, py_name=py_name, workers=workers)
 
         except Exception as Argument:
             write_log_file("my_messages.txt","ERROR FROM 'func result_script_html(), NO DATA ! ... SEE server_messages.txt'")
             logging.exception("error from function 'result_script_html()' - NO DATA ! |exception => "  + str(Argument))
             error_msg = "error from function 'result_script_html()' - NO DATA ! | exception => "  + str(Argument)
             return render_template('error_page.html', error_msg = error_msg )
-
-
 
     except Exception as Argument:   
         """     
