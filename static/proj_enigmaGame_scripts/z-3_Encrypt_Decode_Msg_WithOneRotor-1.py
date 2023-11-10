@@ -59,7 +59,7 @@ if __name__ == "__main__":
         alphab = list('yzxuqrbapsfwjdtgiomhvelckn')  # a permutation of the alphab that is not a rotation
 
             
-        print(f"{FR_BLUE}== INITIAL PERMUTED ALPHABET:  {FR_GREEN}{' '.join(alphab)} ==={NO_COLOR}")
+        print(f"{FR_BLUE}== INITIAL PERMUTED ALPHABET:  {' '.join(alphab)} ==={NO_COLOR}")
 
         print("print empty line")
         print(f"{FR_GREEN}List of the {len(alphab)-1} distinct rotations of permuted alphabet{NO_COLOR}")
