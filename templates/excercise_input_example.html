@@ -97,7 +97,7 @@ check if 'cancel' button was clicked
 
             var request = new XMLHttpRequest()
             //request.open("GET", "/result_script_exec1/?py_path=" + py_path + "&workers=IGG", true)
-            request.open("GET", "/result_script_exec1/?py_path=" + py_path + "&workers=" + workers_json, true)
+            request.open("GET", "/result_script_exec_workers/?py_path=" + py_path + "&workers=" + workers_json, true)
             request.onreadystatechange = function() {
                 if(request.readyState == XMLHttpRequest.DONE && request.status == 200) {
                     window.location.href = '/result_script_html';

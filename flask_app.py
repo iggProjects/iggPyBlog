@@ -139,9 +139,16 @@ def ExecPythonScript():
    
     return ""
 
+# running subprocess to get text file. This files is transformed in another 
+#         using rules to assign colors and text for each line.
+# This function pass 3 session parameters to folow in the process of deploy an
+#         web console. 
+# In this case the variable workers is empty. For excercise 11, that need workers interactive
+#         info, the function is result_script_exec_workers
+
 @app.route('/result_script_exec/')
 def result_script_exec():
-
+    
     try:         
 
         write_log_file("my_messages.txt","IN 'func result_script_exec()'")
@@ -288,13 +295,6 @@ def result_script_exec():
             #return render_template('result_script_exec.html',list_lines=list_color_text, list_JS_lines=list_JS_lines,  csv_file_name=csv_file_name, py_name=py_name)
 
         except Exception as Argument:   
-            """     
-            logging.error(Argument)
-            logging.warning(Argument)
-            logging.info(Argument)
-            logging.debug(Argument) 
-            logging.critical(Argument)               
-            """
             write_log_file("my_messages.txt","ERROR FROM 'func result_script_exec(), SEE server_messages.txt'")
             logging.exception("error from func 'result_script_exec()' when executing subprocess ! | exception() => "  + str(Argument))
             error_msg = "error from function 'result_script_exec()' when executing subprocess ! => "  + str(Argument)
@@ -303,13 +303,6 @@ def result_script_exec():
 
 
     except Exception as Argument:   
-        """     
-        logging.error(Argument)
-        logging.warning(Argument)
-        logging.info(Argument)
-        logging.debug(Argument) 
-        logging.critical(Argument)               
-        """
         write_log_file("my_messages.txt","ERROR FROM 'func result_script_exec(), SEE server_messages.txt'")
         logging.exception("error from func result_script_exec() | exception() => "  + str(Argument))
         error_msg = "error from function 'result_script_exec()' => "  + str(Argument)
@@ -321,13 +314,13 @@ def result_script_exec():
 #   - 
 
 # ONLY FOR 'INPUT WORKERS EXAMPLE' (excercise 11)
-@app.route('/result_script_exec1/')
-def result_script_exec1():
+@app.route('/result_script_exec_workers/')
+def result_script_exec_workers():
 
     try:
 
-        write_log_file("my_messages.txt","IN 'func result_script_exec1()'")
-        print(f"{FR_YELL}\n====== in result_script_exec1() for html ======{NO_COLOR}\n")
+        write_log_file("my_messages.txt","IN 'func result_script_exec_workers()'")
+        print(f"{FR_YELL}\n====== in result_script_exec_workers() for html ======{NO_COLOR}\n")
     
         import subprocess, json
         from flask import Markup  
@@ -524,7 +517,7 @@ def result_script_exec1():
             session['workers'] = workers
             print(f"{FR_BLUE}worker name value --> {workers}")
             
-            print(f"{FR_YELL}====== exit result_script_exec1() for html ======{NO_COLOR}\n")
+            print(f"{FR_YELL}====== exit result_script_exec_workers() for html ======{NO_COLOR}\n")
             print(f"{FR_YELL}====== go to result_script_html.html ======{NO_COLOR}\n")
 
             # return redirect(url_for('result_script_html'))
@@ -540,9 +533,9 @@ def result_script_exec1():
             logging.debug(Argument) 
             logging.critical(Argument)               
             """
-            write_log_file("my_messages.txt","ERROR FROM 'func result_script_exec1(), SEE server_messages.txt'")
-            logging.exception("error from func 'result_script_exec1()' when executing subprocess ! | exception() => "  + str(Argument))
-            error_msg = "error from function 'result_script_exec1()' when executing subprocess ! => "  + str(Argument)
+            write_log_file("my_messages.txt","ERROR FROM 'func result_script_exec_workers(), SEE server_messages.txt'")
+            logging.exception("error from func 'result_script_exec_workers()' when executing subprocess ! | exception() => "  + str(Argument))
+            error_msg = "error from function 'result_script_exec_workers()' when executing subprocess ! => "  + str(Argument)
             return render_template('error_page.html', error_msg = error_msg )
 
     except Exception as Argument:   
@@ -553,9 +546,9 @@ def result_script_exec1():
         logging.debug(Argument) 
         logging.critical(Argument)               
         """
-        write_log_file("my_messages.txt","ERROR FROM 'func result_script_exec1(), SEE server_messages.txt'")
-        logging.exception("error from func result_script_exec1() | exception() => "  + str(Argument))
-        error_msg = "error from function 'result_script_exec1()' => "  + str(Argument)
+        write_log_file("my_messages.txt","ERROR FROM 'func result_script_exec_workers(), SEE server_messages.txt'")
+        logging.exception("error from func result_script_exec_workers() | exception() => "  + str(Argument))
+        error_msg = "error from function 'result_script_exec_workers()' => "  + str(Argument)
         return render_template('error_page.html', error_msg = error_msg )
 
 @app.route('/result_script_html')

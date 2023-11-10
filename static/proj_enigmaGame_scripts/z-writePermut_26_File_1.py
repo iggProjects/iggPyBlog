@@ -1,21 +1,39 @@
-#
+"""  
+    
+    THIS SCRIPT IS FOR .............
+
+"""
 # IMPORT SECTION
-#
-import os
-from os import system
-import string, random, time
-from datetime import datetime
 
-import sys
+try:   # Import My Own Functions from include dir 
+	import sys, traceback, random
+	import numpy as np
+	import multiprocessing
+	import time
+	import sys
+	from os import system	
+	from os.path import dirname, realpath
+	from os import scandir
+	# get parent up 2 from __file__ path: 'static path'   
+	up2_dir = dirname(dirname(dirname(realpath(__file__))))
+	# insert path in sys.path
+	sys.path.append(up2_dir)
+	# get parent up 3 from __file__ path: 'static parent path'       
+	up3_dir = dirname(dirname(dirname(dirname(realpath(__file__)))))
+	# insert path in sys.path
+	sys.path.append(up3_dir)
+	# import My Own Func
+	from static.include.MyFunc import *
+	from static.include.MyColors import *
 
-# add ROOT PATH to SYS.PATH
-ROOT_DIR = os.path.abspath(os.curdir)
-sys.path.insert(1, ROOT_DIR)
+except Exception as ImportError:
+    FR_RED   = "\033[91m" 
+    NO_COLOR = "\033[00m"
+    print("print empty line") 
+    print(f"{FR_RED}IMPORT ERROR ==>{NO_COLOR} {ImportError} | {ImportError.__class__} | {ImportError.__doc__}")
 
-# My Own Funct in root path
-from MyFunc import *
+# ---------- CONSTANTS & FUNCTIONS ----------
 
-# CONSTANTS
 NUM_ALPHAB = 1000
 
 # pause function
@@ -31,86 +49,101 @@ def place_comma(numb):
 # MAIN
 if __name__ == "__main__":
 
-    # time
-    inicio = time.time()
-    #system('cls')
-    #print(f"ROOT_DIR: {ROOT_DIR} | basedir: {basedir}")
-    print("print empty line")
-    print(f"{FR_GREEN}=== MAIN")
-    print("print empty line")
-    print(f"{FR_GREEN}=== Process generating permutations of \'abcdefghijklmnopqrstuvwxyz\' start at {datetime.datetime.now()}")
-    print("print empty line")
+    try:
 
-    alphab_26 = 'abcdefghijklmnopqrstuvwxyz'
-    alphab_26_list = list(alphab_26)
-    numb_alphab = 0
-    alphab_with_char_conflict = 0
-    num_chars_equal = 0
+        my_script = __file__.split('\\')
+        my_script_name = my_script[len(my_script)-1]
+        print("print empty line")
+        write_log_file("my_messages.txt","IN '" + my_script_name + "'")
+        print("print empty line")
 
-    # delete if exists  
-    if os.path.exists(basedir + "/static/proj_enigmaGame_scripts/temp/z-permutFile.txt"):
-        os.remove(basedir + "/static/proj_enigmaGame_scripts/temp/z-permutFile.txt")
-        print(f"\told z-permutFile.txt deleted")    
+        print(f"{FR_GREEN}---------- MAIN ----------{NO_COLOR}")
+        print("print empty line")
 
-    if os.path.exists(basedir + "/static/proj_enigmaGame_scripts/temp/z-permutFileSorted.txt"):
-        os.remove(basedir + "/static/proj_enigmaGame_scripts/temp/z-permutFileSorted.txt")
-        print(f"\told z-permutFileSorted.txt deleted")    
+        # time
+        inicio = time.time()
+        print("print empty line")
+        print(f"{FR_GREEN}=== MAIN")
+        print("print empty line")
+        print(f"{FR_GREEN}=== Process generating permutations of \'abcdefghijklmnopqrstuvwxyz\' start at {datetime.datetime.now()}")
+        print("print empty line")
+
+        alphab_26 = 'abcdefghijklmnopqrstuvwxyz'
+        alphab_26_list = list(alphab_26)
+        numb_alphab = 0
+        alphab_with_char_conflict = 0
+        num_chars_equal = 0
+
+        # delete if exists  
+        if os.path.exists(basedir + "/static/proj_enigmaGame_scripts/temp/z-permutFile.txt"):
+            os.remove(basedir + "/static/proj_enigmaGame_scripts/temp/z-permutFile.txt")
+            print(f"\told z-permutFile.txt deleted")    
+
+        if os.path.exists(basedir + "/static/proj_enigmaGame_scripts/temp/z-permutFileSorted.txt"):
+            os.remove(basedir + "/static/proj_enigmaGame_scripts/temp/z-permutFileSorted.txt")
+            print(f"\told z-permutFileSorted.txt deleted")    
 
 
-    while numb_alphab < NUM_ALPHAB:
+        while numb_alphab < NUM_ALPHAB:
 
-        alp = list(alphab_26)
-        random.shuffle(alp)
-        
-        # discard permutations that keep the character in place
-        for i in range(26):
-            if alp[i] == alphab_26_list[i]:
-                #print(f"{i+1}: {''.join(alp)} | {''.join(alphab_15_list)}")
-                num_chars_equal +=1
-        #print()       
+            alp = list(alphab_26)
+            random.shuffle(alp)
+            
+            # discard permutations that keep the character in place
+            for i in range(26):
+                if alp[i] == alphab_26_list[i]:
+                    #print(f"{i+1}: {''.join(alp)} | {''.join(alphab_15_list)}")
+                    num_chars_equal +=1
+            #print()       
 
-        if num_chars_equal == 0:
-            alp = ''.join(alp)
-            alp = alp + '\n'
-            permutFile = open(basedir + "/static/proj_enigmaGame_scripts/temp/z-permutFile.txt", "a")
-            permutFile.write(alp)
-            permutFile.close()
-            numb_alphab += 1
-        else:
-            alphab_with_char_conflict += 1    
+            if num_chars_equal == 0:
+                alp = ''.join(alp)
+                alp = alp + '\n'
+                permutFile = open(basedir + "/static/proj_enigmaGame_scripts/temp/z-permutFile.txt", "a")
+                permutFile.write(alp)
+                permutFile.close()
+                numb_alphab += 1
+            else:
+                alphab_with_char_conflict += 1    
 
-        num_chars_equal = 0              
-    
-    # delete duplicated lines and sort
-    uniqlines = set(open(basedir + "/static/proj_enigmaGame_scripts/temp/z-permutFile.txt").readlines())
-    uniqlines = sorted(uniqlines)
-    #print(f"uniqlines type is {type(uniqlines)}")
-    open(basedir + "/static/proj_enigmaGame_scripts/temp/z-permutFileSorted.txt", 'w').writelines(uniqlines)
+            num_chars_equal = 0              
 
-    # delete z-permutFile.txt
-    if os.path.exists(basedir + "/static/proj_enigmaGame_scripts/temp/z-permutFile.txt"):
-        os.remove(basedir + "/static/proj_enigmaGame_scripts/temp/z-permutFile.txt")
-        print(f"\tz-permutFile.txt deleted")
-        print("print empty line")   
+        # delete duplicated lines and sort
+        uniqlines = set(open(basedir + "/static/proj_enigmaGame_scripts/temp/z-permutFile.txt").readlines())
+        uniqlines = sorted(uniqlines)
+        #print(f"uniqlines type is {type(uniqlines)}")
+        open(basedir + "/static/proj_enigmaGame_scripts/temp/z-permutFileSorted.txt", 'w').writelines(uniqlines)
 
-    # time
-    elapsed_time = (time.time()-inicio)
-    #elapsed_time = "{:.2f}".format(time.time()-inicio)
-    alphab_per_seconds = (numb_alphab + alphab_with_char_conflict)/(time.time()-inicio)
-    alphab_per_seconds_format = place_comma(int(alphab_per_seconds))
-    #alphab_per_seconds_format = "{:,.0f}".format(alphab_per_seconds)
+        # delete z-permutFile.txt
+        if os.path.exists(basedir + "/static/proj_enigmaGame_scripts/temp/z-permutFile.txt"):
+            os.remove(basedir + "/static/proj_enigmaGame_scripts/temp/z-permutFile.txt")
+            print(f"\tz-permutFile.txt deleted")
+            print("print empty line")   
 
-    print(f"{FR_GREEN}\tNumber of new alphabets in z-permutFileSorted.txt: {numb_alphab}")
-    print(f"{FR_GREEN}\tTotal alphabets discarded by conflict in character position: {alphab_with_char_conflict}")
-    print("print empty line")
-    print(f"{FR_GREEN}=== process generating alphabets stoped at {datetime.datetime.now()}")
-    print("print empty line")
-    print(f"\tElapsed time in seconds: {str(elapsed_time).replace(',','.')}")
-    print("print empty line")
-    print(f"\tTotal Alphabets per Seconds: {alphab_per_seconds_format}")
-    print("print empty line")
-    print(f"{FR_GREEN}=== That\'s All")
-    
+        # time
+        elapsed_time = (time.time()-inicio)
+        #elapsed_time = "{:.2f}".format(time.time()-inicio)
+        alphab_per_seconds = (numb_alphab + alphab_with_char_conflict)/(time.time()-inicio)
+        alphab_per_seconds_format = place_comma(int(alphab_per_seconds))
+        #alphab_per_seconds_format = "{:,.0f}".format(alphab_per_seconds)
+
+        print(f"{FR_GREEN}\tNumber of new alphabets in z-permutFileSorted.txt: {numb_alphab}")
+        print(f"{FR_GREEN}\tTotal alphabets discarded by conflict in character position: {alphab_with_char_conflict}")
+        print("print empty line")
+        print(f"{FR_GREEN}=== process generating alphabets stoped at {datetime.datetime.now()}")
+        print("print empty line")
+        print(f"\tElapsed time in seconds: {str(elapsed_time).replace(',','.')}")
+        print("print empty line")
+        print(f"\tTotal Alphabets per Seconds: {alphab_per_seconds_format}")
+        print("print empty line")
+        print(f"{FR_GREEN}=== That\'s All")
+
+    except Exception as Argument:
+        error_msg = "ERROR IN <" + my_script_name + ">. SEE server_messages.txt !"
+        write_log_file("my_messages.txt",error_msg)
+        write_traceback_info_1(Argument,traceback,my_script_name)        
+
+
 else:
     # something wrong
     print(f"{FR_RED}---- upsssssssss something is wrong 😢😢  ---")

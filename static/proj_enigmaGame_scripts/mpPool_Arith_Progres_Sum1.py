@@ -11,20 +11,42 @@
 # Atencion: multiprocessing.current_process()
 #
 
-import multiprocessing
-import time
-import sys
-from os import system
+"""  
+    
+    THIS SCRIPT IS FOR .............
 
-# CONSTANTS
+"""
+# IMPORT SECTION
 
-# Colors
-NO_COLOR = "\033[00m"
-FR_RED   = "\033[91m"
-FR_GREEN = "\033[92m"
-FR_YELL  = "\033[93m"
-FR_BLUE  = "\033[94m"
-FR_MAG   = "\033[95m"
+try:   # Import My Own Functions from include dir 
+	import sys, traceback
+	import numpy as np
+	import multiprocessing
+	import time
+	import sys
+	from os import system	
+	from os.path import dirname, realpath
+	from os import scandir
+	# get parent up 2 from __file__ path: 'static path'   
+	up2_dir = dirname(dirname(dirname(realpath(__file__))))
+	# insert path in sys.path
+	sys.path.append(up2_dir)
+	# get parent up 3 from __file__ path: 'static parent path'       
+	up3_dir = dirname(dirname(dirname(dirname(realpath(__file__)))))
+	# insert path in sys.path
+	sys.path.append(up3_dir)
+	# import My Own Func
+	from static.include.MyFunc import *
+	from static.include.MyColors import *
+
+except Exception as ImportError:
+    FR_RED   = "\033[91m" 
+    NO_COLOR = "\033[00m"
+    print("print empty line") 
+    print(f"{FR_RED}IMPORT ERROR ==>{NO_COLOR} {ImportError} | {ImportError.__class__} | {ImportError.__doc__}")
+
+
+# ---------- CONSTANTS & FUNCTIONS ----------
 
 # param 1_ first element for all progressions
 ELEM_1 = 1
@@ -76,74 +98,90 @@ def suma(lista,N_CPUS):
 	print("print empty line")		
 
 #
-# PROGRAMA
+# PROGRAM
 #
 
 if __name__ == '__main__':
 
-	system('cls')
-	print("print empty line")
-	print("\t=================  MAIN =================")
+	try:
 
-	# to control limit of cpu in your laptop
-	if N_CPUS > multiprocessing.cpu_count():	
-		print(f"\tThis PC doesn't have {N_CPUS} CPU's, then we assume max of PC: {multiprocessing.cpu_count()}")
-		N_CPUS = multiprocessing.cpu_count()
+		my_script = __file__.split('\\')
+		my_script_name = my_script[len(my_script)-1]
+		print("print empty line")
+		write_log_file("my_messages.txt","IN '" + my_script_name + "'")
+		print("print empty line")
 
-	# Max Number of CPU's	
-	print("print empty line")
-	print(f"{FR_YELL}\t======= Max number of cpu's in PC: {multiprocessing.cpu_count()} ======={NO_COLOR}")
-	print("print empty line")
-	print(f"{FR_GREEN}\tNumber of CPU for this multiprocessing task: {N_CPUS}{NO_COLOR}")
-	print(f"\t\tNumber of artihmetical progresions: {place_comma(N_PROGR)}")
-	print(f"\t\tfirst term: {ELEM_1}")
-	print(f"\t\tfirst 'd': {D_1}")
-	print(f"\t\tnumber of terms to include for each AP: {place_comma(N_TER)}")
-	print("print empty line")
-	#print(f"\tNumber of artihmetical progresions: {place_comma(N_PROGR)}")
-	#print(f"\t\tfirst term: {ELEM_1}\n\t\tfirst 'd': {D_1}\n\t\tnumber of terms to include for each AP: {place_comma(N_TER)}\n")
-	
-	# pause()	
-	# hora inicio
-	time.sleep(1)
-	inicio = time.time()
+		print(f"{FR_GREEN}---------- MAIN ----------{NO_COLOR}")
+		print("print empty line")
 
-	# d-lista of arithmetic progressions 
-	d_list = [(D_1 + 2*x) for x in range(0, N_PROGR)]
-	
-	# CALL multiprocessing function
-	suma(d_list,N_CPUS)
+		# to control limit of cpu in your laptop
+		if N_CPUS > multiprocessing.cpu_count():	
+			print(f"\tThis PC doesn't have {N_CPUS} CPU's, then we assume max of PC: {multiprocessing.cpu_count()}")
+			N_CPUS = multiprocessing.cpu_count()
 
-	# number of operations
-	arit_oper = N_PROGR * ( N_TER - 1 )
+		# Max Number of CPU's	
+		print("print empty line")
+		print(f"{FR_YELL}\t======= Max number of cpu's in PC: {multiprocessing.cpu_count()} ======={NO_COLOR}")
+		print("print empty line")
+		print(f"{FR_GREEN}\tNumber of CPU for this multiprocessing task: {N_CPUS}{NO_COLOR}")
+		print(f"\t\tNumber of artihmetical progresions: {place_comma(N_PROGR)}")
+		print(f"\t\tfirst term: {ELEM_1}")
+		print(f"\t\tfirst 'd': {D_1}")
+		print(f"\t\tnumber of terms to include for each AP: {place_comma(N_TER)}")
+		print("print empty line")
+		#print(f"\tNumber of artihmetical progresions: {place_comma(N_PROGR)}")
+		#print(f"\t\tfirst term: {ELEM_1}\n\t\tfirst 'd': {D_1}\n\t\tnumber of terms to include for each AP: {place_comma(N_TER)}\n")
 
-	# number of prints
-	count_prints = 0
-	for i in range(len(d_list)):
-		if ( d_list[i] - 1 ) % BASE == 0:
-			count_prints += 1
-	
-	elap_time = time.time() - inicio
-	time_5_dec = "{:.5f}".format(elap_time)
+		# pause()	
+		# hora inicio
+		time.sleep(1)
+		inicio = time.time()
 
-	print(f"{FR_YELL}\t============ BALANCE ============{NO_COLOR}")
-	print("print empty line")	
-	print(f"\t{FR_BLUE}{place_comma(N_PROGR)} Progressions{NO_COLOR}")
-	print(f"\tFor each Arith P:")
-	print(f"\t\tFirst Element: {ELEM_1}")
-	print(f"\t\t'd' has the value in 'd_list' array according to position in loop")
-	print(f"\t\tNumber of terms: {place_comma(N_TER)}")
-	print("print empty line")
-	print(f"\tFormula to create List of 'd': [(D_1 + 2*x) for x in range(0 .. N_PROGR)]")	
-	#print(f"{FR_GREEN}======= d_list ======={NO_COLOR}\n{d_list}")
-	print(f"\tNumb CPU's used: {N_CPUS} | Number of artihmetic operations (aprox): {place_comma(arit_oper)}")
-	print(f"\tNumber of prints: {count_prints}")
-	print("print empty line")
+		# d-lista of arithmetic progressions 
+		d_list = [(D_1 + 2*x) for x in range(0, N_PROGR)]
 
-	print(f"\t{FR_GREEN}Elapsed time: {time_5_dec} seconds{NO_COLOR}")
-	print("print empty line")
+		# CALL multiprocessing function
+		suma(d_list,N_CPUS)
 
-	print(f"\t{FR_YELL}======== that's all ========{NO_COLOR}")
-	print("print empty line")
+		# number of operations
+		arit_oper = N_PROGR * ( N_TER - 1 )
 
+		# number of prints
+		count_prints = 0
+		for i in range(len(d_list)):
+			if ( d_list[i] - 1 ) % BASE == 0:
+				count_prints += 1
+
+		elap_time = time.time() - inicio
+		time_5_dec = "{:.5f}".format(elap_time)
+
+		print(f"{FR_YELL}\t============ BALANCE ============{NO_COLOR}")
+		print("print empty line")	
+		print(f"\t{FR_BLUE}{place_comma(N_PROGR)} Progressions{NO_COLOR}")
+		print(f"\tFor each Arith P:")
+		print(f"\t\tFirst Element: {ELEM_1}")
+		print(f"\t\t'd' has the value in 'd_list' array according to position in loop")
+		print(f"\t\tNumber of terms: {place_comma(N_TER)}")
+		print("print empty line")
+		print(f"\tFormula to create List of 'd': [(D_1 + 2*x) for x in range(0 .. N_PROGR)]")	
+		#print(f"{FR_GREEN}======= d_list ======={NO_COLOR}\n{d_list}")
+		print(f"\tNumb CPU's used: {N_CPUS} | Number of artihmetic operations (aprox): {place_comma(arit_oper)}")
+		print(f"\tNumber of prints: {count_prints}")
+		print("print empty line")
+
+		print(f"\t{FR_GREEN}Elapsed time: {time_5_dec} seconds{NO_COLOR}")
+		print("print empty line")
+
+		print(f"\t{FR_YELL}======== that's all ========{NO_COLOR}")
+		print("print empty line")
+		print(f"{FR_GREEN}---------- That's all for today ----------{NO_COLOR}")
+
+	except Exception as Argument:
+		error_msg = "ERROR IN <" + my_script_name + ">. SEE server_messages.txt !"
+		write_log_file("my_messages.txt",error_msg)
+		write_traceback_info_1(Argument,traceback,my_script_name)        
+    
+else:
+    # something wrong
+    print(frRED("---- upsssssssss something is wrong ----"))
 	

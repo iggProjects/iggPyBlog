@@ -20,9 +20,16 @@ ROOT_DIR = os.path.abspath(os.curdir)
 sys.path.insert(1, ROOT_DIR)
 
 # My Own Funct in root path
-from MyFunc import *
+#from MyFunc import *
 
 # CONSTANTS
+NO_COLOR = "\033[00m"
+FR_RED   = "\033[91m"
+FR_GREEN = "\033[92m"
+FR_YELL  = "\033[93m"
+FR_BLUE  = "\033[94m"
+FR_MAG   = "\033[95m"
+
 
 # my text
 ALPHAB_STR = 'abcdefghijklmnopqrstuvwxyz'
@@ -80,11 +87,13 @@ if __name__ == '__main__':
     inicio = time.time()
 
     print(f'\n{FR_GREEN}\t================ "Multiprocess started with pid: {os.getpid()}"" ================\n{NO_COLOR}')
-    print(f'{FR_YELL}\n\t--- reading file of sub alphab str started at "{datetime.datetime.now()}" ---{NO_COLOR}\n')
+    print(f'{FR_YELL}\n\t--- reading file of sub alphab str started at "{datetime.now()}" ---{NO_COLOR}\n')
+    #print(f'{FR_YELL}\n\t--- reading file of sub alphab str started at "{datetime.datetime.now()}" ---{NO_COLOR}\n')
 
     messy_alphabets = []
     #messy_alphabets.append(ALPHAB_15_TO_ENCRYPT)  
-    messy_lines = set(open(basedir + "/static/proj_enigmaGame_scripts/temp/z-permutFileSorted.txt").readlines())
+    messy_lines = set(open("static/proj_enigmaGame_scripts/temp/z-permutFileSorted.txt").readlines())
+    #messy_lines = set(open(basedir + "/static/proj_enigmaGame_scripts/temp/z-permutFileSorted.txt").readlines())
     for messy_str in messy_lines:
         #messy_alphabets.append(list(messy_str))
         messy_alphabets.append(messy_str)
@@ -94,14 +103,16 @@ if __name__ == '__main__':
     print(f"\tFirst messy_alphabets[0] ===> {messy_alphabets[0]}")
     print(f"\tLast messy_alphabets[{len(messy_alphabets)-1}] ===> {messy_alphabets[len(messy_alphabets)-1]}")
 
-    print(f'{FR_YELL}\t--- reading file process finished at "{datetime.datetime.now()}" ---{NO_COLOR}\n')  
+    print(f'{FR_YELL}\t--- reading file process finished at "{datetime.now()}" ---{NO_COLOR}\n')  
+    #print(f'{FR_YELL}\t--- reading file process finished at "{datetime.datetime.now()}" ---{NO_COLOR}\n')  
 
     print(f"{FR_GREEN}\tOriginal Alphabet:{NO_COLOR}\n\t\t{(','.join(ORIG_ALPHAB))}")
     print(f"{FR_GREEN}\tOriginal text:{NO_COLOR}\n\t\t{MY_TEXT}")
     print(f"{FR_GREEN}\tEncrypted text:{NO_COLOR}\n\t\t{ENCRYPTED_TEXT}")
     print(f"{FR_GREEN}\tMax Number of CPU's:{NO_COLOR} {cpu_count()}\n")
     
-    print(f'{FR_YELL}\t--- CHECKING "{m_alp} ALPHABETS" BEGAN AT "{datetime.datetime.now()}" ---{NO_COLOR}\n')    
+    print(f'{FR_YELL}\t--- CHECKING "{m_alp} ALPHABETS" BEGAN AT "{datetime.now()}" ---{NO_COLOR}\n')    
+    #print(f'{FR_YELL}\t--- CHECKING "{m_alp} ALPHABETS" BEGAN AT "{datetime.datetime.now()}" ---{NO_COLOR}\n')    
     
     # create the manager
     with Manager() as manager:
