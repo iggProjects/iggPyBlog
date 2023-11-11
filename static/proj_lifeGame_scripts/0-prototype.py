@@ -27,6 +27,9 @@ except Exception as ImportError:
     print() 
     print(f"{FR_RED}IMPORT ERROR ==>{NO_COLOR} {ImportError} | {ImportError.__class__} | {ImportError.__doc__}")
 
+# ---------- CONSTANTS & FUNCTIONS ----------
+
+
 #
 # ---------- MAIN ----------
 #
@@ -46,9 +49,7 @@ if __name__ == "__main__":
         print(f"{FR_GREEN}---------- MAIN ----------{NO_COLOR}")
         print()
 
-        #
-
-
+        # YOUR CODE
 
         print(f"{FR_GREEN}---------- That's all for today ----------{NO_COLOR}")
         print()
