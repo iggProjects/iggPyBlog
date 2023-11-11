@@ -121,4 +121,4 @@ if __name__ == "__main__":
 
 else:
     # something wrong
-    print(f"\n---- upsssssssss something is wrong 😢😢  ----\n")
+    print(f"\n---- ******  ----\n")

@@ -264,4 +264,4 @@ if __name__ == '__main__':
 
 else:
     # something wrong
-    print(frRED("---- ***** ----"))
+    print(frRED("---- new thread ----"))

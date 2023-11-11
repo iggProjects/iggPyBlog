@@ -301,8 +301,6 @@ def result_script_exec():
             error_msg = "error from function 'result_script_exec()' when executing subprocess ! => "  + str(Argument)
             return render_template('error_page.html', error_msg = error_msg )
 
-
-
     except Exception as Argument:   
         write_log_file("my_messages.txt","ERROR FROM 'func result_script_exec(), SEE server_messages.txt'")
         logging.exception("error from func result_script_exec() | exception() => "  + str(Argument))
@@ -521,9 +519,8 @@ def result_script_exec_workers():
             print(f"{FR_YELL}====== exit result_script_exec_workers() for html ======{NO_COLOR}\n")
             print(f"{FR_YELL}====== go to result_script_html.html ======{NO_COLOR}\n")
 
-            # return redirect(url_for('result_script_html'))
-            return render_template('result_script_html.html')
-            # return render_template('result_script_html.html',py_name=py_name, workers=workers)
+            #return render_template('result_script_html.html')
+            return render_template('result_script_html.html',py_name=py_name, workers=workers)
             #return render_template('result_script_html.html',list_lines=list_color_text, list_JS_lines=list_JS_lines, py_name=py_name, workers=workers)
 
         except Exception as Argument:   

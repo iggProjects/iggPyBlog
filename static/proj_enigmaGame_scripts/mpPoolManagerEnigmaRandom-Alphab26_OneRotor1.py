@@ -177,4 +177,4 @@ if __name__ == '__main__':
     
 else:
     # something wrong
-    print(frRED("---- upsssssssss something is wrong ----"))
+    print(frRED("---- new thread ----"))

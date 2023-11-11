@@ -43,4 +43,4 @@ if __name__ == "__main__":
 
 else:
     # something wrong
-    print(f"{FR_GREEN}---- upsssssssss something is wrong ----{NO_COLOR}")
+    print(f"{FR_GREEN}---- ****** ----{NO_COLOR}")

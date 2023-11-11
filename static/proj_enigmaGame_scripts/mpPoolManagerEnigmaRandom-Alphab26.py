@@ -2,34 +2,49 @@
 # SuperFastPython.com
 # example of safely stopping all tasks in the process pool
 
-import time
-from time import sleep
-from datetime import datetime
-from multiprocessing import Event
-from multiprocessing import Manager, cpu_count
-from multiprocessing.pool import Pool
-import os
-from os import system
-#import random
-from random import randrange
-import string
+"""  
+    
+    THIS SCRIPT IS FOR .............
 
-# ADD ROOT PATH TO SYS.PATH
-import sys
-ROOT_DIR = os.path.abspath(os.curdir)
-sys.path.insert(1, ROOT_DIR)
 
-# My Own Funct in root path
-#from MyFunc import *
+"""
+# IMPORT SECTION
 
-# CONSTANTS
-NO_COLOR = "\033[00m"
-FR_RED   = "\033[91m"
-FR_GREEN = "\033[92m"
-FR_YELL  = "\033[93m"
-FR_BLUE  = "\033[94m"
-FR_MAG   = "\033[95m"
+try:   # Import My Own Functions from include dir 
+    import sys, traceback, time, string
+    import numpy as np   
+    from time import sleep
+    from datetime import datetime
+    from multiprocessing import Event
+    from multiprocessing import Manager, cpu_count
+    from multiprocessing.pool import Pool
+    from random import randrange
 
+    from os.path import dirname, realpath
+    from os import scandir
+    # get parent up 2 from __file__ path: 'static path'   
+    up2_dir = dirname(dirname(dirname(realpath(__file__))))
+    # insert path in sys.path
+    sys.path.append(up2_dir)
+    # get parent up 3 from __file__ path: 'static parent path'       
+    up3_dir = dirname(dirname(dirname(dirname(realpath(__file__)))))
+    # insert path in sys.path
+    sys.path.append(up3_dir)
+    # import My Own Func
+    from static.include.MyFunc import *
+    from static.include.MyColors import *
+except Exception as ImportError:
+    FR_RED   = "\033[91m" 
+    NO_COLOR = "\033[00m"
+    print() 
+    print(f"{FR_RED}IMPORT ERROR ==>{NO_COLOR} {ImportError} | {ImportError.__class__} | {ImportError.__doc__}")
+
+# ---------- CONSTANTS & FUNCTIONS ----------
+
+
+#
+# ---------- MAIN ----------
+#
 
 # my text
 ALPHAB_STR = 'abcdefghijklmnopqrstuvwxyz'
@@ -81,62 +96,81 @@ def decipher(alphab1, event):
 
 # protect the entry point
 if __name__ == '__main__':
-    # clean screen
-    system('cls')
-    # time
-    inicio = time.time()
 
-    print(f'\n{FR_GREEN}\t================ "Multiprocess started with pid: {os.getpid()}"" ================\n{NO_COLOR}')
-    print(f'{FR_YELL}\n\t--- reading file of sub alphab str started at "{datetime.now()}" ---{NO_COLOR}\n')
-    #print(f'{FR_YELL}\n\t--- reading file of sub alphab str started at "{datetime.datetime.now()}" ---{NO_COLOR}\n')
+    try:
 
-    messy_alphabets = []
-    #messy_alphabets.append(ALPHAB_15_TO_ENCRYPT)  
-    messy_lines = set(open("static/proj_enigmaGame_scripts/temp/z-permutFileSorted.txt").readlines())
-    #messy_lines = set(open(basedir + "/static/proj_enigmaGame_scripts/temp/z-permutFileSorted.txt").readlines())
-    for messy_str in messy_lines:
-        #messy_alphabets.append(list(messy_str))
-        messy_alphabets.append(messy_str)
-    messy_alphabets.append(ALPHAB_TO_ENCRYPT)
-    m_alp = '{:,}'.format(len(messy_alphabets)).replace(',','.')    
+        clear_console_screen()
 
-    print(f"\tFirst messy_alphabets[0] ===> {messy_alphabets[0]}")
-    print(f"\tLast messy_alphabets[{len(messy_alphabets)-1}] ===> {messy_alphabets[len(messy_alphabets)-1]}")
+        my_script = __file__.split('\\')
+        my_script_name = my_script[len(my_script)-1]
+        print()
+        write_log_file("my_messages.txt","IN '" + my_script_name + "'")
+        print()
 
-    print(f'{FR_YELL}\t--- reading file process finished at "{datetime.now()}" ---{NO_COLOR}\n')  
-    #print(f'{FR_YELL}\t--- reading file process finished at "{datetime.datetime.now()}" ---{NO_COLOR}\n')  
+        print(f"{FR_GREEN}---------- MAIN ----------{NO_COLOR}")
+        print()
+        inicio = time.time()
 
-    print(f"{FR_GREEN}\tOriginal Alphabet:{NO_COLOR}\n\t\t{(','.join(ORIG_ALPHAB))}")
-    print(f"{FR_GREEN}\tOriginal text:{NO_COLOR}\n\t\t{MY_TEXT}")
-    print(f"{FR_GREEN}\tEncrypted text:{NO_COLOR}\n\t\t{ENCRYPTED_TEXT}")
-    print(f"{FR_GREEN}\tMax Number of CPU's:{NO_COLOR} {cpu_count()}\n")
-    
-    print(f'{FR_YELL}\t--- CHECKING "{m_alp} ALPHABETS" BEGAN AT "{datetime.now()}" ---{NO_COLOR}\n')    
-    #print(f'{FR_YELL}\t--- CHECKING "{m_alp} ALPHABETS" BEGAN AT "{datetime.datetime.now()}" ---{NO_COLOR}\n')    
-    
-    # create the manager
-    with Manager() as manager:
-        # create the shared event
-        event = manager.Event()
+        print(f'\n{FR_GREEN}\t================ "Multiprocess started with pid: {os.getpid()}"" ================\n{NO_COLOR}')
+        print(f'{FR_YELL}\n\t--- reading file of sub alphab str started at "{datetime.datetime.now()}" ---{NO_COLOR}\n')
+
+        messy_alphabets = []
+        #messy_alphabets.append(ALPHAB_15_TO_ENCRYPT)          
+        messy_lines = set(open(basedir + "/static/proj_enigmaGame_scripts/temp/z-permutFileSorted.txt").readlines())
+        for messy_str in messy_lines:
+            #messy_alphabets.append(list(messy_str))
+            messy_alphabets.append(messy_str)
+        messy_alphabets.append(ALPHAB_TO_ENCRYPT)
+        m_alp = '{:,}'.format(len(messy_alphabets)).replace(',','.')    
+
+        print(f"\tFirst messy_alphabets[0] ===> {messy_alphabets[0]}")
+        print(f"\tLast messy_alphabets[{len(messy_alphabets)-1}] ===> {messy_alphabets[len(messy_alphabets)-1]}")
         
-        print(f'\n{FR_YELL}\tFrom Main - With Manager() as manager:{NO_COLOR}\n\t\tevent -> {event}\n', flush=True)
+        print(f'{FR_YELL}\t--- reading file process finished at "{datetime.datetime.now()}" ---{NO_COLOR}\n')  
 
-        # create and configure the process pool
-        # Note: if you do not put a valid number of CPU's, Pool() assume the maximum of PC 
-        with Pool(cpu_count()) as pool:   
-
-            # prepare arguments 
-            alphabets = [(messy_alphabets[i],event) for i in range(len(messy_alphabets))]
-            print(f'{FR_YELL}\tFrom Main - With Pool({cpu_count()}) as pool:{NO_COLOR}\n\t\tpool -> {pool}\n', flush=True)
-
-            # issue tasks asynchronously
-            result = pool.starmap_async(decipher, alphabets)            
+        print(f"{FR_GREEN}\tOriginal Alphabet:{NO_COLOR}\n\t\t{(','.join(ORIG_ALPHAB))}")
+        print(f"{FR_GREEN}\tOriginal text:{NO_COLOR}\n\t\t{MY_TEXT}")
+        print(f"{FR_GREEN}\tEncrypted text:{NO_COLOR}\n\t\t{ENCRYPTED_TEXT}")
+        print(f"{FR_GREEN}\tMax Number of CPU's:{NO_COLOR} {cpu_count()}\n")
+        
+        print(f'{FR_YELL}\t--- CHECKING "{m_alp} ALPHABETS" BEGAN AT "{datetime.datetime.now()}" ---{NO_COLOR}\n')    
+        
+        # create the manager
+        with Manager() as manager:
+            # create the shared event
+            event = manager.Event()
             
-            result.wait()
-            # wait for all tasks to stop            
-            print(f'\n\t{FR_RED}=== ALL TASKS STOPED ==={NO_COLOR}\n')
+            print(f'\n{FR_YELL}\tFrom Main - With Manager() as manager:{NO_COLOR}\n\t\tevent -> {event}\n', flush=True)
 
-            # elapsed time
-            elapsed_time = "{:.2f}".format(time.time()-inicio)
-            print(f"\n\t{FR_YELL}================  Elapsed time: {elapsed_time} seconds ================={NO_COLOR}\n\n")
+            # create and configure the process pool
+            # Note: if you do not put a valid number of CPU's, Pool() assume the maximum of PC 
+            with Pool(cpu_count()) as pool:   
 
+                # prepare arguments 
+                alphabets = [(messy_alphabets[i],event) for i in range(len(messy_alphabets))]
+                print(f'{FR_YELL}\tFrom Main - With Pool({cpu_count()}) as pool:{NO_COLOR}\n\t\tpool -> {pool}\n', flush=True)
+
+                # issue tasks asynchronously
+                result = pool.starmap_async(decipher, alphabets)            
+                
+                result.wait()
+                # wait for all tasks to stop            
+                print(f'\n\t{FR_RED}=== ALL TASKS STOPED ==={NO_COLOR}\n')
+
+                # elapsed time
+                elapsed_time = "{:.2f}".format(time.time()-inicio)
+                print(f"\n\t{FR_YELL}================  Elapsed time: {elapsed_time} seconds ================={NO_COLOR}\n\n")
+
+        print(f"{FR_GREEN}---------- That's all for today ----------{NO_COLOR}")
+        print()
+        pause()
+
+    except Exception as Argument:
+        error_msg = "ERROR IN <" + my_script_name + ">. SEE server_messages.txt !"
+        write_log_file("my_messages.txt",error_msg)
+        write_traceback_info_1(Argument,traceback,my_script_name)
+        pause()     
+    
+else:
+    # something wrong
+    print(frRED("---- new thread ----"))

@@ -109,9 +109,8 @@ if __name__ == '__main__':
         print(f'\t{FR_MAG}Reading file of sub alphab strings started at: \'{datetime.datetime.now()}\'')
 
         messy_alphabets = []
-        #messy_alphabets.append(ALPHAB_15_TO_ENCRYPT)
-        messy_lines = set(open("static/proj_enigmaGame_scripts/temp/z-permutFileSorted.txt").readlines())
-        #messy_lines = set(open(basedir + "/static/proj_enigmaGame_scripts/temp/z-permutFileSorted.txt").readlines())
+        #messy_alphabets.append(ALPHAB_15_TO_ENCRYPT)        
+        messy_lines = set(open(basedir + "/static/proj_enigmaGame_scripts/temp/z-permutFileSorted.txt").readlines())
         #messy_lines = set(open('z-permutFileSorted.txt').readlines())
         for messy_str in messy_lines:
             #messy_alphabets.append(list(messy_str))
@@ -169,6 +168,6 @@ if __name__ == '__main__':
         write_traceback_info_1(Argument,traceback,my_script_name)        
     
 else:
-    # something wrong
-    print(frRED("---- upsssssssss ----"))
+    # new thread    
+    print(f"{FR_MAG}---- new thread ----{NO_COLOR}")
 	
