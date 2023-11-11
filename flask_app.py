@@ -280,8 +280,9 @@ def result_script_exec():
                 write = csv.writer(f,delimiter=",")
                 write.writerows(list_color_text)
            
-            # session variable to call render_template           
-            session['textLines_file_name'] = 'list_text_lines.csv'
+            # session variable to call render_template
+            csv_file_name = 'list_text_lines.csv' 
+            session['textLines_file_name'] = csv_file_name
             session['py_name'] = py_name            
             print(f"{FR_RED}py_name session parameter: {session['py_name']}{NO_COLOR}")
             print(f"{FR_RED}csv file name session parameter: {session['textLines_file_name']}{NO_COLOR}")
@@ -290,8 +291,8 @@ def result_script_exec():
             print(f"{FR_YELL}====== go to result_script_exec.html ======{NO_COLOR}\n")
 
             #return render_template('result_script_exec.html')
-            return render_template('result_script_html.html')
-            #return render_template('result_script_exec.html', csv_file_name=csv_file_name, py_name=py_name)
+            #return render_template('result_script_html.html')
+            return render_template('result_script_html.html', csv_file_name=csv_file_name, py_name=py_name)
             #return render_template('result_script_exec.html',list_lines=list_color_text, list_JS_lines=list_JS_lines,  csv_file_name=csv_file_name, py_name=py_name)
 
         except Exception as Argument:   

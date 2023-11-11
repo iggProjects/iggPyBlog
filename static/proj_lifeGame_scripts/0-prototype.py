@@ -51,6 +51,7 @@ if __name__ == "__main__":
 
 
         print(f"{FR_GREEN}---------- That's all for today ----------{NO_COLOR}")
+        print()
         pause()
 
     except Exception as Argument:
@@ -61,4 +62,4 @@ if __name__ == "__main__":
     
 else:
     # something wrong
-    print(frRED("---- upsssssssss something is wrong ----"))
+    print(frRED("---- upsssssssss ----"))

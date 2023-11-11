@@ -27,6 +27,8 @@ except Exception as ImportError:
     print("print empty line") 
     print(f"{FR_RED}IMPORT ERROR ==>{NO_COLOR} {ImportError} | {ImportError.__class__} | {ImportError.__doc__}")
 
+# ---------- CONSTANTS & FUNCTIONS ----------
+
 #
 # ---------- MAIN ----------
 #
@@ -57,4 +59,4 @@ if __name__ == "__main__":
     
 else:
     # something wrong
-    print(frRED("---- upsssssssss something is wrong ----"))
+    print(frRED("---- upsssssssss ----"))
