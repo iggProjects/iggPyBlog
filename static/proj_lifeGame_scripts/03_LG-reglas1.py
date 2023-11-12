@@ -23,7 +23,7 @@ except Exception as ImportError:
 
 # CONSTANTS
 
-ITERAC = 5
+ITERAC = 100
 nX = 10
 nY = 16
 yExt = 2*nY + 1

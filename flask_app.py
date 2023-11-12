@@ -260,13 +260,16 @@ def result_script_exec():
                     new_line = new_line.replace(',',';')
                     #print(f"line to print: {new_line}")
 
-                    new_line=Markup(new_line)
+                    new_line=Markup(new_line)                    
                     list = [color,new_line]
                     list_color_text.append(list) 
                     
                     print(f"new_line formatted => {list}")
             
- 
+            print(f"......... 'list_color_text' type: {type(list_color_text)}")
+            for line in list_color_text:
+                print(f"......... {line}")
+
             # https://www.geeksforgeeks.org/python-save-list-to-csv/
             import csv
 
@@ -276,7 +279,7 @@ def result_script_exec():
                 print(f"{FR_GREEN}........ old list_text_lines.csv deleted")    
 
             # data rows of csv file --> list_color_text
-            with open(basedir + '/static/temp/list_text_lines.csv', 'w') as f:           
+            with open(basedir + '/static/temp/list_text_lines.csv', 'w', newline='') as f:           
                 # using csv.writer method from CSV package
                 write = csv.writer(f,delimiter=",")
                 write.writerows(list_color_text)
