@@ -240,5 +240,5 @@ if __name__ == "__main__":
 
 else:
     # something wrong
-    print(f"\n{FR_RED}---- upsssssssss something is wrong ---{NO_COLOR}\n")
+    print(f"\n{FR_RED}---- ******** ---{NO_COLOR}\n")
     pause()    

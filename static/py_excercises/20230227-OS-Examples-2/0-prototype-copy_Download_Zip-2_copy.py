@@ -194,5 +194,5 @@ if __name__ == "__main__":
     pause()
 else:
     # something wrong
-    print(frRED("\n---- upsssssssss something is wrong 😢😢  ----\n"))
+    print(frRED("\n---- ******** ----\n"))
     # pause()

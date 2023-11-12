@@ -96,4 +96,4 @@ if __name__ == "__main__":
 
 else:
     # something wrong
-    print(f"----- upsssssssss something is wrong -----")
+    print(f"----- ******** -----")

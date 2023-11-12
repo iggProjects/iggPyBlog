@@ -98,5 +98,5 @@ if __name__ == "__main__":
         write_traceback_info(Argument,traceback,my_script_name)  
 else:
     # something wrong
-    print(frRED("---- upsssssssss something is wrong ---"))
+    print(frRED("---- ******** ----"))
     pause()    

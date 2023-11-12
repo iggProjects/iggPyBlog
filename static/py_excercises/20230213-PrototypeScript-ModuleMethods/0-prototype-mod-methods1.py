@@ -53,5 +53,5 @@ if __name__ == "__main__":
 
 else:
     # something wrong
-    print(f"{FR_RED}---- upsssssssss something is wrong  ----")
+    print(f"{FR_RED}---- ********  ----")
     

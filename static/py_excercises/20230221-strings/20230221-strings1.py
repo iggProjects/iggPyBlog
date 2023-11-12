@@ -232,4 +232,4 @@ if __name__ == "__main__":
 
 else:
     # something wrong
-    print(f"{FR_RED}---- upsssssssss something is wrong ----{NO_COLOR}")
+    print(f"{FR_RED}---- ******** ----{NO_COLOR}")
