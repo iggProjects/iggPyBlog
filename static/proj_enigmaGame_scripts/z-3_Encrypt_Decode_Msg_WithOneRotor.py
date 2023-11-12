@@ -143,4 +143,4 @@ if __name__ == "__main__":
     
 else:
     # something wrong
-    print(frRED("---- upsssssssss ----"))
+    print(frRED("---- ********** ----"))

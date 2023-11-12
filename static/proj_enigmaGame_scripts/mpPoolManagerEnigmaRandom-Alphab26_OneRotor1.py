@@ -110,6 +110,7 @@ if __name__ == '__main__':
 
         print(f"{FR_GREEN}\tOriginal Alphabet:{NO_COLOR}\t{(','.join(ORIG_ALPHAB))}")    
         print(f"{FR_GREEN}\tOriginal text:{NO_COLOR}\t\t{MY_TEXT}")
+        print(f"{FR_GREEN}\tAlphabet to encrypt:{NO_COLOR}\t{(','.join(ALPHAB_TO_ENCRYPT))}")    
         print(f"{FR_GREEN}\tEncrypted text:{NO_COLOR}\t\t{ENCRYPTED_TEXT}")
         print(f"{FR_GREEN}\tMax Number of CPU's:{NO_COLOR}\t{cpu_count()}")
         print("print empty line")
@@ -125,7 +126,6 @@ if __name__ == '__main__':
 
         print(f"\t\tFirst messy_alphabets[0] ===> {messy_alphabets[0]}")
         print(f'{FR_BLUE}\t--- reading file process finished at {datetime.datetime.now()} ---{NO_COLOR}')  
-
         print(f"\t\tLast messy_alphabets[{len(messy_alphabets)-1}] ===> {messy_alphabets[len(messy_alphabets)-1]}")
         print("print empty line")
         print(f'{FR_BLUE}\t--- CHECKING {m_alp} ALPHABETS BEGAN AT {datetime.datetime.now()} ---{NO_COLOR}')  

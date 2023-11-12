@@ -117,6 +117,7 @@ if __name__ == '__main__':
 
         print(f"{FR_GREEN}\tOriginal Alphabet:{NO_COLOR}\t{(','.join(ORIG_ALPHAB))}")    
         print(f"{FR_GREEN}\tOriginal text:{NO_COLOR}\t\t{MY_TEXT}")
+        print(f"{FR_GREEN}\tAlphabet to encrypt:{NO_COLOR}\t{(','.join(ALPHAB_TO_ENCRYPT))}")    
         print(f"{FR_GREEN}\tEncrypted text:{NO_COLOR}\t\t{ENCRYPTED_TEXT}")
         print(f"{FR_GREEN}\tMax Number of CPU's:{NO_COLOR}\t{cpu_count()}")
         print()
