@@ -182,6 +182,6 @@ if __name__ == '__main__':
 		write_traceback_info_1(Argument,traceback,my_script_name)        
     
 else:
-    # something wrong
-    print(frRED("---- new thread ----"))
+    # new thread
+    print(f"{FR_GREEN}new thread: {multiprocessing.current_process().name}{NO_COLOR}")
 	

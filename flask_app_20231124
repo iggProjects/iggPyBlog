@@ -172,7 +172,7 @@ def result_script_exec():
 
         try: 
 
-            # call subprocess to excecute py_script_path to get text 
+            # call subprocess to excecute py_script_path
             if opSys == "Windows":
                 text = subprocess.run(["cmd", "/c", "python.exe", py_script_path],capture_output=True)
             elif opSys == "Linux":
@@ -181,136 +181,128 @@ def result_script_exec():
                 #text = subprocess.run(["/usr/bin/bash", "-c", f"python mysite/{py_script_path}"],capture_output=True)
             else:
                 print(f"Please check how to pass list of parameters for operating system: {opSys}")
-            
-            # format tyext in lines into csv file
-            try:
-                #print(f" ===> 'text'   type: {type(text)}")
-                #print(f" ===> 'text' attrib: {dir(text)}")
-                #print(f" ===> 'text'   data: {text}")    
 
-                # see order in list_b_lines
-                print()
-                list_b_lines = text.stdout.splitlines()
-                print(f"==> {FR_GREEN}'list_b_lines' length: {NO_COLOR}{len(list_b_lines)}") 
-                print()         
-                # print(f" ==> 'list_b_lines' type: {type(list_b_lines)}")
-                # print(f" ==> 'list_b_lines' attrib: {dir(list_b_lines)}")
-                # print(f" ==> 'list_b_lines' data: {list_b_lines}")
+            #print(f" ===> 'text'   type: {type(text)}")
+            #print(f" ===> 'text' attrib: {dir(text)}")
+            #print(f" ===> 'text'   data: {text}")    
 
-                #for line in list_b_lines:
-                #    print(f"==> line: {line}")
+            # see order in list_b_lines
+            print()
+            list_b_lines = text.stdout.splitlines()
+            print(f"==> {FR_GREEN}'list_b_lines' length: {NO_COLOR}{len(list_b_lines)}") 
+            print()         
+            # print(f" ==> 'list_b_lines' type: {type(list_b_lines)}")
+            # print(f" ==> 'list_b_lines' attrib: {dir(list_b_lines)}")
+            # print(f" ==> 'list_b_lines' data: {list_b_lines}")
 
-                list_color_text = []
+            for line in list_b_lines:
+                print(f"==> line: {line}")
 
-                for line in list_b_lines:
-                    #new_line = "<p>" + str(line) + "</p>"
-                    new_line = str(line)
-                    color = "black"
-                    if new_line == 'b\'\\x0c\\x1b[92m\'' or new_line == 'b\' \\x1b[00m\'' or new_line == 'b\'\\x1b[92m\'' or new_line == '\\x0c': 
+            list_color_text = []
+
+            for line in list_b_lines:
+                #new_line = "<p>" + str(line) + "</p>"
+                new_line = str(line)
+                color = "black"
+                if new_line == 'b\'\\x0c\\x1b[92m\'' or new_line == 'b\' \\x1b[00m\'' or new_line == 'b\'\\x1b[92m\'' or new_line == '\\x0c': 
+                    pass
+                elif 'print empty line' in new_line:
+                    new_line = "empty line"
+                    #new_line = "---"
+                    color = "transparent"
+                    list = [color,new_line]
+                    list_color_text.append(list) 
+                    #print("=====> print empty line")
+                elif '7777' in new_line:
+                    color = "transparent"
+                    list = [color,new_line]
+                    list_color_text.append(list) 
+                else: 
+                    #print(f"0,1 --> {new_line[0:2]}")
+                    if "b'" in new_line[0:2]  or "b\"" in new_line[0:2]:
+                        #print(f"0,1 ==> {new_line[0:2]}")
+                        new_line= new_line[2:]
+                    new_line = new_line.replace('-->','==>')
+                    new_line = new_line.replace('<','&lt;')
+                    #new_line = new_line.replace('<','<&nbsp;&nbsp;')
+                    new_line = new_line.replace('>','&gt;')
+                    #new_line = new_line.replace('>','&nbsp;>')
+                    new_line = new_line.replace('^','&nbsp;')
+                    new_line = new_line.replace(new_line[len(new_line)-1],'')
+                    #new_line = new_line.replace('\\n','')
+                    new_line = new_line.replace('\\n','<br>')
+                    new_line = new_line.replace('\\x1b[00m','')
+                    new_line = new_line.replace('\\xb4','')
+                    new_line = new_line.replace('\\t','&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;')            
+                    
+                    if '\\x1b[91m' in new_line:      # red
+                        new_line = new_line.replace('\\x1b[91m','')
+                        color = "#800000"
+                    elif '\\x1b[92m' in new_line:    # green
+                        new_line = new_line.replace('\\x1b[92m','')
+                        color= "green" 
+                    elif '\\x1b[93m' in new_line:    # orange - (FR_YELL)
+                        new_line = new_line.replace('\\x1b[93m','')
+                        color= "#cc5200"    
+                    elif '\\x1b[34m' in new_line:    # blue                
+                        new_line = new_line.replace('\\x1b[34m','')
+                        color= "blue"    
+                    elif '\\x1b[94m' in new_line:    # blue                
+                        new_line = new_line.replace('\\x1b[94m','')
+                        color= "blue"                
+                    elif '\\x1b[95m' in new_line:    # magenta
+                        new_line = new_line.replace('\\x1b[95m','')
+                        color= "magenta"
+                    else:
                         pass
-                    elif 'print empty line' in new_line:
-                        new_line = "empty line"
-                        #new_line = "---"
-                        color = "transparent"
-                        list = [color,new_line]
-                        list_color_text.append(list) 
-                        #print("=====> print empty line")
-                    elif '7777' in new_line:
-                        color = "transparent"
-                        list = [color,new_line]
-                        list_color_text.append(list) 
-                    else: 
-                        #print(f"0,1 --> {new_line[0:2]}")
-                        if "b'" in new_line[0:2]  or "b\"" in new_line[0:2]:
-                            #print(f"0,1 ==> {new_line[0:2]}")
-                            new_line= new_line[2:]
-                        new_line = new_line.replace('-->','==>')
-                        new_line = new_line.replace('<','&lt;')
-                        #new_line = new_line.replace('<','<&nbsp;&nbsp;')
-                        new_line = new_line.replace('>','&gt;')
-                        #new_line = new_line.replace('>','&nbsp;>')
-                        new_line = new_line.replace('^','&nbsp;')
-                        new_line = new_line.replace(new_line[len(new_line)-1],'')
-                        #new_line = new_line.replace('\\n','')
-                        new_line = new_line.replace('\\n','<br>')
-                        new_line = new_line.replace('\\x1b[00m','')
-                        new_line = new_line.replace('\\xb4','')
-                        new_line = new_line.replace('\\t','&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;')            
-                        
-                        if '\\x1b[91m' in new_line:      # red
-                            new_line = new_line.replace('\\x1b[91m','')
-                            color = "#800000"
-                        elif '\\x1b[92m' in new_line:    # green
-                            new_line = new_line.replace('\\x1b[92m','')
-                            color= "green" 
-                        elif '\\x1b[93m' in new_line:    # orange - (FR_YELL)
-                            new_line = new_line.replace('\\x1b[93m','')
-                            color= "#cc5200"    
-                        elif '\\x1b[34m' in new_line:    # blue                
-                            new_line = new_line.replace('\\x1b[34m','')
-                            color= "blue"    
-                        elif '\\x1b[94m' in new_line:    # blue                
-                            new_line = new_line.replace('\\x1b[94m','')
-                            color= "blue"                
-                        elif '\\x1b[95m' in new_line:    # magenta
-                            new_line = new_line.replace('\\x1b[95m','')
-                            color= "magenta"
-                        else:
-                            pass
 
-                        # Replace ',' by ';' in temp_line1[1] field for html printing effects
-                        new_line = new_line.replace(',',';')
-                        #print(f"line to print: {new_line}")
+                    # Replace ',' by ';' in temp_line1[1] field for html printing effects
+                    new_line = new_line.replace(',',';')
+                    #print(f"line to print: {new_line}")
 
-                        new_line=Markup(new_line)                    
-                        list = [color,new_line]
-                        list_color_text.append(list) 
-                        
-                        print(f"new_line formatted => {list}")
-                
-                print(f"......... 'list_color_text' type: {type(list_color_text)}")
-                #for line in list_color_text:
-                #    print(f"......... {line}")
-
-                # https://www.geeksforgeeks.org/python-save-list-to-csv/
-                import csv
-
-                # delete if exists  
-                if os.path.exists("list_text_lines.csv"):
-                    os.remove("list_text_lines.csv")
-                    print(f"{FR_GREEN}........ old list_text_lines.csv deleted")    
-
-                # data rows of csv file --> list_color_text
-                with open(basedir + '/static/temp/list_text_lines.csv', 'w', newline='') as f:           
-                    # using csv.writer method from CSV package
-                    write = csv.writer(f,delimiter=",")
-                    write.writerows(list_color_text)
+                    new_line=Markup(new_line)                    
+                    list = [color,new_line]
+                    list_color_text.append(list) 
+                    
+                    print(f"new_line formatted => {list}")
             
-                # session variable to call render_template
-                csv_file_name = 'list_text_lines.csv' 
-                session['textLines_file_name'] = csv_file_name
-                session['py_name'] = py_name            
-                print(f"{FR_RED}py_name session parameter: {session['py_name']}{NO_COLOR}")
-                print(f"{FR_RED}csv file name session parameter: {session['textLines_file_name']}{NO_COLOR}")
+            print(f"......... 'list_color_text' type: {type(list_color_text)}")
+            for line in list_color_text:
+                print(f"......... {line}")
 
-                print(f"{FR_YELL}====== exit result_script_exec() for html ======{NO_COLOR}\n")
-                print(f"{FR_YELL}====== go to result_script_exec.html ======{NO_COLOR}\n")
+            # https://www.geeksforgeeks.org/python-save-list-to-csv/
+            import csv
 
-                #return render_template('result_script_exec.html')
-                #return render_template('result_script_html.html')
-                return render_template('result_script_html.html', csv_file_name=csv_file_name, py_name=py_name)
-                #return render_template('result_script_exec.html',list_lines=list_color_text, list_JS_lines=list_JS_lines,  csv_file_name=csv_file_name, py_name=py_name)
+            # delete if exists  
+            if os.path.exists("list_text_lines.csv"):
+                os.remove("list_text_lines.csv")
+                print(f"{FR_GREEN}........ old list_text_lines.csv deleted")    
 
-            except Exception as Argument:   
-                write_log_file("my_messages.txt","ERROR FROM 'func result_script_exec() - subprocess.run, SEE server_messages.txt'")
-                logging.exception("error from func 'result_script_exec()' when executing subprocess ! | exception() => "  + str(Argument))
-                error_msg = "error from function 'result_script_exec()' when executing subprocess ! => "  + str(Argument)
-                return render_template('error_page.html', error_msg = error_msg )
+            # data rows of csv file --> list_color_text
+            with open(basedir + '/static/temp/list_text_lines.csv', 'w', newline='') as f:           
+                # using csv.writer method from CSV package
+                write = csv.writer(f,delimiter=",")
+                write.writerows(list_color_text)
+           
+            # session variable to call render_template
+            csv_file_name = 'list_text_lines.csv' 
+            session['textLines_file_name'] = csv_file_name
+            session['py_name'] = py_name            
+            print(f"{FR_RED}py_name session parameter: {session['py_name']}{NO_COLOR}")
+            print(f"{FR_RED}csv file name session parameter: {session['textLines_file_name']}{NO_COLOR}")
+
+            print(f"{FR_YELL}====== exit result_script_exec() for html ======{NO_COLOR}\n")
+            print(f"{FR_YELL}====== go to result_script_exec.html ======{NO_COLOR}\n")
+
+            #return render_template('result_script_exec.html')
+            #return render_template('result_script_html.html')
+            return render_template('result_script_html.html', csv_file_name=csv_file_name, py_name=py_name)
+            #return render_template('result_script_exec.html',list_lines=list_color_text, list_JS_lines=list_JS_lines,  csv_file_name=csv_file_name, py_name=py_name)
 
         except Exception as Argument:   
-            write_log_file("my_messages.txt","ERROR FROM 'func result_script_exec() - getting csv file, SEE server_messages.txt'")
-            logging.exception("error from func 'result_script_exec()' when getting csv file ! | exception() => "  + str(Argument))
-            error_msg = "error from function 'result_script_exec()' when getting csv file ! => "  + str(Argument)
+            write_log_file("my_messages.txt","ERROR FROM 'func result_script_exec(), SEE server_messages.txt'")
+            logging.exception("error from func 'result_script_exec()' when executing subprocess ! | exception() => "  + str(Argument))
+            error_msg = "error from function 'result_script_exec()' when executing subprocess ! => "  + str(Argument)
             return render_template('error_page.html', error_msg = error_msg )
 
     except Exception as Argument:   

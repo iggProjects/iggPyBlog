@@ -137,7 +137,7 @@ def exec_game_iter(matriz,name):
 			elif matriz[x,y] == 1 and ( nVecinos < 2 or nVecinos > 3 ):
 				matrizTemp[x,y] = 0
 	
-  # try to control event pf equal matrixes
+    # try to control event pf equal matrixes
 	if np.array_equal(matriz,matrizTemp):
 		if multiprocessing.current_process().name == "SpawnPoolWorker-1":
 			#mostrar_matriz(matriz)

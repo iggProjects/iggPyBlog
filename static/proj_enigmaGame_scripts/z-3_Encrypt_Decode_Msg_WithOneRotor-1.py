@@ -8,7 +8,7 @@
 try:   # Import My Own Functions from include dir 
 	import sys, traceback, string
 	import numpy as np
-	import multiprocessing
+	#import multiprocessing
 	import time
 	import sys
 	from os import system	

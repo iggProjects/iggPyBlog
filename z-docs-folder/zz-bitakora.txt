@@ -2,7 +2,7 @@ BITAKORA  iggwebnz.eu.pythonanywhere.com
 
 igg.git.h@g @gittu.....@  
 
-iggProjects @i..P...@
+iggProjects @i..P...0.@
 
 https://eu.pythonanywhere.com/login/  | igg.git.h@ | @n.20..N.@
 
@@ -11,6 +11,43 @@ https://eu.pythonanywhere.com/login/  | igg.git.h@ | @n.20..N.@
 nazareth user: jo.gainzarain@aulanz.net  | nz2223Nz
 
 ************************************************
+
+
+LG exc 7
+
+    CHANGE TO VISUALIZE THAT MATRIX IS IDENTICAL 
+
+    https://stackoverflow.com/questions/3288595/multiprocessing-how-to-use-pool-map-on-a-function-defined-in-a-class
+    https://stackoverflow.com/questions/8804830/python-multiprocessing-picklingerror-cant-pickle-type-function
+    https://stackoverflow.com/questions/4677012/python-cant-pickle-type-x-attribute-lookup-failed
+    https://www.pythonanywhere.com/forums/topic/27818/
+    https://www.pythonanywhere.com/forums/topic/13055/
+    https://stackoverflow.com/questions/3288595/multiprocessing-how-to-use-pool-map-on-a-function-defined-in-a-class
+    https://datascience.stackexchange.com/questions/74172/picklingerror-in-pyspark-picklingerror-cant-pickle-class-main-person
+    https://stackoverflow.com/questions/70944155/picklingerror-attribute-lookup-do-something-on-main-failed
+    
+    The problem is that you're trying to pickle an object from the module where it's defined. 
+    If you move the Nation class into a separate file and import it into your script, then it should work.
+    
+
+    ERROR IN PAW
+    2023-11-25 12:13:15,385 ERROR    write_traceback_info Can't pickle <function exec_4_game at 0x7efe6aefb9a0>: attribute lookup exec_4_game on __main__ failed | exception from '0-prototype-colors.py()': 
+    Traceback (most recent call last):
+    File "/home/iggWebNz/mysite/static/proj_lifeGame_scripts/07-LG_multiprocessing-cpu.py", line 233, in <module>
+        exec_games(list_games,nCPU)
+    File "/home/iggWebNz/mysite/static/proj_lifeGame_scripts/07-LG_multiprocessing-cpu.py", line 189, in exec_games
+        pool.map(exec_4_game,list_g)
+    File "/usr/local/lib/python3.10/multiprocessing/pool.py", line 364, in map
+        return self._map_async(func, iterable, mapstar, chunksize).get()
+    File "/usr/local/lib/python3.10/multiprocessing/pool.py", line 771, in get
+        raise self._value
+    File "/usr/local/lib/python3.10/multiprocessing/pool.py", line 537, in _handle_tasks
+        put(task)
+    File "/usr/local/lib/python3.10/multiprocessing/connection.py", line 211, in send
+        self._send_bytes(_ForkingPickler.dumps(obj))
+    File "/usr/local/lib/python3.10/multiprocessing/reduction.py", line 51, in dumps
+        cls(buf, protocol).dump(obj)
+    _pickle.PicklingError: Can't pickle <function exec_4_game at 0x7efe6aefb9a0>: attribute lookup exec_4_game on __main__ failed
 
 EXCERCISES
 

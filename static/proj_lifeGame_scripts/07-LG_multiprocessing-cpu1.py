@@ -6,6 +6,7 @@
 
 try:   # Import My Own Functions from include dir 
 	import sys, traceback, time, multiprocessing
+	#from multiprocessing.pool import ThreadPool as Pool
 	import numpy as np   
 	from os.path import dirname, realpath
 	from os import scandir
@@ -25,13 +26,13 @@ try:   # Import My Own Functions from include dir
 	# Constantes
 	#
 
-	NX = 15
-	NY = 36
-	NITER= 1
+	NX = 10
+	NY = 24
+	NITER= 20
 	MSG_TEXT  = 'Games record-> '
-	BASE_PRINT = 1
+	BASE_PRINT = 2
 	#BASE_PRINT = int(NITER/10)
-	N_CPU = multiprocessing.cpu_count()
+	#N_CPU = multiprocessing.cpu_count()
 
 except Exception as ImportError:
     FR_RED   = "\033[91m" 
@@ -142,7 +143,7 @@ def exec_game_iter(matriz,name):
 		if multiprocessing.current_process().name == "SpawnPoolWorker-1":
 			#mostrar_matriz(matriz)
 			print(f"{FR_GREEN}COMMENT:cpu id: {multiprocessing.current_process().name} | {multiprocessing.Process().name} | obs:game-reach-equality: {name}")
-		#matriz = 9 * np.ones([NX,NY])
+		matriz = 9 * np.ones([NX,NY])
 	else:	
 		# Copio matrizTemp en matriz para la proxima iteracion
 		matriz = np.copy(matrizTemp)
@@ -152,40 +153,44 @@ def exec_game_iter(matriz,name):
 # Execute 4 matrixes (games) simultaneously 
 def exec_4_game(game):
 	
-	print(f"{FR_GREEN}COMMENT:Set {game} | cpu name: {multiprocessing.current_process().name} | mp-name: {multiprocessing.Process().name}")
-	 
-	matriz1 = crear_matriz()
-	matriz2 = crear_matriz()
-	matriz3 = crear_matriz()
-	matriz4 = crear_matriz()
+	try:
+		print(f"{FR_GREEN}COMMENT:Set {game} | cpu name: {multiprocessing.current_process().name} | mp-name: {multiprocessing.Process().name}")
+		
+		matriz1 = crear_matriz()
+		matriz2 = crear_matriz()
+		matriz3 = crear_matriz()
+		matriz4 = crear_matriz()
 
-	n=1
-	while n <= NITER:	  
-	# while n<= nIter or [CONDICION DE MATRIZ IDENTICA ENTRE DOS ITER]:	  
+		n=1
+		while n <= NITER:	  
+		# while n<= nIter or [CONDICION DE MATRIZ IDENTICA ENTRE DOS ITER]:	  
 
-		matriz1 = exec_game_iter(matriz1,'matriz1')
-		matriz2 = exec_game_iter(matriz2,'matriz2')
-		matriz3 = exec_game_iter(matriz3,'matriz3')
-		matriz4 = exec_game_iter(matriz4,'matriz4')
+			matriz1 = exec_game_iter(matriz1,'matriz1')
+			matriz2 = exec_game_iter(matriz2,'matriz2')
+			matriz3 = exec_game_iter(matriz3,'matriz3')
+			matriz4 = exec_game_iter(matriz4,'matriz4')
 
-		if ( (multiprocessing.current_process().name == "SpawnPoolWorker-1") and (n % BASE_PRINT == 0) ):
-			print("print empty line")
-			print(f"{FR_GREEN}COMMENT:cpu name: {multiprocessing.current_process().name} | {multiprocessing.Process().name} | iteration: {n}")
-			show_4_matrix(matriz1,matriz2,matriz3,matriz4)
-			#time.sleep(SLEEP)			
-		n+=1
+			if ( (multiprocessing.current_process().name == "SpawnPoolWorker-1") and (n % BASE_PRINT == 0) ):
+				print("print empty line")
+				print(f"{FR_GREEN}COMMENT:cpu name: {multiprocessing.current_process().name} | {multiprocessing.Process().name} | iteration: {n}")
+				show_4_matrix(matriz1,matriz2,matriz3,matriz4)
+				#time.sleep(SLEEP)			
+			n+=1
 
-	print("print empty line")
-	print(f"{FR_GREEN}COMMENT:{multiprocessing.current_process().name}: Set {game} finished | {NITER} iterat for each game | games: 4 | total-iterat {NITER*4}")
+		print("print empty line")
+		print(f"{FR_GREEN}COMMENT:{multiprocessing.current_process().name}: Set {game} finished | {NITER} iterat for each game | games: 4 | total-iterat {NITER*4}")
 	
-	
-	#return n
+	except Exception as Argument:
+		error_msg = "ERROR IN function <exec_4_game>. SEE server_messages.txt !"
+		write_log_file("my_messages.txt",error_msg)
+		write_traceback_info_1(Argument,traceback,"function exec_4_game")
 
 
 # FUNCTION POOL FOR MULTIPROCESSING  #
 ######################################
-def exec_games(list_g,n_cpu):
 
+def exec_games(list_g,n_cpu):
+	
 	try:
 	
 		#print(f"......from exec_games() NX: {NX} , NY: {NY}")
@@ -195,8 +200,8 @@ def exec_games(list_g,n_cpu):
 	except Exception as Argument:
 		error_msg = "ERROR IN function <exec_games>. SEE server_messages.txt !"
 		write_log_file("my_messages.txt",error_msg)
-		write_traceback_info(Argument,traceback,"function exec_games")
-		
+		write_traceback_info_1(Argument,traceback,"function exec_games")
+
 
 ##############################################################
 #                         MAIN                               # 
@@ -226,44 +231,52 @@ if __name__ == '__main__':
 
 		# parameter for multiporcessing call
 		list_games = [(x+1) for x in range(0,nSets)]
-		#print("print empty line")
-		print(f"{FR_GREEN}= = = = = LG MP = = = = =")
-		print(f"{FR_GREEN}= = = GAME PARAMETERS = = = ")
-		print(f"{FR_GREEN}. . . . Number Sets for 4 simultaneous Life_Game_Matrix: {len(list_games)}")
-		print(f"{FR_GREEN}. . . . Iterations for each game: {NITER}")
-		print(f"{FR_GREEN}. . . . number of cpus participating: {nCPU}")
-		print(f"{FR_GREEN}. . . . matrices {NX} x {NY}")
-		print(f"{FR_GREEN}. . . . Printing only for first process")
-		print(f"{FR_GREEN}. . . . List of Sets: {list_games}")
-		#pausar()	
+
 		# time
 		inicio = time.time()
 
 		# CALL MULTIPROCESSING
-		exec_games(list_games,nCPU)
+		try: 
 
-		# BALANCE
-		print(f"print empty line")
-		print(f"{FR_GREEN}- - - - - BALANCE - - - - -")
-		print(f"{FR_GREEN}. . . . Number of cpus participating: {nCPU}")
-		print(f"{FR_GREEN}. . . . Sets executed: {list_games[nSets-1]}")
-		print(f"{FR_GREEN}. . . . Games executed: {list_games[nSets-1]*4}")
-		print(f"{FR_GREEN}. . . . Each game (matrix) includes {NITER} iterations of game of life")
-		print(f"{FR_GREEN}\twith a matrix of {NX} x {NY} in each quadrant of the screen")
-		print(f"{FR_GREEN}\tand only {int(NITER/BASE_PRINT)} print screens for each game (matrix) of the first process")
-		
-		elapsed_time = "{:.2f}".format(time.time()-inicio)
-		print(f"print empty line")
-		print(f"{FR_GREEN}. . . . Elapsed Time: {elapsed_time} seconds")
-		print(f"print empty line")
-		print(f"{FR_GREEN}- - - - - THAT's-ALL - - - - - THAT's-ALL - - - - - ")
-		print(f"print empty line")
+			exec_games(list_games,nCPU)
 
+			print("print empty line")
+			print(f"{FR_BLUE}= = = = = LG MP = = = = =")
+			print(f"{FR_RED}= = = GAME PARAMETERS = = = ")
+			print(f"{FR_GREEN}. . . . Number Sets for 4 simultaneous Life_Game_Matrix: {len(list_games)}")
+			print(f"{FR_GREEN}. . . . Iterations for each game: {NITER}")
+			print(f"{FR_GREEN}. . . . number of cpus participating: {nCPU}")
+			print(f"{FR_GREEN}. . . . matrices {NX} x {NY}")
+			print(f"{FR_GREEN}. . . . Printing only for first process")
+			print(f"{FR_GREEN}. . . . List of Sets: {list_games}")
+
+			# BALANCE
+			print(f"print empty line")
+			print(f"{FR_YELL}- - - - - BALANCE - - - - -")
+			print(f"{FR_GREEN}. . . . Number of cpus participating: {nCPU}")
+			print(f"{FR_GREEN}. . . . Sets executed: {list_games[nSets-1]}")
+			print(f"{FR_GREEN}. . . . Games executed: {list_games[nSets-1]*4}")
+			print(f"{FR_GREEN}. . . . Each game (matrix) includes {NITER} iterations of game of life")
+			print(f"{FR_GREEN}\twith a matrix of {NX} x {NY} in each quadrant of the screen")
+			print(f"{FR_GREEN}\tand only {int(NITER/BASE_PRINT)} print screens for each game (matrix) of the first process")
+			
+			elapsed_time = "{:.2f}".format(time.time()-inicio)
+			print(f"print empty line")
+			print(f"{FR_GREEN}. . . . Elapsed Time: {elapsed_time} seconds")
+			print(f"print empty line")
+			print(f"{FR_GREEN}- - - - - THAT's-ALL - - - - - THAT's-ALL - - - - - ")
+			print(f"print empty line")
+
+		except Exception as Argument:
+			error_msg = "ERROR IN function <exec_games>. SEE server_messages.txt !"
+			write_log_file("my_messages.txt",error_msg)
+			write_traceback_info_1(Argument,traceback,"function exec_games")
+			
 	except Exception as Argument:
 		error_msg = "ERROR IN <" + my_script_name + ">. SEE server_messages.txt !"
 		write_log_file("my_messages.txt",error_msg)
-		write_traceback_info(Argument,traceback,my_script_name)
+		write_traceback_info_1(Argument,traceback,my_script_name)
 
 else:
-    # something wrong
+    # new thread
     print(frRED("---- LG MP new thread ----"))

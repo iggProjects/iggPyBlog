@@ -2,7 +2,27 @@ from flask import url_for
 
 def Enigma_scripts():    
 
-    enigma_scripts = [      
+    enigma_scripts = [   
+        {
+            'id': 0,             
+            'author': 'Igg',
+            'date_created': '27-03-2023',
+            'source_url': '',
+            'section': 'Multiprocessing and Sums',
+            'title': '',
+            'fileDirPath': 'static/proj_enigmaGame_scripts/07_C.py',  
+            'fileDirPath1': 'static/proj_enigmaGame_scripts/07_C1.py',  
+            
+            'homework': '',
+
+            'body': '',          
+
+            'code_url': '/static/proj_enigmaGame_scripts/07_C.py',  
+            'zip_url' : '',  
+            'img': '/img/icons8-consola-100.png'    
+        },     
+
+
         {
             'id': 1,             
             'author': 'Igg',
