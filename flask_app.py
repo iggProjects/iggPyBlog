@@ -260,6 +260,7 @@ def result_script_exec():
 
                         # Replace ',' by ';' in temp_line1[1] field for html printing effects
                         new_line = new_line.replace(',',';')
+                        new_line = new_line.replace('COMMENT:','')
                         #print(f"line to print: {new_line}")
 
                         new_line=Markup(new_line)                    

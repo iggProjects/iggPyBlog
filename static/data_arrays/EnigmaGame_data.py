@@ -8,10 +8,10 @@ def Enigma_scripts():
             'author': 'Igg',
             'date_created': '27-03-2023',
             'source_url': '',
-            'section': 'Multiprocessing and Sums',
-            'title': '',
-            'fileDirPath': 'static/proj_enigmaGame_scripts/07_C.py',  
-            'fileDirPath1': 'static/proj_enigmaGame_scripts/07_C1.py',  
+            'section': 'Multiprocessing & arithmetic',
+            'title': 'List of Pair Products as Sums of Ones',
+            'fileDirPath': 'static/proj_enigmaGame_scripts/mpPool_Product_as_SumsOfOnes.py',  
+            'fileDirPath1': 'static/proj_enigmaGame_scripts/mpPool_Product_as_SumsOfOnes1.py',  
             
             'homework': '',
 
@@ -28,7 +28,7 @@ def Enigma_scripts():
             'author': 'Igg',
             'date_created': '27-03-2023',
             'source_url': '',
-            'section': 'Multiprocessing and Sums',
+            'section': 'Multiprocessing & Progressions',
             'title': 'Calculate the individual sum of thousands of arithmetic progressions.',
             'fileDirPath': 'static/proj_enigmaGame_scripts/mpPool_Arith_Progres_Sum.py',  
             'fileDirPath1': 'static/proj_enigmaGame_scripts/mpPool_Arith_Progres_Sum1.py',  

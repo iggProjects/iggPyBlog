@@ -45,17 +45,28 @@ if __name__ == '__main__':
 
     try: 
         
+        if platform.system() == 'Windows':
+            system('cls')
+        elif platform.system() == 'Linux':            
+            system('clear')
+        else:
+            pass
+
         # time
         inicio = time.time()
         print(f"{FR_RED}Process start at:{NO_COLOR} {inicio}{NO_COLOR}")
-        print("print empty line")
+        print()
 
         _lst = [(x, y) for x in range(1,11) for y in range(100001)]
        
         printPairs(_lst,multiprocessing.cpu_count())
 
-        print("print empty line")
-        elapsed_time = "{:.2f}".format(time.time()-inicio)        
+        print()
+        elapsed_time = "{:.2f}".format(time.time()-inicio)     
+        print(f"{FR_GREEN}List of pairs processed:  _lst = [(x, y) for x in range(1,11) for y in range(100001)]{NO_COLOR}")  
+        print(f"{FR_GREEN}List of pairs printed:  every 2000 in each series{NO_COLOR}")
+        print(f"{FR_GREEN}Series: (1,x) (2,x) (3,x) (4,x) (5,x) (6,x) (7,x) (8,x) (9,x) (10,x) with x in interval [1,100.001)]{NO_COLOR}")
+        print()
         print(f"{FR_RED}Elapsed Time:{NO_COLOR} {elapsed_time} seconds{NO_COLOR}")
         print(f"{FR_RED}Number of CPUs:{NO_COLOR} {multiprocessing.cpu_count()}{NO_COLOR}")
 

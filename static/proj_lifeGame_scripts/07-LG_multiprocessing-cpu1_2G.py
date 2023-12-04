@@ -30,7 +30,8 @@ try:   # Import My Own Functions from include dir
 	NY = 24
 	NITER= 20
 	MSG_TEXT  = 'Games record-> '
-	BASE_PRINT = 1
+	BASE_PRINT = 5
+	#BASE_PRINT = NITER
 	#BASE_PRINT = int(NITER/10)
 	#N_CPU = multiprocessing.cpu_count()
 
@@ -62,12 +63,15 @@ def mostrar_matriz(matriz):
 		print()
 	
 
-# Muestro las 4 Matrices (games)
-def show_4_matrix(mat1,mat2,mat3,mat4):
+# Muestro las 2 Matrices (games)
+			# Muestro las 4 Matrices (games)
+def show_4_matrix(mat1,mat2):
+#def show_4_matrix(mat1,mat2,mat3,mat4):
 
 	X, Y = NX, NY
 
-	for x in range(0, 2*X+1):
+	for x in range(0, X):		
+	#for x in range(0, 2*X+1):		
 		for y in range(0, 2*Y+1):
 			
 			# matriz1  (1er cuadrante)
@@ -88,6 +92,7 @@ def show_4_matrix(mat1,mat2,mat3,mat4):
 				else:
 					print(f"{int(mat2[x,y-Y-1])}", end ="")
 
+			"""
 			# línea entre matrices 1 y 2 con 3 y 4
 			if x == X:
 				print(f"7", end ="")
@@ -105,7 +110,7 @@ def show_4_matrix(mat1,mat2,mat3,mat4):
 					print(f"{int(mat4[x-X-1,y-Y-1])}", end ="")
 				else:
 					print(f"{int(mat4[x-X-1,y-Y-1])}", end ="")
-			
+			"""
 		print()
 
 #
@@ -158,8 +163,8 @@ def exec_4_game(game):
 		
 		matriz1 = crear_matriz()
 		matriz2 = crear_matriz()
-		matriz3 = crear_matriz()
-		matriz4 = crear_matriz()
+		#matriz3 = crear_matriz()
+		#matriz4 = crear_matriz()
 
 		n=1
 		while n <= NITER:	  
@@ -167,13 +172,14 @@ def exec_4_game(game):
 
 			matriz1 = exec_game_iter(matriz1,'matriz1')
 			matriz2 = exec_game_iter(matriz2,'matriz2')
-			matriz3 = exec_game_iter(matriz3,'matriz3')
-			matriz4 = exec_game_iter(matriz4,'matriz4')
+			#matriz3 = exec_game_iter(matriz3,'matriz3')
+			#matriz4 = exec_game_iter(matriz4,'matriz4')
 
-			if ( (multiprocessing.current_process().name == "SpawnPoolWorker-1") and (n % BASE_PRINT == 0) ):
+			if ( (multiprocessing.current_process().name == "SpawnPoolWorker-1") and ( n==1 or n % BASE_PRINT == 0 )):
 				print("print empty line")
 				print(f"{FR_GREEN}COMMENT:cpu name: {multiprocessing.current_process().name} | {multiprocessing.Process().name} | iteration: {n}")
-				show_4_matrix(matriz1,matriz2,matriz3,matriz4)
+				show_4_matrix(matriz1,matriz2)
+				#show_4_matrix(matriz1,matriz2,matriz3,matriz4)				
 				#time.sleep(SLEEP)			
 			n+=1
 
@@ -223,7 +229,7 @@ if __name__ == '__main__':
 
 		# READ PARAMETERS 
 		# number of SET's, each of one of four games (matrixs)
-		nSets = 8
+		nSets = 16
 		#nSets = int(sys.argv[1])
 		# number of CPU in multiprocessing call
 		nCPU = 4
@@ -238,12 +244,11 @@ if __name__ == '__main__':
 		# CALL MULTIPROCESSING
 		try: 
 
-
 			exec_games(list_games,nCPU)
 
 			print("print empty line")
 			print(f"{FR_BLUE}= = = = = LG MP = = = = =")
-			print(f"{FR_RED}= = = GAME PARAMETERS = = = ")
+			print(f"{FR_YELL}= = = GAME PARAMETERS = = = ")
 			print(f"{FR_GREEN}. . . . Number Sets for 4 simultaneous Life_Game_Matrix: {len(list_games)}")
 			print(f"{FR_GREEN}. . . . Iterations for each game: {NITER}")
 			print(f"{FR_GREEN}. . . . number of cpus participating: {nCPU}")
@@ -253,19 +258,19 @@ if __name__ == '__main__':
 
 			# BALANCE
 			print(f"print empty line")
-			print(f"{FR_YELL}- - - - - BALANCE - - - - -")
+			print(f"{FR_BLUE}- - - - - BALANCE - - - - -")
 			print(f"{FR_GREEN}. . . . Number of cpus participating: {nCPU}")
 			print(f"{FR_GREEN}. . . . Sets executed: {list_games[nSets-1]}")
 			print(f"{FR_GREEN}. . . . Games executed: {list_games[nSets-1]*4}")
 			print(f"{FR_GREEN}. . . . Each game (matrix) includes {NITER} iterations of game of life")
 			print(f"{FR_GREEN}\twith a matrix of {NX} x {NY} in each quadrant of the screen")
-			print(f"{FR_GREEN}\tand only {int(NITER/BASE_PRINT)} print screens for each game (matrix) of the first process")
+			print(f"{FR_GREEN}\tand only {int(1 + NITER/BASE_PRINT)} print screens for each game (matrix) of the first process, including first and last matrix")
 			
 			elapsed_time = "{:.2f}".format(time.time()-inicio)
 			print(f"print empty line")
 			print(f"{FR_GREEN}. . . . Elapsed Time: {elapsed_time} seconds")
 			print(f"print empty line")
-			print(f"{FR_GREEN}- - - - - THAT's-ALL - - - - - THAT's-ALL - - - - - ")
+			print(f"{FR_YELL}- - - - - THAT's-ALL - - - - - THAT's-ALL - - - - - ")
 			print(f"print empty line")
 
 		except Exception as Argument:

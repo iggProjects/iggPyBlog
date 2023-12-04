@@ -28,7 +28,7 @@ try:   # Import My Own Functions from include dir
 
 	NX = 10
 	NY = 24
-	NITER= 20
+	NITER= 5
 	MSG_TEXT  = 'Games record-> '
 	BASE_PRINT = 1
 	#BASE_PRINT = int(NITER/10)
@@ -79,7 +79,7 @@ def show_4_matrix(mat1,mat2,mat3,mat4):
 			
 			#separación entre matrices 1 y 2
 			if y == Y and x != X:
-				print(f"777", end ="")
+				print(f"99", end =" ")
 			
 			# matriz2	(2do cuadrante)	
 			if ( x<X ) and ( y > Y ):
@@ -223,10 +223,10 @@ if __name__ == '__main__':
 
 		# READ PARAMETERS 
 		# number of SET's, each of one of four games (matrixs)
-		nSets = 8
+		nSets = 1
 		#nSets = int(sys.argv[1])
 		# number of CPU in multiprocessing call
-		nCPU = 4
+		nCPU = 1
 		#nCPU = int(sys.argv[2])
 
 		# parameter for multiporcessing call
