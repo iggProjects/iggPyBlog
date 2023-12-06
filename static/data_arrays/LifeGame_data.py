@@ -123,9 +123,9 @@ def LG_scripts():
             'date_created': '05-04-2023',
             'source_url': '',
             'section': 'Game of life',
-            'title': 'Simulate set of 4 games (matrices)',
-            'fileDirPath': 'static/proj_lifeGame_scripts/07-LG_multiprocessing-cpu.py',            
-            'fileDirPath1': 'static/proj_lifeGame_scripts/07-LG_multiprocessing-cpu1.py',            
+            'title': 'Simulate set of 2 games (matrices)',
+            'fileDirPath': 'static/proj_lifeGame_scripts/07-LG_multiprocessing-cpu_2G.py',            
+            'fileDirPath1': 'static/proj_lifeGame_scripts/07-LG_multiprocessing-cpu1_2G.py',            
             
             'homework': 'Execute Sets of 4 Games with multiprocessing.',
 
@@ -135,6 +135,26 @@ def LG_scripts():
             'zip_url': '/static/proj_lifeGame_scripts/07-LG_multiprocessing.zip',  
             'img': '/img/icons8-consola-100.png'    
         },       
+                
+        {
+            'id': 8,             
+            'author': 'Igg',
+            'date_created': '05-04-2023',
+            'source_url': '',
+            'section': 'Game of life',
+            'title': 'Simulate set of 4 games (matrices)',
+            'fileDirPath': 'static/proj_lifeGame_scripts/07-LG_multiprocessing-cpu_4G.py',            
+            'fileDirPath1': 'static/proj_lifeGame_scripts/07-LG_multiprocessing-cpu1_4G.py',            
+            
+            'homework': 'Execute Sets of 4 Games with multiprocessing.',
+
+            'body': '\n\n============== DETAILS NEXT WEEK ==============\n\nFor now, you can execute in console button, or download the .zip (download button) and execute .bat file in your local "downloads folder".\n\nTIP: create a folder called "py_files" inside "downloads", and move the .zip to that folder. Extract the files and run the .bat (with double click). NOTE: you must have python in the "path" of your pc, which you can check in "environment variables"',  
+
+            'code_url': '/static/proj_lifeGame_scripts/07-LG_multiprocessing-cpu.py',  
+            'zip_url': '/static/proj_lifeGame_scripts/07-LG_multiprocessing.zip',  
+            'img': '/img/icons8-consola-100.png'    
+        },       
+
 
     ]
 

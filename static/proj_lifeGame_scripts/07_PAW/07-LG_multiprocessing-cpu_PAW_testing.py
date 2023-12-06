@@ -65,18 +65,6 @@ def crear_matriz():
 		print(f"{FR_RED}ERROR in <crear_matriz>: {Argument}")
 
 
-"""
-def mostrar_matriz(matriz):
-	X, Y = matriz.shape                                   # Dimensiones de la matriz
-	for x in range(0, X):
-		for y in range(0, Y):
-			if matriz[x,y] == 1:
-				print(f"{FR_RED}{int(matriz[x,y])}{NO_COLOR}", end ="")
-			else:
-				print(f"{int(matriz[x,y])}", end ="")
-		print()
-"""
-
 # Muestro las 4 Matrices (games)
 def show_4_matrix(mat1,mat2,mat3,mat4):
 	
@@ -166,7 +154,7 @@ def exec_game_iter(matriz,name):
 		
 		# try to control event of equal matrixes
 		if np.array_equal(matriz,matrizTemp):
-			if multiprocessing.current_process().name == "SpawnPoolWorker-1":
+			if "PoolWorker-1" in multiprocessing.current_process().name:
 				#mostrar_matriz(matriz)
 				print(f"\t{FR_GREEN}cpu name {multiprocessing.current_process().name} - process {multiprocessing.Process().name} ==> game reach equality with matriz {name} ==={NO_COLOR}")
 			#matriz = 9 * np.ones([NX,NY])
@@ -202,8 +190,7 @@ def exec_4_game(game):
 			matriz3 = exec_game_iter(matriz3,'matriz3')
 			matriz4 = exec_game_iter(matriz4,'matriz4')
 
-			#if (multiprocessing.current_process().name == "SpawnPoolWorker-1"):
-			if ( (multiprocessing.current_process().name == "SpawnPoolWorker-1") and (n % BASE_PRINT == 0) ):
+			if ( ( "PoolWorker-1" in multiprocessing.current_process().name ) and (n % BASE_PRINT == 0) ):
 				print(f"\n{FR_YELL}Printing only for cpu name {multiprocessing.current_process().name} - mp {multiprocessing.Process().name} | iteration-> {n}{NO_COLOR}")
 				show_4_matrix(matriz1,matriz2,matriz3,matriz4)
 				time.sleep(SLEEP)			
