@@ -35,6 +35,14 @@ Text that is not a quote
    - First nested list item
      - Second nested list item
 
+- [x] #739
+- [ ] https://github.com/octo-org/octo-repo/issues/740
+- [ ] Add delight to the experience when all tasks are complete :tada: 
+
+- [ ] \(Optional) Open a followup issue
+
+@octocat :+1: This PR looks great - it's ready to merge! :shipit:
+
 Use `git status` to list all new or modified files that haven't yet been committed.
 
 Some basic Git commands are:
