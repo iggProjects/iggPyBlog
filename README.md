@@ -13,3 +13,6 @@ This is a <sup>superscript</sup> text<br><br>
 
 This is a <sup>superscript</sup> text<br><br>
 
+| COMMAND | DESCRIPTION   |
+|---------|---------------|
+|First    |First          |
