@@ -14,6 +14,27 @@ This is a <sup>superscript</sup> text<br><br>
 Text that is not a quote
 > Text that is a quote
 
+
+| COMMAND | DESCRIPTION   |
+|---------|---------------|
+|First    |First          |
+
+- George Washington
+* John Adams
++ Thomas Jefferson
+
+1. James Madison
+1. James Monroe
+1. John Quincy Adams
+
+1. First list item
+   - First nested list item
+     - Second nested list item
+
+100. First list item
+   - First nested list item
+     - Second nested list item
+
 Use `git status` to list all new or modified files that haven't yet been committed.
 
 Some basic Git commands are:
@@ -41,8 +62,3 @@ This site was built using [GitHub Pages](https://pages.github.com/).
 
 
 
-
-
-| COMMAND | DESCRIPTION   |
-|---------|---------------|
-|First    |First          |
