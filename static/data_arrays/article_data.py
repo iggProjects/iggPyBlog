@@ -7,7 +7,7 @@ def Articles():
             'author': 'Igg',
             'date_created': '20-04-2023',
             'section': 'The experience',           
-            'summary': 'In my particular case, I think I was able to meet the expectations that I set out to develop in the course.....',            
+            'summary': 'The course met the expectations I had. I also developed topics of my interest, which are clearly reflected on this website. I make some suggestions, and put information of interest related to the programs I did.',            
             'body': '',
             'page_url':'/about',
             'icon_img':'icons8-lectura-80.png'
