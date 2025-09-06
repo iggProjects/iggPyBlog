@@ -1,5 +1,6 @@
 # virtual env
 igg_venv/
+venv/
 
 # log messages files 
 *messages*
@@ -26,6 +27,7 @@ list*.csv
 
 # txt files
 *.txt
+*.old
 
 # Build and Release Folders
 bin-debug/
