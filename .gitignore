@@ -5,6 +5,9 @@ igg_venv/
 *messages*
 static/logFiles/*messages*
 
+# Alberto files
+*Alberto*.*
+
 # z-docs-folder
 z-docs-folder/
 

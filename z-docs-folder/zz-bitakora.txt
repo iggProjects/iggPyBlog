@@ -1,16 +1,33 @@
-BITAKORA  iggwebnz.eu.pythonanywhere.com
 
-igg.git.h@g @gittu.....@  
+BITAKORA  
 
-iggProjects @i..P...0.@
+**********************************************
+local
+    ejecutar en consola flask_app.py
+    navegador: localhost:5000
+
+iggwebnz.eu.pythonanywhere.com
+
+igg.git.h@g  @gittu.....@  
+
+https://github.com/login   iggProjects  or igg.git.h@g ---  @I..P.......0.*
 
 https://eu.pythonanywhere.com/login/  | igg.git.h@ | @n.20..N.@
 
     - bash console: https://eu.pythonanywhere.com/user/iggWebNz/consoles/373990/
 
-nazareth user: jo.gainzarain@aulanz.net  | nz2223Nz
+nazareth user: jo.ga....  @aulanz.net  | n.22..N.
 
 ************************************************
+
+UPDATE PAW WITH
+- (07-02-2024) 
+    about.html and article.data 
+    
+
+
+
+***********************************************
 
 EXCERCISES
 
